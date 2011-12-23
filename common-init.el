@@ -3,7 +3,6 @@
 ;; ================================================
 (defvar emacs-plugins-path (concat emacs-sync-path "/plugins/"))
 (defvar emacs-submodules-path (concat emacs-sync-path "/submodules/"))
-(defvar emacs-snippets-path (concat emacs-sync-path "/custom/snippets/"))
 ; add various load paths
 (add-to-list 'load-path emacs-sync-path)
 (add-to-list 'load-path emacs-plugins-path)
@@ -11,7 +10,7 @@
 ;; ================================================
 
 ;; ================================================
-;; Load auto-complete and YAsnippets before we load the SlantSix utils.
+;; Load auto-complete
 ;; ================================================
 (defvar emacs-auto-complete-path (concat emacs-submodules-path "auto-complete/"))
 (add-to-list 'load-path emacs-auto-complete-path)
@@ -136,8 +135,7 @@
 (add-to-list 'load-path yasnippet-path)
 (require 'yasnippet)
 (setq yas/snippet-dirs 
-      (list emacs-snippets-path
-	    (concat yasnippet-path "snippets")
+      (list (concat yasnippet-path "snippets")
 	    (concat emacs-sync-path "submodules/slantsix/snippets")
 	    )
       )
