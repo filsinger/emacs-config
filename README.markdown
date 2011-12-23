@@ -14,7 +14,7 @@ this config requires you specify an 'emacs-sync-path' in your "~/.emacs" files p
 (load "common-init.el")
 </pre>
 
-Most of the plugins are pulled in via submodules,  after cloning you'll have to do:
+Most of the plugins are pulled in via submodules,  after cloning you'll have to the following block afte ra clone:
 <pre>
 git submodule update --init
 </pre>
