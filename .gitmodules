@@ -1,0 +1,21 @@
+[submodule "submodules/auto-complete"]
+	path = submodules/auto-complete
+	url = https://github.com/m2ym/auto-complete
+[submodule "submodules/auto-complete-clang"]
+	path = submodules/auto-complete-clang
+	url = https://github.com/brianjcj/auto-complete-clang.git
+[submodule "submodules/egg"]
+	path = submodules/egg
+	url = https://github.com/byplayer/egg.git
+[submodule "submodules/yasnippet"]
+	path = submodules/yasnippet
+	url = https://github.com/capitaomorte/yasnippet.git
+[submodule "submodules/gist"]
+	path = submodules/gist
+	url = https://github.com/defunkt/gist.el.git
+[submodule "submodules/lua-mode"]
+	path = submodules/lua-mode
+	url = https://github.com/immerrr/lua-mode.git
+[submodule "submodules/slantsix"]
+	path = submodules/slantsix
+	url = git@github.com:filsinger/slantsix-mode.git
