@@ -1,7 +1,7 @@
 # My emacs config
 this config requires you specify an 'emacs-sync-path' in your "~/.emacs" files points to this directory.
 
-<pre>
+```lisp
 (defvar emacs-sync-path (if (or (eq system-type 'cygwin)
 			     (eq system-type 'gnu/linux)
 			     (eq system-type 'linux)
@@ -12,11 +12,11 @@ this config requires you specify an 'emacs-sync-path' in your "~/.emacs" files p
 (defvar emacs-sync-path (concat dropbox-path "emacs/"))
 (add-to-list 'load-path emacs-sync-path)
 (load "common-init.el")
-</pre>
+```
 
 Most of the plugins are pulled in via submodules,  after cloning you'll have to the following block afte ra clone:
-<pre>
+```bash
 git submodule update --init
-</pre>
+```
 
 One of the submodules will fail to pull because it is a private repository (work stuff).
