@@ -22,3 +22,6 @@
 [submodule "submodules/highlight-symbol"]
 	path = submodules/highlight-symbol
 	url = https://github.com/nschum/highlight-symbol.el.git
+[submodule "submodules/markdown-mode"]
+	path = submodules/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git

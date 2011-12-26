@@ -126,6 +126,16 @@
 (add-hook 'lua-mode-hook 'hs-minor-mode)
 ;; ================================================
 
+;; ================================================
+;; Markdown-mode
+;; ================================================
+(add-to-list 'load-path (concat emacs-submodules-path "/markdown-mode"))
+(setq auto-mode-alist (cons '("\\.\\(md\\|markdown\\)$" . markdown-mode) auto-mode-alist))
+(autoload 'markdown-mode "markdown-mode" "Markdown editing mode." t)
+(add-hook 'markdown-mode-hook 'turn-on-font-lock)
+(add-hook 'markdown-mode-hook 'hs-minor-mode)
+;; ================================================
+
 
 ;; ================================================
 ;; YASnippit
