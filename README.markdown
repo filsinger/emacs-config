@@ -15,7 +15,7 @@ this config requires you specify an 'emacs-sync-path' in your "~/.emacs" files p
 ```
 
 Most of the plugins are pulled in via submodules,  after cloning you'll have to the following block afte ra clone:
-```sh
+```
 git submodule update --init
 ```
 
