@@ -74,6 +74,7 @@
 (normal-erase-is-backspace-mode 1)             ; fix the delete key so that it deletes instead of backspacing
 (global-linum-mode 1)                          ; enable line numbers along the side
 (setq linum-format "  %d ")                    ; set the line number formatting
+(setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell")    ; use aspell instead of ispell
 ;; ================================================
 
 
