@@ -33,11 +33,6 @@
 ;; ================================================
 ;; Autocomplete
 ;; ================================================
-;; (eval-after-load 'auto-complete-config
-;;   '(add-to-list 'ac-dictionary-directories 
-;; 		(concat emacs-sync-path "custom/ac-dict")
-;; 		(concat emacs-auto-complete-path "dict"))
-;;     )
 (add-to-list 'ac-dictionary-directories (concat emacs-sync-path "custom/ac-dict"))
 (add-to-list 'ac-dictionary-directories (concat emacs-auto-complete-path "dict"))
 (ac-config-default)
@@ -150,7 +145,6 @@
 	    )
       )
 (yas/global-mode 1)
-
 ;; ================================================
 
 
@@ -203,5 +197,18 @@
                  '(("\\<\\(FIXME\\|TODO\\|BUG\\|HACK\\):" 1 font-lock-warning-face t)))))
 ;; ================================================
 
+;; ================================================
+;; Predictive Mode
+;; ================================================
+(add-to-list 'load-path (concat emacs-submodules-path "/predictive-mode/"))
+(add-to-list 'load-path (concat emacs-sync-path "/custom/"))
+(autoload 'predictive-mode "predictive" "predictive" t)
+(set-default 'predictive-auto-add-to-dict t)
+(setq predictive-main-dict 'jdf-dictionary
+      predictive-auto-learn t
+      predictive-add-to-dict-ask nil
+      predictive-use-auto-learn-cache nil
+      predictive-which-dict t)
+;; ================================================
 
 
