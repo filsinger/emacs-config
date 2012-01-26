@@ -25,3 +25,6 @@
 [submodule "submodules/markdown-mode"]
 	path = submodules/markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
+[submodule "submodules/predictive-mode"]
+	path = submodules/predictive-mode
+	url = http://www.dr-qubit.org/git/predictive.git
