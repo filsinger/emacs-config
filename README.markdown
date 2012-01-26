@@ -6,10 +6,9 @@ this config requires you specify an 'emacs-sync-path' in your "~/.emacs" files p
 			     (eq system-type 'gnu/linux)
 			     (eq system-type 'linux)
 			     (eq system-type 'darwin))
-			  (concat (getenv "HOME") "/emacs.git/")
-			  (concat (getenv "USERPROFILE") "/emacs.git/"))
+			  (concat (getenv "HOME") "/.emacs.git")
+			  (concat (getenv "USERPROFILE") "/.emacs.git"))
   "emacs sync path")
-(defvar emacs-sync-path (concat dropbox-path "emacs/"))
 (add-to-list 'load-path emacs-sync-path)
 (load "common-init.el")
 ```
