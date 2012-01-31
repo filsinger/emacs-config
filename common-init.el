@@ -213,10 +213,22 @@
 
 
 ;; ================================================
-;; gist (gist.github.com) support
+;; expand-region (https://github.com/magnars/expand-region.el) support
 ;; ================================================
 (add-to-list 'load-path (concat emacs-submodules-path "/expand-region/"))
 (require 'expand-region)
 (global-set-key (kbd "C-@") 'er/expand-region)
 ;; ================================================
 
+
+;; ================================================
+;; mark-multiple (https://github.com/magnars/mark-multiple.el) support
+;; ================================================
+(add-to-list 'load-path (concat emacs-submodules-path "/mark-multiple/"))
+(require 'inline-string-rectangle)
+(require 'mark-more-like-this)
+(global-set-key (kbd "C-x r t") 'inline-string-rectangle)
+(global-set-key (kbd "C-<") 'mark-previous-like-this)
+(global-set-key (kbd "C->") 'mark-next-like-this)
+(global-set-key (kbd "C-M-m") 'mark-more-like-this) ; like the other two, but takes an argument (negative is previous)
+;; ================================================

@@ -31,3 +31,6 @@
 [submodule "submodules\\expand-region"]
 	path = submodules\\expand-region
 	url = https://github.com/magnars/expand-region.el.git
+[submodule "submodules\\mark-multiple"]
+	path = submodules\\mark-multiple
+	url = https://github.com/magnars/mark-multiple.el.git
