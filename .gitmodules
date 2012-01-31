@@ -28,9 +28,9 @@
 [submodule "submodules/predictive-mode"]
 	path = submodules/predictive-mode
 	url = http://www.dr-qubit.org/git/predictive.git
-[submodule "submodules\\expand-region"]
-	path = submodules\\expand-region
+[submodule "submodules/expand-region"]
+	path = submodules/expand-region
 	url = https://github.com/magnars/expand-region.el.git
-[submodule "submodules\\mark-multiple"]
-	path = submodules\\mark-multiple
+[submodule "submodules/mark-multiple"]
+	path = submodules/mark-multiple
 	url = https://github.com/magnars/mark-multiple.el.git
