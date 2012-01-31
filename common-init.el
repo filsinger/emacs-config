@@ -212,3 +212,11 @@
 ;; ================================================
 
 
+;; ================================================
+;; gist (gist.github.com) support
+;; ================================================
+(add-to-list 'load-path (concat emacs-submodules-path "/expand-region/"))
+(require 'expand-region)
+(global-set-key (kbd "C-@") 'er/expand-region)
+;; ================================================
+
