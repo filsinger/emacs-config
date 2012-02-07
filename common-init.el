@@ -76,8 +76,9 @@
 ;; ================================================
 ;; Key Configurations
 ;; ================================================
-(global-unset-key "\C-z")       ; disable CTRL+z
-(global-set-key "\C-z" nil)     ; disable CTRL+z
+(global-unset-key "\C-z")                     ; disable CTRL+z
+(global-set-key "\C-z" nil)                   ; disable CTRL+z
+(global-set-key "\C-d" 'backward-delete-char) ; make sure backspace works the way I like in the OSX terminal
 ;; ================================================
 
 
