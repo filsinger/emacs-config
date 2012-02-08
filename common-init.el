@@ -133,6 +133,14 @@
 (add-hook 'markdown-mode-hook 'hs-minor-mode)
 ;; ================================================
 
+;; ================================================
+;; arduino-mode
+;; ================================================
+(add-to-list 'load-path (concat emacs-submodules-path "/arduino-mode"))
+(setq auto-mode-alist (cons '("\\.\\(pde\\|ino\\)$" . arduino-mode) auto-mode-alist))
+(autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)
+;; ================================================
+
 
 ;; ================================================
 ;; YASnippit
