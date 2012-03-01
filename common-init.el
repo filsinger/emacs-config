@@ -15,22 +15,6 @@
 (add-to-list 'load-path emacs-auto-complete-path)
 (require 'auto-complete-config)
 
-
-;; ================================================
-;; SlantSix utils
-;; ================================================
-(if (or (eq system-type 'windows-nt)
-	(eq system-type 'cygwin))
-    (let ()
-      (defvar emacs-slantsix-path (concat emacs-sync-path "/submodules/slantsix/"))
-      (add-to-list 'load-path emacs-slantsix-path)
-      (load "slantsix.el") ; load SlantSix utils
-      )
-)
-;; ================================================
-
-
-
 ;; ================================================
 ;; Autocomplete
 ;; ================================================
@@ -133,20 +117,6 @@
 (add-hook 'markdown-mode-hook 'turn-on-font-lock)
 (add-hook 'markdown-mode-hook 'hs-minor-mode)
 ;; ================================================
-
-;; ================================================
-;; arduino-mode
-;; ================================================
-(if (or (eq system-type 'darwin)
-	(eq system-type 'gnu)
-	(eq system-type 'gnu/linux))
-    (let ()
-      (add-to-list 'load-path (concat emacs-submodules-path "/arduino-mode"))
-      (setq auto-mode-alist (cons '("\\.\\(pde\\|ino\\)$" . arduino-mode) auto-mode-alist))
-      (autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)
-))
-;; ================================================
-
 
 ;; ================================================
 ;; YASnippit
@@ -254,30 +224,12 @@
 ;; ================================================
 
 ;; ================================================
-;; mark-multiple (https://github.com/magnars/mark-multiple.el) support
+;; Load platform specific plugins
 ;; ================================================
-(if (or (eq system-type 'darwin)
-	(eq system-type 'gnu)
-	(eq system-type 'gnu/linux))
-    (let ()
-      (add-to-list 'load-path (concat emacs-submodules-path "/mark-multiple/"))
-      (require 'inline-string-rectangle)
-      (require 'mark-more-like-this)
-      (global-set-key (kbd "C-x r t") 'inline-string-rectangle)
-      (global-set-key (kbd "C-<") 'mark-previous-like-this)
-      (global-set-key (kbd "C->") 'mark-next-like-this)
-      (global-set-key (kbd "C-M-m") 'mark-more-like-this) ; like the other two, but takes an argument (negative is previous)
-))
-;; ================================================
+(if (or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
+    (load "platform-posix.el"))
 
-;; ================================================
-;; bat-mode (http://ftp.gnu.org/old-gnu/emacs/windows/contrib/bat-mode.el) support
-;; ================================================
-(if (or (eq system-type 'windows-nt)
-	(eq system-type 'cygwin))
-    (let ()
-      (setq auto-mode-alist (cons '("\\.bat$" . bat-mode) auto-mode-alist))
-      (autoload 'bat-mode "bat-mode" "BAT editing mode." t)
-))
+(if (or (eq system-type 'windows-nt) (eq system-type 'cygwin))
+    (load "platform-windows.el"))
 ;; ================================================
 
