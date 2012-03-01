@@ -17,3 +17,10 @@
 (setq auto-mode-alist (cons '("\\.\\(pde\\|ino\\)$" . arduino-mode) auto-mode-alist))
 (autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)
 ;; ================================================
+
+;; ================================================
+;; gist (gist.github.com) support
+;; ================================================
+(add-to-list 'load-path (concat emacs-submodules-path "/gist/"))
+(require 'gist)
+;; ================================================
