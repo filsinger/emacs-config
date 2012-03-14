@@ -37,3 +37,6 @@
 [submodule "submodules/arduino-mode"]
 	path = submodules/arduino-mode
 	url = https://github.com/bookest/arduino-mode.git
+[submodule "submodules/anything-config"]
+	path = submodules/anything-config
+	url = git://repo.or.cz/anything-config.git
