@@ -82,9 +82,17 @@
 ;; ================================================
 ;; anything.el
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "anything-config/"))
-(require 'anything-config)
-(global-set-key "\C-a" 'anything)
+;;(add-to-list 'load-path (concat emacs-submodules-path "anything-config/"))
+;;(require 'anything-config)
+;;(global-set-key "\C-a" 'anything)
+;; ================================================
+
+;; ================================================
+;; Helm
+;; ================================================
+(add-to-list 'load-path (concat emacs-submodules-path "helm/"))
+(require 'helm-config)
+(global-set-key "\C-a" 'helm)
 ;; ================================================
 
 

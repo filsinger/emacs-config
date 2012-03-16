@@ -40,3 +40,6 @@
 [submodule "submodules/anything-config"]
 	path = submodules/anything-config
 	url = git://repo.or.cz/anything-config.git
+[submodule "submodules/helm"]
+	path = submodules/helm
+	url = https://github.com/emacs-helm/helm.git
