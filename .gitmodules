@@ -43,3 +43,6 @@
 [submodule "submodules/helm"]
 	path = submodules/helm
 	url = https://github.com/emacs-helm/helm.git
+[submodule "submodules/popup"]
+	path = submodules/popup
+	url = https://github.com/m2ym/popup-el.git
