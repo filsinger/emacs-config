@@ -95,7 +95,7 @@
 ;; ================================================
 (add-to-list 'load-path (concat emacs-submodules-path "helm/"))
 (require 'helm-config)
-(global-set-key "\C-a" 'helm)
+(global-set-key "\C-a" 'helm-mini)
 ;; ================================================
 
 
