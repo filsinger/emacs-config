@@ -191,6 +191,7 @@
 ;; ================================================
 (add-to-list 'load-path (concat emacs-submodules-path "/egg/"))
 (require 'egg)
+(setq auto-mode-alist (cons '("\\.git\\(modules\\|config\\)$" . conf-mode) auto-mode-alist))
 ;; ================================================
 
 
