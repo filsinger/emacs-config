@@ -196,6 +196,7 @@
 ;; ================================================
 ;; Special highlighting of todos in c/c++
 ;; ================================================
+(setq auto-mode-alist (cons '("\\.h$" . c++-mode) auto-mode-alist))
 (add-hook 'c-mode-common-hook
                (lambda ()
                 (font-lock-add-keywords nil
