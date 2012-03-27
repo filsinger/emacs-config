@@ -64,6 +64,8 @@
 (global-unset-key "\C-z")                     ; disable CTRL+z
 (global-set-key "\C-z" nil)                   ; disable CTRL+z
 (when (eq window-system nil) (global-set-key "\C-d" 'backward-delete-char)) ; make sure backspace works the way I like in the OSX terminal
+(global-set-key "\M-g-g" 'goto-line)          ; bind M-g-g to goto-line
+(global-set-key "\C-u" 'comment-or-uncomment-region)          ; bind M-c-c to comment toggle
 ;; ================================================
 
 
