@@ -151,6 +151,10 @@
 ;; ================================================
 (defvar yasnippet-path (concat  emacs-submodules-path "/yasnippet/"))
 (add-to-list 'load-path yasnippet-path)
+;; custom dropdown-list colours
+(defface dropdown-list-face '((t (:background "lightgray" :foreground "black"))) "*Bla." :group 'dropdown-list)
+(defface dropdown-list-selection-face '((t (:background "steelblue" :foreground "white"))) "*Bla." :group 'dropdown-list)
+;; load yasnippet
 (require 'yasnippet)
 (setq yas/snippet-dirs 
       (list (concat yasnippet-path "snippets")
