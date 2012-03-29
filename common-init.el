@@ -192,10 +192,10 @@
 
 
 ;; ================================================
-;; git support (EGG)
+;; git support (magit)
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "/egg/"))
-(require 'egg)
+(add-to-list 'load-path (concat emacs-submodules-path "/magit/"))
+(require 'magit)
 (setq auto-mode-alist (cons '("\\.git\\(modules\\|config\\)$" . conf-mode) auto-mode-alist))
 ;; ================================================
 
