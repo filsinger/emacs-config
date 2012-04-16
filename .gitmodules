@@ -13,9 +13,6 @@
 [submodule "submodules/lua-mode"]
 	path = submodules/lua-mode
 	url = https://github.com/immerrr/lua-mode.git
-[submodule "submodules/slantsix"]
-	path = submodules/slantsix
-	url = git@github.com:filsinger/slantsix-mode.git
 [submodule "submodules/highlight-symbol"]
 	path = submodules/highlight-symbol
 	url = https://github.com/nschum/highlight-symbol.el.git
