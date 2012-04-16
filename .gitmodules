@@ -52,3 +52,6 @@
 [submodule "submodules/logito"]
 	path = submodules/logito
 	url = https://github.com/sigma/logito.git
+[submodule "submodules/ace-jump-mode"]
+	path = submodules/ace-jump-mode
+	url = https://github.com/winterTTr/ace-jump-mode.git

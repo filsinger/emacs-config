@@ -98,6 +98,14 @@
 (global-set-key "\C-a" 'helm-mini)
 ;; ================================================
 
+;; ================================================
+;; ace-jump-mode
+;; ================================================
+(add-to-list 'load-path (concat emacs-submodules-path "ace-jump-mode/"))
+(require 'ace-jump-mode)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+;; ================================================
+
 
 ;; ================================================
 ;; ido-mode
