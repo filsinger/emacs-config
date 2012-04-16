@@ -21,6 +21,10 @@
 ;; ================================================
 ;; gist (gist.github.com) support
 ;; ================================================
+(add-to-list 'load-path (concat emacs-submodules-path "/gh/"))
 (add-to-list 'load-path (concat emacs-submodules-path "/gist/"))
+(add-to-list 'load-path (concat emacs-submodules-path "/logito/"))
+(add-to-list 'load-path (concat emacs-submodules-path "/pcache/"))
+(add-to-list 'load-path (concat emacs-submodules-path "/tabulated-list/"))
 (require 'gist)
 ;; ================================================

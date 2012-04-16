@@ -40,3 +40,15 @@
 [submodule "submodules/magit"]
 	path = submodules/magit
 	url = git://github.com/magit/magit.git
+[submodule "submodules/gh"]
+	path = submodules/gh
+	url = https://github.com/sigma/gh.el.git
+[submodule "submodules/tabulated-list"]
+	path = submodules/tabulated-list
+	url = https://github.com/sigma/tabulated-list.el.git
+[submodule "submodules/pcache"]
+	path = submodules/pcache
+	url = https://github.com/sigma/pcache.git
+[submodule "submodules/logito"]
+	path = submodules/logito
+	url = https://github.com/sigma/logito.git
