@@ -10,6 +10,26 @@
 
 
 ;; ================================================
+;; Theme
+;; ================================================
+(add-to-list 'load-path (concat emacs-sync-path "/custom/themes/"))
+(require 'color-theme)
+(require 'jason-theme)
+(color-theme-initialize)
+(jason-theme)
+
+;; Set the color values for ido-mode
+(custom-set-faces
+ '(ido-subdir ((t (:foreground "#32dcdc"))))            ;; Face used by ido for highlighting subdirs in the alternatives.
+ '(ido-first-match ((t (:foreground "#0072eb"))))       ;; Face used by ido for highlighting first match.
+ '(ido-only-match ((t (:foreground "#05ff80"))))        ;; Face used by ido for highlighting only match.
+ '(ido-indicator ((t (:foreground "#ffffff"))))         ;; Face used by ido for highlighting its indicators (don't actually use this)
+ '(ido-incomplete-regexp ((t (:foreground "#ffffff")))) ;; Ido face for indicating incomplete regexps. (don't use this either)
+)
+;; ================================================
+
+
+;; ================================================
 ;; Popup
 ;; ================================================
 (defvar emacs-popup-path (concat emacs-submodules-path "popup/"))
@@ -74,7 +94,9 @@
 (global-set-key "\C-z" nil)                   ; disable CTRL+z
 (when (eq window-system nil) (global-set-key "\C-d" 'backward-delete-char)) ; make sure backspace works the way I like in the OSX terminal
 (global-set-key "\M-g-g" 'goto-line)          ; bind M-g-g to goto-line
-(global-set-key "\C-u" 'comment-or-uncomment-region)          ; bind M-c-c to comment toggle
+(global-set-key "\C-u" 'comment-or-uncomment-region)          ; bind C-u to comment toggle
+(global-set-key "\C-a" `align-entire)       ; bind C-x-a to align-entire
+(global-set-key "\M-s" `sort-lines)         ; bind m-s to sort-lines
 ;; ================================================
 
 
@@ -95,7 +117,7 @@
 ;; ================================================
 (add-to-list 'load-path (concat emacs-submodules-path "helm/"))
 (require 'helm-config)
-(global-set-key "\C-a" 'helm-mini)
+(global-set-key "\C-x\C-a" 'helm-mini)
 ;; ================================================
 
 ;; ================================================
