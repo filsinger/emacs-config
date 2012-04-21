@@ -61,6 +61,8 @@
 ;; ================================================
 ;; Usage configuration
 ;; ================================================
+(tool-bar-mode -1)                             ; Disable the toolbar
+(scroll-bar-mode -1)                           ; Disable the scrollbar
 (setq inhibit-splash-screen t)                 ; Disable the splash screen
 (setq-default transient-mark-mode t)           ; Selection highlighting
 (setq-default truncate-lines t)                ; Disable line wrapping
