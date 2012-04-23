@@ -90,7 +90,7 @@
 (setq tab-width 4)                             ; tab width
 (setq c-basic-offset 4)                        ; tab width
 (normal-erase-is-backspace-mode 1)             ; fix the delete key so that it deletes instead of backspacing
-(cond ((string-match "GNU Emacs 23" (emacs-version)) (global-linum-mode 1))) ; enable line numbers on emacs 23
+(when (>= emacs-major-version 23) (global-linum-mode 1)) ; enable line numbers on emacs 23
 (setq linum-format "  %d ")                    ; set the line number formatting
 (setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell")    ; use aspell instead of ispell
 ;; ================================================
