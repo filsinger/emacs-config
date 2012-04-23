@@ -61,14 +61,21 @@
 ;; ================================================
 ;; Usage configuration
 ;; ================================================
-(tool-bar-mode -1)                             ; Disable the toolbar
-(scroll-bar-mode -1)                           ; Disable the scrollbar
+(when window-system
+  (progn
+    (when (eq system-type 'darwin)
+      (progn
+	(set-frame-font "Menlo")                             ; Set the default font to 'Menlo' on OSX (an alternitive on windows might be 'https://github.com/andreberg/Meslo-Font')
+	(define-key global-map [ns-drag-file] 'ns-find-file) ; OSX: Drag an drop will open a new file (not append)
+	))
+    (tool-bar-mode -1)                         ; Disable the toolbar
+    ;;(scroll-bar-mode -1)                     ; Disable the scrollbar
+))
 (setq inhibit-splash-screen t)                 ; Disable the splash screen
 (setq-default transient-mark-mode t)           ; Selection highlighting
 (setq-default truncate-lines t)                ; Disable line wrapping
 (setq inhibit-startup-echo-area-message t)     ; Disable startup message
 (setq tab-always-indent 'complete)             ; Smart tabs
-(define-key global-map [ns-drag-file] 'ns-find-file) ; OSX: Drag an drop will open a new file (not append)
 (setq ns-pop-up-frames nil)                    ; open files in current window
 (global-font-lock-mode t)                      ; activate font-lock-mode (syntax coloring)
 (column-number-mode t)                         ; Activate column-number-mode
