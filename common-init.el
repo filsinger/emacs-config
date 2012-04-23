@@ -196,7 +196,7 @@
 (defface dropdown-list-selection-face '((t (:background "steelblue" :foreground "white"))) "*Bla." :group 'dropdown-list)
 ;; load yasnippet
 (require 'yasnippet)
-(setq yas/snippet-dirs 
+(setq yas/snippet-dirs
       (list (concat yasnippet-path "snippets")
 	    (concat emacs-sync-path "submodules/slantsix/snippets")
 	    )
