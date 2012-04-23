@@ -25,6 +25,7 @@
  '(ido-only-match ((t (:foreground "#05ff80"))))        ;; Face used by ido for highlighting only match.
  '(ido-indicator ((t (:foreground "#ffffff"))))         ;; Face used by ido for highlighting its indicators (don't actually use this)
  '(ido-incomplete-regexp ((t (:foreground "#ffffff")))) ;; Ido face for indicating incomplete regexps. (don't use this either)
+ '(which-func ((t (:foreground "#05ff80"))))
 )
 ;; ================================================
 
@@ -233,27 +234,18 @@
 ;; ================================================
 ;; git support (magit)
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "/magit/"))
-(require 'magit)
-(setq auto-mode-alist (cons '("\\.git\\(modules\\|config\\)$" . conf-mode) auto-mode-alist))
-;; ================================================
-
-
-;; ================================================
-;; Special highlighting of todos in c/c++
-;; ================================================
-(setq auto-mode-alist (cons '("\\.h$" . c++-mode) auto-mode-alist))
-(add-hook 'c-mode-common-hook
-               (lambda ()
-                (font-lock-add-keywords nil
-                 '(("\\<\\(FIXME\\|TODO\\|BUG\\|HACK\\):" 1 font-lock-warning-face t)))))
+(when (>= emacs-major-version 23) (progn
+  (add-to-list 'load-path (concat emacs-submodules-path "/magit/"))
+  (require 'magit)
+  (setq auto-mode-alist (cons '("\\.git\\(modules\\|config\\)$" . conf-mode) auto-mode-alist))
+))
 ;; ================================================
 
 
 ;; ================================================
 ;; Set tab and substatement indentation settings for c/c++
 ;; ================================================
-(defun my-c-mode-common-hook ()
+(add-hook 'c-mode-common-hook (lambda ()
   ;; my customizations for all of c-mode, c++-mode, objc-mode, java-mode
   (c-set-offset 'substatement-open 0)
   ;; other customizations can go here
@@ -262,9 +254,10 @@
   (setq c-indent-level 4)                  ;; Default is 2
   (setq tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60))
   (setq tab-width 4)
-  (setq indent-tabs-mode t)  ; use spaces only if nil
-  )
-(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+  (setq indent-tabs-mode t)  ;; use spaces only if nil
+  (which-function-mode t)    ;; enabling which-function-mode in c/c++
+  (font-lock-add-keywords nil '(("\\<\\(FIXME\\|TODO\\|BUG\\|HACK\\):" 1 font-lock-warning-face t))) ;; special font-mode for words like TODO, BUG, HACK, and FIXME
+  ))
 ;; ================================================
 
 
