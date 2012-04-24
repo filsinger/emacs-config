@@ -62,7 +62,7 @@
 ;; ================================================
 ;; Usage configuration
 ;; ================================================
-(when window-system
+(if window-system
   (progn
     (when (eq system-type 'darwin)
       (progn
@@ -71,7 +71,13 @@
 	))
     (tool-bar-mode -1)                         ; Disable the toolbar
     ;;(scroll-bar-mode -1)                     ; Disable the scrollbar
-))
+    )
+  (progn ;; no window system
+    (when (not (eq system-type 'darwin))       ; non OSX systems 
+      (normal-erase-is-backspace-mode 1)       ; fix the delete key so that it deletes instead of backspacing (this seems to be happening when I SSH into my one of my Linux boxes)
+      )
+    ))
+
 (setq inhibit-splash-screen t)                 ; Disable the splash screen
 (setq-default transient-mark-mode t)           ; Selection highlighting
 (setq-default truncate-lines t)                ; Disable line wrapping
@@ -90,7 +96,6 @@
 ;;(setq indent-tabs-mode nil)                   ; use spaces instead of tabs for indentation
 (setq tab-width 4)                             ; tab width
 (setq c-basic-offset 4)                        ; tab width
-(normal-erase-is-backspace-mode 1)             ; fix the delete key so that it deletes instead of backspacing
 (when (>= emacs-major-version 23) (global-linum-mode 1)) ; enable line numbers on emacs 23
 (setq linum-format "  %d ")                    ; set the line number formatting
 (setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell")    ; use aspell instead of ispell
