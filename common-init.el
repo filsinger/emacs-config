@@ -78,6 +78,7 @@
       )
     ))
 
+(when (eq system-type 'darwin) (add-hook 'before-save-hook 'delete-trailing-whitespace)) ; delete trailing whitespace on save (only on OSX,  I dont want to enable this at work yet).
 (setq inhibit-splash-screen t)                 ; Disable the splash screen
 (setq-default transient-mark-mode t)           ; Selection highlighting
 (setq-default truncate-lines t)                ; Disable line wrapping
