@@ -73,7 +73,7 @@
     ;;(scroll-bar-mode -1)                     ; Disable the scrollbar
     )
   (progn ;; no window system
-    (when (not (eq system-type 'darwin))       ; non OSX systems 
+    (when (not (eq system-type 'darwin))       ; non OSX systems
       (normal-erase-is-backspace-mode 1)       ; fix the delete key so that it deletes instead of backspacing (this seems to be happening when I SSH into my one of my Linux boxes)
       )
     ))
@@ -290,6 +290,13 @@
 (global-set-key (kbd "C-@") 'er/expand-region)
 ;; ================================================
 
+;; ================================================
+;; regpop.el (https://github.com/filsinger/regpop.el)
+;; ================================================
+(add-to-list 'load-path (concat emacs-submodules-path "regpop/"))
+(require 'regpop)
+;; ================================================
+
 
 ;; ================================================
 ;; Load platform specific plugins
@@ -300,4 +307,3 @@
 (if (or (eq system-type 'windows-nt) (eq system-type 'cygwin))
     (load "platform-windows.el"))
 ;; ================================================
-

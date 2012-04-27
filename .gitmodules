@@ -55,3 +55,6 @@
 [submodule "submodules/ace-jump-mode"]
 	path = submodules/ace-jump-mode
 	url = https://github.com/winterTTr/ace-jump-mode.git
+[submodule "submodules/regpop"]
+	path = submodules/regpop
+	url = git@github.com:filsinger/regpop.el.git
