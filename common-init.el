@@ -102,7 +102,6 @@
 (setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell")    ; use aspell instead of ispell
 ;; ================================================
 
-
 ;; ================================================
 ;; Key Configurations
 ;; ================================================
@@ -202,13 +201,14 @@
 (defface dropdown-list-selection-face '((t (:background "steelblue" :foreground "white"))) "*Bla." :group 'dropdown-list)
 ;; load yasnippet
 (require 'yasnippet)
-(setq yas/snippet-dirs
-      (list (concat yasnippet-path "snippets")
-	    (concat emacs-sync-path "submodules/slantsix/snippets")
-	    )
-      )
-(yas/global-mode 1)
-(setq yas/prompt-functions '(yas/dropdown-prompt))
+(setq yas/snippet-dirs (list (concat yasnippet-path "snippets")))
+;; add a hook to initialize yasnippets after the init file is loaded (so that
+;; other submodules can set snippet paths
+(add-hook 'after-init-hook
+	  (lambda ()
+	    (yas/global-mode 1)
+	    (setq yas/prompt-functions '(yas/dropdown-prompt))
+	    ))
 ;; ================================================
 
 
