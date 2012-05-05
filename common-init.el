@@ -284,6 +284,7 @@
   (setq tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60))
   (setq tab-width 4)
   (setq indent-tabs-mode t)  ;; use spaces only if nil
+  (subword-mode 1)	     ;; enable subword mode
   (which-function-mode t)    ;; enabling which-function-mode in c/c++
   (font-lock-add-keywords nil '(("\\<\\(FIXME\\|TODO\\|BUG\\|HACK\\):" 1 font-lock-warning-face t))) ;; special font-mode for words like TODO, BUG, HACK, and FIXME
   ))
