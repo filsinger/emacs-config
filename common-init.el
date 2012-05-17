@@ -132,7 +132,7 @@
 (global-set-key "\C-z" nil)                   ; disable CTRL+z
 (when (eq window-system nil) (global-set-key "\C-d" 'backward-delete-char)) ; make sure backspace works the way I like in the OSX terminal
 (global-set-key "\M-g-g" 'goto-line)          ; bind M-g-g to goto-line
-(global-set-key "\C-u" 'comment-or-uncomment-region)          ; bind C-u to comment toggle
+(global-set-key "\C-c\C-c" 'comment-or-uncomment-region)          ; bind C-u to comment toggle
 (global-set-key "\C-a" `align-entire)       ; bind C-a to align-entire
 (global-set-key "\M-s" `sort-lines)         ; bind M-s to sort-lines
 (global-set-key (kbd "C-S-s") 'tags-apropos) ; tags apropos
