@@ -119,6 +119,7 @@
 (when (>= emacs-major-version 23) (global-linum-mode 1)) ; enable line numbers on emacs 23
 (setq linum-format "  %d ")                    ; set the line number formatting
 (setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell")    ; use aspell instead of ispell
+(setq visible-bell t)			       ; disable the system beep
 ;; ================================================
 
 ;; ================================================
