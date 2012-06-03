@@ -94,13 +94,9 @@
 	))
     (tool-bar-mode -1)                         ; Disable the toolbar
     ;;(scroll-bar-mode -1)                     ; Disable the scrollbar
-    )
-  (progn ;; no window system
-    (when (not (eq system-type 'darwin))       ; non OSX systems
-      (normal-erase-is-backspace-mode 1)       ; fix the delete key so that it deletes instead of backspacing (this seems to be happening when I SSH into my one of my Linux boxes)
-      )
     ))
 
+(normal-erase-is-backspace-mode 1)             ; fix the delete key so that it deletes instead of backspacing (this seems to be happening when I SSH into my one of my Linux boxes)
 (when (eq system-type 'darwin) (add-hook 'before-save-hook 'delete-trailing-whitespace)) ; delete trailing whitespace on save (only on OSX,  I dont want to enable this at work yet).
 (setq inhibit-splash-screen t)                 ; Disable the splash screen
 (setq-default transient-mark-mode t)           ; Selection highlighting
