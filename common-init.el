@@ -120,6 +120,7 @@
 (setq linum-format "  %d ")                    ; set the line number formatting
 (setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell")    ; use aspell instead of ispell
 (setq visible-bell t)			       ; disable the system beep
+(setq tags-revert-without-query 1)	       ; automatically reload tags files
 ;; ================================================
 
 ;; ================================================
