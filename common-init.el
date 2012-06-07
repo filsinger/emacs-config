@@ -278,6 +278,7 @@
 ;; ================================================
 ;; Set tab and substatement indentation settings for c/c++
 ;; ================================================
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode)) ; open .h files in c++-mode
 (add-hook 'c-mode-common-hook (lambda ()
   ;; my customizations for all of c-mode, c++-mode, objc-mode, java-mode
   (c-set-offset 'substatement-open 0)
