@@ -121,6 +121,7 @@
 (setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell")    ; use aspell instead of ispell
 (setq visible-bell t)			       ; disable the system beep
 (setq tags-revert-without-query 1)	       ; automatically reload tags files
+(menu-bar-mode -1)			       ; disable the menu bar
 ;; ================================================
 
 ;; ================================================
@@ -134,6 +135,10 @@
 (global-set-key "\C-a" `align-entire)       ; bind C-a to align-entire
 (global-set-key "\M-s" `sort-lines)         ; bind M-s to sort-lines
 (global-set-key (kbd "C-S-s") 'tags-apropos) ; tags apropos
+(global-unset-key (kbd "C-."))
+(global-unset-key (kbd "C-,"))
+(global-set-key (kbd "C-.") 'next-multiframe-window) ; use C-. to move to the next window
+(global-set-key (kbd "C-,") 'previous-multiframe-window) ; use C-, to move to the previous window
 ;; ================================================
 
 
