@@ -1,6 +1,6 @@
 [submodule "submodules/auto-complete"]
 	path = submodules/auto-complete
-	url = https://github.com/m2ym/auto-complete
+	url = git@github.com:filsinger/auto-complete.git
 [submodule "submodules/auto-complete-clang"]
 	path = submodules/auto-complete-clang
 	url = https://github.com/brianjcj/auto-complete-clang.git
