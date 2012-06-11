@@ -144,11 +144,21 @@
 (when (>= emacs-major-version 23) (global-linum-mode 1)) ; enable line numbers on emacs 23
 (setq linum-format "  %d ")                    ; set the line number formatting
 (setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell")    ; use aspell instead of ispell
-(setq visible-bell t)			       ; disable the system beep
 (setq tags-revert-without-query 1)	       ; automatically reload tags files
 (menu-bar-mode -1)			       ; disable the menu bar
 (setq compilation-scroll-output 1)	       ; scroll the output when compiling
 ;; ================================================
+
+;; ================================================
+;; Visual Bell (flash the mode-line instead of an audio bell)
+;; ================================================
+(setq visible-bell nil)
+(setq ring-bell-function `(lambda ()
+			    (set-face-background 'mode-line "#FF0000") (set-face-foreground 'mode-line "#000000")
+			    (sit-for 0.1)
+			    (set-face-background 'mode-line "OliveDrab3") (set-face-foreground 'mode-line "grey22")))
+;; ================================================
+
 
 ;; ================================================
 ;; Key Configurations
