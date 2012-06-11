@@ -61,3 +61,6 @@
 [submodule "submodules/smarttabs"]
 	path = submodules/smarttabs
 	url = git://github.com/jcsalomon/smarttabs.git
+[submodule "submodules/powerline"]
+	path = submodules/powerline
+	url = https://github.com/jonathanchu/emacs-powerline.git

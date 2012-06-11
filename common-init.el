@@ -62,6 +62,31 @@
 
 
 ;; ================================================
+;; Powerline
+;; ================================================
+(add-to-list 'load-path (concat emacs-submodules-path "powerline/"))
+(require 'powerline)
+;; ================================================
+
+
+;; ================================================
+;; which-function in the header line
+;; ================================================
+(load "which-func")
+(which-func-mode)
+(delete (assoc 'which-func-mode mode-line-format) mode-line-format)
+(setq which-func-header-line-format
+              '(which-func-mode
+                (" " which-func-format
+                 )))
+(defadvice which-func-ff-hook (after header-line activate)
+  (when which-func-mode
+    (delete (assoc 'which-func-mode mode-line-format) mode-line-format)
+    (setq header-line-format which-func-header-line-format)))
+;; ================================================
+
+
+;; ================================================
 ;; Load auto-complete
 ;; ================================================
 (defvar emacs-auto-complete-path (concat emacs-submodules-path "auto-complete/"))
