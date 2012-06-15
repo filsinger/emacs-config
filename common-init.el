@@ -12,22 +12,11 @@
 ;; ================================================
 ;; Theme
 ;; ================================================
-(add-to-list 'load-path (concat emacs-sync-path "/custom/themes/"))
-(require 'color-theme)
-(require 'jason-theme)
-(color-theme-initialize)
-(jason-theme)
+(add-to-list 'custom-theme-load-path (concat emacs-sync-path "/custom/themes/"))
+(load-theme 'nikita t)
 
-;; Set the color values for ido-mode
-(custom-set-faces
- '(ido-subdir ((t (:foreground "#32dcdc"))))            ;; Face used by ido for highlighting subdirs in the alternatives.
- '(ido-first-match ((t (:foreground "#0072eb"))))       ;; Face used by ido for highlighting first match.
- '(ido-only-match ((t (:foreground "#05ff80"))))        ;; Face used by ido for highlighting only match.
- '(ido-indicator ((t (:foreground "#ffffff"))))         ;; Face used by ido for highlighting its indicators (don't actually use this)
- '(ido-incomplete-regexp ((t (:foreground "#ffffff")))) ;; Ido face for indicating incomplete regexps. (don't use this either)
- '(which-func ((t (:foreground "#05ff80"))))
-)
 ;; ================================================
+
 
 ;; ================================================
 ;; smart-tabs-mode (https://github.com/jcsalomon/smarttabs)
@@ -65,7 +54,7 @@
 ;; Powerline
 ;; ================================================
 (add-to-list 'load-path (concat emacs-submodules-path "powerline/"))
-(require 'powerline)
+(when window-system (require 'powerline))
 ;; ================================================
 
 
@@ -154,9 +143,11 @@
 ;; ================================================
 (setq visible-bell nil)
 (setq ring-bell-function `(lambda ()
-			    (set-face-background 'mode-line "#FF0000") (set-face-foreground 'mode-line "#000000")
+			    (let ( (mode-line-bell-orig-bg (face-background 'mode-line))
+			    	   (mode-line-bell-orig-fg (face-foreground 'mode-line)))
+			    (set-face-background 'mode-line "#ED3B3B") (set-face-foreground 'mode-line "#7F2020")
 			    (sit-for 0.1)
-			    (set-face-background 'mode-line "OliveDrab3") (set-face-foreground 'mode-line "grey22")))
+			    (set-face-background 'mode-line mode-line-bell-orig-bg) (set-face-foreground 'mode-line mode-line-bell-orig-fg))))
 ;; ================================================
 
 
