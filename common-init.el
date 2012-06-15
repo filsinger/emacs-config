@@ -377,6 +377,14 @@
 
 
 ;; ================================================
+;; rainbow-mode.el (http://julien.danjou.info/software/rainbow-mode)
+;; ================================================
+(add-to-list 'load-path (concat emacs-submodules-path "rainbow-mode/"))
+(require 'rainbow-mode)
+;; ================================================
+
+
+;; ================================================
 ;; Load platform specific plugins
 ;; ================================================
 (if (or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))

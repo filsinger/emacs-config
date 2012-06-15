@@ -63,4 +63,7 @@
 	url = git://github.com/jcsalomon/smarttabs.git
 [submodule "submodules/powerline"]
 	path = submodules/powerline
-	url = https://github.com/jonathanchu/emacs-powerline.git
+	url = git@github.com:filsinger/emacs-powerline.git
+[submodule "submodules/rainbow-mode"]
+	path = submodules/rainbow-mode
+	url = git://github.com/emacsmirror/rainbow-mode.git
