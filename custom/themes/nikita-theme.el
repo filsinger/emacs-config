@@ -70,7 +70,7 @@
       (nikita-blue+02 "#BECAED")
 
 
-      (nikita-yellow-01   "#7F7E20")
+      (nikita-yellow-02   "#7F7E20")
       (nikita-yellow-01   "#B2B02D")
       (nikita-yellow      "#EDEA3B")
       (nikita-yellow+01   "#EDEB77")
@@ -123,6 +123,14 @@
    `(ido-only-match ((,class (:foreground ,nikita-cyan))))
    `(ido-subdir ((,class (:foreground ,nikita-cyan))))
 
+
+   ;; helm
+   `(helm-header ((,class (:foreground ,nikita-green :background ,nikita-grey-01 :underline nil))))
+   `(helm-source-header ((,class (:foreground ,nikita-green :background ,nikita-green-bg :weight bold))))
+   `(helm-selection ((,class (:foreground ,nikita-blue+02 :background ,nikita-bg+02))))
+   `(helm-selection-line ((,class (:foreground ,nikita-blue+02 :background ,nikita-bg+02))))
+   `(helm-visible-mark ((,class (:foreground ,nikita-bg :background ,nikita-yellow-02))))
+   `(helm-candidate-number ((,class (:foreground ,nikita-green :background ,nikita-bg-01))))
 
 
    ;;; custom theme variables
