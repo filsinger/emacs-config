@@ -55,7 +55,7 @@
 ;; ================================================
 ;; which-function in the header line
 ;; ================================================
-(which-func-mode)
+(which-function-mode)
 (delete (assoc 'which-func-mode mode-line-format) mode-line-format)
 (setq which-func-header-line-format
               '(which-func-mode
