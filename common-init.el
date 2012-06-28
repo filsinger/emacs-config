@@ -4,24 +4,27 @@
 (defvar emacs-sync-path (file-name-directory load-file-name))
 (defvar emacs-submodules-path (concat emacs-sync-path "/submodules/"))
 ; add various load paths
-(add-to-list 'load-path emacs-submodules-path)
 (add-to-list 'load-path (concat emacs-sync-path "/custom/"))
-;; ================================================
 
+;; add all subdirectories under the "submodules" folder  to the load-path list
+(let ((submodules-base emacs-submodules-path))
+  (dolist (f (directory-files submodules-base))
+    (let ((submodule-name (concat submodules-base "/" f)))
+      (when (and (file-directory-p submodule-name) (not (equal f "..")) (not (equal f ".")))
+        (add-to-list 'load-path submodule-name)))))
+;; ================================================
 
 ;; ================================================
 ;; Theme
 ;; ================================================
 (add-to-list 'custom-theme-load-path (concat emacs-sync-path "/custom/themes/"))
 (load-theme 'nikita t)
-
 ;; ================================================
 
 
 ;; ================================================
 ;; smart-tabs-mode (https://github.com/jcsalomon/smarttabs)
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "smarttabs/"))
 (require 'smart-tabs-mode)
 ;; C/C++
 (add-hook 'c-mode-hook 'smart-tabs-mode-enable)
@@ -43,16 +46,8 @@
 
 
 ;; ================================================
-;; Popup
-;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "popup/"))
-;; ================================================
-
-
-;; ================================================
 ;; Powerline
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "powerline/"))
 (when window-system (require 'powerline))
 ;; ================================================
 
@@ -60,7 +55,6 @@
 ;; ================================================
 ;; which-function in the header line
 ;; ================================================
-(load "which-func")
 (which-func-mode)
 (delete (assoc 'which-func-mode mode-line-format) mode-line-format)
 (setq which-func-header-line-format
@@ -75,24 +69,21 @@
 
 
 ;; ================================================
-;; Load auto-complete
-;; ================================================
-(defvar emacs-auto-complete-path (concat emacs-submodules-path "auto-complete/"))
-(add-to-list 'load-path emacs-auto-complete-path)
-(require 'auto-complete-config)
-
-;; ================================================
 ;; Autocomplete
 ;; ================================================
-(add-to-list 'ac-dictionary-directories (concat emacs-sync-path "custom/ac-dict"))
-(add-to-list 'ac-dictionary-directories (concat emacs-auto-complete-path "dict"))
-(ac-config-default)
-(define-globalized-minor-mode real-global-auto-complete-mode
-  auto-complete-mode (lambda ()
-                       (if (not (minibufferp (current-buffer)))
-                         (auto-complete-mode 1))
-                       ))
-(real-global-auto-complete-mode t)
+(eval-after-load "auto-complete-config"
+  '(progn
+     (add-to-list 'ac-dictionary-directories (concat emacs-sync-path "custom/ac-dict"))
+     (add-to-list 'ac-dictionary-directories (concat emacs-submodules-path "auto-complete/dict"))
+     (ac-config-default)
+     (define-globalized-minor-mode real-global-auto-complete-mode
+       auto-complete-mode (lambda ()
+			    (if (not (minibufferp (current-buffer)))
+				(auto-complete-mode 1))
+			    ))
+     (real-global-auto-complete-mode t)
+     ))
+(require 'auto-complete-config)
 ;; ================================================
 
 ;; ================================================
@@ -131,7 +122,7 @@
 (setq c-basic-offset 4)                        ; tab width
 (when (>= emacs-major-version 23) (global-linum-mode 1)) ; enable line numbers on emacs 23
 (setq linum-format "  %d ")                    ; set the line number formatting
-(setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell")    ; use aspell instead of ispell
+(when (eq system-type 'darwin) (setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell"))    ; use aspell instead of ispell
 (setq tags-revert-without-query 1)	       ; automatically reload tags files
 (menu-bar-mode -1)			       ; disable the menu bar
 (setq compilation-scroll-output 1)	       ; scroll the output when compiling
@@ -171,8 +162,9 @@
 ;; ================================================
 ;; Highlight-Symbol
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "highlight-symbol/"))
-(require 'highlight-symbol)
+(autoload 'highlight-symbol-at-point "highlight-symbol" "Highlight symbol" t)
+(autoload 'highlight-symbol-next "highlight-symbol" "Highlight symbol" t)
+(autoload 'highlight-symbol-prev "highlight-symbol" "Highlight symbol" t)
 (global-set-key [(control f3)] 'highlight-symbol-at-point)
 (global-set-key [f3] 'highlight-symbol-next)
 (global-set-key [(shift f3)] 'highlight-symbol-prev)
@@ -183,7 +175,6 @@
 ;; ================================================
 ;; Helm
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "helm/"))
 (require 'helm-config)
 (global-set-key "\C-x\C-a" 'helm-mini)
 ;; ================================================
@@ -191,8 +182,7 @@
 ;; ================================================
 ;; ace-jump-mode
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "ace-jump-mode/"))
-(require 'ace-jump-mode)
+(autoload 'ace-jump-mode "ace-jump-mode" "Ace Jump Mode" t)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 ;; ================================================
 
@@ -200,7 +190,6 @@
 ;; ================================================
 ;; ido-mode
 ;; ================================================
-(require 'ido)
 ;; completeting find file using ido
 (defun my-ido-find-tag ()
     "Find a tag using ido"
@@ -219,11 +208,9 @@
 ;; ================================================
 ;; Lua Mode
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "/lua-mode"))
 (setq auto-mode-alist (cons '("\\.lua$" . lua-mode) auto-mode-alist))
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
 (add-hook 'lua-mode-hook 'turn-on-font-lock)
-(add-hook 'lua-mode-hook 'hs-minor-mode)
 ;; ================================================
 
 
@@ -237,28 +224,23 @@
 ;; ================================================
 ;; Markdown-mode
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "/markdown-mode"))
 (setq auto-mode-alist (cons '("\\.\\(md\\|markdown\\)$" . markdown-mode) auto-mode-alist))
 (autoload 'markdown-mode "markdown-mode" "Markdown editing mode." t)
 (add-hook 'markdown-mode-hook 'turn-on-font-lock)
-(add-hook 'markdown-mode-hook 'hs-minor-mode)
 ;; ================================================
 
 ;; ================================================
 ;; YASnippit
 ;; ================================================
-(defvar yasnippet-path (concat  emacs-submodules-path "/yasnippet/"))
-(add-to-list 'load-path yasnippet-path)
-;; custom dropdown-list colours
-(defface dropdown-list-face '((t (:background "lightgray" :foreground "black"))) "*Bla." :group 'dropdown-list)
-(defface dropdown-list-selection-face '((t (:background "steelblue" :foreground "white"))) "*Bla." :group 'dropdown-list)
 ;; load yasnippet
 (require 'yasnippet)
-(setq yas/snippet-dirs (list (concat yasnippet-path "snippets")))
-;; add a hook to initialize yasnippets after the init file is loaded (so that
-;; other submodules can set snippet paths
+;; add a hook to initialize yasnippets after the init file is loaded (so that other submodules can set snippet paths
 (add-hook 'after-init-hook
 	  (lambda ()
+	    ;; custom dropdown-list colours
+	    (defface dropdown-list-face '((t (:background "lightgray" :foreground "black"))) "*Bla." :group 'dropdown-list)
+	    (defface dropdown-list-selection-face '((t (:background "steelblue" :foreground "white"))) "*Bla." :group 'dropdown-list)
+	    (setq yas/snippet-dirs (list (concat emacs-submodules-path "/yasnippet/snippets")))
 	    (yas/global-mode 1)
 	    (setq yas/prompt-functions '(yas/dropdown-prompt))
 	    ))
@@ -268,7 +250,6 @@
 ;; ================================================
 ;; Clang autocomplete
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "/auto-complete-clang/"))
 (require 'auto-complete-clang)
 (setq ac-auto-start nil)
 (setq ac-quick-help-delay 0.5)
@@ -294,7 +275,6 @@
 ;; git support (magit)
 ;; ================================================
 (when (>= emacs-major-version 23) (progn
-  (add-to-list 'load-path (concat emacs-submodules-path "/magit/"))
   (require 'magit)
   (setq auto-mode-alist (cons '("\\.git\\(modules\\|config\\)$" . conf-mode) auto-mode-alist))
 ))
@@ -338,7 +318,6 @@
 ;; ================================================
 ;; Predictive Mode
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "/predictive-mode/"))
 (autoload 'predictive-mode "predictive" "predictive" t)
 (set-default 'predictive-auto-add-to-dict t)
 (setq predictive-main-dict 'jdf-dictionary
@@ -352,15 +331,13 @@
 ;; ================================================
 ;; expand-region (https://github.com/magnars/expand-region.el) support
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "/expand-region/"))
-(require 'expand-region)
+(autoload 'er/expand-region "expand-region" "Expand region" t)
 (global-set-key (kbd "C-@") 'er/expand-region)
 ;; ================================================
 
 ;; ================================================
 ;; regpop.el (https://github.com/filsinger/regpop.el)
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "regpop/"))
 (require 'regpop)
 ;; ================================================
 
@@ -368,7 +345,6 @@
 ;; ================================================
 ;; rainbow-mode.el (http://julien.danjou.info/software/rainbow-mode)
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "rainbow-mode/"))
 (require 'rainbow-mode)
 ;; ================================================
 
@@ -376,9 +352,10 @@
 ;; ================================================
 ;; mark-multiple (https://github.com/magnars/mark-multiple.el) support
 ;; ================================================
-(add-to-list 'load-path (concat emacs-submodules-path "/mark-multiple/"))
-(require 'inline-string-rectangle)
-(require 'mark-more-like-this)
+(autoload 'inline-string-rectangle "inline-string-rectangle" "Inline string rectangle" t)
+(autoload 'mark-previous-like-this "mark-more-like-this" "Mark more like this" t )
+(autoload 'mark-next-like-this "mark-more-like-this" "Mark more like this" t )
+(autoload 'mark-more-like-this "mark-more-like-this" "Mark more like this" t )
 (global-set-key (kbd "C-x r t") 'inline-string-rectangle)
 (global-set-key (kbd "C-<") 'mark-previous-like-this)
 (global-set-key (kbd "C->") 'mark-next-like-this)
