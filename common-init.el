@@ -1,9 +1,9 @@
 ;; ================================================
 ;; Load Paths
 ;; ================================================
+(defvar emacs-sync-path (file-name-directory load-file-name))
 (defvar emacs-submodules-path (concat emacs-sync-path "/submodules/"))
 ; add various load paths
-(add-to-list 'load-path emacs-sync-path)
 (add-to-list 'load-path emacs-submodules-path)
 (add-to-list 'load-path (concat emacs-sync-path "/custom/"))
 ;; ================================================
@@ -45,8 +45,7 @@
 ;; ================================================
 ;; Popup
 ;; ================================================
-(defvar emacs-popup-path (concat emacs-submodules-path "popup/"))
-(add-to-list 'load-path emacs-popup-path)
+(add-to-list 'load-path (concat emacs-submodules-path "popup/"))
 ;; ================================================
 
 
@@ -340,7 +339,6 @@
 ;; Predictive Mode
 ;; ================================================
 (add-to-list 'load-path (concat emacs-submodules-path "/predictive-mode/"))
-(add-to-list 'load-path (concat emacs-sync-path "/custom/"))
 (autoload 'predictive-mode "predictive" "predictive" t)
 (set-default 'predictive-auto-add-to-dict t)
 (setq predictive-main-dict 'jdf-dictionary
