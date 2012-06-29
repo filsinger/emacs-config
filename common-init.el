@@ -232,15 +232,15 @@
 ;; ================================================
 ;; YASnippit
 ;; ================================================
+;; custom dropdown-list colours
+(defface dropdown-list-face '((t (:background "lightgray" :foreground "black"))) "*Bla." :group 'dropdown-list)
+(defface dropdown-list-selection-face '((t (:background "steelblue" :foreground "white"))) "*Bla." :group 'dropdown-list)
 ;; load yasnippet
 (require 'yasnippet)
+(setq yas/snippet-dirs (list (concat emacs-submodules-path "/yasnippet/snippets")))
 ;; add a hook to initialize yasnippets after the init file is loaded (so that other submodules can set snippet paths
 (add-hook 'after-init-hook
 	  (lambda ()
-	    ;; custom dropdown-list colours
-	    (defface dropdown-list-face '((t (:background "lightgray" :foreground "black"))) "*Bla." :group 'dropdown-list)
-	    (defface dropdown-list-selection-face '((t (:background "steelblue" :foreground "white"))) "*Bla." :group 'dropdown-list)
-	    (setq yas/snippet-dirs (list (concat emacs-submodules-path "/yasnippet/snippets")))
 	    (yas/global-mode 1)
 	    (setq yas/prompt-functions '(yas/dropdown-prompt))
 	    ))
