@@ -126,6 +126,7 @@
 (setq tags-revert-without-query 1)	       ; automatically reload tags files
 (menu-bar-mode -1)			       ; disable the menu bar
 (setq compilation-scroll-output 1)	       ; scroll the output when compiling
+(setq tramp-default-method "ssh")	       ; use "ssh" in trap by default
 ;; ================================================
 
 ;; ================================================
