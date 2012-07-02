@@ -350,6 +350,18 @@
 
 
 ;; ================================================
+;; autopair.el (https://github.com/capitaomorte/autopair)
+;; ================================================
+(require 'autopair)
+(autopair-global-mode)
+(add-hook 'c++-mode-hook
+          #'(lambda ()
+              (push '(?< . ?>)
+                    (getf autopair-extra-pairs :code))))
+;; ================================================
+
+
+;; ================================================
 ;; mark-multiple (https://github.com/magnars/mark-multiple.el) support
 ;; ================================================
 (autoload 'inline-string-rectangle "inline-string-rectangle" "Inline string rectangle" t)
