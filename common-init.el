@@ -128,6 +128,7 @@
 (setq compilation-scroll-output 1)	       ; scroll the output when compiling
 (setq tramp-default-method "ssh")	       ; use "ssh" in trap by default
 (delete-selection-mode t)		       ; delete current slection when you start typing
+(show-paren-mode t)			       ; enable show-paren-mode to display matching parentheses
 ;; ================================================
 
 
