@@ -122,13 +122,30 @@
 (setq c-basic-offset 4)                        ; tab width
 (when (>= emacs-major-version 23) (global-linum-mode 1)) ; enable line numbers on Emacs 23
 (setq linum-format "  %d ")                    ; set the line number formatting
-(when (eq system-type 'darwin) (setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell"))    ; use Aspell instead of Ispell
 (setq tags-revert-without-query 1)	       ; automatically reload tags files
 (menu-bar-mode -1)			       ; disable the menu bar
 (setq compilation-scroll-output 1)	       ; scroll the output when compiling
 (setq tramp-default-method "ssh")	       ; use "ssh" in trap by default
 (delete-selection-mode t)		       ; delete current selection when you start typing
 (show-paren-mode t)			       ; enable show-paren-mode to display matching parentheses
+;; ================================================
+
+
+;; ================================================
+;; ispell (use aspell instead of ispell)
+;; ================================================
+(let ((aspell-path nil))
+  (cond
+   ;; test for osx/posix
+   ((or (eq system-type 'darwin))
+    (setq aspell-path "/usr/local/bin/aspell"))
+   ((or (eq system-type 'gnu) (eq system-type 'gnu/linux))
+    (setq aspell-path "/usr/bin/aspell"))
+   ;; test for windows
+   ((or (eq system-type 'windows-nt) (eq system-type 'cygwin))
+    (setq aspell-path "c:/bin/aspell/aspell.exe")))
+  ;; set the ispell-program-name if aspell is executable
+  (when (file-executable-p aspell-path) (setq-default ispell-program-name aspell-path)))
 ;; ================================================
 
 
