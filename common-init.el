@@ -395,6 +395,21 @@
 (global-set-key (kbd "C-M-m") 'mark-more-like-this) ; like the other two, but takes an argument (negative is previous)
 ;; ================================================
 
+;; ================================================
+;; eval and replace
+;; ================================================
+(defun fc-eval-and-replace ()
+  "Replace the preceding sexp with its value."
+  (interactive)
+  (backward-kill-sexp)
+  (condition-case nil
+      (prin1 (eval (read (current-kill 0)))
+             (current-buffer))
+    (error (message "Invalid expression")
+           (insert (current-kill 0)))))
+(global-set-key (kbd "C-c C-e") 'fc-eval-and-replace)
+;; ================================================
+
 
 ;; ================================================
 ;; Load platform specific plugins
