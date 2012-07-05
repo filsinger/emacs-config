@@ -407,7 +407,7 @@
              (current-buffer))
     (error (message "Invalid expression")
            (insert (current-kill 0)))))
-(global-set-key (kbd "C-c C-e") 'fc-eval-and-replace)
+(global-set-key (kbd "C-c e") 'fc-eval-and-replace)
 ;; ================================================
 
 
