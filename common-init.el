@@ -127,7 +127,9 @@
 (menu-bar-mode -1)			       ; disable the menu bar
 (setq compilation-scroll-output 1)	       ; scroll the output when compiling
 (setq tramp-default-method "ssh")	       ; use "ssh" in trap by default
+(delete-selection-mode t)		       ; delete current slection when you start typing
 ;; ================================================
+
 
 ;; ================================================
 ;; Visual Bell (flash the mode-line instead of an audio bell)
