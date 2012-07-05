@@ -93,19 +93,19 @@
   (progn
     (when (eq system-type 'darwin)
       (progn
-	(set-frame-font "Menlo")                             ; Set the default font to 'Menlo' on OSX (an alternitive on windows might be 'https://github.com/andreberg/Meslo-Font')
+	(set-frame-font "Menlo")                             ; Set the default font to 'Menlo' on OSX (an alternative on windows might be 'https://github.com/andreberg/Meslo-Font')
 	(define-key global-map [ns-drag-file] 'ns-find-file) ; OSX: Drag an drop will open a new file (not append)
 	))
     (tool-bar-mode -1)                         ; Disable the toolbar
-    ;;(scroll-bar-mode -1)                     ; Disable the scrollbar
+    ;;(scroll-bar-mode -1)                     ; Disable the scroll-bar
     ))
 
 (normal-erase-is-backspace-mode 1)             ; fix the delete key so that it deletes instead of backspacing (this seems to be happening when I SSH into my one of my Linux boxes)
-(when (eq system-type 'darwin) (add-hook 'before-save-hook 'delete-trailing-whitespace)) ; delete trailing whitespace on save (only on OSX,  I dont want to enable this at work yet).
+(when (eq system-type 'darwin) (add-hook 'before-save-hook 'delete-trailing-whitespace)) ; delete trailing white-space on save (only on OSX,  I don't want to enable this at work yet).
 (setq inhibit-splash-screen t)                 ; Disable the splash screen
 (setq-default transient-mark-mode t)           ; Selection highlighting
 (setq-default truncate-lines t)                ; Disable line wrapping
-(setq inhibit-startup-echo-area-message t)     ; Disable startup message
+(setq inhibit-startup-echo-area-message t)     ; Disable start-up message
 (setq tab-always-indent 'complete)             ; Smart tabs
 (setq ns-pop-up-frames nil)                    ; open files in current window
 (global-font-lock-mode t)                      ; activate font-lock-mode (syntax coloring)
@@ -120,14 +120,14 @@
 ;;(setq indent-tabs-mode nil)                   ; use spaces instead of tabs for indentation
 (setq tab-width 4)                             ; tab width
 (setq c-basic-offset 4)                        ; tab width
-(when (>= emacs-major-version 23) (global-linum-mode 1)) ; enable line numbers on emacs 23
+(when (>= emacs-major-version 23) (global-linum-mode 1)) ; enable line numbers on Emacs 23
 (setq linum-format "  %d ")                    ; set the line number formatting
-(when (eq system-type 'darwin) (setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell"))    ; use aspell instead of ispell
+(when (eq system-type 'darwin) (setq-default ispell-program-name "/usr/local/Cellar/aspell/0.60.6.1/bin/aspell"))    ; use Aspell instead of Ispell
 (setq tags-revert-without-query 1)	       ; automatically reload tags files
 (menu-bar-mode -1)			       ; disable the menu bar
 (setq compilation-scroll-output 1)	       ; scroll the output when compiling
 (setq tramp-default-method "ssh")	       ; use "ssh" in trap by default
-(delete-selection-mode t)		       ; delete current slection when you start typing
+(delete-selection-mode t)		       ; delete current selection when you start typing
 (show-paren-mode t)			       ; enable show-paren-mode to display matching parentheses
 ;; ================================================
 
@@ -194,7 +194,7 @@
 ;; ================================================
 ;; ido-mode
 ;; ================================================
-;; completeting find file using ido
+;; completing find file using ido
 (defun my-ido-find-tag ()
     "Find a tag using ido"
     (interactive)
@@ -286,13 +286,13 @@
 
 
 ;; ================================================
-;; Set tab and substatement indentation settings for c/c++
+;; Set tab and sub-statement indentation settings for c/c++
 ;; ================================================
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode)) ; open .h files in c++-mode
 (add-hook 'c-mode-common-hook (lambda ()
-  ;; my customizations for all of c-mode, c++-mode, objc-mode, java-mode
+  ;; my customization for all of c-mode, c++-mode, objc-mode, java-mode
   (c-set-offset 'substatement-open 0)
-  ;; other customizations can go here
+  ;; other customization can go here
   (setq c++-tab-always-indent t)
   (setq c-basic-offset 4)                  ;; Default is 2
   (setq c-indent-level 4)                  ;; Default is 2
@@ -307,7 +307,7 @@
 
 
 ;; ================================================
-;; Set tab and substatement indentation settings for ruby
+;; Set tab and sub-statement indentation settings for ruby
 ;; ================================================
 (add-hook 'ruby-mode-hook (lambda ()
   (setq tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60))
