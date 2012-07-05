@@ -399,9 +399,8 @@
 ;; ================================================
 ;; Load platform specific plugins
 ;; ================================================
-(if (or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
-    (load "platform-posix.el"))
-
-(if (or (eq system-type 'windows-nt) (eq system-type 'cygwin))
-    (load "platform-windows.el"))
+(cond ((or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
+       (load "platform-posix.el"))
+      ((or (eq system-type 'windows-nt) (eq system-type 'cygwin))
+       (load "platform-windows.el")))
 ;; ================================================
