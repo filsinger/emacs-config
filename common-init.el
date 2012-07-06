@@ -1,4 +1,12 @@
 ;; ================================================
+;; Turn off mouse interface early in startup to avoid momentary display
+;; ================================================
+(when window-system
+  (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
+    (when (fboundp mode) (funcall mode -1))))
+;; ================================================
+
+;; ================================================
 ;; Load Paths
 ;; ================================================
 (defvar emacs-sync-path (file-name-directory load-file-name))
@@ -89,15 +97,10 @@
 ;; ================================================
 ;; Usage configuration
 ;; ================================================
-(if window-system
+(when (and window-system (eq system-type 'darwin))
   (progn
-    (when (eq system-type 'darwin)
-      (progn
-	(set-frame-font "Menlo")                             ; Set the default font to 'Menlo' on OSX (an alternative on windows might be 'https://github.com/andreberg/Meslo-Font')
-	(define-key global-map [ns-drag-file] 'ns-find-file) ; OSX: Drag an drop will open a new file (not append)
-	))
-    (tool-bar-mode -1)                         ; Disable the toolbar
-    ;;(scroll-bar-mode -1)                     ; Disable the scroll-bar
+    (set-frame-font "Menlo")                             ; Set the default font to 'Menlo' on OSX (an alternative on windows might be 'https://github.com/andreberg/Meslo-Font')
+    (define-key global-map [ns-drag-file] 'ns-find-file) ; OSX: Drag an drop will open a new file (not append)
     ))
 
 (normal-erase-is-backspace-mode 1)             ; fix the delete key so that it deletes instead of backspacing (this seems to be happening when I SSH into my one of my Linux boxes)
@@ -123,7 +126,6 @@
 (when (>= emacs-major-version 23) (global-linum-mode 1)) ; enable line numbers on Emacs 23
 (setq linum-format "  %d ")                    ; set the line number formatting
 (setq tags-revert-without-query 1)	       ; automatically reload tags files
-(menu-bar-mode -1)			       ; disable the menu bar
 (setq compilation-scroll-output 1)	       ; scroll the output when compiling
 (setq tramp-default-method "ssh")	       ; use "ssh" in trap by default
 (delete-selection-mode t)		       ; delete current selection when you start typing
