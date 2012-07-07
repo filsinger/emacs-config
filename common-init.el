@@ -141,6 +141,7 @@
 (column-number-mode 1)                    ; Activate column-number-mode
 (transient-mark-mode 1)			          ; Selection highlighting
 (subword-mode 1)			              ; enable subword mode
+(ido-mode 1)							  ; enable ido mode
 
 (when (>= emacs-major-version 23)	      ; minor-modes to enable in Emacs 23+
   (progn
@@ -208,7 +209,6 @@
 ;; ido-mode
 ;; ================================================
 (autoload 'my-ido-find-tag "my-ido-find-tag" "Completing find file using ido" t)
-(ido-mode)
 ;; ================================================
 
 
