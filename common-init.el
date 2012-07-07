@@ -61,7 +61,7 @@
 ;; ================================================
 ;; which-function in the header line
 ;; ================================================
-(which-function-mode)
+(which-function-mode 1)
 (delete (assoc 'which-func-mode mode-line-format) mode-line-format)
 (setq which-func-header-line-format
               '(which-func-mode
@@ -97,37 +97,55 @@
 ;; ================================================
 (when (and window-system (eq system-type 'darwin))
   (progn
-    (set-frame-font "Menlo")                             ; Set the default font to 'Menlo' on OSX (an alternative on windows might be 'https://github.com/andreberg/Meslo-Font')
-    (define-key global-map [ns-drag-file] 'ns-find-file) ; OSX: Drag an drop will open a new file (not append)
+    (set-frame-font "Menlo")                                 ; Set the default font to 'Menlo' on OSX (an alternative on windows might be 'https://github.com/andreberg/Meslo-Font')
+    (define-key global-map [ns-drag-file] 'ns-find-file)     ; OSX: Drag an drop will open a new file (not append)
+    (setq ns-pop-up-frames nil)                              ; open files in current window
+    (add-hook 'before-save-hook 'delete-trailing-whitespace) ; delete trailing white-space on save (only on OSX,  I don't want to enable this at work yet).
     ))
 
-(normal-erase-is-backspace-mode 1)             ; fix the delete key so that it deletes instead of backspacing (this seems to be happening when I SSH into my one of my Linux boxes)
-(when (eq system-type 'darwin) (add-hook 'before-save-hook 'delete-trailing-whitespace)) ; delete trailing white-space on save (only on OSX,  I don't want to enable this at work yet).
-(setq inhibit-splash-screen t)                 ; Disable the splash screen
-(setq-default transient-mark-mode t)           ; Selection highlighting
-(setq-default truncate-lines t)                ; Disable line wrapping
-(setq inhibit-startup-echo-area-message t)     ; Disable start-up message
-(setq tab-always-indent 'complete)             ; Smart tabs
-(setq ns-pop-up-frames nil)                    ; open files in current window
-(global-font-lock-mode t)                      ; activate font-lock-mode (syntax coloring)
-(column-number-mode t)                         ; Activate column-number-mode
-(setq x-select-enable-clipboard t)             ; use the system clipboard
-;; backup
-(setq backup-inhibited t)                      ; disable backup
-(setq make-backup-files nil)                   ; disable backup files
-(setq auto-save-default nil)                   ; disable auto save
-;; tabs
-;;(setq-default indent-tabs-mode nil)           ; use spaces instead of tabs for indentation
-;;(setq indent-tabs-mode nil)                   ; use spaces instead of tabs for indentation
-(setq tab-width 4)                             ; tab width
-(setq c-basic-offset 4)                        ; tab width
-(when (>= emacs-major-version 23) (global-linum-mode 1)) ; enable line numbers on Emacs 23
-(setq linum-format "  %d ")                    ; set the line number formatting
-(setq tags-revert-without-query 1)	       ; automatically reload tags files
-(setq compilation-scroll-output 1)	       ; scroll the output when compiling
-(setq tramp-default-method "ssh")	       ; use "ssh" in trap by default
-(delete-selection-mode t)		       ; delete current selection when you start typing
-(show-paren-mode t)			       ; enable show-paren-mode to display matching parentheses
+;; startup supression
+(setq-default
+ inhibit-splash-screen t                  ; Disable the splash screen
+ inhibit-startup-echo-area-message t      ; Disable echo area message
+ inhibit-startup-screen t                 ; Disable the startup screen
+
+ ;; backup
+ backup-inhibited t                       ; disable backup
+ make-backup-files nil                    ; disable backup files
+ auto-save-default nil                    ; disable auto save
+ auto-save-list-file-name nil             ; disable .saves files
+
+ ;; tabs and lines
+ compilation-scroll-output 1              ; scroll the output when compiling
+ tab-always-indent 'complete              ; Smart tabs
+ truncate-lines t                         ; Disable line wrapping
+ tab-width 4
+ c-basic-offset 4
+ c-indent-level 4
+ tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120)
+ c++-tab-always-indent t
+ indent-tabs-mode t                       ; use spaces only if nil
+
+
+ ;; systemp/misc
+ x-select-enable-clipboard 1              ; use the system clipboard
+ tags-revert-without-query 1	          ; automatically reload tags files
+ tramp-default-method "ssh"				  ; use "ssh" in trap by default
+ )
+
+;; minor modes
+(normal-erase-is-backspace-mode 1)        ; fix the delete key so that it deletes instead of backspacing (this seems to be happening when I SSH into my one of my Linux boxes)
+(delete-selection-mode 1)                 ; delete current selection when you start typing
+(show-paren-mode 1)	                      ; enable show-paren-mode to display matching parentheses
+(global-font-lock-mode 1)                 ; activate font-lock-mode (syntax coloring)
+(column-number-mode 1)                    ; Activate column-number-mode
+(transient-mark-mode 1)			          ; Selection highlighting
+(subword-mode 1)			              ; enable subword mode
+
+(when (>= emacs-major-version 23)	      ; minor-modes to enable in Emacs 23+
+  (progn
+    (global-linum-mode 1)	              ; enable line numbers
+    (setq linum-format "  %d ")))         ; set the line number formatting
 ;; ================================================
 
 
@@ -152,8 +170,8 @@
 ;; ================================================
 ;; Visual Bell (flash the mode-line instead of an audio bell)
 ;; ================================================
-(setq visible-bell nil)
-(setq ring-bell-function `(lambda ()
+(setq visible-bell nil
+      ring-bell-function `(lambda ()
 			    (let ( (mode-line-bell-orig-bg (face-background 'mode-line))
 			    	   (mode-line-bell-orig-fg (face-foreground 'mode-line)))
 			    (set-face-background 'mode-line "#ED3B3B") (set-face-foreground 'mode-line "#7F2020")
@@ -275,14 +293,6 @@
   ;; my customization for all of c-mode, c++-mode, objc-mode, java-mode
   (c-set-offset 'substatement-open 0)
   ;; other customization can go here
-  (setq c++-tab-always-indent t)
-  (setq c-basic-offset 4)                  ;; Default is 2
-  (setq c-indent-level 4)                  ;; Default is 2
-  (setq tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60))
-  (setq tab-width 4)
-  (setq indent-tabs-mode t)  ;; use spaces only if nil
-  (subword-mode 1)	     ;; enable subword mode
-  (which-function-mode t)    ;; enabling which-function-mode in c/c++
   (font-lock-add-keywords nil '(("\\<\\(FIXME\\|TODO\\|BUG\\|HACK\\):" 1 font-lock-warning-face t))) ;; special font-mode for words like TODO, BUG, HACK, and FIXME
   ))
 ;; ================================================
@@ -292,11 +302,8 @@
 ;; Set tab and sub-statement indentation settings for ruby
 ;; ================================================
 (add-hook 'ruby-mode-hook (lambda ()
-  (setq tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60))
-  (setq tab-width 4)
-  (setq indent-tabs-mode t)  ;; use spaces only if nil
-  (subword-mode 1)	     ;; enable subword mode
-  (which-function-mode t)    ;; enabling which-function-mode in ruby
+  (setq tab-stop-list my-tab-stop-list-4
+		indent-tabs-mode nil)  ;; use spaces only if nil
   ))
 ;; ================================================
 
