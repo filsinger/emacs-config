@@ -356,17 +356,21 @@
 (global-set-key (kbd "C-@") 'er/expand-region)
 ;; ================================================
 
+
 ;; ================================================
 ;; regpop.el (https://github.com/filsinger/regpop.el)
 ;; ================================================
-(require 'regpop)
+(autoload 'regpop "regpop" "Regpop" t)
+(autoload 'regpop-todo "regpop" "Display all todo notes" t)
+(autoload 'regpop-stub "regpop" "Display all stub notes" t)
+(autoload 'regpop-assert "regpop" "Display all asserts" t)
 ;; ================================================
 
 
 ;; ================================================
 ;; rainbow-mode.el (http://julien.danjou.info/software/rainbow-mode)
 ;; ================================================
-(require 'rainbow-mode)
+(autoload 'rainbow-mode "rainbow-mode" "rainbow-mode" t)
 ;; ================================================
 
 
