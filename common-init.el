@@ -231,7 +231,6 @@
 ;; ================================================
 (setq auto-mode-alist (cons '("\\.lua$" . lua-mode) auto-mode-alist))
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
-(add-hook 'lua-mode-hook 'turn-on-font-lock)
 ;; ================================================
 
 
@@ -247,8 +246,8 @@
 ;; ================================================
 (setq auto-mode-alist (cons '("\\.\\(md\\|markdown\\)$" . markdown-mode) auto-mode-alist))
 (autoload 'markdown-mode "markdown-mode" "Markdown editing mode." t)
-(add-hook 'markdown-mode-hook 'turn-on-font-lock)
 ;; ================================================
+
 
 ;; ================================================
 ;; YASnippit
