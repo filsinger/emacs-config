@@ -162,22 +162,6 @@
 ;; ================================================
 
 
-;; ================================================
-;; Key Configurations
-;; ================================================
-(global-unset-key "\C-z")                     ; disable CTRL+z
-(global-set-key "\C-z" nil)                   ; disable CTRL+z
-(when (eq window-system nil) (global-set-key "\C-d" 'backward-delete-char)) ; make sure backspace works the way I like in the OSX terminal
-(global-set-key "\M-g-g" 'goto-line)          ; bind M-g-g to goto-line
-(global-set-key "\C-c\C-c" 'comment-or-uncomment-region)          ; bind C-u to comment toggle
-(global-set-key "\C-a" `align-entire)       ; bind C-a to align-entire
-(global-set-key "\M-s" `sort-lines)         ; bind M-s to sort-lines
-(global-set-key (kbd "C-S-s") 'tags-apropos) ; tags apropos
-(global-unset-key (kbd "C-."))
-(global-unset-key (kbd "C-,"))
-(global-set-key (kbd "C-.") 'next-multiframe-window) ; use C-. to move to the next window
-(global-set-key (kbd "C-,") 'previous-multiframe-window) ; use C-, to move to the previous window
-;; ================================================
 
 
 ;; ================================================
@@ -186,10 +170,6 @@
 (autoload 'highlight-symbol-at-point "highlight-symbol" "Highlight symbol" t)
 (autoload 'highlight-symbol-next "highlight-symbol" "Highlight symbol" t)
 (autoload 'highlight-symbol-prev "highlight-symbol" "Highlight symbol" t)
-(global-set-key [(control f3)] 'highlight-symbol-at-point)
-(global-set-key [f3] 'highlight-symbol-next)
-(global-set-key [(shift f3)] 'highlight-symbol-prev)
-(global-set-key [(meta f3)] 'highlight-symbol-prev)
 ;; ================================================
 
 
@@ -197,14 +177,12 @@
 ;; Helm
 ;; ================================================
 (require 'helm-config)
-(global-set-key "\C-x\C-a" 'helm-mini)
 ;; ================================================
 
 ;; ================================================
 ;; ace-jump-mode
 ;; ================================================
 (autoload 'ace-jump-mode "ace-jump-mode" "Ace Jump Mode" t)
-(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 ;; ================================================
 
 
@@ -340,7 +318,6 @@
 ;; expand-region (https://github.com/magnars/expand-region.el) support
 ;; ================================================
 (autoload 'er/expand-region "expand-region" "Expand region" t)
-(global-set-key (kbd "C-@") 'er/expand-region)
 ;; ================================================
 
 
@@ -380,11 +357,8 @@
 (autoload 'mark-previous-like-this "mark-more-like-this" "Mark more like this" t )
 (autoload 'mark-next-like-this "mark-more-like-this" "Mark more like this" t )
 (autoload 'mark-more-like-this "mark-more-like-this" "Mark more like this" t )
-(global-set-key (kbd "C-x r t") 'inline-string-rectangle)
-(global-set-key (kbd "C-<") 'mark-previous-like-this)
-(global-set-key (kbd "C->") 'mark-next-like-this)
-(global-set-key (kbd "C-M-m") 'mark-more-like-this) ; like the other two, but takes an argument (negative is previous)
 ;; ================================================
+
 
 ;; ================================================
 ;; eval and replace
@@ -401,3 +375,6 @@
       ((or (eq system-type 'windows-nt) (eq system-type 'cygwin))
        (load "platform-windows.el")))
 ;; ================================================
+
+;; Load keybindings
+(require 'key-bindings)
