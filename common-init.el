@@ -9,17 +9,15 @@
 ;; ================================================
 ;; Load Paths
 ;; ================================================
-(defvar emacs-sync-path (file-name-directory load-file-name))
-(defvar emacs-submodules-path (concat emacs-sync-path "/submodules/"))
+(setq emacs-sync-path (file-name-directory (or (buffer-file-name) load-file-name))
+	  emacs-submodules-path (concat emacs-sync-path "/submodules/"))
+
 ; add various load paths
 (add-to-list 'load-path (concat emacs-sync-path "/custom/"))
-
 ;; add all subdirectories under the "submodules" folder  to the load-path list
-(let ((submodules-base emacs-submodules-path))
-  (dolist (f (directory-files submodules-base))
-    (let ((submodule-name (concat submodules-base "/" f)))
-      (when (and (file-directory-p submodule-name) (not (equal f "..")) (not (equal f ".")))
-        (add-to-list 'load-path submodule-name)))))
+(dolist (submodule (directory-files emacs-submodules-path t "\\w+"))
+  (when (file-directory-p submodule)
+    (add-to-list 'load-path submodule)))
 ;; ================================================
 
 ;; ================================================
