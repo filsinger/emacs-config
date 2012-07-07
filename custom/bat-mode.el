@@ -1,18 +1,18 @@
 ;;; bat-mode.el --- Simple mode for Windows BAT files
 
-;; Author: Peter Breton <pbreton@i-kinetics.com> 
+;; Author: Peter Breton <pbreton@i-kinetics.com>
 ;; Created: Thu Jul 25 1996
 ;; Version: $Id: bat-mode.el,v 1.2 1996/09/27 13:29:52 pbreton Exp pbreton $
-;; Keywords: 
+;; Keywords:
 ;; Time-stamp: <96/09/27 09:36:53 pbreton>
 
 ;;; Commentary:
 ;;
 ;; USAGE: Byte-compile this file, and add the following lines to your
 ;;   emacs initialization file (.emacs/_emacs):
-;; 
-;; (setq auto-mode-alist 
-;;       (append 
+;;
+;; (setq auto-mode-alist
+;;       (append
 ;;        (list (cons "\\.[bB][aA][tT]$" 'bat-mode))
 ;;        ;; For DOS init files
 ;;        (list (cons "CONFIG\\."   'bat-mode))
@@ -76,6 +76,7 @@
   (modify-syntax-entry ?_  "w"  bat-mode-syntax-table)
 )
 
+;;;###autoload
 (defun bat-mode ()
   "Mode for DOS and Windows BAT files"
   (interactive)
@@ -99,7 +100,7 @@
        comment-start-skip  "[Rr][Ee][Mm] *"
 
        parse-sexp-ignore-comments t
-       
+
        )
 
   ;; Global font-lock support
@@ -147,7 +148,7 @@
 	(list "\\(%\\sw+%\\)"		 1 'font-lock-reference-face)
 	(list "\\(%[0-9]\\)"		 1 'font-lock-reference-face)
 	(list "\\(/[^/ \t\n]+\\)"	 1 'font-lock-type-face)
-	(list "\\<\\([gG][oO][tT][oO]\\)\\>[ \t]*\\(\\sw+\\)?" 
+	(list "\\<\\([gG][oO][tT][oO]\\)\\>[ \t]*\\(\\sw+\\)?"
 	      '(1 font-lock-keyword-face)
 	      '(2 font-lock-function-name-face nil t))
 
@@ -157,7 +158,7 @@
 ;;; don't do it in Win-Emacs
 (if (boundp 'font-lock-defaults-alist)
     (setq font-lock-defaults-alist
-	  (append 
+	  (append
 	   (list (cons 'bat-mode
 		       (list 'bat-font-lock-keywords nil t nil nil)))
 	   font-lock-defaults-alist)))
@@ -165,4 +166,3 @@
 (provide 'bat-mode)
 
 ;;; bat-mode.el ends here
-

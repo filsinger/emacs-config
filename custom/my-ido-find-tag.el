@@ -1,4 +1,6 @@
 ;; completing find file using ido
+
+;;;###autoload
 (defun my-ido-find-tag ()
     "Find a tag using ido"
     (interactive)

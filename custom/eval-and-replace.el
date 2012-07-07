@@ -1,3 +1,5 @@
+
+;;;###autoload
 (defun fc-eval-and-replace ()
   "Replace the preceding sexp with its value."
   (interactive)
