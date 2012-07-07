@@ -294,10 +294,8 @@
 ;; ================================================
 ;; git support (magit)
 ;; ================================================
-(when (>= emacs-major-version 23) (progn
-  (require 'magit)
-  (setq auto-mode-alist (cons '("\\.git\\(modules\\|config\\)$" . conf-mode) auto-mode-alist))
-))
+(when (>= emacs-major-version 23) (require 'magit-autoload))
+(setq auto-mode-alist (cons '("\\.git\\(modules\\|config\\)$" . conf-mode) auto-mode-alist))
 ;; ================================================
 
 
