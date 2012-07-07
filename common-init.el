@@ -401,16 +401,7 @@
 ;; ================================================
 ;; eval and replace
 ;; ================================================
-(defun fc-eval-and-replace ()
-  "Replace the preceding sexp with its value."
-  (interactive)
-  (backward-kill-sexp)
-  (condition-case nil
-      (prin1 (eval (read (current-kill 0)))
-             (current-buffer))
-    (error (message "Invalid expression")
-           (insert (current-kill 0)))))
-(global-set-key (kbd "C-c e") 'fc-eval-and-replace)
+(autoload 'fc-eval-and-replace "eval-and-replace" "Evaluate a region and replace the text with the result of the evaluation." t )
 ;; ================================================
 
 
