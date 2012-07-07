@@ -145,7 +145,7 @@
     (setq aspell-path "/usr/bin/aspell"))
    ;; test for windows
    ((or (eq system-type 'windows-nt) (eq system-type 'cygwin))
-    (setq aspell-path "c:/bin/aspell/aspell.exe")))
+    (setq aspell-path "c:/cygwin/bin/aspell.exe")))
   ;; set the ispell-program-name if aspell is executable
   (when (file-executable-p aspell-path) (setq-default ispell-program-name aspell-path)))
 ;; ================================================
