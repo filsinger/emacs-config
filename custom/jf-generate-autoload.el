@@ -19,3 +19,5 @@
 
 	(byte-recompile-directory emacs-autoloads-path)
 	))
+
+(provide 'jf-generate-autoload)

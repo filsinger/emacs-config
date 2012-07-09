@@ -10,10 +10,12 @@
 ;; Load Paths
 ;; ================================================
 (setq emacs-sync-path (file-name-directory (or (buffer-file-name) load-file-name))
-	  emacs-submodules-path (concat emacs-sync-path "/submodules/"))
+	  emacs-submodules-path (concat emacs-sync-path "/submodules/")
+	  emacs-autoloads-path (concat emacs-sync-path "/autoload/"))
 
 ; add various load paths
 (add-to-list 'load-path (concat emacs-sync-path "/custom/"))
+(add-to-list 'load-path emacs-autoloads-path)
 ;; add all subdirectories under the "submodules" folder  to the load-path list
 (dolist (submodule (directory-files emacs-submodules-path t "\\w+"))
   (when (file-directory-p submodule)
@@ -25,6 +27,16 @@
 ;; ================================================
 (add-to-list 'custom-theme-load-path (concat emacs-sync-path "/custom/themes/"))
 (load-theme 'nikita t)
+;; ================================================
+
+
+;; ================================================
+;; load the a file containing autoloads for a bunch of the minor modes I use.
+;; ================================================
+(if (file-readable-p (concat emacs-autoloads-path "my-super-autoload.el"))
+	(require 'my-super-autoload)
+  (require 'jf-generate-autoload) ;; need to load the jf-generate-autoload if we dont have the super autoload file when we are doing an initial creation of the super autoload file.
+)
 ;; ================================================
 
 
@@ -181,57 +193,16 @@
 ;; ================================================
 
 
-
-
 ;; ================================================
-;; Highlight-Symbol
+;; File modes
 ;; ================================================
-(autoload 'highlight-symbol-at-point "highlight-symbol" "Highlight symbol" t)
-(autoload 'highlight-symbol-next "highlight-symbol" "Highlight symbol" t)
-(autoload 'highlight-symbol-prev "highlight-symbol" "Highlight symbol" t)
-;; ================================================
-
-
-;; ================================================
-;; Helm
-;; ================================================
-(require 'helm-config)
-;; ================================================
-
-;; ================================================
-;; ace-jump-mode
-;; ================================================
-(autoload 'ace-jump-mode "ace-jump-mode" "Ace Jump Mode" t)
-;; ================================================
-
-
-;; ================================================
-;; ido-mode
-;; ================================================
-(autoload 'my-ido-find-tag "my-ido-find-tag" "Completing find file using ido" t)
-;; ================================================
-
-
-;; ================================================
-;; Lua Mode
-;; ================================================
-(setq auto-mode-alist (cons '("\\.lua$" . lua-mode) auto-mode-alist))
-(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
-;; ================================================
-
-
-;; ================================================
-;; Python Mode (for SCons)
-;; ================================================
-(setq auto-mode-alist (cons '("\\(SConstruct\\|SConscript\\)$" . python-mode) auto-mode-alist))
-;; ================================================
-
-
-;; ================================================
-;; Markdown-mode
-;; ================================================
-(setq auto-mode-alist (cons '("\\.\\(md\\|markdown\\)$" . markdown-mode) auto-mode-alist))
-(autoload 'markdown-mode "markdown-mode" "Markdown editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))                           ;; lua-mode
+(add-to-list 'auto-mode-alist '("\\(SConstruct\\|SConscript\\)$" . python-mode)) ;; use python for sconscript files
+(add-to-list 'auto-mode-alist '("\\.\\(md\\|markdown\\)$" . markdown-mode))      ;; markdown
+(add-to-list 'auto-mode-alist '("\\.git\\(modules\\|config\\)$" . conf-mode))    ;; git config files
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))                           ;; open .h files in c++-mode
+(add-to-list 'auto-mode-alist '("\\.bat$" . bat-mode))                           ;; bat-mode (http://ftp.gnu.org/old-gnu/emacs/windows/contrib/bat-mode.el) support
+(add-to-list 'auto-mode-alist '("\\.\\(pde\\|ino\\)$" . arduino-mode))           ;; arduino-mode
 ;; ================================================
 
 
@@ -278,17 +249,8 @@
 
 
 ;; ================================================
-;; git support (magit)
-;; ================================================
-(when (>= emacs-major-version 23) (require 'magit-autoload))
-(setq auto-mode-alist (cons '("\\.git\\(modules\\|config\\)$" . conf-mode) auto-mode-alist))
-;; ================================================
-
-
-;; ================================================
 ;; Set tab and sub-statement indentation settings for c/c++
 ;; ================================================
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode)) ; open .h files in c++-mode
 (add-hook 'c-mode-common-hook (lambda ()
   ;; my customization for all of c-mode, c++-mode, objc-mode, java-mode
   (c-set-offset 'substatement-open 0)
@@ -322,30 +284,6 @@
 
 
 ;; ================================================
-;; expand-region (https://github.com/magnars/expand-region.el) support
-;; ================================================
-(autoload 'er/expand-region "expand-region" "Expand region" t)
-;; ================================================
-
-
-;; ================================================
-;; regpop.el (https://github.com/filsinger/regpop.el)
-;; ================================================
-(autoload 'regpop "regpop" "Regpop" t)
-(autoload 'regpop-todo "regpop" "Display all todo notes" t)
-(autoload 'regpop-stub "regpop" "Display all stub notes" t)
-(autoload 'regpop-assert "regpop" "Display all asserts" t)
-;; ================================================
-
-
-;; ================================================
-;; rainbow-mode.el (http://julien.danjou.info/software/rainbow-mode)
-;; ================================================
-(autoload 'rainbow-mode "rainbow-mode" "rainbow-mode" t)
-;; ================================================
-
-
-;; ================================================
 ;; autopair.el (https://github.com/capitaomorte/autopair)
 ;; ================================================
 (require 'autopair)
@@ -364,13 +302,6 @@
 (autoload 'mark-previous-like-this "mark-more-like-this" "Mark more like this" t )
 (autoload 'mark-next-like-this "mark-more-like-this" "Mark more like this" t )
 (autoload 'mark-more-like-this "mark-more-like-this" "Mark more like this" t )
-;; ================================================
-
-
-;; ================================================
-;; eval and replace
-;; ================================================
-(autoload 'fc-eval-and-replace "eval-and-replace" "Evaluate a region and replace the text with the result of the evaluation." t )
 ;; ================================================
 
 

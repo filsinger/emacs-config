@@ -1,17 +1,4 @@
-;; ================================================
-;; arduino-mode
-;; ================================================
-(setq auto-mode-alist (cons '("\\.\\(pde\\|ino\\)$" . arduino-mode) auto-mode-alist))
-(autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)
-;; ================================================
-
-
-;; ================================================
-;; gist (gist.github.com) support
-;; ================================================
-(when (>= emacs-major-version 23) (require 'gist))
-;; ================================================
-
+(when (or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
 
 ;; ================================================
 ;; Clang autocomplete (set the clang-flags for posix-systems
@@ -31,3 +18,5 @@
 "
                )))
 ;; ================================================
+
+) ;; end of test for posix system
