@@ -264,8 +264,7 @@
 ;; Set tab and sub-statement indentation settings for ruby
 ;; ================================================
 (add-hook 'ruby-mode-hook (lambda ()
-  (setq tab-stop-list my-tab-stop-list-4
-		indent-tabs-mode nil)  ;; use spaces only if nil
+  (setq indent-tabs-mode nil)  ;; use spaces only if nil
   ))
 ;; ================================================
 
