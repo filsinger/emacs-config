@@ -27,7 +27,7 @@
 	url = https://github.com/magnars/expand-region.el.git
 [submodule "submodules/mark-multiple"]
 	path = submodules/mark-multiple
-	url = https://github.com/magnars/mark-multiple.el.git
+	url = git@github.com:filsinger/mark-multiple.el.git
 [submodule "submodules/arduino-mode"]
 	path = submodules/arduino-mode
 	url = https://github.com/bookest/arduino-mode.git
