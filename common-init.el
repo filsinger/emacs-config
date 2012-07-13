@@ -4,6 +4,12 @@
 (when window-system
   (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
     (when (fboundp mode) (funcall mode -1))))
+
+;; set the fonts (fonts are set here so the window doesnt need to resize after it's loaded)
+(cond ((eq system-type 'darwin)
+       (set-frame-font "Menlo-11"))                                     ; Set the default font to 'Menlo' on OSX (an alternative on windows might be 'https://github.com/andreberg/Meslo-Font')
+      ((or (eq system-type 'windows-nt) (eq system-type 'cygwin))
+       (set-frame-font "Consolas-10")))                                 ; Set the default font to 'Consolas-10' on Windows
 ;; ================================================
 
 ;; ================================================
@@ -110,7 +116,6 @@
 ;; ================================================
 (when (and window-system (eq system-type 'darwin))
   (progn
-    (set-frame-font "Menlo")                                 ; Set the default font to 'Menlo' on OSX (an alternative on windows might be 'https://github.com/andreberg/Meslo-Font')
     (define-key global-map [ns-drag-file] 'ns-find-file)     ; OSX: Drag an drop will open a new file (not append)
     (setq ns-pop-up-frames nil)                              ; open files in current window
     (add-hook 'before-save-hook 'delete-trailing-whitespace) ; delete trailing white-space on save (only on OSX,  I don't want to enable this at work yet).
