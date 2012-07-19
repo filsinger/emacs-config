@@ -40,4 +40,8 @@
 ;; eval-and-replace
 (global-set-key (kbd "C-c e") 'fc-eval-and-replace)
 
+;; eval-and-replace
+(global-set-key (kbd "C-c o") 'ff-get-other-file)
+
+
 (provide 'key-bindings)
