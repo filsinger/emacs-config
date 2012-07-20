@@ -119,6 +119,7 @@
     (define-key global-map [ns-drag-file] 'ns-find-file)     ; OSX: Drag an drop will open a new file (not append)
     (setq ns-pop-up-frames nil)                              ; open files in current window
     (add-hook 'before-save-hook 'delete-trailing-whitespace) ; delete trailing white-space on save (only on OSX,  I don't want to enable this at work yet).
+	(setq csearch/program "~/bin/csearch")					 ; set the path for csearch
     ))
 
 ;; startup supression
