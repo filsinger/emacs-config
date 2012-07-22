@@ -43,5 +43,10 @@
 ;; go to companion file
 (global-set-key (kbd "C-c o") 'ff-get-other-file)
 
+;; set the desired behavior for home and end keys
+(global-set-key (kbd "<home>") 'beginning-of-line)
+(global-set-key (kbd "<end>") 'end-of-line)
+(global-set-key (kbd "C-<home>") 'beginning-of-buffer)
+(global-set-key (kbd "C-<end>") 'end-of-buffer)
 
 (provide 'key-bindings)
