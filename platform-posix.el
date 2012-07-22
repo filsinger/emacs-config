@@ -1,5 +1,11 @@
 (when (or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
 
+
+(when (eq system-type 'darwin)
+	;; Ignore .DS_Store files with ido mode
+  (add-to-list 'ido-ignore-files "\\.DS_Store")
+)
+
 ;; ================================================
 ;; Clang autocomplete (set the clang-flags for posix-systems
 ;; ================================================
