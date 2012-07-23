@@ -1,6 +1,5 @@
-
 ;;;###autoload
-(defun fc-eval-and-replace ()
+(defun eval-and-replace ()
   "Replace the preceding sexp with its value."
   (interactive)
   (backward-kill-sexp)
