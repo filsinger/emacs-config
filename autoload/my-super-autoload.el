@@ -14,14 +14,25 @@ Mode for DOS and Windows BAT files
 
 ;;;***
 
-;;;### (autoloads (fc-eval-and-replace) "../custom/eval-and-replace"
-;;;;;;  "../custom/eval-and-replace.el" (20471 63966))
+;;;### (autoloads (eval-and-replace) "../custom/eval-and-replace"
+;;;;;;  "../custom/eval-and-replace.el" (20492 49325))
 ;;; Generated autoloads from ../custom/eval-and-replace.el
 
-(autoload 'fc-eval-and-replace "../custom/eval-and-replace" "\
+(autoload 'eval-and-replace "../custom/eval-and-replace" "\
 Replace the preceding sexp with its value.
 
 \(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads (ibuffer-ido-find-file) "../custom/ibuffer-ido-find-file"
+;;;;;;  "../custom/ibuffer-ido-find-file.el" (20492 52876))
+;;; Generated autoloads from ../custom/ibuffer-ido-find-file.el
+
+(autoload 'ibuffer-ido-find-file "../custom/ibuffer-ido-find-file" "\
+Like `find-file', but default to the directory of the buffer at point.
+
+\(fn FILE &optional WILDCARDS)" t nil)
 
 ;;;***
 
@@ -30,6 +41,22 @@ Replace the preceding sexp with its value.
 ;;; Generated autoloads from ../custom/jf-generate-autoload.el
 
 (autoload 'jf-generate-autoload-files "../custom/jf-generate-autoload" "\
+
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads (move-line-up move-line-down) "../custom/move-line"
+;;;;;;  "../custom/move-line.el" (20492 49251))
+;;; Generated autoloads from ../custom/move-line.el
+
+(autoload 'move-line-down "../custom/move-line" "\
+
+
+\(fn)" t nil)
+
+(autoload 'move-line-up "../custom/move-line" "\
 
 
 \(fn)" t nil)
@@ -48,7 +75,7 @@ Find a tag using ido
 ;;;***
 
 ;;;### (autoloads (ace-jump-mode) "../submodules/ace-jump-mode/ace-jump-mode"
-;;;;;;  "../submodules/ace-jump-mode/ace-jump-mode.el" (20474 8318))
+;;;;;;  "../submodules/ace-jump-mode/ace-jump-mode.el" (20489 471))
 ;;; Generated autoloads from ../submodules/ace-jump-mode/ace-jump-mode.el
 
 (autoload 'ace-jump-mode "../submodules/ace-jump-mode/ace-jump-mode" "\
@@ -94,8 +121,19 @@ Key bindings:
 
 ;;;***
 
+;;;### (autoloads (auto-complete) "../submodules/auto-complete/auto-complete"
+;;;;;;  "../submodules/auto-complete/auto-complete.el" (20490 27839))
+;;; Generated autoloads from ../submodules/auto-complete/auto-complete.el
+
+(autoload 'auto-complete "../submodules/auto-complete/auto-complete" "\
+Start auto-completion at current point.
+
+\(fn &optional SOURCES)" t nil)
+
+;;;***
+
 ;;;### (autoloads (csearch/apropos) "../submodules/csearch-mode/csearch-mode"
-;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20489 202))
+;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20490 6098))
 ;;; Generated autoloads from ../submodules/csearch-mode/csearch-mode.el
 
 (autoload 'csearch/apropos "../submodules/csearch-mode/csearch-mode" "\
@@ -305,6 +343,7 @@ Displays a list of all of the current user's gists in a new buffer.
 ;;;;;;  helm-follow-mode helm-kill-selection-and-quit helm-yank-selection
 ;;;;;;  helm-prev-visible-mark helm-next-visible-mark helm-display-all-visible-marks
 ;;;;;;  helm-toggle-all-marks helm-unmark-all helm-mark-all helm-toggle-visible-mark
+;;;;;;  helm-reposition-window-other-window helm-recenter-top-bottom-other-window
 ;;;;;;  helm-scroll-other-window-down helm-scroll-other-window helm-execute-persistent-action
 ;;;;;;  helm-select-2nd-action-or-end-of-line helm-select-4th-action
 ;;;;;;  helm-select-3rd-action helm-select-2nd-action helm-enlarge-window
@@ -315,7 +354,7 @@ Displays a list of all of the current user's gists in a new buffer.
 ;;;;;;  helm-next-page helm-previous-page helm-next-line helm-previous-line
 ;;;;;;  helm-select-action helm-force-update helm-other-buffer helm-resume
 ;;;;;;  helm-open-last-log) "../submodules/helm/helm" "../submodules/helm/helm.el"
-;;;;;;  (20474 8327))
+;;;;;;  (20490 28515))
 ;;; Generated autoloads from ../submodules/helm/helm.el
 
 (autoload 'helm-open-last-log "../submodules/helm/helm" "\
@@ -485,6 +524,16 @@ Scroll other window (not *Helm* window) downward.
 
 \(fn)" t nil)
 
+(autoload 'helm-recenter-top-bottom-other-window "../submodules/helm/helm" "\
+`recenter-top-bottom' in other window (not *Helm* window).
+
+\(fn)" t nil)
+
+(autoload 'helm-reposition-window-other-window "../submodules/helm/helm" "\
+`helm-reposition-window' in other window (not *Helm* window).
+
+\(fn)" t nil)
+
 (autoload 'helm-toggle-visible-mark "../submodules/helm/helm" "\
 Toggle helm visible mark at point.
 
@@ -577,7 +626,7 @@ With a prefix arg reload cache.
 ;;;***
 
 ;;;### (autoloads (helm-bbdb) "../submodules/helm/helm-bbdb" "../submodules/helm/helm-bbdb.el"
-;;;;;;  (20474 8327))
+;;;;;;  (20489 484))
 ;;; Generated autoloads from ../submodules/helm/helm-bbdb.el
 
 (autoload 'helm-bbdb "../submodules/helm/helm-bbdb" "\
@@ -643,7 +692,7 @@ Preconfigured `helm' for bookmarks (pretty-printed).
 ;;;;;;  helm-buffer-run-zgrep helm-buffer-run-grep helm-buffer-run-kill-buffers
 ;;;;;;  helm-buffer-save-persistent helm-buffer-revert-persistent
 ;;;;;;  helm-buffer-diff-persistent) "../submodules/helm/helm-buffers"
-;;;;;;  "../submodules/helm/helm-buffers.el" (20474 8327))
+;;;;;;  "../submodules/helm/helm-buffers.el" (20489 484))
 ;;; Generated autoloads from ../submodules/helm/helm-buffers.el
 
 (autoload 'helm-buffer-diff-persistent "../submodules/helm/helm-buffers" "\
@@ -740,7 +789,7 @@ Preconfigured `helm' for color.
 ;;;***
 
 ;;;### (autoloads (helm-M-x) "../submodules/helm/helm-command" "../submodules/helm/helm-command.el"
-;;;;;;  (20457 28553))
+;;;;;;  (20489 484))
 ;;; Generated autoloads from ../submodules/helm/helm-command.el
 
 (autoload 'helm-M-x "../submodules/helm/helm-command" "\
@@ -752,7 +801,7 @@ It is `helm' replacement of regular `M-x' `execute-extended-command'.
 ;;;***
 
 ;;;### (autoloads (helm-configuration) "../submodules/helm/helm-config"
-;;;;;;  "../submodules/helm/helm-config.el" (20457 28553))
+;;;;;;  "../submodules/helm/helm-config.el" (20489 484))
 ;;; Generated autoloads from ../submodules/helm/helm-config.el
 
 (define-prefix-command 'helm-command-prefix)
@@ -768,7 +817,7 @@ Customize `helm'.
 ;;;;;;  helm-c-apropos helm-lisp-completion-or-file-name-at-point
 ;;;;;;  helm-lisp-completion-at-point-or-indent helm-c-complete-file-name-at-point
 ;;;;;;  helm-lisp-completion-at-point) "../submodules/helm/helm-elisp"
-;;;;;;  "../submodules/helm/helm-elisp.el" (20444 59610))
+;;;;;;  "../submodules/helm/helm-elisp.el" (20489 484))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp.el
 
 (autoload 'helm-lisp-completion-at-point "../submodules/helm/helm-elisp" "\
@@ -911,7 +960,7 @@ You can set your own list of commands with
 ;;;;;;  helm-ff-run-copy-file helm-ff-run-zgrep helm-ff-run-pdfgrep
 ;;;;;;  helm-ff-run-grep helm-ff-run-switch-to-history helm-ff-run-toggle-auto-update)
 ;;;;;;  "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
-;;;;;;  (20474 8327))
+;;;;;;  (20489 484))
 ;;; Generated autoloads from ../submodules/helm/helm-files.el
 
 (autoload 'helm-ff-run-toggle-auto-update "../submodules/helm/helm-files" "\
@@ -1133,7 +1182,7 @@ Preconfigured `helm' to hardlink files from dired.
 
 (autoload 'helm-for-files "../submodules/helm/helm-files" "\
 Preconfigured `helm' for opening files.
-Run all sources defined in `helm-for-files-prefered-list'.
+Run all sources defined in `helm-for-files-preferred-list'.
 
 \(fn)" t nil)
 
@@ -1166,7 +1215,7 @@ After closing firefox, you will be able to browse you bookmarks.
 ;;;***
 
 ;;;### (autoloads (helm-ucs helm-select-xfont) "../submodules/helm/helm-font"
-;;;;;;  "../submodules/helm/helm-font.el" (20404 45406))
+;;;;;;  "../submodules/helm/helm-font.el" (20489 484))
 ;;; Generated autoloads from ../submodules/helm/helm-font.el
 
 (autoload 'helm-select-xfont "../submodules/helm/helm-font" "\
@@ -1199,7 +1248,7 @@ Preconfigured `helm' for gentoo linux.
 ;;;;;;  helm-grep-mode-jump-other-window-forward helm-grep-mode-jump
 ;;;;;;  helm-grep-mode-quit helm-gm-precedent-file helm-gm-next-file
 ;;;;;;  helm-grep-mode) "../submodules/helm/helm-grep" "../submodules/helm/helm-grep.el"
-;;;;;;  (20474 8327))
+;;;;;;  (20490 28515))
 ;;; Generated autoloads from ../submodules/helm/helm-grep.el
 
 (autoload 'helm-grep-mode "../submodules/helm/helm-grep" "\
@@ -1437,7 +1486,7 @@ With a prefix-arg insert symbol at point.
 ;;;***
 
 ;;;### (autoloads (helm-locate) "../submodules/helm/helm-locate"
-;;;;;;  "../submodules/helm/helm-locate.el" (20457 28553))
+;;;;;;  "../submodules/helm/helm-locate.el" (20489 484))
 ;;; Generated autoloads from ../submodules/helm/helm-locate.el
 
 (autoload 'helm-locate "../submodules/helm/helm-locate" "\
@@ -1534,7 +1583,7 @@ Preconfigured `helm' for `minibuffer-history'.
 ;;;***
 
 ;;;### (autoloads (helm-mode helm-comp-read) "../submodules/helm/helm-mode"
-;;;;;;  "../submodules/helm/helm-mode.el" (20474 8327))
+;;;;;;  "../submodules/helm/helm-mode.el" (20489 484))
 ;;; Generated autoloads from ../submodules/helm/helm-mode.el
 
 (autoload 'helm-comp-read "../submodules/helm/helm-mode" "\
@@ -1573,6 +1622,9 @@ Keys description:
   stored there, if nil or not provided, `minibuffer-history'
   will be used instead.
 
+- DEL-INPUT: Boolean, when non--nil (default) remove the partial
+  minibuffer input from HISTORY is present.
+
 - PERSISTENT-ACTION: A function called with one arg i.e candidate.
 
 - PERSISTENT-HELP: A string to document PERSISTENT-ACTION.
@@ -1608,7 +1660,7 @@ in `helm-current-prefix-arg', otherwise if prefix args were given before
 That's mean you can pass prefix args before or after calling a command
 that use `helm-comp-read' See `helm-M-x' for example.
 
-\(fn PROMPT COLLECTION &key TEST INITIAL-INPUT DEFAULT PRESELECT (buffer \"*Helm Completions*\") MUST-MATCH (requires-pattern 0) (history nil) INPUT-HISTORY (persistent-action nil) (persistent-help \"DoNothing\") (mode-line helm-mode-line-string) (keymap helm-map) (name \"Helm Completions\") CANDIDATES-IN-BUFFER EXEC-WHEN-ONLY-ONE (volatile t) SORT (fc-transformer (quote helm-cr-default-transformer)) (marked-candidates nil) (alistp t))" nil nil)
+\(fn PROMPT COLLECTION &key TEST INITIAL-INPUT DEFAULT PRESELECT (buffer \"*Helm Completions*\") MUST-MATCH (requires-pattern 0) (history nil) INPUT-HISTORY (del-input t) (persistent-action nil) (persistent-help \"DoNothing\") (mode-line helm-mode-line-string) (keymap helm-map) (name \"Helm Completions\") CANDIDATES-IN-BUFFER EXEC-WHEN-ONLY-ONE (volatile t) SORT (fc-transformer (quote helm-cr-default-transformer)) (marked-candidates nil) (alistp t))" nil nil)
 
 (defvar helm-mode nil "\
 Non-nil if Helm mode is enabled.
@@ -1799,7 +1851,7 @@ If tag file have been modified reinitialize cache.
 ;;;### (autoloads (helm-yank-text-at-point helm-w32-shell-execute-open-file
 ;;;;;;  helm-quit-and-find-file helm-show-all-in-this-source-only)
 ;;;;;;  "../submodules/helm/helm-utils" "../submodules/helm/helm-utils.el"
-;;;;;;  (20474 8327))
+;;;;;;  (20489 484))
 ;;; Generated autoloads from ../submodules/helm/helm-utils.el
 
 (autoload 'helm-show-all-in-this-source-only "../submodules/helm/helm-utils" "\
@@ -1947,7 +1999,7 @@ The following keys are bound:
 ;;;***
 
 ;;;### (autoloads (magit-status) "../submodules/magit/magit" "../submodules/magit/magit.el"
-;;;;;;  (20476 56587))
+;;;;;;  (20489 1426))
 ;;; Generated autoloads from ../submodules/magit/magit.el
 
 (autoload 'magit-status "../submodules/magit/magit" "\
@@ -1965,7 +2017,7 @@ user input.
 ;;;***
 
 ;;;### (autoloads (magit-blame-mode) "../submodules/magit/magit-blame"
-;;;;;;  "../submodules/magit/magit-blame.el" (20444 59615))
+;;;;;;  "../submodules/magit/magit-blame.el" (20489 489))
 ;;; Generated autoloads from ../submodules/magit/magit-blame.el
 
 (autoload 'magit-blame-mode "../submodules/magit/magit-blame" "\
@@ -2594,13 +2646,13 @@ This will fontify with colors the string like \"#aabbcc\" or \"blue\".
 
 ;;;### (autoloads (regpop-assert regpop-stub regpop-todo regpop)
 ;;;;;;  "../submodules/regpop/regpop" "../submodules/regpop/regpop.el"
-;;;;;;  (20474 17167))
+;;;;;;  (20490 25109))
 ;;; Generated autoloads from ../submodules/regpop/regpop.el
 
 (autoload 'regpop "../submodules/regpop/regpop" "\
 Display a popup for all instinces of a regex in a buffer.
 
-\(fn REGEX &optional INDEX BUFFER)" t nil)
+\(fn REGEX &optional SUBEXP BUFFER)" t nil)
 
 (autoload 'regpop-todo "../submodules/regpop/regpop" "\
 popup all todos in the current buffer.
@@ -2685,7 +2737,7 @@ as the ewoc pretty-printer.
 ;;;***
 
 ;;;### (autoloads (yas/global-mode yas/minor-mode) "../submodules/yasnippet/yasnippet"
-;;;;;;  "../submodules/yasnippet/yasnippet.el" (20474 8346))
+;;;;;;  "../submodules/yasnippet/yasnippet.el" (20489 1535))
 ;;; Generated autoloads from ../submodules/yasnippet/yasnippet.el
 
 (autoload 'yas/minor-mode "../submodules/yasnippet/yasnippet" "\
@@ -2728,11 +2780,10 @@ See `yas/minor-mode' for more information on Yas/Minor mode.
 
 ;;;***
 
-;;;### (autoloads nil nil ("../custom/jdf-dictionary.el" "../custom/magit-autoload.el"
-;;;;;;  "../submodules/auto-complete-clang/auto-complete-clang.el"
+;;;### (autoloads nil nil ("../custom/jdf-dictionary.el" "../submodules/auto-complete-clang/auto-complete-clang.el"
 ;;;;;;  "../submodules/auto-complete/auto-complete-config.el" "../submodules/auto-complete/auto-complete-pkg.el"
-;;;;;;  "../submodules/auto-complete/auto-complete.el" "../submodules/autopair/autopair-tests.el"
-;;;;;;  "../submodules/autopair/autopair.el" "../submodules/expand-region/clojure-mode-expansions.el"
+;;;;;;  "../submodules/autopair/autopair-tests.el" "../submodules/autopair/autopair.el"
+;;;;;;  "../submodules/expand-region/clojure-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/css-mode-expansions.el" "../submodules/expand-region/erlang-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/expand-region-custom.el" "../submodules/expand-region/expand-region-pkg.el"
 ;;;;;;  "../submodules/expand-region/expand-region.el" "../submodules/expand-region/feature-mode-expansions.el"
@@ -2777,7 +2828,7 @@ See `yas/minor-mode' for more information on Yas/Minor mode.
 ;;;;;;  "../submodules/predictive-mode/show-point-mode.el" "../submodules/predictive-mode/tstree.el"
 ;;;;;;  "../submodules/smarttabs/smarttabs.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20489 234 647393))
+;;;;;;  (20492 53501 700378))
 
 ;;;***
 
