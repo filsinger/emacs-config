@@ -73,5 +73,9 @@
 	 (define-key flyspell-mode-map (kbd "C-,") nil)
 	 (define-key flyspell-mode-map (kbd "C-.") nil)
 	 (define-key flyspell-mode-map (kbd "<f7>") 'flyspell-goto-next-error)))
+(eval-after-load "org"					; rebind org keys (i use C-, and C-. to switch windows)
+  '(progn
+	 (define-key org-mode-map (kbd "C-,") nil)
+	 (define-key org-mode-map (kbd "C-.") nil)))
 
 (provide 'key-bindings)
