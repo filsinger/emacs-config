@@ -57,13 +57,13 @@
 	url = https://github.com/winterTTr/ace-jump-mode.git
 [submodule "submodules/regpop"]
 	path = submodules/regpop
-	url = git@github.com:filsinger/regpop.el.git
+	url = git://github.com/filsinger/regpop.el.git
 [submodule "submodules/smarttabs"]
 	path = submodules/smarttabs
 	url = git://github.com/jcsalomon/smarttabs.git
 [submodule "submodules/powerline"]
 	path = submodules/powerline
-	url = git@github.com:filsinger/emacs-powerline.git
+	url = git://github.com/filsinger/emacs-powerline.git
 [submodule "submodules/rainbow-mode"]
 	path = submodules/rainbow-mode
 	url = git://github.com/emacsmirror/rainbow-mode.git
@@ -72,7 +72,7 @@
 	url = git://github.com/capitaomorte/autopair.git
 [submodule "submodules/p4"]
 	path = submodules/p4
-	url = git@github.com:filsinger/p4.el.git
+	url = git://github.com/filsinger/p4.el.git
 [submodule "submodules/csearch-mode"]
 	path = submodules/csearch-mode
 	url = git://github.com/filsinger/csearch-mode.git
