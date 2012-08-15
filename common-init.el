@@ -7,9 +7,9 @@
 
 ;; set the fonts (fonts are set here so the window doesnt need to resize after it's loaded)
 (cond ((eq system-type 'darwin)
-       (set-frame-font "Menlo-11"))                                     ; Set the default font to 'Menlo' on OSX (an alternative on windows might be 'https://github.com/andreberg/Meslo-Font')
+       (set-frame-font "Menlo-11" nil t))                                     ; Set the default font to 'Menlo' on OSX (an alternative on windows might be 'https://github.com/andreberg/Meslo-Font')
       ((or (eq system-type 'windows-nt) (eq system-type 'cygwin))
-       (set-frame-font "Consolas-10")))                                 ; Set the default font to 'Consolas-10' on Windows
+       (set-frame-font "Consolas-10" nil t)))                                 ; Set the default font to 'Consolas-10' on Windows
 ;; ================================================
 
 ;; ================================================
