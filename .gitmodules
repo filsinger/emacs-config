@@ -76,3 +76,6 @@
 [submodule "submodules/csearch-mode"]
 	path = submodules/csearch-mode
 	url = git://github.com/filsinger/csearch-mode.git
+[submodule "submodules/csharp-mode"]
+	path = submodules/csharp-mode
+	url = git://github.com/emacsmirror/csharp-mode.git
