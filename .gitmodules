@@ -1,6 +1,6 @@
 [submodule "submodules/auto-complete"]
 	path = submodules/auto-complete
-	url = git://github.com/m2ym/auto-complete.git
+	url = git://github.com/auto-complete/auto-complete.git
 [submodule "submodules/auto-complete-clang"]
 	path = submodules/auto-complete-clang
 	url = https://github.com/brianjcj/auto-complete-clang.git
@@ -36,7 +36,7 @@
 	url = https://github.com/emacs-helm/helm.git
 [submodule "submodules/popup"]
 	path = submodules/popup
-	url = https://github.com/m2ym/popup-el.git
+	url = https://github.com/auto-complete/popup-el.git
 [submodule "submodules/magit"]
 	path = submodules/magit
 	url = git://github.com/magit/magit.git
