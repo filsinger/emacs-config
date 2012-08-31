@@ -78,4 +78,7 @@
 	 (define-key org-mode-map (kbd "C-,") nil)
 	 (define-key org-mode-map (kbd "C-.") nil)))
 
+;; compiling
+(global-set-key (kbd "<f7>") 'compile)            ; compile
+
 (provide 'key-bindings)
