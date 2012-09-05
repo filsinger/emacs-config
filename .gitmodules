@@ -18,7 +18,7 @@
 	url = https://github.com/nschum/highlight-symbol.el.git
 [submodule "submodules/markdown-mode"]
 	path = submodules/markdown-mode
-	url = git://jblevins.org/git/markdown-mode.git
+	url = git://github.com/emacsmirror/markdown-mode.git
 [submodule "submodules/predictive-mode"]
 	path = submodules/predictive-mode
 	url = http://www.dr-qubit.org/git/predictive.git
