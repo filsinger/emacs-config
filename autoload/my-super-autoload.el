@@ -137,14 +137,32 @@ Start auto-completion at current point.
 ;;;;;;  csearch/index-add-list csearch/index-list csearch/index-add
 ;;;;;;  csearch/index-reset csearch/csearch csearch/insert-sorted-lines
 ;;;;;;  csearch/find-file-upward csearch/with-index-file csearch/index-get
-;;;;;;  csearch/index-set) "../submodules/csearch-mode/csearch-mode"
-;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20551 302))
+;;;;;;  csearch/index-set csearch/index-file csearch/cindex-program
+;;;;;;  csearch/csearch-program csearch-mode) "../submodules/csearch-mode/csearch-mode"
+;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20551 4067))
 ;;; Generated autoloads from ../submodules/csearch-mode/csearch-mode.el
+
+(let ((loads (get 'csearch-mode 'custom-loads))) (if (member '"../submodules/csearch-mode/csearch-mode" loads) nil (put 'csearch-mode 'custom-loads (cons '"../submodules/csearch-mode/csearch-mode" loads))))
+
+(defvar csearch/csearch-program "csearch" "\
+Path to the csearch executable")
+
+(custom-autoload 'csearch/csearch-program "../submodules/csearch-mode/csearch-mode" t)
+
+(defvar csearch/cindex-program "cindex" "\
+Path to the csearch executable")
+
+(custom-autoload 'csearch/cindex-program "../submodules/csearch-mode/csearch-mode" t)
+
+(defvar csearch/index-file nil "\
+Codesearch index file.  This value is assigned to the environment variable CSEARCHINDEX before invoking csearch.  Default value is `~/.csearchindex'")
+
+(custom-autoload 'csearch/index-file "../submodules/csearch-mode/csearch-mode" t)
 
 (autoload 'csearch/index-set "../submodules/csearch-mode/csearch-mode" "\
 Set the current csearch index
 
-\(fn INDEX-FILE)" t nil)
+\(fn INDEX-PATH)" t nil)
 
 (autoload 'csearch/index-get "../submodules/csearch-mode/csearch-mode" "\
 Get the current csearch index path
@@ -213,7 +231,8 @@ Display a list of all symbols in the csearch index that REGEXP matches
 \(fn REGEXP)" t nil)
 
 (autoload 'csearch/find-file-hook-function "../submodules/csearch-mode/csearch-mode" "\
-
+This function can be called from the find-file-hook to automatically
+seach the directory tree upwards for a \".csearchindex\" file.
 
 \(fn)" nil nil)
 
@@ -3195,8 +3214,8 @@ See `yas/minor-mode' for more information on Yas/Minor mode.
 ;;;;;;  "../submodules/predictive-mode/predictive-texinfo.el" "../submodules/predictive-mode/predictive.el"
 ;;;;;;  "../submodules/predictive-mode/show-point-mode.el" "../submodules/predictive-mode/tstree.el"
 ;;;;;;  "../submodules/yasnippet/dropdown-list.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20551 317
-;;;;;;  254703))
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20551 4247
+;;;;;;  517643))
 
 ;;;***
 
