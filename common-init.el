@@ -212,6 +212,8 @@
 (add-to-list 'auto-mode-alist '("\\.\\(pde\\|ino\\)$" . arduino-mode))           ;; arduino-mode
 (add-to-list 'auto-mode-alist '("\\(Rakefile\\|rakefile\\)$" . ruby-mode))       ;; use ruby-mode for rakefiles
 (add-to-list 'auto-mode-alist '("\\.cs$" . csharp-mode))                         ;; csharp-mode
+(add-to-list 'auto-mode-alist '("\\\.dotfiles\.*\\.zsh$" . sh-mode))             ;; sh-mode
+
 ;; ================================================
 
 
