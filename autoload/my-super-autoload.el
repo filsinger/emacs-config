@@ -36,6 +36,18 @@ Like `find-file', but default to the directory of the buffer at point.
 
 ;;;***
 
+;;;### (autoloads (ido-imenu) "../custom/ido-imenu" "../custom/ido-imenu.el"
+;;;;;;  (20562 20688))
+;;; Generated autoloads from ../custom/ido-imenu.el
+
+(autoload 'ido-imenu "../custom/ido-imenu" "\
+Update the imenu index and then use ido to select a symbol to navigate to.
+Symbols matching the text at point are put first in the completion list.
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (jf-generate-autoload-files) "../custom/jf-generate-autoload"
 ;;;;;;  "../custom/jf-generate-autoload.el" (20475 7040))
 ;;; Generated autoloads from ../custom/jf-generate-autoload.el
@@ -122,7 +134,7 @@ Key bindings:
 ;;;***
 
 ;;;### (autoloads (auto-complete) "../submodules/auto-complete/auto-complete"
-;;;;;;  "../submodules/auto-complete/auto-complete.el" (20541 14516))
+;;;;;;  "../submodules/auto-complete/auto-complete.el" (20545 11514))
 ;;; Generated autoloads from ../submodules/auto-complete/auto-complete.el
 
 (autoload 'auto-complete "../submodules/auto-complete/auto-complete" "\
@@ -139,7 +151,7 @@ Start auto-completion at current point.
 ;;;;;;  csearch/find-file-upward csearch/with-index-file csearch/index-get
 ;;;;;;  csearch/index-set csearch/index-file csearch/cindex-program
 ;;;;;;  csearch/csearch-program csearch-mode) "../submodules/csearch-mode/csearch-mode"
-;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20551 4067))
+;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20558 33375))
 ;;; Generated autoloads from ../submodules/csearch-mode/csearch-mode.el
 
 (let ((loads (get 'csearch-mode 'custom-loads))) (if (member '"../submodules/csearch-mode/csearch-mode" loads) nil (put 'csearch-mode 'custom-loads (cons '"../submodules/csearch-mode/csearch-mode" loads))))
@@ -3214,8 +3226,8 @@ See `yas/minor-mode' for more information on Yas/Minor mode.
 ;;;;;;  "../submodules/predictive-mode/predictive-texinfo.el" "../submodules/predictive-mode/predictive.el"
 ;;;;;;  "../submodules/predictive-mode/show-point-mode.el" "../submodules/predictive-mode/tstree.el"
 ;;;;;;  "../submodules/yasnippet/dropdown-list.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20551 4247
-;;;;;;  517643))
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20562 20718
+;;;;;;  871000))
 
 ;;;***
 

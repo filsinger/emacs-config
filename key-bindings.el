@@ -39,15 +39,16 @@
 (global-set-key (kbd "C-c e") 'eval-and-replace)       ; evaluate and replace the region
 (global-set-key (kbd "C-@") 'er/expand-region)         ; expand-region
 
-;; set the desired behavior for home and end keys
+;; navigation
 (global-set-key "\M-g-g" 'goto-line)                   ; move cursor to a specific line
 (global-set-key (kbd "<home>") 'beginning-of-line)     ; move cursor to the begenning of the line
 (global-set-key (kbd "<end>") 'end-of-line)            ; move cursor to the end of the line
 (global-set-key (kbd "C-<home>") 'beginning-of-buffer) ; move cursor to the begenning of the buffer
 (global-set-key (kbd "C-<end>") 'end-of-buffer)		   ; move cursor to the end of the buffer
-(global-set-key (kbd "C-c SPC") 'ace-jump-mode)		   ; move cursor via ace-jump-mode
 (global-set-key (kbd "<C-M-down>") 'move-line-down)    ; move current line up
 (global-set-key (kbd "<C-M-up>") 'move-line-up)	       ; move current line down
+(global-set-key (kbd "C-;") 'ido-imenu)
+(global-set-key (kbd "C-c SPC") 'ace-jump-mode)		   ; move cursor via ace-jump-mode
 
 ;; transpose key bindings
 (global-unset-key (kbd "M-t"))      ; unbind the default transpose-words keybinding
