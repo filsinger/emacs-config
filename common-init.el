@@ -298,10 +298,6 @@
 ;; ================================================
 (require 'autopair)
 (autopair-global-mode)
-(add-hook 'c++-mode-hook
-          #'(lambda ()
-              (push '(?< . ?>)
-                    (getf autopair-extra-pairs :code))))
 ;; ================================================
 
 
