@@ -302,16 +302,6 @@
 
 
 ;; ================================================
-;; mark-multiple (https://github.com/magnars/mark-multiple.el) support
-;; ================================================
-(autoload 'inline-string-rectangle "inline-string-rectangle" "Inline string rectangle" t)
-(autoload 'mark-previous-like-this "mark-more-like-this" "Mark more like this" t )
-(autoload 'mark-next-like-this "mark-more-like-this" "Mark more like this" t )
-(autoload 'mark-more-like-this "mark-more-like-this" "Mark more like this" t )
-;; ================================================
-
-
-;; ================================================
 ;; Load platform specific plugins
 ;; ================================================
 (cond ((or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))

@@ -29,11 +29,14 @@
 ;; helm
 (global-set-key (kbd "C-x C-a") 'helm-mini)
 
-;; mark-multiple
-(global-set-key (kbd "C-x r t") 'inline-string-rectangle)
-(global-set-key (kbd "C-<") 'mark-previous-like-this)
-(global-set-key (kbd "C->") 'mark-next-like-this)
-(global-set-key (kbd "C-M-m") 'mark-more-like-this) ; like the other two, but takes an argument (negative is previous)
+;; multiple-cursors
+(global-set-key (kbd "C-x r t") 'mc/edit-lines)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-M-m") 'mc/mark-all-like-this) ; like the other two, but takes an argument (negative is previous)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C-S-c C-e") 'mc/edit-ends-of-lines)
+(global-set-key (kbd "C-S-c C-a") 'mc/edit-beginnings-of-lines)
 
 ;; region
 (global-set-key (kbd "C-c e") 'eval-and-replace)       ; evaluate and replace the region

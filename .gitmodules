@@ -25,9 +25,6 @@
 [submodule "submodules/expand-region"]
 	path = submodules/expand-region
 	url = https://github.com/magnars/expand-region.el.git
-[submodule "submodules/mark-multiple"]
-	path = submodules/mark-multiple
-	url = git://github.com/magnars/mark-multiple.el.git
 [submodule "submodules/arduino-mode"]
 	path = submodules/arduino-mode
 	url = https://github.com/bookest/arduino-mode.git
@@ -79,3 +76,6 @@
 [submodule "submodules/csharp-mode"]
 	path = submodules/csharp-mode
 	url = git://github.com/emacsmirror/csharp-mode.git
+[submodule "submodules/multiple-cursors"]
+	path = submodules/multiple-cursors
+	url = git://github.com/magnars/multiple-cursors.el.git

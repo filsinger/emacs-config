@@ -37,7 +37,7 @@ Like `find-file', but default to the directory of the buffer at point.
 ;;;***
 
 ;;;### (autoloads (ido-imenu) "../custom/ido-imenu" "../custom/ido-imenu.el"
-;;;;;;  (20562 20688))
+;;;;;;  (20565 3616))
 ;;; Generated autoloads from ../custom/ido-imenu.el
 
 (autoload 'ido-imenu "../custom/ido-imenu" "\
@@ -151,7 +151,7 @@ Start auto-completion at current point.
 ;;;;;;  csearch/find-file-upward csearch/with-index-file csearch/index-get
 ;;;;;;  csearch/index-set csearch/index-file csearch/cindex-program
 ;;;;;;  csearch/csearch-program csearch-mode) "../submodules/csearch-mode/csearch-mode"
-;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20558 33375))
+;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20558 45773))
 ;;; Generated autoloads from ../submodules/csearch-mode/csearch-mode.el
 
 (let ((loads (get 'csearch-mode 'custom-loads))) (if (member '"../submodules/csearch-mode/csearch-mode" loads) nil (put 'csearch-mode 'custom-loads (cons '"../submodules/csearch-mode/csearch-mode" loads))))
@@ -253,7 +253,7 @@ seach the directory tree upwards for a \".csearchindex\" file.
 ;;;### (autoloads (csharp-mode csharp-cmd-line-limit csharp-msbuild-tool
 ;;;;;;  csharp-make-tool csharp-want-imenu csharp-want-yasnippet-fixup
 ;;;;;;  csharp-want-flymake-fixup csharp-mode-hook) "../submodules/csharp-mode/csharp-mode"
-;;;;;;  "../submodules/csharp-mode/csharp-mode.el" (20541 51671))
+;;;;;;  "../submodules/csharp-mode/csharp-mode.el" (20541 52327))
 ;;; Generated autoloads from ../submodules/csharp-mode/csharp-mode.el
 
 (defvar csharp-mode-hook nil "\
@@ -2492,56 +2492,76 @@ running 'man git-rebase' at the command line) for details.
 
 ;;;***
 
-;;;### (autoloads (inline-string-rectangle) "../submodules/mark-multiple/inline-string-rectangle"
-;;;;;;  "../submodules/mark-multiple/inline-string-rectangle.el"
-;;;;;;  (20538 41285))
-;;; Generated autoloads from ../submodules/mark-multiple/inline-string-rectangle.el
+;;;### (autoloads (markdown-mode) "../submodules/markdown-mode/markdown-mode"
+;;;;;;  "../submodules/markdown-mode/markdown-mode.el" (20382 62320))
+;;; Generated autoloads from ../submodules/markdown-mode/markdown-mode.el
 
-(autoload 'inline-string-rectangle "../submodules/mark-multiple/inline-string-rectangle" "\
-
+(autoload 'markdown-mode "../submodules/markdown-mode/markdown-mode" "\
+Major mode for editing Markdown files.
 
 \(fn)" t nil)
 
 ;;;***
 
-;;;### (autoloads (mark-more-like-this-extended mark-more-like-this
-;;;;;;  mark-all-like-this-in-region mark-all-like-this mark-previous-like-this
-;;;;;;  mark-next-like-this) "../submodules/mark-multiple/mark-more-like-this"
-;;;;;;  "../submodules/mark-multiple/mark-more-like-this.el" (20538
-;;;;;;  41285))
-;;; Generated autoloads from ../submodules/mark-multiple/mark-more-like-this.el
+;;;### (autoloads (mc/edit-beginnings-of-lines mc/edit-ends-of-lines
+;;;;;;  mc/edit-lines) "../submodules/multiple-cursors/mc-edit-lines"
+;;;;;;  "../submodules/multiple-cursors/mc-edit-lines.el" (20575
+;;;;;;  53303))
+;;; Generated autoloads from ../submodules/multiple-cursors/mc-edit-lines.el
 
-(autoload 'mark-next-like-this "../submodules/mark-multiple/mark-more-like-this" "\
+(autoload 'mc/edit-lines "../submodules/multiple-cursors/mc-edit-lines" "\
+Add one cursor to each line of the active region.
+Starts from mark and moves in straight down or up towards the
+line point is on.
+
+Could possibly be used to mark multiple regions with
+mark-multiple if point and mark is on different columns.
+
+\(fn)" t nil)
+
+(autoload 'mc/edit-ends-of-lines "../submodules/multiple-cursors/mc-edit-lines" "\
+Add one cursor to the end of each line in the active region.
+
+\(fn)" t nil)
+
+(autoload 'mc/edit-beginnings-of-lines "../submodules/multiple-cursors/mc-edit-lines" "\
+Add one cursor to the beginning of each line in the active region.
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads (mc/mark-more-like-this-extended mc/mark-all-in-region
+;;;;;;  mc/mark-all-like-this mc/mark-previous-like-this mc/mark-next-like-this)
+;;;;;;  "../submodules/multiple-cursors/mc-mark-more" "../submodules/multiple-cursors/mc-mark-more.el"
+;;;;;;  (20575 53303))
+;;; Generated autoloads from ../submodules/multiple-cursors/mc-mark-more.el
+
+(autoload 'mc/mark-next-like-this "../submodules/multiple-cursors/mc-mark-more" "\
 Find and mark the next part of the buffer matching the currently active region
 With negative ARG, delete the last one instead.
 With zero ARG, skip the last one and mark next.
 
 \(fn ARG)" t nil)
 
-(autoload 'mark-previous-like-this "../submodules/mark-multiple/mark-more-like-this" "\
+(autoload 'mc/mark-previous-like-this "../submodules/multiple-cursors/mc-mark-more" "\
 Find and mark the previous part of the buffer matching the currently active region
 With negative ARG, delete the last one instead.
-With zero ARG, skip the last one and mark previous.
+With zero ARG, skip the last one and mark next.
 
 \(fn ARG)" t nil)
 
-(autoload 'mark-all-like-this "../submodules/mark-multiple/mark-more-like-this" "\
+(autoload 'mc/mark-all-like-this "../submodules/multiple-cursors/mc-mark-more" "\
 Find and mark all the parts of the buffer matching the currently active region
 
 \(fn)" t nil)
 
-(autoload 'mark-all-like-this-in-region "../submodules/mark-multiple/mark-more-like-this" "\
+(autoload 'mc/mark-all-in-region "../submodules/multiple-cursors/mc-mark-more" "\
 Find and mark all the parts in the region matching the given search
 
-\(fn REG-START REG-END)" t nil)
+\(fn BEG END)" t nil)
 
-(autoload 'mark-more-like-this "../submodules/mark-multiple/mark-more-like-this" "\
-Marks next part of buffer that matches the currently active region ARG times.
-Given a negative ARG it searches backwards instead.
-
-\(fn ARG)" t nil)
-
-(autoload 'mark-more-like-this-extended "../submodules/mark-multiple/mark-more-like-this" "\
+(autoload 'mc/mark-more-like-this-extended "../submodules/multiple-cursors/mc-mark-more" "\
 Like mark-more-like-this, but then lets you adjust with arrows key.
 The actual adjustment made depends on the final component of the
 key-binding used to invoke the command, with all modifiers removed:
@@ -2561,45 +2581,22 @@ is one of the above.
 
 ;;;***
 
-;;;### (autoloads (mm/clear-all mm/deactivate-region-and-clear-all
-;;;;;;  mm/deactivate-region-or-clear-all) "../submodules/mark-multiple/mark-multiple"
-;;;;;;  "../submodules/mark-multiple/mark-multiple.el" (20538 41285))
-;;; Generated autoloads from ../submodules/mark-multiple/mark-multiple.el
+;;;### (autoloads nil "../submodules/multiple-cursors/multiple-cursors"
+;;;;;;  "../submodules/multiple-cursors/multiple-cursors.el" (20575
+;;;;;;  53303))
+;;; Generated autoloads from ../submodules/multiple-cursors/multiple-cursors.el
 
-(autoload 'mm/deactivate-region-or-clear-all "../submodules/mark-multiple/mark-multiple" "\
-Deactivate mark if active, otherwise clear all.
-
-\(fn)" t nil)
-
-(autoload 'mm/deactivate-region-and-clear-all "../submodules/mark-multiple/mark-multiple" "\
-Deactivate mark and clear all.
-
-\(fn)" t nil)
-
-(autoload 'mm/clear-all "../submodules/mark-multiple/mark-multiple" "\
-Remove all marks
-
-\(fn)" t nil)
+(eval-after-load "mark-multiple" '(require 'mc-mark-multiple-integration))
 
 ;;;***
 
-;;;### (autoloads (rename-sgml-tag) "../submodules/mark-multiple/rename-sgml-tag"
-;;;;;;  "../submodules/mark-multiple/rename-sgml-tag.el" (20538 41285))
-;;; Generated autoloads from ../submodules/mark-multiple/rename-sgml-tag.el
+;;;### (autoloads (set-rectangular-region-anchor) "../submodules/multiple-cursors/rectangular-region-mode"
+;;;;;;  "../submodules/multiple-cursors/rectangular-region-mode.el"
+;;;;;;  (20575 53303))
+;;; Generated autoloads from ../submodules/multiple-cursors/rectangular-region-mode.el
 
-(autoload 'rename-sgml-tag "../submodules/mark-multiple/rename-sgml-tag" "\
+(autoload 'set-rectangular-region-anchor "../submodules/multiple-cursors/rectangular-region-mode" "\
 
-
-\(fn)" t nil)
-
-;;;***
-
-;;;### (autoloads (markdown-mode) "../submodules/markdown-mode/markdown-mode"
-;;;;;;  "../submodules/markdown-mode/markdown-mode.el" (20382 62320))
-;;; Generated autoloads from ../submodules/markdown-mode/markdown-mode.el
-
-(autoload 'markdown-mode "../submodules/markdown-mode/markdown-mode" "\
-Major mode for editing Markdown files.
 
 \(fn)" t nil)
 
@@ -3196,7 +3193,9 @@ See `yas/minor-mode' for more information on Yas/Minor mode.
 ;;;;;;  "../submodules/gh/gh.el" "../submodules/helm/helm-pkg.el"
 ;;;;;;  "../submodules/helm/helm-plugin.el" "../submodules/logito/logito.el"
 ;;;;;;  "../submodules/magit/magit-bisect.el" "../submodules/magit/magit-key-mode.el"
-;;;;;;  "../submodules/mark-multiple/mark-multiple-pkg.el" "../submodules/mark-multiple/mm-pabbrev-integration.el"
+;;;;;;  "../submodules/multiple-cursors/mc-cycle-cursors.el" "../submodules/multiple-cursors/mc-mark-multiple-integration.el"
+;;;;;;  "../submodules/multiple-cursors/multiple-cursors-core.el"
+;;;;;;  "../submodules/multiple-cursors/multiple-cursors-pkg.el"
 ;;;;;;  "../submodules/p4/p4.el" "../submodules/pcache/pcache-tests.el"
 ;;;;;;  "../submodules/pcache/pcache.el" "../submodules/popup/popup-test.el"
 ;;;;;;  "../submodules/popup/popup.el" "../submodules/powerline/powerline.el"
@@ -3226,8 +3225,8 @@ See `yas/minor-mode' for more information on Yas/Minor mode.
 ;;;;;;  "../submodules/predictive-mode/predictive-texinfo.el" "../submodules/predictive-mode/predictive.el"
 ;;;;;;  "../submodules/predictive-mode/show-point-mode.el" "../submodules/predictive-mode/tstree.el"
 ;;;;;;  "../submodules/yasnippet/dropdown-list.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20562 20718
-;;;;;;  871000))
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20575 53510
+;;;;;;  400200))
 
 ;;;***
 
