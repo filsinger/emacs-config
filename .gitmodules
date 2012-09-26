@@ -79,3 +79,6 @@
 [submodule "submodules/multiple-cursors"]
 	path = submodules/multiple-cursors
 	url = git://github.com/magnars/multiple-cursors.el.git
+[submodule "submodules/smex"]
+	path = submodules/smex
+	url = git://github.com/nonsequitur/smex.git

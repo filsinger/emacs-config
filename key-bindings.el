@@ -68,6 +68,12 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer-other-window)       ; use ibuffer instead of the default buffer-menu.
 (global-set-key (kbd "C-c o") 'ff-get-other-file)            ; find compainion file.
 
+;; smex (like ido for M-x)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+
+
+
 ;; mode keymap rebinding
 (eval-after-load "ibuffer" 				; rebind ibuffer keys
   '(progn
