@@ -82,3 +82,15 @@
 [submodule "submodules/smex"]
 	path = submodules/smex
 	url = git://github.com/nonsequitur/smex.git
+[submodule "submodules/emacs-websocket"]
+	path = submodules/emacs-websocket
+	url = git://github.com/ahyatt/emacs-websocket.git
+[submodule "submodules/json"]
+	path = submodules/json
+	url = https://github.com/thorstadt/json.el
+[submodule "submodules/maxframe"]
+	path = submodules/maxframe
+	url = git://github.com/rmm5t/maxframe.el.git
+[submodule "submodules/rudel"]
+	path = submodules/rudel
+	url = git://github.com/emacsmirror/rudel.git

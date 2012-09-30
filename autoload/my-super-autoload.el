@@ -204,11 +204,11 @@ Automagically pair braces and quotes like in TextMate.
 ;;;### (autoloads (csearch/find-file-hook-function csearch/search
 ;;;;;;  csearch/read-string-region-or-prompt-string csearch/index-regenerate
 ;;;;;;  csearch/index-add-list csearch/index-list csearch/index-add
-;;;;;;  csearch/index-reset csearch/csearch csearch/insert-sorted-lines
-;;;;;;  csearch/find-file-upward csearch/with-index-file csearch/index-get
-;;;;;;  csearch/index-set csearch/index-file csearch/cindex-program
+;;;;;;  csearch/index-reset csearch/csearch-old csearch/csearch csearch-mode
+;;;;;;  csearch/insert-sorted-lines csearch/find-file-upward csearch/with-index-file
+;;;;;;  csearch/index-get csearch/index-set csearch/index-file csearch/cindex-program
 ;;;;;;  csearch/csearch-program csearch-mode) "../submodules/csearch-mode/csearch-mode"
-;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20575 55035))
+;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20578 48420))
 ;;; Generated autoloads from ../submodules/csearch-mode/csearch-mode.el
 
 (let ((loads (get 'csearch-mode 'custom-loads))) (if (member '"../submodules/csearch-mode/csearch-mode" loads) nil (put 'csearch-mode 'custom-loads (cons '"../submodules/csearch-mode/csearch-mode" loads))))
@@ -255,7 +255,21 @@ Search the directory tree upwards for a specific file
 
 \(fn ARG &optional REVERSE)" nil nil)
 
+(autoload 'csearch-mode "../submodules/csearch-mode/csearch-mode" "\
+Sets `csearch/last-buffer'.
+
+\(fn)" nil nil)
+
 (autoload 'csearch/csearch "../submodules/csearch-mode/csearch-mode" "\
+Run the csearch tool and search for the provided REGEXP
+
+If CASE-INSENSITIVE is provided then csearch will perform a
+case-insensitive search.  If INDEX-FILE is provided then
+csearch will use the INDEX-FILE for it's search index.
+
+\(fn REGEXP &optional CASE-INSENSITIVE INDEX-FILE)" nil nil)
+
+(autoload 'csearch/csearch-old "../submodules/csearch-mode/csearch-mode" "\
 Run the csearch tool and search for the provided REGEXP
 
 If CASE-INSENSITIVE is provided then csearch will perform a
@@ -2641,6 +2655,46 @@ Major mode for editing Markdown files.
 
 ;;;***
 
+;;;### (autoloads (restore-frame maximize-frame x-restore-frame x-maximize-frame
+;;;;;;  w32-restore-frame w32-maximize-frame) "../submodules/maxframe/maxframe"
+;;;;;;  "../submodules/maxframe/maxframe.el" (20583 45055))
+;;; Generated autoloads from ../submodules/maxframe/maxframe.el
+
+(autoload 'w32-maximize-frame "../submodules/maxframe/maxframe" "\
+Maximize the current frame (windows only)
+
+\(fn)" t nil)
+
+(autoload 'w32-restore-frame "../submodules/maxframe/maxframe" "\
+Restore a minimized/maximized frame (windows only)
+
+\(fn)" t nil)
+
+(autoload 'x-maximize-frame "../submodules/maxframe/maxframe" "\
+Maximize the current frame (x or mac only)
+
+\(fn &optional THE-FRAME)" t nil)
+
+(autoload 'x-restore-frame "../submodules/maxframe/maxframe" "\
+Restore the current frame (x or mac only)
+
+\(fn &optional THE-FRAME)" t nil)
+
+(autoload 'maximize-frame "../submodules/maxframe/maxframe" "\
+Maximizes the frame to fit the display if under a windowing
+system.
+
+\(fn &optional THE-FRAME)" t nil)
+
+(autoload 'restore-frame "../submodules/maxframe/maxframe" "\
+Restores a maximized frame.  See `maximize-frame'.
+
+\(fn &optional THE-FRAME)" t nil)
+
+(defalias 'mf 'maximize-frame)
+
+;;;***
+
 ;;;### (autoloads (mc/edit-beginnings-of-lines mc/edit-ends-of-lines
 ;;;;;;  mc/edit-lines) "../submodules/multiple-cursors/mc-edit-lines"
 ;;;;;;  "../submodules/multiple-cursors/mc-edit-lines.el" (20575
@@ -3332,8 +3386,9 @@ See `yas-minor-mode' for more information on Yas minor mode.
 
 ;;;### (autoloads nil nil ("../custom/jdf-dictionary.el" "../submodules/auto-complete-clang/auto-complete-clang.el"
 ;;;;;;  "../submodules/auto-complete/auto-complete-config.el" "../submodules/auto-complete/auto-complete-pkg.el"
-;;;;;;  "../submodules/autopair/autopair-tests.el" "../submodules/expand-region/cc-mode-expansions.el"
-;;;;;;  "../submodules/expand-region/clojure-mode-expansions.el"
+;;;;;;  "../submodules/autopair/autopair-tests.el" "../submodules/emacs-websocket/websocket-functional-test.el"
+;;;;;;  "../submodules/emacs-websocket/websocket-test.el" "../submodules/emacs-websocket/websocket.el"
+;;;;;;  "../submodules/expand-region/cc-mode-expansions.el" "../submodules/expand-region/clojure-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/css-mode-expansions.el" "../submodules/expand-region/erlang-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/expand-region-core.el" "../submodules/expand-region/expand-region-pkg.el"
 ;;;;;;  "../submodules/expand-region/feature-mode-expansions.el"
@@ -3345,9 +3400,10 @@ See `yas-minor-mode' for more information on Yas minor mode.
 ;;;;;;  "../submodules/expand-region/python-mode-expansions.el" "../submodules/expand-region/ruby-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/text-mode-expansions.el" "../submodules/gh/gh-pkg.el"
 ;;;;;;  "../submodules/gh/gh.el" "../submodules/helm/helm-pkg.el"
-;;;;;;  "../submodules/helm/helm-plugin.el" "../submodules/logito/logito.el"
-;;;;;;  "../submodules/magit/magit-bisect.el" "../submodules/magit/magit-key-mode.el"
-;;;;;;  "../submodules/multiple-cursors/mc-cycle-cursors.el" "../submodules/multiple-cursors/mc-mark-multiple-integration.el"
+;;;;;;  "../submodules/helm/helm-plugin.el" "../submodules/json/json.el"
+;;;;;;  "../submodules/logito/logito.el" "../submodules/magit/magit-bisect.el"
+;;;;;;  "../submodules/magit/magit-key-mode.el" "../submodules/multiple-cursors/mc-cycle-cursors.el"
+;;;;;;  "../submodules/multiple-cursors/mc-mark-multiple-integration.el"
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors-core.el"
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors-pkg.el"
 ;;;;;;  "../submodules/p4/p4.el" "../submodules/pcache/pcache-tests.el"
@@ -3379,8 +3435,8 @@ See `yas-minor-mode' for more information on Yas minor mode.
 ;;;;;;  "../submodules/predictive-mode/predictive-texinfo.el" "../submodules/predictive-mode/predictive.el"
 ;;;;;;  "../submodules/predictive-mode/show-point-mode.el" "../submodules/predictive-mode/tstree.el"
 ;;;;;;  "../submodules/yasnippet/dropdown-list.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20578 38903
-;;;;;;  55465))
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20583 58007
+;;;;;;  200282))
 
 ;;;***
 
