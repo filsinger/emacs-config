@@ -1,9 +1,10 @@
 (when (or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
 
-
 (when (eq system-type 'darwin)
 	;; Ignore .DS_Store files with ido mode
   (add-to-list 'ido-ignore-files "\\.DS_Store")
+  ;; set 'command-f' to toggle fullscreen on OSX
+  (global-set-key (kbd "s-f") 'ns-toggle-fullscreen)
 
   (eval-after-load "csearch-mode"
 	'(progn
