@@ -161,6 +161,7 @@
 (transient-mark-mode 1)			          ; Selection highlighting
 (subword-mode 1)			              ; enable subword mode
 (ido-mode 1)							  ; enable ido mode
+(electric-pair-mode 1)
 
 (when (>= emacs-major-version 23)	      ; minor-modes to enable in Emacs 23+
   (progn
@@ -298,14 +299,6 @@
       predictive-add-to-dict-ask nil
       predictive-use-auto-learn-cache nil
       predictive-which-dict t)
-;; ================================================
-
-
-;; ================================================
-;; autopair.el (https://github.com/capitaomorte/autopair)
-;; ================================================
-(require 'autopair)
-(autopair-global-mode)
 ;; ================================================
 
 
