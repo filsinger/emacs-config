@@ -94,6 +94,3 @@
 [submodule "submodules/rudel"]
 	path = submodules/rudel
 	url = git://github.com/emacsmirror/rudel.git
-[submodule "submodules/zencoding"]
-	path = submodules/zencoding
-	url = https://github.com/rooney/zencoding
