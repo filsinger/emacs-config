@@ -97,7 +97,7 @@ Find a tag using ido
 ;;;;;;  sr-speedbar-refresh-turn-off sr-speedbar-refresh-turn-on
 ;;;;;;  sr-speedbar-select-window sr-speedbar-close sr-speedbar-open
 ;;;;;;  sr-speedbar-toggle) "../custom/sr-speedbar" "../custom/sr-speedbar.el"
-;;;;;;  (20585 4579))
+;;;;;;  (20586 8459))
 ;;; Generated autoloads from ../custom/sr-speedbar.el
 
 (autoload 'sr-speedbar-toggle "../custom/sr-speedbar" "\
@@ -354,11 +354,14 @@ Automagically pair braces and quotes like in TextMate.
 ;;;### (autoloads (csearch/find-file-hook-function csearch/search
 ;;;;;;  csearch/read-string-region-or-prompt-string csearch/index-regenerate
 ;;;;;;  csearch/index-add-list csearch/index-list csearch/index-add
-;;;;;;  csearch/index-reset csearch/csearch csearch/insert-sorted-lines
-;;;;;;  csearch/find-file-upward csearch/with-index-file csearch/index-get
-;;;;;;  csearch/index-set csearch/index-file csearch/cindex-program
-;;;;;;  csearch/csearch-program csearch-mode) "../submodules/csearch-mode/csearch-mode"
-;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20584 62442))
+;;;;;;  csearch/index-reset csearch/csearch csearch-mode csearch/filter
+;;;;;;  csearch/insert-sorted-lines csearch/find-file-upward csearch/with-index-file
+;;;;;;  csearch/index-get csearch/index-set csearch/ignore-regexp-list
+;;;;;;  csearch/context-face csearch/hit-face csearch/error-face
+;;;;;;  csearch/match-face csearch/result-regexp csearch/result-line-offset
+;;;;;;  csearch/index-file csearch/cindex-program csearch/csearch-program
+;;;;;;  csearch-mode) "../submodules/csearch-mode/csearch-mode" "../submodules/csearch-mode/csearch-mode.el"
+;;;;;;  (20587 10321))
 ;;; Generated autoloads from ../submodules/csearch-mode/csearch-mode.el
 
 (let ((loads (get 'csearch-mode 'custom-loads))) (if (member '"../submodules/csearch-mode/csearch-mode" loads) nil (put 'csearch-mode 'custom-loads (cons '"../submodules/csearch-mode/csearch-mode" loads))))
@@ -377,6 +380,44 @@ Path to the csearch executable")
 Codesearch index file.  This value is assigned to the environment variable CSEARCHINDEX before invoking csearch.  Default value is `~/.csearchindex'")
 
 (custom-autoload 'csearch/index-file "../submodules/csearch-mode/csearch-mode" t)
+
+(defvar csearch/result-line-offset 1 "\
+Amount to offset the csearch result line numbers.")
+
+(custom-autoload 'csearch/result-line-offset "../submodules/csearch-mode/csearch-mode" t)
+
+(defvar csearch/result-regexp "^\\([a-zA-Z]*:*/*.+?\\):\\([0-9]+\\):\\(.+\\)$" "\
+csearch restult match regexp")
+
+(custom-autoload 'csearch/result-regexp "../submodules/csearch-mode/csearch-mode" t)
+
+(defvar csearch/match-face 'match "\
+Face name to use for csearch matches")
+
+(custom-autoload 'csearch/match-face "../submodules/csearch-mode/csearch-mode" t)
+
+(defvar csearch/error-face 'compilation-error "\
+Face name to use for csearch matches")
+
+(custom-autoload 'csearch/error-face "../submodules/csearch-mode/csearch-mode" t)
+
+(defvar csearch/hit-face compilation-info-face "\
+Face name to use for grep hits.")
+
+(custom-autoload 'csearch/hit-face "../submodules/csearch-mode/csearch-mode" t)
+
+(defvar csearch/context-face 'shadow "\
+Face name to use for grep context lines.")
+
+(custom-autoload 'csearch/context-face "../submodules/csearch-mode/csearch-mode" t)
+
+(defvar csearch/ignore-regexp-list '(".xcodeproj/" "/.git/") "\
+*Alist of all ignore")
+
+(custom-autoload 'csearch/ignore-regexp-list "../submodules/csearch-mode/csearch-mode" t)
+
+(defvar csearch/search-history nil "\
+Search history for csearch")
 
 (autoload 'csearch/index-set "../submodules/csearch-mode/csearch-mode" "\
 Set the current csearch index
@@ -404,6 +445,17 @@ Search the directory tree upwards for a specific file
 
 
 \(fn ARG &optional REVERSE)" nil nil)
+
+(autoload 'csearch/filter "../submodules/csearch-mode/csearch-mode" "\
+Handle match highlighting escape sequences inserted by the grep process.
+This function is called from `compilation-filter-hook'.
+
+\(fn)" nil nil)
+
+(autoload 'csearch-mode "../submodules/csearch-mode/csearch-mode" "\
+Sets `csearch-last-buffer' and `compilation-window-height'.
+
+\(fn)" nil nil)
 
 (autoload 'csearch/csearch "../submodules/csearch-mode/csearch-mode" "\
 Run the csearch tool and search for the provided REGEXP
@@ -2793,7 +2845,7 @@ Major mode for editing Markdown files.
 
 ;;;### (autoloads (restore-frame maximize-frame x-restore-frame x-maximize-frame
 ;;;;;;  w32-restore-frame w32-maximize-frame) "../submodules/maxframe/maxframe"
-;;;;;;  "../submodules/maxframe/maxframe.el" (20584 62482))
+;;;;;;  "../submodules/maxframe/maxframe.el" (20586 8489))
 ;;; Generated autoloads from ../submodules/maxframe/maxframe.el
 
 (autoload 'w32-maximize-frame "../submodules/maxframe/maxframe" "\
@@ -3520,7 +3572,61 @@ See `yas-minor-mode' for more information on Yas minor mode.
 
 ;;;***
 
-;;;### (autoloads nil nil ("../custom/jdf-dictionary.el" "../submodules/auto-complete-clang/auto-complete-clang.el"
+;;;### (autoloads (zencoding-preview zencoding-expand-yas zencoding-mode
+;;;;;;  zencoding-expand-line) "../submodules/zencoding/zencoding-mode"
+;;;;;;  "../submodules/zencoding/zencoding-mode.el" (20588 35245))
+;;; Generated autoloads from ../submodules/zencoding/zencoding-mode.el
+
+(autoload 'zencoding-expand-line "../submodules/zencoding/zencoding-mode" "\
+Replace the current line's zencode expression with the corresponding expansion.
+If prefix ARG is given or region is visible call `zencoding-preview' to start an
+interactive preview.
+
+Otherwise expand line directly.
+
+For more information see `zencoding-mode'.
+
+\(fn ARG)" t nil)
+
+(autoload 'zencoding-mode "../submodules/zencoding/zencoding-mode" "\
+Minor mode for writing HTML and CSS markup.
+With zen coding for HTML and CSS you can write a line like
+
+  ul#name>li.item*2
+
+and have it expanded to
+
+  <ul id=\"name\">
+    <li class=\"item\"></li>
+    <li class=\"item\"></li>
+  </ul>
+
+This minor mode defines keys for quick access:
+
+\\{zencoding-mode-keymap}
+
+Home page URL `http://www.emacswiki.org/emacs/ZenCoding'.
+
+See also `zencoding-expand-line'.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'zencoding-expand-yas "../submodules/zencoding/zencoding-mode" "\
+
+
+\(fn)" t nil)
+
+(autoload 'zencoding-preview "../submodules/zencoding/zencoding-mode" "\
+Expand zencode between BEG and END interactively.
+This will show a preview of the expanded zen code and you can
+accept it or skip it.
+
+\(fn BEG END)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../custom/csv-mode.el" "../custom/jdf-dictionary.el"
+;;;;;;  "../submodules/auto-complete-clang/auto-complete-clang.el"
 ;;;;;;  "../submodules/auto-complete/auto-complete-config.el" "../submodules/auto-complete/auto-complete-pkg.el"
 ;;;;;;  "../submodules/autopair/autopair-tests.el" "../submodules/emacs-websocket/websocket-functional-test.el"
 ;;;;;;  "../submodules/emacs-websocket/websocket-test.el" "../submodules/emacs-websocket/websocket.el"
@@ -3571,8 +3677,8 @@ See `yas-minor-mode' for more information on Yas minor mode.
 ;;;;;;  "../submodules/predictive-mode/predictive-texinfo.el" "../submodules/predictive-mode/predictive.el"
 ;;;;;;  "../submodules/predictive-mode/show-point-mode.el" "../submodules/predictive-mode/tstree.el"
 ;;;;;;  "../submodules/yasnippet/dropdown-list.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20585 4624
-;;;;;;  743393))
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20588 35273
+;;;;;;  77000))
 
 ;;;***
 
