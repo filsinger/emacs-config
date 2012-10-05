@@ -67,6 +67,13 @@
 (global-set-key (kbd "C-c r") 'revert-buffer)                ; revert the current buffer.
 (global-set-key (kbd "C-x C-b") 'ibuffer-other-window)       ; use ibuffer instead of the default buffer-menu.
 (global-set-key (kbd "C-c o") 'ff-get-other-file)            ; find compainion file.
+(add-hook 'dired-mode-hook
+		  (lambda ()
+			(put 'dired-find-alternate-file 'disabled nil)
+			(define-key dired-mode-map (kbd "^") (lambda () (interactive) (find-alternate-file ".."))) ; dired will reuse the same buffer when using ^ to navigate to the parent directory
+			(define-key dired-mode-map (kbd "<return>") (lambda () (interactive) (if (file-directory-p (dired-file-name-at-point)) (dired-find-alternate-file) (dired-find-file)))) ; make <return> open a new directory in the current buffer
+			(define-key dired-mode-map (kbd "C-<return>") (lambda () (interactive) (dired-find-file))) ; C-<return> will always use dired-find-file
+			))
 
 ;; smex (like ido for M-x)
 (global-set-key (kbd "M-x") 'smex)
