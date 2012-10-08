@@ -4135,6 +4135,59 @@ See `yas-minor-mode' for more information on Yas minor mode.
 
 ;;;***
 
+;;;### (autoloads (zencoding-preview zencoding-expand-yas zencoding-mode
+;;;;;;  zencoding-expand-line) "../submodules/zencoding/zencoding-mode"
+;;;;;;  "../submodules/zencoding/zencoding-mode.el" (20595 17523))
+;;; Generated autoloads from ../submodules/zencoding/zencoding-mode.el
+
+(autoload 'zencoding-expand-line "../submodules/zencoding/zencoding-mode" "\
+Replace the current line's zencode expression with the corresponding expansion.
+If prefix ARG is given or region is visible call `zencoding-preview' to start an
+interactive preview.
+
+Otherwise expand line directly.
+
+For more information see `zencoding-mode'.
+
+\(fn ARG)" t nil)
+
+(autoload 'zencoding-mode "../submodules/zencoding/zencoding-mode" "\
+Minor mode for writing HTML and CSS markup.
+With zen coding for HTML and CSS you can write a line like
+
+  ul#name>li.item*2
+
+and have it expanded to
+
+  <ul id=\"name\">
+    <li class=\"item\"></li>
+    <li class=\"item\"></li>
+  </ul>
+
+This minor mode defines keys for quick access:
+
+\\{zencoding-mode-keymap}
+
+Home page URL `http://www.emacswiki.org/emacs/ZenCoding'.
+
+See also `zencoding-expand-line'.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'zencoding-expand-yas "../submodules/zencoding/zencoding-mode" "\
+
+
+\(fn)" t nil)
+
+(autoload 'zencoding-preview "../submodules/zencoding/zencoding-mode" "\
+Expand zencode between BEG and END interactively.
+This will show a preview of the expanded zen code and you can
+accept it or skip it.
+
+\(fn BEG END)" t nil)
+
+;;;***
+
 ;;;### (autoloads nil nil ("../custom/jdf-dictionary.el" "../submodules/auto-complete-clang/auto-complete-clang.el"
 ;;;;;;  "../submodules/auto-complete/auto-complete-config.el" "../submodules/auto-complete/auto-complete-pkg.el"
 ;;;;;;  "../submodules/autopair/autopair-tests.el" "../submodules/emacs-websocket/websocket-functional-test.el"
@@ -4194,7 +4247,7 @@ See `yas-minor-mode' for more information on Yas minor mode.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20595 15972 996070))
+;;;;;;  (20595 17530 556823))
 
 ;;;***
 

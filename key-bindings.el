@@ -94,6 +94,11 @@
   '(progn
 	 (define-key org-mode-map (kbd "C-,") nil)
 	 (define-key org-mode-map (kbd "C-.") nil)))
+(eval-after-load "zencoding-mode"
+  '(progn
+	 (define-key zencoding-mode-keymap (kbd "<C-return>") 'zencoding-expand-line)
+	 ))
+
 
 ;; compiling
 (global-set-key (kbd "<f7>") 'compile)            ; compile
