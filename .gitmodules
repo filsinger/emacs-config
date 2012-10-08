@@ -94,3 +94,6 @@
 [submodule "submodules/rudel"]
 	path = submodules/rudel
 	url = git://github.com/emacsmirror/rudel.git
+[submodule "submodules/w3m"]
+	path = submodules/w3m
+	url = https://github.com/emacsmirror/w3m.git

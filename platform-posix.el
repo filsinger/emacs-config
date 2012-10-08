@@ -11,6 +11,7 @@
 	   (unless (file-executable-p (expand-file-name csearch/csearch-program)) (setq csearch/csearch-program (expand-file-name "~/bin/csearch")) )
 	   (unless (file-executable-p (expand-file-name csearch/cindex-program)) (setq csearch/cindex-program (expand-file-name "~/bin/cindex")) ) ))
 
+  (setq w3m-command "/usr/local/bin/w3m")
 )
 
 ;; ================================================
