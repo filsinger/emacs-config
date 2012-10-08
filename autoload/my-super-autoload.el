@@ -354,11 +354,12 @@ Automagically pair braces and quotes like in TextMate.
 ;;;### (autoloads (csearch/find-file-hook-function csearch/search
 ;;;;;;  csearch/read-string-region-or-prompt-string csearch/index-regenerate
 ;;;;;;  csearch/index-add-list csearch/index-list csearch/index-add
-;;;;;;  csearch/index-reset csearch/csearch csearch/insert-sorted-lines
-;;;;;;  csearch/find-file-upward csearch/with-index-file csearch/index-get
-;;;;;;  csearch/index-set csearch/index-file csearch/cindex-program
+;;;;;;  csearch/index-reset csearch/csearch csearch-mode csearch/filter
+;;;;;;  csearch/insert-sorted-lines csearch/find-file-upward csearch/with-index-file
+;;;;;;  csearch/index-get csearch/index-set csearch/ignore-regexp-list
+;;;;;;  csearch/result-line-offset csearch/index-file csearch/cindex-program
 ;;;;;;  csearch/csearch-program csearch-mode) "../submodules/csearch-mode/csearch-mode"
-;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20584 62442))
+;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20595 14313))
 ;;; Generated autoloads from ../submodules/csearch-mode/csearch-mode.el
 
 (let ((loads (get 'csearch-mode 'custom-loads))) (if (member '"../submodules/csearch-mode/csearch-mode" loads) nil (put 'csearch-mode 'custom-loads (cons '"../submodules/csearch-mode/csearch-mode" loads))))
@@ -377,6 +378,16 @@ Path to the csearch executable")
 Codesearch index file.  This value is assigned to the environment variable CSEARCHINDEX before invoking csearch.  Default value is `~/.csearchindex'")
 
 (custom-autoload 'csearch/index-file "../submodules/csearch-mode/csearch-mode" t)
+
+(defvar csearch/result-line-offset 1 "\
+Amount to offset the csearch result line numbers.")
+
+(custom-autoload 'csearch/result-line-offset "../submodules/csearch-mode/csearch-mode" t)
+
+(defvar csearch/ignore-regexp-list '(".xcodeproj/" "/.git/") "\
+*Alist of all ignore")
+
+(custom-autoload 'csearch/ignore-regexp-list "../submodules/csearch-mode/csearch-mode" t)
 
 (autoload 'csearch/index-set "../submodules/csearch-mode/csearch-mode" "\
 Set the current csearch index
@@ -404,6 +415,17 @@ Search the directory tree upwards for a specific file
 
 
 \(fn ARG &optional REVERSE)" nil nil)
+
+(autoload 'csearch/filter "../submodules/csearch-mode/csearch-mode" "\
+Handle match highlighting escape sequences inserted by the grep process.
+This function is called from `compilation-filter-hook'.
+
+\(fn)" nil nil)
+
+(autoload 'csearch-mode "../submodules/csearch-mode/csearch-mode" "\
+Sets `csearch-last-buffer' and `compilation-window-height'.
+
+\(fn)" nil nil)
 
 (autoload 'csearch/csearch "../submodules/csearch-mode/csearch-mode" "\
 Run the csearch tool and search for the provided REGEXP
@@ -3571,8 +3593,8 @@ See `yas-minor-mode' for more information on Yas minor mode.
 ;;;;;;  "../submodules/predictive-mode/predictive-texinfo.el" "../submodules/predictive-mode/predictive.el"
 ;;;;;;  "../submodules/predictive-mode/show-point-mode.el" "../submodules/predictive-mode/tstree.el"
 ;;;;;;  "../submodules/yasnippet/dropdown-list.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20585 4624
-;;;;;;  743393))
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20595 14619
+;;;;;;  619993))
 
 ;;;***
 
