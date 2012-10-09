@@ -98,7 +98,20 @@
   '(progn
 	 (define-key zencoding-mode-keymap (kbd "<C-return>") 'zencoding-expand-line)
 	 ))
+(eval-after-load "w3m"
+  '(progn
+	 (define-key w3m-mode-map (kbd "C-M-<down>") 'w3m-next-anchor)
+	 (define-key w3m-mode-map (kbd "C-M-<up>") 'w3m-previous-anchor)
+	 (define-key w3m-mode-map (kbd "C-M-<left>") 'w3m-view-previous-page)
+	 (define-key w3m-mode-map (kbd "C-M-<right>") 'w3m-view-this-url)
 
+	 (define-key w3m-mode-map (kbd "<down>") nil)
+	 (define-key w3m-mode-map (kbd "<up>") nil)
+	 (define-key w3m-mode-map (kbd "<left>") nil)
+	 (define-key w3m-mode-map (kbd "<right>") nil)
+
+	 )
+  )
 
 ;; compiling
 (global-set-key (kbd "<f7>") 'compile)            ; compile
