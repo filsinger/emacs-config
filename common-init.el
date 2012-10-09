@@ -227,6 +227,7 @@
 ;; load yasnippet
 (require 'yasnippet)
 (setq yas/snippet-dirs (list (concat emacs-submodules-path "/yasnippet/snippets")))
+(add-to-list 'yas/snippet-dirs (concat emacs-sync-path "/custom/snippets"))
 ;; add a hook to initialize yasnippets after the init file is loaded (so that other submodules can set snippet paths
 (add-hook 'after-init-hook
 	  (lambda ()

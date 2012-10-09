@@ -1,0 +1,4 @@
+# name: strncpy(..., ..., ...);
+# key: strncpy
+# --
+strncpy(${destination}, ${source}, ${size});$0

@@ -1,0 +1,4 @@
+# name: memset(..., ..., ...);
+# key: memset
+# --
+memset(${destination}, ${value}, ${size});$0

@@ -1,0 +1,4 @@
+# name: memcpy(..., ..., ...);
+# key: memcpy
+# --
+memcpy(${destination}, ${source}, ${num});$0
