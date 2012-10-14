@@ -34,7 +34,7 @@
       (nikita-green+01    "#c6ed77")
       (nikita-green+02    "#ddedbe")
       (nikita-green-bg    "#3C4131")
-      (nikita-green-bg+02    "#485332")
+      (nikita-green-bg+02 "#485332")
 
       (nikita-orange-02 "#7F6020")
       (nikita-orange-01 "#B2862D")
