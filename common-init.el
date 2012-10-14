@@ -370,6 +370,14 @@
 
 
 ;; ================================================
+;; change the default locations for smex and ido saved files
+;; ================================================
+(eval-after-load "smex" (setq smex-save-file (convert-standard-filename "~/.emacs.d/.smex-items") ))
+(eval-after-load "ido" (setq ido-save-directory-list-file (convert-standard-filename "~/.emacs.d/.ido.last")))
+;; ================================================
+
+
+;; ================================================
 ;; Load Key Bindings
 ;; ================================================
 (load "key-bindings.el")
