@@ -130,6 +130,14 @@
    `(magit-header                     ((,class (:foreground ,nikita-orange))))
 
 
+   ;;; compile-mode
+   `(compilation-info                 ((,class (:foreground ,nikita-green))))
+   `(compilation-error                ((,class (:foreground ,nikita-red))))
+   `(compilation-warning              ((,class (:foreground ,nikita-orange))))
+   `(compilation-line-number          ((,class (:foreground ,nikita-cyan))))
+   `(compilation-column-number        ((,class (:foreground ,nikita-magenta+01))))
+
+
    ;;; ido
    `(ido-first-match ((,class (:foreground ,nikita-blue+02))))
    `(ido-incomplete-regexp ((,class (:foreground ,nikita-white))))
