@@ -102,6 +102,7 @@
    `(mode-line          ((,class (:foreground ,nikita-grey :background ,nikita-green :box nil ))))
    `(mode-line-inactive ((,class (:foreground ,nikita-fg :background ,nikita-grey-01 :box nil ))))
    `(region             ((,class (:background ,nikita-bg+02 ))))
+   `(button             ((,class (:foreground ,nikita-cyan ))))
 
    ;;; face fonts
    `(font-lock-builtin-face        ((,class (:foreground ,nikita-blue))))
