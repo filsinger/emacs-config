@@ -121,14 +121,15 @@
    `(diff-file-header                 ((,class (:background ,nikita-bg+02))))
    `(diff-indicator-added             ((,class (:foreground ,nikita-green-02))))
    `(diff-indicator-removed           ((,class (:foreground ,nikita-red-02))))
-   `(diff-indicator-added-face        ((,class (:foreground ,nikita-green))))
-   `(diff-indicator-removed-face      ((,class (:foreground ,nikita-red))))
-   `(diff-added                       ((,class (:foreground ,nikita-green))))
-   `(diff-removed                     ((,class (:foreground ,nikita-red))))
+   `(diff-indicator-added-face        ((,class (:foreground ,nikita-green+01))))
+   `(diff-indicator-removed-face      ((,class (:foreground ,nikita-red+01))))
+   `(diff-added                       ((,class (:foreground ,nikita-green+01))))
+   `(diff-removed                     ((,class (:foreground ,nikita-red+01))))
 
 
    ;;; magit
-   `(magit-header                     ((,class (:foreground ,nikita-orange))))
+   `(magit-header                     ((,class (:foreground ,nikita-orange+01))))
+   `(magit-branch                     ((,class (:foreground ,nikita-cyan+01))))
 
 
    ;;; compile-mode
