@@ -116,12 +116,18 @@
 
 
    ;;; diff
-   `(diff-indicator-added             ((,class (:foreground ,nikita-green))))
-   `(diff-indicator-removed           ((,class (:foreground ,nikita-red))))
+   `(diff-header                      ((,class (:background ,nikita-bg+01))))
+   `(diff-file-header                 ((,class (:background ,nikita-bg+02))))
+   `(diff-indicator-added             ((,class (:foreground ,nikita-green-02))))
+   `(diff-indicator-removed           ((,class (:foreground ,nikita-red-02))))
    `(diff-indicator-added-face        ((,class (:foreground ,nikita-green))))
    `(diff-indicator-removed-face      ((,class (:foreground ,nikita-red))))
-   `(magit-diff-add                   ((,class (:foreground ,nikita-green))))
-   `(magit-diff-del                   ((,class (:foreground ,nikita-red))))
+   `(diff-added                       ((,class (:foreground ,nikita-green))))
+   `(diff-removed                     ((,class (:foreground ,nikita-red))))
+
+
+   ;;; magit
+   `(magit-header                     ((,class (:foreground ,nikita-orange))))
 
 
    ;;; ido
