@@ -133,10 +133,10 @@
 
 
    ;;; compile-mode
-   `(compilation-info                 ((,class (:foreground ,nikita-green))))
-   `(compilation-error                ((,class (:foreground ,nikita-red))))
-   `(compilation-warning              ((,class (:foreground ,nikita-orange))))
-   `(compilation-line-number          ((,class (:foreground ,nikita-cyan))))
+   `(compilation-info                 ((,class (:foreground ,nikita-green+01))))
+   `(compilation-error                ((,class (:foreground ,nikita-red+01))))
+   `(compilation-warning              ((,class (:foreground ,nikita-orange+01))))
+   `(compilation-line-number          ((,class (:foreground ,nikita-cyan+01))))
    `(compilation-column-number        ((,class (:foreground ,nikita-magenta+01))))
 
 
