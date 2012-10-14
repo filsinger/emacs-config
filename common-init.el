@@ -321,6 +321,9 @@
 (add-hook 'lisp-mode-hook (lambda ()
   (setq indent-tabs-mode nil)  ;; use spaces only if nil
   ))
+(add-hook 'emacs-lisp-mode-hook (lambda ()
+  (setq indent-tabs-mode nil)  ;; use spaces only if nil
+  ))
 ;; ================================================
 
 
