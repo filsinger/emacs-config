@@ -25,11 +25,14 @@ Replace the preceding sexp with its value.
 
 ;;;***
 
-;;;### (autoloads (everything-find-prompt everything-find-file) "../custom/everything"
-;;;;;;  "../custom/everything.el" (20604 46334))
+;;;### (autoloads (everything-find-prompt everything-find-file everything)
+;;;;;;  "../custom/everything" "../custom/everything.el" (20604 49143))
 ;;; Generated autoloads from ../custom/everything.el
 
-(defalias 'everything 'everything-find-file)
+(autoload 'everything "../custom/everything" "\
+Prompt for a search string and display the results in an interactive buffer.
+
+\(fn QUERY)" t nil)
 
 (autoload 'everything-find-file "../custom/everything" "\
 Prompt for a search string, let the user choose one of the returned files and
@@ -4285,7 +4288,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20604 46357 911000))
+;;;;;;  (20604 49190 904000))
 
 ;;;***
 

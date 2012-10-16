@@ -166,14 +166,29 @@ After successfully fetching the matching filenames, this buffer holds one filena
 See `everything-post-process-hook' to post-process this buffer.")
 (defvar everything-log-buffer "*everything-log*" "Name of buffer to write log messages to.")
 (defvar everything-log nil "Switch to enable log buffer.")
-
+(defvar everything-file-regexp "^.+$" "Regular expression that for matching filenames in the *everything* buffer.")
+(defvar everything-query-history nil "")
 
 (require 'cl)  ; find
 
 ;;;; User Interface
 
 ;;;###autoload
-(defalias 'everything 'everything-find-file)
+(defun everything (query)
+  "Prompt for a search string and display the results in an interactive buffer."
+  (interactive "MQuery everything: ")
+  (everything-locate query)
+  (when (get-buffer everything-result-buffer)
+    (with-current-buffer (get-buffer everything-result-buffer)
+      (goto-char (point-min))
+      (save-excursion
+        (let ((map (make-sparse-keymap)))
+          (define-key map [return] 'everything-file-at-point)
+          (while (re-search-forward everything-file-regexp nil t)
+            (put-text-property (match-beginning 0) (match-end 0) 'keymap map)
+            )))
+      (setq buffer-read-only t))
+    (switch-to-buffer-other-window everything-result-buffer)))
 
 ;;;###autoload
 (defun everything-find-file ()
@@ -195,6 +210,12 @@ the current directory and its sub-directories."
     (unless (string= query "")
       (everything-select query))))
 
+(defun everything-file-at-point ()
+  (interactive)
+  (when (thing-at-point-looking-at everything-file-regexp)
+    (if (file-exists-p (match-string-no-properties 0))
+        (find-file (match-string-no-properties 0))
+      (error (format "File not found: %s" (match-string-no-properties 0))) )))
 
 (defun everything-toggle-case ()
   (interactive)
