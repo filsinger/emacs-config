@@ -25,6 +25,27 @@ Replace the preceding sexp with its value.
 
 ;;;***
 
+;;;### (autoloads (everything-find-prompt everything-find-file) "../custom/everything"
+;;;;;;  "../custom/everything.el" (20604 46334))
+;;; Generated autoloads from ../custom/everything.el
+
+(defalias 'everything 'everything-find-file)
+
+(autoload 'everything-find-file "../custom/everything" "\
+Prompt for a search string, let the user choose one of the returned files and
+open it.
+
+\(fn)" t nil)
+
+(autoload 'everything-find-prompt "../custom/everything" "\
+Prompt for a query and return the chosen filename.
+If the current major mode is dired or (e)shell-mode limit the search to
+the current directory and its sub-directories.
+
+\(fn)" nil nil)
+
+;;;***
+
 ;;;### (autoloads (ibuffer-ido-find-file) "../custom/ibuffer-ido-find-file"
 ;;;;;;  "../custom/ibuffer-ido-find-file.el" (20588 36218))
 ;;; Generated autoloads from ../custom/ibuffer-ido-find-file.el
@@ -4264,7 +4285,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20600 33259 590000))
+;;;;;;  (20604 46357 911000))
 
 ;;;***
 
