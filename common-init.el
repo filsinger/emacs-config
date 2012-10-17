@@ -328,6 +328,15 @@
 
 
 ;; ================================================
+;; Set space indentation settings for ruby
+;; ================================================
+(add-hook 'lua-mode-hook (lambda ()
+  (setq indent-tabs-mode nil)  ;; use spaces only if nil
+  ))
+;; ================================================
+
+
+;; ================================================
 ;; zencoding
 ;; ================================================
 (add-hook 'sgml-mode-hook 'zencoding-mode)
