@@ -1,7 +1,10 @@
 (when (or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
 
 (when (eq system-type 'darwin)
-	;; Ignore .DS_Store files with ido mode
+  ;; use mdfind instead of locate on osx (uses spotlight)
+  (setq locate-command "mdfind")
+
+  ;; Ignore .DS_Store files with ido mode
   (add-to-list 'ido-ignore-files "\\.DS_Store")
   ;; set 'command-f' to toggle fullscreen on OSX
   (global-set-key (kbd "s-f") 'ns-toggle-fullscreen)
