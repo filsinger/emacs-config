@@ -279,29 +279,30 @@
 (add-hook 'c++-mode-hook (lambda ()
    (font-lock-add-keywords nil
 	'(
-	  ;; keywords
-	  ("constexpr" . font-lock-keyword-face)
+	  ("\\<nullptr\\>" . font-lock-constant-face)
 
-	  ("nullptr" . font-lock-constant-face)
-	  ("noexcept" . font-lock-keyword-face)
-	  ("thread_local" . font-lock-keyword-face)
+	  ;; keywords
+	  ("\\<constexpr\\|noexcept\\|thread_local\\>" . font-lock-keyword-face)
 	  ("\\(static_assert\\)[ \t]*(.*)" (1 font-lock-keyword-face))
-	  ("\\(alignas\\)[ \t]*(.*)" (1 font-lock-keyword-face))
-	  ("\\(alignof\\)[ \t]*(.*)" (1 font-lock-keyword-face))
+	  ("\\<\\(alignas\\|alignof\\|decltype\\)\\>[ \t]*(.*)" (1 font-lock-keyword-face))
 	  ("\\(decltype\\)[ \t]*(.*)" (1 font-lock-keyword-face))
 
 	  ;; types
-	  ("char16_t" . font-lock-type-face)
-	  ("char32_t" . font-lock-type-face)
+	  ("\\<char\\(16\\|32\\)_t\\>" . font-lock-type-face)
+	  ;;("char32_t" . font-lock-type-face)
 
 	  ;; lambdas
 	  ("[^a-zA-Z0-9_)]\\(\\[\\).*\\]*?\\(\\]\\)[ \t]*(.*)" (1 font-lock-function-name-face) (2 font-lock-function-name-face))
 
 	  ;; string literals
-	  ("\\(u8\\)\"" (1 font-lock-builtin-face))
-	  ("\\(u\\)\"" (1 font-lock-builtin-face))
-	  ("\\(U\\)\"" (1 font-lock-builtin-face))
-	  ("\\(L\\)\"" (1 font-lock-builtin-face))
+	  ("\\(u8*R*\\)\"" (1 font-lock-builtin-face))
+	  ("\\([UL]R*\\)\"" (1 font-lock-builtin-face))
+
+      ;; constants
+      ("\\<0[xX][0-9a-fA-F]+\\>" . font-lock-constant-face)
+      ("[-+]*\\<[0-9]*\\.*[0-9]*[eE][-+]*[0-9]+[fFlL]*\\>" . font-lock-constant-face)
+      ("[-+]*\\<[0-9]*\\.[0-9]+[fFlL]*\\>" . font-lock-constant-face)
+      ("[-+]*\\<[0-9]+[ulUL]*\\>" . font-lock-constant-face)
 	  ))
    ))
 ;; ================================================
