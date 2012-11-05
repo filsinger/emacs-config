@@ -26,7 +26,7 @@ Replace the preceding sexp with its value.
 ;;;***
 
 ;;;### (autoloads (everything-find-prompt everything-find-file everything)
-;;;;;;  "../custom/everything" "../custom/everything.el" (20604 49143))
+;;;;;;  "../custom/everything" "../custom/everything.el" (20606 12623))
 ;;; Generated autoloads from ../custom/everything.el
 
 (autoload 'everything "../custom/everything" "\
@@ -46,6 +46,49 @@ If the current major mode is dired or (e)shell-mode limit the search to
 the current directory and its sub-directories.
 
 \(fn)" nil nil)
+
+;;;***
+
+;;;### (autoloads (gtags-mode) "../custom/gtags" "../custom/gtags.el"
+;;;;;;  (20631 32491))
+;;; Generated autoloads from ../custom/gtags.el
+
+(autoload 'gtags-mode "../custom/gtags" "\
+Toggle Gtags mode, a minor mode for browsing source code using GLOBAL.
+
+Specify the root directory of project.
+	\\[gtags-visit-rootdir]
+Input tag name and move to the definition.
+	\\[gtags-find-tag]
+Input tag name and move to the definition in other window.
+        \\[gtags-find-tag-other-window]
+Input tag name and move to the referenced point.
+	\\[gtags-find-rtag]
+Input symbol and move to the locations.
+	\\[gtags-find-symbol]
+Input pattern, search with grep(1) and move to the locations.
+	\\[gtags-find-with-grep]
+Input pattern, search with idutils(1) and move to the locations.
+	\\[gtags-find-with-idutils]
+Input pattern and move to the top of the file.
+	\\[gtags-find-file]
+Input pattern and show the list of definitions of the file.
+	\\[gtags-parse-file]
+Get the expression as a tagname around here and move there.
+	\\[gtags-find-tag-from-here]
+Display current screen on hypertext browser.
+	\\[gtags-display-browser]
+Get the expression as a tagname around here and move there.
+	\\[gtags-find-tag-by-event]
+Move to previous point on the stack.
+	\\[gtags-pop-stack]
+
+Key definitions:
+\\{gtags-mode-map}
+Turning on Gtags mode calls the value of the variable `gtags-mode-hook'
+with no args, if that value is non-nil.
+
+\(fn &optional FORCES)" t nil)
 
 ;;;***
 
@@ -73,8 +116,8 @@ Symbols matching the text at point are put first in the completion list.
 ;;;***
 
 ;;;### (autoloads (indent-buffer-and-delete-trailing-whitespace indent-buffer)
-;;;;;;  "../custom/indent-buffer" "../custom/indent-buffer.el" (20600
-;;;;;;  32967))
+;;;;;;  "../custom/indent-buffer" "../custom/indent-buffer.el" (20601
+;;;;;;  62642))
 ;;; Generated autoloads from ../custom/indent-buffer.el
 
 (autoload 'indent-buffer "../custom/indent-buffer" "\
@@ -400,7 +443,7 @@ Automagically pair braces and quotes like in TextMate.
 ;;;;;;  csearch/index-get csearch/index-set csearch/ignore-regexp-list
 ;;;;;;  csearch/result-line-offset csearch/index-file csearch/cindex-program
 ;;;;;;  csearch/csearch-program csearch-mode) "../submodules/csearch-mode/csearch-mode"
-;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20596 26456))
+;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20631 21539))
 ;;; Generated autoloads from ../submodules/csearch-mode/csearch-mode.el
 
 (let ((loads (get 'csearch-mode 'custom-loads))) (if (member '"../submodules/csearch-mode/csearch-mode" loads) nil (put 'csearch-mode 'custom-loads (cons '"../submodules/csearch-mode/csearch-mode" loads))))
@@ -1174,7 +1217,7 @@ In this case you have to add this new attribute to your source.
 When `helm-samewindow' or SPLIT-ONEWINDOW are non--nil,
 and `helm-buffer' is displayed in only one window,
 the helm window is splitted to display
-`helm-select-persistent-action-window' in other window 
+`helm-select-persistent-action-window' in other window
 and keep its visibility.
 
 \(fn &optional (attr (quote persistent-action)) SPLIT-ONEWINDOW)" t nil)
@@ -1589,7 +1632,7 @@ Preconfigured helm for `helm-c-source-evaluation-result'.
 \(fn ARG)" t nil)
 
 (autoload 'helm-eval-expression-with-eldoc "../submodules/helm/helm-eval" "\
-Preconfigured helm for `helm-c-source-evaluation-result' with `eldoc' support. 
+Preconfigured helm for `helm-c-source-evaluation-result' with `eldoc' support.
 
 \(fn)" t nil)
 
@@ -3259,9 +3302,9 @@ Args are SECS, REPEAT, REDOSECS, REDOREPEAT, INCLUDERUNTIME,
 FUNCTION and &rest ARGS.
 Similar to run-with-idle-timer, except that provides more options.
 Suppose you want emacs to run an action every REDOSECS for as long as
-emacs remains idle.  Think you can do it with the emacs' 
+emacs remains idle.  Think you can do it with the emacs'
 run-with-idle-timer? Think again.. :)   That function will perform the
-action exactly once every time emacs goes idle.  This funciton, 
+action exactly once every time emacs goes idle.  This funciton,
 tf-run-with-idle-timer *will* allow you to keep performing an action
 as long as emacs remains idle.
 
@@ -4288,7 +4331,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20604 49190 904000))
+;;;;;;  (20631 32517 345999))
 
 ;;;***
 

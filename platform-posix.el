@@ -14,6 +14,10 @@
 	   (unless (file-executable-p (expand-file-name csearch/csearch-program)) (setq csearch/csearch-program (expand-file-name "~/bin/csearch")) )
 	   (unless (file-executable-p (expand-file-name csearch/cindex-program)) (setq csearch/cindex-program (expand-file-name "~/bin/cindex")) ) ))
 
+  (eval-after-load "gtags"
+    '(progn
+       (unless (and gtags-global-command (file-executable-p (expand-file-name gtags-global-command))) (setq gtags-global-command "/usr/local/bin/global"))))
+
   (setq w3m-command "/usr/local/bin/w3m")
 )
 
