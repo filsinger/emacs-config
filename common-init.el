@@ -154,7 +154,6 @@
 
 ;; minor modes
 (normal-erase-is-backspace-mode 1)        ; fix the delete key so that it deletes instead of backspacing (this seems to be happening when I SSH into my one of my Linux boxes)
-(delete-selection-mode 1)                 ; delete current selection when you start typing
 (show-paren-mode 1)	                      ; enable show-paren-mode to display matching parentheses
 (global-font-lock-mode 1)                 ; activate font-lock-mode (syntax coloring)
 (column-number-mode 1)                    ; Activate column-number-mode
