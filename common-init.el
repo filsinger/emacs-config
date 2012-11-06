@@ -159,7 +159,7 @@
 (global-font-lock-mode 1)                 ; activate font-lock-mode (syntax coloring)
 (column-number-mode 1)                    ; Activate column-number-mode
 (transient-mark-mode 1)			          ; Selection highlighting
-(subword-mode 1)			              ; enable subword mode
+(global-subword-mode 1)                   ; enable subword mode
 (ido-mode 1)							  ; enable ido mode
 (electric-pair-mode 1)
 

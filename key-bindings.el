@@ -52,6 +52,8 @@
 (global-set-key (kbd "<C-M-up>") 'move-line-up)	       ; move current line down
 (global-set-key (kbd "C-;") 'ido-imenu)
 (global-set-key (kbd "C-c SPC") 'ace-jump-mode)		   ; move cursor via ace-jump-mode
+(global-set-key (kbd "C-<left>") 'backward-word)       ; move backward word
+(global-set-key (kbd "C-<right>") 'forward-word)       ; move forward word
 
 ;; transpose key bindings
 (global-unset-key (kbd "M-t"))      ; unbind the default transpose-words keybinding
