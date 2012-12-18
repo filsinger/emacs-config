@@ -160,12 +160,15 @@
 (transient-mark-mode 1)			          ; Selection highlighting
 (global-subword-mode 1)                   ; enable subword mode
 (ido-mode 1)							  ; enable ido mode
-(electric-pair-mode 1)
 
 (when (>= emacs-major-version 23)	      ; minor-modes to enable in Emacs 23+
   (progn
     (global-linum-mode 1)	              ; enable line numbers
     (setq linum-format "  %d ")))         ; set the line number formatting
+
+(when (>= emacs-major-version 24)
+  (progn
+    (electric-pair-mode 1) ))
 ;; ================================================
 
 
