@@ -4,10 +4,14 @@
   ;; use mdfind instead of locate on osx (uses spotlight)
   (setq locate-command "mdfind")
 
-  ;; Ignore .DS_Store files with ido mode
-  (add-to-list 'ido-ignore-files "\\.DS_Store")
-  ;; set 'command-f' to toggle fullscreen on OSX
-  (global-set-key (kbd "s-f") 'ns-toggle-fullscreen)
+  (add-to-list 'ido-ignore-files "\\.DS_Store")        ;; Ignore .DS_Store files with ido mode
+
+  (global-set-key (kbd "A-f") 'ns-toggle-fullscreen)   ;; set 'option-f' to toggle fullscreen on OSX
+  (global-set-key [kp-delete] 'delete-char)            ;; sets fn-delete to be right-delete
+
+  ;; swap option and command key
+  (setq mac-option-modifier 'alt)
+  (setq mac-command-modifier 'meta)
 
   (eval-after-load "csearch-mode"
 	'(progn
