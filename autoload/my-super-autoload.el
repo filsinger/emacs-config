@@ -14,6 +14,33 @@ Mode for DOS and Windows BAT files
 
 ;;;***
 
+;;;### (autoloads (camelscore-word-at-point camelscore camelcase
+;;;;;;  split-name) "../custom/camelscore" "../custom/camelscore.el"
+;;;;;;  (20793 39053))
+;;; Generated autoloads from ../custom/camelscore.el
+
+(autoload 'split-name "../custom/camelscore" "\
+
+
+\(fn S)" nil nil)
+
+(autoload 'camelcase "../custom/camelscore" "\
+
+
+\(fn S)" nil nil)
+
+(autoload 'camelscore "../custom/camelscore" "\
+
+
+\(fn S)" nil nil)
+
+(autoload 'camelscore-word-at-point "../custom/camelscore" "\
+
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (eval-and-replace) "../custom/eval-and-replace"
 ;;;;;;  "../custom/eval-and-replace.el" (20588 36218))
 ;;; Generated autoloads from ../custom/eval-and-replace.el
@@ -4499,7 +4526,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20790 54682 266362))
+;;;;;;  (20793 39163 592913))
 
 ;;;***
 

@@ -27,7 +27,7 @@
 (global-set-key (kbd "<f8>") 'ispell-word) ; spell-check the current word
 
 ;; helm
-(global-set-key (kbd "C-x C-a") 'helm-mini)
+;;(global-set-key (kbd "C-x C-a") 'helm-mini)
 
 ;; multiple-cursors
 (global-set-key (kbd "C-x r t") 'mc/edit-lines)
@@ -80,6 +80,9 @@
 ;; smex (like ido for M-x)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+
+;;
+(global-set-key (kbd "M-_") 'camelscore-word-at-point)
 
 
 
