@@ -16,6 +16,8 @@
 (global-set-key (kbd "C-S-s") 'tags-apropos) ; tags apropos
 (global-set-key (kbd "C-.") 'next-multiframe-window) ; use C-. to move to the next window
 (global-set-key (kbd "C-,") 'previous-multiframe-window) ; use C-, to move to the previous window
+(global-set-key (kbd "C-{") 'switch-to-prev-buffer) ; use C-{ to switch to the previous buffer
+(global-set-key (kbd "C-}") 'switch-to-next-buffer) ; use C-} to switch to the next buffer
 
 ;; hilight-symbol
 (global-set-key (kbd "C-<f3>") 'highlight-symbol-at-point)
