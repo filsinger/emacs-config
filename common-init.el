@@ -164,7 +164,9 @@
 (when (>= emacs-major-version 23)	      ; minor-modes to enable in Emacs 23+
   (progn
     (global-linum-mode 1)	              ; enable line numbers
-    (setq linum-format "  %d ")))         ; set the line number formatting
+    (setq linum-format "  %d ")           ; get the line number formatting
+    (setq delete-by-moving-to-trash t)    ; move files to the trash instead of deleting them
+    ))
 
 (when (>= emacs-major-version 24)
   (progn
