@@ -289,11 +289,12 @@
 	  ;; keywords
 	  ("\\<constexpr\\|noexcept\\|thread_local\\>" . font-lock-keyword-face)
 	  ("\\(static_assert\\)[ \t]*(.*)" (1 font-lock-keyword-face))
-	  ("\\<\\(alignas\\|alignof\\|decltype\\)\\>[ \t]*(.*)" (1 font-lock-keyword-face))
+	  ("\\<\\(alignas\\|alignof\\|decltype\\|offsetof\\)\\>[ \t]*(.*)" (1 font-lock-keyword-face))
 	  ("\\(decltype\\)[ \t]*(.*)" (1 font-lock-keyword-face))
 
 	  ;; types
 	  ("\\<char\\(16\\|32\\)_t\\>" . font-lock-type-face)
+	  ("\\<\\(ptrdiff\\|u*intptr\\)_t\\>" . font-lock-type-face)
 	  ;;("char32_t" . font-lock-type-face)
 
 	  ;; lambdas
