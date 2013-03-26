@@ -43,6 +43,7 @@
 ;; region
 (global-set-key (kbd "C-c e") 'eval-and-replace)       ; evaluate and replace the region
 (global-set-key (kbd "C-@") 'er/expand-region)         ; expand-region
+(global-set-key (kbd "C-!") 'mark-between-parentheses) ; mark-between-parentheses
 
 ;; navigation
 (global-set-key "\M-g-g" 'goto-line)                   ; move cursor to a specific line

@@ -31,3 +31,14 @@
       (forward-list)
       (setq end-point (- (point) 1) )
       (kill-region start-point end-point))))
+
+;;;###autoload
+(defun mark-between-parentheses ()
+  "Mark all text within a balanced group of parenthesis."
+    (interactive)
+      (backward-up-list)
+      (forward-char)
+      (set-mark (point))
+      (backward-char)
+      (forward-list)
+      (backward-char))

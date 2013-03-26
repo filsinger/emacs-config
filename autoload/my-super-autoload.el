@@ -77,9 +77,9 @@ the current directory and its sub-directories.
 
 ;;;***
 
-;;;### (autoloads (kill-between-parentheses kill-to-end-of-string
-;;;;;;  kill-string) "../custom/expression-utils" "../custom/expression-utils.el"
-;;;;;;  (20818 11198 0 0))
+;;;### (autoloads (mark-between-parentheses kill-between-parentheses
+;;;;;;  kill-to-end-of-string kill-string) "../custom/expression-utils"
+;;;;;;  "../custom/expression-utils.el" (20818 12198 0 0))
 ;;; Generated autoloads from ../custom/expression-utils.el
 
 (autoload 'kill-string "../custom/expression-utils" "\
@@ -94,6 +94,11 @@ When the current point is within a string, kill all text from point to the end o
 
 (autoload 'kill-between-parentheses "../custom/expression-utils" "\
 Kill all text between a balanced group of parenthesis.
+
+\(fn)" t nil)
+
+(autoload 'mark-between-parentheses "../custom/expression-utils" "\
+Mark all text within a balanced group of parenthesis.
 
 \(fn)" t nil)
 
@@ -4559,7 +4564,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20818 11210 244000 0))
+;;;;;;  (20818 13342 643000 0))
 
 ;;;***
 
