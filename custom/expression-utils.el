@@ -83,6 +83,8 @@ It will do one of the following.
           (if (eq (- string-end string-start) 2)
               (kill-region string-start string-end) ; kill the quotes if it's an empty string
             (kill-region (+ string-start 1) (- string-end 1))))
+      (if (thing-at-point-looking-at "\\(()\\|\\[\\]\\|{}\\|<>\\)")
+          (kill-region (match-beginning 0) (match-end 0))
       (progn                                        ; kill between balanced parentheses
         (if (or (eq (nth 0 (syntax-ppss)) 0)
                 (eq (point-at-bol) (point))
@@ -95,5 +97,4 @@ It will do one of the following.
               (setq start-point (+ (point) 1))
               (forward-list)
               (setq end-point (- (point) 1) )
-              (kill-region start-point end-point))) ))))) )
-
+              (kill-region start-point end-point))) ))))) ) )
