@@ -25,6 +25,10 @@
 (global-set-key (kbd "S-<f3>") 'highlight-symbol-prev)
 (global-set-key (kbd "M-<f3>") 'highlight-symbol-perv)
 
+;; killing
+(global-set-key (kbd "C-M-k") 'kill-symbol)            ; bind kill-symbol to C-M-k
+(global-set-key (kbd "C-M-S-k") 'kill-smartly)         ; bind kill-smartly to C-M-S-k
+
 ;; spelling
 (global-set-key (kbd "<f8>") 'ispell-word) ; spell-check the current word
 
