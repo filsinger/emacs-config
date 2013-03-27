@@ -77,9 +77,10 @@ the current directory and its sub-directories.
 
 ;;;***
 
-;;;### (autoloads (mark-between-parentheses kill-between-parentheses
-;;;;;;  kill-to-end-of-string kill-string) "../custom/expression-utils"
-;;;;;;  "../custom/expression-utils.el" (20818 12198 0 0))
+;;;### (autoloads (kill-smartly kill-symbol mark-between-parentheses
+;;;;;;  kill-between-parentheses kill-to-end-of-string kill-string)
+;;;;;;  "../custom/expression-utils" "../custom/expression-utils.el"
+;;;;;;  (20818 27367 0 0))
 ;;; Generated autoloads from ../custom/expression-utils.el
 
 (autoload 'kill-string "../custom/expression-utils" "\
@@ -101,6 +102,23 @@ Kill all text between a balanced group of parenthesis.
 Mark all text within a balanced group of parenthesis.
 
 \(fn)" t nil)
+
+(autoload 'kill-symbol "../custom/expression-utils" "\
+Kill the symbol at point
+
+\(fn)" t nil)
+
+(autoload 'kill-smartly "../custom/expression-utils" "\
+Kill things around the current point based on what they are.
+
+It will do one of the following.
+1) Kill active region.
+2) Kill a symbol if point is on an opening parentheses.
+3) Kill all text within a string (leaving the \").
+4) Kill kill empty string.
+5) Kill everything within the parent parentheses.
+
+\(fn &optional)" t nil)
 
 ;;;***
 
@@ -4564,7 +4582,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20818 13342 643000 0))
+;;;;;;  (20818 27417 150000 0))
 
 ;;;***
 
