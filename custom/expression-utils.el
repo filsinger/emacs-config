@@ -36,12 +36,19 @@
 (defun mark-between-parentheses ()
   "Mark all text within a balanced group of parenthesis."
   (interactive)
-  (backward-up-list)
-  (forward-char)
-  (set-mark (point))
-  (backward-char)
-  (forward-list)
-  (backward-char))
+  (if (nth 3 (syntax-ppss))
+      (let ((string-start (nth 8 (syntax-ppss))))
+        (goto-char string-start)
+        (end-of-sexp)
+        (backward-char)
+        (set-mark (+ string-start 1)))
+    (progn
+      (backward-up-list)
+      (forward-char)
+      (set-mark (point))
+      (backward-char)
+      (forward-list)
+      (backward-char))))
 
 ;;;###autoload
 (defun kill-symbol ()
