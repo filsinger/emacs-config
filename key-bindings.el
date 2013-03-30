@@ -19,6 +19,9 @@
 (global-set-key (kbd "C-{") 'switch-to-prev-buffer) ; use C-{ to switch to the previous buffer
 (global-set-key (kbd "C-}") 'switch-to-next-buffer) ; use C-} to switch to the next buffer
 
+(when (eq system-type 'darwin)
+  (global-set-key (kbd "<kp-delete>") 'delete-region-or-char)) ; bind delete to delete-region-or-char
+
 ;; hilight-symbol
 (global-set-key (kbd "C-<f3>") 'highlight-symbol-at-point)
 (global-set-key (kbd "<f3>")   'highlight-symbol-next)

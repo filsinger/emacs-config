@@ -41,6 +41,17 @@ Mode for DOS and Windows BAT files
 
 ;;;***
 
+;;;### (autoloads (delete-region-or-char) "../custom/delete-region-or-char"
+;;;;;;  "../custom/delete-region-or-char.el" (20823 20111 0 0))
+;;; Generated autoloads from ../custom/delete-region-or-char.el
+
+(autoload 'delete-region-or-char "../custom/delete-region-or-char" "\
+Deletes a region or a char
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (eval-and-replace) "../custom/eval-and-replace"
 ;;;;;;  "../custom/eval-and-replace.el" (20588 36218))
 ;;; Generated autoloads from ../custom/eval-and-replace.el
@@ -80,7 +91,7 @@ the current directory and its sub-directories.
 ;;;### (autoloads (kill-smartly kill-symbol mark-between-parentheses
 ;;;;;;  kill-between-parentheses kill-to-end-of-string kill-string)
 ;;;;;;  "../custom/expression-utils" "../custom/expression-utils.el"
-;;;;;;  (20818 27367 0 0))
+;;;;;;  (20823 17518 0 0))
 ;;; Generated autoloads from ../custom/expression-utils.el
 
 (autoload 'kill-string "../custom/expression-utils" "\
@@ -1343,7 +1354,7 @@ In this case you have to add this new attribute to your source.
 When `helm-full-frame' or SPLIT-ONEWINDOW are non--nil,
 and `helm-buffer' is displayed in only one window,
 the helm window is splitted to display
-`helm-select-persistent-action-window' in other window 
+`helm-select-persistent-action-window' in other window
 and keep its visibility.
 
 \(fn &optional (attr (quote persistent-action)) SPLIT-ONEWINDOW)" t nil)
@@ -1740,7 +1751,7 @@ Preconfigured helm for `helm-source-evaluation-result'.
 \(fn ARG)" t nil)
 
 (autoload 'helm-eval-expression-with-eldoc "../submodules/helm/helm-eval" "\
-Preconfigured helm for `helm-source-evaluation-result' with `eldoc' support. 
+Preconfigured helm for `helm-source-evaluation-result' with `eldoc' support.
 
 \(fn)" t nil)
 
@@ -4582,7 +4593,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20818 27417 150000 0))
+;;;;;;  (20823 20172 138736 0))
 
 ;;;***
 
