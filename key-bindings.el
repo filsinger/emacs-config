@@ -10,6 +10,7 @@
 
 
 (when (eq window-system nil) (global-set-key "\C-d" 'backward-delete-char)) ; make sure backspace works the way I like in the OSX terminal
+(global-set-key (kbd "S-<return>") 'smart-open-line) ; bind S-return to create a new indented line below the current line
 (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region) ; bind C-u to comment toggle
 (global-set-key (kbd "C-c a") 'align-entire) ; bind C-a to align-entire
 (global-set-key (kbd "M-s") 'sort-lines)	 ; bind m-s to sort-lines
