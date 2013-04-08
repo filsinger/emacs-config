@@ -103,3 +103,6 @@
 [submodule "submodules/cppcheck"]
 	path = submodules/cppcheck
 	url = git://github.com/filsinger/cppcheck.el.git
+[submodule "submodules/browse-kill-ring"]
+	path = submodules/browse-kill-ring
+	url = https://github.com/browse-kill-ring/browse-kill-ring.git
