@@ -100,3 +100,6 @@
 [submodule "submodules/zencoding"]
 	path = submodules/zencoding
 	url = git://github.com/rooney/zencoding.git
+[submodule "submodules/cppcheck"]
+	path = submodules/cppcheck
+	url = git://github.com/filsinger/cppcheck.el.git
