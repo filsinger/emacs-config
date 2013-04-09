@@ -416,6 +416,17 @@ Otherwise disable it.
 
 ;;;***
 
+;;;### (autoloads (yas/popup-isearch-prompt) "../custom/yasnippet-customizations"
+;;;;;;  "../custom/yasnippet-customizations.el" (20835 37555 0 0))
+;;; Generated autoloads from ../custom/yasnippet-customizations.el
+
+(autoload 'yas/popup-isearch-prompt "../custom/yasnippet-customizations" "\
+
+
+\(fn PROMPT CHOICES &optional DISPLAY-FN)" nil nil)
+
+;;;***
+
 ;;;### (autoloads (ace-jump-mode ace-jump-line-mode ace-jump-word-mode
 ;;;;;;  ace-jump-char-mode ace-jump-mode-pop-mark) "../submodules/ace-jump-mode/ace-jump-mode"
 ;;;;;;  "../submodules/ace-jump-mode/ace-jump-mode.el" (20792 61770
@@ -539,7 +550,7 @@ See `autopair-mode' for more information on Autopair mode.
 ;;;;;;  cppcheck-relative-paths-list cppcheck-enable-list cppcheck-std-list
 ;;;;;;  cppcheck-platform cppcheck-template cppcheck-executable cppcheck)
 ;;;;;;  "../submodules/cppcheck/cppcheck" "../submodules/cppcheck/cppcheck.el"
-;;;;;;  (20834 28906 0 0))
+;;;;;;  (20835 37205 0 0))
 ;;; Generated autoloads from ../submodules/cppcheck/cppcheck.el
 
 (let ((loads (get 'cppcheck 'custom-loads))) (if (member '"../submodules/cppcheck/cppcheck" loads) nil (put 'cppcheck 'custom-loads (cons '"../submodules/cppcheck/cppcheck" loads))))
@@ -4813,7 +4824,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20834 28929 536755 0))
+;;;;;;  (20835 37935 182198 0))
 
 ;;;***
 

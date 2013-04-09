@@ -269,7 +269,7 @@
 (add-hook 'after-init-hook
 	  (lambda ()
 	    (yas/global-mode 1)
-	    (setq yas/prompt-functions '(yas/dropdown-prompt))
+        (setq yas/prompt-functions '(yas/popup-isearch-prompt yas/no-prompt))
 	    ))
 ;; ================================================
 
