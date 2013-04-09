@@ -98,6 +98,8 @@
 ;;
 (global-set-key (kbd "M-_") 'camelscore-word-at-point)
 
+;; yasnippet
+(global-set-key (kbd "C-'") 'yas-insert-snippet)
 
 
 ;; mode keymap rebinding
