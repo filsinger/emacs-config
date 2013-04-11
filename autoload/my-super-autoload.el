@@ -3083,6 +3083,17 @@ before if NLINES is negative.
 
 ;;;***
 
+;;;### (autoloads (litable-init) "../submodules/litable/litable"
+;;;;;;  "../submodules/litable/litable.el" (20838 26812 0 0))
+;;; Generated autoloads from ../submodules/litable/litable.el
+
+(autoload 'litable-init "../submodules/litable/litable" "\
+Initialize litable in the buffer.
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (lua-mode) "../submodules/lua-mode/lua-mode" "../submodules/lua-mode/lua-mode.el"
 ;;;;;;  (20823 63523 0 0))
 ;;; Generated autoloads from ../submodules/lua-mode/lua-mode.el
@@ -4767,7 +4778,8 @@ accept it or skip it.
 
 ;;;### (autoloads nil nil ("../custom/jdf-dictionary.el" "../submodules/auto-complete-clang/auto-complete-clang.el"
 ;;;;;;  "../submodules/auto-complete/auto-complete-config.el" "../submodules/auto-complete/auto-complete-pkg.el"
-;;;;;;  "../submodules/autopair/autopair-tests.el" "../submodules/emacs-websocket/websocket-functional-test.el"
+;;;;;;  "../submodules/autopair/autopair-tests.el" "../submodules/dash/dash.el"
+;;;;;;  "../submodules/emacs-websocket/websocket-functional-test.el"
 ;;;;;;  "../submodules/emacs-websocket/websocket-test.el" "../submodules/emacs-websocket/websocket.el"
 ;;;;;;  "../submodules/expand-region/cc-mode-expansions.el" "../submodules/expand-region/clojure-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/cperl-mode-expansions.el" "../submodules/expand-region/css-mode-expansions.el"
@@ -4824,7 +4836,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20835 37935 182198 0))
+;;;;;;  (20838 26830 156933 0))
 
 ;;;***
 

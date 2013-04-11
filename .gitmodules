@@ -106,3 +106,9 @@
 [submodule "submodules/browse-kill-ring"]
 	path = submodules/browse-kill-ring
 	url = https://github.com/browse-kill-ring/browse-kill-ring.git
+[submodule "submodules/dash"]
+	path = submodules/dash
+	url = git://github.com/magnars/dash.el.git
+[submodule "submodules/litable"]
+	path = submodules/litable
+	url = git://github.com/filsinger/litable.git
