@@ -544,13 +544,33 @@ See `autopair-mode' for more information on Autopair mode.
 
 ;;;***
 
+;;;### (autoloads (browse-kill-ring browse-kill-ring-default-keybindings)
+;;;;;;  "../submodules/browse-kill-ring/browse-kill-ring" "../submodules/browse-kill-ring/browse-kill-ring.el"
+;;;;;;  (20838 27405 0 0))
+;;; Generated autoloads from ../submodules/browse-kill-ring/browse-kill-ring.el
+
+(autoload 'browse-kill-ring-default-keybindings "../submodules/browse-kill-ring/browse-kill-ring" "\
+Set up M-y (`yank-pop') so that it can invoke `browse-kill-ring'.
+Normally, if M-y was not preceeded by C-y, then it has no useful
+behavior.  This function sets things up so that M-y will invoke
+`browse-kill-ring'.
+
+\(fn)" t nil)
+
+(autoload 'browse-kill-ring "../submodules/browse-kill-ring/browse-kill-ring" "\
+Display items in the `kill-ring' in another buffer.
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (cppcheck-current-file-check-config cppcheck-current-file
 ;;;;;;  cppcheck-file cppcheck-results-mode cppcheck-use-configuration-list
 ;;;;;;  cppcheck-hide-configuration-list cppcheck-include-path-list
 ;;;;;;  cppcheck-relative-paths-list cppcheck-enable-list cppcheck-std-list
 ;;;;;;  cppcheck-platform cppcheck-template cppcheck-executable cppcheck)
 ;;;;;;  "../submodules/cppcheck/cppcheck" "../submodules/cppcheck/cppcheck.el"
-;;;;;;  (20835 37205 0 0))
+;;;;;;  (20838 27676 0 0))
 ;;; Generated autoloads from ../submodules/cppcheck/cppcheck.el
 
 (let ((loads (get 'cppcheck 'custom-loads))) (if (member '"../submodules/cppcheck/cppcheck" loads) nil (put 'cppcheck 'custom-loads (cons '"../submodules/cppcheck/cppcheck" loads))))
@@ -3083,14 +3103,14 @@ before if NLINES is negative.
 
 ;;;***
 
-;;;### (autoloads (litable-init) "../submodules/litable/litable"
-;;;;;;  "../submodules/litable/litable.el" (20838 26812 0 0))
+;;;### (autoloads (litable-mode) "../submodules/litable/litable"
+;;;;;;  "../submodules/litable/litable.el" (20845 3270 0 0))
 ;;; Generated autoloads from ../submodules/litable/litable.el
 
-(autoload 'litable-init "../submodules/litable/litable" "\
-Initialize litable in the buffer.
+(autoload 'litable-mode "../submodules/litable/litable" "\
+Toggle litable-mode
 
-\(fn)" t nil)
+\(fn &optional ARG)" t nil)
 
 ;;;***
 
@@ -4836,7 +4856,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20838 26830 156933 0))
+;;;;;;  (20845 3315 658466 0))
 
 ;;;***
 

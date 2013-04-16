@@ -111,4 +111,4 @@
 	url = git://github.com/magnars/dash.el.git
 [submodule "submodules/litable"]
 	path = submodules/litable
-	url = git://github.com/filsinger/litable.git
+	url = git://github.com/Fuco1/litable.git
