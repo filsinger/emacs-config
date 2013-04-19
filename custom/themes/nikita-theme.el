@@ -96,13 +96,15 @@
 
 
    `(border             ((,class (:foreground ,nikita-fg :background ,nikita-bg+01))))
-   `(fringe             ((,class (:foreground ,nikita-bg+03 :background ,nikita-bg+01))))
+   `(fringe             ((,class (:foreground ,nikita-grey-01 :background ,nikita-bg))))
    `(header-line        ((,class (:foreground ,nikita-green-01 :background ,nikita-grey-01))))
    `(minibuffer-prompt  ((,class (:foreground ,nikita-green+01))))
    `(mode-line          ((,class (:foreground ,nikita-grey :background ,nikita-green :box nil ))))
    `(mode-line-inactive ((,class (:foreground ,nikita-fg :background ,nikita-grey-01 :box nil ))))
    `(region             ((,class (:background ,nikita-bg+02 ))))
    `(button             ((,class (:foreground ,nikita-cyan ))))
+   `(vertical-border    ((,class (:foreground ,nikita-grey-01))))
+   `(linum              ((,class (:foreground ,nikita-bg+02))))
 
    ;;; face fonts
    `(font-lock-builtin-face        ((,class (:foreground ,nikita-blue))))
