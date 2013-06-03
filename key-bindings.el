@@ -67,7 +67,7 @@
 (global-set-key (kbd "C-<right>") 'forward-word)       ; move forward word
 (global-set-key (kbd "C-S-<left>") 'backward-sexp)     ; move backward sexp
 (global-set-key (kbd "C-S-<right>") 'forward-sexp)     ; move forward sexp
-
+(global-set-key [remap move-beginning-of-line] 'smarter-move-beginning-of-line) ;; remap C-a to `smarter-move-beginning-of-line'
 
 ;; transpose key bindings
 (global-unset-key (kbd "M-t"))      ; unbind the default transpose-words keybinding
