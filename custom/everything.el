@@ -170,7 +170,7 @@ See `everything-post-process-hook' to post-process this buffer.")
 (defvar everything-query-history nil "")
 
 (require 'cl)  ; find
-
+(require 'thingatpt)
 ;;;; User Interface
 
 ;;;###autoload
