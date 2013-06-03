@@ -254,6 +254,17 @@ Find a tag using ido
 
 ;;;***
 
+;;;### (autoloads (recentf-ido-find-file) "../custom/recentf-ido-find-file"
+;;;;;;  "../custom/recentf-ido-find-file.el" (20909 5552 0 0))
+;;; Generated autoloads from ../custom/recentf-ido-find-file.el
+
+(autoload 'recentf-ido-find-file "../custom/recentf-ido-find-file" "\
+Find a recent file using ido.
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (smart-open-line) "../custom/smart-open-line" "../custom/smart-open-line.el"
 ;;;;;;  (20835 3799 0 0))
 ;;; Generated autoloads from ../custom/smart-open-line.el
@@ -4875,7 +4886,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20909 2679 280000 0))
+;;;;;;  (20909 5657 393000 0))
 
 ;;;***
 

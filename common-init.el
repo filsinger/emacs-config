@@ -177,7 +177,6 @@
  c++-tab-always-indent t
  indent-tabs-mode t                       ; use spaces only if nil
 
-
  ;; systemp/misc
  x-select-enable-clipboard 1              ; use the system clipboard
  tags-revert-without-query 1	          ; automatically reload tags files
@@ -192,6 +191,11 @@
 (transient-mark-mode 1)			          ; Selection highlighting
 (global-subword-mode 1)                   ; enable subword mode
 (ido-mode 1)							  ; enable ido mode
+
+;; recentf-mode
+(setq recentf-max-saved-items 200
+      recentf-max-menu-items 15)
+(recentf-mode +1)
 
 (when (>= emacs-major-version 23)	      ; minor-modes to enable in Emacs 23+
   (progn
