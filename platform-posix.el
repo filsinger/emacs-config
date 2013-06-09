@@ -11,8 +11,10 @@
   (global-set-key (kbd "A-\\") 'delete-horizontal-space) ;; bind 'option-\' to delete horizontal whitespace
 
   ;; swap option and command key
-  (setq mac-option-modifier 'alt)
-  (setq mac-command-modifier 'meta)
+  (setq-default mac-option-modifier 'alt)
+  (setq-default mac-command-modifier 'meta)
+  (setq-default ns-option-modifier 'alt)
+  (setq-default ns-command-modifier 'meta)
 
   (eval-after-load "csearch-mode"
 	'(progn
