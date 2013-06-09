@@ -112,3 +112,6 @@
 [submodule "submodules/litable"]
 	path = submodules/litable
 	url = git://github.com/Fuco1/litable.git
+[submodule "submodules/web-mode"]
+	path = submodules/web-mode
+	url = git://github.com/fxbois/web-mode.git

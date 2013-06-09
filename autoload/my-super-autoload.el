@@ -64,7 +64,7 @@ Replace the preceding sexp with its value.
 ;;;***
 
 ;;;### (autoloads (everything-find-prompt everything-find-file everything)
-;;;;;;  "../custom/everything" "../custom/everything.el" (20610 4571
+;;;;;;  "../custom/everything" "../custom/everything.el" (20916 65408
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../custom/everything.el
 
@@ -134,7 +134,7 @@ It will do one of the following.
 ;;;***
 
 ;;;### (autoloads (gtags-mode) "../custom/gtags" "../custom/gtags.el"
-;;;;;;  (20632 3124 0 0))
+;;;;;;  (20677 20155 0 0))
 ;;; Generated autoloads from ../custom/gtags.el
 
 (autoload 'gtags-mode "../custom/gtags" "\
@@ -200,8 +200,8 @@ Symbols matching the text at point are put first in the completion list.
 ;;;***
 
 ;;;### (autoloads (indent-buffer-and-delete-trailing-whitespace indent-buffer)
-;;;;;;  "../custom/indent-buffer" "../custom/indent-buffer.el" (20601
-;;;;;;  62642))
+;;;;;;  "../custom/indent-buffer" "../custom/indent-buffer.el" (20614
+;;;;;;  7349 0 0))
 ;;; Generated autoloads from ../custom/indent-buffer.el
 
 (autoload 'indent-buffer "../custom/indent-buffer" "\
@@ -255,7 +255,7 @@ Find a tag using ido
 ;;;***
 
 ;;;### (autoloads (recentf-ido-find-file) "../custom/recentf-ido-find-file"
-;;;;;;  "../custom/recentf-ido-find-file.el" (20909 5552 0 0))
+;;;;;;  "../custom/recentf-ido-find-file.el" (20916 65408 0 0))
 ;;; Generated autoloads from ../custom/recentf-ido-find-file.el
 
 (autoload 'recentf-ido-find-file "../custom/recentf-ido-find-file" "\
@@ -278,7 +278,7 @@ Position the cursor at its beginning, according to the current mode.
 ;;;***
 
 ;;;### (autoloads (smarter-move-beginning-of-line) "../custom/smarter-move-beginning-of-line"
-;;;;;;  "../custom/smarter-move-beginning-of-line.el" (20909 2624
+;;;;;;  "../custom/smarter-move-beginning-of-line.el" (20916 65408
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../custom/smarter-move-beginning-of-line.el
 
@@ -308,7 +308,7 @@ point reaches the beginning or end of the buffer, stop there.
 ;;;;;;  sr-speedbar-refresh-turn-off sr-speedbar-refresh-turn-on
 ;;;;;;  sr-speedbar-select-window sr-speedbar-close sr-speedbar-open
 ;;;;;;  sr-speedbar-toggle) "../custom/sr-speedbar" "../custom/sr-speedbar.el"
-;;;;;;  (20588 36218))
+;;;;;;  (20614 7349 0 0))
 ;;; Generated autoloads from ../custom/sr-speedbar.el
 
 (autoload 'sr-speedbar-toggle "../custom/sr-speedbar" "\
@@ -448,7 +448,7 @@ Otherwise disable it.
 ;;;***
 
 ;;;### (autoloads (yas/popup-isearch-prompt) "../custom/yasnippet-customizations"
-;;;;;;  "../custom/yasnippet-customizations.el" (20836 22429 0 0))
+;;;;;;  "../custom/yasnippet-customizations.el" (20916 65408 0 0))
 ;;; Generated autoloads from ../custom/yasnippet-customizations.el
 
 (autoload 'yas/popup-isearch-prompt "../custom/yasnippet-customizations" "\
@@ -544,7 +544,7 @@ Start auto-completion at current point.
 ;;;***
 
 ;;;### (autoloads (autopair-global-mode autopair-mode) "../submodules/autopair/autopair"
-;;;;;;  "../submodules/autopair/autopair.el" (20792 61774 0 0))
+;;;;;;  "../submodules/autopair/autopair.el" (20793 42733 0 0))
 ;;; Generated autoloads from ../submodules/autopair/autopair.el
 
 (autoload 'autopair-mode "../submodules/autopair/autopair" "\
@@ -577,7 +577,7 @@ See `autopair-mode' for more information on Autopair mode.
 
 ;;;### (autoloads (browse-kill-ring browse-kill-ring-default-keybindings)
 ;;;;;;  "../submodules/browse-kill-ring/browse-kill-ring" "../submodules/browse-kill-ring/browse-kill-ring.el"
-;;;;;;  (20839 1790 0 0))
+;;;;;;  (20916 65428 0 0))
 ;;; Generated autoloads from ../submodules/browse-kill-ring/browse-kill-ring.el
 
 (autoload 'browse-kill-ring-default-keybindings "../submodules/browse-kill-ring/browse-kill-ring" "\
@@ -601,7 +601,7 @@ Display items in the `kill-ring' in another buffer.
 ;;;;;;  cppcheck-relative-paths-list cppcheck-enable-list cppcheck-std-list
 ;;;;;;  cppcheck-platform cppcheck-template cppcheck-executable cppcheck)
 ;;;;;;  "../submodules/cppcheck/cppcheck" "../submodules/cppcheck/cppcheck.el"
-;;;;;;  (20838 27676 0 0))
+;;;;;;  (20916 65428 0 0))
 ;;; Generated autoloads from ../submodules/cppcheck/cppcheck.el
 
 (let ((loads (get 'cppcheck 'custom-loads))) (if (member '"../submodules/cppcheck/cppcheck" loads) nil (put 'cppcheck 'custom-loads (cons '"../submodules/cppcheck/cppcheck" loads))))
@@ -725,7 +725,7 @@ Runs cppcheck with the '--check-config' option
 ;;;;;;  csearch/index-get csearch/index-set csearch/ignore-regexp-list
 ;;;;;;  csearch/result-line-offset csearch/index-file csearch/cindex-program
 ;;;;;;  csearch/csearch-program csearch-mode) "../submodules/csearch-mode/csearch-mode"
-;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20632 3149
+;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20677 20179
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/csearch-mode/csearch-mode.el
 
@@ -1081,7 +1081,7 @@ Key bindings:
 ;;;***
 
 ;;;### (autoloads (er/expand-region) "../submodules/expand-region/expand-region"
-;;;;;;  "../submodules/expand-region/expand-region.el" (20792 61776
+;;;;;;  "../submodules/expand-region/expand-region.el" (20834 32550
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/expand-region/expand-region.el
 
@@ -1102,8 +1102,8 @@ before calling `er/expand-region' for the first time.
 ;;;;;;  expand-region-skip-whitespace expand-region-autocopy-register
 ;;;;;;  expand-region-guess-python-mode expand-region-preferred-python-mode
 ;;;;;;  expand-region) "../submodules/expand-region/expand-region-custom"
-;;;;;;  "../submodules/expand-region/expand-region-custom.el" (20792
-;;;;;;  61776 0 0))
+;;;;;;  "../submodules/expand-region/expand-region-custom.el" (20834
+;;;;;;  32550 0 0))
 ;;; Generated autoloads from ../submodules/expand-region/expand-region-custom.el
 
 (let ((loads (get 'expand-region 'custom-loads))) (if (member '"../submodules/expand-region/expand-region-custom" loads) nil (put 'expand-region 'custom-loads (cons '"../submodules/expand-region/expand-region-custom" loads))))
@@ -1210,7 +1210,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-issues" "../submodules/gh/gh-issues.el"
-;;;;;;  (20792 61776 0 0))
+;;;;;;  (20793 42734 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-issues.el
 
 (require 'eieio)
@@ -1267,7 +1267,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-url" "../submodules/gh/gh-url.el"
-;;;;;;  (20792 61776 0 0))
+;;;;;;  (20793 42734 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-url.el
 
 (require 'eieio)
@@ -1554,7 +1554,7 @@ In this case you have to add this new attribute to your source.
 When `helm-full-frame' or SPLIT-ONEWINDOW are non--nil,
 and `helm-buffer' is displayed in only one window,
 the helm window is splitted to display
-`helm-select-persistent-action-window' in other window 
+`helm-select-persistent-action-window' in other window
 and keep its visibility.
 
 \(fn &optional (attr (quote persistent-action)) SPLIT-ONEWINDOW)" t nil)
@@ -1992,7 +1992,7 @@ Preconfigured helm for `helm-source-evaluation-result'.
 \(fn ARG)" t nil)
 
 (autoload 'helm-eval-expression-with-eldoc "../submodules/helm/helm-eval" "\
-Preconfigured helm for `helm-source-evaluation-result' with `eldoc' support. 
+Preconfigured helm for `helm-source-evaluation-result' with `eldoc' support.
 
 \(fn)" t nil)
 
@@ -3134,7 +3134,7 @@ before if NLINES is negative.
 ;;;***
 
 ;;;### (autoloads (litable-mode) "../submodules/litable/litable"
-;;;;;;  "../submodules/litable/litable.el" (20845 53743 0 0))
+;;;;;;  "../submodules/litable/litable.el" (20916 65431 0 0))
 ;;; Generated autoloads from ../submodules/litable/litable.el
 
 (autoload 'litable-mode "../submodules/litable/litable" "\
@@ -3189,7 +3189,7 @@ Display blame information inline.
 ;;;***
 
 ;;;### (autoloads (turn-on-magit-flow magit-flow-mode) "../submodules/magit/magit-flow"
-;;;;;;  "../submodules/magit/magit-flow.el" (20792 61781 0 0))
+;;;;;;  "../submodules/magit/magit-flow.el" (20793 42734 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-flow.el
 
 (autoload 'magit-flow-mode "../submodules/magit/magit-flow" "\
@@ -3254,7 +3254,7 @@ Unconditionally turn on `magit-topgit-mode'.
 
 ;;;### (autoloads (global-magit-wip-save-mode magit-wip-save-mode
 ;;;;;;  magit-wip-mode) "../submodules/magit/magit-wip" "../submodules/magit/magit-wip.el"
-;;;;;;  (20792 61781 0 0))
+;;;;;;  (20793 42734 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-wip.el
 
 (defvar magit-wip-mode nil "\
@@ -3340,7 +3340,7 @@ Major mode for editing GitHub Flavored Markdown files.
 
 ;;;### (autoloads (restore-frame maximize-frame x-restore-frame x-maximize-frame
 ;;;;;;  w32-restore-frame w32-maximize-frame) "../submodules/maxframe/maxframe"
-;;;;;;  "../submodules/maxframe/maxframe.el" (20588 36347))
+;;;;;;  "../submodules/maxframe/maxframe.el" (20614 7365 0 0))
 ;;; Generated autoloads from ../submodules/maxframe/maxframe.el
 
 (autoload 'w32-maximize-frame "../submodules/maxframe/maxframe" "\
@@ -3380,8 +3380,8 @@ Restores a maximized frame.  See `maximize-frame'.
 
 ;;;### (autoloads (mc/edit-beginnings-of-lines mc/edit-ends-of-lines
 ;;;;;;  mc/edit-lines) "../submodules/multiple-cursors/mc-edit-lines"
-;;;;;;  "../submodules/multiple-cursors/mc-edit-lines.el" (20792
-;;;;;;  61783 0 0))
+;;;;;;  "../submodules/multiple-cursors/mc-edit-lines.el" (20793
+;;;;;;  42734 0 0))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-edit-lines.el
 
 (autoload 'mc/edit-lines "../submodules/multiple-cursors/mc-edit-lines" "\
@@ -3545,7 +3545,7 @@ Mark the tag we're in and its pair for renaming.
 
 ;;;### (autoloads (mc/sort-regions mc/reverse-regions mc/insert-numbers)
 ;;;;;;  "../submodules/multiple-cursors/mc-separate-operations" "../submodules/multiple-cursors/mc-separate-operations.el"
-;;;;;;  (20792 61783 0 0))
+;;;;;;  (20793 42734 0 0))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-separate-operations.el
 
 (autoload 'mc/insert-numbers "../submodules/multiple-cursors/mc-separate-operations" "\
@@ -3745,7 +3745,7 @@ extension, suitable for passing to `load-library'.
 ;;;***
 
 ;;;### (autoloads (make-heap) "../submodules/predictive-mode/heap"
-;;;;;;  "../submodules/predictive-mode/heap.el" (20792 61787 0 0))
+;;;;;;  "../submodules/predictive-mode/heap.el" (20793 42734 0 0))
 ;;; Generated autoloads from ../submodules/predictive-mode/heap.el
 
 (autoload 'make-heap "../submodules/predictive-mode/heap" "\
@@ -4079,7 +4079,7 @@ indent function and indent level.
 ;;;***
 
 ;;;### (autoloads (smex-initialize smex) "../submodules/smex/smex"
-;;;;;;  "../submodules/smex/smex.el" (20588 36476))
+;;;;;;  "../submodules/smex/smex.el" (20614 7366 0 0))
 ;;; Generated autoloads from ../submodules/smex/smex.el
 
 (autoload 'smex "../submodules/smex/smex" "\
@@ -4138,7 +4138,7 @@ as the ewoc pretty-printer.
 ;;;***
 
 ;;;### (autoloads (bookmark-w3m-bookmark-jump) "../submodules/w3m/bookmark-w3m"
-;;;;;;  "../submodules/w3m/bookmark-w3m.el" (20596 26609))
+;;;;;;  "../submodules/w3m/bookmark-w3m.el" (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/bookmark-w3m.el
 
 (autoload 'bookmark-w3m-bookmark-jump "../submodules/w3m/bookmark-w3m" "\
@@ -4149,7 +4149,7 @@ Default bookmark handler for w3m buffers.
 ;;;***
 
 ;;;### (autoloads (mime-w3m-preview-text/html) "../submodules/w3m/mime-w3m"
-;;;;;;  "../submodules/w3m/mime-w3m.el" (20596 26610))
+;;;;;;  "../submodules/w3m/mime-w3m.el" (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/mime-w3m.el
 
 (autoload 'mime-w3m-preview-text/html "../submodules/w3m/mime-w3m" "\
@@ -4161,7 +4161,7 @@ Default bookmark handler for w3m buffers.
 
 ;;;### (autoloads (octet-mime-setup mime-view-octet mime-preview-octet
 ;;;;;;  octet-find-file octet-buffer) "../submodules/w3m/octet" "../submodules/w3m/octet.el"
-;;;;;;  (20596 26610))
+;;;;;;  (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/octet.el
 
 (autoload 'octet-buffer "../submodules/w3m/octet" "\
@@ -4353,7 +4353,7 @@ See `w3m-region' for the optional arguments.
 ;;;***
 
 ;;;### (autoloads (w3m-antenna w3m-about-antenna) "../submodules/w3m/w3m-antenna"
-;;;;;;  "../submodules/w3m/w3m-antenna.el" (20596 26610))
+;;;;;;  "../submodules/w3m/w3m-antenna.el" (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-antenna.el
 
 (autoload 'w3m-about-antenna "../submodules/w3m/w3m-antenna" "\
@@ -4419,7 +4419,7 @@ Setup w3m bookmark items in menubar.
 
 ;;;### (autoloads (w3m-about-cookie w3m-cookie w3m-cookie-get w3m-cookie-set
 ;;;;;;  w3m-cookie-shutdown) "../submodules/w3m/w3m-cookie" "../submodules/w3m/w3m-cookie.el"
-;;;;;;  (20596 26610))
+;;;;;;  (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-cookie.el
 
 (autoload 'w3m-cookie-shutdown "../submodules/w3m/w3m-cookie" "\
@@ -4451,7 +4451,7 @@ Make the html contents to display and to enable you to manage cookies.
 ;;;***
 
 ;;;### (autoloads (w3m-dtree w3m-about-dtree) "../submodules/w3m/w3m-dtree"
-;;;;;;  "../submodules/w3m/w3m-dtree.el" (20596 26610))
+;;;;;;  "../submodules/w3m/w3m-dtree.el" (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-dtree.el
 
 (autoload 'w3m-about-dtree "../submodules/w3m/w3m-dtree" "\
@@ -4468,7 +4468,7 @@ If called with 'prefix argument', display all directorys and files.
 ;;;***
 
 ;;;### (autoloads (w3m-fb-mode) "../submodules/w3m/w3m-fb" "../submodules/w3m/w3m-fb.el"
-;;;;;;  (20596 26610))
+;;;;;;  (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-fb.el
 
 (defvar w3m-fb-mode nil "\
@@ -4500,7 +4500,7 @@ Apply filtering rule of URL against a content in this buffer.
 ;;;***
 
 ;;;### (autoloads (w3m-fontify-forms) "../submodules/w3m/w3m-form"
-;;;;;;  "../submodules/w3m/w3m-form.el" (20596 26610))
+;;;;;;  "../submodules/w3m/w3m-form.el" (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-form.el
 
 (autoload 'w3m-fontify-forms "../submodules/w3m/w3m-form" "\
@@ -4515,7 +4515,7 @@ Process half-dumped data and fontify forms in this buffer.
 ;;;;;;  w3m-lnum-save-image w3m-lnum-view-image w3m-lnum-toggle-inline-image
 ;;;;;;  w3m-lnum-universal w3m-lnum-follow w3m-lnum-goto w3m-lnum-mode)
 ;;;;;;  "../submodules/w3m/w3m-lnum" "../submodules/w3m/w3m-lnum.el"
-;;;;;;  (20596 26610))
+;;;;;;  (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-lnum.el
 
 (autoload 'w3m-lnum-mode "../submodules/w3m/w3m-lnum" "\
@@ -4607,7 +4607,7 @@ If no link under point, activate numbering and ask for one.
 ;;;***
 
 ;;;### (autoloads (w3m-namazu w3m-about-namazu) "../submodules/w3m/w3m-namazu"
-;;;;;;  "../submodules/w3m/w3m-namazu.el" (20596 26610))
+;;;;;;  "../submodules/w3m/w3m-namazu.el" (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-namazu.el
 
 (autoload 'w3m-about-namazu "../submodules/w3m/w3m-namazu" "\
@@ -4623,7 +4623,7 @@ Search indexed files with Namazu.
 ;;;***
 
 ;;;### (autoloads (w3m-perldoc w3m-about-perldoc) "../submodules/w3m/w3m-perldoc"
-;;;;;;  "../submodules/w3m/w3m-perldoc.el" (20596 26610))
+;;;;;;  "../submodules/w3m/w3m-perldoc.el" (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-perldoc.el
 
 (autoload 'w3m-about-perldoc "../submodules/w3m/w3m-perldoc" "\
@@ -4668,7 +4668,7 @@ Generate query string for ENGINE from URI matched by last search.
 ;;;### (autoloads (w3m-session-last-crashed-session w3m-session-last-autosave-session
 ;;;;;;  w3m-setup-session-menu w3m-session-select w3m-session-crash-recovery-remove
 ;;;;;;  w3m-session-save) "../submodules/w3m/w3m-session" "../submodules/w3m/w3m-session.el"
-;;;;;;  (20596 26610))
+;;;;;;  (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-session.el
 
 (autoload 'w3m-session-save "../submodules/w3m/w3m-session" "\
@@ -4704,7 +4704,7 @@ Setup w3m session items in menubar.
 ;;;***
 
 ;;;### (autoloads (w3m-replace-symbol) "../submodules/w3m/w3m-symbol"
-;;;;;;  "../submodules/w3m/w3m-symbol.el" (20596 26610))
+;;;;;;  "../submodules/w3m/w3m-symbol.el" (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-symbol.el
 
 (autoload 'w3m-replace-symbol "../submodules/w3m/w3m-symbol" "\
@@ -4715,7 +4715,7 @@ Setup w3m session items in menubar.
 ;;;***
 
 ;;;### (autoloads (w3m-about-weather w3m-weather) "../submodules/w3m/w3m-weather"
-;;;;;;  "../submodules/w3m/w3m-weather.el" (20596 26610))
+;;;;;;  "../submodules/w3m/w3m-weather.el" (20614 7379 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-weather.el
 
 (autoload 'w3m-weather "../submodules/w3m/w3m-weather" "\
@@ -4730,8 +4730,19 @@ Display weather report.
 
 ;;;***
 
+;;;### (autoloads (web-mode) "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
+;;;;;;  (20917 3897 0 0))
+;;; Generated autoloads from ../submodules/web-mode/web-mode.el
+
+(autoload 'web-mode "../submodules/web-mode/web-mode" "\
+Major mode for editing web templates.
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (yas-global-mode yas-minor-mode) "../submodules/yasnippet/yasnippet"
-;;;;;;  "../submodules/yasnippet/yasnippet.el" (20792 61792 0 0))
+;;;;;;  "../submodules/yasnippet/yasnippet.el" (20793 42735 0 0))
 ;;; Generated autoloads from ../submodules/yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "../submodules/yasnippet/yasnippet" "\
@@ -4775,7 +4786,8 @@ See `yas-minor-mode' for more information on Yas minor mode.
 
 ;;;### (autoloads (zencoding-preview zencoding-expand-yas zencoding-mode
 ;;;;;;  zencoding-expand-line) "../submodules/zencoding/zencoding-mode"
-;;;;;;  "../submodules/zencoding/zencoding-mode.el" (20596 26612))
+;;;;;;  "../submodules/zencoding/zencoding-mode.el" (20614 7381 0
+;;;;;;  0))
 ;;; Generated autoloads from ../submodules/zencoding/zencoding-mode.el
 
 (autoload 'zencoding-expand-line "../submodules/zencoding/zencoding-mode" "\
@@ -4886,7 +4898,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/dropdown-list.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (20909 5657 393000 0))
+;;;;;;  (20917 3905 973006 0))
 
 ;;;***
 
