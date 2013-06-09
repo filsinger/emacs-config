@@ -8,6 +8,7 @@
 
   (global-set-key (kbd "A-f") 'ns-toggle-fullscreen)   ;; set 'option-f' to toggle fullscreen on OSX
   (global-set-key [kp-delete] 'delete-char)            ;; sets fn-delete to be right-delete
+  (global-set-key (kbd "A-\\") 'delete-horizontal-space) ;; bind 'option-\' to delete horizontal whitespace
 
   ;; swap option and command key
   (setq mac-option-modifier 'alt)
