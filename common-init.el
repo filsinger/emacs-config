@@ -257,6 +257,7 @@
 (add-to-list 'auto-mode-alist '("\\\.dotfiles\.*\\.zsh$" . sh-mode))             ;; sh-mode
 (add-to-list 'auto-mode-alist '("\\.pac$" . js-mode))                            ;; js-mode
 (add-to-list 'auto-mode-alist '("\\.\\(erb\\|html\\|php\\|htm\\|phtml\\|djhtml\\)$" . web-mode))    ;; web-mode
+(add-to-list 'auto-mode-alist '("\\.\\(glsl\\|vert\\|frag\\|geom\\|vsh\\|fsh\\|gsh\\)$" . glsl-mode))    ;; glsl-mode
 ;; ================================================
 
 

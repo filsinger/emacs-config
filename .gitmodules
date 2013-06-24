@@ -115,3 +115,6 @@
 [submodule "submodules/web-mode"]
 	path = submodules/web-mode
 	url = git://github.com/fxbois/web-mode.git
+[submodule "submodules/glsl-mode"]
+	path = submodules/glsl-mode
+	url = https://github.com/filsinger/glsl-mode.git
