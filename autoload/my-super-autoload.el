@@ -556,38 +556,6 @@ Start auto-completion at current point.
 
 ;;;***
 
-;;;### (autoloads (autopair-global-mode autopair-mode) "../submodules/autopair/autopair"
-;;;;;;  "../submodules/autopair/autopair.el" (20925 9864 0 0))
-;;; Generated autoloads from ../submodules/autopair/autopair.el
-
-(autoload 'autopair-mode "../submodules/autopair/autopair" "\
-Automagically pair braces and quotes like in TextMate.
-
-\(fn &optional ARG)" t nil)
-
-(defvar autopair-global-mode nil "\
-Non-nil if Autopair-Global mode is enabled.
-See the command `autopair-global-mode' for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `autopair-global-mode'.")
-
-(custom-autoload 'autopair-global-mode "../submodules/autopair/autopair" nil)
-
-(autoload 'autopair-global-mode "../submodules/autopair/autopair" "\
-Toggle Autopair mode in all buffers.
-With prefix ARG, enable Autopair-Global mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
-
-Autopair mode is enabled in all buffers where
-`autopair-on' would do it.
-See `autopair-mode' for more information on Autopair mode.
-
-\(fn &optional ARG)" t nil)
-
-;;;***
-
 ;;;### (autoloads (browse-kill-ring browse-kill-ring-default-keybindings)
 ;;;;;;  "../submodules/browse-kill-ring/browse-kill-ring" "../submodules/browse-kill-ring/browse-kill-ring.el"
 ;;;;;;  (20946 3775 0 0))
@@ -4929,8 +4897,7 @@ accept it or skip it.
 
 ;;;### (autoloads nil nil ("../custom/jdf-dictionary.el" "../submodules/auto-complete-clang/auto-complete-clang.el"
 ;;;;;;  "../submodules/auto-complete/auto-complete-config.el" "../submodules/auto-complete/auto-complete-pkg.el"
-;;;;;;  "../submodules/autopair/autopair-tests.el" "../submodules/dash/dash.el"
-;;;;;;  "../submodules/emacs-websocket/websocket-functional-test.el"
+;;;;;;  "../submodules/dash/dash.el" "../submodules/emacs-websocket/websocket-functional-test.el"
 ;;;;;;  "../submodules/emacs-websocket/websocket-test.el" "../submodules/emacs-websocket/websocket.el"
 ;;;;;;  "../submodules/expand-region/cc-mode-expansions.el" "../submodules/expand-region/clojure-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/cperl-mode-expansions.el" "../submodules/expand-region/css-mode-expansions.el"
@@ -4989,8 +4956,8 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-tabmenu.el" "../submodules/w3m/w3m-ucs.el"
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20946 9212
-;;;;;;  543160 0))
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20972 36512
+;;;;;;  821640 0))
 
 ;;;***
 

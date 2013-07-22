@@ -64,9 +64,6 @@
 [submodule "submodules/rainbow-mode"]
 	path = submodules/rainbow-mode
 	url = git://github.com/emacsmirror/rainbow-mode.git
-[submodule "submodules/autopair"]
-	path = submodules/autopair
-	url = git://github.com/capitaomorte/autopair.git
 [submodule "submodules/p4"]
 	path = submodules/p4
 	url = https://github.com/filsinger/p4.el.git
