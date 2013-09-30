@@ -557,7 +557,7 @@ Key bindings:
 ;;;***
 
 ;;;### (autoloads (auto-complete) "../submodules/auto-complete/auto-complete"
-;;;;;;  "../submodules/auto-complete/auto-complete.el" (20995 18357
+;;;;;;  "../submodules/auto-complete/auto-complete.el" (21066 3116
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/auto-complete/auto-complete.el
 
@@ -570,7 +570,7 @@ Start auto-completion at current point.
 
 ;;;### (autoloads (browse-kill-ring browse-kill-ring-default-keybindings)
 ;;;;;;  "../submodules/browse-kill-ring/browse-kill-ring" "../submodules/browse-kill-ring/browse-kill-ring.el"
-;;;;;;  (20995 18358 0 0))
+;;;;;;  (21066 3117 0 0))
 ;;; Generated autoloads from ../submodules/browse-kill-ring/browse-kill-ring.el
 
 (autoload 'browse-kill-ring-default-keybindings "../submodules/browse-kill-ring/browse-kill-ring" "\
@@ -1359,7 +1359,7 @@ Major mode for editing OpenGLSL shader files.
 ;;;;;;  helm-select-action helm-force-update helm-toggle-suspend-update
 ;;;;;;  helm-other-buffer helm-resume-list-buffers-after-quit helm-resume-previous-session-after-quit
 ;;;;;;  helm-resume helm-open-last-log helm-define-multi-key) "../submodules/helm/helm"
-;;;;;;  "../submodules/helm/helm.el" (20995 18363 0 0))
+;;;;;;  "../submodules/helm/helm.el" (21066 3120 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm.el
 
 (autoload 'helm-define-multi-key "../submodules/helm/helm" "\
@@ -1564,7 +1564,7 @@ In this case you have to add this new attribute to your source.
 When `helm-full-frame' or SPLIT-ONEWINDOW are non--nil,
 and `helm-buffer' is displayed in only one window,
 the helm window is splitted to display
-`helm-select-persistent-action-window' in other window
+`helm-select-persistent-action-window' in other window 
 and keep its visibility.
 
 \(fn &optional (attr (quote persistent-action)) SPLIT-ONEWINDOW)" t nil)
@@ -1748,7 +1748,7 @@ Contain also `helm-source-google-suggest'.
 ;;;### (autoloads (helm-pp-bookmarks helm-bookmarks helm-bookmark-run-delete
 ;;;;;;  helm-bookmark-run-jump-other-window helm-bookmark-toggle-filename)
 ;;;;;;  "../submodules/helm/helm-bookmark" "../submodules/helm/helm-bookmark.el"
-;;;;;;  (20995 18363 0 0))
+;;;;;;  (21066 3120 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-bookmark.el
 
 (autoload 'helm-bookmark-toggle-filename "../submodules/helm/helm-bookmark" "\
@@ -1899,7 +1899,7 @@ It is `helm' replacement of regular `M-x' `execute-extended-command'.
 ;;;***
 
 ;;;### (autoloads (helm-configuration) "../submodules/helm/helm-config"
-;;;;;;  "../submodules/helm/helm-config.el" (20995 18363 0 0))
+;;;;;;  "../submodules/helm/helm-config.el" (21066 3120 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-config.el
 
 (autoload 'helm-configuration "../submodules/helm/helm-config" "\
@@ -2066,7 +2066,7 @@ You can set your own list of commands with
 ;;;;;;  helm-ff-run-copy-file helm-ff-run-zgrep helm-ff-run-pdfgrep
 ;;;;;;  helm-ff-run-grep helm-ff-run-switch-to-history helm-ff-run-toggle-auto-update)
 ;;;;;;  "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
-;;;;;;  (20995 18363 0 0))
+;;;;;;  (21066 3120 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-files.el
 
 (autoload 'helm-ff-run-toggle-auto-update "../submodules/helm/helm-files" "\
@@ -2343,7 +2343,7 @@ Preconfigured `helm' for gentoo linux.
 ;;;;;;  helm-grep-run-other-frame-action helm-grep-run-other-window-action
 ;;;;;;  helm-grep-run-default-action helm-grep-run-persistent-action
 ;;;;;;  helm-goto-next-file helm-goto-precedent-file) "../submodules/helm/helm-grep"
-;;;;;;  "../submodules/helm/helm-grep.el" (20995 18363 0 0))
+;;;;;;  "../submodules/helm/helm-grep.el" (21066 3120 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-grep.el
 
 (autoload 'helm-goto-precedent-file "../submodules/helm/helm-grep" "\
@@ -2712,7 +2712,7 @@ Preconfigured `helm' for `minibuffer-history'.
 
 ;;;### (autoloads (helm-mode helm-comp-read helm-cr-empty-string)
 ;;;;;;  "../submodules/helm/helm-mode" "../submodules/helm/helm-mode.el"
-;;;;;;  (20995 18363 0 0))
+;;;;;;  (21066 3120 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-mode.el
 
 (autoload 'helm-cr-empty-string "../submodules/helm/helm-mode" "\
@@ -3209,7 +3209,7 @@ Major mode for editing Lua code.
 ;;;***
 
 ;;;### (autoloads (magit-status) "../submodules/magit/magit" "../submodules/magit/magit.el"
-;;;;;;  (20995 18367 0 0))
+;;;;;;  (21066 3122 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit.el
 
 (autoload 'magit-status "../submodules/magit/magit" "\
@@ -3227,7 +3227,7 @@ when asking for user input.
 ;;;***
 
 ;;;### (autoloads (magit-blame-mode) "../submodules/magit/magit-blame"
-;;;;;;  "../submodules/magit/magit-blame.el" (20995 18367 0 0))
+;;;;;;  "../submodules/magit/magit-blame.el" (21066 3122 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-blame.el
 
 (autoload 'magit-blame-mode "../submodules/magit/magit-blame" "\
@@ -3254,7 +3254,7 @@ Unconditionally turn on `magit-flow-mode'.
 ;;;***
 
 ;;;### (autoloads (turn-on-magit-stgit magit-stgit-mode) "../submodules/magit/magit-stgit"
-;;;;;;  "../submodules/magit/magit-stgit.el" (20995 18367 0 0))
+;;;;;;  "../submodules/magit/magit-stgit.el" (21066 3122 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-stgit.el
 
 (autoload 'magit-stgit-mode "../submodules/magit/magit-stgit" "\
@@ -3270,7 +3270,7 @@ Unconditionally turn on `magit-stgit-mode'.
 ;;;***
 
 ;;;### (autoloads (turn-on-magit-svn magit-svn-mode) "../submodules/magit/magit-svn"
-;;;;;;  "../submodules/magit/magit-svn.el" (20995 18367 0 0))
+;;;;;;  "../submodules/magit/magit-svn.el" (21066 3122 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-svn.el
 
 (autoload 'magit-svn-mode "../submodules/magit/magit-svn" "\
@@ -3286,7 +3286,7 @@ Unconditionally turn on `magit-svn-mode'.
 ;;;***
 
 ;;;### (autoloads (turn-on-magit-topgit magit-topgit-mode) "../submodules/magit/magit-topgit"
-;;;;;;  "../submodules/magit/magit-topgit.el" (20995 18367 0 0))
+;;;;;;  "../submodules/magit/magit-topgit.el" (21066 3122 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-topgit.el
 
 (autoload 'magit-topgit-mode "../submodules/magit/magit-topgit" "\
@@ -3303,7 +3303,7 @@ Unconditionally turn on `magit-topgit-mode'.
 
 ;;;### (autoloads (global-magit-wip-save-mode magit-wip-save-mode
 ;;;;;;  magit-wip-mode) "../submodules/magit/magit-wip" "../submodules/magit/magit-wip.el"
-;;;;;;  (20995 18367 0 0))
+;;;;;;  (21066 3122 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-wip.el
 
 (defvar magit-wip-mode nil "\
@@ -3353,7 +3353,7 @@ See `magit-wip-save-mode' for more information on Magit-Wip-Save mode.
 ;;;***
 
 ;;;### (autoloads (rebase-mode) "../submodules/magit/rebase-mode"
-;;;;;;  "../submodules/magit/rebase-mode.el" (20995 18367 0 0))
+;;;;;;  "../submodules/magit/rebase-mode.el" (21066 3122 0 0))
 ;;; Generated autoloads from ../submodules/magit/rebase-mode.el
 
 (autoload 'rebase-mode "../submodules/magit/rebase-mode" "\
@@ -3371,7 +3371,7 @@ running 'man git-rebase' at the command line) for details.
 ;;;***
 
 ;;;### (autoloads (gfm-mode markdown-mode) "../submodules/markdown-mode/markdown-mode"
-;;;;;;  "../submodules/markdown-mode/markdown-mode.el" (20995 18367
+;;;;;;  "../submodules/markdown-mode/markdown-mode.el" (21066 3122
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/markdown-mode/markdown-mode.el
 
@@ -4862,7 +4862,7 @@ Display weather report.
 ;;;***
 
 ;;;### (autoloads (web-mode) "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
-;;;;;;  (20995 18375 0 0))
+;;;;;;  (21066 3126 0 0))
 ;;; Generated autoloads from ../submodules/web-mode/web-mode.el
 
 (autoload 'web-mode "../submodules/web-mode/web-mode" "\
@@ -4873,7 +4873,7 @@ Major mode for editing web templates.
 ;;;***
 
 ;;;### (autoloads (yas-global-mode yas-minor-mode) "../submodules/yasnippet/yasnippet"
-;;;;;;  "../submodules/yasnippet/yasnippet.el" (20995 18375 0 0))
+;;;;;;  "../submodules/yasnippet/yasnippet.el" (21066 3127 0 0))
 ;;; Generated autoloads from ../submodules/yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "../submodules/yasnippet/yasnippet" "\
@@ -5031,8 +5031,8 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-tabmenu.el" "../submodules/w3m/w3m-ucs.el"
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (20995 18395
-;;;;;;  942189 0))
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21066 3447
+;;;;;;  532000 0))
 
 ;;;***
 
