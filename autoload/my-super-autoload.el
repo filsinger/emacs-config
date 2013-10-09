@@ -278,6 +278,17 @@ Find a tag using ido
 
 ;;;***
 
+;;;### (autoloads (p4-find-files) "../custom/p4-find-files" "../custom/p4-find-files.el"
+;;;;;;  (21077 42241 0 0))
+;;; Generated autoloads from ../custom/p4-find-files.el
+
+(autoload 'p4-find-files "../custom/p4-find-files" "\
+Find files using depot syntax
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (recentf-ido-find-file) "../custom/recentf-ido-find-file"
 ;;;;;;  "../custom/recentf-ido-find-file.el" (20925 9810 0 0))
 ;;; Generated autoloads from ../custom/recentf-ido-find-file.el
@@ -5031,8 +5042,8 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-tabmenu.el" "../submodules/w3m/w3m-ucs.el"
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21066 3447
-;;;;;;  532000 0))
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21077 42293
+;;;;;;  154000 0))
 
 ;;;***
 
