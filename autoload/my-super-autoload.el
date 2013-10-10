@@ -188,6 +188,28 @@ with no args, if that value is non-nil.
 
 ;;;***
 
+;;;### (autoloads (helm-everything) "../custom/helm-everything" "../custom/helm-everything.el"
+;;;;;;  (21078 6 0 0))
+;;; Generated autoloads from ../custom/helm-everything.el
+
+(autoload 'helm-everything "../custom/helm-everything" "\
+Search Everything with helm
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads (helm-mine) "../custom/helm-my-things" "../custom/helm-my-things.el"
+;;;;;;  (21078 162 0 0))
+;;; Generated autoloads from ../custom/helm-my-things.el
+
+(autoload 'helm-mine "../custom/helm-my-things" "\
+
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (ibuffer-ido-find-file) "../custom/ibuffer-ido-find-file"
 ;;;;;;  "../custom/ibuffer-ido-find-file.el" (20925 9810 0 0))
 ;;; Generated autoloads from ../custom/ibuffer-ido-find-file.el
@@ -5042,8 +5064,8 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-tabmenu.el" "../submodules/w3m/w3m-ucs.el"
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21077 42293
-;;;;;;  154000 0))
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21078 340
+;;;;;;  946000 0))
 
 ;;;***
 
