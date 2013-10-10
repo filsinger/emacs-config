@@ -58,3 +58,5 @@
   "Search Everything with helm"
   (interactive)
   (helm :sources '(helm-source-everything)))
+
+(provide 'helm-everything)

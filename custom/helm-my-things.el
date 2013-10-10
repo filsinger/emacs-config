@@ -1,5 +1,7 @@
 (require 'helm)
+(require 'helm-buffers)
 (require 'helm-everything)
+(require 'helm-files)
 (require 'helm-imenu)
 
 ;;;###autoload
