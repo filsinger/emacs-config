@@ -59,4 +59,7 @@
   (interactive)
   (helm :sources '(helm-source-everything)))
 
+;;;###autoload
+(defalias 'everything 'helm-everything)
+
 (provide 'helm-everything)

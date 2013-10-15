@@ -75,31 +75,6 @@ Replace the preceding sexp with its value.
 
 ;;;***
 
-;;;### (autoloads (everything-find-prompt everything-find-file everything)
-;;;;;;  "../custom/everything" "../custom/everything.el" (20925 9810
-;;;;;;  0 0))
-;;; Generated autoloads from ../custom/everything.el
-
-(autoload 'everything "../custom/everything" "\
-Prompt for a search string and display the results in an interactive buffer.
-
-\(fn QUERY)" t nil)
-
-(autoload 'everything-find-file "../custom/everything" "\
-Prompt for a search string, let the user choose one of the returned files and
-open it.
-
-\(fn)" t nil)
-
-(autoload 'everything-find-prompt "../custom/everything" "\
-Prompt for a query and return the chosen filename.
-If the current major mode is dired or (e)shell-mode limit the search to
-the current directory and its sub-directories.
-
-\(fn)" nil nil)
-
-;;;***
-
 ;;;### (autoloads (kill-smartly kill-symbol mark-between-parentheses
 ;;;;;;  kill-between-parentheses kill-to-end-of-string kill-string)
 ;;;;;;  "../custom/expression-utils" "../custom/expression-utils.el"
@@ -189,7 +164,7 @@ with no args, if that value is non-nil.
 ;;;***
 
 ;;;### (autoloads (helm-everything) "../custom/helm-everything" "../custom/helm-everything.el"
-;;;;;;  (21078 6 0 0))
+;;;;;;  (21085 47021 0 0))
 ;;; Generated autoloads from ../custom/helm-everything.el
 
 (autoload 'helm-everything "../custom/helm-everything" "\
@@ -197,10 +172,12 @@ Search Everything with helm
 
 \(fn)" t nil)
 
+(defalias 'everything 'helm-everything)
+
 ;;;***
 
 ;;;### (autoloads (helm-mine) "../custom/helm-my-things" "../custom/helm-my-things.el"
-;;;;;;  (21078 162 0 0))
+;;;;;;  (21078 575 0 0))
 ;;; Generated autoloads from ../custom/helm-my-things.el
 
 (autoload 'helm-mine "../custom/helm-my-things" "\
@@ -5064,8 +5041,8 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-tabmenu.el" "../submodules/w3m/w3m-ucs.el"
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21078 340
-;;;;;;  946000 0))
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21085 47040
+;;;;;;  750000 0))
 
 ;;;***
 
