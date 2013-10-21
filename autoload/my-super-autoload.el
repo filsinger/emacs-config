@@ -494,7 +494,7 @@ Otherwise disable it.
 
 ;;;### (autoloads (ace-jump-mode ace-jump-line-mode ace-jump-word-mode
 ;;;;;;  ace-jump-char-mode ace-jump-mode-pop-mark) "../submodules/ace-jump-mode/ace-jump-mode"
-;;;;;;  "../submodules/ace-jump-mode/ace-jump-mode.el" (20974 53155
+;;;;;;  "../submodules/ace-jump-mode/ace-jump-mode.el" (21093 46211
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/ace-jump-mode/ace-jump-mode.el
 
@@ -567,7 +567,7 @@ Key bindings:
 ;;;***
 
 ;;;### (autoloads (auto-complete) "../submodules/auto-complete/auto-complete"
-;;;;;;  "../submodules/auto-complete/auto-complete.el" (21066 3116
+;;;;;;  "../submodules/auto-complete/auto-complete.el" (21093 46217
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/auto-complete/auto-complete.el
 
@@ -580,7 +580,7 @@ Start auto-completion at current point.
 
 ;;;### (autoloads (browse-kill-ring browse-kill-ring-default-keybindings)
 ;;;;;;  "../submodules/browse-kill-ring/browse-kill-ring" "../submodules/browse-kill-ring/browse-kill-ring.el"
-;;;;;;  (21066 3117 0 0))
+;;;;;;  (21093 46224 0 0))
 ;;; Generated autoloads from ../submodules/browse-kill-ring/browse-kill-ring.el
 
 (autoload 'browse-kill-ring-default-keybindings "../submodules/browse-kill-ring/browse-kill-ring" "\
@@ -728,7 +728,7 @@ Runs cppcheck with the '--check-config' option
 ;;;;;;  csearch/index-get csearch/index-set csearch/ignore-regexp-list
 ;;;;;;  csearch/result-line-offset csearch/index-file csearch/cindex-program
 ;;;;;;  csearch/csearch-program csearch-mode) "../submodules/csearch-mode/csearch-mode"
-;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (20925 9867
+;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (21093 46227
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/csearch-mode/csearch-mode.el
 
@@ -1085,7 +1085,7 @@ Key bindings:
 ;;;***
 
 ;;;### (autoloads (er/expand-region) "../submodules/expand-region/expand-region"
-;;;;;;  "../submodules/expand-region/expand-region.el" (20974 53158
+;;;;;;  "../submodules/expand-region/expand-region.el" (21093 46237
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/expand-region/expand-region.el
 
@@ -1106,8 +1106,8 @@ before calling `er/expand-region' for the first time.
 ;;;;;;  expand-region-skip-whitespace expand-region-autocopy-register
 ;;;;;;  expand-region-guess-python-mode expand-region-preferred-python-mode
 ;;;;;;  expand-region) "../submodules/expand-region/expand-region-custom"
-;;;;;;  "../submodules/expand-region/expand-region-custom.el" (20925
-;;;;;;  9873 0 0))
+;;;;;;  "../submodules/expand-region/expand-region-custom.el" (21093
+;;;;;;  46237 0 0))
 ;;; Generated autoloads from ../submodules/expand-region/expand-region-custom.el
 
 (let ((loads (get 'expand-region 'custom-loads))) (if (member '"../submodules/expand-region/expand-region-custom" loads) nil (put 'expand-region 'custom-loads (cons '"../submodules/expand-region/expand-region-custom" loads))))
@@ -1157,7 +1157,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;***
 
 ;;;### (autoloads (gh-api-v3 gh-api) "../submodules/gh/gh-api" "../submodules/gh/gh-api.el"
-;;;;;;  (20955 13998 0 0))
+;;;;;;  (21093 46242 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-api.el
 
 (require 'eieio)
@@ -1170,7 +1170,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 
 ;;;### (autoloads (gh-oauth-authenticator gh-password-authenticator
 ;;;;;;  gh-authenticator) "../submodules/gh/gh-auth" "../submodules/gh/gh-auth.el"
-;;;;;;  (20925 9875 0 0))
+;;;;;;  (21093 46242 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-auth.el
 
 (require 'eieio)
@@ -1192,7 +1192,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-common" "../submodules/gh/gh-common.el"
-;;;;;;  (20925 9875 0 0))
+;;;;;;  (21093 46242 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-common.el
 
 (require 'eieio)
@@ -1200,7 +1200,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;***
 
 ;;;### (autoloads (gh-gist-gist gh-gist-gist-stub gh-gist-api) "../submodules/gh/gh-gist"
-;;;;;;  "../submodules/gh/gh-gist.el" (20925 9875 0 0))
+;;;;;;  "../submodules/gh/gh-gist.el" (21093 46242 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-gist.el
 
 (require 'eieio)
@@ -1214,7 +1214,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-issues" "../submodules/gh/gh-issues.el"
-;;;;;;  (20925 9875 0 0))
+;;;;;;  (21093 46242 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-issues.el
 
 (require 'eieio)
@@ -1257,7 +1257,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 
 ;;;### (autoloads (gh-repos-repo gh-repos-repo-stub gh-repos-api)
 ;;;;;;  "../submodules/gh/gh-repos" "../submodules/gh/gh-repos.el"
-;;;;;;  (20955 13998 0 0))
+;;;;;;  (21093 46242 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-repos.el
 
 (require 'eieio)
@@ -1271,7 +1271,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-url" "../submodules/gh/gh-url.el"
-;;;;;;  (20955 13998 0 0))
+;;;;;;  (21093 46242 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-url.el
 
 (require 'eieio)
@@ -1281,7 +1281,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;### (autoloads (gist-fetch gist-list gist-region-or-buffer-private
 ;;;;;;  gist-region-or-buffer gist-buffer-private gist-buffer gist-region-private
 ;;;;;;  gist-region) "../submodules/gist/gist" "../submodules/gist/gist.el"
-;;;;;;  (20925 9876 0 0))
+;;;;;;  (21093 46246 0 0))
 ;;; Generated autoloads from ../submodules/gist/gist.el
 
 (autoload 'gist-region "../submodules/gist/gist" "\
@@ -1369,7 +1369,7 @@ Major mode for editing OpenGLSL shader files.
 ;;;;;;  helm-select-action helm-force-update helm-toggle-suspend-update
 ;;;;;;  helm-other-buffer helm-resume-list-buffers-after-quit helm-resume-previous-session-after-quit
 ;;;;;;  helm-resume helm-open-last-log helm-define-multi-key) "../submodules/helm/helm"
-;;;;;;  "../submodules/helm/helm.el" (21066 3120 0 0))
+;;;;;;  "../submodules/helm/helm.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm.el
 
 (autoload 'helm-define-multi-key "../submodules/helm/helm" "\
@@ -1676,7 +1676,7 @@ This will enable `helm-follow-mode' automatically in `helm-source-buffers-list'.
 ;;;***
 
 ;;;### (autoloads (helm-reset-adaptative-history) "../submodules/helm/helm-adaptative"
-;;;;;;  "../submodules/helm/helm-adaptative.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-adaptative.el" (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-adaptative.el
 
 (autoload 'helm-reset-adaptative-history "../submodules/helm/helm-adaptative" "\
@@ -1687,31 +1687,9 @@ Useful when you have a old or corrupted `helm-adaptive-history-file'.
 
 ;;;***
 
-;;;### (autoloads (helm-apt helm-apt-show-all helm-apt-show-only-deinstalled
-;;;;;;  helm-apt-show-only-not-installed helm-apt-show-only-installed)
-;;;;;;  "../submodules/helm/helm-apt" "../submodules/helm/helm-apt.el"
-;;;;;;  (20955 14013 0 0))
+;;;### (autoloads (helm-apt) "../submodules/helm/helm-apt" "../submodules/helm/helm-apt.el"
+;;;;;;  (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-apt.el
-
-(autoload 'helm-apt-show-only-installed "../submodules/helm/helm-apt" "\
-
-
-\(fn)" t nil)
-
-(autoload 'helm-apt-show-only-not-installed "../submodules/helm/helm-apt" "\
-
-
-\(fn)" t nil)
-
-(autoload 'helm-apt-show-only-deinstalled "../submodules/helm/helm-apt" "\
-
-
-\(fn)" t nil)
-
-(autoload 'helm-apt-show-all "../submodules/helm/helm-apt" "\
-
-
-\(fn)" t nil)
 
 (autoload 'helm-apt "../submodules/helm/helm-apt" "\
 Preconfigured `helm' : frontend of APT package manager.
@@ -1722,7 +1700,7 @@ With a prefix arg reload cache.
 ;;;***
 
 ;;;### (autoloads (helm-bbdb) "../submodules/helm/helm-bbdb" "../submodules/helm/helm-bbdb.el"
-;;;;;;  (20925 9885 0 0))
+;;;;;;  (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-bbdb.el
 
 (autoload 'helm-bbdb "../submodules/helm/helm-bbdb" "\
@@ -1737,7 +1715,7 @@ http://bbdb.sourceforge.net/
 ;;;***
 
 ;;;### (autoloads (helm-bookmark-ext helm-bmkext-run-edit) "../submodules/helm/helm-bmkext"
-;;;;;;  "../submodules/helm/helm-bmkext.el" (20955 14013 0 0))
+;;;;;;  "../submodules/helm/helm-bmkext.el" (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-bmkext.el
 
 (autoload 'helm-bmkext-run-edit "../submodules/helm/helm-bmkext" "\
@@ -1758,7 +1736,7 @@ Contain also `helm-source-google-suggest'.
 ;;;### (autoloads (helm-pp-bookmarks helm-bookmarks helm-bookmark-run-delete
 ;;;;;;  helm-bookmark-run-jump-other-window helm-bookmark-toggle-filename)
 ;;;;;;  "../submodules/helm/helm-bookmark" "../submodules/helm/helm-bookmark.el"
-;;;;;;  (21066 3120 0 0))
+;;;;;;  (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-bookmark.el
 
 (autoload 'helm-bookmark-toggle-filename "../submodules/helm/helm-bookmark" "\
@@ -1795,7 +1773,7 @@ Preconfigured `helm' for bookmarks (pretty-printed).
 ;;;;;;  helm-buffer-run-grep helm-buffer-run-kill-buffers helm-buffer-save-persistent
 ;;;;;;  helm-buffer-revert-persistent helm-buffer-diff-persistent)
 ;;;;;;  "../submodules/helm/helm-buffers" "../submodules/helm/helm-buffers.el"
-;;;;;;  (20974 53159 0 0))
+;;;;;;  (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-buffers.el
 
 (autoload 'helm-buffer-diff-persistent "../submodules/helm/helm-buffers" "\
@@ -1865,14 +1843,13 @@ Run `helm-multi-occur-as-action' by key.
 
 (autoload 'helm-buffers-list "../submodules/helm/helm-buffers" "\
 Preconfigured `helm' to list buffers.
-It is an enhanced version of `helm-for-buffers'.
 
 \(fn)" t nil)
 
 ;;;***
 
 ;;;### (autoloads (helm-simple-call-tree) "../submodules/helm/helm-call-tree"
-;;;;;;  "../submodules/helm/helm-call-tree.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-call-tree.el" (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-call-tree.el
 
 (autoload 'helm-simple-call-tree "../submodules/helm/helm-call-tree" "\
@@ -1886,7 +1863,7 @@ http://www.emacswiki.org/cgi-bin/wiki/download/simple-call-tree.el
 ;;;***
 
 ;;;### (autoloads (helm-colors) "../submodules/helm/helm-color" "../submodules/helm/helm-color.el"
-;;;;;;  (20925 9885 0 0))
+;;;;;;  (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-color.el
 
 (autoload 'helm-colors "../submodules/helm/helm-color" "\
@@ -1897,7 +1874,7 @@ Preconfigured `helm' for color.
 ;;;***
 
 ;;;### (autoloads (helm-M-x) "../submodules/helm/helm-command" "../submodules/helm/helm-command.el"
-;;;;;;  (20955 14013 0 0))
+;;;;;;  (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-command.el
 
 (autoload 'helm-M-x "../submodules/helm/helm-command" "\
@@ -1909,7 +1886,7 @@ It is `helm' replacement of regular `M-x' `execute-extended-command'.
 ;;;***
 
 ;;;### (autoloads (helm-configuration) "../submodules/helm/helm-config"
-;;;;;;  "../submodules/helm/helm-config.el" (21066 3120 0 0))
+;;;;;;  "../submodules/helm/helm-config.el" (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-config.el
 
 (autoload 'helm-configuration "../submodules/helm/helm-config" "\
@@ -1920,7 +1897,7 @@ Customize `helm'.
 ;;;***
 
 ;;;### (autoloads (helm-dabbrev) "../submodules/helm/helm-dabbrev"
-;;;;;;  "../submodules/helm/helm-dabbrev.el" (20974 53159 0 0))
+;;;;;;  "../submodules/helm/helm-dabbrev.el" (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-dabbrev.el
 
 (autoload 'helm-dabbrev "../submodules/helm/helm-dabbrev" "\
@@ -1934,7 +1911,7 @@ Customize `helm'.
 ;;;;;;  helm-manage-advice helm-apropos helm-lisp-completion-or-file-name-at-point
 ;;;;;;  helm-lisp-indent helm-complete-file-name-at-point helm-lisp-completion-at-point)
 ;;;;;;  "../submodules/helm/helm-elisp" "../submodules/helm/helm-elisp.el"
-;;;;;;  (20974 53159 0 0))
+;;;;;;  (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp.el
 
 (autoload 'helm-lisp-completion-at-point "../submodules/helm/helm-elisp" "\
@@ -1986,7 +1963,7 @@ Preconfigured `helm' for timers.
 ;;;***
 
 ;;;### (autoloads (helm-elscreen) "../submodules/helm/helm-elscreen"
-;;;;;;  "../submodules/helm/helm-elscreen.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-elscreen.el" (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-elscreen.el
 
 (autoload 'helm-elscreen "../submodules/helm/helm-elscreen" "\
@@ -1997,7 +1974,7 @@ Preconfigured helm to list elscreen.
 ;;;***
 
 ;;;### (autoloads (helm-emms) "../submodules/helm/helm-emms" "../submodules/helm/helm-emms.el"
-;;;;;;  (20925 9885 0 0))
+;;;;;;  (21093 46253 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-emms.el
 
 (autoload 'helm-emms "../submodules/helm/helm-emms" "\
@@ -2008,7 +1985,7 @@ Preconfigured `helm' for emms sources.
 ;;;***
 
 ;;;### (autoloads (helm-eshell-history helm-esh-pcomplete) "../submodules/helm/helm-eshell"
-;;;;;;  "../submodules/helm/helm-eshell.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-eshell.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-eshell.el
 
 (autoload 'helm-esh-pcomplete "../submodules/helm/helm-eshell" "\
@@ -2025,7 +2002,7 @@ Preconfigured helm for eshell history.
 
 ;;;### (autoloads (helm-calcul-expression helm-eval-expression-with-eldoc
 ;;;;;;  helm-eval-expression) "../submodules/helm/helm-eval" "../submodules/helm/helm-eval.el"
-;;;;;;  (20974 53159 0 0))
+;;;;;;  (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-eval.el
 
 (autoload 'helm-eval-expression "../submodules/helm/helm-eval" "\
@@ -2034,7 +2011,7 @@ Preconfigured helm for `helm-source-evaluation-result'.
 \(fn ARG)" t nil)
 
 (autoload 'helm-eval-expression-with-eldoc "../submodules/helm/helm-eval" "\
-Preconfigured helm for `helm-source-evaluation-result' with `eldoc' support.
+Preconfigured helm for `helm-source-evaluation-result' with `eldoc' support. 
 
 \(fn)" t nil)
 
@@ -2046,7 +2023,7 @@ Preconfigured helm for `helm-source-calculation-result'.
 ;;;***
 
 ;;;### (autoloads (helm-run-external-command) "../submodules/helm/helm-external"
-;;;;;;  "../submodules/helm/helm-external.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-external.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-external.el
 
 (autoload 'helm-run-external-command "../submodules/helm/helm-external" "\
@@ -2076,7 +2053,7 @@ You can set your own list of commands with
 ;;;;;;  helm-ff-run-copy-file helm-ff-run-zgrep helm-ff-run-pdfgrep
 ;;;;;;  helm-ff-run-grep helm-ff-run-switch-to-history helm-ff-run-toggle-auto-update)
 ;;;;;;  "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
-;;;;;;  (21066 3120 0 0))
+;;;;;;  (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-files.el
 
 (autoload 'helm-ff-run-toggle-auto-update "../submodules/helm/helm-files" "\
@@ -2299,7 +2276,7 @@ Preconfigured `helm' for `recentf'.
 ;;;***
 
 ;;;### (autoloads (helm-firefox-bookmarks) "../submodules/helm/helm-firefox"
-;;;;;;  "../submodules/helm/helm-firefox.el" (20955 14013 0 0))
+;;;;;;  "../submodules/helm/helm-firefox.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-firefox.el
 
 (autoload 'helm-firefox-bookmarks "../submodules/helm/helm-firefox" "\
@@ -2320,7 +2297,7 @@ After closing firefox, you will be able to browse you bookmarks.
 ;;;***
 
 ;;;### (autoloads (helm-ucs helm-select-xfont) "../submodules/helm/helm-font"
-;;;;;;  "../submodules/helm/helm-font.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-font.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-font.el
 
 (autoload 'helm-select-xfont "../submodules/helm/helm-font" "\
@@ -2336,7 +2313,7 @@ Preconfigured helm for `ucs-names' math symbols.
 ;;;***
 
 ;;;### (autoloads (helm-gentoo) "../submodules/helm/helm-gentoo"
-;;;;;;  "../submodules/helm/helm-gentoo.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-gentoo.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-gentoo.el
 
 (autoload 'helm-gentoo "../submodules/helm/helm-gentoo" "\
@@ -2353,7 +2330,7 @@ Preconfigured `helm' for gentoo linux.
 ;;;;;;  helm-grep-run-other-frame-action helm-grep-run-other-window-action
 ;;;;;;  helm-grep-run-default-action helm-grep-run-persistent-action
 ;;;;;;  helm-goto-next-file helm-goto-precedent-file) "../submodules/helm/helm-grep"
-;;;;;;  "../submodules/helm/helm-grep.el" (21066 3120 0 0))
+;;;;;;  "../submodules/helm/helm-grep.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-grep.el
 
 (autoload 'helm-goto-precedent-file "../submodules/helm/helm-grep" "\
@@ -2465,7 +2442,7 @@ Preconfigured helm for pdfgrep.
 ;;;;;;  helm-bookmark-help helm-ucs-help helm-etags-help helm-pdfgrep-help
 ;;;;;;  helm-grep-help helm-generic-file-help helm-read-file-name-help
 ;;;;;;  helm-ff-help helm-buffer-help helm-help) "../submodules/helm/helm-help"
-;;;;;;  "../submodules/helm/helm-help.el" (20974 53159 0 0))
+;;;;;;  "../submodules/helm/helm-help.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-help.el
 
 (defvar helm-mode-line-string "\\<helm-map>\\[helm-help]:Help \\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct" "\
@@ -2597,7 +2574,7 @@ HELM-ATTRIBUTE should be a symbol.
 ;;;***
 
 ;;;### (autoloads (helm-imenu) "../submodules/helm/helm-imenu" "../submodules/helm/helm-imenu.el"
-;;;;;;  (20925 9885 0 0))
+;;;;;;  (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-imenu.el
 
 (autoload 'helm-imenu "../submodules/helm/helm-imenu" "\
@@ -2608,7 +2585,7 @@ Preconfigured `helm' for `imenu'.
 ;;;***
 
 ;;;### (autoloads (helm-info-at-point) "../submodules/helm/helm-info"
-;;;;;;  "../submodules/helm/helm-info.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-info.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-info.el
 
 (autoload 'helm-info-at-point "../submodules/helm/helm-info" "\
@@ -2619,9 +2596,14 @@ With a prefix-arg insert symbol at point.
 
 ;;;***
 
-;;;### (autoloads (helm-locate) "../submodules/helm/helm-locate"
-;;;;;;  "../submodules/helm/helm-locate.el" (20974 53159 0 0))
+;;;### (autoloads (helm-locate helm-locate-read-file-name) "../submodules/helm/helm-locate"
+;;;;;;  "../submodules/helm/helm-locate.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-locate.el
+
+(autoload 'helm-locate-read-file-name "../submodules/helm/helm-locate" "\
+
+
+\(fn PROMPT)" nil nil)
 
 (autoload 'helm-locate "../submodules/helm/helm-locate" "\
 Preconfigured `helm' for Locate.
@@ -2644,7 +2626,7 @@ Where db_path is a filename matched by
 ;;;***
 
 ;;;### (autoloads (helm-man-woman) "../submodules/helm/helm-man"
-;;;;;;  "../submodules/helm/helm-man.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-man.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-man.el
 
 (autoload 'helm-man-woman "../submodules/helm/helm-man" "\
@@ -2656,7 +2638,7 @@ With a prefix arg reinitialize the cache.
 ;;;***
 
 ;;;### (autoloads (helm-match-plugin-mode) "../submodules/helm/helm-match-plugin"
-;;;;;;  "../submodules/helm/helm-match-plugin.el" (20974 53159 0
+;;;;;;  "../submodules/helm/helm-match-plugin.el" (21093 46254 0
 ;;;;;;  0))
 ;;; Generated autoloads from ../submodules/helm/helm-match-plugin.el
 
@@ -2680,7 +2662,7 @@ See `helm-mp-matching-method' for the behavior of each method.
 ;;;### (autoloads (helm-minibuffer-history helm-mini helm-stumpwm-commands
 ;;;;;;  helm-ratpoison-commands helm-eev-anchors helm-insert-latex-math
 ;;;;;;  helm-world-time) "../submodules/helm/helm-misc" "../submodules/helm/helm-misc.el"
-;;;;;;  (20925 9885 0 0))
+;;;;;;  (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-misc.el
 
 (autoload 'helm-world-time "../submodules/helm/helm-misc" "\
@@ -2722,7 +2704,7 @@ Preconfigured `helm' for `minibuffer-history'.
 
 ;;;### (autoloads (helm-mode helm-comp-read helm-cr-empty-string)
 ;;;;;;  "../submodules/helm/helm-mode" "../submodules/helm/helm-mode.el"
-;;;;;;  (21066 3120 0 0))
+;;;;;;  (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-mode.el
 
 (autoload 'helm-cr-empty-string "../submodules/helm/helm-mode" "\
@@ -2755,6 +2737,9 @@ Keys description:
 - BUFFER: Name of helm-buffer.
 
 - MUST-MATCH: Candidate selected must be one of COLLECTION.
+
+- REVERSE-HISTORY: When non--nil display history source after current
+  source completion.
 
 - REQUIRES-PATTERN: Same as helm attribute, default is 0.
 
@@ -2806,7 +2791,7 @@ in `helm-current-prefix-arg', otherwise if prefix args were given before
 That's mean you can pass prefix args before or after calling a command
 that use `helm-comp-read' See `helm-M-x' for example.
 
-\(fn PROMPT COLLECTION &key TEST INITIAL-INPUT DEFAULT PRESELECT (buffer \"*Helm Completions*\") MUST-MATCH (requires-pattern 0) (history nil) INPUT-HISTORY (case-fold helm-comp-read-case-fold-search) (del-input t) (persistent-action nil) (persistent-help \"DoNothing\") (mode-line helm-comp-read-mode-line) (keymap helm-comp-read-map) (name \"Helm Completions\") CANDIDATES-IN-BUFFER EXEC-WHEN-ONLY-ONE (volatile t) SORT (fc-transformer (quote helm-cr-default-transformer)) (marked-candidates nil) (alistp t))" nil nil)
+\(fn PROMPT COLLECTION &key TEST INITIAL-INPUT DEFAULT PRESELECT (buffer \"*Helm Completions*\") MUST-MATCH REVERSE-HISTORY (requires-pattern 0) (history nil) INPUT-HISTORY (case-fold helm-comp-read-case-fold-search) (del-input t) (persistent-action nil) (persistent-help \"DoNothing\") (mode-line helm-comp-read-mode-line) (keymap helm-comp-read-map) (name \"Helm Completions\") CANDIDATES-IN-BUFFER EXEC-WHEN-ONLY-ONE (volatile t) SORT (fc-transformer (quote helm-cr-default-transformer)) (marked-candidates nil) (alistp t))" nil nil)
 
 (defvar helm-mode nil "\
 Non-nil if Helm mode is enabled.
@@ -2843,7 +2828,7 @@ Note: This mode is incompatible with Emacs23.
 
 ;;;### (autoloads (helm-yahoo-suggest helm-google-suggest helm-surfraw)
 ;;;;;;  "../submodules/helm/helm-net" "../submodules/helm/helm-net.el"
-;;;;;;  (20925 9885 0 0))
+;;;;;;  (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-net.el
 
 (autoload 'helm-surfraw "../submodules/helm/helm-net" "\
@@ -2864,7 +2849,7 @@ Preconfigured `helm' for Yahoo searching with Yahoo suggest.
 ;;;***
 
 ;;;### (autoloads (helm-org-headlines helm-org-keywords) "../submodules/helm/helm-org"
-;;;;;;  "../submodules/helm/helm-org.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-org.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-org.el
 
 (autoload 'helm-org-keywords "../submodules/helm/helm-org" "\
@@ -2879,11 +2864,25 @@ Preconfigured helm to show org headlines.
 
 ;;;***
 
-;;;### (autoloads (helm-browse-code helm-multi-occur-from-isearch
-;;;;;;  helm-multi-occur helm-occur-from-isearch helm-occur helm-regexp)
+;;;### (autoloads (helm-multi-occur-from-isearch helm-multi-occur
+;;;;;;  helm-occur-from-isearch helm-occur helm-regexp helm-occur-match-plugin-mode)
 ;;;;;;  "../submodules/helm/helm-regexp" "../submodules/helm/helm-regexp.el"
-;;;;;;  (20955 14013 0 0))
+;;;;;;  (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-regexp.el
+
+(defvar helm-occur-match-plugin-mode t "\
+Non-nil if Helm-Occur-Match-Plugin mode is enabled.
+See the command `helm-occur-match-plugin-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `helm-occur-match-plugin-mode'.")
+
+(custom-autoload 'helm-occur-match-plugin-mode "../submodules/helm/helm-regexp" nil)
+
+(autoload 'helm-occur-match-plugin-mode "../submodules/helm/helm-regexp" "\
+Turn On/Off `helm-match-plugin-mode' only for `helm-m/occur'.
+
+\(fn &optional ARG)" t nil)
 
 (autoload 'helm-regexp "../submodules/helm/helm-regexp" "\
 Preconfigured helm to build regexps.
@@ -2922,16 +2921,11 @@ The prefix arg can be set before calling
 
 \(fn &optional ARG)" t nil)
 
-(autoload 'helm-browse-code "../submodules/helm/helm-regexp" "\
-Preconfigured helm to browse code.
-
-\(fn)" t nil)
-
 ;;;***
 
 ;;;### (autoloads (helm-show-kill-ring helm-register helm-all-mark-rings
 ;;;;;;  helm-global-mark-ring helm-mark-ring) "../submodules/helm/helm-ring"
-;;;;;;  "../submodules/helm/helm-ring.el" (20955 14013 0 0))
+;;;;;;  "../submodules/helm/helm-ring.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-ring.el
 
 (autoload 'helm-mark-ring "../submodules/helm/helm-ring" "\
@@ -2965,7 +2959,7 @@ First call open the kill-ring browser, next calls move to next line.
 ;;;***
 
 ;;;### (autoloads (helm-semantic-or-imenu helm-semantic) "../submodules/helm/helm-semantic"
-;;;;;;  "../submodules/helm/helm-semantic.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-semantic.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-semantic.el
 
 (autoload 'helm-semantic "../submodules/helm/helm-semantic" "\
@@ -2987,7 +2981,7 @@ Fill in the symbol at point by default.
 ;;;### (autoloads (helm-xrandr-set helm-list-emacs-process helm-top
 ;;;;;;  helm-top-run-sort-by-user helm-top-run-sort-by-mem helm-top-run-sort-by-cpu
 ;;;;;;  helm-top-run-sort-by-com) "../submodules/helm/helm-sys" "../submodules/helm/helm-sys.el"
-;;;;;;  (20925 9885 0 0))
+;;;;;;  (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-sys.el
 
 (autoload 'helm-top-run-sort-by-com "../submodules/helm/helm-sys" "\
@@ -3028,7 +3022,7 @@ Preconfigured `helm' for emacs process.
 ;;;***
 
 ;;;### (autoloads (helm-etags-select) "../submodules/helm/helm-tags"
-;;;;;;  "../submodules/helm/helm-tags.el" (20955 14013 0 0))
+;;;;;;  "../submodules/helm/helm-tags.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-tags.el
 
 (autoload 'helm-etags-select "../submodules/helm/helm-tags" "\
@@ -3044,7 +3038,7 @@ If tag file have been modified reinitialize cache.
 ;;;### (autoloads (helm-yank-text-at-point helm-w32-shell-execute-open-file
 ;;;;;;  helm-quit-and-find-file helm-display-all-sources helm-show-all-in-this-source-only)
 ;;;;;;  "../submodules/helm/helm-utils" "../submodules/helm/helm-utils.el"
-;;;;;;  (20974 53159 0 0))
+;;;;;;  (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-utils.el
 
 (autoload 'helm-show-all-in-this-source-only "../submodules/helm/helm-utils" "\
@@ -3081,7 +3075,7 @@ the entire symbol.
 ;;;***
 
 ;;;### (autoloads (helm-w3m-bookmarks) "../submodules/helm/helm-w3m"
-;;;;;;  "../submodules/helm/helm-w3m.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-w3m.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-w3m.el
 
 (autoload 'helm-w3m-bookmarks "../submodules/helm/helm-w3m" "\
@@ -3098,7 +3092,7 @@ http://emacs-w3m.namazu.org/
 
 ;;;### (autoloads (helm-yaoddmuse-emacswiki-post-library helm-yaoddmuse-emacswiki-edit-or-view
 ;;;;;;  helm-yaoddmuse-cache-pages) "../submodules/helm/helm-yaoddmuse"
-;;;;;;  "../submodules/helm/helm-yaoddmuse.el" (20925 9885 0 0))
+;;;;;;  "../submodules/helm/helm-yaoddmuse.el" (21093 46254 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-yaoddmuse.el
 
 (autoload 'helm-yaoddmuse-cache-pages "../submodules/helm/helm-yaoddmuse" "\
@@ -3132,7 +3126,7 @@ http://www.emacswiki.org/emacs/download/yaoddmuse.el
 ;;;;;;  highlight-symbol-prev highlight-symbol-next highlight-symbol-list-all
 ;;;;;;  highlight-symbol-remove-all highlight-symbol-at-point highlight-symbol-mode)
 ;;;;;;  "../submodules/highlight-symbol/highlight-symbol" "../submodules/highlight-symbol/highlight-symbol.el"
-;;;;;;  (20955 14014 0 0))
+;;;;;;  (21093 46258 0 0))
 ;;; Generated autoloads from ../submodules/highlight-symbol/highlight-symbol.el
 
 (autoload 'highlight-symbol-mode "../submodules/highlight-symbol/highlight-symbol" "\
@@ -3193,7 +3187,7 @@ before if NLINES is negative.
 ;;;***
 
 ;;;### (autoloads (litable-mode) "../submodules/litable/litable"
-;;;;;;  "../submodules/litable/litable.el" (20955 14015 0 0))
+;;;;;;  "../submodules/litable/litable.el" (21093 46263 0 0))
 ;;; Generated autoloads from ../submodules/litable/litable.el
 
 (autoload 'litable-mode "../submodules/litable/litable" "\
@@ -3204,7 +3198,7 @@ Toggle litable-mode
 ;;;***
 
 ;;;### (autoloads (lua-mode) "../submodules/lua-mode/lua-mode" "../submodules/lua-mode/lua-mode.el"
-;;;;;;  (20955 14017 0 0))
+;;;;;;  (21093 46270 0 0))
 ;;; Generated autoloads from ../submodules/lua-mode/lua-mode.el
 
 (autoload 'lua-mode "../submodules/lua-mode/lua-mode" "\
@@ -3218,9 +3212,37 @@ Major mode for editing Lua code.
 
 ;;;***
 
-;;;### (autoloads (magit-status) "../submodules/magit/magit" "../submodules/magit/magit.el"
-;;;;;;  (21066 3122 0 0))
+;;;### (autoloads (magit-run-gitk magit-run-git-gui-blame magit-run-git-gui
+;;;;;;  magit-show magit-show-file-revision magit-init magit-add-change-log-entry-other-window
+;;;;;;  magit-add-change-log-entry magit-wazzup magit-save-index
+;;;;;;  magit-submodule-sync magit-submodule-init magit-submodule-update-init
+;;;;;;  magit-submodule-update magit-commit magit-git-command magit-shell-command
+;;;;;;  magit-interactive-rebase magit-rename-remote magit-remove-remote
+;;;;;;  magit-add-remote magit-rename-branch magit-delete-branch
+;;;;;;  magit-unstage-all magit-stage-all magit-merge-abort magit-merge
+;;;;;;  magit-status magit-show-commit) "../submodules/magit/magit"
+;;;;;;  "../submodules/magit/magit.el" (21093 46272 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit.el
+
+(autoload 'magit-show-commit "../submodules/magit/magit" "\
+Show information about a commit.
+Show it in the buffer named by `magit-commit-buffer-name'.
+COMMIT can be any valid name for a commit in the current Git
+repository.
+
+When called interactively or when SELECT is non-nil, switch to
+the commit buffer using `pop-to-buffer'.
+
+Unless INHIBIT-HISTORY is non-nil, the commit currently shown
+will be pushed onto `magit-back-navigation-history' and
+`magit-forward-navigation-history' will be cleared.
+
+Noninteractively, if the commit is already displayed and SCROLL
+is provided, call SCROLL's function definition in the commit
+window.  (`scroll-up' and `scroll-down' are typically passed in
+for this argument.)
+
+\(fn COMMIT &optional SCROLL INHIBIT-HISTORY SELECT)" t nil)
 
 (autoload 'magit-status "../submodules/magit/magit" "\
 Open a Magit status buffer for the Git repository containing DIR.
@@ -3234,10 +3256,260 @@ when asking for user input.
 
 \(fn DIR)" t nil)
 
+(autoload 'magit-merge "../submodules/magit/magit" "\
+Merge REVISION into the current 'HEAD', leaving changes uncommitted.
+With a prefix argument, skip editing the log message and commit.
+\('git merge [--no-commit] REVISION').
+
+\(fn REVISION &optional DO-COMMIT)" t nil)
+
+(autoload 'magit-merge-abort "../submodules/magit/magit" "\
+Abort the current merge operation.
+
+\(fn)" t nil)
+
+(autoload 'magit-stage-all "../submodules/magit/magit" "\
+Add all remaining changes in tracked files to staging area.
+With a prefix argument, add remaining untracked files as well.
+\('git add [-u] .').
+
+\(fn &optional INCLUDING-UNTRACKED)" t nil)
+
+(autoload 'magit-unstage-all "../submodules/magit/magit" "\
+Remove all changes from staging area.
+\('git reset --mixed HEAD').
+
+\(fn)" t nil)
+ (autoload 'magit-checkout "magit")
+ (autoload 'magit-create-branch "magit")
+
+(autoload 'magit-delete-branch "../submodules/magit/magit" "\
+Delete the BRANCH.
+If the branch is the current one, offers to switch to `master' first.
+With prefix, forces the removal even if it hasn't been merged.
+Works with local or remote branches.
+\('git branch [-d|-D] BRANCH' or 'git push <remote-part-of-BRANCH> :refs/heads/BRANCH').
+
+\(fn BRANCH &optional FORCE)" t nil)
+
+(autoload 'magit-rename-branch "../submodules/magit/magit" "\
+Rename branch OLD to NEW.
+With prefix, forces the rename even if NEW already exists.
+\('git branch [-m|-M] OLD NEW').
+
+\(fn OLD NEW &optional FORCE)" t nil)
+
+(autoload 'magit-add-remote "../submodules/magit/magit" "\
+Add the REMOTE and fetch it.
+\('git remote add REMOTE URL').
+
+\(fn REMOTE URL)" t nil)
+
+(autoload 'magit-remove-remote "../submodules/magit/magit" "\
+Delete the REMOTE.
+\('git remote rm REMOTE').
+
+\(fn REMOTE)" t nil)
+
+(autoload 'magit-rename-remote "../submodules/magit/magit" "\
+Rename remote OLD to NEW.
+\('git remote rename OLD NEW').
+
+\(fn OLD NEW)" t nil)
+
+(autoload 'magit-interactive-rebase "../submodules/magit/magit" "\
+Start a git rebase -i session, old school-style.
+
+\(fn COMMIT)" t nil)
+ (autoload 'magit-reset-head "magit")
+ (autoload 'magit-reset-head-hard "magit")
+ (autoload 'magit-reset-working-tree "magit")
+ (autoload 'magit-fetch "magit")
+ (autoload 'magit-fetch-current "magit")
+ (autoload 'magit-remote-update "magit")
+ (autoload 'magit-pull "magit")
+
+(autoload 'magit-shell-command "../submodules/magit/magit" "\
+Perform arbitrary shell COMMAND.
+
+\(fn COMMAND)" t nil)
+
+(autoload 'magit-git-command "../submodules/magit/magit" "\
+Perform arbitrary Git COMMAND.
+
+Similar to `magit-shell-command', but involves slightly less
+typing and automatically refreshes the status buffer.
+
+\(fn COMMAND)" t nil)
+ (autoload 'magit-push-tags "magit")
+ (autoload 'magit-push "magit")
+
+(autoload 'magit-commit "../submodules/magit/magit" "\
+Create a new commit on HEAD.
+With a prefix argument amend to the commit at HEAD instead.
+\('git commit [--amend]').
+
+\(fn &optional AMENDP)" t nil)
+ (autoload 'magit-tag "magit")
+ (autoload 'magit-delete-tag "magit")
+ (autoload 'magit-stash "magit")
+ (autoload 'magit-stash-snapshot "magit")
+
+(autoload 'magit-submodule-update "../submodules/magit/magit" "\
+Update the submodule of the current git repository.
+With a prefix arg, do a submodule update --init.
+
+\(fn &optional INIT)" t nil)
+
+(autoload 'magit-submodule-update-init "../submodules/magit/magit" "\
+Update and init the submodule of the current git repository.
+
+\(fn)" t nil)
+
+(autoload 'magit-submodule-init "../submodules/magit/magit" "\
+Initialize the submodules.
+
+\(fn)" t nil)
+
+(autoload 'magit-submodule-sync "../submodules/magit/magit" "\
+Synchronizes submodule's remote URL configuration.
+
+\(fn)" t nil)
+ (autoload 'magit-log "magit")
+ (autoload 'magit-log-ranged "magit")
+ (autoload 'magit-log-long "magit")
+ (autoload 'magit-log-long-ranged "magit")
+ (autoload 'magit-file-log "magit")
+ (autoload 'magit-reflog "magit")
+ (autoload 'magit-reflog-head "magit")
+ (autoload 'magit-cherry "magit")
+
+(autoload 'magit-save-index "../submodules/magit/magit" "\
+Add the content of current file as if it was the index.
+
+\(fn)" t nil)
+ (autoload 'magit-diff "magit")
+ (autoload 'magit-diff-working-tree "magit")
+
+(autoload 'magit-wazzup "../submodules/magit/magit" "\
+
+
+\(fn BRANCH)" t nil)
+
+(autoload 'magit-add-change-log-entry "../submodules/magit/magit" "\
+Find change log file and add date entry and item for current change.
+This differs from `add-change-log-entry' (which see) in that
+it acts on the current hunk in a Magit buffer instead of on
+a position in a file-visiting buffer.
+
+\(fn &optional WHOAMI FILE-NAME OTHER-WINDOW)" t nil)
+
+(autoload 'magit-add-change-log-entry-other-window "../submodules/magit/magit" "\
+
+
+\(fn &optional WHOAMI FILE-NAME)" t nil)
+ (autoload 'magit-branch-manager "magit")
+
+(autoload 'magit-init "../submodules/magit/magit" "\
+Initialize git repository in the DIR directory.
+
+\(fn DIR)" t nil)
+
+(autoload 'magit-show-file-revision "../submodules/magit/magit" "\
+Open a new buffer showing the current file in the revision at point.
+
+\(fn)" t nil)
+
+(autoload 'magit-show "../submodules/magit/magit" "\
+Return a buffer containing the file FILENAME, as stored in COMMIT.
+
+COMMIT may be one of the following:
+- A string with the name of a commit, such as \"HEAD\" or
+  \"dae86e\".  See 'git help revisions' for syntax.
+- The symbol 'index, indicating that you want the version in
+  Git's index or staging area.
+- The symbol 'working, indicating that you want the version in
+  the working directory.  In this case you'll get a buffer
+  visiting the file.  If there's already a buffer visiting that
+  file, you'll get that one.
+
+When called interactively or when SELECT is non-nil, make the
+buffer active, either in another window or (with a prefix
+argument) in the current window.
+
+\(fn COMMIT FILENAME &optional SELECT PREFIX)" t nil)
+ (autoload 'magit-grep "magit")
+
+(autoload 'magit-run-git-gui "../submodules/magit/magit" "\
+Run `git gui' for the current git repository.
+
+\(fn)" t nil)
+
+(autoload 'magit-run-git-gui-blame "../submodules/magit/magit" "\
+Run `git gui blame' on the given FILENAME and COMMIT.
+Interactively run it for the current file and the HEAD, with a
+prefix let the user choose.  When the current buffer is visiting
+FILENAME instruct blame to center around the line point is on.
+
+\(fn COMMIT FILENAME &optional LINENUM)" t nil)
+
+(autoload 'magit-run-gitk "../submodules/magit/magit" "\
+Run `gitk --all' for the current git repository.
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads (magit-bisect-run magit-bisect-visualize magit-bisect-log
+;;;;;;  magit-bisect-skip magit-bisect-bad magit-bisect-good magit-bisect-reset
+;;;;;;  magit-bisect-start) "../submodules/magit/magit-bisect" "../submodules/magit/magit-bisect.el"
+;;;;;;  (21093 46272 0 0))
+;;; Generated autoloads from ../submodules/magit/magit-bisect.el
+
+(autoload 'magit-bisect-start "../submodules/magit/magit-bisect" "\
+Start a bisect session.
+
+\(fn)" t nil)
+
+(autoload 'magit-bisect-reset "../submodules/magit/magit-bisect" "\
+Quit a bisect session.
+
+\(fn)" t nil)
+
+(autoload 'magit-bisect-good "../submodules/magit/magit-bisect" "\
+Tell git that the current revision is good during a bisect session.
+
+\(fn)" t nil)
+
+(autoload 'magit-bisect-bad "../submodules/magit/magit-bisect" "\
+Tell git that the current revision is bad during a bisect session.
+
+\(fn)" t nil)
+
+(autoload 'magit-bisect-skip "../submodules/magit/magit-bisect" "\
+Tell git to skip the current revision during a bisect session.
+
+\(fn)" t nil)
+
+(autoload 'magit-bisect-log "../submodules/magit/magit-bisect" "\
+Show the bisect log.
+
+\(fn)" t nil)
+
+(autoload 'magit-bisect-visualize "../submodules/magit/magit-bisect" "\
+Show the remaining suspects with gitk.
+
+\(fn)" t nil)
+
+(autoload 'magit-bisect-run "../submodules/magit/magit-bisect" "\
+Bisect automatically by running commands after each step.
+
+\(fn COMMAND)" t nil)
+
 ;;;***
 
 ;;;### (autoloads (magit-blame-mode) "../submodules/magit/magit-blame"
-;;;;;;  "../submodules/magit/magit-blame.el" (21066 3122 0 0))
+;;;;;;  "../submodules/magit/magit-blame.el" (21093 46272 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-blame.el
 
 (autoload 'magit-blame-mode "../submodules/magit/magit-blame" "\
@@ -3247,25 +3519,29 @@ Display blame information inline.
 
 ;;;***
 
-;;;### (autoloads (turn-on-magit-flow magit-flow-mode) "../submodules/magit/magit-flow"
-;;;;;;  "../submodules/magit/magit-flow.el" (20955 14017 0 0))
-;;; Generated autoloads from ../submodules/magit/magit-flow.el
-
-(autoload 'magit-flow-mode "../submodules/magit/magit-flow" "\
-FLOW support for Magit
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'turn-on-magit-flow "../submodules/magit/magit-flow" "\
-Unconditionally turn on `magit-flow-mode'.
-
-\(fn)" nil nil)
-
-;;;***
-
-;;;### (autoloads (turn-on-magit-stgit magit-stgit-mode) "../submodules/magit/magit-stgit"
-;;;;;;  "../submodules/magit/magit-stgit.el" (21066 3122 0 0))
+;;;### (autoloads (turn-on-magit-stgit magit-stgit-mode magit-stgit-rebase
+;;;;;;  magit-stgit-repair magit-stgit-refresh) "../submodules/magit/magit-stgit"
+;;;;;;  "../submodules/magit/magit-stgit.el" (21093 46272 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-stgit.el
+
+(autoload 'magit-stgit-refresh "../submodules/magit/magit-stgit" "\
+Refresh the contents of a patch in an StGit series.
+If there is no marked patch in the series, refreshes the current
+patch.  Otherwise, refreshes the marked patch.
+
+\(fn)" t nil)
+
+(autoload 'magit-stgit-repair "../submodules/magit/magit-stgit" "\
+Repair StGit metadata if branch was modified with git commands.
+In the case of Git commits these will be imported as new patches
+into the series.
+
+\(fn)" t nil)
+
+(autoload 'magit-stgit-rebase "../submodules/magit/magit-stgit" "\
+Rebase an StGit patch series.
+
+\(fn)" t nil)
 
 (autoload 'magit-stgit-mode "../submodules/magit/magit-stgit" "\
 StGit support for Magit
@@ -3279,9 +3555,22 @@ Unconditionally turn on `magit-stgit-mode'.
 
 ;;;***
 
-;;;### (autoloads (turn-on-magit-svn magit-svn-mode) "../submodules/magit/magit-svn"
-;;;;;;  "../submodules/magit/magit-svn.el" (21066 3122 0 0))
+;;;### (autoloads (turn-on-magit-svn magit-svn-mode magit-svn-fetch-externals)
+;;;;;;  "../submodules/magit/magit-svn" "../submodules/magit/magit-svn.el"
+;;;;;;  (21093 46272 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-svn.el
+ (autoload 'magit-svn-find-rev "magit")
+ (autoload 'magit-svn-create-branch "magit")
+ (autoload 'magit-svn-create-tag "magit")
+ (autoload 'magit-svn-rebase "magit")
+ (autoload 'magit-svn-dcommit "magit")
+ (autoload 'magit-svn-remote-update "magit")
+
+(autoload 'magit-svn-fetch-externals "../submodules/magit/magit-svn" "\
+Loops through all external repos found by `magit-svn-external-directories'
+   and runs git svn fetch, and git svn rebase on each of them.
+
+\(fn)" t nil)
 
 (autoload 'magit-svn-mode "../submodules/magit/magit-svn" "\
 SVN support for Magit
@@ -3296,7 +3585,7 @@ Unconditionally turn on `magit-svn-mode'.
 ;;;***
 
 ;;;### (autoloads (turn-on-magit-topgit magit-topgit-mode) "../submodules/magit/magit-topgit"
-;;;;;;  "../submodules/magit/magit-topgit.el" (21066 3122 0 0))
+;;;;;;  "../submodules/magit/magit-topgit.el" (21093 46272 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-topgit.el
 
 (autoload 'magit-topgit-mode "../submodules/magit/magit-topgit" "\
@@ -3313,7 +3602,7 @@ Unconditionally turn on `magit-topgit-mode'.
 
 ;;;### (autoloads (global-magit-wip-save-mode magit-wip-save-mode
 ;;;;;;  magit-wip-mode) "../submodules/magit/magit-wip" "../submodules/magit/magit-wip.el"
-;;;;;;  (21066 3122 0 0))
+;;;;;;  (21093 46272 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-wip.el
 
 (defvar magit-wip-mode nil "\
@@ -3362,26 +3651,8 @@ See `magit-wip-save-mode' for more information on Magit-Wip-Save mode.
 
 ;;;***
 
-;;;### (autoloads (rebase-mode) "../submodules/magit/rebase-mode"
-;;;;;;  "../submodules/magit/rebase-mode.el" (21066 3122 0 0))
-;;; Generated autoloads from ../submodules/magit/rebase-mode.el
-
-(autoload 'rebase-mode "../submodules/magit/rebase-mode" "\
-Major mode for editing of a Git rebase file.
-
-Rebase files are generated when you run 'git rebase -i' or run
-`magit-interactive-rebase'.  They describe how Git should perform
-the rebase.  See the documentation for git-rebase (e.g., by
-running 'man git-rebase' at the command line) for details.
-
-\(fn)" t nil)
-
-(add-to-list 'auto-mode-alist '("git-rebase-todo" . rebase-mode))
-
-;;;***
-
 ;;;### (autoloads (gfm-mode markdown-mode) "../submodules/markdown-mode/markdown-mode"
-;;;;;;  "../submodules/markdown-mode/markdown-mode.el" (21066 3122
+;;;;;;  "../submodules/markdown-mode/markdown-mode.el" (21093 46273
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/markdown-mode/markdown-mode.el
 
@@ -3442,8 +3713,8 @@ Restores a maximized frame.  See `maximize-frame'.
 
 ;;;### (autoloads (mc/edit-beginnings-of-lines mc/edit-ends-of-lines
 ;;;;;;  mc/edit-lines) "../submodules/multiple-cursors/mc-edit-lines"
-;;;;;;  "../submodules/multiple-cursors/mc-edit-lines.el" (20925
-;;;;;;  9906 0 0))
+;;;;;;  "../submodules/multiple-cursors/mc-edit-lines.el" (21093
+;;;;;;  46280 0 0))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-edit-lines.el
 
 (autoload 'mc/edit-lines "../submodules/multiple-cursors/mc-edit-lines" "\
@@ -3467,14 +3738,14 @@ Add one cursor to the beginning of each line in the active region.
 
 ;;;### (autoloads (mc/mark-sgml-tag-pair mc/add-cursor-on-click mc/mark-all-symbols-like-this-in-defun
 ;;;;;;  mc/mark-all-words-like-this-in-defun mc/mark-all-like-this-in-defun
-;;;;;;  mc/mark-all-like-this-dwim mc/mark-more-like-this-extended
+;;;;;;  mc/mark-all-dwim mc/mark-all-like-this-dwim mc/mark-more-like-this-extended
 ;;;;;;  mc/mark-all-in-region mc/mark-all-symbols-like-this mc/mark-all-words-like-this
 ;;;;;;  mc/mark-all-like-this mc/skip-to-previous-like-this mc/skip-to-next-like-this
 ;;;;;;  mc/unmark-previous-like-this mc/unmark-next-like-this mc/mark-previous-lines
 ;;;;;;  mc/mark-next-lines mc/mark-previous-symbol-like-this mc/mark-previous-word-like-this
 ;;;;;;  mc/mark-previous-like-this mc/mark-next-symbol-like-this
 ;;;;;;  mc/mark-next-word-like-this mc/mark-next-like-this) "../submodules/multiple-cursors/mc-mark-more"
-;;;;;;  "../submodules/multiple-cursors/mc-mark-more.el" (20974 53162
+;;;;;;  "../submodules/multiple-cursors/mc-mark-more.el" (21093 46280
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-mark-more.el
 
@@ -3591,6 +3862,18 @@ With prefix, it behaves the same as original `mc/mark-all-like-this'
 
 \(fn ARG)" t nil)
 
+(autoload 'mc/mark-all-dwim "../submodules/multiple-cursors/mc-mark-more" "\
+Tries even harder to guess what you want to mark all of.
+
+If the region is active and spans multiple lines, it will behave
+as if `mc/mark-all-in-region'. With the prefix ARG, it will call
+`mc/edit-lines' instead.
+
+If the region is inactive or on a single line, it will behave like 
+`mc/mark-all-like-this-dwim'.
+
+\(fn ARG)" t nil)
+
 (autoload 'mc/mark-all-like-this-in-defun "../submodules/multiple-cursors/mc-mark-more" "\
 Mark all like this in defun.
 
@@ -3619,14 +3902,13 @@ Mark the tag we're in and its pair for renaming.
 ;;;***
 
 ;;;### (autoloads (mc/mark-pop) "../submodules/multiple-cursors/mc-mark-pop"
-;;;;;;  "../submodules/multiple-cursors/mc-mark-pop.el" (20955 14019
+;;;;;;  "../submodules/multiple-cursors/mc-mark-pop.el" (21093 46280
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-mark-pop.el
 
 (autoload 'mc/mark-pop "../submodules/multiple-cursors/mc-mark-pop" "\
-Add one cursor to each line of the active region.
-Starts from mark and moves in straight down or up towards the
-line point is on.
+Add a cursor at the current point, pop off mark ring and jump
+to the popped mark.
 
 \(fn)" t nil)
 
@@ -3634,7 +3916,7 @@ line point is on.
 
 ;;;### (autoloads (mc/sort-regions mc/reverse-regions mc/insert-numbers)
 ;;;;;;  "../submodules/multiple-cursors/mc-separate-operations" "../submodules/multiple-cursors/mc-separate-operations.el"
-;;;;;;  (20925 9906 0 0))
+;;;;;;  (21093 46281 0 0))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-separate-operations.el
 
 (autoload 'mc/insert-numbers "../submodules/multiple-cursors/mc-separate-operations" "\
@@ -3656,7 +3938,7 @@ Insert increasing numbers for each cursor, starting at 0 or ARG.
 
 ;;;### (autoloads (set-rectangular-region-anchor) "../submodules/multiple-cursors/rectangular-region-mode"
 ;;;;;;  "../submodules/multiple-cursors/rectangular-region-mode.el"
-;;;;;;  (20974 53162 0 0))
+;;;;;;  (21093 46281 0 0))
 ;;; Generated autoloads from ../submodules/multiple-cursors/rectangular-region-mode.el
 
 (autoload 'set-rectangular-region-anchor "../submodules/multiple-cursors/rectangular-region-mode" "\
@@ -3671,7 +3953,7 @@ an exceedingly quick way of adding multiple cursors to multiple lines.
 
 ;;;### (autoloads (read-dict dictree-load dictree-p make-dictree-meta-dict
 ;;;;;;  make-dictree-custom make-dictree) "../submodules/predictive-mode/dict-tree"
-;;;;;;  "../submodules/predictive-mode/dict-tree.el" (20925 9991
+;;;;;;  "../submodules/predictive-mode/dict-tree.el" (21093 46302
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/predictive-mode/dict-tree.el
 
@@ -3834,7 +4116,7 @@ extension, suitable for passing to `load-library'.
 ;;;***
 
 ;;;### (autoloads (make-heap) "../submodules/predictive-mode/heap"
-;;;;;;  "../submodules/predictive-mode/heap.el" (20955 14020 0 0))
+;;;;;;  "../submodules/predictive-mode/heap.el" (21093 46302 0 0))
 ;;; Generated autoloads from ../submodules/predictive-mode/heap.el
 
 (autoload 'make-heap "../submodules/predictive-mode/heap" "\
@@ -3857,7 +4139,7 @@ defaulting to 2.
 ;;;***
 
 ;;;### (autoloads (latex-eldoc-mode) "../submodules/predictive-mode/latex-eldoc"
-;;;;;;  "../submodules/predictive-mode/latex-eldoc.el" (20974 53164
+;;;;;;  "../submodules/predictive-mode/latex-eldoc.el" (21093 46302
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/predictive-mode/latex-eldoc.el
 
@@ -3876,7 +4158,7 @@ environment in the text where point is.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/predictive-mode/queue" "../submodules/predictive-mode/queue.el"
-;;;;;;  (20925 9991 0 0))
+;;;;;;  (21093 46305 0 0))
 ;;; Generated autoloads from ../submodules/predictive-mode/queue.el
 
 (defalias 'make-queue 'queue-create "\
@@ -3885,7 +4167,7 @@ Create an empty queue data structure.")
 ;;;***
 
 ;;;### (autoloads (tNFA-regexp-match tNFA-from-regexp) "../submodules/predictive-mode/tNFA"
-;;;;;;  "../submodules/predictive-mode/tNFA.el" (20925 9991 0 0))
+;;;;;;  "../submodules/predictive-mode/tNFA.el" (21093 46305 0 0))
 ;;; Generated autoloads from ../submodules/predictive-mode/tNFA.el
 
 (autoload 'tNFA-from-regexp "../submodules/predictive-mode/tNFA" "\
@@ -3986,7 +4268,7 @@ next goes idle.. (as in the default run-with-idle-timer.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/predictive-mode/trie" "../submodules/predictive-mode/trie.el"
-;;;;;;  (20925 9991 0 0))
+;;;;;;  (21093 46305 0 0))
 ;;; Generated autoloads from ../submodules/predictive-mode/trie.el
 
 (defalias 'make-trie 'trie--create "\
@@ -4159,7 +4441,7 @@ popup all stubs in the current buffer.
 ;;;;;;  smart-tabs-advice smart-tabs-mode-enable smart-tabs-mode
 ;;;;;;  smart-tabs-create-language-advice smart-tabs-create-advice-list
 ;;;;;;  smart-tabs-when) "../submodules/smarttabs/smart-tabs-mode"
-;;;;;;  "../submodules/smarttabs/smart-tabs-mode.el" (20974 53165
+;;;;;;  "../submodules/smarttabs/smart-tabs-mode.el" (21093 46310
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/smarttabs/smart-tabs-mode.el
 
@@ -4219,7 +4501,7 @@ Add support for a language not already in the `smart-tabs-insinuate-alist'.
 ;;;***
 
 ;;;### (autoloads (smex-initialize smex) "../submodules/smex/smex"
-;;;;;;  "../submodules/smex/smex.el" (20974 53165 0 0))
+;;;;;;  "../submodules/smex/smex.el" (21093 46311 0 0))
 ;;; Generated autoloads from ../submodules/smex/smex.el
 
 (autoload 'smex "../submodules/smex/smex" "\
@@ -4337,7 +4619,7 @@ Octet setting for MIME module.
 ;;;### (autoloads (w3m-buffer w3m-region w3m-find-file w3m-browse-url
 ;;;;;;  w3m w3m-create-empty-session w3m-gohome w3m-goto-url-new-session
 ;;;;;;  w3m-goto-url w3m-download w3m-retrieve) "../submodules/w3m/w3m"
-;;;;;;  "../submodules/w3m/w3m.el" (20925 10017 0 0))
+;;;;;;  "../submodules/w3m/w3m.el" (21093 46319 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m.el
 
 (autoload 'w3m-retrieve "../submodules/w3m/w3m" "\
@@ -4512,7 +4794,7 @@ Report changes of WEB sites, which is specified in `w3m-antenna-sites'.
 ;;;### (autoloads (w3m-setup-bookmark-menu w3m-about-bookmark w3m-bookmark-view-new-session
 ;;;;;;  w3m-bookmark-view w3m-bookmark-add-current-url-group w3m-bookmark-add-all-urls
 ;;;;;;  w3m-bookmark-add-current-url w3m-bookmark-add-this-url) "../submodules/w3m/w3m-bookmark"
-;;;;;;  "../submodules/w3m/w3m-bookmark.el" (20925 10017 0 0))
+;;;;;;  "../submodules/w3m/w3m-bookmark.el" (21093 46319 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-bookmark.el
 
 (autoload 'w3m-bookmark-add-this-url "../submodules/w3m/w3m-bookmark" "\
@@ -4630,7 +4912,7 @@ This allows frame-local lists of buffers (tabs).
 ;;;***
 
 ;;;### (autoloads (w3m-filter) "../submodules/w3m/w3m-filter" "../submodules/w3m/w3m-filter.el"
-;;;;;;  (20925 10017 0 0))
+;;;;;;  (21093 46319 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-filter.el
 
 (autoload 'w3m-filter "../submodules/w3m/w3m-filter" "\
@@ -4781,7 +5063,7 @@ View Perl documents.
 
 ;;;### (autoloads (w3m-search-uri-replace w3m-search-new-session
 ;;;;;;  w3m-search) "../submodules/w3m/w3m-search" "../submodules/w3m/w3m-search.el"
-;;;;;;  (20925 10017 0 0))
+;;;;;;  (21093 46319 0 0))
 ;;; Generated autoloads from ../submodules/w3m/w3m-search.el
 
 (autoload 'w3m-search "../submodules/w3m/w3m-search" "\
@@ -4872,7 +5154,7 @@ Display weather report.
 ;;;***
 
 ;;;### (autoloads (web-mode) "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
-;;;;;;  (21066 3126 0 0))
+;;;;;;  (21093 46321 0 0))
 ;;; Generated autoloads from ../submodules/web-mode/web-mode.el
 
 (autoload 'web-mode "../submodules/web-mode/web-mode" "\
@@ -4883,7 +5165,7 @@ Major mode for editing web templates.
 ;;;***
 
 ;;;### (autoloads (yas-global-mode yas-minor-mode) "../submodules/yasnippet/yasnippet"
-;;;;;;  "../submodules/yasnippet/yasnippet.el" (21066 3127 0 0))
+;;;;;;  "../submodules/yasnippet/yasnippet.el" (21093 46328 0 0))
 ;;; Generated autoloads from ../submodules/yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "../submodules/yasnippet/yasnippet" "\
@@ -4981,10 +5263,12 @@ accept it or skip it.
 
 ;;;### (autoloads nil nil ("../custom/jdf-dictionary.el" "../submodules/auto-complete-clang/auto-complete-clang.el"
 ;;;;;;  "../submodules/auto-complete/auto-complete-config.el" "../submodules/auto-complete/auto-complete-pkg.el"
-;;;;;;  "../submodules/dash/dash.el" "../submodules/emacs-websocket/websocket-functional-test.el"
+;;;;;;  "../submodules/dash/dash-functional.el" "../submodules/dash/dash.el"
+;;;;;;  "../submodules/emacs-websocket/websocket-functional-test.el"
 ;;;;;;  "../submodules/emacs-websocket/websocket-test.el" "../submodules/emacs-websocket/websocket.el"
 ;;;;;;  "../submodules/expand-region/cc-mode-expansions.el" "../submodules/expand-region/clojure-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/cperl-mode-expansions.el" "../submodules/expand-region/css-mode-expansions.el"
+;;;;;;  "../submodules/expand-region/enh-ruby-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/er-basic-expansions.el" "../submodules/expand-region/erlang-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/expand-region-core.el" "../submodules/expand-region/expand-region-pkg.el"
 ;;;;;;  "../submodules/expand-region/feature-mode-expansions.el"
@@ -5000,9 +5284,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/gh/gh-profile.el" "../submodules/gh/gh.el"
 ;;;;;;  "../submodules/helm/helm-aliases.el" "../submodules/helm/helm-pkg.el"
 ;;;;;;  "../submodules/helm/helm-plugin.el" "../submodules/json/json.el"
-;;;;;;  "../submodules/logito/logito.el" "../submodules/magit/magit-bisect.el"
-;;;;;;  "../submodules/magit/magit-cherry.el" "../submodules/magit/magit-compat.el"
-;;;;;;  "../submodules/magit/magit-key-mode.el" "../submodules/magit/magit-log-edit.el"
+;;;;;;  "../submodules/logito/logito.el" "../submodules/magit/magit-key-mode.el"
 ;;;;;;  "../submodules/multiple-cursors/mc-cycle-cursors.el" "../submodules/multiple-cursors/multiple-cursors-core.el"
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors-pkg.el"
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors.el" "../submodules/p4/p4.el"
@@ -5040,9 +5322,9 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-proc.el" "../submodules/w3m/w3m-rss.el"
 ;;;;;;  "../submodules/w3m/w3m-tabmenu.el" "../submodules/w3m/w3m-ucs.el"
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
-;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21085 47040
-;;;;;;  750000 0))
+;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/web-mode/wfs-mode.el"
+;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
+;;;;;;  (21093 46427 558000 0))
 
 ;;;***
 
