@@ -164,7 +164,7 @@ with no args, if that value is non-nil.
 ;;;***
 
 ;;;### (autoloads (helm-everything) "../custom/helm-everything" "../custom/helm-everything.el"
-;;;;;;  (21085 47021 0 0))
+;;;;;;  (21107 19005 0 0))
 ;;; Generated autoloads from ../custom/helm-everything.el
 
 (autoload 'helm-everything "../custom/helm-everything" "\
@@ -177,7 +177,7 @@ Search Everything with helm
 ;;;***
 
 ;;;### (autoloads (helm-mine) "../custom/helm-my-things" "../custom/helm-my-things.el"
-;;;;;;  (21078 575 0 0))
+;;;;;;  (21107 19005 0 0))
 ;;; Generated autoloads from ../custom/helm-my-things.el
 
 (autoload 'helm-mine "../custom/helm-my-things" "\
@@ -278,7 +278,7 @@ Find a tag using ido
 ;;;***
 
 ;;;### (autoloads (p4-find-files) "../custom/p4-find-files" "../custom/p4-find-files.el"
-;;;;;;  (21077 42241 0 0))
+;;;;;;  (21107 19005 0 0))
 ;;; Generated autoloads from ../custom/p4-find-files.el
 
 (autoload 'p4-find-files "../custom/p4-find-files" "\
@@ -1084,6 +1084,26 @@ Key bindings:
 
 ;;;***
 
+;;;### (autoloads (enh-ruby-mode) "../submodules/enhanced-ruby-mode/enh-ruby-mode"
+;;;;;;  "../submodules/enhanced-ruby-mode/enh-ruby-mode.el" (21107
+;;;;;;  17753 0 0))
+;;; Generated autoloads from ../submodules/enhanced-ruby-mode/enh-ruby-mode.el
+
+(autoload 'enh-ruby-mode "../submodules/enhanced-ruby-mode/enh-ruby-mode" "\
+Enhanced Major mode for editing Ruby code.
+
+\\{enh-ruby-mode-map}
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("\\.rb\\'" . enh-ruby-mode))
+
+(add-to-list 'auto-mode-alist '("Rakefile\\'" . enh-ruby-mode))
+
+(add-to-list 'auto-mode-alist '("\\.gemspec\\'" . enh-ruby-mode))
+
+;;;***
+
 ;;;### (autoloads (er/expand-region) "../submodules/expand-region/expand-region"
 ;;;;;;  "../submodules/expand-region/expand-region.el" (21093 46237
 ;;;;;;  0 0))
@@ -1574,7 +1594,7 @@ In this case you have to add this new attribute to your source.
 When `helm-full-frame' or SPLIT-ONEWINDOW are non--nil,
 and `helm-buffer' is displayed in only one window,
 the helm window is splitted to display
-`helm-select-persistent-action-window' in other window 
+`helm-select-persistent-action-window' in other window
 and keep its visibility.
 
 \(fn &optional (attr (quote persistent-action)) SPLIT-ONEWINDOW)" t nil)
@@ -2011,7 +2031,7 @@ Preconfigured helm for `helm-source-evaluation-result'.
 \(fn ARG)" t nil)
 
 (autoload 'helm-eval-expression-with-eldoc "../submodules/helm/helm-eval" "\
-Preconfigured helm for `helm-source-evaluation-result' with `eldoc' support. 
+Preconfigured helm for `helm-source-evaluation-result' with `eldoc' support.
 
 \(fn)" t nil)
 
@@ -3519,6 +3539,22 @@ Display blame information inline.
 
 ;;;***
 
+;;;### (autoloads (turn-on-magit-flow magit-flow-mode) "../submodules/magit/magit-flow"
+;;;;;;  "../submodules/magit/magit-flow.el" (21067 50255 0 0))
+;;; Generated autoloads from ../submodules/magit/magit-flow.el
+
+(autoload 'magit-flow-mode "../submodules/magit/magit-flow" "\
+FLOW support for Magit
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'turn-on-magit-flow "../submodules/magit/magit-flow" "\
+Unconditionally turn on `magit-flow-mode'.
+
+\(fn)" nil nil)
+
+;;;***
+
 ;;;### (autoloads (turn-on-magit-stgit magit-stgit-mode magit-stgit-rebase
 ;;;;;;  magit-stgit-repair magit-stgit-refresh) "../submodules/magit/magit-stgit"
 ;;;;;;  "../submodules/magit/magit-stgit.el" (21093 46272 0 0))
@@ -3648,6 +3684,24 @@ Magit-Wip-Save mode is enabled in all buffers where
 See `magit-wip-save-mode' for more information on Magit-Wip-Save mode.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads (rebase-mode) "../submodules/magit/rebase-mode"
+;;;;;;  "../submodules/magit/rebase-mode.el" (21067 50255 0 0))
+;;; Generated autoloads from ../submodules/magit/rebase-mode.el
+
+(autoload 'rebase-mode "../submodules/magit/rebase-mode" "\
+Major mode for editing of a Git rebase file.
+
+Rebase files are generated when you run 'git rebase -i' or run
+`magit-interactive-rebase'.  They describe how Git should perform
+the rebase.  See the documentation for git-rebase (e.g., by
+running 'man git-rebase' at the command line) for details.
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("git-rebase-todo" . rebase-mode))
 
 ;;;***
 
@@ -3869,7 +3923,7 @@ If the region is active and spans multiple lines, it will behave
 as if `mc/mark-all-in-region'. With the prefix ARG, it will call
 `mc/edit-lines' instead.
 
-If the region is inactive or on a single line, it will behave like 
+If the region is inactive or on a single line, it will behave like
 `mc/mark-all-like-this-dwim'.
 
 \(fn ARG)" t nil)
@@ -5263,12 +5317,10 @@ accept it or skip it.
 
 ;;;### (autoloads nil nil ("../custom/jdf-dictionary.el" "../submodules/auto-complete-clang/auto-complete-clang.el"
 ;;;;;;  "../submodules/auto-complete/auto-complete-config.el" "../submodules/auto-complete/auto-complete-pkg.el"
-;;;;;;  "../submodules/dash/dash-functional.el" "../submodules/dash/dash.el"
-;;;;;;  "../submodules/emacs-websocket/websocket-functional-test.el"
+;;;;;;  "../submodules/dash/dash.el" "../submodules/emacs-websocket/websocket-functional-test.el"
 ;;;;;;  "../submodules/emacs-websocket/websocket-test.el" "../submodules/emacs-websocket/websocket.el"
 ;;;;;;  "../submodules/expand-region/cc-mode-expansions.el" "../submodules/expand-region/clojure-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/cperl-mode-expansions.el" "../submodules/expand-region/css-mode-expansions.el"
-;;;;;;  "../submodules/expand-region/enh-ruby-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/er-basic-expansions.el" "../submodules/expand-region/erlang-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/expand-region-core.el" "../submodules/expand-region/expand-region-pkg.el"
 ;;;;;;  "../submodules/expand-region/feature-mode-expansions.el"
@@ -5284,8 +5336,10 @@ accept it or skip it.
 ;;;;;;  "../submodules/gh/gh-profile.el" "../submodules/gh/gh.el"
 ;;;;;;  "../submodules/helm/helm-aliases.el" "../submodules/helm/helm-pkg.el"
 ;;;;;;  "../submodules/helm/helm-plugin.el" "../submodules/json/json.el"
-;;;;;;  "../submodules/logito/logito.el" "../submodules/magit/magit-key-mode.el"
-;;;;;;  "../submodules/multiple-cursors/mc-cycle-cursors.el" "../submodules/multiple-cursors/multiple-cursors-core.el"
+;;;;;;  "../submodules/logito/logito.el" "../submodules/magit/magit-cherry.el"
+;;;;;;  "../submodules/magit/magit-compat.el" "../submodules/magit/magit-key-mode.el"
+;;;;;;  "../submodules/magit/magit-log-edit.el" "../submodules/multiple-cursors/mc-cycle-cursors.el"
+;;;;;;  "../submodules/multiple-cursors/multiple-cursors-core.el"
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors-pkg.el"
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors.el" "../submodules/p4/p4.el"
 ;;;;;;  "../submodules/pcache/pcache-tests.el" "../submodules/pcache/pcache.el"
@@ -5322,9 +5376,9 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-proc.el" "../submodules/w3m/w3m-rss.el"
 ;;;;;;  "../submodules/w3m/w3m-tabmenu.el" "../submodules/w3m/w3m-ucs.el"
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
-;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/web-mode/wfs-mode.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (21093 46427 558000 0))
+;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/yasnippet-debug.el"
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21107 19209
+;;;;;;  379942 0))
 
 ;;;***
 

@@ -115,3 +115,6 @@
 [submodule "submodules/glsl-mode"]
 	path = submodules/glsl-mode
 	url = https://github.com/filsinger/glsl-mode.git
+[submodule "submodules/enhanced-ruby-mode"]
+	path = submodules/enhanced-ruby-mode
+	url = https://github.com/zenspider/enhanced-ruby-mode.git

@@ -99,6 +99,8 @@
 ;; Ruby
 (add-hook 'ruby-mode-hook 'smart-tabs-mode-enable)
 (smart-tabs-advice ruby-indent-line ruby-indent-level)
+(add-hook 'enh-ruby-mode-hook 'smart-tabs-mode-enable)
+(smart-tabs-advice enh-ruby-indent-line ruby-indent-level)
 ;; ================================================
 
 
@@ -252,7 +254,8 @@
 (add-to-list 'auto-mode-alist '("\\.h$" . c++-mode))                             ;; open .h files in c++-mode
 (add-to-list 'auto-mode-alist '("\\.bat$" . bat-mode))                           ;; bat-mode (http://ftp.gnu.org/old-gnu/emacs/windows/contrib/bat-mode.el) support
 (add-to-list 'auto-mode-alist '("\\.\\(pde\\|ino\\)$" . arduino-mode))           ;; arduino-mode
-(add-to-list 'auto-mode-alist '("\\(Rakefile\\|rakefile\\|Vagrantfile\\)$" . ruby-mode))       ;; use ruby-mode for rakefiles and vagrant
+(add-to-list 'auto-mode-alist '("\\(Rakefile\\|rakefile\\|Vagrantfile\\)$" . enh-ruby-mode))       ;; use ruby-mode for rakefiles and vagrant
+(add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.cs$" . csharp-mode))                         ;; csharp-mode
 (add-to-list 'auto-mode-alist '("\\\.dotfiles\.*\\.zsh$" . sh-mode))             ;; sh-mode
 (add-to-list 'auto-mode-alist '("\\.pac$" . js-mode))                            ;; js-mode
@@ -359,6 +362,13 @@
 (add-hook 'ruby-mode-hook (lambda ()
   (setq indent-tabs-mode nil)  ;; use spaces only if nil
   ))
+
+(add-hook 'enh-ruby-mode-hook (lambda ()
+  (setq enh-indent-tabs-mode nil)  ;; use spaces only if nil
+  (setq enh-ruby-indent-level 4)
+  ))
+
+(add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
 ;; ================================================
 
 ;; ================================================
