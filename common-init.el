@@ -374,7 +374,7 @@
 
 
 ;; ================================================
-;; Set space indentation settings for ruby
+;; Set space indentation settings for lua
 ;; ================================================
 (add-hook 'lua-mode-hook (lambda ()
   (setq indent-tabs-mode nil)  ;; use spaces only if nil
