@@ -118,3 +118,15 @@
 [submodule "submodules/enhanced-ruby-mode"]
 	path = submodules/enhanced-ruby-mode
 	url = https://github.com/zenspider/enhanced-ruby-mode.git
+[submodule "submodules/flycheck"]
+	path = submodules/flycheck
+	url = https://github.com/flycheck/flycheck.git
+[submodule "submodules/s"]
+	path = submodules/s
+	url = https://github.com/magnars/s.el.git
+[submodule "submodules/f"]
+	path = submodules/f
+	url = https://github.com/rejeep/f.el.git
+[submodule "submodules/yaml-mode"]
+	path = submodules/yaml-mode
+	url = https://github.com/yoshiki/yaml-mode.git
