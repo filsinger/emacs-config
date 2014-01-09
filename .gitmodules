@@ -130,3 +130,6 @@
 [submodule "submodules/yaml-mode"]
 	path = submodules/yaml-mode
 	url = https://github.com/yoshiki/yaml-mode.git
+[submodule "submodules/helm-everything"]
+	path = submodules/helm-everything
+	url = https://github.com/filsinger/helm-everything.git
