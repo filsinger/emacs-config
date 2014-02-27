@@ -133,3 +133,6 @@
 [submodule "submodules/helm-everything"]
 	path = submodules/helm-everything
 	url = https://github.com/filsinger/helm-everything.git
+[submodule "submodules/git-modes"]
+	path = submodules/git-modes
+	url = https://github.com/magit/git-modes.git
