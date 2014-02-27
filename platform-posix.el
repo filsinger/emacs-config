@@ -1,5 +1,7 @@
 (when (or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
 
+(setq default-directory (getenv "HOME"))
+
 (when (eq system-type 'darwin)
   ;; use mdfind instead of locate on osx (uses spotlight)
   (setq locate-command "mdfind")
