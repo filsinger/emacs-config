@@ -1194,7 +1194,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;### (autoloads (flycheck-define-error-level flycheck-info flycheck-def-option-var
 ;;;;;;  flycheck-def-config-file-var global-flycheck-mode flycheck-mode)
 ;;;;;;  "../submodules/flycheck/flycheck" "../submodules/flycheck/flycheck.el"
-;;;;;;  (21270 59072 0 0))
+;;;;;;  (21273 28988 0 0))
 ;;; Generated autoloads from ../submodules/flycheck/flycheck.el
 
 (defconst flycheck-mode-line-lighter " FlyC" "\
@@ -1519,7 +1519,7 @@ Displays a list of all of the current user's gists in a new buffer.
 ;;;***
 
 ;;;### (autoloads (git-commit-mode) "../submodules/git-modes/git-commit-mode"
-;;;;;;  "../submodules/git-modes/git-commit-mode.el" (21262 60392
+;;;;;;  "../submodules/git-modes/git-commit-mode.el" (21273 28997
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/git-modes/git-commit-mode.el
 
@@ -2183,7 +2183,7 @@ Preconfigured `helm' for emms sources.
 ;;;***
 
 ;;;### (autoloads (helm-eshell-history helm-esh-pcomplete) "../submodules/helm/helm-eshell"
-;;;;;;  "../submodules/helm/helm-eshell.el" (21262 61883 0 0))
+;;;;;;  "../submodules/helm/helm-eshell.el" (21273 28999 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-eshell.el
 
 (autoload 'helm-esh-pcomplete "../submodules/helm/helm-eshell" "\
@@ -2236,7 +2236,7 @@ You can set your own list of commands with
 
 ;;;### (autoloads (helm-recentf helm-for-files helm-find-files helm-find
 ;;;;;;  helm-browse-project) "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
-;;;;;;  (21270 59077 0 0))
+;;;;;;  (21273 28999 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-files.el
 
 (autoload 'helm-browse-project "../submodules/helm/helm-files" "\
@@ -2701,7 +2701,7 @@ Predefined `helm' that provide completion of `comint' history.
 ;;;***
 
 ;;;### (autoloads (helm-mode helm-comp-read) "../submodules/helm/helm-mode"
-;;;;;;  "../submodules/helm/helm-mode.el" (21270 59077 0 0))
+;;;;;;  "../submodules/helm/helm-mode.el" (21273 28999 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-mode.el
 
 (autoload 'helm-comp-read "../submodules/helm/helm-mode" "\
@@ -2973,7 +2973,7 @@ Fill in the symbol at point by default.
 ;;;### (autoloads (helm-xrandr-set helm-list-emacs-process helm-top
 ;;;;;;  helm-top-run-sort-by-user helm-top-run-sort-by-mem helm-top-run-sort-by-cpu
 ;;;;;;  helm-top-run-sort-by-com) "../submodules/helm/helm-sys" "../submodules/helm/helm-sys.el"
-;;;;;;  (21198 44434 0 0))
+;;;;;;  (21273 28999 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-sys.el
 
 (autoload 'helm-top-run-sort-by-com "../submodules/helm/helm-sys" "\
@@ -3205,7 +3205,7 @@ before if NLINES is negative.
 ;;;***
 
 ;;;### (autoloads (litable-mode) "../submodules/litable/litable"
-;;;;;;  "../submodules/litable/litable.el" (21262 61928 0 0))
+;;;;;;  "../submodules/litable/litable.el" (21273 29003 0 0))
 ;;; Generated autoloads from ../submodules/litable/litable.el
 
 (autoload 'litable-mode "../submodules/litable/litable" "\
@@ -3216,7 +3216,7 @@ Toggle litable-mode
 ;;;***
 
 ;;;### (autoloads (lua-mode) "../submodules/lua-mode/lua-mode" "../submodules/lua-mode/lua-mode.el"
-;;;;;;  (21262 61930 0 0))
+;;;;;;  (21273 29005 0 0))
 ;;; Generated autoloads from ../submodules/lua-mode/lua-mode.el
 
 (autoload 'lua-mode "../submodules/lua-mode/lua-mode" "\
@@ -3250,7 +3250,7 @@ Major mode for editing Lua code.
 ;;;;;;  magit-create-branch magit-checkout magit-merge-abort magit-merge
 ;;;;;;  magit-show magit-dired-jump magit-unstage-all magit-stage-all
 ;;;;;;  magit-status magit-show-commit magit-git-command) "../submodules/magit/magit"
-;;;;;;  "../submodules/magit/magit.el" (21270 59084 0 0))
+;;;;;;  "../submodules/magit/magit.el" (21273 29013 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit.el
 
 (autoload 'magit-git-command "../submodules/magit/magit" "\
@@ -3763,10 +3763,10 @@ Display blame information inline.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/magit-key-mode" "../submodules/magit/magit-key-mode.el"
-;;;;;;  (21270 59084 0 0))
+;;;;;;  (21273 29013 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-key-mode.el
 
-(defvar magit-key-mode-groups '((dispatch (actions ("b" "Branching" magit-key-mode-popup-branching) ("B" "Bisecting" magit-key-mode-popup-bisecting) ("c" "Committing" magit-key-mode-popup-committing) ("d" "Diff worktree" magit-diff-working-tree) ("D" "Diff" magit-diff) ("f" "Fetching" magit-key-mode-popup-fetching) ("F" "Pulling" magit-key-mode-popup-pulling) ("g" "Refresh Buffers" magit-refresh-all) ("l" "Logging" magit-key-mode-popup-logging) ("m" "Merging" magit-key-mode-popup-merging) ("M" "Remoting" magit-key-mode-popup-remoting) ("P" "Pushing" magit-key-mode-popup-pushing) ("o" "Submoduling" magit-key-mode-popup-submodule) ("r" "Rewriting" magit-key-mode-popup-rewriting) ("R" "Rebasing" magit-rebase-step) ("s" "Show Status" magit-status) ("S" "Stage all" magit-stage-all) ("t" "Tagging" magit-key-mode-popup-tagging) ("U" "Unstage all" magit-unstage-all) ("v" "Show Commit" magit-show-commit) ("V" "Show File" magit-show) ("w" "Wazzup" magit-wazzup) ("X" "Reset worktree" magit-reset-working-tree) ("y" "Cherry" magit-cherry) ("z" "Stashing" magit-key-mode-popup-stashing) ("!" "Running" magit-key-mode-popup-running) ("$" "Show Process" magit-display-process))) (logging (man-page "git-log") (actions ("l" "Short" magit-log) ("L" "Long" magit-log-long) ("h" "Head Reflog" magit-reflog-head) ("f" "File log" magit-file-log) ("rl" "Ranged short" magit-log-ranged) ("rL" "Ranged long" magit-log-long-ranged) ("rh" "Reflog" magit-reflog)) (switches ("-m" "Only merge commits" "--merges") ("-do" "Date Order" "--date-order") ("-f" "First parent" "--first-parent") ("-i" "Case insensitive patterns" "-i") ("-pr" "Pickaxe regex" "--pickaxe-regex") ("-g" "Show Graph" "--graph") ("-n" "Name only" "--name-only") ("-am" "All match" "--all-match") ("-al" "All" "--all")) (arguments ("=r" "Relative" "--relative=" read-directory-name) ("=c" "Committer" "--committer=" read-from-minibuffer) ("=>" "Since" "--since=" read-from-minibuffer) ("=<" "Before" "--before=" read-from-minibuffer) ("=a" "Author" "--author=" read-from-minibuffer) ("=g" "Grep messages" "--grep=" read-from-minibuffer) ("=G" "Grep patches" "-G" read-from-minibuffer) ("=L" "Trace evolution of line range [long log only]" "-L" magit-read-file-trace) ("=s" "Pickaxe search" "-S" read-from-minibuffer) ("=b" "Branches" "--branches=" read-from-minibuffer) ("=R" "Remotes" "--remotes=" read-from-minibuffer))) (running (actions ("!" "Git Subcommand (from root)" magit-git-command-topdir) (":" "Git Subcommand (from pwd)" magit-git-command) ("g" "Git Gui" magit-run-git-gui) ("k" "Gitk" magit-run-gitk))) (fetching (man-page "git-fetch") (actions ("f" "Current" magit-fetch-current) ("a" "All" magit-remote-update) ("o" "Other" magit-fetch)) (switches ("-p" "Prune" "--prune"))) (pushing (man-page "git-push") (actions ("P" "Push" magit-push) ("t" "Push tags" magit-push-tags)) (switches ("-f" "Force" "--force") ("-d" "Dry run" "-n") ("-u" "Set upstream" "-u"))) (pulling (man-page "git-pull") (actions ("F" "Pull" magit-pull)) (switches ("-f" "Force" "--force") ("-r" "Rebase" "--rebase"))) (branching (man-page "git-branch") (actions ("v" "Branch manager" magit-branch-manager) ("b" "Checkout" magit-checkout) ("c" "Create" magit-create-branch) ("r" "Rename" magit-rename-branch) ("k" "Delete" magit-delete-branch)) (switches ("-t" "Set upstream configuration" "--track") ("-m" "Merged to HEAD" "--merged") ("-M" "Merged to master" "--merged=master") ("-n" "Not merged to HEAD" "--no-merged") ("-N" "Not merged to master" "--no-merged=master")) (arguments ("=c" "Contains" "--contains=" magit-read-rev-with-default) ("=m" "Merged" "--merged=" magit-read-rev-with-default) ("=n" "Not merged" "--no-merged=" magit-read-rev-with-default))) (remoting (man-page "git-remote") (actions ("v" "Remote manager" magit-branch-manager) ("a" "Add" magit-add-remote) ("r" "Rename" magit-rename-remote) ("k" "Remove" magit-remove-remote))) (tagging (man-page "git-tag") (actions ("t" "Create" magit-tag) ("k" "Delete" magit-delete-tag)) (switches ("-a" "Annotate" "--annotate") ("-f" "Force" "--force") ("-s" "Sign" "--sign"))) (stashing (man-page "git-stash") (actions ("v" "View" magit-diff-stash) ("z" "Save" magit-stash) ("s" "Snapshot" magit-stash-snapshot) ("a" "Apply" magit-stash-apply) ("p" "Pop" magit-stash-pop) ("k" "Drop" magit-stash-drop)) (switches ("-k" "Keep index" "--keep-index") ("-u" "Include untracked files" "--include-untracked") ("-a" "Include all files" "--all"))) (committing (man-page "git-commit") (actions ("c" "Commit" magit-commit) ("a" "Amend" magit-commit-amend) ("e" "Extend" magit-commit-extend) ("r" "Reword" magit-commit-reword) ("f" "Fixup" magit-commit-fixup) ("s" "Squash" magit-commit-squash)) (switches ("-r" "Replace the tip of current branch" "--amend") ("-a" "Stage all modified and deleted files" "--all") ("-e" "Allow empty commit" "--allow-empty") ("-v" "Show diff of changes to be committed" "--verbose") ("-n" "Bypass git hooks" "--no-verify") ("-s" "Add Signed-off-by line" "--signoff") ("-R" "Claim authorship and reset author date" "--reset-author")) (arguments ("=A" "Override the author" "--author=" read-from-minibuffer) ("=S" "Sign using gpg" "--gpg-sign=" magit-read-gpg-secret-key))) (merging (man-page "git-merge") (actions ("m" "Merge" magit-merge) ("A" "Abort" magit-merge-abort)) (switches ("-ff" "Fast-forward only" "--ff-only") ("-nf" "No fast-forward" "--no-ff") ("-sq" "Squash" "--squash")) (arguments ("-st" "Strategy" "--strategy=" read-from-minibuffer))) (rewriting (actions ("b" "Begin" magit-rewrite-start) ("s" "Stop" magit-rewrite-stop) ("a" "Abort" magit-rewrite-abort) ("f" "Finish" magit-rewrite-finish) ("*" "Set unused" magit-rewrite-set-unused) ("." "Set used" magit-rewrite-set-used))) (apply-mailbox (man-page "git-am") (actions ("J" "Apply Mailbox" magit-apply-mailbox)) (switches ("-s" "add a Signed-off-by line to the commit message" "--signoff") ("-3" "allow fall back on 3way merging if needed" "--3way") ("-k" "pass -k flag to git-mailinfo" "--keep") ("-c" "strip everything before a scissors line" "--scissors") ("-p" "pass it through git-apply" "-p") ("-r" "override error message when patch failure occurs" "--resolvemsg") ("-d" "lie about committer date" "--committer-date-is-author-date") ("-D" "use current timestamp for author date" "--ignore-date") ("-b" "pass -b flag to git-mailinfo" "--keep-non-patch")) (arguments ("=p" "format the patch(es) are in" "--patch-format=" read-from-minibuffer))) (submodule (man-page "git-submodule") (actions ("u" "Update" magit-submodule-update) ("b" "Both update and init" magit-submodule-update-init) ("i" "Init" magit-submodule-init) ("s" "Sync" magit-submodule-sync))) (bisecting (man-page "git-bisect") (actions ("b" "Bad" magit-bisect-bad) ("g" "Good" magit-bisect-good) ("k" "Skip" magit-bisect-skip) ("r" "Reset" magit-bisect-reset) ("s" "Start" magit-bisect-start) ("u" "Run" magit-bisect-run))) (diff-options (actions ("s" "Set" magit-set-diff-options) ("d" "Set default" magit-set-default-diff-options) ("c" "Save default" magit-save-default-diff-options) ("r" "Reset to default" magit-reset-diff-options) ("h" "Toggle Hunk Refinement" magit-toggle-diff-refine-hunk)) (switches ("-m" "Show smallest possible diff" "--minimal") ("-p" "Use patience diff algorithm" "--patience") ("-h" "Use histogram diff algorithm" "--histogram") ("-b" "Ignore whitespace changes" "--ignore-space-change") ("-w" "Ignore all whitespace" "--ignore-all-space") ("-W" "Show surrounding functions" "--function-context")))) "\
+(defvar magit-key-mode-groups '((dispatch (actions ("b" "Branching" magit-key-mode-popup-branching) ("B" "Bisecting" magit-key-mode-popup-bisecting) ("c" "Committing" magit-key-mode-popup-committing) ("d" "Diff worktree" magit-diff-working-tree) ("D" "Diff" magit-diff) ("f" "Fetching" magit-key-mode-popup-fetching) ("F" "Pulling" magit-key-mode-popup-pulling) ("g" "Refresh Buffers" magit-refresh-all) ("l" "Logging" magit-key-mode-popup-logging) ("m" "Merging" magit-key-mode-popup-merging) ("M" "Remoting" magit-key-mode-popup-remoting) ("P" "Pushing" magit-key-mode-popup-pushing) ("o" "Submoduling" magit-key-mode-popup-submodule) ("r" "Rewriting" magit-key-mode-popup-rewriting) ("R" "Rebasing" magit-rebase-step) ("s" "Show Status" magit-status) ("S" "Stage all" magit-stage-all) ("t" "Tagging" magit-key-mode-popup-tagging) ("U" "Unstage all" magit-unstage-all) ("v" "Show Commit" magit-show-commit) ("V" "Show File" magit-show) ("w" "Wazzup" magit-wazzup) ("X" "Reset worktree" magit-reset-working-tree) ("y" "Cherry" magit-cherry) ("z" "Stashing" magit-key-mode-popup-stashing) ("!" "Running" magit-key-mode-popup-running) ("$" "Show Process" magit-display-process))) (logging (man-page "git-log") (actions ("l" "Short" magit-log) ("L" "Long" magit-log-long) ("h" "Head Reflog" magit-reflog-head) ("f" "File log" magit-file-log) ("rl" "Ranged short" magit-log-ranged) ("rL" "Ranged long" magit-log-long-ranged) ("rh" "Reflog" magit-reflog)) (switches ("-m" "Only merge commits" "--merges") ("-do" "Date Order" "--date-order") ("-f" "First parent" "--first-parent") ("-i" "Case insensitive patterns" "-i") ("-pr" "Pickaxe regex" "--pickaxe-regex") ("-g" "Show Graph" "--graph") ("-n" "Name only" "--name-only") ("-am" "All match" "--all-match") ("-al" "All" "--all")) (arguments ("=r" "Relative" "--relative=" read-directory-name) ("=c" "Committer" "--committer=" read-from-minibuffer) ("=>" "Since" "--since=" read-from-minibuffer) ("=<" "Before" "--before=" read-from-minibuffer) ("=a" "Author" "--author=" read-from-minibuffer) ("=g" "Grep messages" "--grep=" read-from-minibuffer) ("=G" "Grep patches" "-G" read-from-minibuffer) ("=L" "Trace evolution of line range [long log only]" "-L" magit-read-file-trace) ("=s" "Pickaxe search" "-S" read-from-minibuffer) ("=b" "Branches" "--branches=" read-from-minibuffer) ("=R" "Remotes" "--remotes=" read-from-minibuffer))) (running (actions ("!" "Git Subcommand (from root)" magit-git-command-topdir) (":" "Git Subcommand (from pwd)" magit-git-command) ("g" "Git Gui" magit-run-git-gui) ("k" "Gitk" magit-run-gitk))) (fetching (man-page "git-fetch") (actions ("f" "Current" magit-fetch-current) ("a" "All" magit-remote-update) ("o" "Other" magit-fetch)) (switches ("-p" "Prune" "--prune"))) (pushing (man-page "git-push") (actions ("P" "Push" magit-push) ("t" "Push tags" magit-push-tags)) (switches ("-f" "Force" "--force") ("-d" "Dry run" "-n") ("-u" "Set upstream" "-u"))) (pulling (man-page "git-pull") (actions ("F" "Pull" magit-pull)) (switches ("-f" "Force" "--force") ("-r" "Rebase" "--rebase"))) (branching (man-page "git-branch") (actions ("v" "Branch manager" magit-branch-manager) ("b" "Checkout" magit-checkout) ("c" "Create" magit-create-branch) ("r" "Rename" magit-rename-branch) ("k" "Delete" magit-delete-branch)) (switches ("-t" "Set upstream configuration" "--track") ("-m" "Merged to HEAD" "--merged") ("-M" "Merged to master" "--merged=master") ("-n" "Not merged to HEAD" "--no-merged") ("-N" "Not merged to master" "--no-merged=master")) (arguments ("=c" "Contains" "--contains=" magit-read-rev-with-default) ("=m" "Merged" "--merged=" magit-read-rev-with-default) ("=n" "Not merged" "--no-merged=" magit-read-rev-with-default))) (remoting (man-page "git-remote") (actions ("v" "Remote manager" magit-branch-manager) ("a" "Add" magit-add-remote) ("r" "Rename" magit-rename-remote) ("k" "Remove" magit-remove-remote))) (tagging (man-page "git-tag") (actions ("t" "Create" magit-tag) ("k" "Delete" magit-delete-tag)) (switches ("-a" "Annotate" "--annotate") ("-f" "Force" "--force") ("-s" "Sign" "--sign"))) (stashing (man-page "git-stash") (actions ("v" "View" magit-diff-stash) ("z" "Save" magit-stash) ("s" "Snapshot" magit-stash-snapshot) ("a" "Apply" magit-stash-apply) ("p" "Pop" magit-stash-pop) ("k" "Drop" magit-stash-drop)) (switches ("-k" "Keep index" "--keep-index") ("-u" "Include untracked files" "--include-untracked") ("-a" "Include all files" "--all"))) (committing (man-page "git-commit") (actions ("c" "Commit" magit-commit) ("a" "Amend" magit-commit-amend) ("e" "Extend" magit-commit-extend) ("r" "Reword" magit-commit-reword) ("f" "Fixup" magit-commit-fixup) ("s" "Squash" magit-commit-squash)) (switches ("-a" "Stage all modified and deleted files" "--all") ("-e" "Allow empty commit" "--allow-empty") ("-v" "Show diff of changes to be committed" "--verbose") ("-n" "Bypass git hooks" "--no-verify") ("-s" "Add Signed-off-by line" "--signoff") ("-R" "Claim authorship and reset author date" "--reset-author")) (arguments ("=A" "Override the author" "--author=" read-from-minibuffer) ("=S" "Sign using gpg" "--gpg-sign=" magit-read-gpg-secret-key))) (merging (man-page "git-merge") (actions ("m" "Merge" magit-merge) ("A" "Abort" magit-merge-abort)) (switches ("-ff" "Fast-forward only" "--ff-only") ("-nf" "No fast-forward" "--no-ff") ("-sq" "Squash" "--squash")) (arguments ("-st" "Strategy" "--strategy=" read-from-minibuffer))) (rewriting (actions ("b" "Begin" magit-rewrite-start) ("s" "Stop" magit-rewrite-stop) ("a" "Abort" magit-rewrite-abort) ("f" "Finish" magit-rewrite-finish) ("*" "Set unused" magit-rewrite-set-unused) ("." "Set used" magit-rewrite-set-used))) (apply-mailbox (man-page "git-am") (actions ("J" "Apply Mailbox" magit-apply-mailbox)) (switches ("-s" "add a Signed-off-by line to the commit message" "--signoff") ("-3" "allow fall back on 3way merging if needed" "--3way") ("-k" "pass -k flag to git-mailinfo" "--keep") ("-c" "strip everything before a scissors line" "--scissors") ("-p" "pass it through git-apply" "-p") ("-r" "override error message when patch failure occurs" "--resolvemsg") ("-d" "lie about committer date" "--committer-date-is-author-date") ("-D" "use current timestamp for author date" "--ignore-date") ("-b" "pass -b flag to git-mailinfo" "--keep-non-patch")) (arguments ("=p" "format the patch(es) are in" "--patch-format=" read-from-minibuffer))) (submodule (man-page "git-submodule") (actions ("u" "Update" magit-submodule-update) ("b" "Both update and init" magit-submodule-update-init) ("i" "Init" magit-submodule-init) ("s" "Sync" magit-submodule-sync))) (bisecting (man-page "git-bisect") (actions ("b" "Bad" magit-bisect-bad) ("g" "Good" magit-bisect-good) ("k" "Skip" magit-bisect-skip) ("r" "Reset" magit-bisect-reset) ("s" "Start" magit-bisect-start) ("u" "Run" magit-bisect-run))) (diff-options (actions ("s" "Set" magit-set-diff-options) ("d" "Set default" magit-set-default-diff-options) ("c" "Save default" magit-save-default-diff-options) ("r" "Reset to default" magit-reset-diff-options) ("h" "Toggle Hunk Refinement" magit-toggle-diff-refine-hunk)) (switches ("-m" "Show smallest possible diff" "--minimal") ("-p" "Use patience diff algorithm" "--patience") ("-h" "Use histogram diff algorithm" "--histogram") ("-b" "Ignore whitespace changes" "--ignore-space-change") ("-w" "Ignore all whitespace" "--ignore-all-space") ("-W" "Show surrounding functions" "--function-context")))) "\
 Holds the key, help, function mapping for the log-mode.
 If you modify this make sure you reset `magit-key-mode-keymaps'
 to nil.")
@@ -4236,452 +4236,6 @@ Think of this one as `set-mark' except you're marking a rectangular region. It i
 an exceedingly quick way of adding multiple cursors to multiple lines.
 
 \(fn)" t nil)
-
-;;;***
-
-;;;### (autoloads (read-dict dictree-load dictree-p make-dictree-meta-dict
-;;;;;;  make-dictree-custom make-dictree) "../submodules/predictive-mode/dict-tree"
-;;;;;;  "../submodules/predictive-mode/dict-tree.el" (21093 46302
-;;;;;;  0 0))
-;;; Generated autoloads from ../submodules/predictive-mode/dict-tree.el
-
-(autoload 'make-dictree "../submodules/predictive-mode/dict-tree" "\
-Create an empty dictionary and return it.
-
-If NAME is supplied, the dictionary is stored in the variable
-NAME. Defaults to FILENAME stripped of directory and
-extension. (Regardless of the value of NAME, the dictionary will
-be stored in the default variable name when it is reloaded from
-file.)
-
-FILENAME supplies a directory and file name to use when saving
-the dictionary. If the AUTOSAVE flag is non-nil, then the
-dictionary will automatically be saved to this file when it is
-unloaded or when exiting Emacs.
-
-If UNLISTED is non-nil, the dictionary will not be added to the
-list of loaded dictionaries. Note that this disables autosaving.
-
-COMPARE-FUNCTION sets the function used to compare elements of
-the keys. It should take two arguments, A and B, both of the type
-contained by the sequences used as keys (e.g. if the keys will
-be strings, the function will be passed two characters). It
-should return t if the first is \"less than\" the
-second. Defaults to `<'.
-
-INSERT-FUNCTION sets the function used to insert data into the
-dictionary. It should take two arguments: the new data, and the
-data already in the dictionary, and should return the data to
-insert. Defaults to replacing any existing data with the new
-data.
-
-RANK-FUNCTION sets the function used to rank the results of
-`dictree-complete'. It should take two arguments, each a cons
-whose car is a dictree key (a sequence) and whose cdr is the data
-associated with that key. It should return non-nil if the first
-argument is \"better\" than the second, nil otherwise. It
-defaults to \"lexical\" comparison of the keys, ignoring the data
-\(which is not very useful, since an unranked `dictree-complete'
-query already does this much more efficiently).
-
-CACHE-POLICY should be a symbol ('time, 'length, or 'both), which
-determines which query operations are cached. The 'time setting
-caches queries that take longer (in seconds) than the
-corresponding CACHE-THRESHOLD value. The 'length setting caches
-lookups of key sequences that are longer than
-LOOKUP-CACHE-THRESHOLD value (since those are likely to be the
-slower ones), and caches completions of prefixes that are shorter
-than the corresponding CACHE-THRESHOLD (since those are likely to
-be the slower ones in that case). The setting 'both requires both
-conditions to be satisfied simultaneously. In this case,
-CACHE-THRESHOLD must be a plist with properties :time and :length
-specifying the corresponding cache thresholds.
-
-CACHE-UPDATE-POLICY should be a symbol ('synchronize or 'delete),
-which determines how the caches are updated when data is inserted
-or deleted. The former updates tainted cache entries, which makes
-queries faster but insertion and deletion slower, whereas the
-latter deletes any tainted cache entries, which makes queries
-slower but insertion and deletion faster.
-
-The CACHE-THRESHOLD settings set the threshold for caching the
-corresponding dictionary query (lookup, completion, ranked
-completion). The meaning of these values depends on the setting
-of CACHE-POLICY (see above).
-
-All CACHE-THRESHOLD's default to nil. The values nil and t are
-special. If a CACHE-THRESHOLD is set to nil, no caching is done
-for that type of query. If it is t, everything is cached for that
-type of query (similar behaviour can be obtained by setting the
-CACHE-THRESHOLD to 0, but it is better to use t).
-
-KEY-SAVEFUN, DATA-SAVEFUN and PLIST-SAVEFUN are functions used to
-convert keys, data and property lists into lisp objects that have
-a valid read syntax, for writing to file. DATA-SAVEFUN and
-PLIST-SAVEFUN are used when saving the dictionary (see
-`dictree-save' and `dictree-write'), and all three functions are
-used when dumping the contents of the dictionary (see
-`dictree-dump-to-buffer' and `dictree-dump-to-file').
-KEY-SAVEFUN, DATA-SAVEFUN and PLIST-SAVEFUN should each accept
-one argument: a key, data or property list from DICT,
-respectively. They should return a lisp object which has a valid
-read syntax. When defining these functions, be careful not to
-accidentally modify the lisp object in the dictionary; usually,
-you will need to make a copy before converting it.
-
-KEY-LOADFUN, DATA-LOADFUN and PLIST-LOADFUN are used to convert
-keys, data and property lists back again when loading a
-dictionary (only DATA-LOADFUN and PLIST-LOADFUN, see
-`dictree-save' and `dictree-write') or populating it from a
-file (all three, see `dictree-populate-from-file'). They should
-accept one argument: a lisp object of the type produced by the
-corresponding SAVEFUN, and return a lisp object to use in the
-loaded dictionary.
-
-TRIE-TYPE sets the type of trie to use as the underlying data
-structure. See `trie-create' for details.
-
-\(fn &optional NAME FILENAME AUTOSAVE UNLISTED COMPARISON-FUNCTION INSERT-FUNCTION RANK-FUNCTION CACHE-POLICY CACHE-UPDATE-POLICY LOOKUP-CACHE-THRESHOLD COMPLETE-CACHE-THRESHOLD COMPLETE-RANKED-CACHE-THRESHOLD REGEXP-CACHE-THRESHOLD REGEXP-RANKED-CACHE-THRESHOLD KEY-SAVEFUN KEY-LOADFUN DATA-SAVEFUN DATA-LOADFUN PLIST-SAVEFUN PLIST-LOADFUN TRIE-TYPE)" nil nil)
-
-(defalias 'dictree-create 'make-dictree)
-
-(autoload 'make-dictree-custom "../submodules/predictive-mode/dict-tree" "\
-Create an empty dictionary and return it.
-
-The NAME through PLIST-LOADFUN arguments are as for
-`dictree-create' (which see).
-
-The remaining arguments control the type of trie to use as the
-underlying data structure. See `trie-create' for details.
-
-\(fn &optional NAME FILENAME AUTOSAVE UNLISTED &key COMPARISON-FUNCTION INSERT-FUNCTION RANK-FUNCTION CACHE-POLICY CACHE-UPDATE-POLICY LOOKUP-CACHE-THRESHOLD COMPLETE-CACHE-THRESHOLD COMPLETE-RANKED-CACHE-THRESHOLD REGEXP-CACHE-THRESHOLD REGEXP-RANKED-CACHE-THRESHOLD KEY-SAVEFUN KEY-LOADFUN DATA-SAVEFUN DATA-LOADFUN PLIST-SAVEFUN PLIST-LOADFUN CREATEFUN INSERTFUN DELETEFUN LOOKUPFUN MAPFUN EMPTYFUN STACK-CREATEFUN STACK-POPFUN STACK-EMPTYFUN TRANSFORM-FOR-PRINT TRANSFORM-FROM-READ)" nil nil)
-
-(defalias 'dictree-create-custom 'make-dictree-custom)
-
-(autoload 'make-dictree-meta-dict "../submodules/predictive-mode/dict-tree" "\
-Create a meta-dictionary based on the list of dictionaries
-in DICTIONARY-LIST.
-
-COMBINE-FUNCTION is used to combine data from different
-dictionaries. It is passed two pieces of data, each an
-association of the same key, but in different dictionaries. It
-should return a combined datum.
-
-The other arguments are as for `dictree-create'. Note that
-caching is only possible if NAME is supplied, otherwise the
-cache-threshold arguments are ignored.
-
-\(fn DICTIONARY-LIST &optional NAME FILENAME AUTOSAVE UNLISTED COMBINE-FUNCTION CACHE-POLICY CACHE-UPDATE-POLICY LOOKUP-CACHE-THRESHOLD COMPLETE-CACHE-THRESHOLD COMPLETE-RANKED-CACHE-THRESHOLD REGEXP-CACHE-THRESHOLD REGEXP-RANKED-CACHE-THRESHOLD)" nil nil)
-
-(autoload 'dictree-p "../submodules/predictive-mode/dict-tree" "\
-Return t if OBJ is a dictionary tree, nil otherwise.
-
-\(fn OBJ)" nil nil)
-
-(autoload 'dictree-load "../submodules/predictive-mode/dict-tree" "\
-Load a dictionary object from file FILE.
-Returns the dictionary if successful, nil otherwise.
-
-Interactively, FILE is read from the mini-buffer.
-
-\(fn FILE)" t nil)
-
-(autoload 'read-dict "../submodules/predictive-mode/dict-tree" "\
-Read the name of a dictionary with completion, and return it.
-
-Prompt with PROMPT. By default, return DEFAULT. If DICTLIST is
-supplied, only complete on dictionaries in that list.
-
-If ALLOW-UNLOADED is non-nil, also complete on the names of
-unloaded dictionaries (actually, on any Elisp file in the current
-`load-path' restricted to subdirectories of your home directory
-whose file name starts with \"dict-\"). If an unloaded dictionary
-is read, the name of the Elisp file will be returned, without
-extension, suitable for passing to `load-library'.
-
-\(fn PROMPT &optional DEFAULT DICTLIST ALLOW-UNLOADED ALLOW-UNMATCHED)" nil nil)
-
-;;;***
-
-;;;### (autoloads (make-heap) "../submodules/predictive-mode/heap"
-;;;;;;  "../submodules/predictive-mode/heap.el" (21093 46302 0 0))
-;;; Generated autoloads from ../submodules/predictive-mode/heap.el
-
-(autoload 'make-heap "../submodules/predictive-mode/heap" "\
-Create an empty heap with comparison function COMPARE-FUNCTION.
-
-COMPARE-FUNCTION takes two arguments, A and B, and returns
-non-nil or nil. To implement a max-heap, it should return non-nil
-if A is greater than B. To implemenet a min-heap, it should
-return non-nil if A is less than B.
-
-Optional argument INITIAL-SIZE sets the initial size of the heap,
-defaulting to 10. Optional argument RESIZE-FACTOR sets the factor
-by which the heap's size is increased if it runs out of space,
-defaulting to 2.
-
-\(fn COMPARE-FUNCTION &optional INITIAL-SIZE RESIZE-FACTOR)" nil nil)
-
-(defalias 'heap-create 'make-heap)
-
-;;;***
-
-;;;### (autoloads (latex-eldoc-mode) "../submodules/predictive-mode/latex-eldoc"
-;;;;;;  "../submodules/predictive-mode/latex-eldoc.el" (21093 46302
-;;;;;;  0 0))
-;;; Generated autoloads from ../submodules/predictive-mode/latex-eldoc.el
-
-(autoload 'latex-eldoc-mode "../submodules/predictive-mode/latex-eldoc" "\
-Toggle echo area display of LaTeX commands at point (ElDoc mode).
-With a prefix argument ARG, enable LaTeX-ElDoc mode if ARG is
-positive, and disable it otherwise.  If called from Lisp, enable
-LaTeX-ElDoc mode if ARG is omitted or nil.
-
-LaTeX-ElDoc mode is a buffer-local minor mode.  When enabled, the
-echo area displays information about a LaTeX command or
-environment in the text where point is.
-
-\(fn &optional ARG)" t nil)
-
-;;;***
-
-;;;### (autoloads nil "../submodules/predictive-mode/queue" "../submodules/predictive-mode/queue.el"
-;;;;;;  (21093 46305 0 0))
-;;; Generated autoloads from ../submodules/predictive-mode/queue.el
-
-(defalias 'make-queue 'queue-create "\
-Create an empty queue data structure.")
-
-;;;***
-
-;;;### (autoloads (tNFA-regexp-match tNFA-from-regexp) "../submodules/predictive-mode/tNFA"
-;;;;;;  "../submodules/predictive-mode/tNFA.el" (21093 46305 0 0))
-;;; Generated autoloads from ../submodules/predictive-mode/tNFA.el
-
-(autoload 'tNFA-from-regexp "../submodules/predictive-mode/tNFA" "\
-Create a tagged NFA that recognizes the regular expression REGEXP.
-The return value is the initial state of the tagged NFA.
-
-REGEXP can be any sequence type (vector, list, or string); it
-need not be an actual string. Special characters in REGEXP are
-still just that: elements of the sequence that are characters
-which have a special meaning in regexps.
-
-The :test keyword argument specifies how to test whether two
-individual elements of STRING are identical. The default is `eq'.
-
-Only a subset of the full Emacs regular expression syntax is
-supported. There is no support for regexp constructs that are
-only meaningful for strings (character ranges and character
-classes inside character alternatives, and syntax-related
-backslash constructs). Back-references and non-greedy postfix
-operators are not supported, so `?' after a postfix operator
-loses its special meaning. Also, matches are always anchored, so
-`$' and `^' lose their special meanings (use `.*' at the
-beginning and end of the regexp to get an unanchored match).
-
-\(fn REGEXP &key (test (quote eq)))" nil nil)
-
-(autoload 'tNFA-regexp-match "../submodules/predictive-mode/tNFA" "\
-Return non-nil if STRING matches REGEXP, nil otherwise.
-Sets the match data if there was a match; see `match-beginning',
-`match-end' and `match-string'.
-
-REGEXP and STRING can be any sequence type (vector, list, or
-string); they need not be actual strings. Special characters in
-REGEXP are still just that: elements of the sequence that are
-characters which have a special meaning in regexps.
-
-The :test keyword argument specifies how to test whether two
-individual elements of STRING are identical. The default is `eq'.
-
-Only a subset of the full Emacs regular expression syntax is
-supported. There is no support for regexp constructs that are
-only meaningful for strings (character ranges and character
-classes inside character alternatives, and syntax-related
-backslash constructs). Back-references and non-greedy postfix
-operators are not supported, so `?' after a postfix operator
-loses its special meaning. Also, matches are always anchored, so
-`$' and `^' lose their special meanings (use `.*' at the
-beginning and end of the regexp to get an unanchored match).
-
-\(fn REGEXP STRING &key (test (quote eq)))" nil nil)
-
-;;;***
-
-;;;### (autoloads (tf-run-with-idle-timer tf-time-difference) "../submodules/predictive-mode/timerfunctions"
-;;;;;;  "../submodules/predictive-mode/timerfunctions.el" (20925
-;;;;;;  9991 0 0))
-;;; Generated autoloads from ../submodules/predictive-mode/timerfunctions.el
-
-(autoload 'tf-time-difference "../submodules/predictive-mode/timerfunctions" "\
-Gives the time in seconds elaspsed from TIMESUB to TIMEPLUS.
-Almost like (- TIMEPLUS TIMESUB ).
-
-\(fn TIMEPLUS TIMESUB)" nil nil)
-
-(autoload 'tf-run-with-idle-timer "../submodules/predictive-mode/timerfunctions" "\
-Args are SECS, REPEAT, REDOSECS, REDOREPEAT, INCLUDERUNTIME,
-FUNCTION and &rest ARGS.
-Similar to run-with-idle-timer, except that provides more options.
-Suppose you want emacs to run an action every REDOSECS for as long as
-emacs remains idle.  Think you can do it with the emacs'
-run-with-idle-timer? Think again.. :)   That function will perform the
-action exactly once every time emacs goes idle.  This funciton,
-tf-run-with-idle-timer *will* allow you to keep performing an action
-as long as emacs remains idle.
-
-SECS is the number of seconds to wait once emacs has first gone
-idle. It can really be any expression whose at runtime yields a
-number..  Note that the way run-with-idle-timer is defined, SECS will
-unfortunately be evalled immediately after you call this function, but
-redosecs will be *every* time emacs *remains* idle..yay..
-
-
-If REDOREPEAT is non-nil, the action is repeated as long emacs remains
-idle.  REDOSECS is the number of additional seconds (after the action
-has been done) to wait if emacs remains idle before performing the
-action again.  Again, redosecs does not have to be a number, it can be
-any expression whose eval yields to a number...
-
-If INCLUDERUNTIME is non-nil, REDOSECS is the number of
-additional seconds to wait after the action has been invoked (not
-finished).
-
-If REPEAT is nonnil, the entire cycle is repeated every time emacs
-next goes idle.. (as in the default run-with-idle-timer.
-
-\(fn SECS REPEAT REDOSECS REDOREPEAT INCLUDERUNTIME FUNCTION &rest ARGS)" nil nil)
-
-;;;***
-
-;;;### (autoloads nil "../submodules/predictive-mode/trie" "../submodules/predictive-mode/trie.el"
-;;;;;;  (21093 46305 0 0))
-;;; Generated autoloads from ../submodules/predictive-mode/trie.el
-
-(defalias 'make-trie 'trie--create "\
-Return a new trie that uses comparison function COMPARISON-FUNCTION.
-
-A trie stores sequences (strings, vectors or lists) along with
-associated data. COMPARISON-FUNCTEION should accept two
-arguments, each being an element of such a sequence, and return t
-if the first is strictly smaller than the second.
-
-The optional argument TYPE specifies the type of trie to
-create. However, the only one that is currently implemented is
-the default, so this argument is useless for now.
-
-\(See also `make-trie-custom'.)")
-
-(defalias 'trie-create 'make-trie)
-
-(defalias 'make-trie-custom 'trie--create-custom "\
-Return a new trie that uses comparison function COMPARISON-FUNCTION.
-
-A trie stores sequences (strings, vectors or lists) along with
-associated data. COMPARISON-FUNCTION should accept two arguments,
-each being an element of such a sequence, and return t if the
-first is strictly smaller than the second.
-
-The remaining keyword arguments: :CREATEFUN, :INSERTFUN, :DELETEFUN,
-:LOOKUPFUN, :MAPFUN, :EMPTYFUN, :STACK-CREATEFUN, :STACK-POPFUN,
-:STACK-EMPTYFUN, :TRANSFORM-FOR-PRINT and :TRANSFORM-FROM-READ
-determine the type of trie that is created.
-
-CREATEFUN is called as follows:
-
-  (CREATEFUN COMPARISON-FUNCTION SEQ)
-
-and should return a data structure (\"ARRAY\") that can be used
-as an associative array, where two elements A and B are equal if
-the following is non-nil:
-
-  (and (COMPARISON-FUNCTION b a)
-       (COMPARISON-FUNCTION b a))
-
-The SEQ argument is a vector containing the sequence that will
-correspond to the newly created array in the trie. For most types
-of trie, this value is ignored. It is passed to CREATEFUN only in
-order to allow the creation of \"hybrid\" trie structures, in
-which different types of associative array are used in different
-parts of the trie. For example, the type of associative array
-could be chosen based on the depth in the trie, given by (length
-SEQ). (Note that all the other functions described below must be
-able to correctly handle *any* of the types of associate array
-that might be created by CREATEFUN.)
-
-INSERTFUN, DELETEFUN, LOOKUPFUN, MAPFUN and EMPTYFUN should
-insert, delete, lookup, map over, and check-if-there-exist-any
-elements in an associative array. They are called as follows:
-
-  (INSERTFUN array element &optional updatefun)
-  (DELETEFUN array element &optional predicate nilflag)
-  (LOOKUPFUN array element &optional nilflag)
-  (MAPFUN function array &optional reverse)
-  (EMPTYFUN array)
-
-INSERTFUN should insert ELEMENT into ARRAY and return the new
-element, which will be ELEMENT itself unless UPDATEFUN is
-specified. In that case, if and only if an element matching
-ELEMENT already exists in the associative array, INSERTFUN should
-instead pass ELEMENT and the matching element as arguments to
-UPDATEFUN, replace the matching element with the return value,
-and return that return value.
-
-DELETEFUN should delete the element in the associative array that
-matches ELEMENT, and return the deleted element. However, if
-PREDICATE is specified and a matching element exists in ARRAY,
-DELETEFUN should first pass the matching element as an argument
-to PREDICATE before deleting, and should only delete the element
-if PREDICATE returns non-nil. DELETEFUN should return NILFLAG if
-no element was deleted (either becuase no matching element was
-found, or because TESTFUN returned nil).
-
-LOOKUPFUN should return the element from the associative array
-that matches ELEMENT, or NILFLAG if no matching element exists.
-
-MAPFUN should map FUNCTION over all elements in the order defined by
-COMPARISON-FUNCTION, or in reverse order if REVERSE is non-nil.
-
-
-STACK-CREATEFUN, STACK-POPFUN and STACK-EMPTYFUN should allow the
-associative array to be used as a stack. STACK-CREATEFUN is
-called as follows:
-
-  (STACK-CREATEFUN array)
-
-and should return a data structure (\"STACK\") that behaves like
-a sorted stack of all elements in the associative array. I.e.
-successive calls to
-
-  (STACK-POPFUN stack)
-
-should return elements from the associative array in the order
-defined by COMPARISON-FUNCTION, and
-
-  (STACK-EMPTYFUN stack)
-
-should return non-nil if the stack is empty, nil otherwise.
-
-The stack functions are optional, in that all trie operations
-other than the stack-related ones will work correctly. However,
-any code that makes use of trie-stacks will complain if supplied
-with this type of trie.
-
-
-The :TRANSFORM-FOR-PRINT and :TRANSFORM-FROM-READ arguments are
-optional. If supplied, they can be used to transform the trie
-into a format suitable for passing to Elisp's `print'
-functions (typically used to persistently store the trie by
-writing it to file), and transform from that format back to the
-original usable form.
-
-
-Warning: to avoid nasty dynamic scoping bugs, the supplied
-functions must *never* bind any variables with names commencing
-\"--\".")
-
-(defalias 'trie-create-custom 'make-trie-custom)
 
 ;;;***
 
@@ -5442,7 +4996,7 @@ Display weather report.
 ;;;***
 
 ;;;### (autoloads (web-mode) "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
-;;;;;;  (21270 59094 0 0))
+;;;;;;  (21273 29024 0 0))
 ;;; Generated autoloads from ../submodules/web-mode/web-mode.el
 
 (autoload 'web-mode "../submodules/web-mode/web-mode" "\
@@ -5470,7 +5024,7 @@ Simple mode to edit YAML.
 ;;;***
 
 ;;;### (autoloads (yas-global-mode yas-minor-mode) "../submodules/yasnippet/yasnippet"
-;;;;;;  "../submodules/yasnippet/yasnippet.el" (21270 59097 0 0))
+;;;;;;  "../submodules/yasnippet/yasnippet.el" (21273 28967 0 0))
 ;;; Generated autoloads from ../submodules/yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "../submodules/yasnippet/yasnippet" "\
@@ -5595,31 +5149,6 @@ accept it or skip it.
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors.el" "../submodules/p4/p4.el"
 ;;;;;;  "../submodules/pcache/pcache-tests.el" "../submodules/pcache/pcache.el"
 ;;;;;;  "../submodules/popup/popup.el" "../submodules/powerline/powerline.el"
-;;;;;;  "../submodules/predictive-mode/auto-overlay-common.el" "../submodules/predictive-mode/auto-overlay-flat.el"
-;;;;;;  "../submodules/predictive-mode/auto-overlay-line.el" "../submodules/predictive-mode/auto-overlay-nested.el"
-;;;;;;  "../submodules/predictive-mode/auto-overlay-self.el" "../submodules/predictive-mode/auto-overlay-word.el"
-;;;;;;  "../submodules/predictive-mode/auto-overlays-compat.el" "../submodules/predictive-mode/auto-overlays.el"
-;;;;;;  "../submodules/predictive-mode/avl-tree.el" "../submodules/predictive-mode/completion-ui-dynamic.el"
-;;;;;;  "../submodules/predictive-mode/completion-ui-echo.el" "../submodules/predictive-mode/completion-ui-hotkeys.el"
-;;;;;;  "../submodules/predictive-mode/completion-ui-menu.el" "../submodules/predictive-mode/completion-ui-popup-frame.el"
-;;;;;;  "../submodules/predictive-mode/completion-ui-popup-tip.el"
-;;;;;;  "../submodules/predictive-mode/completion-ui-sources.el"
-;;;;;;  "../submodules/predictive-mode/completion-ui-tooltip.el"
-;;;;;;  "../submodules/predictive-mode/completion-ui.el" "../submodules/predictive-mode/crossword-search.el"
-;;;;;;  "../submodules/predictive-mode/log-modification-mode.el"
-;;;;;;  "../submodules/predictive-mode/popup.el" "../submodules/predictive-mode/pos-tip.el"
-;;;;;;  "../submodules/predictive-mode/predictive-auto-overlay-auto-dict.el"
-;;;;;;  "../submodules/predictive-mode/predictive-convert-dump-format.el"
-;;;;;;  "../submodules/predictive-mode/predictive-ess.el" "../submodules/predictive-mode/predictive-html.el"
-;;;;;;  "../submodules/predictive-mode/predictive-latex-cleveref.el"
-;;;;;;  "../submodules/predictive-mode/predictive-latex-color.el"
-;;;;;;  "../submodules/predictive-mode/predictive-latex-graphicx.el"
-;;;;;;  "../submodules/predictive-mode/predictive-latex-ntheorem.el"
-;;;;;;  "../submodules/predictive-mode/predictive-latex-subfig.el"
-;;;;;;  "../submodules/predictive-mode/predictive-latex-varioref.el"
-;;;;;;  "../submodules/predictive-mode/predictive-latex.el" "../submodules/predictive-mode/predictive-numpad.el"
-;;;;;;  "../submodules/predictive-mode/predictive-texinfo.el" "../submodules/predictive-mode/predictive.el"
-;;;;;;  "../submodules/predictive-mode/show-point-mode.el" "../submodules/predictive-mode/tstree.el"
 ;;;;;;  "../submodules/s/s.el" "../submodules/w3m/mew-w3m.el" "../submodules/w3m/w3m-bug.el"
 ;;;;;;  "../submodules/w3m/w3m-ccl.el" "../submodules/w3m/w3m-ems.el"
 ;;;;;;  "../submodules/w3m/w3m-favicon.el" "../submodules/w3m/w3m-hist.el"
@@ -5629,7 +5158,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/web-mode/wfs-mode.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (21270 59115 521378 0))
+;;;;;;  (21273 31228 299334 0))
 
 ;;;***
 

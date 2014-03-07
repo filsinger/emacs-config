@@ -19,9 +19,6 @@
 [submodule "submodules/markdown-mode"]
 	path = submodules/markdown-mode
 	url = git://github.com/emacsmirror/markdown-mode.git
-[submodule "submodules/predictive-mode"]
-	path = submodules/predictive-mode
-	url = http://www.dr-qubit.org/git/predictive.git
 [submodule "submodules/expand-region"]
 	path = submodules/expand-region
 	url = https://github.com/magnars/expand-region.el.git
