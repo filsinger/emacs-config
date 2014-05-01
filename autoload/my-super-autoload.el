@@ -1100,8 +1100,8 @@ Key bindings:
 ;;;***
 
 ;;;### (autoloads nil "../submodules/enhanced-ruby-mode/enh-ruby-mode"
-;;;;;;  "../submodules/enhanced-ruby-mode/enh-ruby-mode.el" (21335
-;;;;;;  30955 0 0))
+;;;;;;  "../submodules/enhanced-ruby-mode/enh-ruby-mode.el" (21346
+;;;;;;  1121 0 0))
 ;;; Generated autoloads from ../submodules/enhanced-ruby-mode/enh-ruby-mode.el
 
 (autoload 'enh-ruby-mode "../submodules/enhanced-ruby-mode/enh-ruby-mode" "\
@@ -1618,7 +1618,7 @@ Search Everything with helm
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm" "../submodules/helm/helm.el"
-;;;;;;  (21335 30962 0 0))
+;;;;;;  (21346 1128 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm.el
 
 (autoload 'helm-define-multi-key "../submodules/helm/helm" "\
@@ -1964,7 +1964,7 @@ http://bbdb.sourceforge.net/
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-bookmark" "../submodules/helm/helm-bookmark.el"
-;;;;;;  (21335 30962 0 0))
+;;;;;;  (21346 1128 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-bookmark.el
 
 (autoload 'helm-bookmarks "../submodules/helm/helm-bookmark" "\
@@ -1987,7 +1987,7 @@ only if external library addressbook-bookmark.el is available.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-buffers" "../submodules/helm/helm-buffers.el"
-;;;;;;  (21335 30962 0 0))
+;;;;;;  (21346 1128 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-buffers.el
 
 (autoload 'helm-buffers-list "../submodules/helm/helm-buffers" "\
@@ -2023,7 +2023,7 @@ Preconfigured `helm' for color.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-command" "../submodules/helm/helm-command.el"
-;;;;;;  (21335 30962 0 0))
+;;;;;;  (21346 1128 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-command.el
 
 (autoload 'helm-M-x "../submodules/helm/helm-command" "\
@@ -2062,7 +2062,7 @@ Customize `helm'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-elisp" "../submodules/helm/helm-elisp.el"
-;;;;;;  (21335 30962 0 0))
+;;;;;;  (21346 1128 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp.el
 
 (autoload 'helm-lisp-completion-at-point "../submodules/helm/helm-elisp" "\
@@ -2114,7 +2114,7 @@ Preconfigured `helm' for timers.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-elisp-package" "../submodules/helm/helm-elisp-package.el"
-;;;;;;  (21335 30962 0 0))
+;;;;;;  (21346 1128 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp-package.el
 
 (autoload 'helm-list-elisp-packages "../submodules/helm/helm-elisp-package" "\
@@ -2136,7 +2136,7 @@ Preconfigured helm to list elscreen.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-emms" "../submodules/helm/helm-emms.el"
-;;;;;;  (21335 30962 0 0))
+;;;;;;  (21346 1128 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-emms.el
 
 (autoload 'helm-emms "../submodules/helm/helm-emms" "\
@@ -2198,7 +2198,7 @@ You can set your own list of commands with
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
-;;;;;;  (21335 30962 0 0))
+;;;;;;  (21346 1128 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-files.el
 
 (autoload 'helm-browse-project "../submodules/helm/helm-files" "\
@@ -2672,7 +2672,7 @@ Predefined `helm' that provide completion of `comint' history.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-mode" "../submodules/helm/helm-mode.el"
-;;;;;;  (21335 30962 0 0))
+;;;;;;  (21346 1128 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-mode.el
 
 (autoload 'helm-comp-read "../submodules/helm/helm-mode" "\
@@ -2834,7 +2834,7 @@ Preconfigured helm to show org headlines.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-regexp" "../submodules/helm/helm-regexp.el"
-;;;;;;  (21335 30962 0 0))
+;;;;;;  (21346 1128 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-regexp.el
 
 (defvar helm-occur-match-plugin-mode t "\
@@ -3005,7 +3005,7 @@ This function aggregates three sources of tag files:
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-utils" "../submodules/helm/helm-utils.el"
-;;;;;;  (21335 30962 0 0))
+;;;;;;  (21346 1128 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-utils.el
 
 (autoload 'helm-show-all-in-this-source-only "../submodules/helm/helm-utils" "\
@@ -4286,11 +4286,16 @@ Add support for a language not already in the `smart-tabs-insinuate-alist'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/smex/smex" "../submodules/smex/smex.el"
-;;;;;;  (21335 30974 0 0))
+;;;;;;  (21346 1139 0 0))
 ;;; Generated autoloads from ../submodules/smex/smex.el
 
 (autoload 'smex "../submodules/smex/smex" "\
 
+
+\(fn)" t nil)
+
+(autoload 'smex-major-mode-commands "../submodules/smex/smex" "\
+Like `smex', but limited to commands that are relevant to the active major mode.
 
 \(fn)" t nil)
 
@@ -4939,7 +4944,7 @@ Display weather report.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
-;;;;;;  (21335 30976 0 0))
+;;;;;;  (21346 1141 0 0))
 ;;; Generated autoloads from ../submodules/web-mode/web-mode.el
 
 (autoload 'web-mode "../submodules/web-mode/web-mode" "\
@@ -4967,7 +4972,7 @@ Simple mode to edit YAML.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/yasnippet/yasnippet" "../submodules/yasnippet/yasnippet.el"
-;;;;;;  (21335 30977 0 0))
+;;;;;;  (21346 1142 0 0))
 ;;; Generated autoloads from ../submodules/yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "../submodules/yasnippet/yasnippet" "\
@@ -5101,7 +5106,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/web-mode/wfs-mode.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (21335 31679 323683 0))
+;;;;;;  (21346 1211 192088 0))
 
 ;;;***
 
