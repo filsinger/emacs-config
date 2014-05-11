@@ -8,7 +8,11 @@
 
   (add-to-list 'ido-ignore-files "\\.DS_Store")        ;; Ignore .DS_Store files with ido mode
 
-  (global-set-key (kbd "A-f") 'ns-toggle-fullscreen)   ;; set 'option-f' to toggle fullscreen on OSX
+  ;; set 'option-f' to toggle fullscreen on OSX
+  (if (functionp 'ns-toggle-fullscreen)
+      (global-set-key (kbd "A-f") 'ns-toggle-fullscreen)
+    (global-set-key (kbd "A-f") 'toggle-frame-fullscreen))
+
   (global-set-key [kp-delete] 'delete-char)            ;; sets fn-delete to be right-delete
   (global-set-key (kbd "A-\\") 'delete-horizontal-space) ;; bind 'option-\' to delete horizontal whitespace
 
