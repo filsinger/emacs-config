@@ -101,6 +101,27 @@
 ;; yasnippet
 (global-set-key (kbd "C-'") 'yas-insert-snippet)
 
+;; input decode map
+(define-key input-decode-map "\e[1;0A" [M-S-up])
+(define-key input-decode-map "\e[1;0B" [M-S-down])
+(define-key input-decode-map "\e[1;0C" [M-S-right])
+(define-key input-decode-map "\e[1;0D" [M-S-left])
+(define-key input-decode-map "\e[1;2A" [S-up])
+(define-key input-decode-map "\e[1;2B" [S-down])
+(define-key input-decode-map "\e[1;2C" [S-right])
+(define-key input-decode-map "\e[1;2D" [S-left])
+(define-key input-decode-map "\e[1;3A" [M-up])
+(define-key input-decode-map "\e[1;3B" [M-down])
+(define-key input-decode-map "\e[1;3C" [M-right])
+(define-key input-decode-map "\e[1;3D" [M-left])
+(define-key input-decode-map "\e[1;5A" [C-up])
+(define-key input-decode-map "\e[1;5B" [C-down])
+(define-key input-decode-map "\e[1;5C" [C-right])
+(define-key input-decode-map "\e[1;5D" [C-left])
+(define-key input-decode-map "\e[1;6A" [C-S-up])
+(define-key input-decode-map "\e[1;6B" [C-S-down])
+(define-key input-decode-map "\e[1;6C" [C-S-right])
+(define-key input-decode-map "\e[1;6D" [C-S-left])
 
 ;; mode keymap rebinding
 (eval-after-load "ibuffer" 				; rebind ibuffer keys
