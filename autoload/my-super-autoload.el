@@ -555,9 +555,9 @@ Key bindings:
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/auto-complete/auto-complete"
-;;;;;;  "../submodules/auto-complete/auto-complete.el" (21335 30951
-;;;;;;  0 0))
+;;;### (autoloads (global-auto-complete-mode auto-complete-mode auto-complete)
+;;;;;;  "../submodules/auto-complete/auto-complete" "../submodules/auto-complete/auto-complete.el"
+;;;;;;  (21361 27927 0 0))
 ;;; Generated autoloads from ../submodules/auto-complete/auto-complete.el
 
 (autoload 'auto-complete "../submodules/auto-complete/auto-complete" "\
@@ -1099,9 +1099,9 @@ Key bindings:
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/enhanced-ruby-mode/enh-ruby-mode"
-;;;;;;  "../submodules/enhanced-ruby-mode/enh-ruby-mode.el" (21346
-;;;;;;  1121 0 0))
+;;;### (autoloads (enh-ruby-mode) "../submodules/enhanced-ruby-mode/enh-ruby-mode"
+;;;;;;  "../submodules/enhanced-ruby-mode/enh-ruby-mode.el" (21361
+;;;;;;  27928 0 0))
 ;;; Generated autoloads from ../submodules/enhanced-ruby-mode/enh-ruby-mode.el
 
 (autoload 'enh-ruby-mode "../submodules/enhanced-ruby-mode/enh-ruby-mode" "\
@@ -1191,8 +1191,10 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/flycheck/flycheck" "../submodules/flycheck/flycheck.el"
-;;;;;;  (21335 30958 0 0))
+;;;### (autoloads (flycheck-define-error-level flycheck-info flycheck-def-option-var
+;;;;;;  flycheck-def-config-file-var global-flycheck-mode flycheck-mode)
+;;;;;;  "../submodules/flycheck/flycheck" "../submodules/flycheck/flycheck.el"
+;;;;;;  (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/flycheck/flycheck.el
 
 (defconst flycheck-mode-line-lighter " FlyC" "\
@@ -1242,16 +1244,15 @@ See `flycheck-mode' for more information on Flycheck mode.
 (autoload 'flycheck-def-config-file-var "../submodules/flycheck/flycheck" "\
 Define SYMBOL as config file variable for CHECKER, with default FILE-NAME.
 
-SYMBOL is declared as customizable variable (see `defcustom`)
-providing a configuration file for CHECKER.  The CHECKER argument
-is used for documentation purposes only.  If given use FILE-NAME
-as initial value.
+SYMBOL is declared as customizable, buffer-local variable using
+`defcustom', to provide a configuration file for the given syntax
+CHECKER.  CUSTOM-ARGS are forwarded to `defcustom'.
 
-The variable is declared with `defcustom', and declared
-buffer-local.  CUSTOM-ARGS are forwarded to `defcustom'
+FILE-NAME is the initial value of the new variable.  If omitted,
+the default value is nil.
 
-Use this together with the `config-file' cell in syntax checker
-commands.
+Use this together with the `config-file' form in the `:command'
+argument to `flycheck-define-checker'.
 
 \(fn SYMBOL CHECKER &optional FILE-NAME &rest CUSTOM-ARGS)" nil t)
 
@@ -1260,14 +1261,15 @@ commands.
 (autoload 'flycheck-def-option-var "../submodules/flycheck/flycheck" "\
 Define SYMBOL as option variable with INIT-VALUE for CHECKER.
 
-INIT-VALUE is the initial value for the new variable.  DOCSTRING
-is its docstring.
+SYMBOL is declared as customizable variable, buffer-local
+variable using `defcustom', to provide an option for the given
+syntax CHECKER.  INIT-VALUE is the initial value of the variable,
+and DOCSTRING is its docstring.  CUSTOM-ARGS are forwarded to
+`defcustom'.
 
-The variable is declared with `defcustom', and declared
-buffer-local.  CUSTOM-ARGS are forwarded to `defcustom'.
-
-Use this together with the `option' cell in syntax checker
-commands.
+Use this together with the `option', `option-list' and
+`option-flag' forms in the `:command' argument to
+`flycheck-define-checker'.
 
 \(fn SYMBOL INIT-VALUE CHECKER DOCSTRING &rest CUSTOM-ARGS)" nil t)
 
@@ -1288,13 +1290,21 @@ The following PROPERTIES constitute an error level:
 `:overlay-category CATEGORY'
      A symbol denoting the overlay category to use for error
      highlight overlays for this level.  See Info
-     node `(elisp)Overlay properties' for more information about
+     node `(elisp)Overlay Properties' for more information about
      overlay categories.
+
+     A category for an error level overlay should at least define
+     the `face' property, for error highlighting.  Other useful
+     properties for error level categories are `priority' to
+     influence the stacking of multiple error level overlays, and
+     `help-echo' to define a default error messages for errors
+     without messages.
 
 `:fringe-bitmap BITMAP'
      A fringe bitmap symbol denoting the bitmap to use for fringe
      indicators for this level.  See Info node `(elisp)Fringe
-     Bitmaps' for more information about fringe bitmaps.
+     Bitmaps' for more information about fringe bitmaps,
+     including a list of built-in fringe bitmaps.
 
 `:fringe-face FACE'
      A face symbol denoting the face to use for fringe indicators
@@ -1617,8 +1627,24 @@ Search Everything with helm
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm" "../submodules/helm/helm.el"
-;;;;;;  (21346 1128 0 0))
+;;;### (autoloads (helm-follow-mode helm-kill-selection-and-quit
+;;;;;;  helm-yank-selection helm-prev-visible-mark helm-next-visible-mark
+;;;;;;  helm-display-all-visible-marks helm-toggle-all-marks helm-unmark-all
+;;;;;;  helm-mark-all helm-toggle-visible-mark helm-reposition-window-other-window
+;;;;;;  helm-recenter-top-bottom-other-window helm-scroll-other-window-down
+;;;;;;  helm-scroll-other-window helm-execute-persistent-action helm-select-2nd-action-or-end-of-line
+;;;;;;  helm-select-4th-action helm-select-3rd-action helm-select-2nd-action
+;;;;;;  helm-swap-windows helm-enlarge-window helm-narrow-window
+;;;;;;  helm-toggle-resplit-window helm-delete-minibuffer-contents
+;;;;;;  helm-delete-current-selection helm-debug-output helm-keyboard-quit
+;;;;;;  helm-exit-minibuffer helm-confirm-and-exit-minibuffer helm-next-source
+;;;;;;  helm-previous-source helm-end-of-buffer helm-beginning-of-buffer
+;;;;;;  helm-next-page helm-previous-page helm-next-line helm-previous-line
+;;;;;;  helm-select-action helm-force-update helm-toggle-suspend-update
+;;;;;;  helm-other-buffer helm-resume-list-buffers-after-quit helm-resume-previous-session-after-quit
+;;;;;;  helm-resume helm-debug-open-last-log helm-define-key-with-subkeys
+;;;;;;  helm-multi-key-defun helm-define-multi-key) "../submodules/helm/helm"
+;;;;;;  "../submodules/helm/helm.el" (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm.el
 
 (autoload 'helm-define-multi-key "../submodules/helm/helm" "\
@@ -1641,6 +1667,37 @@ Each time \"<f5> q\" is pressed the next function is executed, if you wait
 More than 2 seconds, next hit will run again the first function and so on.
 
 \(fn KEYMAP KEY FUNCTIONS &optional DELAY)" nil nil)
+
+(autoload 'helm-multi-key-defun "../submodules/helm/helm" "\
+Define NAME as a multi-key command running FUNS.
+After DELAY seconds the FUNS list is reinitialised.
+See `helm-define-multi-key'.
+
+\(fn NAME DOCSTRING FUNS &optional DELAY)" nil t)
+
+(put 'helm-multi-key-defun 'lisp-indent-function '2)
+
+(autoload 'helm-define-key-with-subkeys "../submodules/helm/helm" "\
+Allow defining a KEY without having to type its prefix again on next calls.
+Arg MAP is the keymap to use, SUBKEY is the initial long keybinding to
+call COMMAND.
+Arg OTHER-SUBKEYS is an unquoted alist specifying other short keybindings
+to use once started.
+e.g:
+
+\(helm-define-key-with-subkeys global-map
+      (kbd \"C-x v n\") ?n 'git-gutter:next-hunk ((?p 'git-gutter:previous-hunk)))
+
+
+In this example, `C-x v n' will run `git-gutter:next-hunk' subsequent hit on \"n\"
+will run this command again and subsequent hit on \"p\" will run `git-gutter:previous-hunk'.
+
+Arg MENU is a string to display in minibuffer to describe SUBKEY and OTHER-SUBKEYS.
+Arg EXIT-FN specify a function to run on exit.
+
+Any other keys pressed run their assigned command defined in MAP and exit the loop.
+
+\(fn MAP KEY SUBKEY COMMAND &optional OTHER-SUBKEYS MENU EXIT-FN)" nil t)
 
 (autoload 'helm-debug-open-last-log "../submodules/helm/helm" "\
 Open helm log file of last helm session.
@@ -1963,8 +2020,9 @@ http://bbdb.sourceforge.net/
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-bookmark" "../submodules/helm/helm-bookmark.el"
-;;;;;;  (21346 1128 0 0))
+;;;### (autoloads (helm-filtered-bookmarks helm-pp-bookmarks helm-bookmarks)
+;;;;;;  "../submodules/helm/helm-bookmark" "../submodules/helm/helm-bookmark.el"
+;;;;;;  (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-bookmark.el
 
 (autoload 'helm-bookmarks "../submodules/helm/helm-bookmark" "\
@@ -2011,8 +2069,8 @@ http://www.emacswiki.org/cgi-bin/wiki/download/simple-call-tree.el
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-color" "../submodules/helm/helm-color.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-colors) "../submodules/helm/helm-color" "../submodules/helm/helm-color.el"
+;;;;;;  (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-color.el
 
 (autoload 'helm-colors "../submodules/helm/helm-color" "\
@@ -2039,8 +2097,8 @@ You can get help on each command by persistent action.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-config" "../submodules/helm/helm-config.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-configuration) "../submodules/helm/helm-config"
+;;;;;;  "../submodules/helm/helm-config.el" (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-config.el
 
 (autoload 'helm-configuration "../submodules/helm/helm-config" "\
@@ -2061,8 +2119,11 @@ Customize `helm'.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-elisp" "../submodules/helm/helm-elisp.el"
-;;;;;;  (21346 1128 0 0))
+;;;### (autoloads (helm-complex-command-history helm-timers helm-locate-library
+;;;;;;  helm-manage-advice helm-apropos helm-lisp-completion-or-file-name-at-point
+;;;;;;  helm-lisp-indent helm-complete-file-name-at-point helm-lisp-completion-at-point)
+;;;;;;  "../submodules/helm/helm-elisp" "../submodules/helm/helm-elisp.el"
+;;;;;;  (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp.el
 
 (autoload 'helm-lisp-completion-at-point "../submodules/helm/helm-elisp" "\
@@ -2113,14 +2174,15 @@ Preconfigured `helm' for timers.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-elisp-package" "../submodules/helm/helm-elisp-package.el"
-;;;;;;  (21346 1128 0 0))
+;;;### (autoloads (helm-list-elisp-packages) "../submodules/helm/helm-elisp-package"
+;;;;;;  "../submodules/helm/helm-elisp-package.el" (21361 27928 0
+;;;;;;  0))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp-package.el
 
 (autoload 'helm-list-elisp-packages "../submodules/helm/helm-elisp-package" "\
 
 
-\(fn)" t nil)
+\(fn ARG)" t nil)
 
 ;;;***
 
@@ -2197,8 +2259,9 @@ You can set your own list of commands with
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
-;;;;;;  (21346 1128 0 0))
+;;;### (autoloads (helm-recentf helm-for-files helm-find-files helm-find
+;;;;;;  helm-browse-project) "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
+;;;;;;  (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-files.el
 
 (autoload 'helm-browse-project "../submodules/helm/helm-files" "\
@@ -2375,8 +2438,13 @@ Preconfigured helm for pdfgrep.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-help" "../submodules/helm/helm-help.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-describe-helm-attribute helm-semantic-help
+;;;;;;  helm-color-help helm-imenu-help helm-M-x-help helm-el-package-help
+;;;;;;  helm-apt-help helm-top-help helm-moccur-help helm-buffers-ido-virtual-help
+;;;;;;  helm-esh-help helm-bookmark-help helm-ucs-help helm-etags-help
+;;;;;;  helm-pdfgrep-help helm-grep-help helm-generic-file-help helm-read-file-name-help
+;;;;;;  helm-ff-help helm-buffer-help helm-help) "../submodules/helm/helm-help"
+;;;;;;  "../submodules/helm/helm-help.el" (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-help.el
 
 (defvar helm-mode-line-string "\\<helm-map>\\[helm-help]:Help \\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct" "\
@@ -2476,12 +2544,19 @@ Help command for ido virtual buffers.
 
 \(fn)" t nil)
 
+(autoload 'helm-color-help "../submodules/helm/helm-help" "\
+
+
+\(fn)" t nil)
+
 (autoload 'helm-semantic-help "../submodules/helm/helm-help" "\
 
 
 \(fn)" t nil)
 
 (defvar helm-buffer-mode-line-string '("Buffer(s)" "\\<helm-buffer-map>\\[helm-buffer-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct" "String displayed in mode-line in `helm-source-buffers-list'"))
+
+(defvar helm-color-mode-line-string '("Colors" "\\<helm-color-map>\\[helm-color-help]:Help/\\[helm-color-run-insert-name]:Insert name/\\[helm-color-run-insert-rgb]:Insert RGB/with shift: Kill"))
 
 (defvar helm-buffers-ido-virtual-mode-line-string '("Killed Buffer(s)" "\\<helm-buffers-ido-virtual-map>\\[helm-buffers-ido-virtual-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct" "String displayed in mode-line in `helm-source-buffers-list'"))
 
@@ -2558,8 +2633,8 @@ With a prefix-arg insert symbol at point.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-locate" "../submodules/helm/helm-locate.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-locate helm-locate-read-file-name) "../submodules/helm/helm-locate"
+;;;;;;  "../submodules/helm/helm-locate.el" (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-locate.el
 
 (autoload 'helm-locate-read-file-name "../submodules/helm/helm-locate" "\
@@ -2671,8 +2746,8 @@ Predefined `helm' that provide completion of `comint' history.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-mode" "../submodules/helm/helm-mode.el"
-;;;;;;  (21346 1128 0 0))
+;;;### (autoloads (helm-mode helm-comp-read) "../submodules/helm/helm-mode"
+;;;;;;  "../submodules/helm/helm-mode.el" (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-mode.el
 
 (autoload 'helm-comp-read "../submodules/helm/helm-mode" "\
@@ -3004,8 +3079,10 @@ This function aggregates three sources of tag files:
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-utils" "../submodules/helm/helm-utils.el"
-;;;;;;  (21346 1128 0 0))
+;;;### (autoloads (helm-yank-text-at-point helm-w32-shell-execute-open-file
+;;;;;;  helm-quit-and-find-file helm-display-all-sources helm-show-all-in-this-source-only)
+;;;;;;  "../submodules/helm/helm-utils" "../submodules/helm/helm-utils.el"
+;;;;;;  (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-utils.el
 
 (autoload 'helm-show-all-in-this-source-only "../submodules/helm/helm-utils" "\
@@ -3198,8 +3275,27 @@ Major mode for editing Lua code.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/magit/magit" "../submodules/magit/magit.el"
-;;;;;;  (21335 30969 0 0))
+;;;### (autoloads (magit-run-gitk magit-run-git-gui-blame magit-run-git-gui
+;;;;;;  magit-add-change-log-entry-other-window magit-add-change-log-entry
+;;;;;;  magit-init magit-branch-manager magit-wazzup magit-diff-stash
+;;;;;;  magit-diff-unstaged magit-diff-staged magit-diff-working-tree
+;;;;;;  magit-diff magit-interactive-resolve magit-save-index magit-cherry
+;;;;;;  magit-reflog-head magit-reflog magit-file-log magit-log-long-ranged
+;;;;;;  magit-log-long magit-log-ranged magit-log magit-bisect-run
+;;;;;;  magit-bisect-skip magit-bisect-bad magit-bisect-good magit-bisect-reset
+;;;;;;  magit-bisect-start magit-submodule-sync magit-submodule-init
+;;;;;;  magit-submodule-update-init magit-submodule-update magit-stash-snapshot
+;;;;;;  magit-stash magit-delete-tag magit-tag magit-commit-squash
+;;;;;;  magit-commit-fixup magit-commit-reword magit-commit-extend
+;;;;;;  magit-commit-amend magit-commit magit-push magit-push-tags
+;;;;;;  magit-pull magit-remote-update magit-fetch-current magit-fetch
+;;;;;;  magit-reset-working-tree magit-reset-head-hard magit-reset-head
+;;;;;;  magit-interactive-rebase magit-rename-remote magit-remove-remote
+;;;;;;  magit-add-remote magit-rename-branch magit-delete-branch
+;;;;;;  magit-create-branch magit-checkout magit-merge-abort magit-merge
+;;;;;;  magit-show magit-dired-jump magit-unstage-all magit-stage-all
+;;;;;;  magit-status magit-show-commit magit-git-command) "../submodules/magit/magit"
+;;;;;;  "../submodules/magit/magit.el" (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit.el
 
 (autoload 'magit-git-command "../submodules/magit/magit" "\
@@ -3714,7 +3810,7 @@ Display blame information inline.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/magit-key-mode" "../submodules/magit/magit-key-mode.el"
-;;;;;;  (21335 30969 0 0))
+;;;;;;  (21361 27928 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-key-mode.el
 
 (defvar magit-key-mode-groups '((dispatch (actions ("b" "Branching" magit-key-mode-popup-branching) ("B" "Bisecting" magit-key-mode-popup-bisecting) ("c" "Committing" magit-key-mode-popup-committing) ("d" "Diff worktree" magit-diff-working-tree) ("D" "Diff" magit-diff) ("f" "Fetching" magit-key-mode-popup-fetching) ("F" "Pulling" magit-key-mode-popup-pulling) ("g" "Refresh Buffers" magit-refresh-all) ("l" "Logging" magit-key-mode-popup-logging) ("m" "Merging" magit-key-mode-popup-merging) ("M" "Remoting" magit-key-mode-popup-remoting) ("P" "Pushing" magit-key-mode-popup-pushing) ("o" "Submoduling" magit-key-mode-popup-submodule) ("r" "Rewriting" magit-key-mode-popup-rewriting) ("R" "Rebasing" magit-rebase-step) ("s" "Show Status" magit-status) ("S" "Stage all" magit-stage-all) ("t" "Tagging" magit-key-mode-popup-tagging) ("U" "Unstage all" magit-unstage-all) ("v" "Show Commit" magit-show-commit) ("V" "Show File" magit-show) ("w" "Wazzup" magit-wazzup) ("X" "Reset worktree" magit-reset-working-tree) ("y" "Cherry" magit-cherry) ("z" "Stashing" magit-key-mode-popup-stashing) ("!" "Running" magit-key-mode-popup-running) ("$" "Show Process" magit-display-process))) (logging (man-page "git-log") (actions ("l" "Short" magit-log) ("L" "Long" magit-log-long) ("h" "Head Reflog" magit-reflog-head) ("f" "File log" magit-file-log) ("rl" "Ranged short" magit-log-ranged) ("rL" "Ranged long" magit-log-long-ranged) ("rh" "Reflog" magit-reflog)) (switches ("-m" "Only merge commits" "--merges") ("-s" "No merge commits" "--no-merges") ("-do" "Date Order" "--date-order") ("-f" "First parent" "--first-parent") ("-i" "Case insensitive patterns" "-i") ("-pr" "Pickaxe regex" "--pickaxe-regex") ("-g" "Show Graph" "--graph") ("-n" "Name only" "--name-only") ("-am" "All match" "--all-match") ("-al" "All" "--all")) (arguments ("=r" "Relative" "--relative=" read-directory-name) ("=c" "Committer" "--committer=" read-from-minibuffer) ("=>" "Since" "--since=" read-from-minibuffer) ("=<" "Before" "--before=" read-from-minibuffer) ("=a" "Author" "--author=" read-from-minibuffer) ("=g" "Grep messages" "--grep=" read-from-minibuffer) ("=G" "Grep patches" "-G" read-from-minibuffer) ("=L" "Trace evolution of line range [long log only]" "-L" magit-read-file-trace) ("=s" "Pickaxe search" "-S" read-from-minibuffer) ("=b" "Branches" "--branches=" read-from-minibuffer) ("=R" "Remotes" "--remotes=" read-from-minibuffer))) (running (actions ("!" "Git Subcommand (from root)" magit-git-command-topdir) (":" "Git Subcommand (from pwd)" magit-git-command) ("g" "Git Gui" magit-run-git-gui) ("k" "Gitk" magit-run-gitk))) (fetching (man-page "git-fetch") (actions ("f" "Current" magit-fetch-current) ("a" "All" magit-remote-update) ("o" "Other" magit-fetch)) (switches ("-p" "Prune" "--prune"))) (pushing (man-page "git-push") (actions ("P" "Push" magit-push) ("t" "Push tags" magit-push-tags)) (switches ("-f" "Force" "--force") ("-d" "Dry run" "-n") ("-u" "Set upstream" "-u"))) (pulling (man-page "git-pull") (actions ("F" "Pull" magit-pull)) (switches ("-f" "Force" "--force") ("-r" "Rebase" "--rebase"))) (branching (man-page "git-branch") (actions ("v" "Branch manager" magit-branch-manager) ("b" "Checkout" magit-checkout) ("c" "Create" magit-create-branch) ("r" "Rename" magit-rename-branch) ("k" "Delete" magit-delete-branch)) (switches ("-t" "Set upstream configuration" "--track") ("-m" "Merged to HEAD" "--merged") ("-M" "Merged to master" "--merged=master") ("-n" "Not merged to HEAD" "--no-merged") ("-N" "Not merged to master" "--no-merged=master")) (arguments ("=c" "Contains" "--contains=" magit-read-rev-with-default) ("=m" "Merged" "--merged=" magit-read-rev-with-default) ("=n" "Not merged" "--no-merged=" magit-read-rev-with-default))) (remoting (man-page "git-remote") (actions ("v" "Remote manager" magit-branch-manager) ("a" "Add" magit-add-remote) ("r" "Rename" magit-rename-remote) ("k" "Remove" magit-remove-remote))) (tagging (man-page "git-tag") (actions ("t" "Create" magit-tag) ("k" "Delete" magit-delete-tag)) (switches ("-a" "Annotate" "--annotate") ("-f" "Force" "--force") ("-s" "Sign" "--sign"))) (stashing (man-page "git-stash") (actions ("v" "View" magit-diff-stash) ("z" "Save" magit-stash) ("s" "Snapshot" magit-stash-snapshot) ("a" "Apply" magit-stash-apply) ("p" "Pop" magit-stash-pop) ("k" "Drop" magit-stash-drop)) (switches ("-k" "Keep index" "--keep-index") ("-u" "Include untracked files" "--include-untracked") ("-a" "Include all files" "--all"))) (committing (man-page "git-commit") (actions ("c" "Commit" magit-commit) ("a" "Amend" magit-commit-amend) ("e" "Extend" magit-commit-extend) ("r" "Reword" magit-commit-reword) ("f" "Fixup" magit-commit-fixup) ("s" "Squash" magit-commit-squash)) (switches ("-a" "Stage all modified and deleted files" "--all") ("-e" "Allow empty commit" "--allow-empty") ("-v" "Show diff of changes to be committed" "--verbose") ("-n" "Bypass git hooks" "--no-verify") ("-s" "Add Signed-off-by line" "--signoff") ("-R" "Claim authorship and reset author date" "--reset-author")) (arguments ("=A" "Override the author" "--author=" read-from-minibuffer) ("=S" "Sign using gpg" "--gpg-sign=" magit-read-gpg-secret-key))) (merging (man-page "git-merge") (actions ("m" "Merge" magit-merge) ("A" "Abort" magit-merge-abort)) (switches ("-ff" "Fast-forward only" "--ff-only") ("-nf" "No fast-forward" "--no-ff") ("-sq" "Squash" "--squash")) (arguments ("-st" "Strategy" "--strategy=" read-from-minibuffer))) (rewriting (actions ("b" "Begin" magit-rewrite-start) ("s" "Stop" magit-rewrite-stop) ("a" "Abort" magit-rewrite-abort) ("f" "Finish" magit-rewrite-finish) ("d" "Diff pending" magit-rewrite-diff-pending) ("*" "Set unused" magit-rewrite-set-unused) ("." "Set used" magit-rewrite-set-used))) (apply-mailbox (man-page "git-am") (actions ("J" "Apply Mailbox" magit-apply-mailbox)) (switches ("-s" "add a Signed-off-by line to the commit message" "--signoff") ("-3" "allow fall back on 3way merging if needed" "--3way") ("-k" "pass -k flag to git-mailinfo" "--keep") ("-c" "strip everything before a scissors line" "--scissors") ("-p" "pass it through git-apply" "-p") ("-r" "override error message when patch failure occurs" "--resolvemsg") ("-d" "lie about committer date" "--committer-date-is-author-date") ("-D" "use current timestamp for author date" "--ignore-date") ("-b" "pass -b flag to git-mailinfo" "--keep-non-patch")) (arguments ("=p" "format the patch(es) are in" "--patch-format=" read-from-minibuffer))) (submodule (man-page "git-submodule") (actions ("u" "Update" magit-submodule-update) ("b" "Both update and init" magit-submodule-update-init) ("i" "Init" magit-submodule-init) ("s" "Sync" magit-submodule-sync))) (bisecting (man-page "git-bisect") (actions ("b" "Bad" magit-bisect-bad) ("g" "Good" magit-bisect-good) ("k" "Skip" magit-bisect-skip) ("r" "Reset" magit-bisect-reset) ("s" "Start" magit-bisect-start) ("u" "Run" magit-bisect-run))) (diff-options (actions ("s" "Set" magit-set-diff-options) ("d" "Set default" magit-set-default-diff-options) ("c" "Save default" magit-save-default-diff-options) ("r" "Reset to default" magit-reset-diff-options) ("h" "Toggle Hunk Refinement" magit-diff-toggle-refine-hunk)) (switches ("-m" "Show smallest possible diff" "--minimal") ("-p" "Use patience diff algorithm" "--patience") ("-h" "Use histogram diff algorithm" "--histogram") ("-b" "Ignore whitespace changes" "--ignore-space-change") ("-w" "Ignore all whitespace" "--ignore-all-space") ("-W" "Show surrounding functions" "--function-context")))) "\
@@ -4943,8 +5039,8 @@ Display weather report.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
-;;;;;;  (21346 1141 0 0))
+;;;### (autoloads (web-mode) "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
+;;;;;;  (21361 27929 0 0))
 ;;; Generated autoloads from ../submodules/web-mode/web-mode.el
 
 (autoload 'web-mode "../submodules/web-mode/web-mode" "\
@@ -4971,8 +5067,8 @@ Simple mode to edit YAML.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/yasnippet/yasnippet" "../submodules/yasnippet/yasnippet.el"
-;;;;;;  (21346 1142 0 0))
+;;;### (autoloads (yas-global-mode yas-minor-mode) "../submodules/yasnippet/yasnippet"
+;;;;;;  "../submodules/yasnippet/yasnippet.el" (21361 27929 0 0))
 ;;; Generated autoloads from ../submodules/yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "../submodules/yasnippet/yasnippet" "\
@@ -5106,7 +5202,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/web-mode/wfs-mode.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (21346 1211 192088 0))
+;;;;;;  (21361 29601 293197 0))
 
 ;;;***
 
