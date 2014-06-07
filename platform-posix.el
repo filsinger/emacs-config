@@ -35,6 +35,8 @@
 
   ;; terminal clipboard while inside tmux
   (unless (display-graphic-p)
+    (when (and (> (length (getenv "TMUX")) 0) (executable-find "reattach-to-user-namespace"))
+
     (defun paste-from-osx ()
       (shell-command-to-string "reattach-to-user-namespace pbpaste") )
 
@@ -44,10 +46,8 @@
           (process-send-string proc text)
           (process-send-eof proc))))
 
-    (when (and (> (length (getenv "TMUX")) 0) (executable-find "reattach-to-user-namespace"))
       (setq interprogram-cut-function 'cut-to-osx)
       (setq interprogram-paste-function 'paste-from-osx) )
-
     )
 )
 
