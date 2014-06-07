@@ -133,3 +133,6 @@
 [submodule "submodules/git-modes"]
 	path = submodules/git-modes
 	url = https://github.com/magit/git-modes.git
+[submodule "submodules/emacs-emamux"]
+	path = submodules/emacs-emamux
+	url = https://github.com/syohex/emacs-emamux.git

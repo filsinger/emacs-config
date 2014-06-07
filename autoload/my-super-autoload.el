@@ -1099,6 +1099,76 @@ Key bindings:
 
 ;;;***
 
+;;;### (autoloads (emamux:zoom-runner emamux:clear-runner-history
+;;;;;;  emamux:interrupt-runner emamux:inspect-runner emamux:close-panes
+;;;;;;  emamux:close-runner-pane emamux:run-last-command emamux:run-command
+;;;;;;  emamux:kill-session emamux:yank-from-list-buffers emamux:copy-kill-ring
+;;;;;;  emamux:send-command) "../submodules/emacs-emamux/emamux"
+;;;;;;  "../submodules/emacs-emamux/emamux.el" (21394 57323 0 0))
+;;; Generated autoloads from ../submodules/emacs-emamux/emamux.el
+
+(autoload 'emamux:send-command "../submodules/emacs-emamux/emamux" "\
+Send command to target-session of tmux
+
+\(fn)" t nil)
+
+(autoload 'emamux:copy-kill-ring "../submodules/emacs-emamux/emamux" "\
+Set (car kill-ring) to tmux buffer
+
+\(fn ARG)" t nil)
+
+(autoload 'emamux:yank-from-list-buffers "../submodules/emacs-emamux/emamux" "\
+
+
+\(fn)" t nil)
+
+(autoload 'emamux:kill-session "../submodules/emacs-emamux/emamux" "\
+Kill tmux session
+
+\(fn)" t nil)
+
+(autoload 'emamux:run-command "../submodules/emacs-emamux/emamux" "\
+Run command
+
+\(fn CMD &optional CMDDIR)" t nil)
+
+(autoload 'emamux:run-last-command "../submodules/emacs-emamux/emamux" "\
+
+
+\(fn)" t nil)
+
+(autoload 'emamux:close-runner-pane "../submodules/emacs-emamux/emamux" "\
+Close runner pane
+
+\(fn)" t nil)
+
+(autoload 'emamux:close-panes "../submodules/emacs-emamux/emamux" "\
+Close all panes except current pane
+
+\(fn)" t nil)
+
+(autoload 'emamux:inspect-runner "../submodules/emacs-emamux/emamux" "\
+Enter copy-mode in runner pane
+
+\(fn)" t nil)
+
+(autoload 'emamux:interrupt-runner "../submodules/emacs-emamux/emamux" "\
+Send SIGINT to runner pane
+
+\(fn)" t nil)
+
+(autoload 'emamux:clear-runner-history "../submodules/emacs-emamux/emamux" "\
+Clear history of runner pane
+
+\(fn)" t nil)
+
+(autoload 'emamux:zoom-runner "../submodules/emacs-emamux/emamux" "\
+Zoom runner pane. This feature requires tmux 1.8 or higher
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads (enh-ruby-mode) "../submodules/enhanced-ruby-mode/enh-ruby-mode"
 ;;;;;;  "../submodules/enhanced-ruby-mode/enh-ruby-mode.el" (21361
 ;;;;;;  27928 0 0))
@@ -5202,7 +5272,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/web-mode/wfs-mode.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (21361 29601 293197 0))
+;;;;;;  (21394 57337 980364 0))
 
 ;;;***
 
