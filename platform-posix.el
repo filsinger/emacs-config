@@ -32,6 +32,23 @@
        (unless (and gtags-global-command (file-executable-p (expand-file-name gtags-global-command))) (setq gtags-global-command "/usr/local/bin/global"))))
 
   (setq w3m-command "/usr/local/bin/w3m")
+
+  ;; terminal clipboard while inside tmux
+  (unless (display-graphic-p)
+    (defun paste-from-osx ()
+      (shell-command-to-string "reattach-to-user-namespace pbpaste") )
+
+    (defun cut-to-osx (text &optional push)
+      (let ((process-connection-type nil))
+        (let ((proc (start-process "pbcopy" "*Messages*" "reattach-to-user-namespace" "pbcopy") ))
+          (process-send-string proc text)
+          (process-send-eof proc))))
+
+    (when (and (> (length (getenv "TMUX")) 0) (executable-find "reattach-to-user-namespace"))
+      (setq interprogram-cut-function 'cut-to-osx)
+      (setq interprogram-paste-function 'paste-from-osx) )
+
+    )
 )
 
 ;; ================================================
