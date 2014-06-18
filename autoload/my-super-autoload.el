@@ -4392,6 +4392,21 @@ popup all stubs in the current buffer.
 
 ;;;***
 
+;;;### (autoloads (scss-mode) "../submodules/scss-mode/scss-mode"
+;;;;;;  "../submodules/scss-mode/scss-mode.el" (21395 56263 0 0))
+;;; Generated autoloads from ../submodules/scss-mode/scss-mode.el
+
+(autoload 'scss-mode "../submodules/scss-mode/scss-mode" "\
+Major mode for editing SCSS files, http://sass-lang.com/
+Special commands:
+\\{scss-mode-map}
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+
+;;;***
+
 ;;;### (autoloads nil "../submodules/smarttabs/smart-tabs-mode" "../submodules/smarttabs/smart-tabs-mode.el"
 ;;;;;;  (21335 30974 0 0))
 ;;; Generated autoloads from ../submodules/smarttabs/smart-tabs-mode.el
@@ -5272,7 +5287,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/web-mode/wfs-mode.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (21394 57337 980364 0))
+;;;;;;  (21409 19722 671513 0))
 
 ;;;***
 

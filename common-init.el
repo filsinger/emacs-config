@@ -45,6 +45,7 @@
     (require 'my-super-autoload)
   (require 'jf-generate-autoload) ;; need to load the jf-generate-autoload if we dont have the super autoload file when we are doing an initial creation of the super autoload file.
 )
+(autoload 'scss-mode "scss-mode")
 ;; ================================================
 
 ;; ================================================
@@ -266,6 +267,8 @@
 (add-to-list 'auto-mode-alist '("\\.pac$" . js-mode))                            ;; js-mode
 (add-to-list 'auto-mode-alist '("\\.\\(erb\\|html\\|php\\|htm\\|phtml\\|djhtml\\)$" . web-mode))    ;; web-mode
 (add-to-list 'auto-mode-alist '("\\.\\(glsl\\|vert\\|frag\\|geom\\|vsh\\|fsh\\|gsh\\)$" . glsl-mode))    ;; glsl-mode
+(add-to-list 'auto-mode-alist '("\\.\\(scss\\|sass\\)$" . scss-mode))                            ;; js-mode
+
 ;; ================================================
 
 
