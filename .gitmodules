@@ -1,141 +1,188 @@
 [submodule "submodules/auto-complete"]
 	path = submodules/auto-complete
 	url = git://github.com/auto-complete/auto-complete.git
+	branch = master
 [submodule "submodules/auto-complete-clang"]
 	path = submodules/auto-complete-clang
 	url = https://github.com/brianjcj/auto-complete-clang.git
+	branch = master
 [submodule "submodules/yasnippet"]
 	path = submodules/yasnippet
 	url = https://github.com/capitaomorte/yasnippet.git
+	branch = master
 [submodule "submodules/gist"]
 	path = submodules/gist
 	url = https://github.com/defunkt/gist.el.git
+	branch = master
 [submodule "submodules/lua-mode"]
 	path = submodules/lua-mode
 	url = https://github.com/immerrr/lua-mode.git
+	branch = master
 [submodule "submodules/highlight-symbol"]
 	path = submodules/highlight-symbol
 	url = https://github.com/nschum/highlight-symbol.el.git
+	branch = master
 [submodule "submodules/markdown-mode"]
 	path = submodules/markdown-mode
 	url = git://github.com/emacsmirror/markdown-mode.git
+	branch = master
 [submodule "submodules/expand-region"]
 	path = submodules/expand-region
 	url = https://github.com/magnars/expand-region.el.git
+	branch = master
 [submodule "submodules/arduino-mode"]
 	path = submodules/arduino-mode
 	url = https://github.com/bookest/arduino-mode.git
+	branch = master
 [submodule "submodules/helm"]
 	path = submodules/helm
 	url = https://github.com/emacs-helm/helm.git
+	branch = master
 [submodule "submodules/popup"]
 	path = submodules/popup
 	url = https://github.com/auto-complete/popup-el.git
+	branch = master
 [submodule "submodules/magit"]
 	path = submodules/magit
 	url = git://github.com/magit/magit.git
+	branch = master
 [submodule "submodules/gh"]
 	path = submodules/gh
 	url = https://github.com/sigma/gh.el.git
+	branch = master
 [submodule "submodules/tabulated-list"]
 	path = submodules/tabulated-list
 	url = https://github.com/sigma/tabulated-list.el.git
+	branch = master
 [submodule "submodules/pcache"]
 	path = submodules/pcache
 	url = https://github.com/sigma/pcache.git
+	branch = master
 [submodule "submodules/logito"]
 	path = submodules/logito
 	url = https://github.com/sigma/logito.git
+	branch = master
 [submodule "submodules/ace-jump-mode"]
 	path = submodules/ace-jump-mode
 	url = https://github.com/winterTTr/ace-jump-mode.git
+	branch = master
 [submodule "submodules/regpop"]
 	path = submodules/regpop
 	url = git://github.com/filsinger/regpop.el.git
+	branch = master
 [submodule "submodules/smarttabs"]
 	path = submodules/smarttabs
 	url = git://github.com/jcsalomon/smarttabs.git
+	branch = master
 [submodule "submodules/powerline"]
 	path = submodules/powerline
 	url = git://github.com/filsinger/emacs-powerline.git
+	branch = master
 [submodule "submodules/rainbow-mode"]
 	path = submodules/rainbow-mode
 	url = git://github.com/emacsmirror/rainbow-mode.git
+	branch = master
 [submodule "submodules/p4"]
 	path = submodules/p4
 	url = https://github.com/gareth-rees/p4.el.git
+	branch = master
 [submodule "submodules/csearch-mode"]
 	path = submodules/csearch-mode
 	url = git://github.com/filsinger/csearch-mode.git
+	branch = master
 [submodule "submodules/csharp-mode"]
 	path = submodules/csharp-mode
 	url = git://github.com/emacsmirror/csharp-mode.git
+	branch = master
 [submodule "submodules/multiple-cursors"]
 	path = submodules/multiple-cursors
 	url = git://github.com/magnars/multiple-cursors.el.git
+	branch = master
 [submodule "submodules/smex"]
 	path = submodules/smex
 	url = git://github.com/nonsequitur/smex.git
+	branch = master
 [submodule "submodules/emacs-websocket"]
 	path = submodules/emacs-websocket
 	url = git://github.com/ahyatt/emacs-websocket.git
+	branch = master
 [submodule "submodules/json"]
 	path = submodules/json
 	url = https://github.com/thorstadt/json.el
+	branch = master
 [submodule "submodules/maxframe"]
 	path = submodules/maxframe
 	url = git://github.com/rmm5t/maxframe.el.git
+	branch = master
 [submodule "submodules/rudel"]
 	path = submodules/rudel
 	url = git://github.com/emacsmirror/rudel.git
+	branch = master
 [submodule "submodules/w3m"]
 	path = submodules/w3m
 	url = https://github.com/emacsmirror/w3m.git
+	branch = master
 [submodule "submodules/zencoding"]
 	path = submodules/zencoding
 	url = git://github.com/rooney/zencoding.git
+	branch = master
 [submodule "submodules/cppcheck"]
 	path = submodules/cppcheck
 	url = git://github.com/filsinger/cppcheck.el.git
+	branch = master
 [submodule "submodules/browse-kill-ring"]
 	path = submodules/browse-kill-ring
 	url = https://github.com/browse-kill-ring/browse-kill-ring.git
+	branch = master
 [submodule "submodules/dash"]
 	path = submodules/dash
 	url = git://github.com/magnars/dash.el.git
+	branch = master
 [submodule "submodules/litable"]
 	path = submodules/litable
 	url = git://github.com/Fuco1/litable.git
+	branch = master
 [submodule "submodules/web-mode"]
 	path = submodules/web-mode
 	url = git://github.com/fxbois/web-mode.git
+	branch = master
 [submodule "submodules/glsl-mode"]
 	path = submodules/glsl-mode
 	url = https://github.com/filsinger/glsl-mode.git
+	branch = master
 [submodule "submodules/enhanced-ruby-mode"]
 	path = submodules/enhanced-ruby-mode
 	url = https://github.com/zenspider/enhanced-ruby-mode.git
+	branch = master
 [submodule "submodules/flycheck"]
 	path = submodules/flycheck
 	url = https://github.com/flycheck/flycheck.git
+	branch = master
 [submodule "submodules/s"]
 	path = submodules/s
 	url = https://github.com/magnars/s.el.git
+	branch = master
 [submodule "submodules/f"]
 	path = submodules/f
 	url = https://github.com/rejeep/f.el.git
+	branch = master
 [submodule "submodules/yaml-mode"]
 	path = submodules/yaml-mode
 	url = https://github.com/yoshiki/yaml-mode.git
+	branch = master
 [submodule "submodules/helm-everything"]
 	path = submodules/helm-everything
 	url = https://github.com/filsinger/helm-everything.git
+	branch = master
 [submodule "submodules/git-modes"]
 	path = submodules/git-modes
 	url = https://github.com/magit/git-modes.git
+	branch = master
 [submodule "submodules/emacs-emamux"]
 	path = submodules/emacs-emamux
 	url = https://github.com/syohex/emacs-emamux.git
+	branch = master
 [submodule "submodules/scss-mode"]
 	path = submodules/scss-mode
 	url = https://github.com/antonj/scss-mode.git
+	branch = master
