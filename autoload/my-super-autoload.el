@@ -481,7 +481,7 @@ Otherwise disable it.
 
 ;;;### (autoloads (ace-jump-mode ace-jump-line-mode ace-jump-word-mode
 ;;;;;;  ace-jump-char-mode ace-jump-mode-pop-mark) "../submodules/ace-jump-mode/ace-jump-mode"
-;;;;;;  "../submodules/ace-jump-mode/ace-jump-mode.el" (21262 61871
+;;;;;;  "../submodules/ace-jump-mode/ace-jump-mode.el" (21476 23735
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/ace-jump-mode/ace-jump-mode.el
 
@@ -557,7 +557,7 @@ Key bindings:
 
 ;;;### (autoloads (global-auto-complete-mode auto-complete-mode auto-complete)
 ;;;;;;  "../submodules/auto-complete/auto-complete" "../submodules/auto-complete/auto-complete.el"
-;;;;;;  (21361 27927 0 0))
+;;;;;;  (21476 23736 0 0))
 ;;; Generated autoloads from ../submodules/auto-complete/auto-complete.el
 
 (autoload 'auto-complete "../submodules/auto-complete/auto-complete" "\
@@ -593,9 +593,21 @@ See `auto-complete-mode' for more information on Auto-Complete mode.
 
 ;;;***
 
+;;;### (autoloads (ac-config-default) "../submodules/auto-complete/auto-complete-config"
+;;;;;;  "../submodules/auto-complete/auto-complete-config.el" (21476
+;;;;;;  23736 0 0))
+;;; Generated autoloads from ../submodules/auto-complete/auto-complete-config.el
+
+(autoload 'ac-config-default "../submodules/auto-complete/auto-complete-config" "\
+
+
+\(fn)" nil nil)
+
+;;;***
+
 ;;;### (autoloads (browse-kill-ring browse-kill-ring-default-keybindings)
 ;;;;;;  "../submodules/browse-kill-ring/browse-kill-ring" "../submodules/browse-kill-ring/browse-kill-ring.el"
-;;;;;;  (21198 44413 0 0))
+;;;;;;  (21476 24207 0 0))
 ;;; Generated autoloads from ../submodules/browse-kill-ring/browse-kill-ring.el
 
 (autoload 'browse-kill-ring-default-keybindings "../submodules/browse-kill-ring/browse-kill-ring" "\
@@ -1104,7 +1116,7 @@ Key bindings:
 ;;;;;;  emamux:close-runner-pane emamux:run-last-command emamux:run-command
 ;;;;;;  emamux:kill-session emamux:yank-from-list-buffers emamux:copy-kill-ring
 ;;;;;;  emamux:send-command) "../submodules/emacs-emamux/emamux"
-;;;;;;  "../submodules/emacs-emamux/emamux.el" (21394 57323 0 0))
+;;;;;;  "../submodules/emacs-emamux/emamux.el" (21476 23741 0 0))
 ;;; Generated autoloads from ../submodules/emacs-emamux/emamux.el
 
 (autoload 'emamux:send-command "../submodules/emacs-emamux/emamux" "\
@@ -1170,8 +1182,8 @@ Zoom runner pane. This feature requires tmux 1.8 or higher
 ;;;***
 
 ;;;### (autoloads (enh-ruby-mode) "../submodules/enhanced-ruby-mode/enh-ruby-mode"
-;;;;;;  "../submodules/enhanced-ruby-mode/enh-ruby-mode.el" (21361
-;;;;;;  27928 0 0))
+;;;;;;  "../submodules/enhanced-ruby-mode/enh-ruby-mode.el" (21476
+;;;;;;  23742 0 0))
 ;;; Generated autoloads from ../submodules/enhanced-ruby-mode/enh-ruby-mode.el
 
 (autoload 'enh-ruby-mode "../submodules/enhanced-ruby-mode/enh-ruby-mode" "\
@@ -1264,11 +1276,8 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;### (autoloads (flycheck-define-error-level flycheck-info flycheck-def-option-var
 ;;;;;;  flycheck-def-config-file-var global-flycheck-mode flycheck-mode)
 ;;;;;;  "../submodules/flycheck/flycheck" "../submodules/flycheck/flycheck.el"
-;;;;;;  (21361 27928 0 0))
+;;;;;;  (21479 6716 0 0))
 ;;; Generated autoloads from ../submodules/flycheck/flycheck.el
-
-(defconst flycheck-mode-line-lighter " FlyC" "\
-The standard lighter for flycheck mode.")
 
 (autoload 'flycheck-mode "../submodules/flycheck/flycheck" "\
 Minor mode for on-the-fly syntax checking.
@@ -1356,6 +1365,14 @@ Open the Flycheck manual.
 Define a new error LEVEL with PROPERTIES.
 
 The following PROPERTIES constitute an error level:
+
+`:severity SEVERITY'
+     A number denoting the severity of this level.  The higher
+     the number, the more severe is this level compared to other
+     levels.  Defaults to 0.
+
+     The severity is used by `flycheck-error-level-<' to
+     determine the ordering of errors according to their levels.
 
 `:overlay-category CATEGORY'
      A symbol denoting the overlay category to use for error
@@ -1513,7 +1530,7 @@ The following PROPERTIES constitute an error level:
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-url" "../submodules/gh/gh-url.el"
-;;;;;;  (21198 44427 0 0))
+;;;;;;  (21476 23747 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-url.el
 
 (require 'eieio)
@@ -1521,7 +1538,7 @@ The following PROPERTIES constitute an error level:
 ;;;***
 
 ;;;### (autoloads (gh-users-user gh-users-api) "../submodules/gh/gh-users"
-;;;;;;  "../submodules/gh/gh-users.el" (21198 44427 0 0))
+;;;;;;  "../submodules/gh/gh-users.el" (21476 23747 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-users.el
 
 (require 'eieio)
@@ -1535,7 +1552,7 @@ The following PROPERTIES constitute an error level:
 ;;;### (autoloads (gist-fetch gist-list gist-region-or-buffer-private
 ;;;;;;  gist-region-or-buffer gist-buffer-private gist-buffer gist-region-private
 ;;;;;;  gist-region) "../submodules/gist/gist" "../submodules/gist/gist.el"
-;;;;;;  (21198 44428 0 0))
+;;;;;;  (21476 23747 0 0))
 ;;; Generated autoloads from ../submodules/gist/gist.el
 
 (autoload 'gist-region "../submodules/gist/gist" "\
@@ -1596,8 +1613,9 @@ Displays a list of all of the current user's gists in a new buffer.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/git-modes/git-commit-mode" "../submodules/git-modes/git-commit-mode.el"
-;;;;;;  (21335 30960 0 0))
+;;;### (autoloads (git-commit-mode) "../submodules/git-modes/git-commit-mode"
+;;;;;;  "../submodules/git-modes/git-commit-mode.el" (21476 23749
+;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/git-modes/git-commit-mode.el
 
 (autoload 'git-commit-mode "../submodules/git-modes/git-commit-mode" "\
@@ -1613,8 +1631,9 @@ basic structure of and errors in git commit messages.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/git-modes/git-rebase-mode" "../submodules/git-modes/git-rebase-mode.el"
-;;;;;;  (21335 30960 0 0))
+;;;### (autoloads (git-rebase-mode) "../submodules/git-modes/git-rebase-mode"
+;;;;;;  "../submodules/git-modes/git-rebase-mode.el" (21476 23749
+;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/git-modes/git-rebase-mode.el
 
 (autoload 'git-rebase-mode "../submodules/git-modes/git-rebase-mode" "\
@@ -1631,8 +1650,8 @@ running 'man git-rebase' at the command line) for details.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/git-modes/gitattributes-mode"
-;;;;;;  "../submodules/git-modes/gitattributes-mode.el" (21335 30960
+;;;### (autoloads (gitattributes-mode) "../submodules/git-modes/gitattributes-mode"
+;;;;;;  "../submodules/git-modes/gitattributes-mode.el" (21476 23749
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/git-modes/gitattributes-mode.el
 
@@ -1646,8 +1665,9 @@ A major mode for editing .gitattributes files.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/git-modes/gitconfig-mode" "../submodules/git-modes/gitconfig-mode.el"
-;;;;;;  (21335 30960 0 0))
+;;;### (autoloads (gitconfig-mode) "../submodules/git-modes/gitconfig-mode"
+;;;;;;  "../submodules/git-modes/gitconfig-mode.el" (21476 23749
+;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/git-modes/gitconfig-mode.el
 
 (autoload 'gitconfig-mode "../submodules/git-modes/gitconfig-mode" "\
@@ -1659,8 +1679,9 @@ A major mode for editing .gitconfig files.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/git-modes/gitignore-mode" "../submodules/git-modes/gitignore-mode.el"
-;;;;;;  (21335 30960 0 0))
+;;;### (autoloads (gitignore-mode) "../submodules/git-modes/gitignore-mode"
+;;;;;;  "../submodules/git-modes/gitignore-mode.el" (21476 23749
+;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/git-modes/gitignore-mode.el
 
 (autoload 'gitignore-mode "../submodules/git-modes/gitignore-mode" "\
@@ -1697,24 +1718,10 @@ Search Everything with helm
 
 ;;;***
 
-;;;### (autoloads (helm-follow-mode helm-kill-selection-and-quit
-;;;;;;  helm-yank-selection helm-prev-visible-mark helm-next-visible-mark
-;;;;;;  helm-display-all-visible-marks helm-toggle-all-marks helm-unmark-all
-;;;;;;  helm-mark-all helm-toggle-visible-mark helm-reposition-window-other-window
-;;;;;;  helm-recenter-top-bottom-other-window helm-scroll-other-window-down
-;;;;;;  helm-scroll-other-window helm-execute-persistent-action helm-select-2nd-action-or-end-of-line
-;;;;;;  helm-select-4th-action helm-select-3rd-action helm-select-2nd-action
-;;;;;;  helm-swap-windows helm-enlarge-window helm-narrow-window
-;;;;;;  helm-toggle-resplit-window helm-delete-minibuffer-contents
-;;;;;;  helm-delete-current-selection helm-debug-output helm-keyboard-quit
-;;;;;;  helm-exit-minibuffer helm-confirm-and-exit-minibuffer helm-next-source
-;;;;;;  helm-previous-source helm-end-of-buffer helm-beginning-of-buffer
-;;;;;;  helm-next-page helm-previous-page helm-next-line helm-previous-line
-;;;;;;  helm-select-action helm-force-update helm-toggle-suspend-update
-;;;;;;  helm-other-buffer helm-resume-list-buffers-after-quit helm-resume-previous-session-after-quit
-;;;;;;  helm-resume helm-debug-open-last-log helm-define-key-with-subkeys
-;;;;;;  helm-multi-key-defun helm-define-multi-key) "../submodules/helm/helm"
-;;;;;;  "../submodules/helm/helm.el" (21361 27928 0 0))
+;;;### (autoloads (helm-other-buffer helm helm-debug-open-last-log
+;;;;;;  helm-define-key-with-subkeys helm-multi-key-defun helm-define-multi-key)
+;;;;;;  "../submodules/helm/helm" "../submodules/helm/helm.el" (21479
+;;;;;;  6722 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm.el
 
 (autoload 'helm-define-multi-key "../submodules/helm/helm" "\
@@ -1756,7 +1763,7 @@ to use once started.
 e.g:
 
 \(helm-define-key-with-subkeys global-map
-      (kbd \"C-x v n\") ?n 'git-gutter:next-hunk ((?p 'git-gutter:previous-hunk)))
+      (kbd \"C-x v n\") ?n 'git-gutter:next-hunk ((?p . 'git-gutter:previous-hunk)))
 
 
 In this example, `C-x v n' will run `git-gutter:next-hunk' subsequent hit on \"n\"
@@ -1775,23 +1782,103 @@ If `helm-last-log-file' is nil, switch to `helm-debug-buffer' .
 
 \(fn)" t nil)
 
-(autoload 'helm-resume "../submodules/helm/helm" "\
-Resurrect previously invoked `helm'.
-Called with a prefix arg, allow choosing among all existing
-helm buffers.  i.e choose among various helm sessions.
-Called from lisp, you can specify a buffer-name as a string with ARG.
+(autoload 'helm "../submodules/helm/helm" "\
+Main function to execute helm sources.
 
-\(fn ARG)" t nil)
+Keywords supported:
+:sources :input :prompt :resume :preselect
+:buffer :keymap :default :history :allow-nest
 
-(autoload 'helm-resume-previous-session-after-quit "../submodules/helm/helm" "\
-Resume previous helm session within running helm.
+Extra LOCAL-VARS keywords are supported, see below.
 
-\(fn ARG)" t nil)
+PLIST is a list like (:key1 val1 :key2 val2 ...) or
+\(&optional sources input prompt resume
+            preselect buffer keymap default history).
 
-(autoload 'helm-resume-list-buffers-after-quit "../submodules/helm/helm" "\
-List resumable helm buffers within running helm.
+Basic keywords are the following:
 
-\(fn)" t nil)
+:sources
+
+A list of sources used for this session.  It also accepts a
+symbol, interpreted as a variable of a helm source
+i.e (a symbol can be passed instead of a list of sources).
+It also accepts an alist representing a helm source, which is
+detected by (assq 'name ANY-SOURCES).
+NOTE: In this case the source is embedded in the helm command and
+have no symbol name, so it is not reachable from outside.
+It will be referenced in `helm-sources' as a whole alist.
+
+:input
+
+Temporary value of `helm-pattern', ie. initial input of minibuffer.
+
+:prompt
+
+Prompt other than \"pattern: \".
+
+:resume
+
+If t, Resurrect previously instance of `helm'.  Skip the initialization.
+If 'noresume, this instance of `helm' cannot be resumed.
+
+:preselect
+
+Initially selected candidate.  Specified by exact candidate or a regexp.
+
+:buffer
+
+`helm-buffer' instead of *helm*.
+
+:keymap
+
+`helm-map' for current `helm' session.
+
+:default
+
+A default argument that will be inserted in minibuffer with \\<minibuffer-local-map>\\[next-history-element].
+When nil or not present `thing-at-point' will be used instead.
+If `helm-maybe-use-default-as-input' is non--nil display will be
+updated using :default arg as input unless :input is specified,
+which in this case will take precedence on :default
+This is a string or a list, in this case the car of the list will
+be used as initial default input, but you will be able to cycle in this
+list with \\<minibuffer-local-map>\\[next-history-element].
+
+:history
+
+By default all minibuffer input is pushed to `minibuffer-history',
+if an argument HISTORY is provided, input will be pushed to HISTORY.
+History element should be a symbol.
+
+:allow-nest
+
+Allow running this helm command within a running helm session.
+
+Of course, conventional arguments are supported, the two are same.
+
+\(helm :sources sources :input input :prompt prompt :resume resume
+       :preselect preselect :buffer buffer :keymap keymap :default default
+       :history history)
+
+and
+
+\(helm sources input prompt resume preselect buffer keymap default history)
+
+are the same.
+
+However the use of non keyword args is deprecated and should not be used.
+
+Other keywords are interpreted as local variables of this helm session.
+The `helm-' prefix can be omitted.  For example,
+
+\(helm :sources 'helm-source-buffers-list
+       :buffer \"*buffers*\" :candidate-number-limit 10)
+
+means starting helm session with `helm-source-buffers'
+source in *buffers* buffer and set variable `helm-candidate-number-limit'
+to 10 as session local variable.
+
+\(fn &key SOURCES INPUT PROMPT RESUME PRESELECT BUFFER KEYMAP DEFAULT HISTORY ALLOW-NEST OTHER-LOCAL-VARS)" nil nil)
 
 (autoload 'helm-other-buffer "../submodules/helm/helm" "\
 Simplified interface of `helm' with other `helm-buffer'.
@@ -1799,263 +1886,13 @@ Call `helm' with only ANY-SOURCES and ANY-BUFFER as args.
 
 \(fn ANY-SOURCES ANY-BUFFER)" nil nil)
 
-(autoload 'helm-toggle-suspend-update "../submodules/helm/helm" "\
-Enable or disable update of display in helm.
-This can be useful for e.g writing quietly a complex regexp.
-
-\(fn)" t nil)
-
-(autoload 'helm-force-update "../submodules/helm/helm" "\
-Force recalculation and update of candidates.
-The difference with `helm-update' is this function is reevaling
-the `init' and `update' attributes functions when present
-before updating candidates according to pattern i.e calling `helm-update'.
-Selection is preserved to current candidate or moved to PRESELECT
-if specified.
-
-\(fn &optional PRESELECT)" t nil)
-
-(autoload 'helm-select-action "../submodules/helm/helm" "\
-Select an action for the currently selected candidate.
-If action buffer is selected, back to the helm buffer.
-
-\(fn)" t nil)
-
-(autoload 'helm-previous-line "../submodules/helm/helm" "\
-Move selection to the previous line.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'helm-next-line "../submodules/helm/helm" "\
-Move selection to the next line.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'helm-previous-page "../submodules/helm/helm" "\
-Move selection back with a pageful.
-
-\(fn)" t nil)
-
-(autoload 'helm-next-page "../submodules/helm/helm" "\
-Move selection forward with a pageful.
-
-\(fn)" t nil)
-
-(autoload 'helm-beginning-of-buffer "../submodules/helm/helm" "\
-Move selection at the top.
-
-\(fn)" t nil)
-
-(autoload 'helm-end-of-buffer "../submodules/helm/helm" "\
-Move selection at the bottom.
-
-\(fn)" t nil)
-
-(autoload 'helm-previous-source "../submodules/helm/helm" "\
-Move selection to the previous source.
-
-\(fn)" t nil)
-
-(autoload 'helm-next-source "../submodules/helm/helm" "\
-Move selection to the next source.
-
-\(fn)" t nil)
-
-(autoload 'helm-confirm-and-exit-minibuffer "../submodules/helm/helm" "\
-Maybe ask for confirmation when exiting helm.
-It is similar to `minibuffer-complete-and-exit' adapted to helm.
-If `minibuffer-completion-confirm' value is 'confirm,
-send in minibuffer confirm message and exit on next hit.
-If `minibuffer-completion-confirm' value is t,
-don't exit and send message 'no match'.
-
-\(fn)" t nil)
-
-(autoload 'helm-exit-minibuffer "../submodules/helm/helm" "\
-Select the current candidate by exiting the minibuffer.
-
-\(fn)" t nil)
-
-(autoload 'helm-keyboard-quit "../submodules/helm/helm" "\
-Quit minibuffer in helm.
-If action buffer is displayed, kill it.
-
-\(fn)" t nil)
-
-(autoload 'helm-debug-output "../submodules/helm/helm" "\
-Show all helm-related variables at this time.
-
-\(fn)" t nil)
-
-(autoload 'helm-delete-current-selection "../submodules/helm/helm" "\
-Delete the currently selected item.
-
-\(fn)" t nil)
-
-(autoload 'helm-delete-minibuffer-contents "../submodules/helm/helm" "\
-Delete minibuffer contents.
-When called with a prefix arg or when
-`helm-delete-minibuffer-contents-from-point' is non--nil,
-delete minibuffer contents from point instead of deleting all.
-
-\(fn &optional ARG)" t nil)
-
-(autoload 'helm-toggle-resplit-window "../submodules/helm/helm" "\
-Toggle resplit helm window, vertically or horizontally.
-
-\(fn)" t nil)
-
-(autoload 'helm-narrow-window "../submodules/helm/helm" "\
-Narrow helm window.
-
-\(fn)" t nil)
-
-(autoload 'helm-enlarge-window "../submodules/helm/helm" "\
-Enlarge helm window.
-
-\(fn)" t nil)
-
-(autoload 'helm-swap-windows "../submodules/helm/helm" "\
-Swap window holding `helm-buffer' with other window.
-
-\(fn)" t nil)
-
-(autoload 'helm-select-2nd-action "../submodules/helm/helm" "\
-Select the 2nd action for the currently selected candidate.
-
-\(fn)" t nil)
-
-(autoload 'helm-select-3rd-action "../submodules/helm/helm" "\
-Select the 3rd action for the currently selected candidate.
-
-\(fn)" t nil)
-
-(autoload 'helm-select-4th-action "../submodules/helm/helm" "\
-Select the 4th action for the currently selected candidate.
-
-\(fn)" t nil)
-
-(autoload 'helm-select-2nd-action-or-end-of-line "../submodules/helm/helm" "\
-Select the 2nd action for the currently selected candidate.
-This happen when point is at the end of minibuffer.
-Otherwise goto the end of minibuffer.
-
-\(fn)" t nil)
-
-(autoload 'helm-execute-persistent-action "../submodules/helm/helm" "\
-Perform the associated action ATTR without quitting helm.
-ATTR default is 'persistent-action', but it can be anything else.
-In this case you have to add this new attribute to your source.
-
-When `helm-full-frame' or SPLIT-ONEWINDOW are non--nil,
-and `helm-buffer' is displayed in only one window,
-the helm window is splitted to display
-`helm-select-persistent-action-window' in other window
-and keep its visibility.
-
-\(fn &optional (attr (quote persistent-action)) SPLIT-ONEWINDOW)" t nil)
-
-(autoload 'helm-scroll-other-window "../submodules/helm/helm" "\
-Scroll other window (not *Helm* window) upward.
-
-\(fn)" t nil)
-
-(autoload 'helm-scroll-other-window-down "../submodules/helm/helm" "\
-Scroll other window (not *Helm* window) downward.
-
-\(fn)" t nil)
-
-(autoload 'helm-recenter-top-bottom-other-window "../submodules/helm/helm" "\
-`recenter-top-bottom' in other window (not *Helm* window).
-
-\(fn)" t nil)
-
-(autoload 'helm-reposition-window-other-window "../submodules/helm/helm" "\
-`helm-reposition-window' in other window (not *Helm* window).
-
-\(fn)" t nil)
-
-(autoload 'helm-toggle-visible-mark "../submodules/helm/helm" "\
-Toggle helm visible mark at point.
-
-\(fn)" t nil)
-
-(autoload 'helm-mark-all "../submodules/helm/helm" "\
-Mark all visible unmarked candidates in current source.
-
-\(fn)" t nil)
-
-(autoload 'helm-unmark-all "../submodules/helm/helm" "\
-Unmark all candidates in all sources of current helm session.
-
-\(fn)" t nil)
-
-(autoload 'helm-toggle-all-marks "../submodules/helm/helm" "\
-Toggle all marks.
-Mark all visible candidates of current source or unmark all candidates
-visible or invisible in all sources of current helm session
-
-\(fn)" t nil)
-
-(autoload 'helm-display-all-visible-marks "../submodules/helm/helm" "\
-Show all `helm' visible marks strings.
-Only useful for debugging.
-
-\(fn)" t nil)
-
-(autoload 'helm-next-visible-mark "../submodules/helm/helm" "\
-Move next helm visible mark.
-If PREV is non-nil move to precedent.
-
-\(fn &optional PREV)" t nil)
-
-(autoload 'helm-prev-visible-mark "../submodules/helm/helm" "\
-Move previous helm visible mark.
-
-\(fn)" t nil)
-
-(autoload 'helm-yank-selection "../submodules/helm/helm" "\
-Set minibuffer contents to current display selection.
-With a prefix arg set to real value of current selection.
-
-\(fn ARG)" t nil)
-
-(autoload 'helm-kill-selection-and-quit "../submodules/helm/helm" "\
-Store current selection to kill ring.
-With a prefix arg set to real value of current selection.
-
-\(fn ARG)" t nil)
-
-(autoload 'helm-follow-mode "../submodules/helm/helm" "\
-Execute persistent action everytime the cursor is moved when enabled.
-The mode is enabled for the current source only, you will have to turn it
-on again when you go to next source if you want it there also.
-This mode can be enabled or disabled interactively at anytime during
-helm session or enabled specifically by source by adding the `follow'
-attribute to this source.
-Even when the attribute `follow' exists in source, it is still possible
-to disable/enable this mode interactively.
-Note that when you disable it interactively and `follow' attribute exists,
-`helm-follow-mode' will be disabled on next helm session even if `follow'
-attribute is specified in source. To avoid this set your `follow' attribute
-in source in `helm-before-initialize-hook'.
-
-e.g:
-
-\(add-hook 'helm-before-initialize-hook
-          #'(lambda () (helm-attrset 'follow 1 helm-source-buffers-list)))
-
-This will enable `helm-follow-mode' automatically in `helm-source-buffers-list'.
-
-\(fn &optional ARG)" t nil)
-
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-adaptative" "../submodules/helm/helm-adaptative.el"
-;;;;;;  (21335 30962 0 0))
-;;; Generated autoloads from ../submodules/helm/helm-adaptative.el
+;;;### (autoloads (helm-reset-adaptive-history) "../submodules/helm/helm-adaptive"
+;;;;;;  "../submodules/helm/helm-adaptive.el" (21476 23751 0 0))
+;;; Generated autoloads from ../submodules/helm/helm-adaptive.el
 
-(autoload 'helm-reset-adaptative-history "../submodules/helm/helm-adaptative" "\
+(autoload 'helm-reset-adaptive-history "../submodules/helm/helm-adaptive" "\
 Delete all `helm-adaptive-history' and his file.
 Useful when you have a old or corrupted `helm-adaptive-history-file'.
 
@@ -2075,8 +1912,8 @@ With a prefix arg reload cache.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-bbdb" "../submodules/helm/helm-bbdb.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-bbdb) "../submodules/helm/helm-bbdb" "../submodules/helm/helm-bbdb.el"
+;;;;;;  (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-bbdb.el
 
 (autoload 'helm-bbdb "../submodules/helm/helm-bbdb" "\
@@ -2092,7 +1929,7 @@ http://bbdb.sourceforge.net/
 
 ;;;### (autoloads (helm-filtered-bookmarks helm-pp-bookmarks helm-bookmarks)
 ;;;;;;  "../submodules/helm/helm-bookmark" "../submodules/helm/helm-bookmark.el"
-;;;;;;  (21361 27928 0 0))
+;;;;;;  (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-bookmark.el
 
 (autoload 'helm-bookmarks "../submodules/helm/helm-bookmark" "\
@@ -2114,8 +1951,8 @@ only if external library addressbook-bookmark.el is available.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-buffers" "../submodules/helm/helm-buffers.el"
-;;;;;;  (21346 1128 0 0))
+;;;### (autoloads (helm-buffers-list) "../submodules/helm/helm-buffers"
+;;;;;;  "../submodules/helm/helm-buffers.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-buffers.el
 
 (autoload 'helm-buffers-list "../submodules/helm/helm-buffers" "\
@@ -2168,7 +2005,7 @@ You can get help on each command by persistent action.
 ;;;***
 
 ;;;### (autoloads (helm-configuration) "../submodules/helm/helm-config"
-;;;;;;  "../submodules/helm/helm-config.el" (21361 27928 0 0))
+;;;;;;  "../submodules/helm/helm-config.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-config.el
 
 (autoload 'helm-configuration "../submodules/helm/helm-config" "\
@@ -2178,8 +2015,8 @@ Customize `helm'.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-dabbrev" "../submodules/helm/helm-dabbrev.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-dabbrev) "../submodules/helm/helm-dabbrev"
+;;;;;;  "../submodules/helm/helm-dabbrev.el" (21476 24219 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-dabbrev.el
 
 (autoload 'helm-dabbrev "../submodules/helm/helm-dabbrev" "\
@@ -2193,7 +2030,7 @@ Customize `helm'.
 ;;;;;;  helm-manage-advice helm-apropos helm-lisp-completion-or-file-name-at-point
 ;;;;;;  helm-lisp-indent helm-complete-file-name-at-point helm-lisp-completion-at-point)
 ;;;;;;  "../submodules/helm/helm-elisp" "../submodules/helm/helm-elisp.el"
-;;;;;;  (21361 27928 0 0))
+;;;;;;  (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp.el
 
 (autoload 'helm-lisp-completion-at-point "../submodules/helm/helm-elisp" "\
@@ -2315,8 +2152,8 @@ Preconfigured helm for `helm-source-calculation-result'.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-external" "../submodules/helm/helm-external.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-run-external-command) "../submodules/helm/helm-external"
+;;;;;;  "../submodules/helm/helm-external.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-external.el
 
 (autoload 'helm-run-external-command "../submodules/helm/helm-external" "\
@@ -2331,7 +2168,7 @@ You can set your own list of commands with
 
 ;;;### (autoloads (helm-recentf helm-for-files helm-find-files helm-find
 ;;;;;;  helm-browse-project) "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
-;;;;;;  (21361 27928 0 0))
+;;;;;;  (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-files.el
 
 (autoload 'helm-browse-project "../submodules/helm/helm-files" "\
@@ -2372,8 +2209,8 @@ Preconfigured `helm' for `recentf'.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-firefox" "../submodules/helm/helm-firefox.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-firefox-bookmarks) "../submodules/helm/helm-firefox"
+;;;;;;  "../submodules/helm/helm-firefox.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-firefox.el
 
 (autoload 'helm-firefox-bookmarks "../submodules/helm/helm-firefox" "\
@@ -2420,8 +2257,12 @@ Preconfigured `helm' for gentoo linux.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-grep" "../submodules/helm/helm-grep.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-do-pdfgrep helm-do-zgrep helm-do-grep helm-grep-mode-jump-other-window
+;;;;;;  helm-grep-mode-jump-other-window-backward helm-grep-mode-jump-other-window-forward
+;;;;;;  helm-grep-mode-jump helm-gm-precedent-file helm-gm-next-file
+;;;;;;  helm-grep-mode helm-grep-run-save-buffer helm-goto-next-file
+;;;;;;  helm-goto-precedent-file) "../submodules/helm/helm-grep"
+;;;;;;  "../submodules/helm/helm-grep.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-grep.el
 
 (autoload 'helm-goto-precedent-file "../submodules/helm/helm-grep" "\
@@ -2453,11 +2294,6 @@ Special commands:
 \(fn)" t nil)
 
 (autoload 'helm-gm-precedent-file "../submodules/helm/helm-grep" "\
-
-
-\(fn)" t nil)
-
-(autoload 'helm-grep-mode-quit "../submodules/helm/helm-grep" "\
 
 
 \(fn)" t nil)
@@ -2514,15 +2350,8 @@ Preconfigured helm for pdfgrep.
 ;;;;;;  helm-esh-help helm-bookmark-help helm-ucs-help helm-etags-help
 ;;;;;;  helm-pdfgrep-help helm-grep-help helm-generic-file-help helm-read-file-name-help
 ;;;;;;  helm-ff-help helm-buffer-help helm-help) "../submodules/helm/helm-help"
-;;;;;;  "../submodules/helm/helm-help.el" (21361 27928 0 0))
+;;;;;;  "../submodules/helm/helm-help.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-help.el
-
-(defvar helm-mode-line-string "\\<helm-map>\\[helm-help]:Help \\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct" "\
-Help string displayed in mode-line in `helm'.
-It can be a string or a list of two args, in this case,
-first arg is a string that will be used as name for candidates number,
-second arg any string to display in mode line.
-If nil, use default `mode-line-format'.")
 
 (autoload 'helm-help "../submodules/helm/helm-help" "\
 Help of `helm'.
@@ -2624,53 +2453,53 @@ Help command for ido virtual buffers.
 
 \(fn)" t nil)
 
-(defvar helm-buffer-mode-line-string '("Buffer(s)" "\\<helm-buffer-map>\\[helm-buffer-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct" "String displayed in mode-line in `helm-source-buffers-list'"))
+(defvar helm-buffer-mode-line-string '("Buffer(s)" "\\<helm-buffer-map>\\[helm-buffer-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "String displayed in mode-line in `helm-source-buffers-list'"))
 
 (defvar helm-color-mode-line-string '("Colors" "\\<helm-color-map>\\[helm-color-help]:Help/\\[helm-color-run-insert-name]:Insert name/\\[helm-color-run-insert-rgb]:Insert RGB/with shift: Kill"))
 
-(defvar helm-buffers-ido-virtual-mode-line-string '("Killed Buffer(s)" "\\<helm-buffers-ido-virtual-map>\\[helm-buffers-ido-virtual-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct" "String displayed in mode-line in `helm-source-buffers-list'"))
+(defvar helm-buffers-ido-virtual-mode-line-string '("Killed Buffer(s)" "\\<helm-buffers-ido-virtual-map>\\[helm-buffers-ido-virtual-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "String displayed in mode-line in `helm-source-buffers-list'"))
 
-(defvar helm-ff-mode-line-string "\\<helm-find-files-map>\\[helm-ff-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct" "\
+(defvar helm-ff-mode-line-string "\\<helm-find-files-map>\\[helm-ff-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "\
 String displayed in mode-line in `helm-source-find-files'")
 
-(defvar helm-read-file-name-mode-line-string "\\<helm-read-file-map>\\[helm-read-file-name-help]:Help \\[helm-cr-empty-string]:Empty \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct" "\
+(defvar helm-read-file-name-mode-line-string "\\<helm-read-file-map>\\[helm-read-file-name-help]:Help \\[helm-cr-empty-string]:Empty \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "\
 String displayed in mode-line in `helm-source-find-files'.")
 
-(defvar helm-generic-file-mode-line-string "\\<helm-generic-files-map>\\[helm-generic-file-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct \\[helm-toggle-suspend-update]:Tog.suspend" "\
+(defvar helm-generic-file-mode-line-string "\\<helm-generic-files-map>\\[helm-generic-file-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend" "\
 String displayed in mode-line in Locate.")
 
-(defvar helm-grep-mode-line-string "\\<helm-grep-map>\\[helm-grep-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct \\[helm-toggle-suspend-update]:Tog.suspend" "\
+(defvar helm-grep-mode-line-string "\\<helm-grep-map>\\[helm-grep-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend" "\
 String displayed in mode-line in `helm-do-grep'.")
 
-(defvar helm-pdfgrep-mode-line-string "\\<helm-pdfgrep-map>\\[helm-pdfgrep-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct \\[helm-toggle-suspend-update]:Tog.suspend" "\
+(defvar helm-pdfgrep-mode-line-string "\\<helm-pdfgrep-map>\\[helm-pdfgrep-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend" "\
 String displayed in mode-line in `helm-do-pdfgrep'.")
 
-(defvar helm-etags-mode-line-string "\\<helm-etags-map>\\[helm-etags-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct" "\
+(defvar helm-etags-mode-line-string "\\<helm-etags-map>\\[helm-etags-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "\
 String displayed in mode-line in `helm-etags-select'.")
 
-(defvar helm-ucs-mode-line-string "\\<helm-ucs-map>\\[helm-ucs-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct" "\
+(defvar helm-ucs-mode-line-string "\\<helm-ucs-map>\\[helm-ucs-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "\
 String displayed in mode-line in `helm-ucs'.")
 
-(defvar helm-bookmark-mode-line-string '("Bookmark(s)" "\\<helm-bookmark-map>\\[helm-bookmark-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct") "\
+(defvar helm-bookmark-mode-line-string '("Bookmark(s)" "\\<helm-bookmark-map>\\[helm-bookmark-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct") "\
 String displayed in mode-line in `helm-source-buffers-list'")
 
-(defvar helm-occur-mode-line "\\<helm-map>\\[helm-help]:Help \\<helm-occur-map>\\[helm-occur-run-query-replace-regexp]:Query replace regexp \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
+(defvar helm-occur-mode-line "\\<helm-map>\\[helm-help]:Help \\<helm-occur-map>\\[helm-occur-run-query-replace-regexp]:Query replace regexp \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
 
-(defvar helm-moccur-mode-line "\\<helm-moccur-map>\\[helm-moccur-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
+(defvar helm-moccur-mode-line "\\<helm-moccur-map>\\[helm-moccur-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
 
-(defvar helm-comp-read-mode-line "\\<helm-comp-read-map>\\[helm-cr-empty-string]:Empty \\<helm-map>\\[helm-help]:Help \\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct")
+(defvar helm-comp-read-mode-line "\\<helm-comp-read-map>\\[helm-cr-empty-string]:Empty \\<helm-map>\\[helm-help]:Help \\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct")
 
-(defvar helm-top-mode-line "\\<helm-top-map>\\[helm-top-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
+(defvar helm-top-mode-line "\\<helm-top-map>\\[helm-top-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
 
-(defvar helm-apt-mode-line "\\<helm-apt-map>\\[helm-apt-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
+(defvar helm-apt-mode-line "\\<helm-apt-map>\\[helm-apt-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
 
-(defvar helm-el-package-mode-line "\\<helm-el-package-map>\\[helm-el-package-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
+(defvar helm-el-package-mode-line "\\<helm-el-package-map>\\[helm-el-package-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
 
-(defvar helm-M-x-mode-line "\\<helm-M-x-map>\\[helm-M-x-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
+(defvar helm-M-x-mode-line "\\<helm-M-x-map>\\[helm-M-x-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
 
-(defvar helm-imenu-mode-line "\\<helm-imenu-map>\\[helm-imenu-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
+(defvar helm-imenu-mode-line "\\<helm-imenu-map>\\[helm-imenu-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
 
-(defvar helm-semantic-mode-line "\\<helm-semantic-map>\\[helm-semantic-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
+(defvar helm-semantic-mode-line "\\<helm-semantic-map>\\[helm-semantic-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
 
 (autoload 'helm-describe-helm-attribute "../submodules/helm/helm-help" "\
 Display the full documentation of HELM-ATTRIBUTE.
@@ -2680,8 +2509,8 @@ HELM-ATTRIBUTE should be a symbol.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-imenu" "../submodules/helm/helm-imenu.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-imenu) "../submodules/helm/helm-imenu" "../submodules/helm/helm-imenu.el"
+;;;;;;  (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-imenu.el
 
 (autoload 'helm-imenu "../submodules/helm/helm-imenu" "\
@@ -2691,8 +2520,8 @@ Preconfigured `helm' for `imenu'.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-info" "../submodules/helm/helm-info.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-info-at-point) "../submodules/helm/helm-info"
+;;;;;;  "../submodules/helm/helm-info.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-info.el
 
 (autoload 'helm-info-at-point "../submodules/helm/helm-info" "\
@@ -2704,7 +2533,7 @@ With a prefix-arg insert symbol at point.
 ;;;***
 
 ;;;### (autoloads (helm-locate helm-locate-read-file-name) "../submodules/helm/helm-locate"
-;;;;;;  "../submodules/helm/helm-locate.el" (21361 27928 0 0))
+;;;;;;  "../submodules/helm/helm-locate.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-locate.el
 
 (autoload 'helm-locate-read-file-name "../submodules/helm/helm-locate" "\
@@ -2817,7 +2646,7 @@ Predefined `helm' that provide completion of `comint' history.
 ;;;***
 
 ;;;### (autoloads (helm-mode helm-comp-read) "../submodules/helm/helm-mode"
-;;;;;;  "../submodules/helm/helm-mode.el" (21361 27928 0 0))
+;;;;;;  "../submodules/helm/helm-mode.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-mode.el
 
 (autoload 'helm-comp-read "../submodules/helm/helm-mode" "\
@@ -2936,8 +2765,9 @@ Note: This mode is incompatible with Emacs23.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-net" "../submodules/helm/helm-net.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-wikipedia-suggest helm-yahoo-suggest helm-google-suggest
+;;;;;;  helm-surfraw) "../submodules/helm/helm-net" "../submodules/helm/helm-net.el"
+;;;;;;  (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-net.el
 
 (autoload 'helm-surfraw "../submodules/helm/helm-net" "\
@@ -2963,7 +2793,7 @@ Preconfigured `helm' for Wikipedia lookup with Wikipedia suggest.
 ;;;***
 
 ;;;### (autoloads (helm-org-headlines helm-org-keywords) "../submodules/helm/helm-org"
-;;;;;;  "../submodules/helm/helm-org.el" (21198 44434 0 0))
+;;;;;;  "../submodules/helm/helm-org.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-org.el
 
 (autoload 'helm-org-keywords "../submodules/helm/helm-org" "\
@@ -2978,8 +2808,11 @@ Preconfigured helm to show org headlines.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-regexp" "../submodules/helm/helm-regexp.el"
-;;;;;;  (21346 1128 0 0))
+;;;### (autoloads (helm-multi-occur-from-isearch helm-multi-occur
+;;;;;;  helm-occur-from-isearch helm-occur helm-regexp helm-moccur-mode
+;;;;;;  helm-moccur-run-save-buffer helm-occur-match-plugin-mode)
+;;;;;;  "../submodules/helm/helm-regexp" "../submodules/helm/helm-regexp.el"
+;;;;;;  (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-regexp.el
 
 (defvar helm-occur-match-plugin-mode t "\
@@ -2995,6 +2828,19 @@ or call the function `helm-occur-match-plugin-mode'.")
 Turn On/Off `helm-match-plugin-mode' only for `helm-m/occur'.
 
 \(fn &optional ARG)" t nil)
+
+(autoload 'helm-moccur-run-save-buffer "../submodules/helm/helm-regexp" "\
+Run grep save results action from `helm-do-grep-1'.
+
+\(fn)" t nil)
+
+(autoload 'helm-moccur-mode "../submodules/helm/helm-regexp" "\
+Major mode to provide actions in helm moccur saved buffer.
+
+Special commands:
+\\{helm-moccur-mode-map}
+
+\(fn)" t nil)
 
 (autoload 'helm-regexp "../submodules/helm/helm-regexp" "\
 Preconfigured helm to build regexps.
@@ -3035,8 +2881,9 @@ The prefix arg can be set before calling
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-ring" "../submodules/helm/helm-ring.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-show-kill-ring helm-register helm-all-mark-rings
+;;;;;;  helm-global-mark-ring helm-mark-ring) "../submodules/helm/helm-ring"
+;;;;;;  "../submodules/helm/helm-ring.el" (21476 24219 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-ring.el
 
 (autoload 'helm-mark-ring "../submodules/helm/helm-ring" "\
@@ -3069,8 +2916,8 @@ First call open the kill-ring browser, next calls move to next line.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-semantic" "../submodules/helm/helm-semantic.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-semantic-or-imenu helm-semantic) "../submodules/helm/helm-semantic"
+;;;;;;  "../submodules/helm/helm-semantic.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-semantic.el
 
 (autoload 'helm-semantic "../submodules/helm/helm-semantic" "\
@@ -3130,8 +2977,8 @@ Preconfigured `helm' for emacs process.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-tags" "../submodules/helm/helm-tags.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-etags-select) "../submodules/helm/helm-tags"
+;;;;;;  "../submodules/helm/helm-tags.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-tags.el
 
 (autoload 'helm-etags-select "../submodules/helm/helm-tags" "\
@@ -3152,7 +2999,7 @@ This function aggregates three sources of tag files:
 ;;;### (autoloads (helm-yank-text-at-point helm-w32-shell-execute-open-file
 ;;;;;;  helm-quit-and-find-file helm-display-all-sources helm-show-all-in-this-source-only)
 ;;;;;;  "../submodules/helm/helm-utils" "../submodules/helm/helm-utils.el"
-;;;;;;  (21361 27928 0 0))
+;;;;;;  (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-utils.el
 
 (autoload 'helm-show-all-in-this-source-only "../submodules/helm/helm-utils" "\
@@ -3187,8 +3034,8 @@ grabs the entire symbol.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/helm/helm-w3m" "../submodules/helm/helm-w3m.el"
-;;;;;;  (21335 30962 0 0))
+;;;### (autoloads (helm-w3m-bookmarks) "../submodules/helm/helm-w3m"
+;;;;;;  "../submodules/helm/helm-w3m.el" (21476 23751 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-w3m.el
 
 (autoload 'helm-w3m-bookmarks "../submodules/helm/helm-w3m" "\
@@ -3330,8 +3177,8 @@ Toggle litable-mode
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/lua-mode/lua-mode" "../submodules/lua-mode/lua-mode.el"
-;;;;;;  (21335 30968 0 0))
+;;;### (autoloads (lua-mode) "../submodules/lua-mode/lua-mode" "../submodules/lua-mode/lua-mode.el"
+;;;;;;  (21476 23756 0 0))
 ;;; Generated autoloads from ../submodules/lua-mode/lua-mode.el
 
 (autoload 'lua-mode "../submodules/lua-mode/lua-mode" "\
@@ -3365,7 +3212,7 @@ Major mode for editing Lua code.
 ;;;;;;  magit-create-branch magit-checkout magit-merge-abort magit-merge
 ;;;;;;  magit-show magit-dired-jump magit-unstage-all magit-stage-all
 ;;;;;;  magit-status magit-show-commit magit-git-command) "../submodules/magit/magit"
-;;;;;;  "../submodules/magit/magit.el" (21361 27928 0 0))
+;;;;;;  "../submodules/magit/magit.el" (21476 24226 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit.el
 
 (autoload 'magit-git-command "../submodules/magit/magit" "\
@@ -3774,9 +3621,11 @@ Resolve a merge conflict using Ediff.
 \(fn FILE)" t nil)
 
 (autoload 'magit-diff "../submodules/magit/magit" "\
-Show differences between in a range.
-You can also show the changes in a single commit by omitting the
-range end, but for that `magit-show-commit' is a better option.
+Show differences between two commits.
+RANGE should be a range (A..B or A...B) but can also be a single
+commit.  If one side of the range is omitted, then it defaults
+to HEAD.  If just a commit is given, then changes in the working
+tree relative to that commit are shown.
 
 \(fn RANGE &optional WORKING ARGS)" t nil)
 
@@ -3894,7 +3743,7 @@ to nil.")
 ;;;### (autoloads (turn-on-magit-stgit magit-stgit-mode magit-stgit-show
 ;;;;;;  magit-stgit-goto magit-stgit-discard magit-stgit-rebase magit-stgit-repair
 ;;;;;;  magit-stgit-refresh) "../submodules/magit/magit-stgit" "../submodules/magit/magit-stgit.el"
-;;;;;;  (21262 61930 0 0))
+;;;;;;  (21476 24226 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-stgit.el
 
 (autoload 'magit-stgit-refresh "../submodules/magit/magit-stgit" "\
@@ -3939,13 +3788,15 @@ Unconditionally turn on `magit-stgit-mode'.
 
 \(fn)" nil nil)
 
+(custom-add-option 'magit-mode-hook #'magit-stgit-mode)
+
 ;;;***
 
 ;;;### (autoloads (turn-on-magit-svn magit-svn-mode magit-svn-fetch-externals
 ;;;;;;  magit-svn-remote-update magit-svn-dcommit magit-svn-rebase
 ;;;;;;  magit-svn-create-tag magit-svn-create-branch magit-svn-find-rev)
 ;;;;;;  "../submodules/magit/magit-svn" "../submodules/magit/magit-svn.el"
-;;;;;;  (21262 61930 0 0))
+;;;;;;  (21476 24226 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-svn.el
 
 (autoload 'magit-svn-find-rev "../submodules/magit/magit-svn" "\
@@ -3994,10 +3845,12 @@ Unconditionally turn on `magit-svn-mode'.
 
 \(fn)" nil nil)
 
+(custom-add-option 'magit-mode-hook #'magit-svn-mode)
+
 ;;;***
 
 ;;;### (autoloads (turn-on-magit-topgit magit-topgit-mode) "../submodules/magit/magit-topgit"
-;;;;;;  "../submodules/magit/magit-topgit.el" (21262 61930 0 0))
+;;;;;;  "../submodules/magit/magit-topgit.el" (21476 24226 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit-topgit.el
 
 (autoload 'magit-topgit-mode "../submodules/magit/magit-topgit" "\
@@ -4009,6 +3862,8 @@ Topgit support for Magit
 Unconditionally turn on `magit-topgit-mode'.
 
 \(fn)" nil nil)
+
+(custom-add-option 'magit-mode-hook #'magit-topgit-mode)
 
 ;;;***
 
@@ -5125,11 +4980,11 @@ Display weather report.
 ;;;***
 
 ;;;### (autoloads (web-mode) "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
-;;;;;;  (21361 27929 0 0))
+;;;;;;  (21479 6738 0 0))
 ;;; Generated autoloads from ../submodules/web-mode/web-mode.el
 
 (autoload 'web-mode "../submodules/web-mode/web-mode" "\
-Major mode for editing web templates (HTML documents with embedded parts and blocks).
+Major mode for editing web templates.
 
 \(fn)" t nil)
 
@@ -5153,7 +5008,7 @@ Simple mode to edit YAML.
 ;;;***
 
 ;;;### (autoloads (yas-global-mode yas-minor-mode) "../submodules/yasnippet/yasnippet"
-;;;;;;  "../submodules/yasnippet/yasnippet.el" (21361 27929 0 0))
+;;;;;;  "../submodules/yasnippet/yasnippet.el" (21476 23665 0 0))
 ;;; Generated autoloads from ../submodules/yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "../submodules/yasnippet/yasnippet" "\
@@ -5250,9 +5105,8 @@ accept it or skip it.
 ;;;***
 
 ;;;### (autoloads nil nil ("../custom/jdf-dictionary.el" "../submodules/auto-complete-clang/auto-complete-clang.el"
-;;;;;;  "../submodules/auto-complete/auto-complete-config.el" "../submodules/auto-complete/auto-complete-pkg.el"
-;;;;;;  "../submodules/dash/dash-functional.el" "../submodules/dash/dash.el"
-;;;;;;  "../submodules/emacs-websocket/websocket-functional-test.el"
+;;;;;;  "../submodules/auto-complete/auto-complete-pkg.el" "../submodules/dash/dash-functional.el"
+;;;;;;  "../submodules/dash/dash.el" "../submodules/emacs-websocket/websocket-functional-test.el"
 ;;;;;;  "../submodules/emacs-websocket/websocket-test.el" "../submodules/emacs-websocket/websocket.el"
 ;;;;;;  "../submodules/expand-region/cc-mode-expansions.el" "../submodules/expand-region/clojure-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/cperl-mode-expansions.el" "../submodules/expand-region/css-mode-expansions.el"
@@ -5273,7 +5127,8 @@ accept it or skip it.
 ;;;;;;  "../submodules/gh/gh.el" "../submodules/helm/helm-aliases.el"
 ;;;;;;  "../submodules/helm/helm-pkg.el" "../submodules/helm/helm-plugin.el"
 ;;;;;;  "../submodules/json/json.el" "../submodules/logito/logito.el"
-;;;;;;  "../submodules/multiple-cursors/mc-cycle-cursors.el" "../submodules/multiple-cursors/multiple-cursors-core.el"
+;;;;;;  "../submodules/multiple-cursors/mc-cycle-cursors.el" "../submodules/multiple-cursors/mc-hide-unmatched-lines-mode.el"
+;;;;;;  "../submodules/multiple-cursors/multiple-cursors-core.el"
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors-pkg.el"
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors.el" "../submodules/p4/p4.el"
 ;;;;;;  "../submodules/pcache/pcache-tests.el" "../submodules/pcache/pcache.el"
@@ -5287,7 +5142,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/web-mode/wfs-mode.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (21409 19722 671513 0))
+;;;;;;  (21479 6755 142128 0))
 
 ;;;***
 
