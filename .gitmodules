@@ -186,3 +186,9 @@
 	path = submodules/scss-mode
 	url = https://github.com/antonj/scss-mode.git
 	branch = master
+[submodule "submodules/helm-spotify"]
+	path = submodules/helm-spotify
+	url = https://github.com/krisajenkins/helm-spotify.git
+[submodule "submodules/emacs-multi"]
+	path = submodules/emacs-multi
+	url = https://github.com/kurisuwhyte/emacs-multi.git
