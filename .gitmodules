@@ -189,6 +189,8 @@
 [submodule "submodules/helm-spotify"]
 	path = submodules/helm-spotify
 	url = https://github.com/krisajenkins/helm-spotify.git
+	branch = master
 [submodule "submodules/emacs-multi"]
 	path = submodules/emacs-multi
 	url = https://github.com/kurisuwhyte/emacs-multi.git
+	branch = master
