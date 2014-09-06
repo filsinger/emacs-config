@@ -49,6 +49,13 @@
       (setq interprogram-cut-function 'cut-to-osx)
       (setq interprogram-paste-function 'paste-from-osx) )
     )
+
+  (when (file-readable-p "/usr/local/opt/cmake/share/cmake/editors/emacs/cmake-mode.el")
+    (add-to-list 'load-path "/usr/local/opt/cmake/share/cmake/editors/emacs/")
+      (load "cmake-mode.el")
+      (add-to-list 'auto-mode-alist '("\\CMakeLists.txt$" . cmake-mode))
+    )
+
 )
 
 ;; ================================================
