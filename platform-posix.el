@@ -56,6 +56,9 @@
       (add-to-list 'auto-mode-alist '("\\CMakeLists.txt$" . cmake-mode))
     )
 
+  (when (file-executable-p "/usr/local/opt/llvm/bin/clang-format")
+    (setq clang-format-executable "/usr/local/opt/llvm/bin/clang-format"))
+
 )
 
 ;; ================================================
