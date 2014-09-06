@@ -55,11 +55,11 @@
       (load "cmake-mode.el")
       (add-to-list 'auto-mode-alist '("\\CMakeLists.txt$" . cmake-mode))
     )
-
-  (when (file-executable-p "/usr/local/opt/llvm/bin/clang-format")
-    (setq clang-format-executable "/usr/local/opt/llvm/bin/clang-format"))
-
 )
+
+(let ((clang-format-script (expand-file-name (concat "~/.dotfiles/bin/clang-format"))))
+  (when (file-executable-p clang-format-script)
+    (setq clang-format-executable clang-format-script)))
 
 ;; ================================================
 ;; Clang autocomplete (set the clang-flags for posix-systems
