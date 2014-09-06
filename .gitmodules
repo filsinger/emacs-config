@@ -194,3 +194,11 @@
 	path = submodules/emacs-multi
 	url = https://github.com/kurisuwhyte/emacs-multi.git
 	branch = master
+[submodule "submodules/clang-format"]
+	path = submodules/clang-format
+	url = https://github.com/kljohann/clang-format.el.git
+	branch = master
+[submodule "submodules/flycheck-clangcheck"]
+	path = submodules/flycheck-clangcheck
+	url = https://github.com/kumar8600/flycheck-clangcheck.git
+	branch = master

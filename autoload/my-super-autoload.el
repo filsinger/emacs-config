@@ -557,7 +557,7 @@ Key bindings:
 
 ;;;### (autoloads (global-auto-complete-mode auto-complete-mode auto-complete)
 ;;;;;;  "../submodules/auto-complete/auto-complete" "../submodules/auto-complete/auto-complete.el"
-;;;;;;  (21500 18730 0 0))
+;;;;;;  (21501 22038 0 0))
 ;;; Generated autoloads from ../submodules/auto-complete/auto-complete.el
 
 (autoload 'auto-complete "../submodules/auto-complete/auto-complete" "\
@@ -607,7 +607,7 @@ See `auto-complete-mode' for more information on Auto-Complete mode.
 
 ;;;### (autoloads (browse-kill-ring browse-kill-ring-default-keybindings)
 ;;;;;;  "../submodules/browse-kill-ring/browse-kill-ring" "../submodules/browse-kill-ring/browse-kill-ring.el"
-;;;;;;  (21500 18731 0 0))
+;;;;;;  (21501 22038 0 0))
 ;;; Generated autoloads from ../submodules/browse-kill-ring/browse-kill-ring.el
 
 (autoload 'browse-kill-ring-default-keybindings "../submodules/browse-kill-ring/browse-kill-ring" "\
@@ -622,6 +622,20 @@ behavior.  This function sets things up so that M-y will invoke
 Display items in the `kill-ring' in another buffer.
 
 \(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads (clang-format-region) "../submodules/clang-format/clang-format"
+;;;;;;  "../submodules/clang-format/clang-format.el" (21515 29834
+;;;;;;  0 0))
+;;; Generated autoloads from ../submodules/clang-format/clang-format.el
+
+(autoload 'clang-format-region "../submodules/clang-format/clang-format" "\
+Use clang-format to format the code between START and END according to STYLE.
+If called interactively uses the region or the current buffer if there
+is no active region.  If no style is given uses `clang-format-style'.
+
+\(fn START END &optional STYLE)" t nil)
 
 ;;;***
 
@@ -1276,7 +1290,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;### (autoloads (flycheck-define-error-level flycheck-info flycheck-def-option-var
 ;;;;;;  flycheck-def-config-file-var global-flycheck-mode flycheck-mode)
 ;;;;;;  "../submodules/flycheck/flycheck" "../submodules/flycheck/flycheck.el"
-;;;;;;  (21500 18738 0 0))
+;;;;;;  (21501 22038 0 0))
 ;;; Generated autoloads from ../submodules/flycheck/flycheck.el
 
 (autoload 'flycheck-mode "../submodules/flycheck/flycheck" "\
@@ -1614,7 +1628,7 @@ Displays a list of all of the current user's gists in a new buffer.
 ;;;***
 
 ;;;### (autoloads (git-commit-mode) "../submodules/git-modes/git-commit-mode"
-;;;;;;  "../submodules/git-modes/git-commit-mode.el" (21500 18741
+;;;;;;  "../submodules/git-modes/git-commit-mode.el" (21501 22039
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/git-modes/git-commit-mode.el
 
@@ -1734,8 +1748,8 @@ Bring up a Spotify search interface in helm.
 
 ;;;### (autoloads (helm-other-buffer helm helm-debug-open-last-log
 ;;;;;;  helm-define-key-with-subkeys helm-multi-key-defun helm-define-multi-key)
-;;;;;;  "../submodules/helm/helm" "../submodules/helm/helm.el" (21500
-;;;;;;  18744 0 0))
+;;;;;;  "../submodules/helm/helm" "../submodules/helm/helm.el" (21501
+;;;;;;  22039 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm.el
 
 (autoload 'helm-define-multi-key "../submodules/helm/helm" "\
@@ -1943,7 +1957,7 @@ http://bbdb.sourceforge.net/
 
 ;;;### (autoloads (helm-filtered-bookmarks helm-pp-bookmarks helm-bookmarks)
 ;;;;;;  "../submodules/helm/helm-bookmark" "../submodules/helm/helm-bookmark.el"
-;;;;;;  (21500 18744 0 0))
+;;;;;;  (21501 22039 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-bookmark.el
 
 (autoload 'helm-bookmarks "../submodules/helm/helm-bookmark" "\
@@ -1966,7 +1980,7 @@ only if external library addressbook-bookmark.el is available.
 ;;;***
 
 ;;;### (autoloads (helm-buffers-list) "../submodules/helm/helm-buffers"
-;;;;;;  "../submodules/helm/helm-buffers.el" (21500 18744 0 0))
+;;;;;;  "../submodules/helm/helm-buffers.el" (21501 22039 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-buffers.el
 
 (autoload 'helm-buffers-list "../submodules/helm/helm-buffers" "\
@@ -2005,7 +2019,7 @@ You can get help on each command by persistent action.
 ;;;***
 
 ;;;### (autoloads (helm-configuration) "../submodules/helm/helm-config"
-;;;;;;  "../submodules/helm/helm-config.el" (21500 18744 0 0))
+;;;;;;  "../submodules/helm/helm-config.el" (21501 22039 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-config.el
 
 (autoload 'helm-configuration "../submodules/helm/helm-config" "\
@@ -2016,7 +2030,7 @@ Customize `helm'.
 ;;;***
 
 ;;;### (autoloads (helm-dabbrev) "../submodules/helm/helm-dabbrev"
-;;;;;;  "../submodules/helm/helm-dabbrev.el" (21500 18744 0 0))
+;;;;;;  "../submodules/helm/helm-dabbrev.el" (21501 22039 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-dabbrev.el
 
 (autoload 'helm-dabbrev "../submodules/helm/helm-dabbrev" "\
@@ -2030,7 +2044,7 @@ Customize `helm'.
 ;;;;;;  helm-manage-advice helm-apropos helm-lisp-completion-or-file-name-at-point
 ;;;;;;  helm-lisp-indent helm-complete-file-name-at-point helm-lisp-completion-at-point)
 ;;;;;;  "../submodules/helm/helm-elisp" "../submodules/helm/helm-elisp.el"
-;;;;;;  (21500 18744 0 0))
+;;;;;;  (21501 22039 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp.el
 
 (autoload 'helm-lisp-completion-at-point "../submodules/helm/helm-elisp" "\
@@ -2169,7 +2183,7 @@ You can set your own list of commands with
 
 ;;;### (autoloads (helm-recentf helm-for-files helm-find-files helm-find
 ;;;;;;  helm-browse-project) "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
-;;;;;;  (21500 18744 0 0))
+;;;;;;  (21501 22039 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-files.el
 
 (autoload 'helm-browse-project "../submodules/helm/helm-files" "\
@@ -2263,7 +2277,7 @@ Preconfigured `helm' for gentoo linux.
 ;;;;;;  helm-grep-mode-jump helm-gm-precedent-file helm-gm-next-file
 ;;;;;;  helm-grep-mode helm-grep-run-save-buffer helm-goto-next-file
 ;;;;;;  helm-goto-precedent-file) "../submodules/helm/helm-grep"
-;;;;;;  "../submodules/helm/helm-grep.el" (21500 18744 0 0))
+;;;;;;  "../submodules/helm/helm-grep.el" (21501 22039 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-grep.el
 
 (autoload 'helm-goto-precedent-file "../submodules/helm/helm-grep" "\
@@ -2351,7 +2365,7 @@ Preconfigured helm for pdfgrep.
 ;;;;;;  helm-esh-help helm-bookmark-help helm-ucs-help helm-etags-help
 ;;;;;;  helm-pdfgrep-help helm-grep-help helm-generic-file-help helm-read-file-name-help
 ;;;;;;  helm-ff-help helm-buffer-help helm-help) "../submodules/helm/helm-help"
-;;;;;;  "../submodules/helm/helm-help.el" (21500 18744 0 0))
+;;;;;;  "../submodules/helm/helm-help.el" (21501 22039 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-help.el
 
 (autoload 'helm-help "../submodules/helm/helm-help" "\
@@ -2575,7 +2589,7 @@ With a prefix arg reinitialize the cache.
 ;;;***
 
 ;;;### (autoloads (helm-match-plugin-mode) "../submodules/helm/helm-match-plugin"
-;;;;;;  "../submodules/helm/helm-match-plugin.el" (21500 18744 0
+;;;;;;  "../submodules/helm/helm-match-plugin.el" (21501 22039 0
 ;;;;;;  0))
 ;;; Generated autoloads from ../submodules/helm/helm-match-plugin.el
 
@@ -3006,7 +3020,7 @@ This function aggregates three sources of tag files:
 ;;;### (autoloads (helm-yank-text-at-point helm-w32-shell-execute-open-file
 ;;;;;;  helm-quit-and-find-file helm-display-all-sources helm-show-all-in-this-source-only)
 ;;;;;;  "../submodules/helm/helm-utils" "../submodules/helm/helm-utils.el"
-;;;;;;  (21500 18744 0 0))
+;;;;;;  (21501 22039 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-utils.el
 
 (autoload 'helm-show-all-in-this-source-only "../submodules/helm/helm-utils" "\
@@ -3220,7 +3234,7 @@ Major mode for editing Lua code.
 ;;;;;;  magit-create-branch magit-checkout magit-merge-abort magit-merge
 ;;;;;;  magit-show magit-dired-jump magit-unstage-all magit-stage-all
 ;;;;;;  magit-status magit-show-commit magit-git-command) "../submodules/magit/magit"
-;;;;;;  "../submodules/magit/magit.el" (21500 18750 0 0))
+;;;;;;  "../submodules/magit/magit.el" (21501 22039 0 0))
 ;;; Generated autoloads from ../submodules/magit/magit.el
 
 (autoload 'magit-git-command "../submodules/magit/magit" "\
@@ -3913,7 +3927,7 @@ See `magit-wip-save-mode' for more information on Magit-Wip-Save mode.
 ;;;***
 
 ;;;### (autoloads (gfm-mode markdown-mode) "../submodules/markdown-mode/markdown-mode"
-;;;;;;  "../submodules/markdown-mode/markdown-mode.el" (21500 18752
+;;;;;;  "../submodules/markdown-mode/markdown-mode.el" (21501 22039
 ;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/markdown-mode/markdown-mode.el
 
@@ -5003,7 +5017,7 @@ Display weather report.
 ;;;***
 
 ;;;### (autoloads (web-mode) "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
-;;;;;;  (21500 18761 0 0))
+;;;;;;  (21501 22040 0 0))
 ;;; Generated autoloads from ../submodules/web-mode/web-mode.el
 
 (autoload 'web-mode "../submodules/web-mode/web-mode" "\
@@ -5014,7 +5028,7 @@ Major mode for editing web templates.
 ;;;***
 
 ;;;### (autoloads (yaml-mode yaml) "../submodules/yaml-mode/yaml-mode"
-;;;;;;  "../submodules/yaml-mode/yaml-mode.el" (21500 18762 0 0))
+;;;;;;  "../submodules/yaml-mode/yaml-mode.el" (21501 22040 0 0))
 ;;; Generated autoloads from ../submodules/yaml-mode/yaml-mode.el
 
 (let ((loads (get 'yaml 'custom-loads))) (if (member '"../submodules/yaml-mode/yaml-mode" loads) nil (put 'yaml 'custom-loads (cons '"../submodules/yaml-mode/yaml-mode" loads))))
@@ -5031,7 +5045,7 @@ Simple mode to edit YAML.
 ;;;***
 
 ;;;### (autoloads (yas-global-mode yas-minor-mode) "../submodules/yasnippet/yasnippet"
-;;;;;;  "../submodules/yasnippet/yasnippet.el" (21500 18765 0 0))
+;;;;;;  "../submodules/yasnippet/yasnippet.el" (21501 22040 0 0))
 ;;; Generated autoloads from ../submodules/yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "../submodules/yasnippet/yasnippet" "\
@@ -5147,6 +5161,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/expand-region/sml-mode-expansions.el" "../submodules/expand-region/text-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/the-org-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/web-mode-expansions.el" "../submodules/f/f.el"
+;;;;;;  "../submodules/flycheck-clangcheck/flycheck-clangcheck.el"
 ;;;;;;  "../submodules/gh/gh-pkg.el" "../submodules/gh/gh-profile.el"
 ;;;;;;  "../submodules/gh/gh.el" "../submodules/helm/helm-aliases.el"
 ;;;;;;  "../submodules/helm/helm-pkg.el" "../submodules/helm/helm-plugin.el"
@@ -5166,7 +5181,7 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/web-mode/wfs-mode.el"
 ;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (21500 18779 962315 0))
+;;;;;;  (21515 30129 582601 0))
 
 ;;;***
 
