@@ -68,11 +68,11 @@
       (mapcar (lambda (item)(concat "-I" item))
               (split-string
                "
- /usr/llvm-gcc-4.2/bin/../lib/gcc/i686-apple-darwin11/4.2.1/include
+ /usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include
  /usr/include/c++/4.2.1
  /usr/include/c++/4.2.1/backward
  /usr/local/include
- /Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include
+ /Applications/Xcode.app/Contents/Developer/usr/lib/llvm-gcc/4.2.1/include
  /usr/include
  /System/Library/Frameworks
  /Library/Frameworks
