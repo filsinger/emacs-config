@@ -3,9 +3,8 @@
 ;;; Code:
 
 
-;;;### (autoloads (align-c-function-parameters) "../custom/align-c-function-parameters"
-;;;;;;  "../custom/align-c-function-parameters.el" (20955 13950 0
-;;;;;;  0))
+;;;### (autoloads nil "../custom/align-c-function-parameters" "../custom/align-c-function-parameters.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/align-c-function-parameters.el
 
 (autoload 'align-c-function-parameters "../custom/align-c-function-parameters" "\
@@ -15,8 +14,8 @@
 
 ;;;***
 
-;;;### (autoloads (bat-mode) "../custom/bat-mode" "../custom/bat-mode.el"
-;;;;;;  (20925 9810 0 0))
+;;;### (autoloads nil "../custom/bat-mode" "../custom/bat-mode.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/bat-mode.el
 
 (autoload 'bat-mode "../custom/bat-mode" "\
@@ -26,9 +25,8 @@ Mode for DOS and Windows BAT files
 
 ;;;***
 
-;;;### (autoloads (camelscore-word-at-point camelscore camelcase
-;;;;;;  split-name) "../custom/camelscore" "../custom/camelscore.el"
-;;;;;;  (20925 9810 0 0))
+;;;### (autoloads nil "../custom/camelscore" "../custom/camelscore.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/camelscore.el
 
 (autoload 'split-name "../custom/camelscore" "\
@@ -53,8 +51,8 @@ Mode for DOS and Windows BAT files
 
 ;;;***
 
-;;;### (autoloads (delete-region-or-char) "../custom/delete-region-or-char"
-;;;;;;  "../custom/delete-region-or-char.el" (20925 9810 0 0))
+;;;### (autoloads nil "../custom/delete-region-or-char" "../custom/delete-region-or-char.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/delete-region-or-char.el
 
 (autoload 'delete-region-or-char "../custom/delete-region-or-char" "\
@@ -64,8 +62,8 @@ Deletes a region or a char
 
 ;;;***
 
-;;;### (autoloads (eval-and-replace) "../custom/eval-and-replace"
-;;;;;;  "../custom/eval-and-replace.el" (20925 9810 0 0))
+;;;### (autoloads nil "../custom/eval-and-replace" "../custom/eval-and-replace.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/eval-and-replace.el
 
 (autoload 'eval-and-replace "../custom/eval-and-replace" "\
@@ -75,10 +73,8 @@ Replace the preceding sexp with its value.
 
 ;;;***
 
-;;;### (autoloads (kill-smartly kill-symbol mark-between-parentheses
-;;;;;;  kill-between-parentheses kill-to-end-of-string kill-string)
-;;;;;;  "../custom/expression-utils" "../custom/expression-utils.el"
-;;;;;;  (20925 9810 0 0))
+;;;### (autoloads nil "../custom/expression-utils" "../custom/expression-utils.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/expression-utils.el
 
 (autoload 'kill-string "../custom/expression-utils" "\
@@ -120,8 +116,8 @@ It will do one of the following.
 
 ;;;***
 
-;;;### (autoloads (gtags-mode) "../custom/gtags" "../custom/gtags.el"
-;;;;;;  (20925 9810 0 0))
+;;;### (autoloads nil "../custom/gtags" "../custom/gtags.el" (21640
+;;;;;;  50928 159764 724000))
 ;;; Generated autoloads from ../custom/gtags.el
 
 (autoload 'gtags-mode "../custom/gtags" "\
@@ -163,8 +159,8 @@ with no args, if that value is non-nil.
 
 ;;;***
 
-;;;### (autoloads (helm-mine) "../custom/helm-my-things" "../custom/helm-my-things.el"
-;;;;;;  (21128 43933 0 0))
+;;;### (autoloads nil "../custom/helm-my-things" "../custom/helm-my-things.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/helm-my-things.el
 
 (autoload 'helm-mine "../custom/helm-my-things" "\
@@ -174,8 +170,8 @@ with no args, if that value is non-nil.
 
 ;;;***
 
-;;;### (autoloads (ibuffer-ido-find-file) "../custom/ibuffer-ido-find-file"
-;;;;;;  "../custom/ibuffer-ido-find-file.el" (20925 9810 0 0))
+;;;### (autoloads nil "../custom/ibuffer-ido-find-file" "../custom/ibuffer-ido-find-file.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/ibuffer-ido-find-file.el
 
 (autoload 'ibuffer-ido-find-file "../custom/ibuffer-ido-find-file" "\
@@ -185,8 +181,8 @@ Like `find-file', but default to the directory of the buffer at point.
 
 ;;;***
 
-;;;### (autoloads (ido-imenu) "../custom/ido-imenu" "../custom/ido-imenu.el"
-;;;;;;  (20925 9810 0 0))
+;;;### (autoloads nil "../custom/ido-imenu" "../custom/ido-imenu.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/ido-imenu.el
 
 (autoload 'ido-imenu "../custom/ido-imenu" "\
@@ -197,9 +193,8 @@ Symbols matching the text at point are put first in the completion list.
 
 ;;;***
 
-;;;### (autoloads (indent-buffer-and-delete-trailing-whitespace indent-buffer)
-;;;;;;  "../custom/indent-buffer" "../custom/indent-buffer.el" (20925
-;;;;;;  9810 0 0))
+;;;### (autoloads nil "../custom/indent-buffer" "../custom/indent-buffer.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/indent-buffer.el
 
 (autoload 'indent-buffer "../custom/indent-buffer" "\
@@ -214,8 +209,8 @@ Remove all trailing whitespace in the current buffer and indent all nonblank lin
 
 ;;;***
 
-;;;### (autoloads (jf-generate-autoload-files) "../custom/jf-generate-autoload"
-;;;;;;  "../custom/jf-generate-autoload.el" (20925 9810 0 0))
+;;;### (autoloads nil "../custom/jf-generate-autoload" "../custom/jf-generate-autoload.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/jf-generate-autoload.el
 
 (autoload 'jf-generate-autoload-files "../custom/jf-generate-autoload" "\
@@ -225,9 +220,8 @@ Remove all trailing whitespace in the current buffer and indent all nonblank lin
 
 ;;;***
 
-;;;### (autoloads (kill-filename-function-line) "../custom/kill-filename-function-line"
-;;;;;;  "../custom/kill-filename-function-line.el" (21000 42383 0
-;;;;;;  0))
+;;;### (autoloads nil "../custom/kill-filename-function-line" "../custom/kill-filename-function-line.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/kill-filename-function-line.el
 
 (autoload 'kill-filename-function-line "../custom/kill-filename-function-line" "\
@@ -237,8 +231,8 @@ Remove all trailing whitespace in the current buffer and indent all nonblank lin
 
 ;;;***
 
-;;;### (autoloads (move-line-up move-line-down) "../custom/move-line"
-;;;;;;  "../custom/move-line.el" (20925 9810 0 0))
+;;;### (autoloads nil "../custom/move-line" "../custom/move-line.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/move-line.el
 
 (autoload 'move-line-down "../custom/move-line" "\
@@ -253,8 +247,8 @@ Remove all trailing whitespace in the current buffer and indent all nonblank lin
 
 ;;;***
 
-;;;### (autoloads (my-ido-find-tag) "../custom/my-ido-find-tag" "../custom/my-ido-find-tag.el"
-;;;;;;  (20925 9810 0 0))
+;;;### (autoloads nil "../custom/my-ido-find-tag" "../custom/my-ido-find-tag.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/my-ido-find-tag.el
 
 (autoload 'my-ido-find-tag "../custom/my-ido-find-tag" "\
@@ -264,8 +258,8 @@ Find a tag using ido
 
 ;;;***
 
-;;;### (autoloads (p4-find-files) "../custom/p4-find-files" "../custom/p4-find-files.el"
-;;;;;;  (21128 43933 0 0))
+;;;### (autoloads nil "../custom/p4-find-files" "../custom/p4-find-files.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/p4-find-files.el
 
 (autoload 'p4-find-files "../custom/p4-find-files" "\
@@ -275,8 +269,8 @@ Find files using depot syntax
 
 ;;;***
 
-;;;### (autoloads (recentf-ido-find-file) "../custom/recentf-ido-find-file"
-;;;;;;  "../custom/recentf-ido-find-file.el" (20925 9810 0 0))
+;;;### (autoloads nil "../custom/recentf-ido-find-file" "../custom/recentf-ido-find-file.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/recentf-ido-find-file.el
 
 (autoload 'recentf-ido-find-file "../custom/recentf-ido-find-file" "\
@@ -286,8 +280,8 @@ Find a recent file using ido.
 
 ;;;***
 
-;;;### (autoloads (smart-open-line) "../custom/smart-open-line" "../custom/smart-open-line.el"
-;;;;;;  (20925 9810 0 0))
+;;;### (autoloads nil "../custom/smart-open-line" "../custom/smart-open-line.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/smart-open-line.el
 
 (autoload 'smart-open-line "../custom/smart-open-line" "\
@@ -298,9 +292,9 @@ Position the cursor at its beginning, according to the current mode.
 
 ;;;***
 
-;;;### (autoloads (smarter-move-beginning-of-line) "../custom/smarter-move-beginning-of-line"
-;;;;;;  "../custom/smarter-move-beginning-of-line.el" (20925 9810
-;;;;;;  0 0))
+;;;### (autoloads nil "../custom/smarter-move-beginning-of-line"
+;;;;;;  "../custom/smarter-move-beginning-of-line.el" (21640 50928
+;;;;;;  159764 724000))
 ;;; Generated autoloads from ../custom/smarter-move-beginning-of-line.el
 
 (autoload 'smarter-move-beginning-of-line "../custom/smarter-move-beginning-of-line" "\
@@ -318,18 +312,8 @@ point reaches the beginning or end of the buffer, stop there.
 
 ;;;***
 
-;;;### (autoloads (sr-speedbar-handle-other-window-advice sr-speedbar-buffer-exist-p
-;;;;;;  sr-speedbar-window-exist-p sr-speedbar-window-dedicated-only-one-p
-;;;;;;  sr-speedbar-current-window-take-width sr-speedbar-handle-auto-refresh
-;;;;;;  sr-speedbar-refresh sr-speedbar-kill-buffer-hook sr-speedbar-visiting-tag-hook
-;;;;;;  sr-speedbar-visiting-file-hook sr-speedbar-before-visiting-tag-hook
-;;;;;;  sr-speedbar-before-visiting-file-hook sr-speedbar-get-window
-;;;;;;  sr-speedbar-recalculate-width sr-speedbar-remember-window-width
-;;;;;;  sr-speedbar-window-p sr-speedbar-exist-p sr-speedbar-refresh-toggle
-;;;;;;  sr-speedbar-refresh-turn-off sr-speedbar-refresh-turn-on
-;;;;;;  sr-speedbar-select-window sr-speedbar-close sr-speedbar-open
-;;;;;;  sr-speedbar-toggle) "../custom/sr-speedbar" "../custom/sr-speedbar.el"
-;;;;;;  (20925 9810 0 0))
+;;;### (autoloads nil "../custom/sr-speedbar" "../custom/sr-speedbar.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/sr-speedbar.el
 
 (autoload 'sr-speedbar-toggle "../custom/sr-speedbar" "\
@@ -468,8 +452,8 @@ Otherwise disable it.
 
 ;;;***
 
-;;;### (autoloads (yas/popup-isearch-prompt) "../custom/yasnippet-customizations"
-;;;;;;  "../custom/yasnippet-customizations.el" (20925 9810 0 0))
+;;;### (autoloads nil "../custom/yasnippet-customizations" "../custom/yasnippet-customizations.el"
+;;;;;;  (21640 50928 159764 724000))
 ;;; Generated autoloads from ../custom/yasnippet-customizations.el
 
 (autoload 'yas/popup-isearch-prompt "../custom/yasnippet-customizations" "\
@@ -479,10 +463,9 @@ Otherwise disable it.
 
 ;;;***
 
-;;;### (autoloads (ace-jump-mode ace-jump-line-mode ace-jump-word-mode
-;;;;;;  ace-jump-char-mode ace-jump-mode-pop-mark) "../submodules/ace-jump-mode/ace-jump-mode"
-;;;;;;  "../submodules/ace-jump-mode/ace-jump-mode.el" (21477 16344
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/ace-jump-mode/ace-jump-mode"
+;;;;;;  "../submodules/ace-jump-mode/ace-jump-mode.el" (21640 50935
+;;;;;;  819764 560000))
 ;;; Generated autoloads from ../submodules/ace-jump-mode/ace-jump-mode.el
 
 (autoload 'ace-jump-mode-pop-mark "../submodules/ace-jump-mode/ace-jump-mode" "\
@@ -533,9 +516,8 @@ You can constrol whether use the case sensitive via
 
 ;;;***
 
-;;;### (autoloads (arduino-mode) "../submodules/arduino-mode/arduino-mode"
-;;;;;;  "../submodules/arduino-mode/arduino-mode.el" (21361 26802
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/arduino-mode/arduino-mode" "../submodules/arduino-mode/arduino-mode.el"
+;;;;;;  (21640 50936 409764 547000))
 ;;; Generated autoloads from ../submodules/arduino-mode/arduino-mode.el
 
 (add-to-list 'auto-mode-alist '("\\.pde\\'" . arduino-mode))
@@ -555,9 +537,9 @@ Key bindings:
 
 ;;;***
 
-;;;### (autoloads (global-auto-complete-mode auto-complete-mode auto-complete)
-;;;;;;  "../submodules/auto-complete/auto-complete" "../submodules/auto-complete/auto-complete.el"
-;;;;;;  (21501 22038 0 0))
+;;;### (autoloads nil "../submodules/auto-complete/auto-complete"
+;;;;;;  "../submodules/auto-complete/auto-complete.el" (21646 23005
+;;;;;;  738312 484000))
 ;;; Generated autoloads from ../submodules/auto-complete/auto-complete.el
 
 (autoload 'auto-complete "../submodules/auto-complete/auto-complete" "\
@@ -593,9 +575,9 @@ See `auto-complete-mode' for more information on Auto-Complete mode.
 
 ;;;***
 
-;;;### (autoloads (ac-config-default) "../submodules/auto-complete/auto-complete-config"
-;;;;;;  "../submodules/auto-complete/auto-complete-config.el" (21477
-;;;;;;  16365 0 0))
+;;;### (autoloads nil "../submodules/auto-complete/auto-complete-config"
+;;;;;;  "../submodules/auto-complete/auto-complete-config.el" (21640
+;;;;;;  50938 426431 171000))
 ;;; Generated autoloads from ../submodules/auto-complete/auto-complete-config.el
 
 (autoload 'ac-config-default "../submodules/auto-complete/auto-complete-config" "\
@@ -605,9 +587,9 @@ See `auto-complete-mode' for more information on Auto-Complete mode.
 
 ;;;***
 
-;;;### (autoloads (browse-kill-ring browse-kill-ring-default-keybindings)
-;;;;;;  "../submodules/browse-kill-ring/browse-kill-ring" "../submodules/browse-kill-ring/browse-kill-ring.el"
-;;;;;;  (21501 22038 0 0))
+;;;### (autoloads nil "../submodules/browse-kill-ring/browse-kill-ring"
+;;;;;;  "../submodules/browse-kill-ring/browse-kill-ring.el" (21646
+;;;;;;  23006 681638 542000))
 ;;; Generated autoloads from ../submodules/browse-kill-ring/browse-kill-ring.el
 
 (autoload 'browse-kill-ring-default-keybindings "../submodules/browse-kill-ring/browse-kill-ring" "\
@@ -625,9 +607,8 @@ Display items in the `kill-ring' in another buffer.
 
 ;;;***
 
-;;;### (autoloads (clang-format-region) "../submodules/clang-format/clang-format"
-;;;;;;  "../submodules/clang-format/clang-format.el" (21515 29834
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/clang-format/clang-format" "../submodules/clang-format/clang-format.el"
+;;;;;;  (21646 23007 64968 919000))
 ;;; Generated autoloads from ../submodules/clang-format/clang-format.el
 
 (autoload 'clang-format-region "../submodules/clang-format/clang-format" "\
@@ -639,13 +620,8 @@ is no active region.  If no style is given uses `clang-format-style'.
 
 ;;;***
 
-;;;### (autoloads (cppcheck-current-file-check-config cppcheck-current-file
-;;;;;;  cppcheck-file cppcheck-results-mode cppcheck-use-configuration-list
-;;;;;;  cppcheck-hide-configuration-list cppcheck-include-path-list
-;;;;;;  cppcheck-relative-paths-list cppcheck-enable-list cppcheck-std-list
-;;;;;;  cppcheck-platform cppcheck-template cppcheck-executable cppcheck)
-;;;;;;  "../submodules/cppcheck/cppcheck" "../submodules/cppcheck/cppcheck.el"
-;;;;;;  (21361 26822 0 0))
+;;;### (autoloads nil "../submodules/cppcheck/cppcheck" "../submodules/cppcheck/cppcheck.el"
+;;;;;;  (21640 50941 913097 774000))
 ;;; Generated autoloads from ../submodules/cppcheck/cppcheck.el
 
 (let ((loads (get 'cppcheck 'custom-loads))) (if (member '"../submodules/cppcheck/cppcheck" loads) nil (put 'cppcheck 'custom-loads (cons '"../submodules/cppcheck/cppcheck" loads))))
@@ -761,16 +737,8 @@ Runs cppcheck with the '--check-config' option
 
 ;;;***
 
-;;;### (autoloads (csearch/find-file-hook-function csearch/search
-;;;;;;  csearch/read-string-region-or-prompt-string csearch/index-regenerate
-;;;;;;  csearch/index-add-list csearch/index-list csearch/index-add
-;;;;;;  csearch/index-reset csearch/csearch csearch-mode csearch/filter
-;;;;;;  csearch/insert-sorted-lines csearch/find-file-upward csearch/with-index-file
-;;;;;;  csearch/index-get csearch/index-set csearch/ignore-regexp-list
-;;;;;;  csearch/result-line-offset csearch/index-file csearch/cindex-program
-;;;;;;  csearch/csearch-program csearch-mode) "../submodules/csearch-mode/csearch-mode"
-;;;;;;  "../submodules/csearch-mode/csearch-mode.el" (21361 26822
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/csearch-mode/csearch-mode" "../submodules/csearch-mode/csearch-mode.el"
+;;;;;;  (21640 50942 483097 764000))
 ;;; Generated autoloads from ../submodules/csearch-mode/csearch-mode.el
 
 (let ((loads (get 'csearch-mode 'custom-loads))) (if (member '"../submodules/csearch-mode/csearch-mode" loads) nil (put 'csearch-mode 'custom-loads (cons '"../submodules/csearch-mode/csearch-mode" loads))))
@@ -890,11 +858,8 @@ seach the directory tree upwards for a \".csearchindex\" file.
 
 ;;;***
 
-;;;### (autoloads (csharp-mode csharp-cmd-line-limit csharp-msbuild-tool
-;;;;;;  csharp-make-tool csharp-want-imenu csharp-want-yasnippet-fixup
-;;;;;;  csharp-want-flymake-fixup csharp-mode-hook) "../submodules/csharp-mode/csharp-mode"
-;;;;;;  "../submodules/csharp-mode/csharp-mode.el" (20925 9868 0
-;;;;;;  0))
+;;;### (autoloads nil "../submodules/csharp-mode/csharp-mode" "../submodules/csharp-mode/csharp-mode.el"
+;;;;;;  (21640 50943 526431 63000))
 ;;; Generated autoloads from ../submodules/csharp-mode/csharp-mode.el
 
 (defvar csharp-mode-hook nil "\
@@ -1125,12 +1090,8 @@ Key bindings:
 
 ;;;***
 
-;;;### (autoloads (emamux:zoom-runner emamux:clear-runner-history
-;;;;;;  emamux:interrupt-runner emamux:inspect-runner emamux:close-panes
-;;;;;;  emamux:close-runner-pane emamux:run-last-command emamux:run-command
-;;;;;;  emamux:kill-session emamux:yank-from-list-buffers emamux:copy-kill-ring
-;;;;;;  emamux:send-command) "../submodules/emacs-emamux/emamux"
-;;;;;;  "../submodules/emacs-emamux/emamux.el" (21477 16370 0 0))
+;;;### (autoloads nil "../submodules/emacs-emamux/emamux" "../submodules/emacs-emamux/emamux.el"
+;;;;;;  (21646 23008 414958 509000))
 ;;; Generated autoloads from ../submodules/emacs-emamux/emamux.el
 
 (autoload 'emamux:send-command "../submodules/emacs-emamux/emamux" "\
@@ -1195,9 +1156,9 @@ Zoom runner pane. This feature requires tmux 1.8 or higher
 
 ;;;***
 
-;;;### (autoloads (enh-ruby-mode) "../submodules/enhanced-ruby-mode/enh-ruby-mode"
-;;;;;;  "../submodules/enhanced-ruby-mode/enh-ruby-mode.el" (21477
-;;;;;;  16370 0 0))
+;;;### (autoloads nil "../submodules/enhanced-ruby-mode/enh-ruby-mode"
+;;;;;;  "../submodules/enhanced-ruby-mode/enh-ruby-mode.el" (21646
+;;;;;;  23009 411617 489000))
 ;;; Generated autoloads from ../submodules/enhanced-ruby-mode/enh-ruby-mode.el
 
 (autoload 'enh-ruby-mode "../submodules/enhanced-ruby-mode/enh-ruby-mode" "\
@@ -1215,9 +1176,9 @@ Enhanced Major mode for editing Ruby code.
 
 ;;;***
 
-;;;### (autoloads (er/expand-region) "../submodules/expand-region/expand-region"
-;;;;;;  "../submodules/expand-region/expand-region.el" (21361 26825
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/expand-region/expand-region"
+;;;;;;  "../submodules/expand-region/expand-region.el" (21640 50951
+;;;;;;  819764 219000))
 ;;; Generated autoloads from ../submodules/expand-region/expand-region.el
 
 (autoload 'er/expand-region "../submodules/expand-region/expand-region" "\
@@ -1232,13 +1193,9 @@ before calling `er/expand-region' for the first time.
 
 ;;;***
 
-;;;### (autoloads (expand-region-exclude-text-mode-expansions expand-region-reset-fast-key
-;;;;;;  expand-region-contract-fast-key expand-region-fast-keys-enabled
-;;;;;;  expand-region-skip-whitespace expand-region-autocopy-register
-;;;;;;  expand-region-guess-python-mode expand-region-preferred-python-mode
-;;;;;;  expand-region) "../submodules/expand-region/expand-region-custom"
-;;;;;;  "../submodules/expand-region/expand-region-custom.el" (21093
-;;;;;;  46237 0 0))
+;;;### (autoloads nil "../submodules/expand-region/expand-region-custom"
+;;;;;;  "../submodules/expand-region/expand-region-custom.el" (21640
+;;;;;;  50951 819764 219000))
 ;;; Generated autoloads from ../submodules/expand-region/expand-region-custom.el
 
 (let ((loads (get 'expand-region 'custom-loads))) (if (member '"../submodules/expand-region/expand-region-custom" loads) nil (put 'expand-region 'custom-loads (cons '"../submodules/expand-region/expand-region-custom" loads))))
@@ -1287,11 +1244,14 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 
 ;;;***
 
-;;;### (autoloads (flycheck-define-error-level flycheck-info flycheck-def-option-var
-;;;;;;  flycheck-def-config-file-var global-flycheck-mode flycheck-mode)
-;;;;;;  "../submodules/flycheck/flycheck" "../submodules/flycheck/flycheck.el"
-;;;;;;  (21501 22038 0 0))
+;;;### (autoloads nil "../submodules/flycheck/flycheck" "../submodules/flycheck/flycheck.el"
+;;;;;;  (21646 23011 864931 902000))
 ;;; Generated autoloads from ../submodules/flycheck/flycheck.el
+
+(autoload 'flycheck-info "../submodules/flycheck/flycheck" "\
+Open the Flycheck manual.
+
+\(fn)" t nil)
 
 (autoload 'flycheck-mode "../submodules/flycheck/flycheck" "\
 Minor mode for on-the-fly syntax checking.
@@ -1333,47 +1293,6 @@ Flycheck mode is enabled in all buffers where
 See `flycheck-mode' for more information on Flycheck mode.
 
 \(fn &optional ARG)" t nil)
-
-(autoload 'flycheck-def-config-file-var "../submodules/flycheck/flycheck" "\
-Define SYMBOL as config file variable for CHECKER, with default FILE-NAME.
-
-SYMBOL is declared as customizable, buffer-local variable using
-`defcustom', to provide a configuration file for the given syntax
-CHECKER.  CUSTOM-ARGS are forwarded to `defcustom'.
-
-FILE-NAME is the initial value of the new variable.  If omitted,
-the default value is nil.
-
-Use this together with the `config-file' form in the `:command'
-argument to `flycheck-define-checker'.
-
-\(fn SYMBOL CHECKER &optional FILE-NAME &rest CUSTOM-ARGS)" nil t)
-
-(put 'flycheck-def-config-file-var 'lisp-indent-function '3)
-
-(autoload 'flycheck-def-option-var "../submodules/flycheck/flycheck" "\
-Define SYMBOL as option variable with INIT-VALUE for CHECKER.
-
-SYMBOL is declared as customizable variable, buffer-local
-variable using `defcustom', to provide an option for the given
-syntax CHECKER.  INIT-VALUE is the initial value of the variable,
-and DOCSTRING is its docstring.  CUSTOM-ARGS are forwarded to
-`defcustom'.
-
-Use this together with the `option', `option-list' and
-`option-flag' forms in the `:command' argument to
-`flycheck-define-checker'.
-
-\(fn SYMBOL INIT-VALUE CHECKER DOCSTRING &rest CUSTOM-ARGS)" nil t)
-
-(put 'flycheck-def-option-var 'lisp-indent-function '3)
-
-(put 'flycheck-def-option-var 'doc-string-elt '4)
-
-(autoload 'flycheck-info "../submodules/flycheck/flycheck" "\
-Open the Flycheck manual.
-
-\(fn)" t nil)
 
 (autoload 'flycheck-define-error-level "../submodules/flycheck/flycheck" "\
 Define a new error LEVEL with PROPERTIES.
@@ -1419,10 +1338,119 @@ The following PROPERTIES constitute an error level:
 
 (put 'flycheck-define-error-level 'lisp-indent-function '1)
 
+(autoload 'flycheck-define-command-checker "../submodules/flycheck/flycheck" "\
+Define SYMBOL as syntax checker which runs a command.
+
+Define SYMBOL as generic syntax checker via
+`flycheck-define-generic-checker', which uses an external command
+to check the buffer.  SYMBOL and DOCSTRING are the same as for
+`flycheck-define-generic-checker'.
+
+The following PROPERTIES constitute a command syntax checker.
+Unless otherwise noted, all properties are mandatory.
+
+`:command COMMAND'
+     The command to run for syntax checking.
+
+     COMMAND is a list of the form `(EXECUTABLE [ARG ...])'.
+
+     EXECUTABLE is a string with the executable of this syntax
+     checker.  It can be overridden with the variable
+     `flycheck-SYMBOL-executable'.  Note that this variable is
+     NOT implicitly defined by this function.  Use
+     `flycheck-def-executable-var' to define this variable.
+
+     Each ARG is an argument to the executable, either as string,
+     or as special symbol or form for
+     `flycheck-substitute-argument', which see.
+
+`:error-patterns PATTERNS'
+     A list of patterns to parse the output of the `:command'.
+
+     Each ITEM in PATTERNS is a list `(LEVEL SEXP ...)', where
+     LEVEL is a Flycheck error level (see
+     `flycheck-define-error-level'), followed by one or more RX
+     `SEXP's which parse an error of that level and extract line,
+     column, file name and the message.
+
+     See `rx' for general information about RX, and
+     `flycheck-rx-to-string' for some special RX forms provided
+     by Flycheck.
+
+     All patterns are applied in the order of declaration to the
+     whole output of the syntax checker.  Output already matched
+     by a pattern will not be matched by subsequent patterns.  In
+     other words, the first pattern wins.
+
+     This property is optional.  If omitted, however, an
+     `:error-parser' is mandatory.
+
+`:error-parser FUNCTION'
+     A function to parse errors with.
+
+     The function shall accept three arguments OUTPUT CHECKER
+     BUFFER.  OUTPUT is the syntax checker output as string,
+     CHECKER the syntax checker that was used, and BUFFER a
+     buffer object representing the checked buffer.  The function
+     must return a list of `flycheck-error' objects parsed from
+     OUTPUT.
+
+     This property is optional.  If omitted, it defaults to
+     `flycheck-parse-with-patterns'.  In this case,
+     `:error-patterns' is mandatory.
+
+In addition to these PROPERTIES, all properties from
+`flycheck-define-generic-checker' may be specified, except of
+`:start', `:interrupt', and `:print-doc'.  You may specify a
+custom `:verify' function, but you should take care to call
+`flycheck-verify-command-checker' in a custom `:verify'
+function.
+
+\(fn SYMBOL DOCSTRING &rest PROPERTIES)" nil nil)
+
+(put 'flycheck-define-command-checker 'lisp-indent-function '1)
+
+(put 'flycheck-define-command-checker 'doc-string-elt '2)
+
+(autoload 'flycheck-def-config-file-var "../submodules/flycheck/flycheck" "\
+Define SYMBOL as config file variable for CHECKER, with default FILE-NAME.
+
+SYMBOL is declared as customizable, buffer-local variable using
+`defcustom', to provide a configuration file for the given syntax
+CHECKER.  CUSTOM-ARGS are forwarded to `defcustom'.
+
+FILE-NAME is the initial value of the new variable.  If omitted,
+the default value is nil.
+
+Use this together with the `config-file' form in the `:command'
+argument to `flycheck-define-checker'.
+
+\(fn SYMBOL CHECKER &optional FILE-NAME &rest CUSTOM-ARGS)" nil t)
+
+(put 'flycheck-def-config-file-var 'lisp-indent-function '3)
+
+(autoload 'flycheck-def-option-var "../submodules/flycheck/flycheck" "\
+Define SYMBOL as option variable with INIT-VALUE for CHECKER.
+
+SYMBOL is declared as customizable, buffer-local variable using
+`defcustom', to provide an option for the given syntax CHECKER.
+INIT-VALUE is the initial value of the variable, and DOCSTRING is
+its docstring.  CUSTOM-ARGS are forwarded to `defcustom'.
+
+Use this together with the `option', `option-list' and
+`option-flag' forms in the `:command' argument to
+`flycheck-define-checker'.
+
+\(fn SYMBOL INIT-VALUE CHECKER DOCSTRING &rest CUSTOM-ARGS)" nil t)
+
+(put 'flycheck-def-option-var 'lisp-indent-function '3)
+
+(put 'flycheck-def-option-var 'doc-string-elt '4)
+
 ;;;***
 
-;;;### (autoloads (gh-api-v3 gh-api) "../submodules/gh/gh-api" "../submodules/gh/gh-api.el"
-;;;;;;  (21361 26827 0 0))
+;;;### (autoloads nil "../submodules/gh/gh-api" "../submodules/gh/gh-api.el"
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-api.el
 
 (require 'eieio)
@@ -1433,9 +1461,8 @@ The following PROPERTIES constitute an error level:
 
 ;;;***
 
-;;;### (autoloads (gh-oauth-authenticator gh-password-authenticator
-;;;;;;  gh-authenticator) "../submodules/gh/gh-auth" "../submodules/gh/gh-auth.el"
-;;;;;;  (21361 26827 0 0))
+;;;### (autoloads nil "../submodules/gh/gh-auth" "../submodules/gh/gh-auth.el"
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-auth.el
 
 (require 'eieio)
@@ -1449,7 +1476,7 @@ The following PROPERTIES constitute an error level:
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-cache" "../submodules/gh/gh-cache.el"
-;;;;;;  (21361 26827 0 0))
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-cache.el
 
 (require 'eieio)
@@ -1457,15 +1484,15 @@ The following PROPERTIES constitute an error level:
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-common" "../submodules/gh/gh-common.el"
-;;;;;;  (21361 26827 0 0))
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-common.el
 
 (require 'eieio)
 
 ;;;***
 
-;;;### (autoloads (gh-gist-gist gh-gist-gist-stub gh-gist-api) "../submodules/gh/gh-gist"
-;;;;;;  "../submodules/gh/gh-gist.el" (21361 26827 0 0))
+;;;### (autoloads nil "../submodules/gh/gh-gist" "../submodules/gh/gh-gist.el"
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-gist.el
 
 (require 'eieio)
@@ -1479,7 +1506,7 @@ The following PROPERTIES constitute an error level:
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-issue-comments" "../submodules/gh/gh-issue-comments.el"
-;;;;;;  (21361 26827 0 0))
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-issue-comments.el
 
 (require 'eieio)
@@ -1487,15 +1514,15 @@ The following PROPERTIES constitute an error level:
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-issues" "../submodules/gh/gh-issues.el"
-;;;;;;  (21361 26827 0 0))
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-issues.el
 
 (require 'eieio)
 
 ;;;***
 
-;;;### (autoloads (gh-oauth-api) "../submodules/gh/gh-oauth" "../submodules/gh/gh-oauth.el"
-;;;;;;  (21361 26827 0 0))
+;;;### (autoloads nil "../submodules/gh/gh-oauth" "../submodules/gh/gh-oauth.el"
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-oauth.el
 
 (require 'eieio)
@@ -1504,8 +1531,8 @@ The following PROPERTIES constitute an error level:
 
 ;;;***
 
-;;;### (autoloads (gh-orgs-org-stub gh-orgs-api) "../submodules/gh/gh-orgs"
-;;;;;;  "../submodules/gh/gh-orgs.el" (20925 9875 0 0))
+;;;### (autoloads nil "../submodules/gh/gh-orgs" "../submodules/gh/gh-orgs.el"
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-orgs.el
 
 (require 'eieio)
@@ -1516,8 +1543,8 @@ The following PROPERTIES constitute an error level:
 
 ;;;***
 
-;;;### (autoloads (gh-pulls-request gh-pulls-api) "../submodules/gh/gh-pulls"
-;;;;;;  "../submodules/gh/gh-pulls.el" (20925 9875 0 0))
+;;;### (autoloads nil "../submodules/gh/gh-pulls" "../submodules/gh/gh-pulls.el"
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-pulls.el
 
 (require 'eieio)
@@ -1528,9 +1555,8 @@ The following PROPERTIES constitute an error level:
 
 ;;;***
 
-;;;### (autoloads (gh-repos-repo gh-repos-repo-stub gh-repos-api)
-;;;;;;  "../submodules/gh/gh-repos" "../submodules/gh/gh-repos.el"
-;;;;;;  (21361 26827 0 0))
+;;;### (autoloads nil "../submodules/gh/gh-repos" "../submodules/gh/gh-repos.el"
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-repos.el
 
 (require 'eieio)
@@ -1544,15 +1570,15 @@ The following PROPERTIES constitute an error level:
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-url" "../submodules/gh/gh-url.el"
-;;;;;;  (21477 16385 0 0))
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-url.el
 
 (require 'eieio)
 
 ;;;***
 
-;;;### (autoloads (gh-users-user gh-users-api) "../submodules/gh/gh-users"
-;;;;;;  "../submodules/gh/gh-users.el" (21477 16386 0 0))
+;;;### (autoloads nil "../submodules/gh/gh-users" "../submodules/gh/gh-users.el"
+;;;;;;  (21640 50961 633097 346000))
 ;;; Generated autoloads from ../submodules/gh/gh-users.el
 
 (require 'eieio)
@@ -1563,10 +1589,8 @@ The following PROPERTIES constitute an error level:
 
 ;;;***
 
-;;;### (autoloads (gist-fetch gist-list gist-region-or-buffer-private
-;;;;;;  gist-region-or-buffer gist-buffer-private gist-buffer gist-region-private
-;;;;;;  gist-region) "../submodules/gist/gist" "../submodules/gist/gist.el"
-;;;;;;  (21477 16386 0 0))
+;;;### (autoloads nil "../submodules/gist/gist" "../submodules/gist/gist.el"
+;;;;;;  (21640 50962 683097 320000))
 ;;; Generated autoloads from ../submodules/gist/gist.el
 
 (autoload 'gist-region "../submodules/gist/gist" "\
@@ -1627,9 +1651,8 @@ Displays a list of all of the current user's gists in a new buffer.
 
 ;;;***
 
-;;;### (autoloads (git-commit-mode) "../submodules/git-modes/git-commit-mode"
-;;;;;;  "../submodules/git-modes/git-commit-mode.el" (21501 22039
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/git-modes/git-commit-mode" "../submodules/git-modes/git-commit-mode.el"
+;;;;;;  (21646 23013 621585 21000))
 ;;; Generated autoloads from ../submodules/git-modes/git-commit-mode.el
 
 (autoload 'git-commit-mode "../submodules/git-modes/git-commit-mode" "\
@@ -1641,13 +1664,14 @@ basic structure of and errors in git commit messages.
 
 \(fn)" t nil)
 
-(dolist (pattern '("/COMMIT_EDITMSG\\'" "/NOTES_EDITMSG\\'" "/MERGE_MSG\\'" "/TAG_EDITMSG\\'" "/PULLREQ_EDITMSG\\'")) (add-to-list 'auto-mode-alist (cons pattern 'git-commit-mode)))
+(add-to-list 'auto-mode-alist '("/MERGE_MSG\\'" . git-commit-mode))
+
+(add-to-list 'auto-mode-alist '("/\\(?:COMMIT\\|NOTES\\|TAG\\|PULLREQ\\)_EDITMSG\\'" . git-commit-mode))
 
 ;;;***
 
-;;;### (autoloads (git-rebase-mode) "../submodules/git-modes/git-rebase-mode"
-;;;;;;  "../submodules/git-modes/git-rebase-mode.el" (21477 16387
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/git-modes/git-rebase-mode" "../submodules/git-modes/git-rebase-mode.el"
+;;;;;;  (21646 23013 621585 21000))
 ;;; Generated autoloads from ../submodules/git-modes/git-rebase-mode.el
 
 (autoload 'git-rebase-mode "../submodules/git-modes/git-rebase-mode" "\
@@ -1664,9 +1688,9 @@ running 'man git-rebase' at the command line) for details.
 
 ;;;***
 
-;;;### (autoloads (gitattributes-mode) "../submodules/git-modes/gitattributes-mode"
-;;;;;;  "../submodules/git-modes/gitattributes-mode.el" (21477 16387
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/git-modes/gitattributes-mode"
+;;;;;;  "../submodules/git-modes/gitattributes-mode.el" (21640 50964
+;;;;;;  503097 282000))
 ;;; Generated autoloads from ../submodules/git-modes/gitattributes-mode.el
 
 (autoload 'gitattributes-mode "../submodules/git-modes/gitattributes-mode" "\
@@ -1679,9 +1703,8 @@ A major mode for editing .gitattributes files.
 
 ;;;***
 
-;;;### (autoloads (gitconfig-mode) "../submodules/git-modes/gitconfig-mode"
-;;;;;;  "../submodules/git-modes/gitconfig-mode.el" (21477 16387
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/git-modes/gitconfig-mode" "../submodules/git-modes/gitconfig-mode.el"
+;;;;;;  (21640 50964 503097 282000))
 ;;; Generated autoloads from ../submodules/git-modes/gitconfig-mode.el
 
 (autoload 'gitconfig-mode "../submodules/git-modes/gitconfig-mode" "\
@@ -1693,9 +1716,8 @@ A major mode for editing .gitconfig files.
 
 ;;;***
 
-;;;### (autoloads (gitignore-mode) "../submodules/git-modes/gitignore-mode"
-;;;;;;  "../submodules/git-modes/gitignore-mode.el" (21477 16387
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/git-modes/gitignore-mode" "../submodules/git-modes/gitignore-mode.el"
+;;;;;;  (21640 50964 503097 282000))
 ;;; Generated autoloads from ../submodules/git-modes/gitignore-mode.el
 
 (autoload 'gitignore-mode "../submodules/git-modes/gitignore-mode" "\
@@ -1707,8 +1729,8 @@ A major mode for editing .gitignore files.
 
 ;;;***
 
-;;;### (autoloads (glsl-mode) "../submodules/glsl-mode/glsl-mode"
-;;;;;;  "../submodules/glsl-mode/glsl-mode.el" (21000 42394 0 0))
+;;;### (autoloads nil "../submodules/glsl-mode/glsl-mode" "../submodules/glsl-mode/glsl-mode.el"
+;;;;;;  (21640 50965 146430 601000))
 ;;; Generated autoloads from ../submodules/glsl-mode/glsl-mode.el
 
 (autoload 'glsl-mode "../submodules/glsl-mode/glsl-mode" "\
@@ -1718,9 +1740,9 @@ Major mode for editing OpenGLSL shader files.
 
 ;;;***
 
-;;;### (autoloads (helm-everything) "../submodules/helm-everything/helm-everything"
-;;;;;;  "../submodules/helm-everything/helm-everything.el" (21361
-;;;;;;  26831 0 0))
+;;;### (autoloads nil "../submodules/helm-everything/helm-everything"
+;;;;;;  "../submodules/helm-everything/helm-everything.el" (21640
+;;;;;;  50973 349763 759000))
 ;;; Generated autoloads from ../submodules/helm-everything/helm-everything.el
 
 (autoload 'helm-everything "../submodules/helm-everything/helm-everything" "\
@@ -1732,9 +1754,8 @@ Search Everything with helm
 
 ;;;***
 
-;;;### (autoloads (helm-spotify) "../submodules/helm-spotify/helm-spotify"
-;;;;;;  "../submodules/helm-spotify/helm-spotify.el" (21500 3762
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/helm-spotify/helm-spotify" "../submodules/helm-spotify/helm-spotify.el"
+;;;;;;  (21640 50974 609763 733000))
 ;;; Generated autoloads from ../submodules/helm-spotify/helm-spotify.el
 
 (defvar helm-source-spotify-track-search '((name . "Spotify") (volatile) (delayed) (multiline) (requires-pattern . 2) (candidates-process . helm-spotify-search) (action-transformer . helm-spotify-actions-for-track)))
@@ -1746,10 +1767,8 @@ Bring up a Spotify search interface in helm.
 
 ;;;***
 
-;;;### (autoloads (helm-other-buffer helm helm-debug-open-last-log
-;;;;;;  helm-define-key-with-subkeys helm-multi-key-defun helm-define-multi-key)
-;;;;;;  "../submodules/helm/helm" "../submodules/helm/helm.el" (21501
-;;;;;;  22039 0 0))
+;;;### (autoloads nil "../submodules/helm/helm" "../submodules/helm/helm.el"
+;;;;;;  (21646 23014 901575 149000))
 ;;; Generated autoloads from ../submodules/helm/helm.el
 
 (autoload 'helm-define-multi-key "../submodules/helm/helm" "\
@@ -1916,8 +1935,8 @@ Call `helm' with only ANY-SOURCES and ANY-BUFFER as args.
 
 ;;;***
 
-;;;### (autoloads (helm-reset-adaptive-history) "../submodules/helm/helm-adaptive"
-;;;;;;  "../submodules/helm/helm-adaptive.el" (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-adaptive" "../submodules/helm/helm-adaptive.el"
+;;;;;;  (21640 50972 729763 773000))
 ;;; Generated autoloads from ../submodules/helm/helm-adaptive.el
 
 (autoload 'helm-reset-adaptive-history "../submodules/helm/helm-adaptive" "\
@@ -1928,8 +1947,8 @@ Useful when you have a old or corrupted `helm-adaptive-history-file'.
 
 ;;;***
 
-;;;### (autoloads (helm-apt) "../submodules/helm/helm-apt" "../submodules/helm/helm-apt.el"
-;;;;;;  (21361 26831 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-apt" "../submodules/helm/helm-apt.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-apt.el
 
 (autoload 'helm-apt "../submodules/helm/helm-apt" "\
@@ -1940,8 +1959,8 @@ With a prefix arg reload cache.
 
 ;;;***
 
-;;;### (autoloads (helm-bbdb) "../submodules/helm/helm-bbdb" "../submodules/helm/helm-bbdb.el"
-;;;;;;  (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-bbdb" "../submodules/helm/helm-bbdb.el"
+;;;;;;  (21640 50972 729763 773000))
 ;;; Generated autoloads from ../submodules/helm/helm-bbdb.el
 
 (autoload 'helm-bbdb "../submodules/helm/helm-bbdb" "\
@@ -1955,9 +1974,8 @@ http://bbdb.sourceforge.net/
 
 ;;;***
 
-;;;### (autoloads (helm-filtered-bookmarks helm-pp-bookmarks helm-bookmarks)
-;;;;;;  "../submodules/helm/helm-bookmark" "../submodules/helm/helm-bookmark.el"
-;;;;;;  (21501 22039 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-bookmark" "../submodules/helm/helm-bookmark.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-bookmark.el
 
 (autoload 'helm-bookmarks "../submodules/helm/helm-bookmark" "\
@@ -1979,8 +1997,8 @@ only if external library addressbook-bookmark.el is available.
 
 ;;;***
 
-;;;### (autoloads (helm-buffers-list) "../submodules/helm/helm-buffers"
-;;;;;;  "../submodules/helm/helm-buffers.el" (21501 22039 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-buffers" "../submodules/helm/helm-buffers.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-buffers.el
 
 (autoload 'helm-buffers-list "../submodules/helm/helm-buffers" "\
@@ -1990,8 +2008,8 @@ Preconfigured `helm' to list buffers.
 
 ;;;***
 
-;;;### (autoloads (helm-colors) "../submodules/helm/helm-color" "../submodules/helm/helm-color.el"
-;;;;;;  (21365 9074 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-color" "../submodules/helm/helm-color.el"
+;;;;;;  (21640 50972 729763 773000))
 ;;; Generated autoloads from ../submodules/helm/helm-color.el
 
 (autoload 'helm-colors "../submodules/helm/helm-color" "\
@@ -2001,8 +2019,8 @@ Preconfigured `helm' for color.
 
 ;;;***
 
-;;;### (autoloads (helm-M-x) "../submodules/helm/helm-command" "../submodules/helm/helm-command.el"
-;;;;;;  (21361 26831 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-command" "../submodules/helm/helm-command.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-command.el
 
 (autoload 'helm-M-x "../submodules/helm/helm-command" "\
@@ -2018,8 +2036,8 @@ You can get help on each command by persistent action.
 
 ;;;***
 
-;;;### (autoloads (helm-configuration) "../submodules/helm/helm-config"
-;;;;;;  "../submodules/helm/helm-config.el" (21501 22039 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-config" "../submodules/helm/helm-config.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-config.el
 
 (autoload 'helm-configuration "../submodules/helm/helm-config" "\
@@ -2029,8 +2047,8 @@ Customize `helm'.
 
 ;;;***
 
-;;;### (autoloads (helm-dabbrev) "../submodules/helm/helm-dabbrev"
-;;;;;;  "../submodules/helm/helm-dabbrev.el" (21501 22039 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-dabbrev" "../submodules/helm/helm-dabbrev.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-dabbrev.el
 
 (autoload 'helm-dabbrev "../submodules/helm/helm-dabbrev" "\
@@ -2040,11 +2058,8 @@ Customize `helm'.
 
 ;;;***
 
-;;;### (autoloads (helm-complex-command-history helm-timers helm-locate-library
-;;;;;;  helm-manage-advice helm-apropos helm-lisp-completion-or-file-name-at-point
-;;;;;;  helm-lisp-indent helm-complete-file-name-at-point helm-lisp-completion-at-point)
-;;;;;;  "../submodules/helm/helm-elisp" "../submodules/helm/helm-elisp.el"
-;;;;;;  (21501 22039 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-elisp" "../submodules/helm/helm-elisp.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp.el
 
 (autoload 'helm-lisp-completion-at-point "../submodules/helm/helm-elisp" "\
@@ -2095,9 +2110,8 @@ Preconfigured `helm' for timers.
 
 ;;;***
 
-;;;### (autoloads (helm-list-elisp-packages) "../submodules/helm/helm-elisp-package"
-;;;;;;  "../submodules/helm/helm-elisp-package.el" (21365 9074 0
-;;;;;;  0))
+;;;### (autoloads nil "../submodules/helm/helm-elisp-package" "../submodules/helm/helm-elisp-package.el"
+;;;;;;  (21640 50972 729763 773000))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp-package.el
 
 (autoload 'helm-list-elisp-packages "../submodules/helm/helm-elisp-package" "\
@@ -2107,8 +2121,8 @@ Preconfigured `helm' for timers.
 
 ;;;***
 
-;;;### (autoloads (helm-elscreen) "../submodules/helm/helm-elscreen"
-;;;;;;  "../submodules/helm/helm-elscreen.el" (21361 26831 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-elscreen" "../submodules/helm/helm-elscreen.el"
+;;;;;;  (21640 50972 729763 773000))
 ;;; Generated autoloads from ../submodules/helm/helm-elscreen.el
 
 (autoload 'helm-elscreen "../submodules/helm/helm-elscreen" "\
@@ -2118,8 +2132,8 @@ Preconfigured helm to list elscreen.
 
 ;;;***
 
-;;;### (autoloads (helm-emms) "../submodules/helm/helm-emms" "../submodules/helm/helm-emms.el"
-;;;;;;  (21361 26831 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-emms" "../submodules/helm/helm-emms.el"
+;;;;;;  (21640 50972 729763 773000))
 ;;; Generated autoloads from ../submodules/helm/helm-emms.el
 
 (autoload 'helm-emms "../submodules/helm/helm-emms" "\
@@ -2129,8 +2143,8 @@ Preconfigured `helm' for emms sources.
 
 ;;;***
 
-;;;### (autoloads (helm-eshell-history helm-esh-pcomplete) "../submodules/helm/helm-eshell"
-;;;;;;  "../submodules/helm/helm-eshell.el" (21361 26831 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-eshell" "../submodules/helm/helm-eshell.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-eshell.el
 
 (autoload 'helm-esh-pcomplete "../submodules/helm/helm-eshell" "\
@@ -2145,9 +2159,8 @@ Preconfigured helm for eshell history.
 
 ;;;***
 
-;;;### (autoloads (helm-calcul-expression helm-eval-expression-with-eldoc
-;;;;;;  helm-eval-expression) "../submodules/helm/helm-eval" "../submodules/helm/helm-eval.el"
-;;;;;;  (21361 26831 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-eval" "../submodules/helm/helm-eval.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-eval.el
 
 (autoload 'helm-eval-expression "../submodules/helm/helm-eval" "\
@@ -2167,8 +2180,8 @@ Preconfigured helm for `helm-source-calculation-result'.
 
 ;;;***
 
-;;;### (autoloads (helm-run-external-command) "../submodules/helm/helm-external"
-;;;;;;  "../submodules/helm/helm-external.el" (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-external" "../submodules/helm/helm-external.el"
+;;;;;;  (21640 50972 729763 773000))
 ;;; Generated autoloads from ../submodules/helm/helm-external.el
 
 (autoload 'helm-run-external-command "../submodules/helm/helm-external" "\
@@ -2181,22 +2194,27 @@ You can set your own list of commands with
 
 ;;;***
 
-;;;### (autoloads (helm-recentf helm-for-files helm-find-files helm-find
-;;;;;;  helm-browse-project) "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
-;;;;;;  (21501 22039 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-files.el
 
 (autoload 'helm-browse-project "../submodules/helm/helm-files" "\
 Browse files and see status of project with its vcs.
-Only hg and git are supported for now.
-Fall back to `helm-find-files' if directory is not under
-control of one of those vcs.
-Need dependencies:
+Only HG and GIT are supported for now.
+Fall back to `helm-find-files' or `helm-browse-project-find-files'
+if current directory is not under control of one of those vcs.
+With a prefix ARG browse files recursively, with two prefix ARG
+rebuild the cache.
+If the current directory is found in the cache, start
+`helm-browse-project-find-files' even with no prefix ARG.
+NOTE: The prefix ARG have no effect on the VCS controlled directories.
+
+Need dependencies for VCS:
 <https://github.com/emacs-helm/helm-ls-git.git>
 and
 <https://github.com/emacs-helm/helm-mercurial-queue/blob/master/helm-ls-hg.el>.
 
-\(fn)" t nil)
+\(fn ARG)" t nil)
 
 (autoload 'helm-find "../submodules/helm/helm-files" "\
 Preconfigured `helm' for the find shell command.
@@ -2224,8 +2242,8 @@ Preconfigured `helm' for `recentf'.
 
 ;;;***
 
-;;;### (autoloads (helm-firefox-bookmarks) "../submodules/helm/helm-firefox"
-;;;;;;  "../submodules/helm/helm-firefox.el" (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-firefox" "../submodules/helm/helm-firefox.el"
+;;;;;;  (21640 50972 729763 773000))
 ;;; Generated autoloads from ../submodules/helm/helm-firefox.el
 
 (autoload 'helm-firefox-bookmarks "../submodules/helm/helm-firefox" "\
@@ -2245,8 +2263,8 @@ After closing firefox, you will be able to browse you bookmarks.
 
 ;;;***
 
-;;;### (autoloads (helm-ucs helm-select-xfont) "../submodules/helm/helm-font"
-;;;;;;  "../submodules/helm/helm-font.el" (21361 26831 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-font" "../submodules/helm/helm-font.el"
+;;;;;;  (21640 50972 729763 773000))
 ;;; Generated autoloads from ../submodules/helm/helm-font.el
 
 (autoload 'helm-select-xfont "../submodules/helm/helm-font" "\
@@ -2261,8 +2279,8 @@ Preconfigured helm for `ucs-names' math symbols.
 
 ;;;***
 
-;;;### (autoloads (helm-gentoo) "../submodules/helm/helm-gentoo"
-;;;;;;  "../submodules/helm/helm-gentoo.el" (21361 26831 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-gentoo" "../submodules/helm/helm-gentoo.el"
+;;;;;;  (21640 50972 733097 106000))
 ;;; Generated autoloads from ../submodules/helm/helm-gentoo.el
 
 (autoload 'helm-gentoo "../submodules/helm/helm-gentoo" "\
@@ -2272,12 +2290,8 @@ Preconfigured `helm' for gentoo linux.
 
 ;;;***
 
-;;;### (autoloads (helm-do-pdfgrep helm-do-zgrep helm-do-grep helm-grep-mode-jump-other-window
-;;;;;;  helm-grep-mode-jump-other-window-backward helm-grep-mode-jump-other-window-forward
-;;;;;;  helm-grep-mode-jump helm-gm-precedent-file helm-gm-next-file
-;;;;;;  helm-grep-mode helm-grep-run-save-buffer helm-goto-next-file
-;;;;;;  helm-goto-precedent-file) "../submodules/helm/helm-grep"
-;;;;;;  "../submodules/helm/helm-grep.el" (21501 22039 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-grep" "../submodules/helm/helm-grep.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-grep.el
 
 (autoload 'helm-goto-precedent-file "../submodules/helm/helm-grep" "\
@@ -2359,14 +2373,17 @@ Preconfigured helm for pdfgrep.
 
 ;;;***
 
-;;;### (autoloads (helm-describe-helm-attribute helm-semantic-help
-;;;;;;  helm-color-help helm-imenu-help helm-M-x-help helm-el-package-help
-;;;;;;  helm-apt-help helm-top-help helm-moccur-help helm-buffers-ido-virtual-help
-;;;;;;  helm-esh-help helm-bookmark-help helm-ucs-help helm-etags-help
-;;;;;;  helm-pdfgrep-help helm-grep-help helm-generic-file-help helm-read-file-name-help
-;;;;;;  helm-ff-help helm-buffer-help helm-help) "../submodules/helm/helm-help"
-;;;;;;  "../submodules/helm/helm-help.el" (21501 22039 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-help" "../submodules/helm/helm-help.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-help.el
+
+(autoload 'helm-documentation "../submodules/helm/helm-help" "\
+Helm documentation.
+With a prefix arg refresh the documentation.
+
+Find here the documentation of all sources actually documented.
+
+\(fn ARG)" t nil)
 
 (autoload 'helm-help "../submodules/helm/helm-help" "\
 Help of `helm'.
@@ -2477,7 +2494,7 @@ Help command for ido virtual buffers.
 (defvar helm-ff-mode-line-string "\\<helm-find-files-map>\\[helm-ff-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "\
 String displayed in mode-line in `helm-source-find-files'")
 
-(defvar helm-read-file-name-mode-line-string "\\<helm-read-file-map>\\[helm-read-file-name-help]:Help \\[helm-cr-empty-string]:Empty \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "\
+(defvar helm-read-file-name-mode-line-string "\\<helm-read-file-map>\\[helm-read-file-name-help]:Help C/\\[helm-cr-empty-string]:Empty \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "\
 String displayed in mode-line in `helm-source-find-files'.")
 
 (defvar helm-generic-file-mode-line-string "\\<helm-generic-files-map>\\[helm-generic-file-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend" "\
@@ -2502,7 +2519,7 @@ String displayed in mode-line in `helm-source-buffers-list'")
 
 (defvar helm-moccur-mode-line "\\<helm-moccur-map>\\[helm-moccur-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
 
-(defvar helm-comp-read-mode-line "\\<helm-comp-read-map>\\[helm-cr-empty-string]:Empty \\<helm-map>\\[helm-help]:Help \\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct")
+(defvar helm-comp-read-mode-line "\\<helm-comp-read-map>C/\\[helm-cr-empty-string]:Empty \\<helm-map>\\[helm-help]:Help \\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct")
 
 (defvar helm-top-mode-line "\\<helm-top-map>\\[helm-top-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
 
@@ -2524,8 +2541,8 @@ HELM-ATTRIBUTE should be a symbol.
 
 ;;;***
 
-;;;### (autoloads (helm-imenu) "../submodules/helm/helm-imenu" "../submodules/helm/helm-imenu.el"
-;;;;;;  (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-imenu" "../submodules/helm/helm-imenu.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-imenu.el
 
 (autoload 'helm-imenu "../submodules/helm/helm-imenu" "\
@@ -2535,8 +2552,8 @@ Preconfigured `helm' for `imenu'.
 
 ;;;***
 
-;;;### (autoloads (helm-info-at-point) "../submodules/helm/helm-info"
-;;;;;;  "../submodules/helm/helm-info.el" (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-info" "../submodules/helm/helm-info.el"
+;;;;;;  (21640 50972 733097 106000))
 ;;; Generated autoloads from ../submodules/helm/helm-info.el
 
 (autoload 'helm-info-at-point "../submodules/helm/helm-info" "\
@@ -2547,8 +2564,8 @@ With a prefix-arg insert symbol at point.
 
 ;;;***
 
-;;;### (autoloads (helm-locate helm-locate-read-file-name) "../submodules/helm/helm-locate"
-;;;;;;  "../submodules/helm/helm-locate.el" (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-locate" "../submodules/helm/helm-locate.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-locate.el
 
 (autoload 'helm-locate-read-file-name "../submodules/helm/helm-locate" "\
@@ -2576,8 +2593,8 @@ Where db_path is a filename matched by
 
 ;;;***
 
-;;;### (autoloads (helm-man-woman) "../submodules/helm/helm-man"
-;;;;;;  "../submodules/helm/helm-man.el" (21361 26831 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-man" "../submodules/helm/helm-man.el"
+;;;;;;  (21640 50972 733097 106000))
 ;;; Generated autoloads from ../submodules/helm/helm-man.el
 
 (autoload 'helm-man-woman "../submodules/helm/helm-man" "\
@@ -2588,9 +2605,8 @@ With a prefix arg reinitialize the cache.
 
 ;;;***
 
-;;;### (autoloads (helm-match-plugin-mode) "../submodules/helm/helm-match-plugin"
-;;;;;;  "../submodules/helm/helm-match-plugin.el" (21501 22039 0
-;;;;;;  0))
+;;;### (autoloads nil "../submodules/helm/helm-match-plugin" "../submodules/helm/helm-match-plugin.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-match-plugin.el
 
 (defvar helm-match-plugin-mode nil "\
@@ -2610,17 +2626,17 @@ See `helm-mp-matching-method' for the behavior of each method.
 
 ;;;***
 
-;;;### (autoloads (helm-comint-input-ring helm-minibuffer-history
-;;;;;;  helm-mini helm-stumpwm-commands helm-ratpoison-commands helm-eev-anchors
-;;;;;;  helm-insert-latex-math helm-world-time helm-browse-menubar)
-;;;;;;  "../submodules/helm/helm-misc" "../submodules/helm/helm-misc.el"
-;;;;;;  (21361 26831 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-misc" "../submodules/helm/helm-misc.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-misc.el
 
 (autoload 'helm-browse-menubar "../submodules/helm/helm-misc" "\
 Helm interface to the menubar using lacarte.el.
+With no prefix arg call the local current major-mode menu,
+with one prefix arg call the global menu,
+with two prefix args call the menu for the possible minor-mode in effect.
 
-\(fn)" t nil)
+\(fn ARG)" t nil)
 
 (autoload 'helm-world-time "../submodules/helm/helm-misc" "\
 Preconfigured `helm' to show world time.
@@ -2629,11 +2645,6 @@ Preconfigured `helm' to show world time.
 
 (autoload 'helm-insert-latex-math "../submodules/helm/helm-misc" "\
 Preconfigured helm for latex math symbols completion.
-
-\(fn)" t nil)
-
-(autoload 'helm-eev-anchors "../submodules/helm/helm-misc" "\
-Preconfigured `helm' for eev anchors.
 
 \(fn)" t nil)
 
@@ -2664,8 +2675,8 @@ Predefined `helm' that provide completion of `comint' history.
 
 ;;;***
 
-;;;### (autoloads (helm-mode helm-comp-read) "../submodules/helm/helm-mode"
-;;;;;;  "../submodules/helm/helm-mode.el" (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-mode" "../submodules/helm/helm-mode.el"
+;;;;;;  (21646 23014 898241 841000))
 ;;; Generated autoloads from ../submodules/helm/helm-mode.el
 
 (autoload 'helm-comp-read "../submodules/helm/helm-mode" "\
@@ -2733,6 +2744,9 @@ Keys description:
 
 - FC-TRANSFORMER: A `filtered-candidate-transformer' function.
 
+- HIST-FC-TRANSFORMER: A `filtered-candidate-transformer'
+  function for the history source.
+
 - MARKED-CANDIDATES: If non--nil return candidate or marked candidates as a list.
 
 - NOMARK: When non--nil don't allow marking candidates.
@@ -2749,7 +2763,7 @@ in `helm-current-prefix-arg', otherwise if prefix args were given before
 That's mean you can pass prefix args before or after calling a command
 that use `helm-comp-read' See `helm-M-x' for example.
 
-\(fn PROMPT COLLECTION &key TEST INITIAL-INPUT DEFAULT PRESELECT (buffer \"*Helm Completions*\") MUST-MATCH REVERSE-HISTORY (requires-pattern 0) HISTORY INPUT-HISTORY (case-fold helm-comp-read-case-fold-search) (del-input t) (persistent-action nil) (persistent-help \"DoNothing\") (mode-line helm-comp-read-mode-line) (keymap helm-comp-read-map) (name \"Helm Completions\") CANDIDATES-IN-BUFFER EXEC-WHEN-ONLY-ONE QUIT-WHEN-NO-CAND (volatile t) SORT (fc-transformer (quote helm-cr-default-transformer)) MARKED-CANDIDATES NOMARK (alistp t))" nil nil)
+\(fn PROMPT COLLECTION &key TEST INITIAL-INPUT DEFAULT PRESELECT (buffer \"*Helm Completions*\") MUST-MATCH FUZZY REVERSE-HISTORY (requires-pattern 0) HISTORY INPUT-HISTORY (case-fold helm-comp-read-case-fold-search) (del-input t) (persistent-action nil) (persistent-help \"DoNothing\") (mode-line helm-comp-read-mode-line) (keymap helm-comp-read-map) (name \"Helm Completions\") CANDIDATES-IN-BUFFER EXEC-WHEN-ONLY-ONE QUIT-WHEN-NO-CAND (volatile t) SORT (fc-transformer (quote helm-cr-default-transformer)) HIST-FC-TRANSFORMER MARKED-CANDIDATES NOMARK (alistp t))" nil nil)
 
 (defvar helm-mode nil "\
 Non-nil if Helm mode is enabled.
@@ -2784,9 +2798,8 @@ Note: This mode is incompatible with Emacs23.
 
 ;;;***
 
-;;;### (autoloads (helm-wikipedia-suggest helm-yahoo-suggest helm-google-suggest
-;;;;;;  helm-surfraw) "../submodules/helm/helm-net" "../submodules/helm/helm-net.el"
-;;;;;;  (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-net" "../submodules/helm/helm-net.el"
+;;;;;;  (21640 50972 733097 106000))
 ;;; Generated autoloads from ../submodules/helm/helm-net.el
 
 (autoload 'helm-surfraw "../submodules/helm/helm-net" "\
@@ -2811,27 +2824,24 @@ Preconfigured `helm' for Wikipedia lookup with Wikipedia suggest.
 
 ;;;***
 
-;;;### (autoloads (helm-org-headlines helm-org-keywords) "../submodules/helm/helm-org"
-;;;;;;  "../submodules/helm/helm-org.el" (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-org" "../submodules/helm/helm-org.el"
+;;;;;;  (21646 23014 901575 149000))
 ;;; Generated autoloads from ../submodules/helm/helm-org.el
 
-(autoload 'helm-org-keywords "../submodules/helm/helm-org" "\
-Preconfigured `helm' for org keywords.
+(autoload 'helm-org-agenda-files-headings "../submodules/helm/helm-org" "\
+
 
 \(fn)" t nil)
 
-(autoload 'helm-org-headlines "../submodules/helm/helm-org" "\
-Preconfigured helm to show org headlines.
+(autoload 'helm-org-in-buffer-headings "../submodules/helm/helm-org" "\
+
 
 \(fn)" t nil)
 
 ;;;***
 
-;;;### (autoloads (helm-multi-occur-from-isearch helm-multi-occur
-;;;;;;  helm-occur-from-isearch helm-occur helm-regexp helm-moccur-mode
-;;;;;;  helm-moccur-run-save-buffer helm-occur-match-plugin-mode)
-;;;;;;  "../submodules/helm/helm-regexp" "../submodules/helm/helm-regexp.el"
-;;;;;;  (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-regexp" "../submodules/helm/helm-regexp.el"
+;;;;;;  (21646 23014 901575 149000))
 ;;; Generated autoloads from ../submodules/helm/helm-regexp.el
 
 (defvar helm-occur-match-plugin-mode t "\
@@ -2900,9 +2910,8 @@ The prefix arg can be set before calling
 
 ;;;***
 
-;;;### (autoloads (helm-show-kill-ring helm-register helm-all-mark-rings
-;;;;;;  helm-global-mark-ring helm-mark-ring) "../submodules/helm/helm-ring"
-;;;;;;  "../submodules/helm/helm-ring.el" (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-ring" "../submodules/helm/helm-ring.el"
+;;;;;;  (21646 23014 901575 149000))
 ;;; Generated autoloads from ../submodules/helm/helm-ring.el
 
 (autoload 'helm-mark-ring "../submodules/helm/helm-ring" "\
@@ -2933,53 +2942,42 @@ First call open the kill-ring browser, next calls move to next line.
 
 \(fn)" t nil)
 
+(autoload 'helm-execute-kmacro "../submodules/helm/helm-ring" "\
+Keyboard macros with helm interface.
+Define your macros with `f3' and `f4'.
+See (info \"(emacs) Keyboard Macros\") for detailed infos.
+This command is useful when used with persistent action.
+
+\(fn)" t nil)
+
 ;;;***
 
-;;;### (autoloads (helm-semantic-or-imenu helm-semantic) "../submodules/helm/helm-semantic"
-;;;;;;  "../submodules/helm/helm-semantic.el" (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-semantic" "../submodules/helm/helm-semantic.el"
+;;;;;;  (21646 23014 901575 149000))
 ;;; Generated autoloads from ../submodules/helm/helm-semantic.el
 
 (autoload 'helm-semantic "../submodules/helm/helm-semantic" "\
 Preconfigured `helm' for `semantic'.
+If ARG is supplied, pre-select symbol at point instead of current
 
-\(fn)" t nil)
+\(fn ARG)" t nil)
 
 (autoload 'helm-semantic-or-imenu "../submodules/helm/helm-semantic" "\
 Run `helm' with `semantic' or `imenu'.
+If ARG is supplied, pre-select symbol at point instead of current
+semantic tag in scope.
 
 If `semantic-mode' is active in the current buffer, then use
 semantic for generating tags, otherwise fall back to `imenu'.
 Fill in the symbol at point by default.
 
-\(fn)" t nil)
+\(fn ARG)" t nil)
 
 ;;;***
 
-;;;### (autoloads (helm-xrandr-set helm-list-emacs-process helm-top
-;;;;;;  helm-top-run-sort-by-user helm-top-run-sort-by-mem helm-top-run-sort-by-cpu
-;;;;;;  helm-top-run-sort-by-com) "../submodules/helm/helm-sys" "../submodules/helm/helm-sys.el"
-;;;;;;  (21361 26831 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-sys" "../submodules/helm/helm-sys.el"
+;;;;;;  (21646 23014 901575 149000))
 ;;; Generated autoloads from ../submodules/helm/helm-sys.el
-
-(autoload 'helm-top-run-sort-by-com "../submodules/helm/helm-sys" "\
-
-
-\(fn)" t nil)
-
-(autoload 'helm-top-run-sort-by-cpu "../submodules/helm/helm-sys" "\
-
-
-\(fn)" t nil)
-
-(autoload 'helm-top-run-sort-by-mem "../submodules/helm/helm-sys" "\
-
-
-\(fn)" t nil)
-
-(autoload 'helm-top-run-sort-by-user "../submodules/helm/helm-sys" "\
-
-
-\(fn)" t nil)
 
 (autoload 'helm-top "../submodules/helm/helm-sys" "\
 Preconfigured `helm' for top command.
@@ -2998,8 +2996,8 @@ Preconfigured `helm' for emacs process.
 
 ;;;***
 
-;;;### (autoloads (helm-etags-select) "../submodules/helm/helm-tags"
-;;;;;;  "../submodules/helm/helm-tags.el" (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-tags" "../submodules/helm/helm-tags.el"
+;;;;;;  (21640 50972 733097 106000))
 ;;; Generated autoloads from ../submodules/helm/helm-tags.el
 
 (autoload 'helm-etags-select "../submodules/helm/helm-tags" "\
@@ -3017,10 +3015,8 @@ This function aggregates three sources of tag files:
 
 ;;;***
 
-;;;### (autoloads (helm-yank-text-at-point helm-w32-shell-execute-open-file
-;;;;;;  helm-quit-and-find-file helm-display-all-sources helm-show-all-in-this-source-only)
-;;;;;;  "../submodules/helm/helm-utils" "../submodules/helm/helm-utils.el"
-;;;;;;  (21501 22039 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-utils" "../submodules/helm/helm-utils.el"
+;;;;;;  (21646 23014 901575 149000))
 ;;; Generated autoloads from ../submodules/helm/helm-utils.el
 
 (autoload 'helm-show-all-in-this-source-only "../submodules/helm/helm-utils" "\
@@ -3055,8 +3051,8 @@ grabs the entire symbol.
 
 ;;;***
 
-;;;### (autoloads (helm-w3m-bookmarks) "../submodules/helm/helm-w3m"
-;;;;;;  "../submodules/helm/helm-w3m.el" (21477 16388 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-w3m" "../submodules/helm/helm-w3m.el"
+;;;;;;  (21640 50972 733097 106000))
 ;;; Generated autoloads from ../submodules/helm/helm-w3m.el
 
 (autoload 'helm-w3m-bookmarks "../submodules/helm/helm-w3m" "\
@@ -3071,9 +3067,8 @@ http://emacs-w3m.namazu.org/
 
 ;;;***
 
-;;;### (autoloads (helm-yaoddmuse-emacswiki-post-library helm-yaoddmuse-emacswiki-edit-or-view
-;;;;;;  helm-yaoddmuse-cache-pages) "../submodules/helm/helm-yaoddmuse"
-;;;;;;  "../submodules/helm/helm-yaoddmuse.el" (21361 26831 0 0))
+;;;### (autoloads nil "../submodules/helm/helm-yaoddmuse" "../submodules/helm/helm-yaoddmuse.el"
+;;;;;;  (21640 50972 733097 106000))
 ;;; Generated autoloads from ../submodules/helm/helm-yaoddmuse.el
 
 (autoload 'helm-yaoddmuse-cache-pages "../submodules/helm/helm-yaoddmuse" "\
@@ -3102,13 +3097,9 @@ http://www.emacswiki.org/emacs/download/yaoddmuse.el
 
 ;;;***
 
-;;;### (autoloads (highlight-symbol-occur highlight-symbol-query-replace
-;;;;;;  highlight-symbol-nav-mode highlight-symbol-prev-in-defun
-;;;;;;  highlight-symbol-next-in-defun highlight-symbol-prev highlight-symbol-next
-;;;;;;  highlight-symbol-list-all highlight-symbol-remove-all highlight-symbol-at-point
-;;;;;;  highlight-symbol-mode) "../submodules/highlight-symbol/highlight-symbol"
-;;;;;;  "../submodules/highlight-symbol/highlight-symbol.el" (21361
-;;;;;;  26832 0 0))
+;;;### (autoloads nil "../submodules/highlight-symbol/highlight-symbol"
+;;;;;;  "../submodules/highlight-symbol/highlight-symbol.el" (21646
+;;;;;;  23016 114899 123000))
 ;;; Generated autoloads from ../submodules/highlight-symbol/highlight-symbol.el
 
 (autoload 'highlight-symbol-mode "../submodules/highlight-symbol/highlight-symbol" "\
@@ -3188,8 +3179,8 @@ before if NLINES is negative.
 
 ;;;***
 
-;;;### (autoloads (litable-mode) "../submodules/litable/litable"
-;;;;;;  "../submodules/litable/litable.el" (21361 26833 0 0))
+;;;### (autoloads nil "../submodules/litable/litable" "../submodules/litable/litable.el"
+;;;;;;  (21640 50976 689763 689000))
 ;;; Generated autoloads from ../submodules/litable/litable.el
 
 (autoload 'litable-mode "../submodules/litable/litable" "\
@@ -3199,8 +3190,8 @@ Toggle litable-mode
 
 ;;;***
 
-;;;### (autoloads (lua-mode) "../submodules/lua-mode/lua-mode" "../submodules/lua-mode/lua-mode.el"
-;;;;;;  (21477 16391 0 0))
+;;;### (autoloads nil "../submodules/lua-mode/lua-mode" "../submodules/lua-mode/lua-mode.el"
+;;;;;;  (21646 23017 638220 707000))
 ;;; Generated autoloads from ../submodules/lua-mode/lua-mode.el
 
 (autoload 'lua-mode "../submodules/lua-mode/lua-mode" "\
@@ -3214,27 +3205,8 @@ Major mode for editing Lua code.
 
 ;;;***
 
-;;;### (autoloads (magit-run-gitk magit-run-git-gui-blame magit-run-git-gui
-;;;;;;  magit-add-change-log-entry-other-window magit-add-change-log-entry
-;;;;;;  magit-init magit-branch-manager magit-wazzup magit-diff-stash
-;;;;;;  magit-diff-unstaged magit-diff-staged magit-diff-working-tree
-;;;;;;  magit-diff magit-interactive-resolve magit-save-index magit-cherry
-;;;;;;  magit-reflog-head magit-reflog magit-file-log magit-log-long-ranged
-;;;;;;  magit-log-long magit-log-ranged magit-log magit-bisect-run
-;;;;;;  magit-bisect-skip magit-bisect-bad magit-bisect-good magit-bisect-reset
-;;;;;;  magit-bisect-start magit-submodule-sync magit-submodule-init
-;;;;;;  magit-submodule-update-init magit-submodule-update magit-stash-snapshot
-;;;;;;  magit-stash magit-delete-tag magit-tag magit-commit-squash
-;;;;;;  magit-commit-fixup magit-commit-reword magit-commit-extend
-;;;;;;  magit-commit-amend magit-commit magit-push magit-push-tags
-;;;;;;  magit-pull magit-remote-update magit-fetch-current magit-fetch
-;;;;;;  magit-reset-working-tree magit-reset-head-hard magit-reset-head
-;;;;;;  magit-interactive-rebase magit-rename-remote magit-remove-remote
-;;;;;;  magit-add-remote magit-rename-branch magit-delete-branch
-;;;;;;  magit-create-branch magit-checkout magit-merge-abort magit-merge
-;;;;;;  magit-show magit-dired-jump magit-unstage-all magit-stage-all
-;;;;;;  magit-status magit-show-commit magit-git-command) "../submodules/magit/magit"
-;;;;;;  "../submodules/magit/magit.el" (21501 22039 0 0))
+;;;### (autoloads nil "../submodules/magit/magit" "../submodules/magit/magit.el"
+;;;;;;  (21646 23018 568213 533000))
 ;;; Generated autoloads from ../submodules/magit/magit.el
 
 (autoload 'magit-git-command "../submodules/magit/magit" "\
@@ -3311,7 +3283,7 @@ Abort the current merge operation.
 (autoload 'magit-checkout "../submodules/magit/magit" "\
 Switch 'HEAD' to REVISION and update working tree.
 Fails if working tree or staging area contain uncommitted changes.
-If REVISION is a remote branch, offer to create a local tracking branch.
+If REVISION is a remote branch, offer to create a local branch.
 \('git checkout [-b] REVISION').
 
 \(fn REVISION)" t nil)
@@ -3739,8 +3711,8 @@ a prefix argument run gitk without any arguments.
 
 ;;;***
 
-;;;### (autoloads (magit-blame-mode) "../submodules/magit/magit-blame"
-;;;;;;  "../submodules/magit/magit-blame.el" (21361 26836 0 0))
+;;;### (autoloads nil "../submodules/magit/magit-blame" "../submodules/magit/magit-blame.el"
+;;;;;;  (21640 50985 409763 503000))
 ;;; Generated autoloads from ../submodules/magit/magit-blame.el
 
 (autoload 'magit-blame-mode "../submodules/magit/magit-blame" "\
@@ -3751,7 +3723,7 @@ Display blame information inline.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/magit-key-mode" "../submodules/magit/magit-key-mode.el"
-;;;;;;  (21365 9076 0 0))
+;;;;;;  (21640 50985 409763 503000))
 ;;; Generated autoloads from ../submodules/magit/magit-key-mode.el
 
 (defvar magit-key-mode-groups '((dispatch (actions ("b" "Branching" magit-key-mode-popup-branching) ("B" "Bisecting" magit-key-mode-popup-bisecting) ("c" "Committing" magit-key-mode-popup-committing) ("d" "Diff worktree" magit-diff-working-tree) ("D" "Diff" magit-diff) ("f" "Fetching" magit-key-mode-popup-fetching) ("F" "Pulling" magit-key-mode-popup-pulling) ("g" "Refresh Buffers" magit-refresh-all) ("l" "Logging" magit-key-mode-popup-logging) ("m" "Merging" magit-key-mode-popup-merging) ("M" "Remoting" magit-key-mode-popup-remoting) ("P" "Pushing" magit-key-mode-popup-pushing) ("o" "Submoduling" magit-key-mode-popup-submodule) ("r" "Rewriting" magit-key-mode-popup-rewriting) ("R" "Rebasing" magit-rebase-step) ("s" "Show Status" magit-status) ("S" "Stage all" magit-stage-all) ("t" "Tagging" magit-key-mode-popup-tagging) ("U" "Unstage all" magit-unstage-all) ("v" "Show Commit" magit-show-commit) ("V" "Show File" magit-show) ("w" "Wazzup" magit-wazzup) ("X" "Reset worktree" magit-reset-working-tree) ("y" "Cherry" magit-cherry) ("z" "Stashing" magit-key-mode-popup-stashing) ("!" "Running" magit-key-mode-popup-running) ("$" "Show Process" magit-display-process))) (logging (man-page "git-log") (actions ("l" "Short" magit-log) ("L" "Long" magit-log-long) ("h" "Head Reflog" magit-reflog-head) ("f" "File log" magit-file-log) ("rl" "Ranged short" magit-log-ranged) ("rL" "Ranged long" magit-log-long-ranged) ("rh" "Reflog" magit-reflog)) (switches ("-m" "Only merge commits" "--merges") ("-s" "No merge commits" "--no-merges") ("-do" "Date Order" "--date-order") ("-f" "First parent" "--first-parent") ("-i" "Case insensitive patterns" "-i") ("-pr" "Pickaxe regex" "--pickaxe-regex") ("-g" "Show Graph" "--graph") ("-n" "Name only" "--name-only") ("-am" "All match" "--all-match") ("-al" "All" "--all")) (arguments ("=r" "Relative" "--relative=" read-directory-name) ("=c" "Committer" "--committer=" read-from-minibuffer) ("=>" "Since" "--since=" read-from-minibuffer) ("=<" "Before" "--before=" read-from-minibuffer) ("=a" "Author" "--author=" read-from-minibuffer) ("=g" "Grep messages" "--grep=" read-from-minibuffer) ("=G" "Grep patches" "-G" read-from-minibuffer) ("=L" "Trace evolution of line range [long log only]" "-L" magit-read-file-trace) ("=s" "Pickaxe search" "-S" read-from-minibuffer) ("=b" "Branches" "--branches=" read-from-minibuffer) ("=R" "Remotes" "--remotes=" read-from-minibuffer))) (running (actions ("!" "Git Subcommand (from root)" magit-git-command-topdir) (":" "Git Subcommand (from pwd)" magit-git-command) ("g" "Git Gui" magit-run-git-gui) ("k" "Gitk" magit-run-gitk))) (fetching (man-page "git-fetch") (actions ("f" "Current" magit-fetch-current) ("a" "All" magit-remote-update) ("o" "Other" magit-fetch)) (switches ("-p" "Prune" "--prune"))) (pushing (man-page "git-push") (actions ("P" "Push" magit-push) ("t" "Push tags" magit-push-tags)) (switches ("-f" "Force" "--force") ("-d" "Dry run" "-n") ("-u" "Set upstream" "-u"))) (pulling (man-page "git-pull") (actions ("F" "Pull" magit-pull)) (switches ("-f" "Force" "--force") ("-r" "Rebase" "--rebase"))) (branching (man-page "git-branch") (actions ("v" "Branch manager" magit-branch-manager) ("b" "Checkout" magit-checkout) ("c" "Create" magit-create-branch) ("r" "Rename" magit-rename-branch) ("k" "Delete" magit-delete-branch)) (switches ("-t" "Set upstream configuration" "--track") ("-m" "Merged to HEAD" "--merged") ("-M" "Merged to master" "--merged=master") ("-n" "Not merged to HEAD" "--no-merged") ("-N" "Not merged to master" "--no-merged=master")) (arguments ("=c" "Contains" "--contains=" magit-read-rev-with-default) ("=m" "Merged" "--merged=" magit-read-rev-with-default) ("=n" "Not merged" "--no-merged=" magit-read-rev-with-default))) (remoting (man-page "git-remote") (actions ("v" "Remote manager" magit-branch-manager) ("a" "Add" magit-add-remote) ("r" "Rename" magit-rename-remote) ("k" "Remove" magit-remove-remote))) (tagging (man-page "git-tag") (actions ("t" "Create" magit-tag) ("k" "Delete" magit-delete-tag)) (switches ("-a" "Annotate" "--annotate") ("-f" "Force" "--force") ("-s" "Sign" "--sign"))) (stashing (man-page "git-stash") (actions ("v" "View" magit-diff-stash) ("z" "Save" magit-stash) ("s" "Snapshot" magit-stash-snapshot) ("a" "Apply" magit-stash-apply) ("p" "Pop" magit-stash-pop) ("k" "Drop" magit-stash-drop)) (switches ("-k" "Keep index" "--keep-index") ("-u" "Include untracked files" "--include-untracked") ("-a" "Include all files" "--all"))) (committing (man-page "git-commit") (actions ("c" "Commit" magit-commit) ("a" "Amend" magit-commit-amend) ("e" "Extend" magit-commit-extend) ("r" "Reword" magit-commit-reword) ("f" "Fixup" magit-commit-fixup) ("s" "Squash" magit-commit-squash)) (switches ("-a" "Stage all modified and deleted files" "--all") ("-e" "Allow empty commit" "--allow-empty") ("-v" "Show diff of changes to be committed" "--verbose") ("-n" "Bypass git hooks" "--no-verify") ("-s" "Add Signed-off-by line" "--signoff") ("-R" "Claim authorship and reset author date" "--reset-author")) (arguments ("=A" "Override the author" "--author=" read-from-minibuffer) ("=S" "Sign using gpg" "--gpg-sign=" magit-read-gpg-secret-key))) (merging (man-page "git-merge") (actions ("m" "Merge" magit-merge) ("A" "Abort" magit-merge-abort)) (switches ("-ff" "Fast-forward only" "--ff-only") ("-nf" "No fast-forward" "--no-ff") ("-sq" "Squash" "--squash")) (arguments ("-st" "Strategy" "--strategy=" read-from-minibuffer))) (rewriting (actions ("b" "Begin" magit-rewrite-start) ("s" "Stop" magit-rewrite-stop) ("a" "Abort" magit-rewrite-abort) ("f" "Finish" magit-rewrite-finish) ("d" "Diff pending" magit-rewrite-diff-pending) ("*" "Set unused" magit-rewrite-set-unused) ("." "Set used" magit-rewrite-set-used))) (apply-mailbox (man-page "git-am") (actions ("J" "Apply Mailbox" magit-apply-mailbox)) (switches ("-s" "add a Signed-off-by line to the commit message" "--signoff") ("-3" "allow fall back on 3way merging if needed" "--3way") ("-k" "pass -k flag to git-mailinfo" "--keep") ("-c" "strip everything before a scissors line" "--scissors") ("-p" "pass it through git-apply" "-p") ("-r" "override error message when patch failure occurs" "--resolvemsg") ("-d" "lie about committer date" "--committer-date-is-author-date") ("-D" "use current timestamp for author date" "--ignore-date") ("-b" "pass -b flag to git-mailinfo" "--keep-non-patch")) (arguments ("=p" "format the patch(es) are in" "--patch-format=" read-from-minibuffer))) (submodule (man-page "git-submodule") (actions ("u" "Update" magit-submodule-update) ("b" "Both update and init" magit-submodule-update-init) ("i" "Init" magit-submodule-init) ("s" "Sync" magit-submodule-sync))) (bisecting (man-page "git-bisect") (actions ("b" "Bad" magit-bisect-bad) ("g" "Good" magit-bisect-good) ("k" "Skip" magit-bisect-skip) ("r" "Reset" magit-bisect-reset) ("s" "Start" magit-bisect-start) ("u" "Run" magit-bisect-run))) (diff-options (actions ("s" "Set" magit-set-diff-options) ("d" "Set default" magit-set-default-diff-options) ("c" "Save default" magit-save-default-diff-options) ("r" "Reset to default" magit-reset-diff-options) ("h" "Toggle Hunk Refinement" magit-diff-toggle-refine-hunk)) (switches ("-m" "Show smallest possible diff" "--minimal") ("-p" "Use patience diff algorithm" "--patience") ("-h" "Use histogram diff algorithm" "--histogram") ("-b" "Ignore whitespace changes" "--ignore-space-change") ("-w" "Ignore all whitespace" "--ignore-all-space") ("-W" "Show surrounding functions" "--function-context")))) "\
@@ -3762,10 +3734,8 @@ to nil.")
 
 ;;;***
 
-;;;### (autoloads (turn-on-magit-stgit magit-stgit-mode magit-stgit-show
-;;;;;;  magit-stgit-goto magit-stgit-discard magit-stgit-rebase magit-stgit-repair
-;;;;;;  magit-stgit-refresh) "../submodules/magit/magit-stgit" "../submodules/magit/magit-stgit.el"
-;;;;;;  (21477 16393 0 0))
+;;;### (autoloads nil "../submodules/magit/magit-stgit" "../submodules/magit/magit-stgit.el"
+;;;;;;  (21640 50985 409763 503000))
 ;;; Generated autoloads from ../submodules/magit/magit-stgit.el
 
 (autoload 'magit-stgit-refresh "../submodules/magit/magit-stgit" "\
@@ -3814,11 +3784,8 @@ Unconditionally turn on `magit-stgit-mode'.
 
 ;;;***
 
-;;;### (autoloads (turn-on-magit-svn magit-svn-mode magit-svn-fetch-externals
-;;;;;;  magit-svn-remote-update magit-svn-dcommit magit-svn-rebase
-;;;;;;  magit-svn-create-tag magit-svn-create-branch magit-svn-find-rev)
-;;;;;;  "../submodules/magit/magit-svn" "../submodules/magit/magit-svn.el"
-;;;;;;  (21477 16393 0 0))
+;;;### (autoloads nil "../submodules/magit/magit-svn" "../submodules/magit/magit-svn.el"
+;;;;;;  (21640 50985 409763 503000))
 ;;; Generated autoloads from ../submodules/magit/magit-svn.el
 
 (autoload 'magit-svn-find-rev "../submodules/magit/magit-svn" "\
@@ -3871,8 +3838,8 @@ Unconditionally turn on `magit-svn-mode'.
 
 ;;;***
 
-;;;### (autoloads (turn-on-magit-topgit magit-topgit-mode) "../submodules/magit/magit-topgit"
-;;;;;;  "../submodules/magit/magit-topgit.el" (21477 16393 0 0))
+;;;### (autoloads nil "../submodules/magit/magit-topgit" "../submodules/magit/magit-topgit.el"
+;;;;;;  (21640 50985 409763 503000))
 ;;; Generated autoloads from ../submodules/magit/magit-topgit.el
 
 (autoload 'magit-topgit-mode "../submodules/magit/magit-topgit" "\
@@ -3889,9 +3856,8 @@ Unconditionally turn on `magit-topgit-mode'.
 
 ;;;***
 
-;;;### (autoloads (global-magit-wip-save-mode magit-wip-save-mode)
-;;;;;;  "../submodules/magit/magit-wip" "../submodules/magit/magit-wip.el"
-;;;;;;  (21361 26836 0 0))
+;;;### (autoloads nil "../submodules/magit/magit-wip" "../submodules/magit/magit-wip.el"
+;;;;;;  (21640 50985 409763 503000))
 ;;; Generated autoloads from ../submodules/magit/magit-wip.el
 
 (autoload 'magit-wip-save-mode "../submodules/magit/magit-wip" "\
@@ -3926,9 +3892,9 @@ See `magit-wip-save-mode' for more information on Magit-Wip-Save mode.
 
 ;;;***
 
-;;;### (autoloads (gfm-mode markdown-mode) "../submodules/markdown-mode/markdown-mode"
-;;;;;;  "../submodules/markdown-mode/markdown-mode.el" (21501 22039
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/markdown-mode/markdown-mode"
+;;;;;;  "../submodules/markdown-mode/markdown-mode.el" (21646 23018
+;;;;;;  774878 603000))
 ;;; Generated autoloads from ../submodules/markdown-mode/markdown-mode.el
 
 (autoload 'markdown-mode "../submodules/markdown-mode/markdown-mode" "\
@@ -3946,9 +3912,8 @@ Major mode for editing GitHub Flavored Markdown files.
 
 ;;;***
 
-;;;### (autoloads (restore-frame maximize-frame x-restore-frame x-maximize-frame
-;;;;;;  w32-restore-frame w32-maximize-frame) "../submodules/maxframe/maxframe"
-;;;;;;  "../submodules/maxframe/maxframe.el" (20925 9903 0 0))
+;;;### (autoloads nil "../submodules/maxframe/maxframe" "../submodules/maxframe/maxframe.el"
+;;;;;;  (21646 23018 998210 216000))
 ;;; Generated autoloads from ../submodules/maxframe/maxframe.el
 
 (autoload 'w32-maximize-frame "../submodules/maxframe/maxframe" "\
@@ -3986,10 +3951,9 @@ Restores a maximized frame.  See `maximize-frame'.
 
 ;;;***
 
-;;;### (autoloads (mc/edit-beginnings-of-lines mc/edit-ends-of-lines
-;;;;;;  mc/edit-lines) "../submodules/multiple-cursors/mc-edit-lines"
-;;;;;;  "../submodules/multiple-cursors/mc-edit-lines.el" (21361
-;;;;;;  26837 0 0))
+;;;### (autoloads nil "../submodules/multiple-cursors/mc-edit-lines"
+;;;;;;  "../submodules/multiple-cursors/mc-edit-lines.el" (21640
+;;;;;;  50989 186430 89000))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-edit-lines.el
 
 (autoload 'mc/edit-lines "../submodules/multiple-cursors/mc-edit-lines" "\
@@ -4018,18 +3982,25 @@ Add one cursor to the beginning of each line in the active region.
 
 ;;;***
 
-;;;### (autoloads (mc/mark-sgml-tag-pair mc/add-cursor-on-click mc/mark-all-symbols-like-this-in-defun
-;;;;;;  mc/mark-all-words-like-this-in-defun mc/mark-all-like-this-in-defun
-;;;;;;  mc/mark-all-dwim mc/mark-all-like-this-dwim mc/mark-more-like-this-extended
-;;;;;;  mc/mark-all-in-region-regexp mc/mark-all-in-region mc/mark-all-symbols-like-this
-;;;;;;  mc/mark-all-words-like-this mc/mark-all-like-this mc/skip-to-previous-like-this
-;;;;;;  mc/skip-to-next-like-this mc/unmark-previous-like-this mc/unmark-next-like-this
-;;;;;;  mc/mark-previous-lines mc/mark-next-lines mc/mark-previous-symbol-like-this
-;;;;;;  mc/mark-previous-word-like-this mc/mark-previous-like-this
-;;;;;;  mc/mark-next-symbol-like-this mc/mark-next-word-like-this
-;;;;;;  mc/mark-next-like-this) "../submodules/multiple-cursors/mc-mark-more"
-;;;;;;  "../submodules/multiple-cursors/mc-mark-more.el" (21361 26837
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/multiple-cursors/mc-hide-unmatched-lines-mode"
+;;;;;;  "../submodules/multiple-cursors/mc-hide-unmatched-lines-mode.el"
+;;;;;;  (21646 23019 324874 363000))
+;;; Generated autoloads from ../submodules/multiple-cursors/mc-hide-unmatched-lines-mode.el
+
+(autoload 'mc-hide-unmatched-lines-mode "../submodules/multiple-cursors/mc-hide-unmatched-lines-mode" "\
+Minor mode when enabled hides all lines where no cursos (and
+also hum/lines-to-expand below and above) To make use of this
+mode press \"C-'\" while multiple-cursor-mode is active. You can
+still edit lines while you are in mc-hide-unmatched-lines
+mode. To leave this mode press <return> or \"C-g\"
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil "../submodules/multiple-cursors/mc-mark-more"
+;;;;;;  "../submodules/multiple-cursors/mc-mark-more.el" (21640 50989
+;;;;;;  186430 89000))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-mark-more.el
 
 (autoload 'mc/mark-next-like-this "../submodules/multiple-cursors/mc-mark-more" "\
@@ -4189,9 +4160,9 @@ Mark the tag we're in and its pair for renaming.
 
 ;;;***
 
-;;;### (autoloads (mc/mark-pop) "../submodules/multiple-cursors/mc-mark-pop"
-;;;;;;  "../submodules/multiple-cursors/mc-mark-pop.el" (21361 26837
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/multiple-cursors/mc-mark-pop"
+;;;;;;  "../submodules/multiple-cursors/mc-mark-pop.el" (21640 50989
+;;;;;;  186430 89000))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-mark-pop.el
 
 (autoload 'mc/mark-pop "../submodules/multiple-cursors/mc-mark-pop" "\
@@ -4202,9 +4173,9 @@ to the popped mark.
 
 ;;;***
 
-;;;### (autoloads (mc/sort-regions mc/reverse-regions mc/insert-numbers)
-;;;;;;  "../submodules/multiple-cursors/mc-separate-operations" "../submodules/multiple-cursors/mc-separate-operations.el"
-;;;;;;  (21361 26837 0 0))
+;;;### (autoloads nil "../submodules/multiple-cursors/mc-separate-operations"
+;;;;;;  "../submodules/multiple-cursors/mc-separate-operations.el"
+;;;;;;  (21640 50989 186430 89000))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-separate-operations.el
 
 (autoload 'mc/insert-numbers "../submodules/multiple-cursors/mc-separate-operations" "\
@@ -4224,9 +4195,21 @@ Insert increasing numbers for each cursor, starting at 0 or ARG.
 
 ;;;***
 
-;;;### (autoloads (set-rectangular-region-anchor) "../submodules/multiple-cursors/rectangular-region-mode"
+;;;### (autoloads nil "../submodules/multiple-cursors/multiple-cursors-core"
+;;;;;;  "../submodules/multiple-cursors/multiple-cursors-core.el"
+;;;;;;  (21646 23019 324874 363000))
+;;; Generated autoloads from ../submodules/multiple-cursors/multiple-cursors-core.el
+
+(autoload 'multiple-cursors-mode "../submodules/multiple-cursors/multiple-cursors-core" "\
+Mode while multiple cursors are active.
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil "../submodules/multiple-cursors/rectangular-region-mode"
 ;;;;;;  "../submodules/multiple-cursors/rectangular-region-mode.el"
-;;;;;;  (21361 26837 0 0))
+;;;;;;  (21646 23019 324874 363000))
 ;;; Generated autoloads from ../submodules/multiple-cursors/rectangular-region-mode.el
 
 (autoload 'set-rectangular-region-anchor "../submodules/multiple-cursors/rectangular-region-mode" "\
@@ -4237,11 +4220,15 @@ an exceedingly quick way of adding multiple cursors to multiple lines.
 
 \(fn)" t nil)
 
+(autoload 'rectangular-region-mode "../submodules/multiple-cursors/rectangular-region-mode" "\
+A mode for creating a rectangular region to edit
+
+\(fn &optional ARG)" t nil)
+
 ;;;***
 
-;;;### (autoloads (rainbow-mode) "../submodules/rainbow-mode/rainbow-mode"
-;;;;;;  "../submodules/rainbow-mode/rainbow-mode.el" (21472 12291
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/rainbow-mode/rainbow-mode" "../submodules/rainbow-mode/rainbow-mode.el"
+;;;;;;  (21640 50994 133096 658000))
 ;;; Generated autoloads from ../submodules/rainbow-mode/rainbow-mode.el
 
 (autoload 'rainbow-mode "../submodules/rainbow-mode/rainbow-mode" "\
@@ -4252,9 +4239,8 @@ This will fontify with colors the string like \"#aabbcc\" or \"blue\".
 
 ;;;***
 
-;;;### (autoloads (regpop-assert regpop-stub regpop-todo regpop)
-;;;;;;  "../submodules/regpop/regpop" "../submodules/regpop/regpop.el"
-;;;;;;  (20925 9993 0 0))
+;;;### (autoloads nil "../submodules/regpop/regpop" "../submodules/regpop/regpop.el"
+;;;;;;  (21640 50994 706429 983000))
 ;;; Generated autoloads from ../submodules/regpop/regpop.el
 
 (autoload 'regpop "../submodules/regpop/regpop" "\
@@ -4279,8 +4265,8 @@ popup all stubs in the current buffer.
 
 ;;;***
 
-;;;### (autoloads (scss-mode) "../submodules/scss-mode/scss-mode"
-;;;;;;  "../submodules/scss-mode/scss-mode.el" (21409 59240 0 0))
+;;;### (autoloads nil "../submodules/scss-mode/scss-mode" "../submodules/scss-mode/scss-mode.el"
+;;;;;;  (21640 50996 613096 597000))
 ;;; Generated autoloads from ../submodules/scss-mode/scss-mode.el
 
 (autoload 'scss-mode "../submodules/scss-mode/scss-mode" "\
@@ -4294,12 +4280,8 @@ Special commands:
 
 ;;;***
 
-;;;### (autoloads (smart-tabs-add-language-support smart-tabs-insinuate
-;;;;;;  smart-tabs-advice smart-tabs-mode-enable smart-tabs-mode
-;;;;;;  smart-tabs-create-language-advice smart-tabs-create-advice-list
-;;;;;;  smart-tabs-when) "../submodules/smarttabs/smart-tabs-mode"
-;;;;;;  "../submodules/smarttabs/smart-tabs-mode.el" (21361 26975
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/smarttabs/smart-tabs-mode" "../submodules/smarttabs/smart-tabs-mode.el"
+;;;;;;  (21640 50997 316429 916000))
 ;;; Generated autoloads from ../submodules/smarttabs/smart-tabs-mode.el
 
 (autoload 'smart-tabs-when "../submodules/smarttabs/smart-tabs-mode" "\
@@ -4357,9 +4339,8 @@ Add support for a language not already in the `smart-tabs-insinuate-alist'.
 
 ;;;***
 
-;;;### (autoloads (smex-initialize smex-major-mode-commands smex)
-;;;;;;  "../submodules/smex/smex" "../submodules/smex/smex.el" (21361
-;;;;;;  26975 0 0))
+;;;### (autoloads nil "../submodules/smex/smex" "../submodules/smex/smex.el"
+;;;;;;  (21646 23022 804847 519000))
 ;;; Generated autoloads from ../submodules/smex/smex.el
 
 (autoload 'smex "../submodules/smex/smex" "\
@@ -4379,9 +4360,9 @@ Like `smex', but limited to commands that are relevant to the active major mode.
 
 ;;;***
 
-;;;### (autoloads (tabulated-list-mode) "../submodules/tabulated-list/tabulated-list"
-;;;;;;  "../submodules/tabulated-list/tabulated-list.el" (20925 9996
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/tabulated-list/tabulated-list"
+;;;;;;  "../submodules/tabulated-list/tabulated-list.el" (21640 50998
+;;;;;;  729763 218000))
 ;;; Generated autoloads from ../submodules/tabulated-list/tabulated-list.el
 
 (autoload 'tabulated-list-mode "../submodules/tabulated-list/tabulated-list" "\
@@ -4423,8 +4404,8 @@ as the ewoc pretty-printer.
 
 ;;;***
 
-;;;### (autoloads (bookmark-w3m-bookmark-jump) "../submodules/w3m/bookmark-w3m"
-;;;;;;  "../submodules/w3m/bookmark-w3m.el" (20925 10016 0 0))
+;;;### (autoloads nil "../submodules/w3m/bookmark-w3m" "../submodules/w3m/bookmark-w3m.el"
+;;;;;;  (21640 51010 36429 644000))
 ;;; Generated autoloads from ../submodules/w3m/bookmark-w3m.el
 
 (autoload 'bookmark-w3m-bookmark-jump "../submodules/w3m/bookmark-w3m" "\
@@ -4434,8 +4415,8 @@ Default bookmark handler for w3m buffers.
 
 ;;;***
 
-;;;### (autoloads (mime-w3m-preview-text/html) "../submodules/w3m/mime-w3m"
-;;;;;;  "../submodules/w3m/mime-w3m.el" (20925 10016 0 0))
+;;;### (autoloads nil "../submodules/w3m/mime-w3m" "../submodules/w3m/mime-w3m.el"
+;;;;;;  (21640 51010 39762 977000))
 ;;; Generated autoloads from ../submodules/w3m/mime-w3m.el
 
 (autoload 'mime-w3m-preview-text/html "../submodules/w3m/mime-w3m" "\
@@ -4445,9 +4426,8 @@ Default bookmark handler for w3m buffers.
 
 ;;;***
 
-;;;### (autoloads (octet-mime-setup mime-view-octet mime-preview-octet
-;;;;;;  octet-find-file octet-buffer) "../submodules/w3m/octet" "../submodules/w3m/octet.el"
-;;;;;;  (20925 10016 0 0))
+;;;### (autoloads nil "../submodules/w3m/octet" "../submodules/w3m/octet.el"
+;;;;;;  (21640 51010 39762 977000))
 ;;; Generated autoloads from ../submodules/w3m/octet.el
 
 (autoload 'octet-buffer "../submodules/w3m/octet" "\
@@ -4479,10 +4459,8 @@ Octet setting for MIME module.
 
 ;;;***
 
-;;;### (autoloads (w3m-buffer w3m-region w3m-find-file w3m-browse-url
-;;;;;;  w3m w3m-create-empty-session w3m-gohome w3m-goto-url-new-session
-;;;;;;  w3m-goto-url w3m-download w3m-retrieve) "../submodules/w3m/w3m"
-;;;;;;  "../submodules/w3m/w3m.el" (21361 26975 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m" "../submodules/w3m/w3m.el"
+;;;;;;  (21640 51010 49762 974000))
 ;;; Generated autoloads from ../submodules/w3m/w3m.el
 
 (autoload 'w3m-retrieve "../submodules/w3m/w3m" "\
@@ -4638,8 +4616,8 @@ See `w3m-region' for the optional arguments.
 
 ;;;***
 
-;;;### (autoloads (w3m-antenna w3m-about-antenna) "../submodules/w3m/w3m-antenna"
-;;;;;;  "../submodules/w3m/w3m-antenna.el" (20925 10017 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-antenna" "../submodules/w3m/w3m-antenna.el"
+;;;;;;  (21640 51010 43096 310000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-antenna.el
 
 (autoload 'w3m-about-antenna "../submodules/w3m/w3m-antenna" "\
@@ -4654,10 +4632,8 @@ Report changes of WEB sites, which is specified in `w3m-antenna-sites'.
 
 ;;;***
 
-;;;### (autoloads (w3m-setup-bookmark-menu w3m-about-bookmark w3m-bookmark-view-new-session
-;;;;;;  w3m-bookmark-view w3m-bookmark-add-current-url-group w3m-bookmark-add-all-urls
-;;;;;;  w3m-bookmark-add-current-url w3m-bookmark-add-this-url) "../submodules/w3m/w3m-bookmark"
-;;;;;;  "../submodules/w3m/w3m-bookmark.el" (21093 46319 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-bookmark" "../submodules/w3m/w3m-bookmark.el"
+;;;;;;  (21640 51010 43096 310000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-bookmark.el
 
 (autoload 'w3m-bookmark-add-this-url "../submodules/w3m/w3m-bookmark" "\
@@ -4703,9 +4679,8 @@ Setup w3m bookmark items in menubar.
 
 ;;;***
 
-;;;### (autoloads (w3m-about-cookie w3m-cookie w3m-cookie-get w3m-cookie-set
-;;;;;;  w3m-cookie-shutdown) "../submodules/w3m/w3m-cookie" "../submodules/w3m/w3m-cookie.el"
-;;;;;;  (20925 10017 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-cookie" "../submodules/w3m/w3m-cookie.el"
+;;;;;;  (21640 51010 46429 643000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-cookie.el
 
 (autoload 'w3m-cookie-shutdown "../submodules/w3m/w3m-cookie" "\
@@ -4736,8 +4711,8 @@ Make the html contents to display and to enable you to manage cookies.
 
 ;;;***
 
-;;;### (autoloads (w3m-dtree w3m-about-dtree) "../submodules/w3m/w3m-dtree"
-;;;;;;  "../submodules/w3m/w3m-dtree.el" (20925 10017 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-dtree" "../submodules/w3m/w3m-dtree.el"
+;;;;;;  (21640 51010 46429 643000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-dtree.el
 
 (autoload 'w3m-about-dtree "../submodules/w3m/w3m-dtree" "\
@@ -4753,8 +4728,8 @@ If called with 'prefix argument', display all directorys and files.
 
 ;;;***
 
-;;;### (autoloads (w3m-fb-mode) "../submodules/w3m/w3m-fb" "../submodules/w3m/w3m-fb.el"
-;;;;;;  (20925 10017 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-fb" "../submodules/w3m/w3m-fb.el"
+;;;;;;  (21640 51010 46429 643000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-fb.el
 
 (defvar w3m-fb-mode nil "\
@@ -4774,8 +4749,8 @@ This allows frame-local lists of buffers (tabs).
 
 ;;;***
 
-;;;### (autoloads (w3m-filter) "../submodules/w3m/w3m-filter" "../submodules/w3m/w3m-filter.el"
-;;;;;;  (21093 46319 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-filter" "../submodules/w3m/w3m-filter.el"
+;;;;;;  (21640 51010 46429 643000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-filter.el
 
 (autoload 'w3m-filter "../submodules/w3m/w3m-filter" "\
@@ -4785,8 +4760,8 @@ Apply filtering rule of URL against a content in this buffer.
 
 ;;;***
 
-;;;### (autoloads (w3m-fontify-forms) "../submodules/w3m/w3m-form"
-;;;;;;  "../submodules/w3m/w3m-form.el" (20925 10017 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-form" "../submodules/w3m/w3m-form.el"
+;;;;;;  (21640 51010 46429 643000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-form.el
 
 (autoload 'w3m-fontify-forms "../submodules/w3m/w3m-form" "\
@@ -4796,12 +4771,8 @@ Process half-dumped data and fontify forms in this buffer.
 
 ;;;***
 
-;;;### (autoloads (w3m-lnum-bookmark-add-this-url w3m-lnum-download-this-url
-;;;;;;  w3m-lnum-print-this-url w3m-lnum-edit-this-url w3m-lnum-external-view-this-url
-;;;;;;  w3m-lnum-save-image w3m-lnum-view-image w3m-lnum-toggle-inline-image
-;;;;;;  w3m-lnum-universal w3m-lnum-follow w3m-lnum-goto w3m-lnum-mode)
-;;;;;;  "../submodules/w3m/w3m-lnum" "../submodules/w3m/w3m-lnum.el"
-;;;;;;  (20925 10017 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-lnum" "../submodules/w3m/w3m-lnum.el"
+;;;;;;  (21640 51010 46429 643000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-lnum.el
 
 (autoload 'w3m-lnum-mode "../submodules/w3m/w3m-lnum" "\
@@ -4892,8 +4863,8 @@ If no link under point, activate numbering and ask for one.
 
 ;;;***
 
-;;;### (autoloads (w3m-namazu w3m-about-namazu) "../submodules/w3m/w3m-namazu"
-;;;;;;  "../submodules/w3m/w3m-namazu.el" (20925 10017 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-namazu" "../submodules/w3m/w3m-namazu.el"
+;;;;;;  (21640 51010 46429 643000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-namazu.el
 
 (autoload 'w3m-about-namazu "../submodules/w3m/w3m-namazu" "\
@@ -4908,8 +4879,8 @@ Search indexed files with Namazu.
 
 ;;;***
 
-;;;### (autoloads (w3m-perldoc w3m-about-perldoc) "../submodules/w3m/w3m-perldoc"
-;;;;;;  "../submodules/w3m/w3m-perldoc.el" (20925 10017 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-perldoc" "../submodules/w3m/w3m-perldoc.el"
+;;;;;;  (21640 51010 46429 643000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-perldoc.el
 
 (autoload 'w3m-about-perldoc "../submodules/w3m/w3m-perldoc" "\
@@ -4924,9 +4895,8 @@ View Perl documents.
 
 ;;;***
 
-;;;### (autoloads (w3m-search-uri-replace w3m-search-new-session
-;;;;;;  w3m-search) "../submodules/w3m/w3m-search" "../submodules/w3m/w3m-search.el"
-;;;;;;  (21361 26975 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-search" "../submodules/w3m/w3m-search.el"
+;;;;;;  (21640 51010 46429 643000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-search.el
 
 (autoload 'w3m-search "../submodules/w3m/w3m-search" "\
@@ -4951,10 +4921,8 @@ Generate query string for ENGINE from URI matched by last search.
 
 ;;;***
 
-;;;### (autoloads (w3m-session-last-crashed-session w3m-session-last-autosave-session
-;;;;;;  w3m-setup-session-menu w3m-session-select w3m-session-crash-recovery-remove
-;;;;;;  w3m-session-save) "../submodules/w3m/w3m-session" "../submodules/w3m/w3m-session.el"
-;;;;;;  (20925 10017 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-session" "../submodules/w3m/w3m-session.el"
+;;;;;;  (21640 51010 46429 643000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-session.el
 
 (autoload 'w3m-session-save "../submodules/w3m/w3m-session" "\
@@ -4989,8 +4957,8 @@ Setup w3m session items in menubar.
 
 ;;;***
 
-;;;### (autoloads (w3m-replace-symbol) "../submodules/w3m/w3m-symbol"
-;;;;;;  "../submodules/w3m/w3m-symbol.el" (20925 10017 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-symbol" "../submodules/w3m/w3m-symbol.el"
+;;;;;;  (21640 51010 46429 643000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-symbol.el
 
 (autoload 'w3m-replace-symbol "../submodules/w3m/w3m-symbol" "\
@@ -5000,8 +4968,8 @@ Setup w3m session items in menubar.
 
 ;;;***
 
-;;;### (autoloads (w3m-about-weather w3m-weather) "../submodules/w3m/w3m-weather"
-;;;;;;  "../submodules/w3m/w3m-weather.el" (20925 10017 0 0))
+;;;### (autoloads nil "../submodules/w3m/w3m-weather" "../submodules/w3m/w3m-weather.el"
+;;;;;;  (21640 51010 46429 643000))
 ;;; Generated autoloads from ../submodules/w3m/w3m-weather.el
 
 (autoload 'w3m-weather "../submodules/w3m/w3m-weather" "\
@@ -5016,8 +4984,8 @@ Display weather report.
 
 ;;;***
 
-;;;### (autoloads (web-mode) "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
-;;;;;;  (21501 22040 0 0))
+;;;### (autoloads nil "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
+;;;;;;  (21646 23024 451501 480000))
 ;;; Generated autoloads from ../submodules/web-mode/web-mode.el
 
 (autoload 'web-mode "../submodules/web-mode/web-mode" "\
@@ -5027,8 +4995,8 @@ Major mode for editing web templates.
 
 ;;;***
 
-;;;### (autoloads (yaml-mode yaml) "../submodules/yaml-mode/yaml-mode"
-;;;;;;  "../submodules/yaml-mode/yaml-mode.el" (21501 22040 0 0))
+;;;### (autoloads nil "../submodules/yaml-mode/yaml-mode" "../submodules/yaml-mode/yaml-mode.el"
+;;;;;;  (21646 23024 854831 701000))
 ;;; Generated autoloads from ../submodules/yaml-mode/yaml-mode.el
 
 (let ((loads (get 'yaml 'custom-loads))) (if (member '"../submodules/yaml-mode/yaml-mode" loads) nil (put 'yaml 'custom-loads (cons '"../submodules/yaml-mode/yaml-mode" loads))))
@@ -5044,8 +5012,8 @@ Simple mode to edit YAML.
 
 ;;;***
 
-;;;### (autoloads (yas-global-mode yas-minor-mode) "../submodules/yasnippet/yasnippet"
-;;;;;;  "../submodules/yasnippet/yasnippet.el" (21501 22040 0 0))
+;;;### (autoloads nil "../submodules/yasnippet/yasnippet" "../submodules/yasnippet/yasnippet.el"
+;;;;;;  (21646 23025 374827 690000))
 ;;; Generated autoloads from ../submodules/yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "../submodules/yasnippet/yasnippet" "\
@@ -5087,10 +5055,8 @@ See `yas-minor-mode' for more information on Yas minor mode.
 
 ;;;***
 
-;;;### (autoloads (zencoding-preview zencoding-expand-yas zencoding-mode
-;;;;;;  zencoding-expand-line) "../submodules/zencoding/zencoding-mode"
-;;;;;;  "../submodules/zencoding/zencoding-mode.el" (21361 26976
-;;;;;;  0 0))
+;;;### (autoloads nil "../submodules/zencoding/zencoding-mode" "../submodules/zencoding/zencoding-mode.el"
+;;;;;;  (21640 51019 599762 774000))
 ;;; Generated autoloads from ../submodules/zencoding/zencoding-mode.el
 
 (autoload 'zencoding-expand-line "../submodules/zencoding/zencoding-mode" "\
@@ -5162,13 +5128,12 @@ accept it or skip it.
 ;;;;;;  "../submodules/expand-region/the-org-mode-expansions.el"
 ;;;;;;  "../submodules/expand-region/web-mode-expansions.el" "../submodules/f/f.el"
 ;;;;;;  "../submodules/flycheck-clangcheck/flycheck-clangcheck.el"
-;;;;;;  "../submodules/gh/gh-pkg.el" "../submodules/gh/gh-profile.el"
-;;;;;;  "../submodules/gh/gh.el" "../submodules/helm/helm-aliases.el"
-;;;;;;  "../submodules/helm/helm-pkg.el" "../submodules/helm/helm-plugin.el"
+;;;;;;  "../submodules/flycheck/flycheck-ert.el" "../submodules/gh/gh-pkg.el"
+;;;;;;  "../submodules/gh/gh-profile.el" "../submodules/gh/gh.el"
+;;;;;;  "../submodules/helm/helm-aliases.el" "../submodules/helm/helm-pkg.el"
+;;;;;;  "../submodules/helm/helm-plugin.el" "../submodules/helm/helm-source.el"
 ;;;;;;  "../submodules/json/json.el" "../submodules/logito/logito.el"
-;;;;;;  "../submodules/multiple-cursors/mc-cycle-cursors.el" "../submodules/multiple-cursors/mc-hide-unmatched-lines-mode.el"
-;;;;;;  "../submodules/multiple-cursors/multiple-cursors-core.el"
-;;;;;;  "../submodules/multiple-cursors/multiple-cursors-pkg.el"
+;;;;;;  "../submodules/multiple-cursors/mc-cycle-cursors.el" "../submodules/multiple-cursors/multiple-cursors-pkg.el"
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors.el" "../submodules/p4/p4.el"
 ;;;;;;  "../submodules/pcache/pcache-tests.el" "../submodules/pcache/pcache.el"
 ;;;;;;  "../submodules/popup/popup.el" "../submodules/powerline/powerline.el"
@@ -5179,9 +5144,9 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-proc.el" "../submodules/w3m/w3m-rss.el"
 ;;;;;;  "../submodules/w3m/w3m-tabmenu.el" "../submodules/w3m/w3m-ucs.el"
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
-;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/web-mode/wfs-mode.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
-;;;;;;  (21515 30129 582601 0))
+;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/yasnippet-debug.el"
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21646 23290
+;;;;;;  662772 806000))
 
 ;;;***
 
