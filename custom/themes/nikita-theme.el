@@ -2,7 +2,7 @@
   "Nikita color theme")
 
 (let ((class '((class color) (min-colors 89)))
-					; Nikita palette
+                    ; Nikita palette
       ;; colors with +x are lighter, colors with -x are darker
       (nikita-fg       "#c3c3b7")
       (nikita-fg+01    "#e3e3e7")
@@ -158,6 +158,9 @@
    `(helm-visible-mark ((,class (:foreground ,nikita-bg :background ,nikita-yellow-02))))
    `(helm-candidate-number ((,class (:foreground ,nikita-green :background ,nikita-bg-01))))
 
+   ;; org
+   `(org-tag ((,class (:foreground ,nikita-blue+01))))
+   `(org-time-grid ((,class (:foreground ,nikita-yellow+01))))
 
    ;;; custom theme variables
    (custom-theme-set-variables
@@ -169,8 +172,8 @@
     `(fci-rule-color ,nikita-bg-02))
 
    (eval-after-load "powerline" '(progn
-				   (set-face-attribute 'mode-line nil :box nil)
-				   (set-face-attribute 'mode-line-inactive nil :box nil) ))
+                   (set-face-attribute 'mode-line nil :box nil)
+                   (set-face-attribute 'mode-line-inactive nil :box nil) ))
 
    )
   )
