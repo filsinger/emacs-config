@@ -10,13 +10,13 @@
 ;; ================================================
 ;; cygwin
 ;; ================================================
- (when (file-directory-p "c:/cygwin/bin")
+ (when (file-directory-p "c:/cygwin64/bin")
    (progn
- 	(add-to-list 'exec-path "c:/cygwin/bin")
-;; 	(setq shell-file-name "zsh")
-;; 	(setq explicit-shell-file-name shell-file-name)
-;; 	(setq explicit-bash-args "-l -i")
-	))
+    (add-to-list 'exec-path "c:/cygwin64/bin")
+;;  (setq shell-file-name "zsh")
+;;  (setq explicit-shell-file-name shell-file-name)
+;;  (setq explicit-bash-args "-l -i")
+    ))
 
 ;; ================================================
 ;; cygwin clipboard support
