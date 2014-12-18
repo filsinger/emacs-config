@@ -9,4 +9,4 @@ Icon?
 ac-comphist.dat
 auto-save/
 *.elc
-/Users/jfilsinger
+local-custom.el
