@@ -483,5 +483,5 @@
 (load "key-bindings.el")
 ;; ================================================
 
-(setq custom-file (concat emacs-sync-path "/local-custom.el"))
+(setq custom-file (concat emacs-sync-path "local-custom.el"))
 (load custom-file)
