@@ -484,4 +484,4 @@
 ;; ================================================
 
 (setq custom-file (concat emacs-sync-path "local-custom.el"))
-(load custom-file)
+(when (file-exists-p custom-file) (load custom-file))
