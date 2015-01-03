@@ -1,18 +1,36 @@
 ;; ================================================
 ;; Turn off mouse interface early in startup to avoid momentary display
 ;; ================================================
-(dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
-  (when (fboundp mode) (funcall mode -1)))
 
-;;(when (fboundp menu-bar-mode) (funcall menu-bar-mode -1))
+(setq default-frame-alist '((font-backend . "xft")
+                            (vertical-scroll-bars . 0)
+                            (menu-bar-lines . 0)
+                            (tool-bar-lines . 0)
+                            (scroll-bar-mode . 0)
+                            ))
 
 ;; set the fonts (fonts are set here so the window doesnt need to resize after it's loaded)
 (cond ((eq system-type 'darwin)
-       (set-frame-font "Menlo-11" nil t))                                     ; Set the default font to 'Menlo' on OSX (an alternative on windows might be 'https://github.com/andreberg/Meslo-Font')
-      ((eq system-type 'gnu/linux)
-       (set-frame-font "Monospace-8"))
-      ((or (eq system-type 'windows-nt) (eq system-type 'cygwin))
-       (set-frame-font "Consolas-10" nil t)))                                 ; Set the default font to 'Consolas-10' on Windows
+       (add-to-list 'default-frame-alist '(font . "Menlo-11"))
+       (add-to-list 'minibuffer-frame-alist '(font . "Menlo-11"))
+       ;;(set-frame-font "Menlo-11")
+       )
+       ((eq system-type 'gnu/linux)
+        (add-to-list 'default-frame-alist '(font . "Monospace-8"))
+        (add-to-list 'minibuffer-frame-alist '(font . "Monospace-8"))
+        ;;(set-frame-font "Monospace-8")
+        )
+       ((or (eq system-type 'windows-nt) (eq system-type 'cygwin))
+        (add-to-list 'default-frame-alist '(font . "Consolas-10"))
+        (add-to-list 'minibuffer-frame-alist '(font . "Consolas-10"))
+        ;;(set-frame-font "Consolas-10")
+        ))
+
+;;(set-frame-font (assoc 'font default-frame-alist))
+
+(dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
+  (when (fboundp mode) (funcall mode -1)))
+
 ;; ================================================
 
 ;; ================================================
@@ -168,6 +186,14 @@
  inhibit-splash-screen t                  ; Disable the splash screen
  inhibit-startup-echo-area-message t      ; Disable echo area message
  inhibit-startup-screen t                 ; Disable the startup screen
+ inhibit-startup-message 't
+
+ scroll-bar-mode nil
+ tool-bar-mode nil
+ menu-bar-mode nil
+ scroll-margin 0
+
+ cursor-in-non-selected-windows nil
 
  ;; backup
  backup-inhibited t                       ; disable backup
