@@ -502,6 +502,22 @@
 (eval-after-load "ido" (setq ido-save-directory-list-file (convert-standard-filename "~/.emacs.d/.ido.last")))
 ;; ================================================
 
+;; ================================================
+;; org-mode
+;; ================================================
+(setq
+ org-directory "~/org"
+ org-default-notes-file (concat org-directory "/notes.org")
+ ;; capture templates
+ org-capture-templates '(("t" "Todo" entry (file+headline (concat org-directory "/tasks.org") "Tasks") "* TODO %?\n  %i\n  %a")
+                         ("n" "Note" entry (file+datetree (concat org-directory "/notes.org")) "* %?\nEntered on %U\n  %i\n  %a")
+                         ("m" "Music" entry (file+headline (concat org-directory "/media.org") "Music") "* %?")
+                         ("v" "Movie" entry (file+headline (concat org-directory "/media.org") "Movies") "* %?")
+                         )
+ )
+
+;; ================================================
+
 
 ;; ================================================
 ;; Load Key Bindings
