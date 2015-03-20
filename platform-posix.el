@@ -54,7 +54,16 @@
     (add-to-list 'load-path "/usr/local/opt/cmake/share/cmake/editors/emacs/")
       (load "cmake-mode.el")
       (add-to-list 'auto-mode-alist '("\\CMakeLists.txt$" . cmake-mode))
-    )
+      )
+
+  (eval-after-load "flycheck-clangcheck"
+    '(progn
+       (if (eq system-type 'darwin)
+           (flycheck-set-checker-executable 'c/c++-clangcheck "/usr/local/bin/clang-check")
+         (flycheck-set-checker-executable 'c/c++-clangcheck "/usr/bin/clang-check")
+         )
+       ))
+
 )
 
 (let ((clang-format-script (expand-file-name (concat "~/.dotfiles/bin/clang-format"))))
