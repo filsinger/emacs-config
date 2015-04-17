@@ -1082,7 +1082,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;***
 
 ;;;### (autoloads nil "../submodules/flycheck/flycheck" "../submodules/flycheck/flycheck.el"
-;;;;;;  (21771 43533 93078 617000))
+;;;;;;  (21808 25199 416622 725000))
 ;;; Generated autoloads from ../submodules/flycheck/flycheck.el
 
 (autoload 'flycheck-info "../submodules/flycheck/flycheck" "\
@@ -1499,7 +1499,7 @@ Displays a list of all of the current user's gists in a new buffer.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/git-modes/git-commit-mode" "../submodules/git-modes/git-commit-mode.el"
-;;;;;;  (21646 23013 621585 21000))
+;;;;;;  (21808 25201 309943 13000))
 ;;; Generated autoloads from ../submodules/git-modes/git-commit-mode.el
 
 (autoload 'git-commit-mode "../submodules/git-modes/git-commit-mode" "\
@@ -1536,8 +1536,8 @@ running 'man git-rebase' at the command line) for details.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/git-modes/gitattributes-mode"
-;;;;;;  "../submodules/git-modes/gitattributes-mode.el" (21771 43534
-;;;;;;  976399 732000))
+;;;;;;  "../submodules/git-modes/gitattributes-mode.el" (21808 25201
+;;;;;;  309943 13000))
 ;;; Generated autoloads from ../submodules/git-modes/gitattributes-mode.el
 
 (autoload 'gitattributes-mode "../submodules/git-modes/gitattributes-mode" "\
@@ -1551,7 +1551,7 @@ A major mode for editing .gitattributes files.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/git-modes/gitconfig-mode" "../submodules/git-modes/gitconfig-mode.el"
-;;;;;;  (21771 43534 976399 732000))
+;;;;;;  (21808 25201 309943 13000))
 ;;; Generated autoloads from ../submodules/git-modes/gitconfig-mode.el
 
 (autoload 'gitconfig-mode "../submodules/git-modes/gitconfig-mode" "\
@@ -1564,7 +1564,7 @@ A major mode for editing .gitconfig files.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/git-modes/gitignore-mode" "../submodules/git-modes/gitignore-mode.el"
-;;;;;;  (21640 50964 503097 282000))
+;;;;;;  (21808 25201 309943 13000))
 ;;; Generated autoloads from ../submodules/git-modes/gitignore-mode.el
 
 (autoload 'gitignore-mode "../submodules/git-modes/gitignore-mode" "\
@@ -1615,7 +1615,7 @@ Bring up a Spotify search interface in helm.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm" "../submodules/helm/helm.el"
-;;;;;;  (21771 43535 983059 862000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm.el
 
 (autoload 'helm-define-multi-key "../submodules/helm/helm" "\
@@ -1797,7 +1797,7 @@ Call `helm' with only ANY-SOURCES and ANY-BUFFER as args.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-adaptive" "../submodules/helm/helm-adaptive.el"
-;;;;;;  (21640 50972 729763 773000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-adaptive.el
 
 (autoload 'helm-reset-adaptive-history "../submodules/helm/helm-adaptive" "\
@@ -1809,7 +1809,7 @@ Useful when you have a old or corrupted `helm-adaptive-history-file'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-apt" "../submodules/helm/helm-apt.el"
-;;;;;;  (21746 26641 47872 304000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-apt.el
 
 (autoload 'helm-apt "../submodules/helm/helm-apt" "\
@@ -1821,7 +1821,7 @@ With a prefix arg reload cache.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-bookmark" "../submodules/helm/helm-bookmark.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-bookmark.el
 
 (autoload 'helm-bookmarks "../submodules/helm/helm-bookmark" "\
@@ -1844,7 +1844,7 @@ only if external library addressbook-bookmark.el is available.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-buffers" "../submodules/helm/helm-buffers.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-buffers.el
 
 (autoload 'helm-buffers-list "../submodules/helm/helm-buffers" "\
@@ -1855,7 +1855,7 @@ Preconfigured `helm' to list buffers.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-color" "../submodules/helm/helm-color.el"
-;;;;;;  (21640 50972 729763 773000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-color.el
 
 (autoload 'helm-colors "../submodules/helm/helm-color" "\
@@ -1866,7 +1866,7 @@ Preconfigured `helm' for color.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-command" "../submodules/helm/helm-command.el"
-;;;;;;  (21746 26641 47872 304000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-command.el
 
 (autoload 'helm-M-x "../submodules/helm/helm-command" "\
@@ -1883,7 +1883,7 @@ You can get help on each command by persistent action.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-config" "../submodules/helm/helm-config.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-config.el
 
 (autoload 'helm-configuration "../submodules/helm/helm-config" "\
@@ -1894,7 +1894,7 @@ Customize `helm'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-dabbrev" "../submodules/helm/helm-dabbrev.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-dabbrev.el
 
 (autoload 'helm-dabbrev "../submodules/helm/helm-dabbrev" "\
@@ -1905,7 +1905,7 @@ Customize `helm'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-elisp" "../submodules/helm/helm-elisp.el"
-;;;;;;  (21746 26641 47872 304000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp.el
 
 (autoload 'helm-lisp-completion-at-point "../submodules/helm/helm-elisp" "\
@@ -1957,7 +1957,7 @@ Preconfigured `helm' for timers.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-elisp-package" "../submodules/helm/helm-elisp-package.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp-package.el
 
 (autoload 'helm-list-elisp-packages "../submodules/helm/helm-elisp-package" "\
@@ -1965,10 +1965,15 @@ Preconfigured `helm' for timers.
 
 \(fn ARG)" t nil)
 
+(autoload 'helm-list-elisp-packages-no-fetch "../submodules/helm/helm-elisp-package" "\
+
+
+\(fn)" t nil)
+
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-elscreen" "../submodules/helm/helm-elscreen.el"
-;;;;;;  (21640 50972 729763 773000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-elscreen.el
 
 (autoload 'helm-elscreen "../submodules/helm/helm-elscreen" "\
@@ -1979,7 +1984,7 @@ Preconfigured helm to list elscreen.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-eshell" "../submodules/helm/helm-eshell.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-eshell.el
 
 (autoload 'helm-esh-pcomplete "../submodules/helm/helm-eshell" "\
@@ -1995,7 +2000,7 @@ Preconfigured helm for eshell history.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-eval" "../submodules/helm/helm-eval.el"
-;;;;;;  (21646 23014 898241 841000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-eval.el
 
 (autoload 'helm-eval-expression "../submodules/helm/helm-eval" "\
@@ -2016,7 +2021,7 @@ Preconfigured helm for `helm-source-calculation-result'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-external" "../submodules/helm/helm-external.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-external.el
 
 (autoload 'helm-run-external-command "../submodules/helm/helm-external" "\
@@ -2030,7 +2035,7 @@ You can set your own list of commands with
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-files.el
 
 (autoload 'helm-browse-project "../submodules/helm/helm-files" "\
@@ -2083,7 +2088,7 @@ Preconfigured `helm' for `recentf'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-font" "../submodules/helm/helm-font.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-font.el
 
 (autoload 'helm-select-xfont "../submodules/helm/helm-font" "\
@@ -2099,7 +2104,7 @@ Preconfigured helm for `ucs-names' math symbols.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-grep" "../submodules/helm/helm-grep.el"
-;;;;;;  (21746 26641 51205 620000))
+;;;;;;  (21808 25202 253269 847000))
 ;;; Generated autoloads from ../submodules/helm/helm-grep.el
 
 (autoload 'helm-goto-precedent-file "../submodules/helm/helm-grep" "\
@@ -2182,7 +2187,7 @@ Preconfigured helm for pdfgrep.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-help" "../submodules/helm/helm-help.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-help.el
 
 (autoload 'helm-documentation "../submodules/helm/helm-help" "\
@@ -2355,7 +2360,7 @@ HELM-ATTRIBUTE should be a symbol.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-imenu" "../submodules/helm/helm-imenu.el"
-;;;;;;  (21746 26641 51205 620000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-imenu.el
 
 (autoload 'helm-imenu "../submodules/helm/helm-imenu" "\
@@ -2366,7 +2371,7 @@ Preconfigured `helm' for `imenu'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-info" "../submodules/helm/helm-info.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-info.el
 
 (autoload 'helm-info-at-point "../submodules/helm/helm-info" "\
@@ -2378,7 +2383,7 @@ With a prefix-arg insert symbol at point.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-locate" "../submodules/helm/helm-locate.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-locate.el
 
 (autoload 'helm-locate-read-file-name "../submodules/helm/helm-locate" "\
@@ -2407,7 +2412,7 @@ Where db_path is a filename matched by
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-man" "../submodules/helm/helm-man.el"
-;;;;;;  (21640 50972 733097 106000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-man.el
 
 (autoload 'helm-man-woman "../submodules/helm/helm-man" "\
@@ -2419,7 +2424,7 @@ With a prefix arg reinitialize the cache.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-misc" "../submodules/helm/helm-misc.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-misc.el
 
 (autoload 'helm-browse-menubar "../submodules/helm/helm-misc" "\
@@ -2465,7 +2470,7 @@ Predefined `helm' that provide completion of `comint' history.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-mode" "../submodules/helm/helm-mode.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-mode.el
 
 (autoload 'helm-comp-read "../submodules/helm/helm-mode" "\
@@ -2588,7 +2593,7 @@ Note: This mode is incompatible with Emacs23.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-net" "../submodules/helm/helm-net.el"
-;;;;;;  (21746 26641 51205 620000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-net.el
 
 (autoload 'helm-surfraw "../submodules/helm/helm-net" "\
@@ -2614,7 +2619,7 @@ Preconfigured `helm' for Wikipedia lookup with Wikipedia suggest.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-org" "../submodules/helm/helm-org.el"
-;;;;;;  (21771 43535 979726 553000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-org.el
 
 (autoload 'helm-org-agenda-files-headings "../submodules/helm/helm-org" "\
@@ -2635,7 +2640,7 @@ Preconfigured `helm' for Wikipedia lookup with Wikipedia suggest.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-regexp" "../submodules/helm/helm-regexp.el"
-;;;;;;  (21771 43535 983059 862000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-regexp.el
 
 (autoload 'helm-moccur-run-save-buffer "../submodules/helm/helm-regexp" "\
@@ -2691,7 +2696,7 @@ The prefix arg can be set before calling
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-ring" "../submodules/helm/helm-ring.el"
-;;;;;;  (21771 43535 983059 862000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-ring.el
 
 (autoload 'helm-mark-ring "../submodules/helm/helm-ring" "\
@@ -2733,7 +2738,7 @@ This command is useful when used with persistent action.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-semantic" "../submodules/helm/helm-semantic.el"
-;;;;;;  (21771 43535 983059 862000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-semantic.el
 
 (autoload 'helm-semantic "../submodules/helm/helm-semantic" "\
@@ -2756,7 +2761,7 @@ Fill in the symbol at point by default.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-sys" "../submodules/helm/helm-sys.el"
-;;;;;;  (21746 26641 51205 620000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-sys.el
 
 (autoload 'helm-top "../submodules/helm/helm-sys" "\
@@ -2777,7 +2782,7 @@ Preconfigured `helm' for emacs process.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-tags" "../submodules/helm/helm-tags.el"
-;;;;;;  (21746 26641 51205 620000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-tags.el
 
 (autoload 'helm-etags-select "../submodules/helm/helm-tags" "\
@@ -2796,7 +2801,7 @@ This function aggregates three sources of tag files:
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-utils" "../submodules/helm/helm-utils.el"
-;;;;;;  (21771 43535 983059 862000))
+;;;;;;  (21808 25202 256603 158000))
 ;;; Generated autoloads from ../submodules/helm/helm-utils.el
 
 (autoload 'helm-show-all-in-this-source-only "../submodules/helm/helm-utils" "\
@@ -2979,7 +2984,7 @@ Major mode for editing Lua code.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/magit" "../submodules/magit/magit.el"
-;;;;;;  (21646 23018 568213 533000))
+;;;;;;  (21808 25205 989910 763000))
 ;;; Generated autoloads from ../submodules/magit/magit.el
 
 (autoload 'magit-git-command "../submodules/magit/magit" "\
@@ -3485,7 +3490,7 @@ a prefix argument run gitk without any arguments.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/magit-blame" "../submodules/magit/magit-blame.el"
-;;;;;;  (21640 50985 409763 503000))
+;;;;;;  (21808 25205 986577 452000))
 ;;; Generated autoloads from ../submodules/magit/magit-blame.el
 
 (autoload 'magit-blame-mode "../submodules/magit/magit-blame" "\
@@ -3496,7 +3501,7 @@ Display blame information inline.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/magit-key-mode" "../submodules/magit/magit-key-mode.el"
-;;;;;;  (21672 16401 166704 81000))
+;;;;;;  (21808 25205 986577 452000))
 ;;; Generated autoloads from ../submodules/magit/magit-key-mode.el
 
 (defvar magit-key-mode-groups '((dispatch (actions ("b" "Branching" magit-key-mode-popup-branching) ("B" "Bisecting" magit-key-mode-popup-bisecting) ("c" "Committing" magit-key-mode-popup-committing) ("d" "Diff worktree" magit-diff-working-tree) ("D" "Diff" magit-diff) ("f" "Fetching" magit-key-mode-popup-fetching) ("F" "Pulling" magit-key-mode-popup-pulling) ("g" "Refresh Buffers" magit-refresh-all) ("l" "Logging" magit-key-mode-popup-logging) ("m" "Merging" magit-key-mode-popup-merging) ("M" "Remoting" magit-key-mode-popup-remoting) ("P" "Pushing" magit-key-mode-popup-pushing) ("o" "Submoduling" magit-key-mode-popup-submodule) ("r" "Rewriting" magit-key-mode-popup-rewriting) ("R" "Rebasing" magit-rebase-step) ("s" "Show Status" magit-status) ("S" "Stage all" magit-stage-all) ("t" "Tagging" magit-key-mode-popup-tagging) ("U" "Unstage all" magit-unstage-all) ("v" "Show Commit" magit-show-commit) ("V" "Show File" magit-show) ("w" "Wazzup" magit-wazzup) ("X" "Reset worktree" magit-reset-working-tree) ("y" "Cherry" magit-cherry) ("z" "Stashing" magit-key-mode-popup-stashing) ("!" "Running" magit-key-mode-popup-running) ("$" "Show Process" magit-process))) (logging (man-page "git-log") (actions ("l" "Short" magit-log) ("L" "Long" magit-log-long) ("h" "Head Reflog" magit-reflog-head) ("f" "File log" magit-file-log) ("rl" "Ranged short" magit-log-ranged) ("rL" "Ranged long" magit-log-long-ranged) ("rh" "Reflog" magit-reflog)) (switches ("-m" "Only merge commits" "--merges") ("-s" "No merge commits" "--no-merges") ("-do" "Date Order" "--date-order") ("-f" "First parent" "--first-parent") ("-i" "Case insensitive patterns" "-i") ("-pr" "Pickaxe regex" "--pickaxe-regex") ("-g" "Show Graph" "--graph") ("-n" "Name only" "--name-only") ("-am" "All match" "--all-match") ("-al" "All" "--all")) (arguments ("=r" "Relative" "--relative=" read-directory-name) ("=c" "Committer" "--committer=" read-from-minibuffer) ("=>" "Since" "--since=" read-from-minibuffer) ("=<" "Before" "--before=" read-from-minibuffer) ("=a" "Author" "--author=" read-from-minibuffer) ("=g" "Grep messages" "--grep=" read-from-minibuffer) ("=G" "Grep patches" "-G" read-from-minibuffer) ("=L" "Trace evolution of line range [long log only]" "-L" magit-read-file-trace) ("=s" "Pickaxe search" "-S" read-from-minibuffer) ("=b" "Branches" "--branches=" read-from-minibuffer) ("=R" "Remotes" "--remotes=" read-from-minibuffer))) (running (actions ("!" "Git Subcommand (from root)" magit-git-command-topdir) (":" "Git Subcommand (from pwd)" magit-git-command) ("g" "Git Gui" magit-run-git-gui) ("k" "Gitk" magit-run-gitk))) (fetching (man-page "git-fetch") (actions ("f" "Current" magit-fetch-current) ("a" "All" magit-remote-update) ("o" "Other" magit-fetch)) (switches ("-p" "Prune" "--prune"))) (pushing (man-page "git-push") (actions ("P" "Push" magit-push) ("t" "Push tags" magit-push-tags)) (switches ("-f" "Force" "--force") ("-d" "Dry run" "-n") ("-u" "Set upstream" "-u"))) (pulling (man-page "git-pull") (actions ("F" "Pull" magit-pull)) (switches ("-f" "Force" "--force") ("-r" "Rebase" "--rebase"))) (branching (man-page "git-branch") (actions ("v" "Branch manager" magit-branch-manager) ("b" "Checkout" magit-checkout) ("c" "Create" magit-create-branch) ("r" "Rename" magit-rename-branch) ("k" "Delete" magit-delete-branch)) (switches ("-t" "Set upstream configuration" "--track") ("-m" "Merged to HEAD" "--merged") ("-M" "Merged to master" "--merged=master") ("-n" "Not merged to HEAD" "--no-merged") ("-N" "Not merged to master" "--no-merged=master")) (arguments ("=c" "Contains" "--contains=" magit-read-rev-with-default) ("=m" "Merged" "--merged=" magit-read-rev-with-default) ("=n" "Not merged" "--no-merged=" magit-read-rev-with-default))) (remoting (man-page "git-remote") (actions ("v" "Remote manager" magit-branch-manager) ("a" "Add" magit-add-remote) ("r" "Rename" magit-rename-remote) ("k" "Remove" magit-remove-remote))) (tagging (man-page "git-tag") (actions ("t" "Create" magit-tag) ("k" "Delete" magit-delete-tag)) (switches ("-a" "Annotate" "--annotate") ("-f" "Force" "--force") ("-s" "Sign" "--sign"))) (stashing (man-page "git-stash") (actions ("v" "View" magit-diff-stash) ("z" "Save" magit-stash) ("s" "Snapshot" magit-stash-snapshot) ("a" "Apply" magit-stash-apply) ("p" "Pop" magit-stash-pop) ("k" "Drop" magit-stash-drop)) (switches ("-k" "Keep index" "--keep-index") ("-u" "Include untracked files" "--include-untracked") ("-a" "Include all files" "--all"))) (committing (man-page "git-commit") (actions ("c" "Commit" magit-commit) ("a" "Amend" magit-commit-amend) ("e" "Extend" magit-commit-extend) ("r" "Reword" magit-commit-reword) ("f" "Fixup" magit-commit-fixup) ("s" "Squash" magit-commit-squash)) (switches ("-a" "Stage all modified and deleted files" "--all") ("-e" "Allow empty commit" "--allow-empty") ("-v" "Show diff of changes to be committed" "--verbose") ("-n" "Bypass git hooks" "--no-verify") ("-s" "Add Signed-off-by line" "--signoff") ("-R" "Claim authorship and reset author date" "--reset-author")) (arguments ("=A" "Override the author" "--author=" read-from-minibuffer) ("=S" "Sign using gpg" "--gpg-sign=" magit-read-gpg-secret-key))) (merging (man-page "git-merge") (actions ("m" "Merge" magit-merge) ("A" "Abort" magit-merge-abort)) (switches ("-ff" "Fast-forward only" "--ff-only") ("-nf" "No fast-forward" "--no-ff") ("-sq" "Squash" "--squash")) (arguments ("-st" "Strategy" "--strategy=" read-from-minibuffer))) (rewriting (actions ("b" "Begin" magit-rewrite-start) ("s" "Stop" magit-rewrite-stop) ("a" "Abort" magit-rewrite-abort) ("f" "Finish" magit-rewrite-finish) ("d" "Diff pending" magit-rewrite-diff-pending) ("*" "Set unused" magit-rewrite-set-unused) ("." "Set used" magit-rewrite-set-used))) (apply-mailbox (man-page "git-am") (actions ("J" "Apply Mailbox" magit-apply-mailbox)) (switches ("-s" "add a Signed-off-by line to the commit message" "--signoff") ("-3" "allow fall back on 3way merging if needed" "--3way") ("-k" "pass -k flag to git-mailinfo" "--keep") ("-c" "strip everything before a scissors line" "--scissors") ("-p" "pass it through git-apply" "-p") ("-r" "override error message when patch failure occurs" "--resolvemsg") ("-d" "lie about committer date" "--committer-date-is-author-date") ("-D" "use current timestamp for author date" "--ignore-date") ("-b" "pass -b flag to git-mailinfo" "--keep-non-patch")) (arguments ("=p" "format the patch(es) are in" "--patch-format=" read-from-minibuffer))) (submodule (man-page "git-submodule") (actions ("u" "Update" magit-submodule-update) ("b" "Both update and init" magit-submodule-update-init) ("i" "Init" magit-submodule-init) ("s" "Sync" magit-submodule-sync))) (bisecting (man-page "git-bisect") (actions ("b" "Bad" magit-bisect-bad) ("g" "Good" magit-bisect-good) ("k" "Skip" magit-bisect-skip) ("r" "Reset" magit-bisect-reset) ("s" "Start" magit-bisect-start) ("u" "Run" magit-bisect-run))) (diff-options (actions ("s" "Set" magit-set-diff-options) ("d" "Set default" magit-set-default-diff-options) ("c" "Save default" magit-save-default-diff-options) ("r" "Reset to default" magit-reset-diff-options) ("h" "Toggle Hunk Refinement" magit-diff-toggle-refine-hunk)) (switches ("-m" "Show smallest possible diff" "--minimal") ("-p" "Use patience diff algorithm" "--patience") ("-h" "Use histogram diff algorithm" "--histogram") ("-b" "Ignore whitespace changes" "--ignore-space-change") ("-w" "Ignore all whitespace" "--ignore-all-space") ("-W" "Show surrounding functions" "--function-context")))) "\
@@ -3508,7 +3513,7 @@ to nil.")
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/magit-wip" "../submodules/magit/magit-wip.el"
-;;;;;;  (21746 26644 564519 215000))
+;;;;;;  (21808 25205 986577 452000))
 ;;; Generated autoloads from ../submodules/magit/magit-wip.el
 
 (autoload 'magit-wip-save-mode "../submodules/magit/magit-wip" "\
@@ -4636,7 +4641,7 @@ Display weather report.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
-;;;;;;  (21771 43546 539657 832000))
+;;;;;;  (21808 25210 919876 783000))
 ;;; Generated autoloads from ../submodules/web-mode/web-mode.el
 
 (autoload 'web-mode "../submodules/web-mode/web-mode" "\
@@ -4664,7 +4669,7 @@ Simple mode to edit YAML.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/yasnippet/yasnippet" "../submodules/yasnippet/yasnippet.el"
-;;;;;;  (21771 43547 836316 37000))
+;;;;;;  (21808 25211 826537 200000))
 ;;; Generated autoloads from ../submodules/yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "../submodules/yasnippet/yasnippet" "\
@@ -4797,8 +4802,8 @@ accept it or skip it.
 ;;;;;;  "../submodules/w3m/w3m-tabmenu.el" "../submodules/w3m/w3m-ucs.el"
 ;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
 ;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21771 43557
-;;;;;;  447034 350000))
+;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21808 25272
+;;;;;;  13996 404000))
 
 ;;;***
 
