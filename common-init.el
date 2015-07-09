@@ -341,7 +341,12 @@
   (add-hook 'auto-complete-mode-hook 'ac-common-setup)
   (global-auto-complete-mode t))
 (defun my-ac-cc-mode-setup ()
-  (setq ac-sources (append '(ac-source-clang ac-source-yasnippet) ac-sources)))
+  (setq ac-sources
+        (if (or (eq system-type 'windows-nt) (eq system-type 'cygwin))
+            (append '(ac-source-yasnippet) ac-sources)
+          (append '(ac-source-clang ac-source-yasnippet) ac-sources))
+  ))
+
 (add-hook 'c-mode-common-hook 'my-ac-cc-mode-setup)
 ;; ac-source-gtags
 (my-ac-config)
