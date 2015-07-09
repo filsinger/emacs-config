@@ -81,18 +81,19 @@
 ;; ================================================
 (setq ac-clang-flags
       (mapcar (lambda (item)(concat "-I" item))
-              (split-string
-               "
- /usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include
- /usr/include/c++/4.2.1
- /usr/include/c++/4.2.1/backward
- /usr/local/include
- /Applications/Xcode.app/Contents/Developer/usr/lib/llvm-gcc/4.2.1/include
- /usr/include
- /System/Library/Frameworks
- /Library/Frameworks
-"
-               )))
+              '("/usr/local/include"
+                "/usr/include")))
+
+;; additional include paths to test
+(dolist (my-clang-include-path
+         '("/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1/include"
+           "/usr/include/c++/4.2.1"
+           "/usr/include/c++/4.2.1/backward"
+           "/Applications/Xcode.app/Contents/Developer/usr/lib/llvm-gcc/4.2.1/include"
+           "/System/Library/Frameworks"
+           "/Library/Frameworks"))
+  (when (file-directory-p my-clang-include-path) (add-to-list 'ac-clang-flags (format "-I%s" my-clang-include-path)))
+  )
 ;; ================================================
 
 ) ;; end of test for posix system
