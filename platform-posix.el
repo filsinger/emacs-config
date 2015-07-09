@@ -66,6 +66,12 @@
 
 )
 
+(when (eq system-type 'gnu/linux)
+  ;; Set unicode symbol font
+  (when (member "Symbola" (font-family-list))
+    (set-fontset-font t 'unicode "Symbola" nil 'prepend))
+  )
+
 (let ((clang-format-script (expand-file-name (concat "~/.dotfiles/bin/clang-format"))))
   (when (file-executable-p clang-format-script)
     (setq clang-format-executable clang-format-script)))
