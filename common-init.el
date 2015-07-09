@@ -43,10 +43,15 @@
 ; add various load paths
 (add-to-list 'load-path (concat emacs-sync-path "/custom/"))
 (add-to-list 'load-path emacs-autoloads-path)
+
 ;; add all subdirectories under the "submodules" folder  to the load-path list
+(setq jf-submodule-additional-subdirectories '("" "lisp"))
+
 (dolist (submodule (directory-files emacs-submodules-path t "\\w+"))
-  (when (file-directory-p submodule)
-    (add-to-list 'load-path submodule)))
+  (dolist (submodule-subdirectory jf-submodule-additional-subdirectories)
+    (when (file-directory-p (format "%s/%s" submodule submodule-subdirectory))
+      (add-to-list 'load-path (format "%s/%s" submodule submodule-subdirectory))
+      )))
 ;; ================================================
 
 ;; ================================================
