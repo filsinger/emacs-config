@@ -26,6 +26,76 @@
         ;;(set-frame-font "Consolas-10")
         ))
 
+; list the repositories containing them
+(setq package-archives '(("elpa" . "http://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")))
+
+(package-initialize)
+
+(setq jf-package-list
+      '(
+        ace-jump-mode
+        arduino-mode
+        auto-complete
+        auto-complete-clang
+        autopair
+        browse-kill-ring
+        clang-format
+        ;;cppcheck
+        ;;csearch-mode
+        csharp-mode
+        dash
+        emamux
+        multi
+        websocket
+        enh-ruby-mode
+        expand-region
+        f
+        flycheck
+        flycheck-clangcheck
+        gh
+        gist
+        gitconfig-mode
+        gitignore-mode
+        glsl-mode
+        helm
+        ;;helm-everything
+        helm-spotify
+        highlight-symbol
+        json
+        litable
+        logito
+        lua-mode
+        magit
+        markdown-mode
+        maxframe
+        multiple-cursors
+        p4
+        pcache
+        popup
+        powerline
+        rainbow-mode
+        s
+        scss-mode
+        seq
+        smart-tabs-mode
+        smex
+        tabulated-list
+        w3m
+        web-mode
+        yasnippet
+        zencoding-mode
+        ))
+
+(defun jf-install-packages ()
+  (interactive)
+  (dolist (package jf-package-list)
+    (unless (package-installed-p package)
+      (package-install package)))
+  )
+
+(jf-install-packages)
+
 ;;(set-frame-font (assoc 'font default-frame-alist))
 
 (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
