@@ -202,3 +202,6 @@
 	path = submodules/flycheck-clangcheck
 	url = https://github.com/kumar8600/flycheck-clangcheck.git
 	branch = master
+[submodule "submodules/seq"]
+	path = submodules/seq
+	url = https://github.com/NicolasPetton/seq.el.git

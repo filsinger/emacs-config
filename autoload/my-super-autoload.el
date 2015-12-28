@@ -160,7 +160,7 @@ with no args, if that value is non-nil.
 ;;;***
 
 ;;;### (autoloads nil "../custom/helm-my-things" "../custom/helm-my-things.el"
-;;;;;;  (21650 30032 207608 274000))
+;;;;;;  (21827 14058 0 0))
 ;;; Generated autoloads from ../custom/helm-my-things.el
 
 (autoload 'helm-mine "../custom/helm-my-things" "\
@@ -210,7 +210,7 @@ Remove all trailing whitespace in the current buffer and indent all nonblank lin
 ;;;***
 
 ;;;### (autoloads nil "../custom/jf-generate-autoload" "../custom/jf-generate-autoload.el"
-;;;;;;  (21918 6322 779341 596000))
+;;;;;;  (21918 7522 0 0))
 ;;; Generated autoloads from ../custom/jf-generate-autoload.el
 
 (autoload 'jf-generate-autoload-files "../custom/jf-generate-autoload" "\
@@ -221,13 +221,57 @@ Remove all trailing whitespace in the current buffer and indent all nonblank lin
 ;;;***
 
 ;;;### (autoloads nil "../custom/kill-filename-function-line" "../custom/kill-filename-function-line.el"
-;;;;;;  (21640 50928 159764 724000))
+;;;;;;  (21919 23180 0 0))
 ;;; Generated autoloads from ../custom/kill-filename-function-line.el
 
 (autoload 'kill-filename-function-line "../custom/kill-filename-function-line" "\
 
 
 \(fn)" t nil)
+
+(autoload 'kill-org-filename-function-line "../custom/kill-filename-function-line" "\
+
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil "../custom/let-alist" "../custom/let-alist.el"
+;;;;;;  (21882 41007 0 0))
+;;; Generated autoloads from ../custom/let-alist.el
+
+(autoload 'let-alist "../custom/let-alist" "\
+Let-bind dotted symbols to their cdrs in ALIST and execute BODY.
+Dotted symbol is any symbol starting with a `.'.  Only those present
+in BODY are let-bound and this search is done at compile time.
+
+For instance, the following code
+
+  (let-alist alist
+    (if (and .title .body)
+        .body
+      .site
+      .site.contents))
+
+essentially expands to
+
+  (let ((.title (cdr (assq 'title alist)))
+        (.body  (cdr (assq 'body alist)))
+        (.site  (cdr (assq 'site alist)))
+        (.site.contents (cdr (assq 'contents (cdr (assq 'site alist))))))
+    (if (and .title .body)
+        .body
+      .site
+      .site.contents))
+
+If you nest `let-alist' invocations, the inner one can't access
+the variables of the outer one. You can, however, access alists
+inside the original alist by using dots inside the symbol, as
+displayed in the example above.
+
+\(fn ALIST &rest BODY)" nil t)
+
+(put 'let-alist 'lisp-indent-function '1)
 
 ;;;***
 
@@ -517,7 +561,7 @@ You can constrol whether use the case sensitive via
 ;;;***
 
 ;;;### (autoloads nil "../submodules/arduino-mode/arduino-mode" "../submodules/arduino-mode/arduino-mode.el"
-;;;;;;  (21918 4873 7947 870000))
+;;;;;;  (22144 48412 0 0))
 ;;; Generated autoloads from ../submodules/arduino-mode/arduino-mode.el
 
 (add-to-list 'auto-mode-alist '("\\.pde\\'" . arduino-mode))
@@ -538,8 +582,8 @@ Key bindings:
 ;;;***
 
 ;;;### (autoloads nil "../submodules/auto-complete/auto-complete"
-;;;;;;  "../submodules/auto-complete/auto-complete.el" (21918 4873
-;;;;;;  521277 587000))
+;;;;;;  "../submodules/auto-complete/auto-complete.el" (22144 48413
+;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/auto-complete/auto-complete.el
 
 (autoload 'auto-complete "../submodules/auto-complete/auto-complete" "\
@@ -576,8 +620,8 @@ See `auto-complete-mode' for more information on Auto-Complete mode.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/auto-complete/auto-complete-config"
-;;;;;;  "../submodules/auto-complete/auto-complete-config.el" (21746
-;;;;;;  26633 201249 540000))
+;;;;;;  "../submodules/auto-complete/auto-complete-config.el" (21827
+;;;;;;  14064 0 0))
 ;;; Generated autoloads from ../submodules/auto-complete/auto-complete-config.el
 
 (autoload 'ac-config-default "../submodules/auto-complete/auto-complete-config" "\
@@ -588,8 +632,8 @@ See `auto-complete-mode' for more information on Auto-Complete mode.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/browse-kill-ring/browse-kill-ring"
-;;;;;;  "../submodules/browse-kill-ring/browse-kill-ring.el" (21918
-;;;;;;  4874 534603 784000))
+;;;;;;  "../submodules/browse-kill-ring/browse-kill-ring.el" (22144
+;;;;;;  48413 0 0))
 ;;; Generated autoloads from ../submodules/browse-kill-ring/browse-kill-ring.el
 
 (autoload 'browse-kill-ring-default-keybindings "../submodules/browse-kill-ring/browse-kill-ring" "\
@@ -608,7 +652,7 @@ Display items in the `kill-ring' in another buffer.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/clang-format/clang-format" "../submodules/clang-format/clang-format.el"
-;;;;;;  (21672 16400 183378 804000))
+;;;;;;  (21827 14064 0 0))
 ;;; Generated autoloads from ../submodules/clang-format/clang-format.el
 
 (autoload 'clang-format-region "../submodules/clang-format/clang-format" "\
@@ -866,7 +910,7 @@ seach the directory tree upwards for a \".csearchindex\" file.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/csharp-mode/csharp-mode" "../submodules/csharp-mode/csharp-mode.el"
-;;;;;;  (21918 4875 891260 903000))
+;;;;;;  (22144 48414 0 0))
 ;;; Generated autoloads from ../submodules/csharp-mode/csharp-mode.el
 
 (defvar csharp-mode-hook nil "\
@@ -882,15 +926,7 @@ seach the directory tree upwards for a \".csearchindex\" file.
 (add-to-list 'auto-mode-alist '("\\.cs$" . csharp-mode))
 
 (autoload 'csharp-mode "../submodules/csharp-mode/csharp-mode" "\
-Major mode for editing C# code. This mode is derived from CC Mode to
-support C#.
-
-Normally, you'd want to autoload this mode by setting `auto-mode-alist' with
-an entry for csharp, in your .emacs file:
-
-   (autoload 'csharp-mode \"csharp-mode\" \"Major mode for editing C# code.\" t)
-   (setq auto-mode-alist
-      (append '((\"\\.cs$\" . csharp-mode)) auto-mode-alist))
+Major mode for editing C# code.
 
 The mode provides fontification and indent for C# syntax, as well
 as some other handy features.
@@ -914,15 +950,15 @@ To run your own logic after csharp-mode starts, do this:
 The function above is just a suggestion.
 
 
-IMenu Integraiton
+Imenu Integration
 ===============================
 
-Check the menubar for menu entries for Imenu; It is labelled
+Check the menubar for menu entries for Imenu; it is labelled
 \"Index\".
 
 The Imenu index gets computed when the file is .cs first opened and loaded.
 This may take a moment or two.  If you don't like this delay and don't
-use imenu, you can turn this off with the variable `csharp-want-imenu'.
+use Imenu, you can turn this off with the variable `csharp-want-imenu'.
 
 
 
@@ -934,7 +970,7 @@ Key bindings:
 ;;;***
 
 ;;;### (autoloads nil "../submodules/emacs-emamux/emamux" "../submodules/emacs-emamux/emamux.el"
-;;;;;;  (21646 23008 414958 509000))
+;;;;;;  (22144 48415 0 0))
 ;;; Generated autoloads from ../submodules/emacs-emamux/emamux.el
 
 (autoload 'emamux:send-command "../submodules/emacs-emamux/emamux" "\
@@ -1000,8 +1036,8 @@ Zoom runner pane. This feature requires tmux 1.8 or higher
 ;;;***
 
 ;;;### (autoloads nil "../submodules/enhanced-ruby-mode/enh-ruby-mode"
-;;;;;;  "../submodules/enhanced-ruby-mode/enh-ruby-mode.el" (21918
-;;;;;;  4878 481242 692000))
+;;;;;;  "../submodules/enhanced-ruby-mode/enh-ruby-mode.el" (22144
+;;;;;;  48416 0 0))
 ;;; Generated autoloads from ../submodules/enhanced-ruby-mode/enh-ruby-mode.el
 
 (autoload 'enh-ruby-mode "../submodules/enhanced-ruby-mode/enh-ruby-mode" "\
@@ -1014,8 +1050,8 @@ Enhanced Major mode for editing Ruby code.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/expand-region/expand-region"
-;;;;;;  "../submodules/expand-region/expand-region.el" (21672 16400
-;;;;;;  306711 127000))
+;;;;;;  "../submodules/expand-region/expand-region.el" (21827 14065
+;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/expand-region/expand-region.el
 
 (autoload 'er/expand-region "../submodules/expand-region/expand-region" "\
@@ -1082,7 +1118,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 ;;;***
 
 ;;;### (autoloads nil "../submodules/flycheck/flycheck" "../submodules/flycheck/flycheck.el"
-;;;;;;  (21918 4880 641227 521000))
+;;;;;;  (22144 48418 0 0))
 ;;; Generated autoloads from ../submodules/flycheck/flycheck.el
 
 (autoload 'flycheck-info "../submodules/flycheck/flycheck" "\
@@ -1144,6 +1180,16 @@ The following PROPERTIES constitute an error level:
      The severity is used by `flycheck-error-level-<' to
      determine the ordering of errors according to their levels.
 
+`:compilation-level LEVEL'
+
+     A number indicating the broad class of messages that errors
+     at this level belong to: one of 0 (info), 1 (warning), or
+     2 or nil (error).  Defaults to nil.
+
+     This is used by `flycheck-checker-pattern-to-error-regexp'
+     to map error levels into `compilation-mode''s hierarchy and
+     to get proper highlighting of errors in `compilation-mode'.
+
 `:overlay-category CATEGORY'
      A symbol denoting the overlay category to use for error
      highlight overlays for this level.  See Info
@@ -1151,11 +1197,9 @@ The following PROPERTIES constitute an error level:
      overlay categories.
 
      A category for an error level overlay should at least define
-     the `face' property, for error highlighting.  Other useful
-     properties for error level categories are `priority' to
-     influence the stacking of multiple error level overlays, and
-     `help-echo' to define a default error messages for errors
-     without messages.
+     the `face' property, for error highlighting.  Another useful
+     property for error level categories is `priority', to
+     influence the stacking of multiple error level overlays.
 
 `:fringe-bitmap BITMAP'
      A fringe bitmap symbol denoting the bitmap to use for fringe
@@ -1239,6 +1283,14 @@ of command checkers is `flycheck-sanitize-errors'.
      `flycheck-parse-with-patterns'.  In this case,
      `:error-patterns' is mandatory.
 
+`:standard-input t'
+     Whether to send the buffer contents on standard input.
+
+     If this property is given and has a non-nil value, send the
+     contents of the buffer on standard input.
+
+     Defaults to nil.
+
 Note that you may not give `:start', `:interrupt', and
 `:print-doc' for a command checker.  You can give a custom
 `:verify' function, though, whose results will be appended to the
@@ -1271,15 +1323,16 @@ argument to `flycheck-define-checker'.
 Define SYMBOL as option variable with INIT-VALUE for CHECKER.
 
 SYMBOL is declared as customizable variable using `defcustom', to
-provide an option for the given syntax CHECKER.  INIT-VALUE is
-the initial value of the variable, and DOCSTRING is its
-docstring.  CUSTOM-ARGS are forwarded to `defcustom'.
+provide an option for the given syntax CHECKERS (a checker or a
+list of checkers).  INIT-VALUE is the initial value of the
+variable, and DOCSTRING is its docstring.  CUSTOM-ARGS are
+forwarded to `defcustom'.
 
 Use this together with the `option', `option-list' and
 `option-flag' forms in the `:command' argument to
 `flycheck-define-checker'.
 
-\(fn SYMBOL INIT-VALUE CHECKER DOCSTRING &rest CUSTOM-ARGS)" nil t)
+\(fn SYMBOL INIT-VALUE CHECKERS DOCSTRING &rest CUSTOM-ARGS)" nil t)
 
 (put 'flycheck-def-option-var 'lisp-indent-function '3)
 
@@ -1288,7 +1341,7 @@ Use this together with the `option', `option-list' and
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-api" "../submodules/gh/gh-api.el"
-;;;;;;  (21640 50961 633097 346000))
+;;;;;;  (22144 48419 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-api.el
 
 (require 'eieio)
@@ -1300,7 +1353,7 @@ Use this together with the `option', `option-list' and
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-auth" "../submodules/gh/gh-auth.el"
-;;;;;;  (21746 26639 177882 788000))
+;;;;;;  (22144 48419 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-auth.el
 
 (require 'eieio)
@@ -1314,7 +1367,7 @@ Use this together with the `option', `option-list' and
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-cache" "../submodules/gh/gh-cache.el"
-;;;;;;  (21746 26639 177882 788000))
+;;;;;;  (21827 14065 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-cache.el
 
 (require 'eieio)
@@ -1322,7 +1375,7 @@ Use this together with the `option', `option-list' and
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-common" "../submodules/gh/gh-common.el"
-;;;;;;  (21672 16400 373377 247000))
+;;;;;;  (22144 48419 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-common.el
 
 (require 'eieio)
@@ -1330,7 +1383,7 @@ Use this together with the `option', `option-list' and
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-gist" "../submodules/gh/gh-gist.el"
-;;;;;;  (21746 26639 177882 788000))
+;;;;;;  (21827 14065 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-gist.el
 
 (require 'eieio)
@@ -1360,7 +1413,7 @@ Use this together with the `option', `option-list' and
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-oauth" "../submodules/gh/gh-oauth.el"
-;;;;;;  (21640 50961 633097 346000))
+;;;;;;  (22144 48419 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-oauth.el
 
 (require 'eieio)
@@ -1370,7 +1423,7 @@ Use this together with the `option', `option-list' and
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-orgs" "../submodules/gh/gh-orgs.el"
-;;;;;;  (21640 50961 633097 346000))
+;;;;;;  (22144 48419 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-orgs.el
 
 (require 'eieio)
@@ -1382,7 +1435,7 @@ Use this together with the `option', `option-list' and
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-pull-comments" "../submodules/gh/gh-pull-comments.el"
-;;;;;;  (21672 16400 373377 247000))
+;;;;;;  (21827 14065 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-pull-comments.el
 
 (require 'eieio)
@@ -1402,7 +1455,7 @@ Use this together with the `option', `option-list' and
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-repos" "../submodules/gh/gh-repos.el"
-;;;;;;  (21640 50961 633097 346000))
+;;;;;;  (22144 48419 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-repos.el
 
 (require 'eieio)
@@ -1416,7 +1469,7 @@ Use this together with the `option', `option-list' and
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gh/gh-url" "../submodules/gh/gh-url.el"
-;;;;;;  (21746 26639 177882 788000))
+;;;;;;  (21827 14065 0 0))
 ;;; Generated autoloads from ../submodules/gh/gh-url.el
 
 (require 'eieio)
@@ -1436,7 +1489,7 @@ Use this together with the `option', `option-list' and
 ;;;***
 
 ;;;### (autoloads nil "../submodules/gist/gist" "../submodules/gist/gist.el"
-;;;;;;  (21918 4882 197883 264000))
+;;;;;;  (22144 48419 0 0))
 ;;; Generated autoloads from ../submodules/gist/gist.el
 
 (autoload 'gist-region "../submodules/gist/gist" "\
@@ -1485,6 +1538,14 @@ Copies the URL into the kill ring.
 
 \(fn)" t nil)
 
+(autoload 'gist-list-user "../submodules/gist/gist" "\
+Displays a list of a user's gists in a new buffer.  When called from
+  a program, pass 'current-user as the username to view the user's own
+  gists, or nil for the username and a non-nil value for force-reload to
+  reload the gists for the current buffer.
+
+\(fn USERNAME &optional FORCE-RELOAD BACKGROUND)" t nil)
+
 (autoload 'gist-list "../submodules/gist/gist" "\
 Displays a list of all of the current user's gists in a new buffer.
 
@@ -1495,11 +1556,31 @@ Displays a list of all of the current user's gists in a new buffer.
 
 \(fn ID)" t nil)
 
+(autoload 'gist-star "../submodules/gist/gist" "\
+
+
+\(fn)" t nil)
+
+(autoload 'gist-unstar "../submodules/gist/gist" "\
+
+
+\(fn)" t nil)
+
+(autoload 'gist-list-starred "../submodules/gist/gist" "\
+List your starred gists.
+
+\(fn &optional BACKGROUND)" t nil)
+
+(autoload 'gist-fork "../submodules/gist/gist" "\
+Fork a gist.
+
+\(fn)" t nil)
+
 ;;;***
 
 ;;;### (autoloads nil "../submodules/git-modes/gitattributes-mode"
-;;;;;;  "../submodules/git-modes/gitattributes-mode.el" (21808 25201
-;;;;;;  309943 13000))
+;;;;;;  "../submodules/git-modes/gitattributes-mode.el" (21827 14066
+;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/git-modes/gitattributes-mode.el
 
 (autoload 'gitattributes-mode "../submodules/git-modes/gitattributes-mode" "\
@@ -1513,7 +1594,7 @@ A major mode for editing .gitattributes files.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/git-modes/gitconfig-mode" "../submodules/git-modes/gitconfig-mode.el"
-;;;;;;  (21808 25201 309943 13000))
+;;;;;;  (21827 14066 0 0))
 ;;; Generated autoloads from ../submodules/git-modes/gitconfig-mode.el
 
 (autoload 'gitconfig-mode "../submodules/git-modes/gitconfig-mode" "\
@@ -1526,7 +1607,7 @@ A major mode for editing .gitconfig files.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/git-modes/gitignore-mode" "../submodules/git-modes/gitignore-mode.el"
-;;;;;;  (21808 25201 309943 13000))
+;;;;;;  (21827 14066 0 0))
 ;;; Generated autoloads from ../submodules/git-modes/gitignore-mode.el
 
 (autoload 'gitignore-mode "../submodules/git-modes/gitignore-mode" "\
@@ -1550,8 +1631,8 @@ Major mode for editing OpenGLSL shader files.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm-everything/helm-everything"
-;;;;;;  "../submodules/helm-everything/helm-everything.el" (21650
-;;;;;;  30037 400896 240000))
+;;;;;;  "../submodules/helm-everything/helm-everything.el" (21827
+;;;;;;  14066 0 0))
 ;;; Generated autoloads from ../submodules/helm-everything/helm-everything.el
 
 (autoload 'helm-everything "../submodules/helm-everything/helm-everything" "\
@@ -1577,7 +1658,7 @@ Bring up a Spotify search interface in helm.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm" "../submodules/helm/helm.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm.el
 
 (autoload 'helm-define-multi-key "../submodules/helm/helm" "\
@@ -1756,10 +1837,15 @@ Call `helm' with only ANY-SOURCES and ANY-BUFFER as args.
 
 \(fn ANY-SOURCES ANY-BUFFER)" nil nil)
 
+(autoload 'helm-debug-toggle "../submodules/helm/helm" "\
+Enable/disable helm debug from outside of helm session.
+
+\(fn)" t nil)
+
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-adaptive" "../submodules/helm/helm-adaptive.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (21918 7529 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-adaptive.el
 
 (defvar helm-adaptive-mode nil "\
@@ -1785,7 +1871,7 @@ Useful when you have a old or corrupted `helm-adaptive-history-file'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-apt" "../submodules/helm/helm-apt.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-apt.el
 
 (autoload 'helm-apt "../submodules/helm/helm-apt" "\
@@ -1797,7 +1883,7 @@ With a prefix arg reload cache.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-bookmark" "../submodules/helm/helm-bookmark.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-bookmark.el
 
 (autoload 'helm-bookmarks "../submodules/helm/helm-bookmark" "\
@@ -1815,7 +1901,7 @@ only if external library addressbook-bookmark.el is available.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-buffers" "../submodules/helm/helm-buffers.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-buffers.el
 
 (autoload 'helm-buffers-list "../submodules/helm/helm-buffers" "\
@@ -1831,7 +1917,7 @@ Preconfigured `helm' lightweight version (buffer -> recentf).
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-color" "../submodules/helm/helm-color.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-color.el
 
 (autoload 'helm-colors "../submodules/helm/helm-color" "\
@@ -1842,7 +1928,7 @@ Preconfigured `helm' for color.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-command" "../submodules/helm/helm-command.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-command.el
 
 (autoload 'helm-M-x "../submodules/helm/helm-command" "\
@@ -1859,7 +1945,7 @@ You can get help on each command by persistent action.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-config" "../submodules/helm/helm-config.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-config.el
 
 (autoload 'helm-configuration "../submodules/helm/helm-config" "\
@@ -1870,7 +1956,7 @@ Customize `helm'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-dabbrev" "../submodules/helm/helm-dabbrev.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-dabbrev.el
 
 (autoload 'helm-dabbrev "../submodules/helm/helm-dabbrev" "\
@@ -1881,7 +1967,7 @@ Preconfigured helm for dynamic abbreviations.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-elisp" "../submodules/helm/helm-elisp.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp.el
 
 (autoload 'helm-lisp-completion-at-point "../submodules/helm/helm-elisp" "\
@@ -1933,7 +2019,7 @@ Preconfigured helm for complex command history.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-elisp-package" "../submodules/helm/helm-elisp-package.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-elisp-package.el
 
 (autoload 'helm-list-elisp-packages "../submodules/helm/helm-elisp-package" "\
@@ -1950,7 +2036,7 @@ Same as `helm-list-elisp-packages' but don't fetch packages on remote.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-elscreen" "../submodules/helm/helm-elscreen.el"
-;;;;;;  (21808 25202 253269 847000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-elscreen.el
 
 (autoload 'helm-elscreen "../submodules/helm/helm-elscreen" "\
@@ -1958,10 +2044,15 @@ Preconfigured helm to list elscreen.
 
 \(fn)" t nil)
 
+(autoload 'helm-elscreen-history "../submodules/helm/helm-elscreen" "\
+Preconfigured helm to list elscreen in history order.
+
+\(fn)" t nil)
+
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-eshell" "../submodules/helm/helm-eshell.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-eshell.el
 
 (autoload 'helm-esh-pcomplete "../submodules/helm/helm-eshell" "\
@@ -1977,7 +2068,7 @@ Preconfigured helm for eshell history.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-eval" "../submodules/helm/helm-eval.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-eval.el
 
 (autoload 'helm-eval-expression "../submodules/helm/helm-eval" "\
@@ -1998,7 +2089,7 @@ Preconfigured helm for `helm-source-calculation-result'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-external" "../submodules/helm/helm-external.el"
-;;;;;;  (21808 25202 253269 847000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-external.el
 
 (autoload 'helm-run-external-command "../submodules/helm/helm-external" "\
@@ -2012,7 +2103,7 @@ You can set your own list of commands with
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-files" "../submodules/helm/helm-files.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-files.el
 
 (autoload 'helm-browse-project "../submodules/helm/helm-files" "\
@@ -2071,7 +2162,7 @@ Preconfigured `helm' for `recentf'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-font" "../submodules/helm/helm-font.el"
-;;;;;;  (21808 25202 253269 847000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-font.el
 
 (autoload 'helm-select-xfont "../submodules/helm/helm-font" "\
@@ -2087,7 +2178,7 @@ Preconfigured helm for `ucs-names' math symbols.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-grep" "../submodules/helm/helm-grep.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-grep.el
 
 (autoload 'helm-goto-precedent-file "../submodules/helm/helm-grep" "\
@@ -2108,34 +2199,21 @@ Special commands:
 
 \(fn)" t nil)
 
-(autoload 'helm-do-grep "../submodules/helm/helm-grep" "\
-Preconfigured helm for grep.
-Contrarily to Emacs `grep', no default directory is given, but
-the full path of candidates in ONLY.
-That allow to grep different files not only in `default-directory' but anywhere
-by marking them (C-<SPACE>). If one or more directory is selected
-grep will search in all files of these directories.
-You can also use wildcard in the base name of candidate.
-If a prefix arg is given use the -r option of grep (recurse).
-The prefix arg can be passed before or after start file selection.
-See also `helm-do-grep-1'.
+(autoload 'helm-do-grep-ag "../submodules/helm/helm-grep" "\
+Preconfigured helm for grepping with AG in `default-directory'.
 
 \(fn)" t nil)
 
-(autoload 'helm-do-zgrep "../submodules/helm/helm-grep" "\
-Preconfigured helm for zgrep.
+(autoload 'helm-grep-do-git-grep "../submodules/helm/helm-grep" "\
+Preconfigured helm for git-grepping `default-directory'.
+With a prefix arg ARG git-grep the whole repository.
 
-\(fn)" t nil)
-
-(autoload 'helm-do-pdfgrep "../submodules/helm/helm-grep" "\
-Preconfigured helm for pdfgrep.
-
-\(fn)" t nil)
+\(fn ARG)" t nil)
 
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-help" "../submodules/helm/helm-help.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-help.el
 
 (autoload 'helm-documentation "../submodules/helm/helm-help" "\
@@ -2146,158 +2224,12 @@ Find here the documentation of all sources actually documented.
 
 \(fn ARG)" t nil)
 
-(autoload 'helm-help "../submodules/helm/helm-help" "\
-Help of `helm'.
+(defvar helm-comp-read-mode-line "\\<helm-comp-read-map>C/\\[helm-cr-empty-string]:Empty \\<helm-map>\\[helm-help]:Help \\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
 
-\(fn)" t nil)
-
-(autoload 'helm-buffer-help "../submodules/helm/helm-help" "\
-Help command for helm buffers.
-
-\(fn)" t nil)
-
-(autoload 'helm-ff-help "../submodules/helm/helm-help" "\
-Help command for `helm-find-files'.
-
-\(fn)" t nil)
-
-(autoload 'helm-read-file-name-help "../submodules/helm/helm-help" "\
-Help command for `read-file-name'.
-
-\(fn)" t nil)
-
-(autoload 'helm-generic-file-help "../submodules/helm/helm-help" "\
-Global help for helm.
-
-\(fn)" t nil)
-
-(autoload 'helm-grep-help "../submodules/helm/helm-help" "\
-Help command for helm grep.
-
-\(fn)" t nil)
-
-(autoload 'helm-pdfgrep-help "../submodules/helm/helm-help" "\
-Help command for pdfgrep.
-
-\(fn)" t nil)
-
-(autoload 'helm-etags-help "../submodules/helm/helm-help" "\
-The help function for etags.
-
-\(fn)" t nil)
-
-(autoload 'helm-ucs-help "../submodules/helm/helm-help" "\
-Help command for `helm-ucs'.
-
-\(fn)" t nil)
-
-(autoload 'helm-bookmark-help "../submodules/helm/helm-help" "\
-Help command for bookmarks.
-
-\(fn)" t nil)
-
-(autoload 'helm-esh-help "../submodules/helm/helm-help" "\
-Help command for `helm-find-files-eshell-command-on-file'.
-
-\(fn)" t nil)
-
-(autoload 'helm-buffers-ido-virtual-help "../submodules/helm/helm-help" "\
-Help command for ido virtual buffers.
-
-\(fn)" t nil)
-
-(autoload 'helm-moccur-help "../submodules/helm/helm-help" "\
-Help command for (m)occur.
-
-\(fn)" t nil)
-
-(autoload 'helm-top-help "../submodules/helm/helm-help" "\
-Help command for top.
-
-\(fn)" t nil)
-
-(autoload 'helm-apt-help "../submodules/helm/helm-help" "\
-Help command for helm apt.
-
-\(fn)" t nil)
-
-(autoload 'helm-el-package-help "../submodules/helm/helm-help" "\
-Help command for emacs packages.
-
-\(fn)" t nil)
-
-(autoload 'helm-M-x-help "../submodules/helm/helm-help" "\
-Help command for `helm-M-x'.
-
-\(fn)" t nil)
-
-(autoload 'helm-imenu-help "../submodules/helm/helm-help" "\
-Help command for imenu.
-
-\(fn)" t nil)
-
-(autoload 'helm-color-help "../submodules/helm/helm-help" "\
-Help command for color.
-
-\(fn)" t nil)
-
-(autoload 'helm-semantic-help "../submodules/helm/helm-help" "\
-Help command for semantic.
-
-\(fn)" t nil)
-
-(autoload 'helm-kmacro-help "../submodules/helm/helm-help" "\
-Help command for kmacro.
-
-\(fn)" t nil)
-
-(defvar helm-buffer-mode-line-string '("Buffer(s)" "\\<helm-buffer-map>\\[helm-buffer-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "String displayed in mode-line in `helm-source-buffers-list'"))
-
-(defvar helm-color-mode-line-string '("Colors" "\\<helm-color-map>\\[helm-color-help]:Help/\\[helm-color-run-insert-name]:Insert name/\\[helm-color-run-insert-rgb]:Insert RGB/with shift: Kill"))
-
-(defvar helm-buffers-ido-virtual-mode-line-string '("Killed Buffer(s)" "\\<helm-buffers-ido-virtual-map>\\[helm-buffers-ido-virtual-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "String displayed in mode-line in `helm-source-buffers-list'"))
-
-(defvar helm-ff-mode-line-string "\\<helm-find-files-map>\\[helm-ff-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "\
-String displayed in mode-line in `helm-source-find-files'")
-
-(defvar helm-read-file-name-mode-line-string "\\<helm-read-file-map>\\[helm-read-file-name-help]:Help C/\\[helm-cr-empty-string]:Empty \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "\
+(defvar helm-read-file-name-mode-line-string "\\<helm-read-file-map>\\[helm-help]:Help C/\\[helm-cr-empty-string]:Empty \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend" "\
 String displayed in mode-line in `helm-source-find-files'.")
 
-(defvar helm-generic-file-mode-line-string "\\<helm-generic-files-map>\\[helm-generic-file-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend" "\
-String displayed in mode-line in Locate.")
-
-(defvar helm-grep-mode-line-string "\\<helm-grep-map>\\[helm-grep-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend" "\
-String displayed in mode-line in `helm-do-grep'.")
-
-(defvar helm-pdfgrep-mode-line-string "\\<helm-pdfgrep-map>\\[helm-pdfgrep-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend" "\
-String displayed in mode-line in `helm-do-pdfgrep'.")
-
-(defvar helm-etags-mode-line-string "\\<helm-etags-map>\\[helm-etags-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "\
-String displayed in mode-line in `helm-etags-select'.")
-
-(defvar helm-ucs-mode-line-string "\\<helm-ucs-map>\\[helm-ucs-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct" "\
-String displayed in mode-line in `helm-ucs'.")
-
-(defvar helm-bookmark-mode-line-string '("Bookmark(s)" "\\<helm-bookmark-map>\\[helm-bookmark-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct") "\
-String displayed in mode-line in `helm-source-buffers-list'")
-
-(defvar helm-occur-mode-line "\\<helm-map>\\[helm-help]:Help \\<helm-occur-map>\\[helm-occur-run-query-replace-regexp]:Query replace regexp \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
-
-(defvar helm-moccur-mode-line "\\<helm-moccur-map>\\[helm-moccur-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
-
-(defvar helm-comp-read-mode-line "\\<helm-comp-read-map>C/\\[helm-cr-empty-string]:Empty \\<helm-map>\\[helm-help]:Help \\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct")
-
-(defvar helm-top-mode-line "\\<helm-top-map>\\[helm-top-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
-
-(defvar helm-apt-mode-line "\\<helm-apt-map>\\[helm-apt-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
-
-(defvar helm-el-package-mode-line "\\<helm-el-package-map>\\[helm-el-package-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
-
-(defvar helm-M-x-mode-line "\\<helm-M-x-map>\\[helm-M-x-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
-
-(defvar helm-imenu-mode-line "\\<helm-imenu-map>\\[helm-imenu-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
-
-(defvar helm-semantic-mode-line "\\<helm-semantic-map>\\[helm-semantic-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
+(defvar helm-top-mode-line "\\<helm-top-map>\\[helm-help]:Help \\<helm-map>\\[helm-select-action]:Act \\[helm-maybe-exit-minibuffer]/f1/f2/f-n:NthAct \\[helm-toggle-suspend-update]:Tog.suspend")
 
 (autoload 'helm-describe-helm-attribute "../submodules/helm/helm-help" "\
 Display the full documentation of HELM-ATTRIBUTE.
@@ -2308,7 +2240,7 @@ HELM-ATTRIBUTE should be a symbol.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-id-utils" "../submodules/helm/helm-id-utils.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-id-utils.el
 
 (autoload 'helm-gid "../submodules/helm/helm-id-utils" "\
@@ -2323,7 +2255,7 @@ See <https://www.gnu.org/software/idutils/>.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-imenu" "../submodules/helm/helm-imenu.el"
-;;;;;;  (21918 4884 397867 838000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-imenu.el
 
 (autoload 'helm-imenu "../submodules/helm/helm-imenu" "\
@@ -2339,7 +2271,7 @@ Preconfigured helm for fetching imenu entries of all buffers.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-info" "../submodules/helm/helm-info.el"
-;;;;;;  (21808 25202 256603 158000))
+;;;;;;  (21827 14066 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-info.el
 
 (autoload 'helm-info-at-point "../submodules/helm/helm-info" "\
@@ -2351,8 +2283,14 @@ With a prefix-arg insert symbol at point.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-locate" "../submodules/helm/helm-locate.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-locate.el
+
+(autoload 'helm-projects-find-files "../submodules/helm/helm-locate" "\
+Find files with locate in `helm-locate-project-list'.
+With a prefix arg refresh the database in each project.
+
+\(fn UPDATE)" t nil)
 
 (autoload 'helm-locate-read-file-name "../submodules/helm/helm-locate" "\
 
@@ -2367,8 +2305,6 @@ See 'man locate' for valid options and also `helm-locate-command'.
 You can specify a local database with prefix argument ARG.
 With two prefix arg, refresh the current local db or create it
 if it doesn't exists.
-Many databases can be used: navigate and mark them.
-See also `helm-locate-with-db'.
 
 To create a user specific db, use
 \"updatedb -l 0 -o db_path -U directory\".
@@ -2380,7 +2316,7 @@ Where db_path is a filename matched by
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-man" "../submodules/helm/helm-man.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-man.el
 
 (autoload 'helm-man-woman "../submodules/helm/helm-man" "\
@@ -2392,7 +2328,7 @@ With a prefix arg reinitialize the cache.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-misc" "../submodules/helm/helm-misc.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-misc.el
 
 (autoload 'helm-browse-menubar "../submodules/helm/helm-misc" "\
@@ -2402,6 +2338,7 @@ Preconfigured helm to the menubar using lacarte.el.
 
 (autoload 'helm-world-time "../submodules/helm/helm-misc" "\
 Preconfigured `helm' to show world time.
+Default action change TZ environment variable locally to emacs.
 
 \(fn)" t nil)
 
@@ -2433,7 +2370,7 @@ Preconfigured `helm' that provide completion of `comint' history.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-mode" "../submodules/helm/helm-mode.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-mode.el
 
 (autoload 'helm-comp-read "../submodules/helm/helm-mode" "\
@@ -2461,6 +2398,8 @@ Keys description:
 - BUFFER: Name of helm-buffer.
 
 - MUST-MATCH: Candidate selected must be one of COLLECTION.
+
+- FUZZY: Enable fuzzy matching.
 
 - REVERSE-HISTORY: When non--nil display history source after current
   source completion.
@@ -2497,9 +2436,14 @@ Keys description:
 
 - VOLATILE: Use volatile attribute (enabled by default).
 
-- SORT: A predicate to give to `sort' e.g `string-lessp'.
+- SORT: A predicate to give to `sort' e.g `string-lessp'
+  Use this only on small data as it is ineficient.
+  If you want to sort faster add a sort function to
+  FC-TRANSFORMER.
+  Note that FUZZY when enabled is already providing a sort function.
 
-- FC-TRANSFORMER: A `filtered-candidate-transformer' function.
+- FC-TRANSFORMER: A `filtered-candidate-transformer' function
+  or a list of functions.
 
 - HIST-FC-TRANSFORMER: A `filtered-candidate-transformer'
   function for the history source.
@@ -2511,7 +2455,7 @@ Keys description:
 - ALISTP: (default is non--nil) See `helm-comp-read-get-candidates'.
 
 - CANDIDATES-IN-BUFFER: when non--nil use a source build with
-  `helm-candidates-in-buffer' which is much faster.
+  `helm-source-in-buffer' which is much faster.
   Argument VOLATILE have no effect when CANDIDATES-IN-BUFFER is non--nil.
 
 Any prefix args passed during `helm-comp-read' invocation will be recorded
@@ -2520,7 +2464,45 @@ in `helm-current-prefix-arg', otherwise if prefix args were given before
 That's mean you can pass prefix args before or after calling a command
 that use `helm-comp-read' See `helm-M-x' for example.
 
-\(fn PROMPT COLLECTION &key TEST INITIAL-INPUT DEFAULT PRESELECT (buffer \"*Helm Completions*\") MUST-MATCH FUZZY REVERSE-HISTORY (requires-pattern 0) HISTORY INPUT-HISTORY (case-fold helm-comp-read-case-fold-search) (del-input t) (persistent-action nil) (persistent-help \"DoNothing\") (mode-line helm-comp-read-mode-line) (keymap helm-comp-read-map) (name \"Helm Completions\") CANDIDATES-IN-BUFFER EXEC-WHEN-ONLY-ONE QUIT-WHEN-NO-CAND (volatile t) SORT (fc-transformer (quote helm-cr-default-transformer)) HIST-FC-TRANSFORMER MARKED-CANDIDATES NOMARK (alistp t))" nil nil)
+\(fn PROMPT COLLECTION &key TEST INITIAL-INPUT DEFAULT PRESELECT (buffer \"*Helm Completions*\") MUST-MATCH FUZZY REVERSE-HISTORY (requires-pattern 0) HISTORY INPUT-HISTORY (case-fold helm-comp-read-case-fold-search) (del-input t) (persistent-action nil) (persistent-help \"DoNothing\") (mode-line helm-comp-read-mode-line) HELP-MESSAGE (keymap helm-comp-read-map) (name \"Helm Completions\") CANDIDATES-IN-BUFFER EXEC-WHEN-ONLY-ONE QUIT-WHEN-NO-CAND (volatile t) SORT (fc-transformer (quote helm-cr-default-transformer)) HIST-FC-TRANSFORMER MARKED-CANDIDATES NOMARK (alistp t) (candidate-number-limit helm-candidate-number-limit))" nil nil)
+
+(autoload 'helm-read-file-name "../submodules/helm/helm-mode" "\
+Read a file name with helm completion.
+It is helm `read-file-name' emulation.
+
+Argument PROMPT is the default prompt to use.
+
+Keys description:
+
+- NAME: Source name, default to \"Read File Name\".
+
+- INITIAL-INPUT: Where to start read file name, default to `default-directory'.
+
+- BUFFER: `helm-buffer' name default to \"*Helm Completions*\".
+
+- TEST: A predicate called with one arg 'candidate'.
+
+- CASE-FOLD: Same as `helm-case-fold-search'.
+
+- PRESELECT: helm preselection.
+
+- HISTORY: Display HISTORY in a special source.
+
+- MUST-MATCH: Can be 'confirm, nil, or t.
+
+- MARKED-CANDIDATES: When non--nil return a list of marked candidates.
+
+- NOMARK: When non--nil don't allow marking candidates.
+
+- ALISTP: Don't use `all-completions' in history (take effect only on history).
+
+- PERSISTENT-ACTION: a persistent action function.
+
+- PERSISTENT-HELP: persistent help message.
+
+- MODE-LINE: A mode line message, default is `helm-read-file-name-mode-line-string'.
+
+\(fn PROMPT &key (name \"Read File Name\") (initial-input default-directory) (buffer \"*Helm file completions*\") TEST (case-fold helm-file-name-case-fold-search) PRESELECT HISTORY MUST-MATCH DEFAULT MARKED-CANDIDATES (candidate-number-limit helm-ff-candidate-number-limit) NOMARK (alistp t) (persistent-action (quote helm-find-files-persistent-action)) (persistent-help \"Hit1 Expand Candidate, Hit2 or (C-u) Find file\") (mode-line helm-read-file-name-mode-line-string))" nil nil)
 
 (defvar helm-mode nil "\
 Non-nil if Helm mode is enabled.
@@ -2556,7 +2538,7 @@ Note: This mode is incompatible with Emacs23.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-net" "../submodules/helm/helm-net.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-net.el
 
 (autoload 'helm-surfraw "../submodules/helm/helm-net" "\
@@ -2569,11 +2551,6 @@ Preconfigured `helm' for google search with google suggest.
 
 \(fn)" t nil)
 
-(autoload 'helm-yahoo-suggest "../submodules/helm/helm-net" "\
-Preconfigured `helm' for Yahoo searching with Yahoo suggest.
-
-\(fn)" t nil)
-
 (autoload 'helm-wikipedia-suggest "../submodules/helm/helm-net" "\
 Preconfigured `helm' for Wikipedia lookup with Wikipedia suggest.
 
@@ -2582,7 +2559,7 @@ Preconfigured `helm' for Wikipedia lookup with Wikipedia suggest.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-org" "../submodules/helm/helm-org.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-org.el
 
 (autoload 'helm-org-agenda-files-headings "../submodules/helm/helm-org" "\
@@ -2595,6 +2572,12 @@ Preconfigured helm for org buffer headings.
 
 \(fn)" t nil)
 
+(autoload 'helm-org-parent-headings "../submodules/helm/helm-org" "\
+Preconfigured helm for org headings that are parents of the
+current heading.
+
+\(fn)" t nil)
+
 (autoload 'helm-org-capture-templates "../submodules/helm/helm-org" "\
 Preconfigured helm for org templates.
 
@@ -2603,7 +2586,7 @@ Preconfigured helm for org templates.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-regexp" "../submodules/helm/helm-regexp.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-regexp.el
 
 (autoload 'helm-moccur-mode "../submodules/helm/helm-regexp" "\
@@ -2630,17 +2613,6 @@ Invoke `helm-occur' from isearch.
 
 \(fn)" t nil)
 
-(autoload 'helm-multi-occur "../submodules/helm/helm-regexp" "\
-Preconfigured helm for multi occur.
-
-  BUFFERS is a list of buffers to search through.
-With a prefix arg, reverse the behavior of
-`helm-moccur-always-search-in-current'.
-The prefix arg can be set before calling `helm-multi-occur'
-or during the buffer selection.
-
-\(fn BUFFERS)" t nil)
-
 (autoload 'helm-multi-occur-from-isearch "../submodules/helm/helm-regexp" "\
 Invoke `helm-multi-occur' from isearch.
 
@@ -2654,7 +2626,7 @@ The prefix arg can be set before calling
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-ring" "../submodules/helm/helm-ring.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-ring.el
 
 (defvar helm-push-mark-mode nil "\
@@ -2712,7 +2684,7 @@ This command is useful when used with persistent action.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-semantic" "../submodules/helm/helm-semantic.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-semantic.el
 
 (autoload 'helm-semantic "../submodules/helm/helm-semantic" "\
@@ -2735,7 +2707,7 @@ Fill in the symbol at point by default.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-sys" "../submodules/helm/helm-sys.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-sys.el
 
 (autoload 'helm-top "../submodules/helm/helm-sys" "\
@@ -2756,26 +2728,27 @@ Preconfigured helm for xrandr.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-tags" "../submodules/helm/helm-tags.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-tags.el
 
 (autoload 'helm-etags-select "../submodules/helm/helm-tags" "\
 Preconfigured helm for etags.
-If called with a prefix argument or if any of the tag files have
-been modified, reinitialize cache.
+If called with a prefix argument REINIT
+or if any of the tag files have been modified, reinitialize cache.
 
 This function aggregates three sources of tag files:
 
-  1) An automatically located file in the parent directories, by `helm-etags-get-tag-file'.
+  1) An automatically located file in the parent directories,
+     by `helm-etags-get-tag-file'.
   2) `tags-file-name', which is commonly set by `find-tag' command.
   3) `tags-table-list' which is commonly set by `visit-tags-table' command.
 
-\(fn ARG)" t nil)
+\(fn REINIT)" t nil)
 
 ;;;***
 
 ;;;### (autoloads nil "../submodules/helm/helm-utils" "../submodules/helm/helm-utils.el"
-;;;;;;  (21918 4884 401201 147000))
+;;;;;;  (22144 48421 0 0))
 ;;; Generated autoloads from ../submodules/helm/helm-utils.el
 
 (autoload 'helm-show-all-in-this-source-only "../submodules/helm/helm-utils" "\
@@ -2799,8 +2772,8 @@ from its directory.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/highlight-symbol/highlight-symbol"
-;;;;;;  "../submodules/highlight-symbol/highlight-symbol.el" (21918
-;;;;;;  4885 801191 338000))
+;;;;;;  "../submodules/highlight-symbol/highlight-symbol.el" (22144
+;;;;;;  48422 0 0))
 ;;; Generated autoloads from ../submodules/highlight-symbol/highlight-symbol.el
 
 (autoload 'highlight-symbol-mode "../submodules/highlight-symbol/highlight-symbol" "\
@@ -2831,7 +2804,7 @@ List all symbols highlighted in the buffer.
 (autoload 'highlight-symbol-count "../submodules/highlight-symbol/highlight-symbol" "\
 Print the number of occurrences of symbol at point.
 
-\(fn &optional SYMBOL)" t nil)
+\(fn &optional SYMBOL MESSAGE-P)" t nil)
 
 (autoload 'highlight-symbol-next "../submodules/highlight-symbol/highlight-symbol" "\
 Jump to the next location of the symbol at point within the buffer.
@@ -2887,47 +2860,8 @@ before if NLINES is negative.
 
 ;;;***
 
-;;;### (autoloads nil "../submodules/let-alist/let-alist" "../submodules/let-alist/let-alist.el"
-;;;;;;  (21771 43538 546376 544000))
-;;; Generated autoloads from ../submodules/let-alist/let-alist.el
-
-(autoload 'let-alist "../submodules/let-alist/let-alist" "\
-Let-bind dotted symbols to their cdrs in ALIST and execute BODY.
-Dotted symbol is any symbol starting with a `.'.  Only those present
-in BODY are let-bound and this search is done at compile time.
-
-For instance, the following code
-
-  (let-alist alist
-    (if (and .title .body)
-        .body
-      .site
-      .site.contents))
-
-essentially expands to
-
-  (let ((.title (cdr (assq 'title alist)))
-        (.body  (cdr (assq 'body alist)))
-        (.site  (cdr (assq 'site alist)))
-        (.site.contents (cdr (assq 'contents (cdr (assq 'site alist))))))
-    (if (and .title .body)
-        .body
-      .site
-      .site.contents))
-
-If you nest `let-alist' invocations, the inner one can't access
-the variables of the outer one. You can, however, access alists
-inside the original alist by using dots inside the symbol, as
-displayed in the example above.
-
-\(fn ALIST &rest BODY)" nil t)
-
-(put 'let-alist 'lisp-indent-function '1)
-
-;;;***
-
 ;;;### (autoloads nil "../submodules/litable/litable" "../submodules/litable/litable.el"
-;;;;;;  (21640 50976 689763 689000))
+;;;;;;  (22144 48422 0 0))
 ;;; Generated autoloads from ../submodules/litable/litable.el
 
 (autoload 'litable-mode "../submodules/litable/litable" "\
@@ -2938,7 +2872,7 @@ Toggle litable-mode
 ;;;***
 
 ;;;### (autoloads nil "../submodules/lua-mode/lua-mode" "../submodules/lua-mode/lua-mode.el"
-;;;;;;  (21918 4887 944509 668000))
+;;;;;;  (22144 48423 0 0))
 ;;; Generated autoloads from ../submodules/lua-mode/lua-mode.el
 
 (autoload 'lua-mode "../submodules/lua-mode/lua-mode" "\
@@ -2950,10 +2884,19 @@ Major mode for editing Lua code.
 
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
+(defalias 'run-lua #'lua-start-process)
+
+(autoload 'lua-start-process "../submodules/lua-mode/lua-mode" "\
+Start a lua process named NAME, running PROGRAM.
+PROGRAM defaults to NAME, which defaults to `lua-default-application'.
+When called interactively, switch to the process buffer.
+
+\(fn &optional NAME PROGRAM STARTFILE &rest SWITCHES)" t nil)
+
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/git-commit" "../submodules/magit/lisp/git-commit.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/git-commit.el
 
 (defvar global-git-commit-mode t "\
@@ -2977,7 +2920,7 @@ provide such a commit message.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/git-rebase" "../submodules/magit/lisp/git-rebase.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/git-rebase.el
 
 (autoload 'git-rebase-mode "../submodules/magit/lisp/git-rebase" "\
@@ -2997,7 +2940,7 @@ running 'man git-rebase' at the command line) for details.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit" "../submodules/magit/lisp/magit.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit.el
 
 (autoload 'magit-status "../submodules/magit/lisp/magit" "\
@@ -3008,6 +2951,11 @@ If that directory isn't the root of an existing repository
 then offer to initialize it as a new repository.
 
 \(fn &optional DIRECTORY)" t nil)
+
+(autoload 'magit-status-internal "../submodules/magit/lisp/magit" "\
+
+
+\(fn DIRECTORY)" nil nil)
  (autoload 'magit-show-refs-popup "magit" nil t)
 
 (autoload 'magit-show-refs-head "../submodules/magit/lisp/magit" "\
@@ -3032,7 +2980,7 @@ Refs are compared with a branch read form the user.
 (autoload 'magit-find-file "../submodules/magit/lisp/magit" "\
 View FILE from REV.
 Switch to a buffer visiting blob REV:FILE,
-creating one if non already exists.
+creating one if none already exists.
 
 \(fn REV FILE)" t nil)
 
@@ -3049,6 +2997,11 @@ With a prefix argument, visit in other window.  If there
 is no file at point then instead visit `default-directory'.
 
 \(fn &optional OTHER-WINDOW)" t nil)
+
+(autoload 'magit-checkout-file "../submodules/magit/lisp/magit" "\
+Checkout FILE from REV.
+
+\(fn REV FILE)" t nil)
 
 (autoload 'magit-init "../submodules/magit/lisp/magit" "\
 Initialize a Git repository, then show its status.
@@ -3074,12 +3027,54 @@ changes.
 
 \(fn REVISION)" t nil)
 
+(autoload 'magit-branch "../submodules/magit/lisp/magit" "\
+Create BRANCH at branch or revision START-POINT.
+
+\(git branch [ARGS] BRANCH START-POINT).
+
+\(fn BRANCH START-POINT &optional ARGS)" t nil)
+
 (autoload 'magit-branch-and-checkout "../submodules/magit/lisp/magit" "\
 Create and checkout BRANCH at branch or revision START-POINT.
 
 \(git checkout [ARGS] -b BRANCH START-POINT).
 
 \(fn BRANCH START-POINT &optional ARGS)" t nil)
+
+(autoload 'magit-branch-spinoff "../submodules/magit/lisp/magit" "\
+Create new branch from the unpushed commits.
+
+Create and checkout a new branch starting at and tracking the
+current branch.  That branch in turn is reset to the last commit
+it shares with its upstream.  If the current branch has no
+upstream or no unpushed commits, then the new branch is created
+anyway and the previously current branch is not touched.
+
+This is useful to create a feature branch after work has already
+began on the old branch (likely but not necessarily \"master\").
+
+If the current branch is a member of the value of option
+`magit-branch-prefer-remote-upstream' (which see), then the
+current branch will be used as the starting point as usual, but
+the upstream of the starting-point may be used as the upstream
+of the new branch, instead of the starting-point itself.
+
+\(fn BRANCH &rest ARGS)" t nil)
+
+(autoload 'magit-branch-reset "../submodules/magit/lisp/magit" "\
+Reset a branch to the tip of another branch or any other commit.
+
+When resetting to another branch, then also set that branch as
+the upstream of the branch being reset.
+
+When the branch being reset is the current branch, then do a
+hard reset.  If there are any uncommitted changes, then the user
+has to confirming the reset because those changes would be lost.
+
+This is useful when you have started work on a feature branch but
+realize it's all crap and want to start over.
+
+\(fn BRANCH TO &optional ARGS)" t nil)
 
 (autoload 'magit-branch-delete "../submodules/magit/lisp/magit" "\
 Delete one or multiple branches.
@@ -3089,16 +3084,6 @@ defaulting to the branch at point.
 
 \(fn BRANCHES &optional FORCE)" t nil)
 
-(autoload 'magit-branch-set-upstream "../submodules/magit/lisp/magit" "\
-Change the UPSTREAM branch of BRANCH.
-
-\(fn BRANCH UPSTREAM)" t nil)
-
-(autoload 'magit-branch-unset-upstream "../submodules/magit/lisp/magit" "\
-Unset the upstream branch of BRANCH.
-
-\(fn BRANCH)" t nil)
-
 (autoload 'magit-branch-rename "../submodules/magit/lisp/magit" "\
 Rename branch OLD to NEW.
 With prefix, forces the rename even if NEW already exists.
@@ -3107,10 +3092,121 @@ With prefix, forces the rename even if NEW already exists.
 
 \(fn OLD NEW &optional FORCE)" t nil)
 
-(autoload 'magit-branch-edit-description "../submodules/magit/lisp/magit" "\
-Edit the description of BRANCH.
+(autoload 'magit-edit-branch*description "../submodules/magit/lisp/magit" "\
+Edit the description of the current branch.
+With a prefix argument edit the description of another branch.
+
+The description for the branch named NAME is stored in the Git
+variable `branch.<name>.description'.
 
 \(fn BRANCH)" t nil)
+
+(autoload 'magit-set-branch*merge/remote "../submodules/magit/lisp/magit" "\
+Set or unset the upstream of the current branch.
+With a prefix argument do so for another branch.
+
+When the branch in question already has an upstream then simply
+unsets it.  Invoke this command again to set another upstream.
+
+Together the Git variables `branch.<name>.remote' and
+`branch.<name>.merge' define the upstream branch of the local
+branch named NAME.  The value of `branch.<name>.remote' is the
+name of the upstream remote.  The value of `branch.<name>.merge'
+is the full reference of the upstream branch, on the remote.
+
+\(fn BRANCH UPSTREAM)" t nil)
+
+(autoload 'magit-cycle-branch*rebase "../submodules/magit/lisp/magit" "\
+Cycle the value of `branch.<name>.rebase' for the current branch.
+With a prefix argument cycle the value for another branch.
+
+The Git variables `branch.<name>.rebase' controls whether pulling
+into the branch named NAME is done by rebasing that branch onto
+the fetched branch or by merging that branch.
+
+When `true' then pulling is done by rebasing.
+When `false' then pulling is done by merging.
+
+When that variable is undefined then the value of `pull.rebase'
+is used instead.  It defaults to `false'.
+
+\(fn BRANCH)" t nil)
+
+(autoload 'magit-cycle-branch*pushRemote "../submodules/magit/lisp/magit" "\
+Cycle the value of `branch.<name>.pushRemote' for the current branch.
+With a prefix argument cycle the value for another branch.
+
+The Git variable `branch.<name>.pushRemote' specifies the remote
+that the branch named NAME is usually pushed to.  The value has
+to be the name of an existing remote.
+
+If that variable is undefined, then the value of the Git variable
+`remote.pushDefault' is used instead, provided that it is defined,
+which by default it is not.
+
+\(fn BRANCH)" t nil)
+
+(autoload 'magit-cycle-pull\.rebase "../submodules/magit/lisp/magit" "\
+Cycle the repository-local value of `pull.rebase'.
+
+The Git variable `pull.rebase' specifies whether pulling is done
+by rebasing or by merging.  It can be overwritten using the Git
+variable `branch.<name>.rebase'.
+
+When `true' then pulling is done by rebasing.
+When `false' (the default) then pulling is done by merging.
+
+\(fn)" t nil)
+
+(autoload 'magit-cycle-remote\.pushDefault "../submodules/magit/lisp/magit" "\
+Cycle the repository-local value of `remote.pushDefault'.
+
+The Git variable `remote.pushDefault' specifies the remote that
+local branches are usually pushed to.  It can be overwritten
+using the Git variable `branch.<name>.pushRemote'.
+
+\(fn)" t nil)
+
+(autoload 'magit-cycle-branch*autoSetupMerge "../submodules/magit/lisp/magit" "\
+Cycle the repository-local value of `branch.autoSetupMerge'.
+
+The Git variable `branch.autoSetupMerge' under what circumstances
+creating a branch (named NAME) should result in the variables
+`branch.<name>.merge' and `branch.<name>.remote' being set
+according to the starting point used to create the branch.  If
+the starting point isn't a branch, then these variables are never
+set.
+
+When `always' then the variables are set regardless of whether
+the starting point is a local or a remote branch.
+
+When `true' (the default) then the variable are set when the
+starting point is a remote branch, but not when it is a local
+branch.
+
+When `false' then the variables are never set.
+
+\(fn)" t nil)
+
+(autoload 'magit-cycle-branch*autoSetupRebase "../submodules/magit/lisp/magit" "\
+Cycle the repository-local value of `branch.autoSetupRebase'.
+
+The Git variable `branch.autoSetupRebase' specifies whether
+creating a branch (named NAME) should result in the variable
+`branch.<name>.rebase' being set to `true'.
+
+When `always' then the variable is set regardless of whether the
+starting point is a local or a remote branch.
+
+When `local' then the variable are set when the starting point
+is a local branch, but not when it is a remote branch.
+
+When `remote' then the variable are set when the starting point
+is a remote branch, but not when it is a local branch.
+
+When `never' (the default) then the variable is never set.
+
+\(fn)" t nil)
  (autoload 'magit-merge-popup "magit" nil t)
 
 (autoload 'magit-merge "../submodules/magit/lisp/magit" "\
@@ -3159,7 +3255,7 @@ Abort the current merge operation.
 (autoload 'magit-reset-index "../submodules/magit/lisp/magit" "\
 Reset the index to COMMIT.
 Keep the head and working tree as-is, so if COMMIT refers to the
-head this effectivley unstages all changes.
+head this effectively unstages all changes.
 
 \(git reset COMMIT)
 
@@ -3249,6 +3345,32 @@ Fetch all submodules.
 With a prefix argument fetch all remotes.
 
 \(fn &optional ALL)" t nil)
+
+(autoload 'magit-submodule-deinit "../submodules/magit/lisp/magit" "\
+Unregister the submodule at PATH.
+
+\(fn PATH)" t nil)
+
+(defvar global-magit-file-mode nil "\
+Non-nil if Global-Magit-File mode is enabled.
+See the command `global-magit-file-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-magit-file-mode'.")
+
+(custom-autoload 'global-magit-file-mode "../submodules/magit/lisp/magit" nil)
+
+(autoload 'global-magit-file-mode "../submodules/magit/lisp/magit" "\
+Toggle Magit-File mode in all buffers.
+With prefix ARG, enable Global-Magit-File mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Magit-File mode is enabled in all buffers where
+`magit-file-mode-turn-on' would do it.
+See `magit-file-mode' for more information on Magit-File mode.
+
+\(fn &optional ARG)" t nil)
  (autoload 'magit-dispatch-popup "magit" nil t)
  (autoload 'magit-run-popup "magit" nil t)
 
@@ -3257,14 +3379,38 @@ Execute a Git subcommand asynchronously, displaying the output.
 With a prefix argument run Git in the root of the current
 repository, otherwise in `default-directory'.
 
-Non-interactively run Git in DIRECTORY with ARGS.
+\(fn ARGS DIRECTORY)" t nil)
+
+(autoload 'magit-git-command-topdir "../submodules/magit/lisp/magit" "\
+Execute a Git subcommand asynchronously, displaying the output.
+Run Git in the top-level directory of the current repository.
+
+\(fn)" t nil)
+
+(autoload 'magit-shell-command "../submodules/magit/lisp/magit" "\
+Execute a shell command asynchronously, displaying the output.
+With a prefix argument run the command in the root of the current
+repository, otherwise in `default-directory'.
 
 \(fn ARGS DIRECTORY)" t nil)
+
+(autoload 'magit-shell-command-topdir "../submodules/magit/lisp/magit" "\
+Execute a shell command asynchronously, displaying the output.
+Run the command in the top-level directory of the current repository.
+
+\(fn)" t nil)
+
+(autoload 'magit-version "../submodules/magit/lisp/magit" "\
+Return the version of Magit currently in use.
+When called interactive also show the used versions of Magit,
+Git, and Emacs in the echo area.
+
+\(fn)" t nil)
 
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit-apply" "../submodules/magit/lisp/magit-apply.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit-apply.el
 
 (autoload 'magit-stage-file "../submodules/magit/lisp/magit-apply" "\
@@ -3301,7 +3447,7 @@ Remove all changes from the staging area.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit-bisect" "../submodules/magit/lisp/magit-bisect.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit-bisect.el
  (autoload 'magit-bisect-popup "magit-bisect" nil t)
 
@@ -3344,12 +3490,16 @@ to test.  This command lets Git choose a different one.
 (autoload 'magit-bisect-run "../submodules/magit/lisp/magit-bisect" "\
 Bisect automatically by running commands after each step.
 
-\(fn CMDLINE)" t nil)
+Unlike `git bisect run' this can be used before bisecting has
+begun.  In that case it behaves like `git bisect start; git
+bisect run'.
+
+\(fn CMDLINE &optional BAD GOOD)" t nil)
 
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit-blame" "../submodules/magit/lisp/magit-blame.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit-blame.el
  (autoload 'magit-blame-popup "magit-blame" nil t)
 
@@ -3374,9 +3524,8 @@ only arguments available from `magit-blame-popup' should be used.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit-commit" "../submodules/magit/lisp/magit-commit.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit-commit.el
- (autoload 'magit-commit-popup "magit-commit" nil t)
 
 (autoload 'magit-commit "../submodules/magit/lisp/magit-commit" "\
 Create a new commit on HEAD.
@@ -3395,20 +3544,21 @@ Amend the last commit.
 
 (autoload 'magit-commit-extend "../submodules/magit/lisp/magit-commit" "\
 Amend the last commit, without editing the message.
-With a prefix argument do change the committer date, otherwise
-don't.  The option `magit-commit-extend-override-date' can be
-used to inverse the meaning of the prefix argument.
 
-\(git commit --amend --no-edit)
+With a prefix argument keep the committer date, otherwise change
+it.  The option `magit-commit-extend-override-date' can be used
+to inverse the meaning of the prefix argument.
+\(git commit
+--amend --no-edit)
 
 \(fn &optional ARGS OVERRIDE-DATE)" t nil)
 
 (autoload 'magit-commit-reword "../submodules/magit/lisp/magit-commit" "\
 Reword the last commit, ignoring staged changes.
 
-With a prefix argument do change the committer date, otherwise
-don't.  The option `magit-commit-rewrite-override-date' can be
-used to inverse the meaning of the prefix argument.
+With a prefix argument keep the committer date, otherwise change
+it.  The option `magit-commit-reword-override-date' can be used
+to inverse the meaning of the prefix argument.
 
 Non-interactively respect the optional OVERRIDE-DATE argument
 and ignore the option.
@@ -3419,46 +3569,46 @@ and ignore the option.
 
 (autoload 'magit-commit-fixup "../submodules/magit/lisp/magit-commit" "\
 Create a fixup commit.
-With a prefix argument the target commit has to be confirmed.
+
+With a prefix argument the target COMMIT has to be confirmed.
 Otherwise the commit at point may be used without confirmation
 depending on the value of option `magit-commit-squash-confirm'.
 
-\(git commit --no-edit --fixup=COMMIT [ARGS])
-
-\(fn &optional COMMIT ARGS CONFIRM)" t nil)
+\(fn &optional COMMIT ARGS)" t nil)
 
 (autoload 'magit-commit-squash "../submodules/magit/lisp/magit-commit" "\
-Create a squash commit.
-With a prefix argument the target commit has to be confirmed.
+Create a squash commit, without editing the squash message.
+
+With a prefix argument the target COMMIT has to be confirmed.
 Otherwise the commit at point may be used without confirmation
 depending on the value of option `magit-commit-squash-confirm'.
 
-\(git commit --no-edit --squash=COMMIT [ARGS])
+\(fn &optional COMMIT ARGS)" t nil)
 
-\(fn &optional COMMIT ARGS CONFIRM)" t nil)
+(autoload 'magit-commit-augment "../submodules/magit/lisp/magit-commit" "\
+Create a squash commit, editing the squash message.
+
+With a prefix argument the target COMMIT has to be confirmed.
+Otherwise the commit at point may be used without confirmation
+depending on the value of option `magit-commit-squash-confirm'.
+
+\(fn &optional COMMIT ARGS)" t nil)
 
 (autoload 'magit-commit-instant-fixup "../submodules/magit/lisp/magit-commit" "\
-Create a fixup commit and instantly rebase.
-
-\(git commit --no-edit --fixup=COMMIT ARGS;
- git rebase -i COMMIT^ --autosquash --autostash)
+Create a fixup commit targeting COMMIT and instantly rebase.
 
 \(fn &optional COMMIT ARGS)" t nil)
 
 (autoload 'magit-commit-instant-squash "../submodules/magit/lisp/magit-commit" "\
-Create a squash commit and instantly rebase.
-
-\(git commit --no-edit --squash=COMMIT ARGS;
- git rebase -i COMMIT^ --autosquash --autostash)
+Create a squash commit targeting COMMIT and instantly rebase.
 
 \(fn &optional COMMIT ARGS)" t nil)
 
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit-diff" "../submodules/magit/lisp/magit-diff.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit-diff.el
- (autoload 'magit-diff-popup "magit-diff" nil t)
 
 (autoload 'magit-diff-dwim "../submodules/magit/lisp/magit-diff" "\
 Show changes for the thing at point.
@@ -3467,12 +3617,19 @@ Show changes for the thing at point.
 
 (autoload 'magit-diff "../submodules/magit/lisp/magit-diff" "\
 Show differences between two commits.
-RANGE should be a range (A..B or A...B) but can also be a single
-commit.  If one side of the range is omitted, then it defaults
-to HEAD.  If just a commit is given, then changes in the working
-tree relative to that commit are shown.
 
-\(fn RANGE &optional ARGS FILES)" t nil)
+REV-OR-RANGE should be a RANGE or a single revision.  If it is a
+revision, then show changes in the working tree relative to that
+revision.  If it is a range, but one side is omitted, then show
+changes relative to `HEAD'.
+
+If the region is active, use the revisions on the first and last
+line of the region as the two sides of the range.  With a prefix
+argument, instead of diffing the revisions, choose a revision to
+view changes along, starting at the common ancestor of both
+revisions (i.e., use a \"...\" range).
+
+\(fn REV-OR-RANGE &optional ARGS FILES)" t nil)
 
 (autoload 'magit-diff-working-tree "../submodules/magit/lisp/magit-diff" "\
 Show changes between the current working tree and the `HEAD' commit.
@@ -3493,23 +3650,13 @@ Show changes between the working tree and the index.
 
 \(fn &optional ARGS FILES)" t nil)
 
-(autoload 'magit-diff-unpushed "../submodules/magit/lisp/magit-diff" "\
-Show unpushed changes.
-
-\(fn &optional ARGS FILES)" t nil)
-
-(autoload 'magit-diff-unpulled "../submodules/magit/lisp/magit-diff" "\
-Show unpulled changes.
-
-\(fn &optional ARGS FILES)" t nil)
-
 (autoload 'magit-diff-while-committing "../submodules/magit/lisp/magit-diff" "\
 While committing, show the changes that are about to be committed.
 While amending, invoking the command again toggles between
 showing just the new changes or all the changes that will
-be commited.
+be committed.
 
-\(fn &optional ARGS)" t nil)
+\(fn &optional ARGS FILES)" t nil)
 
 (autoload 'magit-diff-paths "../submodules/magit/lisp/magit-diff" "\
 Show changes between any two files on disk.
@@ -3517,16 +3664,16 @@ Show changes between any two files on disk.
 \(fn A B)" t nil)
 
 (autoload 'magit-show-commit "../submodules/magit/lisp/magit-diff" "\
-Show the commit at point.
-If there is no commit at point or with a prefix argument prompt
-for a commit.
+Show the revision at point.
+If there is no revision at point or with a prefix argument prompt
+for a revision.
 
-\(fn COMMIT &optional NOSELECT MODULE ARGS)" t nil)
+\(fn REV &optional ARGS FILES MODULE)" t nil)
 
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit-ediff" "../submodules/magit/lisp/magit-ediff.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit-ediff.el
  (autoload 'magit-ediff-popup "magit-ediff" nil t)
 
@@ -3548,9 +3695,16 @@ FILE has to be relative to the top directory of the repository.
 
 (autoload 'magit-ediff-compare "../submodules/magit/lisp/magit-ediff" "\
 Compare REVA:FILEA with REVB:FILEB using Ediff.
+
 FILEA and FILEB have to be relative to the top directory of the
 repository.  If REVA or REVB is nil then this stands for the
 working tree state.
+
+If the region is active, use the revisions on the first and last
+line of the region.  With a prefix argument, instead of diffing
+the revisions, choose a revision to view changes along, starting
+at the common ancestor of both revisions (i.e., use a \"...\"
+range).
 
 \(fn REVA REVB FILEA FILEB)" t nil)
 
@@ -3561,29 +3715,46 @@ the user wants to compare, stage, or resolve using Ediff.  It
 might only be able to guess either the file, or range or commit,
 in which case the user is asked about the other.  It might not
 always guess right, in which case the appropriate `magit-ediff-*'
-command has to be used explicitly.  If it cannot read the users
+command has to be used explicitly.  If it cannot read the user's
 mind at all, then it asks the user for a command to run.
 
 \(fn)" t nil)
 
 (autoload 'magit-ediff-show-staged "../submodules/magit/lisp/magit-ediff" "\
 Show staged changes using Ediff.
+
 This only allows looking at the changes; to stage, unstage,
 and discard changes using Ediff, use `magit-ediff-stage'.
+
+FILE must be relative to the top directory of the repository.
 
 \(fn FILE)" t nil)
 
 (autoload 'magit-ediff-show-unstaged "../submodules/magit/lisp/magit-ediff" "\
 Show unstaged changes using Ediff.
+
 This only allows looking at the changes; to stage, unstage,
 and discard changes using Ediff, use `magit-ediff-stage'.
 
+FILE must be relative to the top directory of the repository.
+
 \(fn FILE)" t nil)
+
+(autoload 'magit-ediff-show-working-tree "../submodules/magit/lisp/magit-ediff" "\
+Show changes between HEAD and working tree using Ediff.
+FILE must be relative to the top directory of the repository.
+
+\(fn FILE)" t nil)
+
+(autoload 'magit-ediff-show-commit "../submodules/magit/lisp/magit-ediff" "\
+Show changes introduced by COMMIT using Ediff.
+
+\(fn COMMIT)" t nil)
 
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit-extras" "../submodules/magit/lisp/magit-extras.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit-extras.el
 
 (autoload 'magit-run-git-gui "../submodules/magit/lisp/magit-extras" "\
@@ -3601,11 +3772,19 @@ blame to center around the line point is on.
 \(fn COMMIT FILENAME &optional LINENUM)" t nil)
 
 (autoload 'magit-run-gitk "../submodules/magit/lisp/magit-extras" "\
-Run Gitk for the current git repository.
-Without a prefix argument run `gitk --all', with
-a prefix argument run gitk without any arguments.
+Run `gitk' in the current repository.
 
-\(fn ARG)" t nil)
+\(fn)" t nil)
+
+(autoload 'magit-run-gitk-branches "../submodules/magit/lisp/magit-extras" "\
+Run `gitk --branches' in the current repository.
+
+\(fn)" t nil)
+
+(autoload 'magit-run-gitk-all "../submodules/magit/lisp/magit-extras" "\
+Run `gitk --all' in the current repository.
+
+\(fn)" t nil)
 
 (autoload 'magit-clean "../submodules/magit/lisp/magit-extras" "\
 Remove untracked files from the working tree.
@@ -3646,9 +3825,8 @@ on a position in a file-visiting buffer.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit-log" "../submodules/magit/lisp/magit-log.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit-log.el
- (autoload 'magit-log-popup "magit-log" nil t)
 
 (autoload 'magit-log-current "../submodules/magit/lisp/magit-log" "\
 Show log for the current branch.
@@ -3687,9 +3865,11 @@ Show log for all references and `HEAD'.
 \(fn &optional ARGS FILES)" t nil)
 
 (autoload 'magit-log-buffer-file "../submodules/magit/lisp/magit-log" "\
-Show log for the file visited in the current buffer.
+Show log for the blob or file visited in the current buffer.
+With a prefix argument or when `--follow' is part of
+`magit-log-arguments', then follow renames.
 
-\(fn)" t nil)
+\(fn &optional FOLLOW BEG END)" t nil)
 
 (autoload 'magit-reflog-current "../submodules/magit/lisp/magit-log" "\
 Display the reflog of the current branch.
@@ -3714,11 +3894,12 @@ Show commits in a branch that are not merged in the upstream branch.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit-remote" "../submodules/magit/lisp/magit-remote.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit-remote.el
 
 (autoload 'magit-clone "../submodules/magit/lisp/magit-remote" "\
 Clone the REPOSITORY to DIRECTORY.
+Then show the status buffer for the new repository.
 
 \(fn REPOSITORY DIRECTORY)" t nil)
  (autoload 'magit-remote-popup "magit-remote" nil t)
@@ -3744,56 +3925,91 @@ Delete the remote named REMOTE.
 \(fn REMOTE)" t nil)
  (autoload 'magit-fetch-popup "magit-remote" nil t)
 
-(autoload 'magit-fetch-current "../submodules/magit/lisp/magit-remote" "\
-Fetch from the upstream repository of the current branch.
-If `HEAD' is detached or if the upstream is not configured,
-then read the remote.
+(autoload 'magit-fetch-from-pushremote "../submodules/magit/lisp/magit-remote" "\
+Fetch from the push-remote of the current branch.
 
-\(fn REMOTE &optional ARGS)" t nil)
+\(fn ARGS)" t nil)
+
+(autoload 'magit-fetch-from-upstream "../submodules/magit/lisp/magit-remote" "\
+Fetch from the upstream repository of the current branch.
+
+\(fn ARGS)" t nil)
 
 (autoload 'magit-fetch "../submodules/magit/lisp/magit-remote" "\
 Fetch from another repository.
 
-\(fn REMOTE &optional ARGS)" t nil)
+\(fn REMOTE ARGS)" t nil)
 
 (autoload 'magit-fetch-all "../submodules/magit/lisp/magit-remote" "\
-Fetch from all configured remotes.
+Fetch from all remotes.
 
-\(fn &optional ARGS)" t nil)
+\(fn ARGS)" t nil)
+
+(autoload 'magit-fetch-all-prune "../submodules/magit/lisp/magit-remote" "\
+Fetch from all remotes, and prune.
+Prune remote tracking branches for branches that have been
+removed on the respective remote.
+
+\(fn)" t nil)
+
+(autoload 'magit-fetch-all-no-prune "../submodules/magit/lisp/magit-remote" "\
+Fetch from all remotes.
+
+\(fn)" t nil)
  (autoload 'magit-pull-popup "magit-remote" nil t)
+ (autoload 'magit-pull-and-fetch-popup "magit-remote" nil t)
 
-(autoload 'magit-pull-current "../submodules/magit/lisp/magit-remote" "\
-Fetch and merge into current branch.
+(autoload 'magit-pull-from-pushremote "../submodules/magit/lisp/magit-remote" "\
+Pull from the push-remote of the current branch.
 
-\(fn REMOTE BRANCH &optional ARGS)" t nil)
+\(fn ARGS)" t nil)
+
+(autoload 'magit-pull-from-upstream "../submodules/magit/lisp/magit-remote" "\
+Pull from the upstream of the current branch.
+
+\(fn ARGS)" t nil)
 
 (autoload 'magit-pull "../submodules/magit/lisp/magit-remote" "\
-Fetch from another repository and merge a fetched branch.
+Pull from a branch read in the minibuffer.
 
-\(fn REMOTE BRANCH &optional ARGS)" t nil)
+\(fn SOURCE ARGS)" t nil)
  (autoload 'magit-push-popup "magit-remote" nil t)
 
-(autoload 'magit-push-current "../submodules/magit/lisp/magit-remote" "\
-Push the current branch to its upstream branch.
-If the upstream isn't set, then read the remote branch.
+(autoload 'magit-push-current-to-pushremote "../submodules/magit/lisp/magit-remote" "\
+Push the current branch to `branch.<name>.pushRemote'.
+If that variable is unset, then push to `remote.pushDefault'.
 
-\(fn BRANCH REMOTE &optional REMOTE-BRANCH ARGS)" t nil)
+When `magit-push-current-set-remote-if-missing' is non-nil and
+the push-remote is not configured, then read the push-remote from
+the user, set it, and then push to it.  With a prefix argument
+the push-remote can be changed before pushed to it.
+
+\(fn ARGS &optional PUSH-REMOTE)" t nil)
+
+(autoload 'magit-push-current-to-upstream "../submodules/magit/lisp/magit-remote" "\
+Push the current branch to its upstream branch.
+
+When `magit-push-current-set-remote-if-missing' is non-nil and
+the upstream is not configured, then read the upstream from the
+user, set it, and then push to it.  With a prefix argument the
+upstream can be changed before pushed to it.
+
+\(fn ARGS &optional UPSTREAM)" t nil)
+
+(autoload 'magit-push-current "../submodules/magit/lisp/magit-remote" "\
+Push the current branch to a branch read in the minibuffer.
+
+\(fn TARGET ARGS)" t nil)
 
 (autoload 'magit-push "../submodules/magit/lisp/magit-remote" "\
-Push a branch to its upstream branch.
-If the upstream isn't set, then read the remote branch.
+Push an arbitrary branch or commit somewhere.
+Both the source and the target are read in the minibuffer.
 
-\(fn BRANCH REMOTE &optional REMOTE-BRANCH ARGS)" t nil)
-
-(autoload 'magit-push-elsewhere "../submodules/magit/lisp/magit-remote" "\
-Push a branch or commit to some remote branch.
-Read the local and remote branch.
-
-\(fn BRANCH REMOTE REMOTE-BRANCH &optional ARGS)" t nil)
+\(fn SOURCE TARGET ARGS)" t nil)
 
 (autoload 'magit-push-matching "../submodules/magit/lisp/magit-remote" "\
 Push all matching branches to another repository.
-If multiple remotes exit, then read one from the user.
+If multiple remotes exist, then read one from the user.
 If just one exists, use that without requiring confirmation.
 
 \(fn REMOTE &optional ARGS)" t nil)
@@ -3810,10 +4026,57 @@ branch as default.
 Push a tag to another repository.
 
 \(fn TAG REMOTE &optional ARGS)" t nil)
+
+(autoload 'magit-push-implicitly "../submodules/magit/lisp/magit-remote" "\
+Push somewhere without using an explicit refspec.
+
+This command simply runs \"git push -v [ARGS]\".  ARGS are the
+arguments specified in the popup buffer.  No explicit refspec
+arguments are used.  Instead the behavior depends on at least
+these Git variables: `push.default', `branch.pushDefault',
+`branch.<branch>.pushRemote', `branch.<branch>.remote',
+`branch.<branch>.merge', and `remote.<remote>.push'.
+
+To add this command to the push popup add this to your init file:
+
+  (with-eval-after-load \\='magit-remote
+    (magit-define-popup-action \\='magit-push-popup ?P
+      'magit-push-implicitly--desc
+      'magit-push-implicitly ?p t))
+
+The function `magit-push-implicitly--desc' attempts to predict
+what this command will do, the value it returns is displayed in
+the popup buffer.
+
+\(fn ARGS)" t nil)
+
+(autoload 'magit-push-to-remote "../submodules/magit/lisp/magit-remote" "\
+Push to REMOTE without using an explicit refspec.
+The REMOTE is read in the minibuffer.
+
+This command simply runs \"git push -v [ARGS] REMOTE\".  ARGS
+are the arguments specified in the popup buffer.  No refspec
+arguments are used.  Instead the behavior depends on at least
+these Git variables: `push.default', `branch.pushDefault',
+`branch.<branch>.pushRemote', `branch.<branch>.remote',
+`branch.<branch>.merge', and `remote.<remote>.push'.
+
+To add this command to the push popup add this to your init file:
+
+  (with-eval-after-load \\='magit-remote
+    (magit-define-popup-action \\='magit-push-popup ?r
+      'magit-push-to-remote--desc
+      'magit-push-to-remote ?p t))
+
+\(fn REMOTE ARGS)" t nil)
  (autoload 'magit-patch-popup "magit-remote" nil t)
 
 (autoload 'magit-format-patch "../submodules/magit/lisp/magit-remote" "\
 Create patches for the commits in RANGE.
+When a single commit is given for RANGE, create a patch for the
+changes introduced by that commit (unlike 'git format-patch'
+which creates patches for all commits that are reachable from
+HEAD but not from the specified commit).
 
 \(fn RANGE ARGS)" t nil)
 
@@ -3830,7 +4093,7 @@ is asked to pull.  START has to be reachable from that commit.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit-sequence" "../submodules/magit/lisp/magit-sequence.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit-sequence.el
 
 (autoload 'magit-sequencer-continue "../submodules/magit/lisp/magit-sequence" "\
@@ -3911,46 +4174,50 @@ This discards all changes made since the sequence started.
 \(fn)" t nil)
  (autoload 'magit-rebase-popup "magit-sequence" nil t)
 
+(autoload 'magit-rebase-onto-pushremote "../submodules/magit/lisp/magit-sequence" "\
+Rebase the current branch onto `branch.<name>.pushRemote'.
+If that variable is unset, then rebase onto `remote.pushDefault'.
+
+\(fn ARGS)" t nil)
+
+(autoload 'magit-rebase-onto-upstream "../submodules/magit/lisp/magit-sequence" "\
+Rebase the current branch onto its upstream branch.
+
+\(fn ARGS)" t nil)
+
 (autoload 'magit-rebase "../submodules/magit/lisp/magit-sequence" "\
-Start a non-interactive rebase sequence.
-All commits not in UPSTREAM are rebased.
+Rebase the current branch onto a branch read in the minibuffer.
+All commits that are reachable from head but not from the
+selected branch TARGET are being rebased.
 
-\(git rebase UPSTREAM[^] [ARGS])
+\(fn TARGET ARGS)" t nil)
 
-\(fn UPSTREAM &optional ARGS)" t nil)
+(autoload 'magit-rebase-subset "../submodules/magit/lisp/magit-sequence" "\
+Rebase a subset of the current branches history onto a new base.
+Rebase commits from START to `HEAD' onto NEWBASE.
+START has to be selected from a list of recent commits.
 
-(autoload 'magit-rebase-from "../submodules/magit/lisp/magit-sequence" "\
-Start a non-interactive rebase sequence.
-Commits from START to `HEAD' onto NEWBASE.  START has to be
-selected from a list of recent commits.
-
-\(git rebase --onto NEWBASE START[^] [ARGS])
-
-\(fn NEWBASE START &optional ARGS)" t nil)
+\(fn NEWBASE START ARGS)" t nil)
 
 (autoload 'magit-rebase-interactive "../submodules/magit/lisp/magit-sequence" "\
 Start an interactive rebase sequence.
 
-\(git rebase -i COMMIT[^] [ARGS])
-
-\(fn COMMIT &optional ARGS)" t nil)
+\(fn COMMIT ARGS)" t nil)
 
 (autoload 'magit-rebase-autosquash "../submodules/magit/lisp/magit-sequence" "\
 Combine squash and fixup commits with their intended targets.
 
-\(git rebase -i COMMIT[^] --autosquash [ARGS])
-
-\(fn COMMIT &optional ARGS)" t nil)
+\(fn ARGS)" t nil)
 
 (autoload 'magit-rebase-edit-commit "../submodules/magit/lisp/magit-sequence" "\
 Edit a single older commit using rebase.
 
-\(fn COMMIT &optional ARGS)" t nil)
+\(fn COMMIT ARGS)" t nil)
 
 (autoload 'magit-rebase-reword-commit "../submodules/magit/lisp/magit-sequence" "\
 Reword a single older commit using rebase.
 
-\(fn COMMIT &optional ARGS)" t nil)
+\(fn COMMIT ARGS)" t nil)
 
 (autoload 'magit-rebase-continue "../submodules/magit/lisp/magit-sequence" "\
 Restart the current rebasing operation.
@@ -3975,7 +4242,7 @@ Abort the current rebase operation, restoring the original branch.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit-stash" "../submodules/magit/lisp/magit-stash.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit-stash.el
  (autoload 'magit-stash-popup "magit-stash" nil t)
 
@@ -3989,7 +4256,10 @@ while two prefix arguments are equivalent to `--all'.
 
 (autoload 'magit-stash-index "../submodules/magit/lisp/magit-stash" "\
 Create a stash of the index only.
-Unstaged and untracked changes are not stashed.
+Unstaged and untracked changes are not stashed.  The stashed
+changes are applied in reverse to both the index and the
+worktree.  This command can fail when the worktree is not clean.
+Applying the resulting stash has the inverse effect.
 
 \(fn MESSAGE)" t nil)
 
@@ -4054,6 +4324,11 @@ Create and checkout a new BRANCH from STASH.
 
 \(fn STASH BRANCH)" t nil)
 
+(autoload 'magit-stash-format-patch "../submodules/magit/lisp/magit-stash" "\
+Create a patch from STASH
+
+\(fn STASH)" t nil)
+
 (autoload 'magit-stash-list "../submodules/magit/lisp/magit-stash" "\
 List all stashes in a buffer.
 
@@ -4062,12 +4337,12 @@ List all stashes in a buffer.
 (autoload 'magit-stash-show "../submodules/magit/lisp/magit-stash" "\
 Show all diffs of a stash in a buffer.
 
-\(fn STASH &optional NOSELECT ARGS)" t nil)
+\(fn STASH &optional ARGS FILES)" t nil)
 
 ;;;***
 
 ;;;### (autoloads nil "../submodules/magit/lisp/magit-wip" "../submodules/magit/lisp/magit-wip.el"
-;;;;;;  (21918 4889 21168 804000))
+;;;;;;  (22144 48424 0 0))
 ;;; Generated autoloads from ../submodules/magit/lisp/magit-wip.el
 
 (defvar magit-wip-after-save-mode nil "\
@@ -4098,7 +4373,14 @@ See the command `magit-wip-after-apply-mode' for a description of this minor mod
 (custom-autoload 'magit-wip-after-apply-mode "../submodules/magit/lisp/magit-wip" nil)
 
 (autoload 'magit-wip-after-apply-mode "../submodules/magit/lisp/magit-wip" "\
-Commit to work-in-progress refs
+Commit to work-in-progress refs.
+
+After applying a change using any \"apply variant\"
+command (apply, stage, unstage, discard, and reverse) commit the
+affected files to the current wip refs.  For each branch there
+may be two wip refs; one contains snapshots of the files as found
+in the worktree and the other contains snapshots of the entries
+in the index.
 
 \(fn &optional ARG)" t nil)
 
@@ -4126,8 +4408,8 @@ command which is about to be called are committed.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/markdown-mode/markdown-mode"
-;;;;;;  "../submodules/markdown-mode/markdown-mode.el" (21918 4889
-;;;;;;  657831 19000))
+;;;;;;  "../submodules/markdown-mode/markdown-mode.el" (22144 48424
+;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/markdown-mode/markdown-mode.el
 
 (autoload 'markdown-mode "../submodules/markdown-mode/markdown-mode" "\
@@ -4149,7 +4431,7 @@ Major mode for editing GitHub Flavored Markdown files.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/maxframe/maxframe" "../submodules/maxframe/maxframe.el"
-;;;;;;  (21646 23018 998210 216000))
+;;;;;;  (21827 14067 0 0))
 ;;; Generated autoloads from ../submodules/maxframe/maxframe.el
 
 (autoload 'w32-maximize-frame "../submodules/maxframe/maxframe" "\
@@ -4220,7 +4502,7 @@ Add one cursor to the beginning of each line in the active region.
 
 ;;;### (autoloads nil "../submodules/multiple-cursors/mc-hide-unmatched-lines-mode"
 ;;;;;;  "../submodules/multiple-cursors/mc-hide-unmatched-lines-mode.el"
-;;;;;;  (21918 4890 707823 678000))
+;;;;;;  (21918 7530 0 0))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-hide-unmatched-lines-mode.el
 
 (autoload 'mc-hide-unmatched-lines-mode "../submodules/multiple-cursors/mc-hide-unmatched-lines-mode" "\
@@ -4235,12 +4517,21 @@ mode. To leave this mode press <return> or \"C-g\"
 ;;;***
 
 ;;;### (autoloads nil "../submodules/multiple-cursors/mc-mark-more"
-;;;;;;  "../submodules/multiple-cursors/mc-mark-more.el" (21918 4890
-;;;;;;  707823 678000))
+;;;;;;  "../submodules/multiple-cursors/mc-mark-more.el" (22144 48425
+;;;;;;  0 0))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-mark-more.el
 
 (autoload 'mc/mark-next-like-this "../submodules/multiple-cursors/mc-mark-more" "\
 Find and mark the next part of the buffer matching the currently active region
+If no region is active add a cursor on the next line
+With negative ARG, delete the last one instead.
+With zero ARG, skip the last one and mark next.
+
+\(fn ARG)" t nil)
+
+(autoload 'mc/mark-next-like-this-word "../submodules/multiple-cursors/mc-mark-more" "\
+Find and mark the next part of the buffer matching the currently active region
+If no region is active, mark the word at the point and find the next match
 With negative ARG, delete the last one instead.
 With zero ARG, skip the last one and mark next.
 
@@ -4411,11 +4702,17 @@ to the popped mark.
 
 ;;;### (autoloads nil "../submodules/multiple-cursors/mc-separate-operations"
 ;;;;;;  "../submodules/multiple-cursors/mc-separate-operations.el"
-;;;;;;  (21918 4890 707823 678000))
+;;;;;;  (22144 48425 0 0))
 ;;; Generated autoloads from ../submodules/multiple-cursors/mc-separate-operations.el
 
 (autoload 'mc/insert-numbers "../submodules/multiple-cursors/mc-separate-operations" "\
 Insert increasing numbers for each cursor, starting at 0 or ARG.
+
+\(fn ARG)" t nil)
+
+(autoload 'mc/insert-letters "../submodules/multiple-cursors/mc-separate-operations" "\
+Insert increasing letters for each cursor, starting at 0 or ARG.
+     Where letter[0]=a letter[2]=c letter[26]=aa
 
 \(fn ARG)" t nil)
 
@@ -4445,7 +4742,7 @@ Aligns all cursors with whitespace like `mc/vertical-align' does
 
 ;;;### (autoloads nil "../submodules/multiple-cursors/multiple-cursors-core"
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors-core.el"
-;;;;;;  (21918 4890 707823 678000))
+;;;;;;  (22144 48425 0 0))
 ;;; Generated autoloads from ../submodules/multiple-cursors/multiple-cursors-core.el
 
 (autoload 'multiple-cursors-mode "../submodules/multiple-cursors/multiple-cursors-core" "\
@@ -4457,7 +4754,7 @@ Mode while multiple cursors are active.
 
 ;;;### (autoloads nil "../submodules/multiple-cursors/rectangular-region-mode"
 ;;;;;;  "../submodules/multiple-cursors/rectangular-region-mode.el"
-;;;;;;  (21646 23019 324874 363000))
+;;;;;;  (21827 14067 0 0))
 ;;; Generated autoloads from ../submodules/multiple-cursors/rectangular-region-mode.el
 
 (autoload 'set-rectangular-region-anchor "../submodules/multiple-cursors/rectangular-region-mode" "\
@@ -4476,7 +4773,7 @@ A mode for creating a rectangular region to edit
 ;;;***
 
 ;;;### (autoloads nil "../submodules/rainbow-mode/rainbow-mode" "../submodules/rainbow-mode/rainbow-mode.el"
-;;;;;;  (21771 43543 723009 523000))
+;;;;;;  (22144 48426 0 0))
 ;;; Generated autoloads from ../submodules/rainbow-mode/rainbow-mode.el
 
 (autoload 'rainbow-mode "../submodules/rainbow-mode/rainbow-mode" "\
@@ -4514,7 +4811,7 @@ popup all stubs in the current buffer.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/scss-mode/scss-mode" "../submodules/scss-mode/scss-mode.el"
-;;;;;;  (21746 26648 184498 826000))
+;;;;;;  (21827 14068 0 0))
 ;;; Generated autoloads from ../submodules/scss-mode/scss-mode.el
 
 (autoload 'scss-mode "../submodules/scss-mode/scss-mode" "\
@@ -4588,7 +4885,7 @@ Add support for a language not already in the `smart-tabs-insinuate-alist'.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/smex/smex" "../submodules/smex/smex.el"
-;;;;;;  (21646 23022 804847 519000))
+;;;;;;  (22144 48428 0 0))
 ;;; Generated autoloads from ../submodules/smex/smex.el
 
 (autoload 'smex "../submodules/smex/smex" "\
@@ -5233,7 +5530,7 @@ Display weather report.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/web-mode/web-mode" "../submodules/web-mode/web-mode.el"
-;;;;;;  (21918 4895 607789 473000))
+;;;;;;  (22144 48429 0 0))
 ;;; Generated autoloads from ../submodules/web-mode/web-mode.el
 
 (autoload 'web-mode "../submodules/web-mode/web-mode" "\
@@ -5244,7 +5541,7 @@ Major mode for editing web templates.
 ;;;***
 
 ;;;### (autoloads nil "../submodules/yaml-mode/yaml-mode" "../submodules/yaml-mode/yaml-mode.el"
-;;;;;;  (21646 23024 854831 701000))
+;;;;;;  (22144 48429 0 0))
 ;;; Generated autoloads from ../submodules/yaml-mode/yaml-mode.el
 
 (let ((loads (get 'yaml 'custom-loads))) (if (member '"../submodules/yaml-mode/yaml-mode" loads) nil (put 'yaml 'custom-loads (cons '"../submodules/yaml-mode/yaml-mode" loads))))
@@ -5256,12 +5553,12 @@ Simple mode to edit YAML.
 
 \(fn)" t nil)
 
-(add-to-list 'auto-mode-alist '("\\.ya?ml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.e?ya?ml$" . yaml-mode))
 
 ;;;***
 
 ;;;### (autoloads nil "../submodules/yasnippet/yasnippet" "../submodules/yasnippet/yasnippet.el"
-;;;;;;  (21808 25211 826537 200000))
+;;;;;;  (22144 48430 0 0))
 ;;; Generated autoloads from ../submodules/yasnippet/yasnippet.el
 
 (autoload 'yas-minor-mode "../submodules/yasnippet/yasnippet" "\
@@ -5378,29 +5675,30 @@ accept it or skip it.
 ;;;;;;  "../submodules/flycheck-clangcheck/flycheck-clangcheck.el"
 ;;;;;;  "../submodules/flycheck/flycheck-ert.el" "../submodules/gh/gh-pkg.el"
 ;;;;;;  "../submodules/gh/gh-profile.el" "../submodules/gh/gh.el"
-;;;;;;  "../submodules/helm/helm-aliases.el" "../submodules/helm/helm-easymenu.el"
-;;;;;;  "../submodules/helm/helm-lib.el" "../submodules/helm/helm-match-plugin.el"
+;;;;;;  "../submodules/helm/helm-core-pkg.el" "../submodules/helm/helm-easymenu.el"
+;;;;;;  "../submodules/helm/helm-lib.el" "../submodules/helm/helm-multi-match.el"
 ;;;;;;  "../submodules/helm/helm-pkg.el" "../submodules/helm/helm-plugin.el"
-;;;;;;  "../submodules/helm/helm-source.el" "../submodules/json/json.el"
-;;;;;;  "../submodules/logito/logito.el" "../submodules/magit/lisp/magit-core.el"
+;;;;;;  "../submodules/helm/helm-source.el" "../submodules/helm/helm-types.el"
+;;;;;;  "../submodules/json/json.el" "../submodules/logito/logito.el"
+;;;;;;  "../submodules/lua-mode/init-tryout.el" "../submodules/magit/lisp/magit-core.el"
 ;;;;;;  "../submodules/magit/lisp/magit-git.el" "../submodules/magit/lisp/magit-mode.el"
 ;;;;;;  "../submodules/magit/lisp/magit-popup.el" "../submodules/magit/lisp/magit-process.el"
 ;;;;;;  "../submodules/magit/lisp/magit-section.el" "../submodules/magit/lisp/magit-utils.el"
 ;;;;;;  "../submodules/magit/lisp/with-editor.el" "../submodules/multiple-cursors/mc-cycle-cursors.el"
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors-pkg.el"
 ;;;;;;  "../submodules/multiple-cursors/multiple-cursors.el" "../submodules/p4/p4.el"
-;;;;;;  "../submodules/pcache/pcache-tests.el" "../submodules/pcache/pcache.el"
-;;;;;;  "../submodules/popup/popup.el" "../submodules/powerline/powerline.el"
-;;;;;;  "../submodules/s/s.el" "../submodules/w3m/mew-w3m.el" "../submodules/w3m/w3m-bug.el"
-;;;;;;  "../submodules/w3m/w3m-ccl.el" "../submodules/w3m/w3m-ems.el"
-;;;;;;  "../submodules/w3m/w3m-favicon.el" "../submodules/w3m/w3m-hist.el"
-;;;;;;  "../submodules/w3m/w3m-image.el" "../submodules/w3m/w3m-mail.el"
-;;;;;;  "../submodules/w3m/w3m-proc.el" "../submodules/w3m/w3m-rss.el"
-;;;;;;  "../submodules/w3m/w3m-tabmenu.el" "../submodules/w3m/w3m-ucs.el"
-;;;;;;  "../submodules/w3m/w3m-util.el" "../submodules/w3m/w3m-xmas.el"
-;;;;;;  "../submodules/w3m/w3mhack.el" "../submodules/yasnippet/yasnippet-debug.el"
-;;;;;;  "../submodules/yasnippet/yasnippet-tests.el") (21918 6725
-;;;;;;  699196 980000))
+;;;;;;  "../submodules/pcache/pcache.el" "../submodules/popup/popup.el"
+;;;;;;  "../submodules/powerline/powerline.el" "../submodules/s/s.el"
+;;;;;;  "../submodules/seq/seq.el" "../submodules/w3m/mew-w3m.el"
+;;;;;;  "../submodules/w3m/w3m-bug.el" "../submodules/w3m/w3m-ccl.el"
+;;;;;;  "../submodules/w3m/w3m-ems.el" "../submodules/w3m/w3m-favicon.el"
+;;;;;;  "../submodules/w3m/w3m-hist.el" "../submodules/w3m/w3m-image.el"
+;;;;;;  "../submodules/w3m/w3m-mail.el" "../submodules/w3m/w3m-proc.el"
+;;;;;;  "../submodules/w3m/w3m-rss.el" "../submodules/w3m/w3m-tabmenu.el"
+;;;;;;  "../submodules/w3m/w3m-ucs.el" "../submodules/w3m/w3m-util.el"
+;;;;;;  "../submodules/w3m/w3m-xmas.el" "../submodules/w3m/w3mhack.el"
+;;;;;;  "../submodules/yasnippet/yasnippet-debug.el" "../submodules/yasnippet/yasnippet-tests.el")
+;;;;;;  (22144 48727 713195 0))
 
 ;;;***
 
