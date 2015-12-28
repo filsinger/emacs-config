@@ -204,5 +204,5 @@
 	branch = master
 [submodule "submodules/let-alist"]
 	path = submodules/let-alist
-	url = https://github.com/emacsmirror/let-alist.git
+	url = http://git.savannah.gnu.org/cgit/emacs/elpa.git
 	branch = master
