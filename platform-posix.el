@@ -59,7 +59,8 @@
   (eval-after-load "flycheck-clangcheck"
     '(progn
        (if (eq system-type 'darwin)
-           (flycheck-set-checker-executable 'c/c++-clangcheck "/usr/local/bin/clang-check")
+           (when (file-executable-p "/usr/local/bin/clang-check")
+             (flycheck-set-checker-executable 'c/c++-clangcheck "/usr/local/bin/clang-check"))
          (flycheck-set-checker-executable 'c/c++-clangcheck "/usr/bin/clang-check")
          )
        ))
