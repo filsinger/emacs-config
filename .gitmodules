@@ -202,7 +202,3 @@
 	path = submodules/flycheck-clangcheck
 	url = https://github.com/kumar8600/flycheck-clangcheck.git
 	branch = master
-[submodule "submodules/let-alist"]
-	path = submodules/let-alist
-	url = https://github.com/emacsmirror/let-alist.git
-	branch = master
