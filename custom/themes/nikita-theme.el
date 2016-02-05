@@ -162,6 +162,11 @@
    `(org-tag ((,class (:foreground ,nikita-blue+01))))
    `(org-time-grid ((,class (:foreground ,nikita-yellow+01))))
 
+   ;; stripe-background
+
+   `(stripe-highlight ((,class (:background ,nikita-bg-01))))
+   `(stripe-hl-line ((,class (:background ,nikita-bg-02))))
+
    ;;; custom theme variables
    (custom-theme-set-variables
     'nikita

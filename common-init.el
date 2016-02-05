@@ -89,6 +89,7 @@
         seq
         smart-tabs-mode
         smex
+        stripe-buffer
         tabulated-list
         w3m
         web-mode
