@@ -74,6 +74,7 @@
         markdown-mode
         maxframe
         multiple-cursors
+        org-bullets
         p4
         pcache
         popup
