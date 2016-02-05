@@ -26,6 +26,10 @@
         ;;(set-frame-font "Consolas-10")
         ))
 
+;; Set unicode symbol font (if it exists)
+(when (member "Symbola" (font-family-list))
+  (set-fontset-font t 'unicode "Symbola" nil 'prepend))
+
 ; list the repositories containing them
 (setq package-archives '(("elpa" . "http://elpa.gnu.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")))
