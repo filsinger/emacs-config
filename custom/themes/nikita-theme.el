@@ -167,6 +167,8 @@
    `(org-block-background ((,class (:background ,nikita-bg-01))))
    `(org-block-end-line ((,class (:foreground ,nikita-fg-02 :background ,nikita-bg-02))))
 
+   `(org-document-info-keyword ((,class (:foreground ,nikita-fg-02 :background ,nikita-bg-02))))
+
    `(org-block ((,class (:background ,nikita-bg-02))))
    `(org-meta-line ((,class (:foreground ,nikita-fg-02 :background ,nikita-bg-02))))
    `(org-code ((,class (:background ,nikita-bg-01 :foreground ,nikita-orange+01 ))))
@@ -183,6 +185,10 @@
 
    `(org-special-keyword ((,class (:background ,nikita-bg-02 :foreground ,nikita-fg-02))))
    `(org-property-value ((,class (:foreground ,nikita-orange))))
+   `(org-agenda-clocking ((,class (:background ,nikita-blue-02))))
+   `(org-agenda-date ((,class (:foreground ,nikita-blue+01))))
+   `(org-agenda-current-time ((,class (:foreground ,nikita-yellow+01))))
+   `(org-time-grid ((,class (:foreground ,nikita-yellow+02))))
 
    ;; stripe-background
 
