@@ -4,6 +4,8 @@
 (let ((class '((class color) (min-colors 89)))
                     ; Nikita palette
       ;; colors with +x are lighter, colors with -x are darker
+      (nikita-fg-02    "#737377")
+      (nikita-fg-01    "#939397")
       (nikita-fg       "#c3c3b7")
       (nikita-fg+01    "#e3e3e7")
       (nikita-fg+02    "#f3f3f7")
@@ -161,6 +163,26 @@
    ;; org
    `(org-tag ((,class (:foreground ,nikita-blue+01))))
    `(org-time-grid ((,class (:foreground ,nikita-yellow+01))))
+   `(org-block-begin-line ((,class (:foreground ,nikita-fg-02 :background ,nikita-bg-02 :box ,nikita-bg-03))))
+   `(org-block-background ((,class (:background ,nikita-bg-01))))
+   `(org-block-end-line ((,class (:foreground ,nikita-fg-02 :background ,nikita-bg-02))))
+
+   `(org-block ((,class (:background ,nikita-bg-02))))
+   `(org-meta-line ((,class (:foreground ,nikita-fg-02 :background ,nikita-bg-02))))
+   `(org-code ((,class (:background ,nikita-bg-01 :foreground ,nikita-orange+01 ))))
+   `(org-table ((,class (:background ,nikita-bg-01 :foreground ,nikita-blue+01 ))))
+
+   `(org-level-1 ((,class (:foreground ,nikita-green))))
+   `(org-level-2 ((,class (:foreground ,nikita-yellow+01))))
+   `(org-level-3 ((,class (:foreground ,nikita-blue+02))))
+   `(org-level-4 ((,class (:foreground ,nikita-orange))))
+   `(org-level-5 ((,class (:foreground ,nikita-red+02))))
+   `(org-level-6 ((,class (:foreground ,nikita-cyan+02))))
+   `(org-level-7 ((,class (:foreground ,nikita-magenta+01))))
+   `(org-level-8 ((,class (:foreground ,nikita-red+01))))
+
+   `(org-special-keyword ((,class (:background ,nikita-bg-02 :foreground ,nikita-fg-02))))
+   `(org-property-value ((,class (:foreground ,nikita-orange))))
 
    ;; stripe-background
 
