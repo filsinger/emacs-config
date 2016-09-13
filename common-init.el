@@ -93,9 +93,9 @@
         tabulated-list
         w3m
         web-mode
+        wgrep
         yasnippet
         zencoding-mode
-        wgrep
         ))
 
 (defun jf-install-packages ()
