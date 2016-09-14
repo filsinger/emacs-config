@@ -68,6 +68,7 @@
         glsl-mode
         helm
         ;;helm-everything
+        helm-swoop
         helm-spotify
         highlight-symbol
         json
