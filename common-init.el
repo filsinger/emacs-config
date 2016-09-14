@@ -21,14 +21,14 @@
         ;;(set-frame-font "Monospace-8")
         )
        ((or (eq system-type 'windows-nt) (eq system-type 'cygwin))
-        (add-to-list 'default-frame-alist '(font . "Consolas-10"))
-        (add-to-list 'minibuffer-frame-alist '(font . "Consolas-10"))
+        (add-to-list 'default-frame-alist '(font . "Consolas-10:antialias=natural"))
+        (add-to-list 'minibuffer-frame-alist '(font . "Consolas-10:antialias=natural"))
         ;;(set-frame-font "Consolas-10")
         ))
 
 ;; Set unicode symbol font (if it exists)
 (when (member "Symbola" (font-family-list))
-  (set-fontset-font t 'unicode "Symbola" nil 'prepend))
+  (set-fontset-font t 'unicode "Symbola:antialias=natural" nil 'prepend))
 
 ; list the repositories containing them
 (setq package-archives '(("elpa" . "http://elpa.gnu.org/packages/")
