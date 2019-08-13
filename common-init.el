@@ -11,8 +11,8 @@
 
 (cond
  ((find-font (font-spec :name "Hack"))
-  (add-to-list 'default-frame-alist '(font . "Hack-11"))
-  (add-to-list 'minibuffer-frame-alist '(font . "Hack-11"))
+  (add-to-list 'default-frame-alist '(font . "Hack-9"))
+  (add-to-list 'minibuffer-frame-alist '(font . "Hack-9"))
   )
  ((find-font (font-spec :name "Fira Code"))
   (add-to-list 'default-frame-alist '(font . "Fira Code-12"))
