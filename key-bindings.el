@@ -135,6 +135,9 @@
 ;; compiling
 (global-set-key (kbd "<f7>") 'compile)            ; compile
 
+(global-set-key [mouse-2] 'mouse-set-point)
+(global-set-key [mouse-3] 'mouse-set-point)
+
 ;; ================================================
 ;; terminal-only settings
 ;; ================================================
