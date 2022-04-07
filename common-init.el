@@ -32,15 +32,20 @@
   )
  )
 
-;; Set unicode symbol font (if it exists)
-(when (member "Symbola" (font-family-list))
-  (set-fontset-font t 'unicode "Symbola:antialias=natural" nil 'prepend))
+; only load emoji on emacs 28.1+
+(if (and
+     (>= emacs-major-version 28)
+     (>= emacs-minor-version 1))
+  ;; Set emoji font (if it exists)
+  (when (member "Noto Color Emoji Regular" (font-family-list)) (set-fontset-font t 'emoji '("Noto Color Emoji Regular" . "iso10646-1") nil 'prepend) )
+  ;; Set emoji font (if it exists)
+  (when (member "Symbola" (font-family-list)) (set-fontset-font t 'unicode "Symbola:antialias=natural" nil 'prepend)) )
 
 ; list the repositories containing them
 (setq package-archives '(("elpa" . "http://elpa.gnu.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")))
 
-(package-initialize)
+;(package-initialize)
 
 ; fetch the list of packages available
 (unless package-archive-contents
