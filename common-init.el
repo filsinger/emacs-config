@@ -104,6 +104,7 @@
         smex
         stripe-buffer
         tabulated-list
+        treemacs
         w3m
         web-mode
         wgrep
