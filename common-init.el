@@ -85,6 +85,7 @@
         json
         litable
         logito
+        lsp-mode
         lua-mode
         magit
         markdown-mode
@@ -219,6 +220,13 @@
 (smart-tabs-advice ruby-indent-line ruby-indent-level)
 (add-hook 'enh-ruby-mode-hook 'smart-tabs-mode-enable)
 (smart-tabs-advice enh-ruby-indent-line ruby-indent-level)
+;; ================================================
+
+;; ================================================
+;; lsp-mode
+;; ================================================
+(require 'lsp-mode)
+(add-hook 'c-mode-hook 'lsp)
 ;; ================================================
 
 ;; ================================================
