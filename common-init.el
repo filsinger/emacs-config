@@ -425,6 +425,8 @@
 (add-to-list 'auto-mode-alist '("\\.\\(erb\\|html\\|php\\|htm\\|phtml\\|djhtml\\)$" . web-mode))    ;; web-mode
 (add-to-list 'auto-mode-alist '("\\.\\(glsl\\|vert\\|frag\\|geom\\|vsh\\|fsh\\|gsh\\)$" . glsl-mode))    ;; glsl-mode
 (add-to-list 'auto-mode-alist '("\\.\\(scss\\|sass\\)$" . scss-mode))                            ;; js-mode
+(add-to-list 'auto-mode-alist '("\\.\\(unity\\|prefab\\scene\\|meta\\)$" . yaml-mode)) ; yaml-mode for Unity3D
+(add-to-list 'auto-mode-alist '("\\.csproj$" , xml-mode)) ;; xml-mode for VisualStudio C# projects
 
 ;; ================================================
 
