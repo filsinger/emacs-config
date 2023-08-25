@@ -242,6 +242,10 @@
 (smart-tabs-advice ruby-indent-line ruby-indent-level)
 (add-hook 'enh-ruby-mode-hook 'smart-tabs-mode-enable)
 (smart-tabs-advice enh-ruby-indent-line ruby-indent-level)
+;; Help-mode
+(add-hook 'help-mode-hook (lambda ()
+                            (toggle-truncate-lines)
+                            (toggle-word-wrap)))
 ;; ================================================
 
 ;; ================================================
