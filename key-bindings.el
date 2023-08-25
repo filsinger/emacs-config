@@ -81,6 +81,7 @@
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window) ; use ido to find file and open in the other window.
 (global-set-key (kbd "C-c r") 'revert-buffer)                ; revert the current buffer.
 (global-set-key (kbd "C-x C-b") 'ibuffer-other-window)       ; use ibuffer instead of the default buffer-menu.
+(global-set-key (kbd "C-x b") 'helm-buffers-list)            ; use helm-buffers instead of the default buffer-menu.
 (global-set-key (kbd "C-c o") 'ff-get-other-file)            ; find compainion file.
 (add-hook 'dired-mode-hook
           (lambda ()
