@@ -75,6 +75,7 @@
         auto-complete
         auto-complete-clang
         autopair
+        bmx-mode
         browse-kill-ring
         clang-format
         ;;cppcheck
@@ -82,6 +83,8 @@
         csharp-mode
         dash
         emamux
+        flycheck-clang-tidy
+        forge
         multi
         websocket
         enh-ruby-mode
@@ -119,6 +122,7 @@
         seq
         smart-tabs-mode
         smex
+        sr-speedbar
         stripe-buffer
         tabulated-list
         treemacs
