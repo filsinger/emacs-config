@@ -415,7 +415,6 @@
 (add-to-list 'auto-mode-alist '("\\.git\\(modules\\|config\\)$" . conf-mode))    ;; git config files
 (add-to-list 'auto-mode-alist '("\\doxyfile$" . conf-mode))                      ;; git config files
 (add-to-list 'auto-mode-alist '("\\.\\(h\\|inl\\)$" . c++-mode))                 ;; open .h files in c++-mode
-(add-to-list 'auto-mode-alist '("\\.bat$" . bat-mode))                           ;; bat-mode (http://ftp.gnu.org/old-gnu/emacs/windows/contrib/bat-mode.el) support
 (add-to-list 'auto-mode-alist '("\\.\\(pde\\|ino\\)$" . arduino-mode))           ;; arduino-mode
 (add-to-list 'auto-mode-alist '("\\(Rakefile\\|rakefile\\|Vagrantfile\\)$" . enh-ruby-mode))       ;; use ruby-mode for rakefiles and vagrant
 (add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
