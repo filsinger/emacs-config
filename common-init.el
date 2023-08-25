@@ -496,6 +496,9 @@
 (require 'flycheck-clangcheck)
 ;; ================================================
 
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook #'flycheck-clang-tidy-setup))
+
 ;; ================================================
 ;; Set tab and sub-statement indentation settings for c/c++
 ;; ================================================
