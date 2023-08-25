@@ -337,7 +337,7 @@
  c-indent-level 4
  tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120)
  c++-tab-always-indent t
- indent-tabs-mode t                       ; use spaces only if nil
+ indent-tabs-mode nil                     ; use spaces only if nil
 
  ;; systemp/misc
  x-select-enable-clipboard 1              ; use the system clipboard
