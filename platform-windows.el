@@ -18,6 +18,12 @@
 ;;  (setq explicit-bash-args "-l -i")
     ))
 
+ (when (file-directory-p "C:/Program Files/LLVM/share/clang")
+   (add-to-list 'load-path "C:/Program Files/LLVM/share/clang")
+   (when (file-exists-p "C:/Program Files/LLVM/share/clang/clang-include-fixer.el")
+     (require 'clang-include-fixer))
+   )
+
 ;; ================================================
 ;; cygwin clipboard support
 (when (and (not (display-graphic-p)) (eq system-type 'cygwin))
