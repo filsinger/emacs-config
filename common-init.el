@@ -651,8 +651,18 @@
 ;; ================================================
 ;; org-mode
 ;; ================================================
+(cond ((or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
+       (setq
+        org-directory "~/documents/org"
+        org-agenda-files '("~/documents/org")
+        ) )
+      ((or (eq system-type 'windows-nt) (eq system-type 'cygwin))
+       (setq
+        org-directory "~/org-files"
+        org-agenda-files '("~/org-files")
+        )))
+
 (setq
- org-directory "~/org"
  org-default-notes-file (concat org-directory "/notes.org")
  ;; capture templates
  org-capture-templates '(("t" "Todo" entry (file+headline (concat org-directory "/tasks.org") "Tasks") "* TODO %?\n  %i\n  %a")
