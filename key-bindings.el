@@ -136,6 +136,7 @@
 (eval-after-load "lsp-mode"              ; rebind lsp-mode keys
   '(progn
      (define-key lsp-mode-map (kbd "M-,") 'lsp-find-references)
+     (define-key lsp-mode-map (kbd "C-c o") 'lsp-clangd-find-other-file)
      (define-key lsp-mode-map (kbd "M-[") 'helm-lsp-workspace-symbol)))
 
 ;; compiling
