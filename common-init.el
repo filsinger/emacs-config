@@ -461,7 +461,6 @@
 ;; ================================================
 ;; Clang autocomplete
 ;; ================================================
-(when (or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
 (require 'auto-complete-clang)
 (setq ac-auto-start nil)
 (setq ac-quick-help-delay 0.5)
@@ -481,12 +480,10 @@
             (append '(ac-source-yasnippet) ac-sources)
           (append '(ac-source-clang ac-source-yasnippet) ac-sources))
   ))
-)
+
 (add-hook 'c-mode-common-hook 'my-ac-cc-mode-setup)
 ;; ac-source-gtags
-(when (or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
-  (my-ac-config)
-  )
+(my-ac-config)
 ;; ================================================
 
 
