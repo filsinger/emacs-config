@@ -147,22 +147,11 @@
 ;; Load Paths
 ;; ================================================
 (setq emacs-sync-path (file-name-directory (or (buffer-file-name) load-file-name))
-      emacs-submodules-path (concat emacs-sync-path "/submodules/")
       emacs-autoloads-path (concat emacs-sync-path "/autoload/"))
 
 ; add various load paths
 (add-to-list 'load-path (concat emacs-sync-path "/custom/"))
 (add-to-list 'load-path emacs-autoloads-path)
-
-;; add all subdirectories under the "submodules" folder  to the load-path list
-(setq jf-submodule-additional-subdirectories '("" "lisp"))
-
-(dolist (submodule (directory-files emacs-submodules-path t "\\w+"))
-  (dolist (submodule-subdirectory jf-submodule-additional-subdirectories)
-    (when (file-directory-p (format "%s/%s" submodule submodule-subdirectory))
-      (add-to-list 'load-path (format "%s/%s" submodule submodule-subdirectory))
-      )))
-;; ================================================
 
 ;; ================================================
 ;; Theme
@@ -289,7 +278,6 @@
 (eval-after-load "auto-complete-config"
   '(progn
      (add-to-list 'ac-dictionary-directories (concat emacs-sync-path "custom/ac-dict"))
-     (add-to-list 'ac-dictionary-directories (concat emacs-submodules-path "auto-complete/dict"))
      (ac-config-default)
      (define-globalized-minor-mode real-global-auto-complete-mode
        auto-complete-mode (lambda ()
