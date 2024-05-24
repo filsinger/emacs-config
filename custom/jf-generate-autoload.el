@@ -11,12 +11,6 @@
     ;; add everything in the custom directory
     (update-directory-autoloads (jf-sync-subpath "custom"))
 
-    ;; add all of the submodules
-    (dolist (submodule (directory-files emacs-submodules-path t "\\w+"))
-      (dolist (submodule-subdirectory jf-submodule-additional-subdirectories)
-        (when (file-directory-p (format "%s/%s" submodule submodule-subdirectory))
-          (update-directory-autoloads (format "%s/%s" submodule submodule-subdirectory)))))
-
     (byte-recompile-directory emacs-autoloads-path)
     ))
 
