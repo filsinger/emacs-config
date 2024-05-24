@@ -2,9 +2,6 @@
 
 (setq default-directory (getenv "HOME"))
 
-(set-frame-parameter (selected-frame) 'alpha '(95 . 90))
-(add-to-list 'default-frame-alist '(alpha . (95 . 90)))
-
 (when (eq system-type 'darwin)
   ;; use mdfind instead of locate on osx (uses spotlight)
   (setq locate-command "mdfind")
