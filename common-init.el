@@ -74,12 +74,9 @@
         arduino-mode
         auto-complete
         auto-complete-clang
-        autopair
         bmx-mode
         browse-kill-ring
         clang-format
-        ;;cppcheck
-        ;;csearch-mode
         csharp-mode
         dash
         emamux
@@ -94,11 +91,8 @@
         flycheck-clangcheck
         gh
         gist
-        gitconfig-mode
-        gitignore-mode
         glsl-mode
         helm
-        ;;helm-everything
         helm-swoop
         helm-spotify
         highlight-symbol
