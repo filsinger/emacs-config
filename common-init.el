@@ -10,27 +10,12 @@
                             ))
 
 (cond
- ((find-font (font-spec :name "Hack"))
-  (let ((xdg-session-type (getenv "XDG_SESSION_TYPE")))
-    (cond
-     ((string= xdg-session-type 'wayland)
-      (message "wayland")
-      (add-to-list 'default-frame-alist '(font . "Hack-4"))
-      (add-to-list 'minibuffer-frame-alist '(font . "Hack-4"))
-      )
-     ((string= xdg-session-type 'x11)
-      (message "x11")
-      (add-to-list 'default-frame-alist '(font . "Hack-8"))
-      (add-to-list 'minibuffer-frame-alist '(font . "Hack-8"))
-      )
-     ((or  (eq system-type 'windows-nt) (eq system-type 'cygwin))
-      (message "windows")
-      (add-to-list 'default-frame-alist '(font . "Hack-9"))
-      (add-to-list 'minibuffer-frame-alist '(font . "Hack-9"))
-      )
-     )
-    )
+
+ ((find-font (font-spec :name "Hack Nerd Font Mono"))
+  (add-to-list 'default-frame-alist '(font . "Hack Nerd Font Mono-12"))
+  (add-to-list 'minibuffer-frame-alist '(font . "Hack Nerd Font Mono-12"))
   )
+
  ((find-font (font-spec :name "Fira Code"))
   (add-to-list 'default-frame-alist '(font . "Fira Code-12"))
   (add-to-list 'minibuffer-frame-alist '(font . "Fira Code-12"))
