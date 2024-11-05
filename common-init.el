@@ -639,10 +639,12 @@
 ;; org-mode
 ;; ================================================
 (cond ((or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
-       (setq
-        org-directory "~/documents/org"
-        org-agenda-files '("~/documents/org")
-        ) )
+       (let ((jf-documents-folder (shell-command-to-string "xdg-user-dir DOCUMENTS")))
+         (if (file-directory-p jf-documents-folder)
+             (setq org-directory (format "%s/org" jf-documents-folder)
+                   org-directory (format "%s/org" jf-documents-folder))
+           (setq org-directory "~/Documents/org"
+                 org-directory "~/Documents/org"))))
       ((or (eq system-type 'windows-nt) (eq system-type 'cygwin))
        (setq
         org-directory "~/org-files"
