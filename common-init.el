@@ -61,6 +61,7 @@
         auto-complete-clang
         bmx-mode
         browse-kill-ring
+        catppuccin-theme
         clang-format
         csharp-mode
         dash
@@ -141,9 +142,13 @@
 ;; ================================================
 ;; Theme
 ;; ================================================
-(when (>= emacs-major-version 24)         ; only load themes on emacs 24+
-  (add-to-list 'custom-theme-load-path (concat emacs-sync-path "/custom/themes/"))
-  (load-theme 'nikita t))
+;; (when (>= emacs-major-version 24)         ; only load themes on emacs 24+
+;;   (add-to-list 'custom-theme-load-path (concat emacs-sync-path "/custom/themes/"))
+;;   (load-theme 'nikita t))
+
+(setq catppuccin-flavor 'frappe) ;; or 'latte, 'macchiato, or 'mocha
+(load-theme 'catppuccin :no-confirm)
+
 ;; ================================================
 
 ;; ================================================
