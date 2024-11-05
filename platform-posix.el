@@ -2,6 +2,12 @@
 
 (setq default-directory (getenv "HOME"))
 
+;; Set the SSH_AUTH_SOCK if it isn't set and a gpg-agent ssh socket exists
+(unless (stringp (getenv "SSH_AUTH_SOCK"))
+  (let ((ssh_auto_sock (format "%s/gnupg/S.gpg-agent.ssh" (getenv "XDG_RUNTIME_DIR"))))
+    (when (file-exists-p ssh_auto_sock)
+      (setenv "SSH_AUTH_SOCK" ssh_auto_sock) )))
+
 (when (eq system-type 'darwin)
   ;; use mdfind instead of locate on osx (uses spotlight)
   (setq locate-command "mdfind")
