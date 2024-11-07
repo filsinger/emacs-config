@@ -65,6 +65,7 @@
         browse-kill-ring
         catppuccin-theme
         clang-format
+        cmake-mode
         company
         company-box
         csharp-mode
