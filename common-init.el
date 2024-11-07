@@ -9,6 +9,7 @@
                             (scroll-bar-mode . 0)
                             ))
 
+;; Set Fonts
 (cond
 
  ((find-font (font-spec :name "Hack Nerd Font Mono"))
@@ -66,30 +67,31 @@
         csharp-mode
         dash
         emamux
-        flycheck-clang-tidy
-        forge
-        multi
-        websocket
         enh-ruby-mode
         expand-region
         f
         flycheck
+        flycheck-clang-tidy
         flycheck-clangcheck
+        forge
         gh
         gist
         glsl-mode
         helm
-        helm-swoop
+        helm-lsp
         helm-spotify
+        helm-swoop
         highlight-symbol
         json
         litable
         logito
         lsp-mode
+        lsp-treemacs
         lua-mode
         magit
         markdown-mode
         maxframe
+        multi
         multiple-cursors
         org-bullets
         p4
@@ -108,7 +110,9 @@
         treemacs
         w3m
         web-mode
+        websocket
         wgrep
+        yaml-mode
         yasnippet
         zencoding-mode
         ))
