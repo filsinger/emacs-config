@@ -61,12 +61,12 @@
       '(
         ace-jump-mode
         arduino-mode
-        auto-complete
-        auto-complete-clang
         bmx-mode
         browse-kill-ring
         catppuccin-theme
         clang-format
+        company
+        company-box
         csharp-mode
         dash
         emamux
@@ -268,24 +268,6 @@
     (setq header-line-format which-func-header-line-format)))
 ;; ================================================
 
-
-;; ================================================
-;; Autocomplete
-;; ================================================
-(eval-after-load "auto-complete-config"
-  '(progn
-     (add-to-list 'ac-dictionary-directories (concat emacs-sync-path "custom/ac-dict"))
-     (ac-config-default)
-     (define-globalized-minor-mode real-global-auto-complete-mode
-       auto-complete-mode (lambda ()
-                (if (not (minibufferp (current-buffer)))
-                (auto-complete-mode 1))
-                ))
-     (real-global-auto-complete-mode t)
-     ))
-(require 'auto-complete-config)
-;; ================================================
-
 ;; ================================================
 ;; Usage configuration
 ;; ================================================
@@ -342,6 +324,7 @@
 (transient-mark-mode 1)                   ; Selection highlighting
 (global-subword-mode 1)                   ; enable subword mode
 (ido-mode 1)                              ; enable ido mode
+(global-company-mode 1)
 
 ;; recentf-mode
 (setq recentf-max-saved-items 10
@@ -437,36 +420,6 @@
         (setq yas-prompt-functions '(yas/popup-isearch-prompt yas/no-prompt))
         ))
 ;; ================================================
-
-
-;; ================================================
-;; Clang autocomplete
-;; ================================================
-(require 'auto-complete-clang)
-(setq ac-auto-start nil)
-(setq ac-quick-help-delay 0.5)
-(ac-set-trigger-key "TAB")
-(define-key ac-mode-map  [(control tab)] 'auto-complete)
-(defun my-ac-config ()
-  (setq-default ac-sources '(ac-source-abbrev ac-source-dictionary ac-source-words-in-same-mode-buffers))
-  (add-hook 'emacs-lisp-mode-hook 'ac-emacs-lisp-mode-setup)
-  ;; (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
-  (add-hook 'ruby-mode-hook 'ac-ruby-mode-setup)
-  (add-hook 'css-mode-hook 'ac-css-mode-setup)
-  (add-hook 'auto-complete-mode-hook 'ac-common-setup)
-  (global-auto-complete-mode t))
-(defun my-ac-cc-mode-setup ()
-  (setq ac-sources
-        (if (or (eq system-type 'windows-nt) (eq system-type 'cygwin))
-            (append '(ac-source-yasnippet) ac-sources)
-          (append '(ac-source-clang ac-source-yasnippet) ac-sources))
-  ))
-
-(add-hook 'c-mode-common-hook 'my-ac-cc-mode-setup)
-;; ac-source-gtags
-(my-ac-config)
-;; ================================================
-
 
 ;; ================================================
 ;; flycheck-clangcheck
