@@ -106,16 +106,6 @@ Like `find-file', but default to the directory of the buffer at point.
 
 ;;;***
 
-;;;### (autoloads nil "../custom/ido-imenu" "../custom/ido-imenu.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../custom/ido-imenu.el
-
-(autoload 'ido-imenu "../custom/ido-imenu" "\
-Update the imenu index and then use ido to select a symbol to navigate to.
-Symbols matching the text at point are put first in the completion list." t)
-
-;;;***
-
 ;;;### (autoloads nil "../custom/indent-buffer" "../custom/indent-buffer.el"
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from ../custom/indent-buffer.el
@@ -125,14 +115,6 @@ Indent each nonblank line in the buffer." t)
 
 (autoload 'indent-buffer-and-delete-trailing-whitespace "../custom/indent-buffer" "\
 Remove all trailing whitespace in the current buffer and indent all nonblank lines." t)
-
-;;;***
-
-;;;### (autoloads nil "../custom/jdf-dictionary" "../custom/jdf-dictionary.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../custom/jdf-dictionary.el
-
-(register-definition-prefixes "../custom/jdf-dictionary" '("jdf-dictionary"))
 
 ;;;***
 
