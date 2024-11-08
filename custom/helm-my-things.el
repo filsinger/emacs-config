@@ -1,8 +1,8 @@
 (require 'helm)
 (require 'helm-buffers)
-(require 'helm-everything)
 (require 'helm-files)
 (require 'helm-imenu)
+(require 'helm-locate)
 
 ;;;###autoload
 (defun helm-mine ()
@@ -11,9 +11,8 @@
     (helm-other-buffer
      '(helm-source-buffers-list
        helm-source-recentf
-       helm-source-everything
+       helm-source-locate
        helm-source-imenu
-       ;;helm-source-buffer-not-found
        )
      "*helm mine"
      )
