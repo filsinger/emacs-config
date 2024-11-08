@@ -147,6 +147,25 @@ Remove all trailing whitespace in the current buffer and indent all nonblank lin
 
 ;;;***
 
+;;;### (autoloads nil "../custom/jf-toggle-pragma-optimize" "../custom/jf-toggle-pragma-optimize.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../custom/jf-toggle-pragma-optimize.el
+
+(defvar jf-cpp-include-regex "^\\#include[ \11]+[<\"]\\([^>\"]+\\)[>\"].*$" "\
+A regular expression for c/c++ includes")
+
+(autoload 'jf-code-region-min "../custom/jf-toggle-pragma-optimize")
+
+(autoload 'jf-toggle-region-bookend "../custom/jf-toggle-pragma-optimize" "\
+Insert a strings at the beginning and end of a region provided by START and END
+
+\(fn START_STRING END_STRING START END)")
+
+(autoload 'jf-toggle-pragma-optimize "../custom/jf-toggle-pragma-optimize" "\
+" t)
+
+;;;***
+
 ;;;### (autoloads nil "../custom/kill-filename-function-line" "../custom/kill-filename-function-line.el"
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from ../custom/kill-filename-function-line.el
