@@ -18,6 +18,9 @@
 ;;  (setq explicit-bash-args "-l -i")
     ))
 
+(when (file-directory-p "C:/Program Files/LLVM/bin")
+  (add-to-list 'exec-path "C:/Program Files/LLVM/bin"))
+
  (when (file-directory-p "C:/Program Files/LLVM/share/clang")
    (add-to-list 'load-path "C:/Program Files/LLVM/share/clang")
    (when (file-exists-p "C:/Program Files/LLVM/share/clang/clang-include-fixer.el")
