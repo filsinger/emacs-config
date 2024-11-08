@@ -17,4 +17,6 @@
     (save-excursion
       (next-line)
       (transpose-lines -1))
-    (move-to-column col)))
+    (move-to-column col)
+    (previous-line)
+    (previous-line)))
