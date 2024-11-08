@@ -315,6 +315,9 @@
  x-select-enable-clipboard 1              ; use the system clipboard
  tags-revert-without-query 1              ; automatically reload tags files
  tramp-default-method "ssh"               ; use "ssh" in trap by default
+
+ ;; helm
+ helm-split-window-inside-p t             ; split helm within the active window
  )
 
 ;; minor modes
