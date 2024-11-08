@@ -158,47 +158,6 @@ Insert a strings at the beginning and end of a region provided by START and END
 
 ;;;***
 
-;;;### (autoloads nil "../custom/let-alist" "../custom/let-alist.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from ../custom/let-alist.el
-
-(autoload 'let-alist "../custom/let-alist" "\
-Let-bind dotted symbols to their cdrs in ALIST and execute BODY.
-Dotted symbol is any symbol starting with a `.'.  Only those present
-in BODY are let-bound and this search is done at compile time.
-
-For instance, the following code
-
-  (let-alist alist
-    (if (and .title .body)
-        .body
-      .site
-      .site.contents))
-
-essentially expands to
-
-  (let ((.title (cdr (assq 'title alist)))
-        (.body  (cdr (assq 'body alist)))
-        (.site  (cdr (assq 'site alist)))
-        (.site.contents (cdr (assq 'contents (cdr (assq 'site alist))))))
-    (if (and .title .body)
-        .body
-      .site
-      .site.contents))
-
-If you nest `let-alist' invocations, the inner one can't access
-the variables of the outer one. You can, however, access alists
-inside the original alist by using dots inside the symbol, as
-displayed in the example above.
-
-\(fn ALIST &rest BODY)" nil t)
-
-(function-put 'let-alist 'lisp-indent-function 1)
-
-(register-definition-prefixes "../custom/let-alist" '("let-alist--"))
-
-;;;***
-
 ;;;### (autoloads nil "../custom/move-line" "../custom/move-line.el"
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from ../custom/move-line.el
