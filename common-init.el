@@ -328,7 +328,7 @@
 (transient-mark-mode 1)                   ; Selection highlighting
 (global-subword-mode 1)                   ; enable subword mode
 (ido-mode 1)                              ; enable ido mode
-(global-company-mode 1)
+(global-company-mode t)                   ; enable company mode globally
 
 ;; recentf-mode
 (setq recentf-max-saved-items 10
