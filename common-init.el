@@ -666,6 +666,7 @@
 ;; ================================================
 
 ;; Set helm selection colours
+(helm-mode)
 (set-face-attribute 'helm-selection nil :background "#51576d" :foreground "#c6d0f5")
 
 ;; ================================================

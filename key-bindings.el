@@ -77,7 +77,7 @@
 (global-set-key (kbd "M-t w") 'transpose-words)
 
 ;; file finding
-(global-set-key (kbd "C-x C-f") 'ido-find-file)              ; use ido to find file and open in the current window.
+(global-set-key (kbd "C-x C-f") 'helm-find-files)              ; use ido to find file and open in the current window.
 (global-set-key (kbd "C-x M-f") 'ido-find-file-other-window) ; use ido to find file and open in the other window.
 (global-set-key (kbd "C-c r") 'revert-buffer)                ; revert the current buffer.
 (global-set-key (kbd "C-x C-b") 'ibuffer-other-window)       ; use ibuffer instead of the default buffer-menu.
@@ -92,7 +92,7 @@
             ))
 
 ;; smex (like ido for M-x)
-(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-x") 'helm-smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
 ;;
