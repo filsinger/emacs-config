@@ -83,6 +83,7 @@
         glsl-mode
         helm
         helm-lsp
+        helm-smex
         helm-spotify
         helm-swoop
         highlight-symbol
