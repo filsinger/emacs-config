@@ -96,6 +96,7 @@
         maxframe
         multi
         multiple-cursors
+        ob-powershell
         org-bullets
         p4
         pcache

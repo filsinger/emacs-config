@@ -45,6 +45,16 @@
   )
 
 ;; ================================================
+;; Powershell support
+(require 'ob-powershell)
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ (quote (
+         ;; ...
+         (powershell . t))))
+
+;; ================================================
+;; ================================================
 ;; Compilation error regex
 ;; From: https://stackoverflow.com/questions/4556368/compiling-c-with-emacs-on-windows-system/4589933#4589933
 (mapcar
