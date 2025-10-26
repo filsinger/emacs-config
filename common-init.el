@@ -85,7 +85,6 @@
         helm-lsp
         helm-smex
         helm-spotify
-        helm-swoop
         highlight-symbol
         json
         litable
