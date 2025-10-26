@@ -172,7 +172,13 @@
 ;; ================================================
 ;; smart-tabs-mode (https://github.com/jcsalomon/smarttabs)
 ;; ================================================
-(require 'smart-tabs-mode)
+;; Tabs for indentation, spaces for alignment.
+
+;; Workaround for smart-tabs macro ezpansion error: https://github.com/jcsalomon/smarttabs/pull/54
+(defmacro smart-tabs-create-advice-list (advice-list)
+  `(cl-loop for (func . offset) in ,advice-list
+            collect `(smart-tabs-advice ,func ,offset)))
+
 (defadvice align (around smart-tabs activate)
   (let ((indent-tabs-mode nil)) ad-do-it))
 (defadvice align-regexp (around smart-tabs activate)
