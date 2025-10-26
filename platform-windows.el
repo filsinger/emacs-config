@@ -54,6 +54,19 @@
          (powershell . t))))
 
 ;; ================================================
+;; org-crypt windows carriage-return fix
+(defun my/fix-org-crypt-windows-line-encodings ()
+  "Remove bogus ^M characters after encrypting entries on Windows."
+  (interactive)
+  (save-excursion
+    (save-restriction
+      (org-narrow-to-subtree)
+      (goto-char (point-min))
+      (while (search-forward "\x0d" nil t)
+        (replace-match "")))))
+
+(advice-add 'org-encrypt-entry :after 'my/fix-org-crypt-windows-line-encodings)
+
 ;; ================================================
 ;; Compilation error regex
 ;; From: https://stackoverflow.com/questions/4556368/compiling-c-with-emacs-on-windows-system/4589933#4589933

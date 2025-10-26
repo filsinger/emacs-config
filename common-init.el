@@ -258,6 +258,24 @@
 ;; ================================================
 
 ;; ================================================
+;; org-crypt
+;; ================================================
+(require 'org-crypt)
+(org-crypt-use-before-save-magic)
+(setq org-tags-exclude-from-inheritance '("crypt"))
+
+(setq org-crypt-key nil)
+;; GPG key to use for encryption.
+;; nil means  use symmetric encryption unconditionally.
+;; "" means use symmetric encryption unless heading sets CRYPTKEY property.
+
+(setq auto-save-default nil)
+;; Auto-saving does not cooperate with org-crypt.el: so you need to
+;; turn it off if you plan to use org-crypt.el quite often.  Otherwise,
+;; you'll get an (annoying) message each time you start Org.
+;; ================================================
+
+;; ================================================
 ;; Flycheck
 ;; ================================================
 (autoload 'flycheck-mode-on-safe "flycheck" "flycheck" t)
