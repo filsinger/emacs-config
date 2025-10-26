@@ -54,8 +54,7 @@
 ;(package-initialize)
 
 ; fetch the list of packages available
-(unless package-archive-contents
-  (package-refresh-contents))
+(package-refresh-contents)
 
 (setq jf-package-list
       '(
