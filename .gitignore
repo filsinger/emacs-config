@@ -10,3 +10,9 @@ ac-comphist.dat
 auto-save/
 *.elc
 local-custom.el
+auto-save-list/
+eln-cache/
+elpa/
+recentf
+tramp
+transient/
