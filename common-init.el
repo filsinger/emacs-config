@@ -77,6 +77,7 @@
         flycheck-clang-tidy
         flycheck-clangcheck
         forge
+        frame-local
         gh
         gist
         glsl-mode
