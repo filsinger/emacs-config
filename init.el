@@ -2,6 +2,31 @@
 ;; Turn off mouse interface early in startup to avoid momentary display
 ;; ================================================
 
+;; Set the default window background to the Catppuccin Frappé color scheme.
+;; https://catppuccin.com/palette
+(set-foreground-color "#c6d0f5")
+(set-background-color "#303446")
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+(defconst emacs-start-time (current-time))
+
+;; Turn off mouse interface early in startup to avoid momentary display
+(when window-system
+  (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
+    (when (fboundp mode) (funcall mode -1))))
+
+(if (or (eq system-type 'cygwin)
+        (eq system-type 'gnu/linux)
+        (eq system-type 'linux)
+        (eq system-type 'darwin))
+    (add-to-list 'load-path (file-truename (concat user-emacs-directory "/lisp")))
+  (add-to-list 'load-path (concat (getenv "USERPROFILE") "/.emacs.git/lisp")))
+
 (setq default-frame-alist '((font-backend . "xft")
                             (vertical-scroll-bars . 0)
                             (menu-bar-lines . 0)
@@ -141,18 +166,17 @@
 ;; ================================================
 ;; Load Paths
 ;; ================================================
-(setq emacs-sync-path (file-name-directory (or (buffer-file-name) load-file-name))
-      emacs-autoloads-path (concat emacs-sync-path "/autoload/"))
+(setq emacs-autoloads-path (file-truename (concat user-emacs-directory "/lisp/autoload" )))
 
 ; add various load paths
-(add-to-list 'load-path (concat emacs-sync-path "/custom/"))
+(add-to-list 'load-path (file-truename (concat user-emacs-directory "/lisp/custom" )))
 (add-to-list 'load-path emacs-autoloads-path)
 
 ;; ================================================
 ;; Theme
 ;; ================================================
 ;; (when (>= emacs-major-version 24)         ; only load themes on emacs 24+
-;;   (add-to-list 'custom-theme-load-path (concat emacs-sync-path "/custom/themes/"))
+;;   (add-to-list 'custom-theme-load-path (file-truename (concat user-emacs-directory "themes" ))
 ;;   (load-theme 'nikita t))
 
 (setq catppuccin-flavor 'frappe) ;; or 'latte, 'macchiato, or 'mocha
@@ -451,8 +475,11 @@
 (defface dropdown-list-selection-face '((t (:background "steelblue" :foreground "white"))) "*Bla." :group 'dropdown-list)
 ;; load yasnippet
 (require 'yasnippet)
-(setq yas-wrap-around-region t)
-(add-to-list 'yas-snippet-dirs (concat emacs-sync-path "/custom/snippets"))
+    (setq yas-wrap-around-region t)
+
+;;(add-to-list 'yas-snippet-dirs (file-truename (concat user-emacs-directory "/lisp/custom/snippets" )) )
+
+;;(add-to-list 'yas-snippet-dirs (file-truename (concat user-emacs-directory "/snippets" )) )
 ;; add a hook to initialize yasnippets after the init file is loaded (so that other submodules can set snippet paths
 (add-hook 'after-init-hook
       (lambda ()
@@ -748,5 +775,20 @@
 (load "key-bindings.el")
 ;; ================================================
 
-(setq custom-file (concat emacs-sync-path "local-custom.el"))
+
+(setq custom-file (file-truename (concat user-emacs-directory "/local-custom.el" )))
 (when (file-exists-p custom-file) (load custom-file))
+
+;; Timing code is from https://github.com/jwiegley/dot-emacs/blob/master/init.el
+(when window-system
+  (let ((elapsed (float-time (time-subtract (current-time)
+                                            emacs-start-time))))
+    (message "Loading %s...done (%.3fs)" load-file-name elapsed))
+
+  (add-hook 'after-init-hook
+            `(lambda ()
+               (let ((elapsed (float-time (time-subtract (current-time)
+                                                         emacs-start-time))))
+                 (message "Loading %s...done (%.3fs) [after-init]"
+                          ,load-file-name elapsed)))
+            t))
