@@ -20,13 +20,6 @@
   (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
     (when (fboundp mode) (funcall mode -1))))
 
-(if (or (eq system-type 'cygwin)
-        (eq system-type 'gnu/linux)
-        (eq system-type 'linux)
-        (eq system-type 'darwin))
-    (add-to-list 'load-path (file-truename (concat user-emacs-directory "/lisp")))
-  (add-to-list 'load-path (concat (getenv "USERPROFILE") "/.emacs.git/lisp")))
-
 (setq default-frame-alist '((font-backend . "xft")
                             (vertical-scroll-bars . 0)
                             (menu-bar-lines . 0)
@@ -169,6 +162,7 @@
 (setq emacs-autoloads-path (file-truename (concat user-emacs-directory "/lisp/autoload" )))
 
 ; add various load paths
+(add-to-list 'load-path (file-truename (concat user-emacs-directory "/lisp")))
 (add-to-list 'load-path (file-truename (concat user-emacs-directory "/lisp/custom" )))
 (add-to-list 'load-path emacs-autoloads-path)
 
