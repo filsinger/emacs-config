@@ -13,8 +13,10 @@ auto-save-list/
 auto-save/
 eln-cache/
 elpa/
+ido.last
 local-custom.el
+private/
 recentf
+smex-items
 tramp
 transient/
-private/
