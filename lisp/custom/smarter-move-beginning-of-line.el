@@ -9,7 +9,7 @@ the beginning of the line.
 
 If ARG is not nil or 1, move forward ARG - 1 lines first.  If
 point reaches the beginning or end of the buffer, stop there."
-  (interactive "^p")
+  (interactive "P")
   (setq arg (or arg 1))
 
   ;; Move lines first
