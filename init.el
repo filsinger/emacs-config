@@ -159,7 +159,7 @@
 ;; ================================================
 ;; Load Paths
 ;; ================================================
-(setq emacs-autoloads-path (file-truename (concat user-emacs-directory "/lisp/autoload" )))
+(setq emacs-autoloads-path (file-truename (concat user-emacs-directory "/lisp/autoload/" )))
 
 ; add various load paths
 (add-to-list 'load-path (file-truename (concat user-emacs-directory "/lisp")))
