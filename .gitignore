@@ -9,6 +9,7 @@
 .dropbox
 .fseventsd
 .ido.last
+.mc-lists.el
 .org-id-locations
 .smex-items
 Icon?
@@ -16,6 +17,7 @@ Icon^M^M
 ac-comphist.dat
 auto-save-list/
 auto-save/
+ede-projects.el
 eln-cache/
 elpa/
 local-custom.el
@@ -25,5 +27,6 @@ projectile-bookmarks.eld
 projects
 recentf
 smex-items
+srecode-map.el
 tramp
 transient/
