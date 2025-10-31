@@ -1,16 +1,13 @@
-(defun jf-sync-subpath (path)
-  ""
-  (expand-file-name (concat user-emacs-directory "/" path "/")))
-
 ;;;###autoload
 (defun jf-generate-autoload-files ()
-  ""
-  (interactive)
-  (let ((generated-autoload-file (expand-file-name (concat emacs-autoloads-path "my-super-autoload.el"))))
-      ;; add everything in the custom directory
-      (loaddefs-generate (jf-sync-subpath "lisp/custom") generated-autoload-file)
+    ""
+    (interactive)
+    (let ((generated-autoload-file (expand-file-name "lisp/autoload/my-super-autoload.el" user-emacs-directory)))
+        ;; add everything in the custom directory
 
-      (byte-recompile-directory emacs-autoloads-path)
-      ))
+        (loaddefs-generate (expand-file-name "lisp/custom" user-emacs-directory) generated-autoload-file)
+
+        (byte-recompile-directory emacs-autoloads-path)
+        ))
 
 (provide 'jf-generate-autoload)
