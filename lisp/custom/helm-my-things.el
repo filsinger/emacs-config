@@ -8,15 +8,14 @@
 
 ;;;###autoload
 (defun helm-mine ()
-  (interactive)
-  (let ((debug-on-error t))
-    (helm-other-buffer
-     '(helm-source-buffers-list
-       helm-source-recentf
-       helm-source-locate
-       helm-source-imenu
-       )
-     "*helm mine"
-     )
-    )
-  )
+    "Execute helm with my desired sources"
+    (interactive)
+    (let ((debug-on-error t))
+        (helm
+            '(helm-source-buffers-list
+                 helm-source-recentf
+                 helm-source-locate
+                 helm-source-imenu)
+            ""
+            "*helm mine: "
+            )))

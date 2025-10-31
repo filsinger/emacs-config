@@ -69,7 +69,8 @@ It will do one of the following.
 
 ;;; Generated autoloads from ../custom/helm-my-things.el
 
-(autoload 'helm-mine "../custom/helm-my-things" nil t)
+(autoload 'helm-mine "../custom/helm-my-things" "\
+Execute helm with my desired sources" t)
 
 
 ;;; Generated autoloads from ../custom/ibuffer-ido-find-file.el
