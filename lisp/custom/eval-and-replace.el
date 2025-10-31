@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 ;;;###autoload
 (defun eval-and-replace ()
   "Replace the preceding sexp with its value."

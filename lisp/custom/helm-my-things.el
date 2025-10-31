@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 (require 'helm)
 (require 'helm-buffers)
 (require 'helm-files)

@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 (require 'ido)
 (require 'ibuffer)
 

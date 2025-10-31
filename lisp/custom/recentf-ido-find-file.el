@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 ;;;###autoload
 (defun recentf-ido-find-file ()
   "Find a recent file using ido."

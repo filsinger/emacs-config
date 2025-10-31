@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 ;;;###autoload
 (defun smart-open-line ()
   "Insert an empty line after the current line.

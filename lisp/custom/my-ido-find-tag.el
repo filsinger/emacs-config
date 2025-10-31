@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 ;; completing find file using ido
 
 ;;;###autoload

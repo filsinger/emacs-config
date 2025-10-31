@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 ;;;###autoload
 (defvar jf-cpp-include-regex
   "^\\#include[ \t]+[<\"]\\([^>\"]+\\)[>\"].*$"

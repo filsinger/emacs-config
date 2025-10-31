@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 ;; This came from https://github.com/magnars/.emacs.d/blob/master/defuns/editing-defuns.el
 
 ;;;###autoload

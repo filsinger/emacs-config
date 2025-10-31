@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 ;;;###autoload
 (defun delete-region-or-char ()
   "Deletes a region or a char"

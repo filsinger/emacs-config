@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t -*-
+
 ;;;###autoload
 (defun indent-buffer ()
   "Indent each nonblank line in the buffer."
