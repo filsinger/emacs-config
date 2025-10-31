@@ -5,9 +5,9 @@
   (interactive)
   (let ((col (current-column)))
     (save-excursion
-      (next-line)
+      (forward-line)
       (transpose-lines 1))
-    (next-line)
+    (forward-line)
     (move-to-column col)))
 
 ;;;###autoload
@@ -15,8 +15,8 @@
   (interactive)
   (let ((col (current-column)))
     (save-excursion
-      (next-line)
+      (forward-line)
       (transpose-lines -1))
     (move-to-column col)
-    (previous-line)
-    (previous-line)))
+    (forward-line -1)
+    (forward-line -1)))

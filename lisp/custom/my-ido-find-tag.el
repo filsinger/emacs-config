@@ -10,4 +10,4 @@
               (unless (integerp x)
                 (push (prin1-to-string x t) tag-names)))
             tags-completion-table)
-      (find-tag (ido-completing-read "Tag: " tag-names))))
+      (xref-find-definitions (ido-completing-read "Tag: " tag-names))))

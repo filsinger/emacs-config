@@ -8,7 +8,8 @@
 
 ;;;###autoload
 (defun kill-to-end-of-string ()
-  "When the current point is within a string, kill all text from point to the end of the string."
+    "When the current point is within a string,
+kill all text from point to the end of the string."
   (interactive)
   (save-excursion
     (when (nth 3 (syntax-ppss))
@@ -39,7 +40,7 @@
   (if (nth 3 (syntax-ppss))
       (let ((string-start (nth 8 (syntax-ppss))))
         (goto-char string-start)
-        (end-of-sexp)
+        (thing-at-point--end-of-sexp)
         (backward-char)
         (set-mark (+ string-start 1)))
     (progn
@@ -77,7 +78,7 @@ It will do one of the following.
         (let ((string-start (nth 8 (syntax-ppss)))
               string-end)
           (goto-char string-start)
-          (end-of-sexp)
+          (thing-at-point--end-of-sexp)
           (setq string-end (point))
           (goto-char (+ string-start 1))
           (if (eq (- string-end string-start) 2)
@@ -87,7 +88,7 @@ It will do one of the following.
           (kill-region (match-beginning 0) (match-end 0))
       (progn                                        ; kill between balanced parentheses
         (if (or (eq (nth 0 (syntax-ppss)) 0)
-                (eq (point-at-bol) (point))
+                (eq (line-beginning-position) (point))
                 )
             (kill-line)
           (save-excursion
