@@ -332,6 +332,10 @@
  auto-save-default nil                    ; disable auto save
  auto-save-list-file-name nil             ; disable .saves files
 
+ ;; line number display
+ display-line-numbers-grow-only t         ; don't shrink line number width when scrolling up
+ display-line-numbers-width-start 4       ; might as well start at a width of 4 for line number width
+
  ;; tabs and lines
  compilation-scroll-output 1              ; scroll the output when compiling
  tab-always-indent 'complete              ; Smart tabs
@@ -371,7 +375,6 @@
 
 (when (>= emacs-major-version 23)         ; minor-modes to enable in Emacs 23+
   (progn
-    (setq linum-format "  %d ")           ; get the line number formatting
     (setq delete-by-moving-to-trash t)    ; move files to the trash instead of deleting them
     ))
 
