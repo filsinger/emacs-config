@@ -382,6 +382,7 @@
 (ido-mode 1)                              ; enable ido mode
 (global-company-mode t)                   ; enable company mode globally
 (global-hl-line-mode t)                   ; enable hl-line mode globally
+(pixel-scroll-precision-mode t)           ; enable precision scrolling
 
 ;; recentf-mode
 (setq recentf-max-saved-items 10
