@@ -1,4 +1,5 @@
 "Icon^M^M"
+*.bak
 *.elc
 *.lsp-session-*
 *~
