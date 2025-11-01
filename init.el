@@ -331,6 +331,7 @@
  make-backup-files nil                    ; disable backup files
  auto-save-default nil                    ; disable auto save
  auto-save-list-file-name nil             ; disable .saves files
+ delete-by-moving-to-trash t              ; delete moves to trash
 
  ;; line number display
  display-line-numbers-grow-only t         ; don't shrink line number width when scrolling up
@@ -373,10 +374,6 @@
       recentf-max-menu-items 15)
 (recentf-mode +1)
 
-(when (>= emacs-major-version 23)         ; minor-modes to enable in Emacs 23+
-  (progn
-    (setq delete-by-moving-to-trash t)    ; move files to the trash instead of deleting them
-    ))
 
 (when (>= emacs-major-version 24)
   (progn
