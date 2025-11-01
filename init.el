@@ -31,30 +31,10 @@
 (setenv "LSP_USE_PLISTS" "true")
 
 ;; Set Fonts
-(cond
-
- ((find-font (font-spec :name "Hack Nerd Font Mono"))
-  (add-to-list 'default-frame-alist '(font . "Hack Nerd Font Mono-12"))
-  (add-to-list 'minibuffer-frame-alist '(font . "Hack Nerd Font Mono-12"))
-  )
-
- ((find-font (font-spec :name "Fira Code"))
-  (add-to-list 'default-frame-alist '(font . "Fira Code-12"))
-  (add-to-list 'minibuffer-frame-alist '(font . "Fira Code-12"))
-  )
- ((find-font (font-spec :name "Menlo"))
-  (add-to-list 'default-frame-alist '(font . "Menlo-11"))
-  (add-to-list 'minibuffer-frame-alist '(font . "Menlo-11"))
-  )
- ((find-font (font-spec :name "Consolas"))
-  (add-to-list 'default-frame-alist '(font . "Consolas-10:antialias=natural"))
-  (add-to-list 'minibuffer-frame-alist '(font . "Consolas-10:antialias=natural"))
-  )
- ((find-font (font-spec :name "Monospace"))
-  (add-to-list 'default-frame-alist '(font . "Monospace-8"))
-  (add-to-list 'minibuffer-frame-alist '(font . "Monospace-8"))
-  )
- )
+(add-to-list 'default-frame-alist '(font . "Monospace-12"))
+(add-to-list 'minibuffer-frame-alist '(font . "Monospace-12"))
+(add-to-list 'default-frame-alist '(font . "Hack Nerd Font Mono-12"))
+(add-to-list 'minibuffer-frame-alist '(font . "Hack Nerd Font Mono-12"))
 
 ; only load emoji on emacs 28.1+
 (if (and
