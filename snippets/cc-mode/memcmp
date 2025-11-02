@@ -1,4 +1,0 @@
-# name: memcmp(..., ..., ...);
-# key: memcmp
-# --
-memcmp(${ptr1}, ${ptr2}, ${size})$0

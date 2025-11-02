@@ -446,7 +446,7 @@
 (require 'yasnippet)
     (setq yas-wrap-around-region t)
 
-;;(add-to-list 'yas-snippet-dirs (file-truename (concat user-emacs-directory "/lisp/custom/snippets" )) )
+(add-to-list 'yas-snippet-dirs (file-truename (concat user-emacs-directory "/private/snippets" )) )
 
 ;;(add-to-list 'yas-snippet-dirs (file-truename (concat user-emacs-directory "/snippets" )) )
 ;; add a hook to initialize yasnippets after the init file is loaded (so that other submodules can set snippet paths

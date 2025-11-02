@@ -1,4 +1,0 @@
-# name: memmove(..., ..., ...);
-# key: memmove
-# --
-memmove(${destination}, ${source}, ${size});$0

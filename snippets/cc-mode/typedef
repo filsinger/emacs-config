@@ -1,4 +1,0 @@
-# key: typedef
-# name: typedef ... ...
-# --
-typedef ${1:int} ${2:MyType};$0
