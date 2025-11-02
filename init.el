@@ -149,13 +149,8 @@
 ;; ================================================
 ;; Theme
 ;; ================================================
-;; (when (>= emacs-major-version 24)         ; only load themes on emacs 24+
-;;   (add-to-list 'custom-theme-load-path (file-truename (concat user-emacs-directory "themes" ))
-;;   (load-theme 'nikita t))
-
 (setq catppuccin-flavor 'frappe) ;; or 'latte, 'macchiato, or 'mocha
 (load-theme 'catppuccin :no-confirm)
-
 ;; ================================================
 
 ;; ================================================
