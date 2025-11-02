@@ -1,21 +1,29 @@
 # My emacs config
-this config requires you specify an 'emacs-sync-path' in your "~/.emacs" files points to this directory.
 
-```lisp
-(defvar emacs-sync-path (if (or (eq system-type 'cygwin)
-			     (eq system-type 'gnu/linux)
-			     (eq system-type 'linux)
-			     (eq system-type 'darwin))
-			  (concat (getenv "HOME") "/.emacs.git")
-			  (concat (getenv "USERPROFILE") "/.emacs.git"))
-  "emacs sync path")
-(add-to-list 'load-path emacs-sync-path)
-(load "common-init.el")
+## Installing
+### Linux
+```bash
+git clone 'git@github.com:filsinger/emacs-config.git' "$HOME/.config/emacs"
 ```
 
-Most of the plugins are pulled in via submodules,  after cloning you'll have to the following block afte ra clone:
-```
-git submodule update --init
+### Windows
+
+Clone the repository to `%APPDATA%/.emacs.d` (`c:Users/<user>/AppData/Roaming/.emacs.d`)
+
+#### Windows
+When cloning via windows git
+```bash
+git clone 'git@github.com:filsinger/emacs-config.git' "%APPDATA%/.emacs.d"
 ```
 
-One of the submodules will fail to pull because it is a private repository (work stuff).
+#### WSL 
+When cloning via `WSL` and using the Windows executable of emacs.
+```bash
+git clone 'git@github.com:filsinger/emacs-config.git' "/mnt/c/Users/$USER/AppData/Roaming/.emacs.d"
+```
+
+#### Cygwin
+When cloning via `cygwin` and using the Windows executable of emacs.
+```bash
+git clone 'git@github.com:filsinger/emacs-config.git' "/cygpath/c/Users/$USER/AppData/Roaming/.emacs.d"
+```
