@@ -8,7 +8,7 @@ git clone 'git@github.com:filsinger/emacs-config.git' "$HOME/.config/emacs"
 
 ### Windows
 
-Clone the repository to `%APPDATA%/.emacs.d` (`c:Users/<user>/AppData/Roaming/.emacs.d`)
+Clone the repository to `%APPDATA%/.emacs.d`  a.k.a: (`c:Users/<user>/AppData/Roaming/.emacs.d`)
 
 #### Windows
 When cloning via windows git
