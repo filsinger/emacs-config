@@ -63,6 +63,7 @@
         catppuccin-theme
         clang-format
         cmake-mode
+        colorful-mode
         company
         company-box
         csharp-mode
@@ -101,7 +102,6 @@
         pcache
         popup
         powerline
-        rainbow-mode
         s
         scss-mode
         seq
