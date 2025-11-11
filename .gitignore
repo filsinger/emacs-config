@@ -10,6 +10,7 @@
 .dropbox
 .fseventsd
 .ido.last
+ido.last
 .mc-lists.el
 .org-id-locations
 .smex-items
