@@ -8,6 +8,11 @@
     (when (file-exists-p ssh_auto_sock)
       (setenv "SSH_AUTH_SOCK" ssh_auto_sock) )))
 
+;; Disable frame decorations on some desktop sessions
+(let ((desktop-session (getenv "DESKTOP_SESSION")))
+    (when (string-equal desktop-session "niri")
+        (add-to-list 'default-frame-alist '(undecorated . t)) ))
+
 (when (eq system-type 'darwin)
   ;; use mdfind instead of locate on osx (uses spotlight)
   (setq locate-command "mdfind")
