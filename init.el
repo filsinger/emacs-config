@@ -344,7 +344,7 @@
  indent-tabs-mode nil                     ; use spaces only if nil
 
  ;; systemp/misc
- x-select-enable-clipboard 1              ; use the system clipboard
+ select-enable-clipboard 1              ; use the system clipboard
  tags-revert-without-query 1              ; automatically reload tags files
  tramp-default-method "ssh"               ; use "ssh" in trap by default
 
