@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t -*-
 (when (or (eq system-type 'windows-nt) (eq system-type 'cygwin))
 
 ;; ================================================

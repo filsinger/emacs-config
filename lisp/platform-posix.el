@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t -*-
 (when (or (eq system-type 'darwin) (eq system-type 'gnu) (eq system-type 'gnu/linux))
 
 (setq default-directory (getenv "HOME"))
