@@ -707,6 +707,19 @@
 ;; ================================================
 
 ;; ================================================
+;; tramp
+;; ================================================
+(customize-set-variable
+ 'epg-pinentry-mode "loopback")
+
+(customize-set-variable
+ 'tramp-ssh-controlmaster-options
+ (concat
+  "-o ControlPath=~/.ssh/cm_socket/%%r@%%h:%%p "
+  "-o ControlMaster=auto -o ControlPersist=yes"))
+;; ================================================
+
+;; ================================================
 ;; emacs-lsp-booster
 ;; ================================================
 (defun lsp-booster--advice-json-parse (old-fn &rest args)
