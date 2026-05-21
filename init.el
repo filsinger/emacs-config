@@ -392,6 +392,11 @@
     (global-display-line-numbers-mode) ))
 ;; ================================================
 
+;; ================================================
+;; compilation-mode
+;; ================================================
+(add-hook 'compilation-filter-hook 'ansi-color-compilation-filter) ;; Enable ansi colour support in compile-mode
+;; ================================================
 
 ;; ================================================
 ;; ispell (use aspell instead of ispell)
