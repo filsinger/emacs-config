@@ -10,7 +10,6 @@
 .dropbox
 .fseventsd
 .ido.last
-ido.last
 .mc-lists.el
 .org-id-locations
 .smex-items
@@ -22,6 +21,8 @@ auto-save/
 ede-projects.el
 eln-cache/
 elpa/
+eshell/
+ido.last
 local-custom.el
 org-persist/
 private/
