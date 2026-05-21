@@ -102,6 +102,8 @@
         pcache
         popup
         powerline
+        projectile
+        projectile-ripgrep
         s
         scss-mode
         seq
