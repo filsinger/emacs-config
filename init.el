@@ -84,7 +84,6 @@
         helm
         helm-lsp
         helm-smex
-        helm-spotify
         highlight-symbol
         json
         litable
