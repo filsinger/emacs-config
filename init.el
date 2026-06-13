@@ -83,7 +83,6 @@
         glsl-mode
         helm
         helm-lsp
-        helm-smex
         highlight-symbol
         json
         litable

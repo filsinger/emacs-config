@@ -92,8 +92,7 @@
             (define-key dired-mode-map (kbd "C-<return>") (lambda () (interactive) (dired-find-file))) ; C-<return> will always use dired-find-file
             ))
 
-;; smex (like ido for M-x)
-(global-set-key (kbd "M-x") 'helm-smex)
+(global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
 ;;
