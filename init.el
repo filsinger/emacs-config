@@ -157,7 +157,6 @@
     (require 'my-super-autoload)
   (require 'jf-generate-autoload) ;; need to load the jf-generate-autoload if we dont have the super autoload file when we are doing an initial creation of the super autoload file.
 )
-(autoload 'scss-mode "scss-mode")
 ;; ================================================
 
 ;; ================================================
