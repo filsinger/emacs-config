@@ -407,21 +407,6 @@
   (when (file-executable-p aspell-path) (setq-default ispell-program-name aspell-path)))
 ;; ================================================
 
-
-;; ================================================
-;; Visual Bell (flash the mode-line instead of an audio bell)
-;; ================================================
-(setq visible-bell nil
-      ring-bell-function `(lambda ()
-                            (unless (eq (face-background 'mode-line) (face-foreground 'error))
-                                (let ( (mode-line-bell-orig-bg (face-background 'mode-line))
-                                       (mode-line-bell-orig-fg (face-foreground 'mode-line)))
-                                  (set-face-background 'mode-line (face-foreground 'error)) (set-face-foreground 'mode-line (face-background 'error))
-                                  (sit-for 0.1)
-                                  (set-face-background 'mode-line mode-line-bell-orig-bg) (set-face-foreground 'mode-line mode-line-bell-orig-fg)))))
-;; ================================================
-
-
 ;; ================================================
 ;; File modes
 ;; ================================================
