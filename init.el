@@ -93,13 +93,11 @@
         magit
         markdown-mode
         maxframe
-        multi
         multiple-cursors
         ob-powershell
         org-bullets
         p4
         pcache
-        popup
         powerline
         projectile
         projectile-ripgrep
@@ -109,8 +107,6 @@
         smart-tabs-mode
         smex
         sr-speedbar
-        stripe-buffer
-        tabulated-list
         treemacs
         w3m
         web-mode
