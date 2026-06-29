@@ -365,7 +365,6 @@
 (column-number-mode 1)                    ; Activate column-number-mode
 (transient-mark-mode 1)                   ; Selection highlighting
 (global-subword-mode 1)                   ; enable subword mode
-(ido-mode 1)                              ; enable ido mode
 (global-company-mode t)                   ; enable company mode globally
 (global-hl-line-mode t)                   ; enable hl-line mode globally
 (pixel-scroll-precision-mode t)           ; enable precision scrolling
